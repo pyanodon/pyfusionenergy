@@ -25,7 +25,7 @@ data:extend(
 	  hardness = 1.5,
 --	  mining_particle = "molybdenum-ore-particle",
 	  mining_time = 3,
-	  result = "molybdenum"
+	  result = "molybdenum-ore"
 	},
 	collision_box = {{ -0.1, -0.1}, {0.1, 0.1}},
 	selection_box = {{ -0.5, -0.5}, {0.5, 0.5}},

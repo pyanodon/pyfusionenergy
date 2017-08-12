@@ -4,17 +4,29 @@
 data:extend{
         {
             type = "item-group",
-            name = "coal-processing",
-            order = "t",
-            inventory_order = "t",
-            icon = "__pycoalprocessing__/graphics/technology/item-group.png",
+            name = "fusion-energy",
+            order = "u",
+            inventory_order = "u",
+            icon = "__pyfusionenergy__/graphics/technology/item-group.png",
             icon_size = 64,
         },
         {
             type = "item-subgroup",
-            name = "coal-processing",
-            group = "coal-processing",
+            name = "py-fusion-buildings",
+            group = "fusion-energy",
             order = "a1",
+        },
+        {
+            type = "item-subgroup",
+            name = "py-fusion-items",
+            group = "fusion-energy",
+            order = "s",
+        },
+        {
+            type = "item-subgroup",
+            name = "py-fusion-fluids",
+            group = "fusion-energy",
+            order = "t",
         },
 
 }
