@@ -4,6 +4,14 @@
 data:extend{
     {
         type = "recipe-category",
-        name = "coal-processing",
+        name = "agitator",
+    },
+    {
+        type = "recipe-category",
+        name = "thickener",
+    },
+    {
+        type = "recipe-category",
+        name = "vacuum",
     },
 }
