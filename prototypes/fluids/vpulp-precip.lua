@@ -16,7 +16,7 @@ local vpulp_precip= {
     {
         {type="fluid", name="vpulp-precip", amount=100},
 		{type="item", name="vanadium-oxide", amount=1, probability=0.2},
-		
+
     },
     main_product= "vpulp-precip",
     icon = "__pyfusionenergy__/graphics/icons/agitation-vpulp-precip.png",

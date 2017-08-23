@@ -6,7 +6,7 @@ local remove_ing = bobmods.lib.recipe.remove_ingredient
 local add_ing = bobmods.lib.recipe.add_ingredient
 local add_result = bobmods.lib.recipe.add_result
 local remove_result = bobmods.lib.recipe.remove_result
-local add_prerequisite = bobmods.lib.tech.add_prerequisite
+--local add_prerequisite = bobmods.lib.tech.add_prerequisite
 
 local change_value = function(recipe_str, field, val)
     local recipe = data.raw.recipe[recipe_str]
@@ -54,9 +54,6 @@ replace_ing("vpulp-precip", "water", "nitrogen-dioxide")
 -------------------------------------------------------------------------------
 --[[Tech]]--
 -------------------------------------------------------------------------------
-bobmods.lib.tech.add_recipe_unlock("crusher", "crushing-molybdenite")
-bobmods.lib.tech.add_recipe_unlock("crusher", "milling-molybdenite")
-
 
 -------------------------------------------------------------------------------
 --[[Categories]]--

@@ -10,7 +10,7 @@ local recipe1={
     ingredients =
     {
         {"py-tank-8000", 1},
-        {"chemical-plant", 2}, 
+        {"chemical-plant", 2},
         {"iron-plate", 30}, --updated-bob titanium-plate
         {"steel-plate", 50},
         {"iron-gear-wheel", 30}, --updated-bob titanium-bearing

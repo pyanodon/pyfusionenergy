@@ -22,7 +22,7 @@ local recipe1={
         {"electric-engine-unit", 1},
         {"small-lamp", 4},
         {"electronic-circuit", 10}, --updated-bob basic-electronic-circuit-board
-        {"steel-plate", 50}, 
+        {"steel-plate", 50},
         {"pipe", 15}, --updated-bob brass plate
 
     },
@@ -118,14 +118,14 @@ local entity1={
             pipe_covers = Prototype.Pipes.covers(false, true, false, false),
             base_level = 1,
             pipe_connections = {{ type="output", position = {1.0, -4.0} }}
-        },		
+        },
         {
             production_type = "output",
             pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {1.19,-4.4}, nil, nil, pipes),
             pipe_covers = Prototype.Pipes.covers(false, true, false, false),
             base_level = 1,
             pipe_connections = {{ type="output", position = {4.0, 1.0} }}
-        },	
+        },
         off_when_no_fluid_recipe = true
     },
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },

@@ -12,7 +12,7 @@ local recipe1={
         {"ralesia-plantation", 1},
         {"pump", 4},
         {"advanced-circuit", 20}, --updated-bob electronic-circuit-board
-        {"steel-plate", 40}, 
+        {"steel-plate", 40},
         {"niobium-pipe", 10}, --updated-bob brass plate
 
     },
@@ -92,48 +92,47 @@ local entity1={
         }
     },
 
-
     fluid_boxes =
     {
         {
             production_type = "output",
-            pipe_picture = Prototype.Pipes.pictures("assembling-machine-2", nil, {0.0,-0.90}, {0.5,0.0}, {-0.5,0.0}, pipes),
+            pipe_picture = Prototype.Pipes.pictures("assembling-machine-2", nil, {0.0,-0.90}, {0.5,0.0}, {-0.5,0.0}),
             pipe_covers = Prototype.Pipes.covers(false, true, true, true),
             base_level = 1,
             pipe_connections = {
-				{ type="output", position = {-1.5, 4.5} },
-			}
+                { type="output", position = {-1.5, 4.5} },
+            }
         },
-		{
+        {
             production_type = "output",
-            pipe_picture = Prototype.Pipes.pictures("assembling-machine-2", nil, {0.0,-0.90}, {0.5,0.0}, {-0.5,0.0}, pipes),
+            pipe_picture = Prototype.Pipes.pictures("assembling-machine-2", nil, {0.0,-0.90}, {0.5,0.0}, {-0.5,0.0}),
             pipe_covers = Prototype.Pipes.covers(false, true, true, true),
             base_level = 1,
             pipe_connections = {
-				{ type="output", position = {1.5, 4.5} },
-			}
+                { type="output", position = {1.5, 4.5} },
+            }
         },
-		{
+        {
             production_type = "input",
-            pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {0.0,-0.90}, {0.5,0.0}, {-0.5,0.0}, pipes),
+            pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {0.0,-0.90}, {0.5,0.0}, {-0.5,0.0}),
             pipe_covers = Prototype.Pipes.covers(false, true, true, true),
             base_area = 10,
-			base_level = -1,
+            base_level = -1,
             pipe_connections = {
-				{ type="input", position = {-1.5, -4.5} },
-			}
+                { type="input", position = {-1.5, -4.5} },
+            }
         },
-		{
+        {
             production_type = "input",
-            pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {0.0,-0.90}, {0.5,0.0}, {-0.5,0.0}, pipes),
+            pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {0.0,-0.90}, {0.5,0.0}, {-0.5,0.0}),
             pipe_covers = Prototype.Pipes.covers(false, true, true, true),
             base_area = 10,
-			base_level = -1,
+            base_level = -1,
             pipe_connections = {
-				{ type="input", position = {1.5, -4.5} },
-			}
+                { type="input", position = {1.5, -4.5} },
+            }
         },
-	    off_when_no_fluid_recipe = true,
+        off_when_no_fluid_recipe = true,
     },
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound =

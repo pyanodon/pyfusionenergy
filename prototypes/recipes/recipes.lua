@@ -73,7 +73,7 @@ local molybdenum_filtration ={
     energy_required = 2,
     ingredients ={
         {type="fluid", name="molybdenum-pulp", amount=100,},
-		{type="fluid", name="vacuum", amount=50}, 
+		{type="fluid", name="vacuum", amount=50},
         {type="item", name="filtration-media", amount=1},
     },
     results={
@@ -155,8 +155,8 @@ local xyhiphoe_blood ={
     enabled = "false",
     energy_required = 15,
     ingredients ={
-        {type="fluid", name="pressured-water", amount=500}, 
-        {type="fluid", name="phytoplankton", amount=30}, 
+        {type="fluid", name="pressured-water", amount=500},
+        {type="fluid", name="phytoplankton", amount=30},
 		{type="item", name="tailings-dust", amount=200},
     },
     results={
@@ -177,8 +177,8 @@ local xyhiphoe_hydrocyclone ={
     enabled = "false",
     energy_required = 30,
     ingredients ={
-        {type="fluid", name="pressured-water", amount=500}, 
-        {type="fluid", name="xyhiphoe-blood", amount=50}, 
+        {type="fluid", name="pressured-water", amount=500},
+        {type="fluid", name="xyhiphoe-blood", amount=50},
     },
     results={
 		{type="fluid", name="organic-solvent", amount=200},
@@ -197,7 +197,7 @@ local cobalt_solvent ={
     enabled = "false",
     energy_required = 8,
     ingredients ={
-        {type="fluid", name="used-solvent", amount=50}, 
+        {type="fluid", name="used-solvent", amount=50},
     },
     results={
 		{type="item", name="ash", amount=10}, --updated-bob cobalt-ore
@@ -215,7 +215,7 @@ local solvent_separation ={
     enabled = "false",
     energy_required = 10,
     ingredients ={
-        {type="fluid", name="used-solvent", amount=100}, 
+        {type="fluid", name="used-solvent", amount=100},
     },
     results={
 		{type="fluid", name="organic-solvent", amount=100},
@@ -235,7 +235,7 @@ local sodium_chlorate ={
     enabled = "false",
     energy_required = 5,
     ingredients ={
-        {type="fluid", name="steam", amount=150, temperature=165}, 
+        {type="fluid", name="steam", amount=150, temperature=165},
 		{type="fluid", name="water-saline", amount=100}, --bob salt
     },
     results={
@@ -256,11 +256,11 @@ local vanadium_oxide ={
     enabled = "false",
     energy_required = 20,
     ingredients ={
-        {type="fluid", name="vpulp-precip", amount=100}, 
+        {type="fluid", name="vpulp-precip", amount=100},
     },
     results={
 		{type="item", name="vanadium-oxide", amount=5},
-		{type="fluid", name="dirty-water", amount=300}, 
+		{type="fluid", name="dirty-water", amount=300},
     },
     main_product= "vanadium-oxide",
     icon = "__pyfusionenergy__/graphics/icons/vanadium-oxide.png",
@@ -276,7 +276,7 @@ local wastewater_filtration ={
     enabled = "false",
     energy_required = 15,
     ingredients ={
-        {type="fluid", name="waste-water", amount=100}, 
+        {type="fluid", name="waste-water", amount=100},
 		{type="item", name="filtration-media", amount=1},
     },
     results={
@@ -295,7 +295,7 @@ local wastewater_recovery ={
     enabled = "false",
     energy_required = 10,
     ingredients ={
-        {type="fluid", name="waste-water", amount=100}, 
+        {type="fluid", name="waste-water", amount=100},
 		{type="item", name="pure-sand", amount=20},
     },
     results={
@@ -323,4 +323,17 @@ data:extend{
 	vanadium_oxide,
 	wastewater_filtration,
 	wastewater_recovery
+}
+
+-------------------------------------------------------------------------------
+--[[Additional Tech unlocks]]--
+-------------------------------------------------------------------------------
+local crusher = data.raw.technology["crusher"].effects
+crusher[#crusher + 1] = {
+    type = "unlock-recipe",
+    recipe = "crushing-molybdenite"
+}
+crusher[#crusher + 1] = {
+    type = "unlock-recipe",
+    recipe = "milling-molybdenite"
 }

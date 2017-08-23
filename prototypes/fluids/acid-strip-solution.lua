@@ -10,7 +10,7 @@ local acid_strip= {
     energy_required = 12,
     ingredients ={
         {type="fluid", name="water", amount=200},
-		{type="fluid", name="sulfuric-acid", amount=100},		
+		{type="fluid", name="sulfuric-acid", amount=100},
 		{type="fluid", name="methanol", amount=200},
     },
     results=

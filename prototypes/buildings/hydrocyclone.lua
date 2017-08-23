@@ -10,7 +10,7 @@ local recipe1={
     ingredients =
     {
         {"niobium-pipe", 30},
-        {"centrifuge", 1}, 
+        {"centrifuge", 1},
         {"iron-plate", 30},
         {"steel-plate", 30},
         {"iron-gear-wheel", 30}, --updated-bob titanium-bearing
