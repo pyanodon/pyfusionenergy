@@ -143,7 +143,6 @@ local technology = {
             type = "unlock-recipe",
             recipe = "wastewater-recovery"
         },
-
     },
     unit =
     {

@@ -12,8 +12,8 @@ local recipe1={
         {"py-tank-8000", 1},
         {"py-asphalt", 20},
         {"electronic-circuit", 5}, --updated-bob basic-electronic-circuit-board
-        {"steel-plate", 50}, 
-        {"niobium-plate", 15}, 
+        {"steel-plate", 50},
+        {"niobium-plate", 15},
 
     },
     result= "plankton-farm",
@@ -83,29 +83,28 @@ local entity1={
         }
     },
 
-
     fluid_boxes =
     {
         {
             production_type = "output",
-            pipe_picture = Prototype.Pipes.pictures("assembling-machine-2", nil, {0.0,-0.93}, {0.5,0.0}, {-0.5,0.0}, pipes),
+            pipe_picture = Prototype.Pipes.pictures("assembling-machine-2", nil, {0.0,-0.93}, {0.5,0.0}, {-0.5,0.0}),
             pipe_covers = Prototype.Pipes.covers(false, true, true, true),
             base_level = 1,
             pipe_connections = {
-				{ type="output", position = {0.0, 4.0} },
-			}
+                { type="output", position = {0.0, 4.0} },
+            }
         },
-		        {
+        {
             production_type = "input",
-            pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {0.0,-0.93}, {0.5,0.0}, {-0.5,0.0}, pipes),
+            pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {0.0,-0.93}, {0.5,0.0}, {-0.5,0.0}),
             pipe_covers = Prototype.Pipes.covers(false, true, true, true),
             base_area = 10,
-			base_level = -1,
+            base_level = -1,
             pipe_connections = {
-				{ type="input", position = {0.0, -4.0} },
-			}
+                { type="input", position = {0.0, -4.0} },
+            }
         },
-	    off_when_no_fluid_recipe = true,
+        off_when_no_fluid_recipe = true,
     },
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound =

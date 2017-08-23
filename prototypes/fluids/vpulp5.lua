@@ -16,7 +16,7 @@ local vpulp5= {
     {
         {type="fluid", name="vpulp5", amount=100},
 		{type="item", name="vanadium-oxide", amount=1, probability=0.2},
-		
+
     },
     main_product= "vpulp5",
     icon = "__pyfusionenergy__/graphics/icons/agitation-vpulp5.png",

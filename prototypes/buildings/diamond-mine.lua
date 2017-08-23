@@ -11,7 +11,7 @@ local recipe1={
         {"iron-plate", 60}, --bobs titanium plate
         {"electric-engine-unit", 15},
         {"nbfe-alloy", 30},
-        {"steel-plate", 100},		
+        {"steel-plate", 100},
         {"advanced-circuit", 30}, --updated-bob basic-electronic-circuit-board
     },
     result= "diamond-mine",

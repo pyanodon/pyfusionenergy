@@ -30,8 +30,14 @@ data:extend{
         type = "recipe-category",
         name = "mixer",
     },
-  {
-    type = "resource-category",
-    name = "volcanic-pipe",
-  },
+}
+
+-------------------------------------------------------------------------------
+--[[Resource Categories]]--
+-------------------------------------------------------------------------------
+data:extend{
+    {
+      type = "resource-category",
+      name = "volcanic-pipe",
+    },
 }

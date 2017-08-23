@@ -10,7 +10,7 @@ local pregnant_solution= {
     energy_required = 10,
     ingredients ={
         {type="fluid", name="acid-strip-solution", amount=150},
-		{type="fluid", name="organic-vanadate", amount=40},		
+		{type="fluid", name="organic-vanadate", amount=40},
     },
     results=
     {
