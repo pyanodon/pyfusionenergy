@@ -19,6 +19,26 @@ local technology = {
             type = "unlock-recipe",
             recipe = "vacuum-pump"
         },
+		{
+            type = "unlock-recipe",
+            recipe = "plankton-farm"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "xyhiphoe-pool"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "hydrocyclone"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "mixer"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "diamond-mine"
+        },
     },
     unit =
     {
