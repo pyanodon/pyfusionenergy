@@ -9,6 +9,17 @@ local molybdenum_ore ={
     order = "a",
     stack_size = 200
 }
+-------------------------------------------------------------------------------
+--KIMBERLITE ROCK
+local kimberlite_rock ={
+    type = "item",
+    name = "kimberlite-rock",
+    icon = "__pyfusionenergy__/graphics/icons/ores/kimberlite-rock.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "a",
+    stack_size = 500
+}
 --CRUSHED MOLYBDENITE
 local crushed_molybdenite ={
     type = "item",
@@ -69,6 +80,26 @@ local molybdenum_plate ={
     order = "g",
     stack_size = 150
 }
+--SODIUM CHLORATE
+local sodium_chlorate ={
+    type = "item",
+    name = "sodium-chlorate",
+    icon = "__pyfusionenergy__/graphics/icons/sodium-chlorate.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "h",
+    stack_size = 200
+}
+--VANADIUM OXIDE
+local vanadium_oxide ={
+    type = "item",
+    name = "vanadium-oxide",
+    icon = "__pyfusionenergy__/graphics/icons/vanadium-oxide.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "i",
+    stack_size = 200
+}
  -------------------------------------------------------------------------------
 data:extend(
     {
@@ -78,6 +109,9 @@ data:extend(
 		molybdenum_concentrate,
 		molybdenum_sulfide,
 		molybdenum_oxide,
-		molybdenum_plate
+		molybdenum_plate,
+		sodium_chlorate,
+		vanadium_oxide,
+		kimberlite_rock
     }
 )

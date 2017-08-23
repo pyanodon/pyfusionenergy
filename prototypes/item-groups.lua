@@ -28,5 +28,11 @@ data:extend{
             group = "fusion-energy",
             order = "t",
         },
+        {
+            type = "item-subgroup",
+            name = "py-fusion-recipes",
+            group = "fusion-energy",
+            order = "b",
+        },
 
 }

@@ -14,4 +14,24 @@ data:extend{
         type = "recipe-category",
         name = "vacuum",
     },
+    {
+        type = "recipe-category",
+        name = "plankton",
+    },
+    {
+        type = "recipe-category",
+        name = "xyhiphoe",
+    },
+    {
+        type = "recipe-category",
+        name = "hydrocyclone",
+    },
+    {
+        type = "recipe-category",
+        name = "mixer",
+    },
+  {
+    type = "resource-category",
+    name = "volcanic-pipe",
+  },
 }
