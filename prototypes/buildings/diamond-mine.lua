@@ -67,22 +67,34 @@ local entity1={
       height = 12
     },
 
-    animations =
-    {
-        filename = "__pyfusionenergy__/graphics/entity/diamond-mine/stand.png",
-        width = 264,
-        height = 224,
-        frame_count = 1,
-        --line_length = 10,
-        --animation_speed = 1,
-        shift = {0.0, -0.0},
+    animations ={
+        layers={
+            {
+                filename = "__pyfusionenergy__/graphics/entity/diamond-mine/diamond-left.png",
+                width = 128,
+                height = 224,
+                line_length = 15,
+                frame_count = 100,
+                animation_speed = 0.2,
+                shift = {-1.5, -0.0},
+            },
+            {
+                filename = "__pyfusionenergy__/graphics/entity/diamond-mine/diamond-right.png",
+                width = 136,
+                height = 224,
+                line_length = 15,
+                frame_count = 100,
+                animation_speed = 0.2,
+                shift = {2.624, -0.0},
+            },
+        }
     },
 
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound =
     {
-        sound = { filename = "__pyfusionenergy__/sounds/diamond-mine.ogg", volume = 0.85 },
-        idle_sound = { filename = "__pyfusionenergy__/sounds/diamond-mine.ogg", volume = 0.5 },
+        sound = { filename = "__pyfusionenergy__/sounds/diamond-mine.ogg", volume = 1.0 },
+        idle_sound = { filename = "__pyfusionenergy__/sounds/diamond-mine.ogg", volume = 0.7 },
         apparent_volume = 2.5,
     },
 }

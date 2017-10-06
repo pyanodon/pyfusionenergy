@@ -34,4 +34,10 @@ data:extend{
         group = "fusion-energy",
         order = "b",
     },
+    {
+        type = "item-subgroup",
+        name = "py-fusion-gases",
+        group = "fusion-energy",
+        order = "u",
+    },
 }

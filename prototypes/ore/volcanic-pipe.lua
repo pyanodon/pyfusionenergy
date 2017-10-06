@@ -18,7 +18,7 @@ local resource = {
     icon = "__pyfusionenergy__/graphics/icons/ores/volcanic-pipe.png",
     flags = {"placeable-neutral"},
     order="a-b-a",
-    map_color = {r=0.890, g=0, b=0.776},
+    map_color = {r=0.917, g=0.996, b=1},
     highlight = true,
     minimum=50000,
     normal=70000,
@@ -26,9 +26,9 @@ local resource = {
     map_grid = false,
     minable =
     {
-        hardness = 3.0,
+        hardness = 3.5,
         -- mining_particle = "volcanic-pipe-particle",
-        mining_time = 3,
+        mining_time = 4,
         result = "kimberlite-rock"
     },
     collision_box = {{ -3.5, -3.5}, {3.5, 3.5}},
