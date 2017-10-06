@@ -32,6 +32,24 @@ replace_ing("mixer", "iron-plate", "titanium-plate")
 replace_ing("diamond-mine", "advanced-circuit", "electronic-logic-board")
 replace_ing("diamond-mine", "iron-plate", "titanium-plate")
 
+replace_ing("regolite-mine", "advanced-circuit", "electronic-logic-board")
+replace_ing("regolite-mine", "iron-plate", "tungsten-plate")
+
+replace_ing("secondary-crusher", "electronic-circuit", "electronic-logic-board")
+
+replace_ing("jig", "advanced-circuit", "electronic-logic-board")
+replace_ing("jig", "pipe", "titanium-pipe")
+
+replace_ing("centrifugal-pan", "pipe", "titanium-pipe")
+add_ing("centrifugal-pan", {type="item", name="tungsten-plate", amount=20})
+
+replace_ing("compressor", "iron-gear-wheel", "titanium-bearing")
+
+replace_ing("genlab", "iron-gear-wheel", "nitinol-bearing")
+add_ing("genlab", {type="item", name="glass", amount=50})
+
+add_ing("bio-reactor", {type="item", name="glass", amount=50})
+
 -------------------------------------------------------------------------------
 --[[Recipes]]--
 -------------------------------------------------------------------------------
@@ -49,7 +67,19 @@ remove_ing("sodium-chlorate", "water-saline")
 add_ing("sodium-chlorate", {type="item", name="salt", amount=20})
 add_result("sodium-chlorate", {type="fluid", name="hydrogen", amount=150})
 replace_ing("vpulp-precip", "water", "nitrogen-dioxide")
-
+replace_ing("super-alloy", "steel-plate", "nickel-plate")
+add_ing("grease", {type="item", name="lithium-plate", amount=15})
+replace_ing("cool-air", "pressured-air", "liquid-nitrogen")
+add_result("cool-air", {type="fluid", name="nitrogen", amount=200})
+add_result("liquid-air-distilation", {type="fluid", name="nitrogen", amount=2})
+add_result("liquid-air-distilation", {type="fluid", name="oxygen", amount=2})
+remove_result("calcinate-separation", "iron-ore")
+remove_result("calcinate-separation", "copper-ore")
+add_result("calcinate-separation", {type="item", name="quartz", amount=1, probability=0.6})
+add_result("calcinate-separation", {type="item", name="lead-ore", amount=1, probability=0.3})
+add_result("calcinate-separation", {type="item", name="zinc-ore", amount=1, probability=0.3})
+add_result("calcinate-separation", {type="item", name="silver-ore", amount=1, probability=0.3})
+replace_ing("kmauts-ration", "iron-plate", "tin-plate")
 
 -------------------------------------------------------------------------------
 --[[Tech]]--

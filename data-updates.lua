@@ -5,7 +5,7 @@
 --update recipes to use bobmods
 if bobmods and bobmods.lib then
     require("prototypes.updates.bob-updates")
-    --require("prototypes.updates.bob-additions")
+    require("prototypes.updates.bob-additions")
 end
 
 --angel-updates

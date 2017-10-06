@@ -4,7 +4,7 @@ local technology = {
     icon = "__pyfusionenergy__/graphics/technology/advanced-mining-facilities.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"excavation-2","coal-processing-3"},
+    prerequisites = {"diamond-mining"},
     effects =
     {
 		{
@@ -17,18 +17,6 @@ local technology = {
         },
 		{
             type = "unlock-recipe",
-            recipe = "vacuum-pump"
-        },
-		{
-            type = "unlock-recipe",
-            recipe = "plankton-farm"
-        },
-		{
-            type = "unlock-recipe",
-            recipe = "xyhiphoe-pool"
-        },
-		{
-            type = "unlock-recipe",
             recipe = "hydrocyclone"
         },
 		{
@@ -37,7 +25,15 @@ local technology = {
         },
 		{
             type = "unlock-recipe",
-            recipe = "diamond-mine"
+            recipe = "industrial-solvent"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "soda-ash"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "automated-screener"
         },
     },
     unit =
@@ -47,7 +43,6 @@ local technology = {
             {"science-pack-1", 2},
 			{"science-pack-2", 2},
 			{"science-pack-3", 1},
-			{"production-science-pack", 1},
         },
         time = 70
     },
