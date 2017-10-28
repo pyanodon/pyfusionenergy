@@ -56,7 +56,7 @@ local entity1={
     {
         type = "electric",
         usage_priority = "secondary-input",
-        emissions = 0.02,
+        emissions = 0.01,
     },
     energy_usage = "450kW",
     ingredient_count = 4,
@@ -99,7 +99,7 @@ local entity1={
             pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {-0.0,-0.95}, nil, nil),
             pipe_covers = Prototype.Pipes.covers(true, true, true, true),
             base_level = 1,
-            pipe_connections = {{ type="output", position = {1.0, -4.0} }},
+            pipe_connections = {{ type="output", position = {2.0, -4.0} }},
 			priority = "extra-high"
         },
 
@@ -109,7 +109,16 @@ local entity1={
             pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {-0.0,-0.95}, nil, nil),
             pipe_covers = Prototype.Pipes.covers(true, true, true, true),
             base_level = 1,
-            pipe_connections = {{ type="output", position = {-1.0, -4.0} }}
+            pipe_connections = {{ type="output", position = {0.0, -4.0} }}
+        },
+		
+        --North3
+        {
+            production_type = "output",
+            pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {-0.0,-0.95}, nil, nil),
+            pipe_covers = Prototype.Pipes.covers(true, true, true, true),
+            base_level = 1,
+            pipe_connections = {{ type="output", position = {-2.0, -4.0} }}
         },
 
         --South
@@ -137,8 +146,8 @@ local entity1={
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound =
     {
-        sound = { filename = "__pyfusionenergy__/sounds/compressor.ogg", volume = 0.75 },
-        idle_sound = { filename = "__pyfusionenergy__/sounds/compressor.ogg", volume = 0.55 },
+        sound = { filename = "__pyfusionenergy__/sounds/compressor.ogg", volume = 0.7 },
+        idle_sound = { filename = "__pyfusionenergy__/sounds/compressor.ogg", volume = 0.5 },
         apparent_volume = 2.5,
     },
 }

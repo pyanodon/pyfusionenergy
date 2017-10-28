@@ -309,6 +309,186 @@ local regolite_dust ={
     order = "l",
     stack_size = 500
 }
+--NEXELIT MATRIX
+local nexelit_matrix ={
+    type = "item",
+    name = "nexelit-matrix",
+    icon = "__pyfusionenergy__/graphics/icons/nexelit-matrix.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--NBTI ALLOY
+local nbti_alloy ={
+    type = "item",
+    name = "nbti-alloy",
+    icon = "__pyfusionenergy__/graphics/icons/nbti-alloy.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--NENBIT MATRIX
+local nenbit_matrix ={
+    type = "item",
+    name = "nenbit-matrix",
+    icon = "__pyfusionenergy__/graphics/icons/nenbit-matrix.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--FERRITE
+local ferrite ={
+    type = "item",
+    name = "ferrite",
+    icon = "__pyfusionenergy__/graphics/icons/ferrite.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--COIL CORE
+local coil_core ={
+    type = "item",
+    name = "coil-core",
+    icon = "__pyfusionenergy__/graphics/icons/coil-core.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--SUPER CONDUCTING WIRE
+local sc_wire ={
+    type = "item",
+    name = "sc-wire",
+    icon = "__pyfusionenergy__/graphics/icons/superconducting-wire.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--SUPER CONDUCTING COIL
+local sc_coil ={
+    type = "item",
+    name = "sc-coil",
+    icon = "__pyfusionenergy__/graphics/icons/superconducting-coil.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--MAGNETIC CORE
+local magnetic_core ={
+    type = "item",
+    name = "magnetic-core",
+    icon = "__pyfusionenergy__/graphics/icons/magnetic-core.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--DEPOSITED CORE
+local deposited_core ={
+    type = "item",
+    name = "deposited-core",
+    icon = "__pyfusionenergy__/graphics/icons/deposited-vcore.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--SUPERCONDUCTING MAGNET UNIT
+local sc_unit ={
+    type = "item",
+    name = "sc-unit",
+    icon = "__pyfusionenergy__/graphics/icons/magnetic-unit.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--BORON TRIOXIDE DUST
+local b2o3_dust ={
+    type = "item",
+    name = "b2o3-dust",
+    icon = "__pyfusionenergy__/graphics/icons/boron-trioxide-dust.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--BORON MIXTURE
+local boron_mixture ={
+    type = "item",
+    name = "boron-mixture",
+    icon = "__pyfusionenergy__/graphics/icons/boron-mixture.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--BORON
+local boron ={
+    type = "item",
+    name = "boron",
+    icon = "__pyfusionenergy__/graphics/icons/boron.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--BORON CARBIDE
+local boron_carbide ={
+    type = "item",
+    name = "boron-carbide",
+    icon = "__pyfusionenergy__/graphics/icons/boron-carbide.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--BLANKET CHASSI
+local blanket_chassi ={
+    type = "item",
+    name = "blanket-chassi",
+    icon = "__pyfusionenergy__/graphics/icons/blanket-chassi.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--BLANKET
+local blanket ={
+    type = "item",
+    name = "blanket",
+    icon = "__pyfusionenergy__/graphics/icons/blanket.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--DIVERTOR
+local divertor ={
+    type = "item",
+    name = "divertor",
+    icon = "__pyfusionenergy__/graphics/icons/divertor.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--WALL SHIELD
+local wall_shield ={
+    type = "item",
+    name = "wall-shield",
+    icon = "__pyfusionenergy__/graphics/icons/wall-shield.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
  -------------------------------------------------------------------------------
 data:extend(
     {
@@ -341,6 +521,24 @@ data:extend(
 		kmauts_ration,
 		crushed_regolite,
 		powdered_regolite,
-		regolite_dust
+		regolite_dust,
+		nexelit_matrix,
+		nbti_alloy,
+		nenbit_matrix,
+		sc_wire,
+		ferrite,
+		coil_core,
+		sc_coil,
+		magnetic_core,
+		deposited_core,
+		sc_unit,
+		b2o3_dust,
+		boron_mixture,
+		boron,
+		boron_carbide,
+		blanket_chassi,
+		blanket,
+		divertor,
+		wall_shield
     }
 )

@@ -27,6 +27,106 @@ local technology = {
             type = "unlock-recipe",
             recipe = "genlab"
         },
+		{
+            type = "unlock-recipe",
+            recipe = "nmf"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "py-heat-exchanger"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "nexelit-matrix"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "nbti-alloy"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "nenbit-matrix"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "sc-wire"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "ferrite"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "coil-core"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "sc-coil"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "magnetic-core"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "deposited-core"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "sc-unit"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "heavy-water"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "d2o-distilation"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "b2o3-milling"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "boron-mixture"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "boron"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "boron-carbide"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "blanket-chassi"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "blanket"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "divertor"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "wall-shield"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "fusion-reactor-mk01"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "deuterium-fusion"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "steam-exchange"
+        },
 
     },
     unit =

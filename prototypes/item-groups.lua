@@ -40,4 +40,10 @@ data:extend{
         group = "fusion-energy",
         order = "u",
     },
+    {
+        type = "item-subgroup",
+        name = "py-fusion-reactors",
+        group = "fusion-energy",
+        order = "z",
+    },
 }

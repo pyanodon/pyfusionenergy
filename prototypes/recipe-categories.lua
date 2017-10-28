@@ -66,6 +66,22 @@ data:extend{
         type = "recipe-category",
         name = "bio-reactor",
     },
+    {
+        type = "recipe-category",
+        name = "gas-separator",
+    },
+    {
+        type = "recipe-category",
+        name = "nmf",
+    },
+    {
+        type = "recipe-category",
+        name = "fusion-01",
+    },
+    {
+        type = "recipe-category",
+        name = "heat-exchanger",
+    },
 }
 
 

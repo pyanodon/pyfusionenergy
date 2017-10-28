@@ -50,6 +50,11 @@ add_ing("genlab", {type="item", name="glass", amount=50})
 
 add_ing("bio-reactor", {type="item", name="glass", amount=50})
 
+add_ing("nmf", {type="item", name="glass", amount=50})
+
+replace_ing("gas-separator", "pipe", "stone-pipe")
+
+add_ing("fusion-reactor-mk01", {type="item", name="glass", amount=200})
 -------------------------------------------------------------------------------
 --[[Recipes]]--
 -------------------------------------------------------------------------------
@@ -80,6 +85,24 @@ add_result("calcinate-separation", {type="item", name="lead-ore", amount=1, prob
 add_result("calcinate-separation", {type="item", name="zinc-ore", amount=1, probability=0.3})
 add_result("calcinate-separation", {type="item", name="silver-ore", amount=1, probability=0.3})
 replace_ing("kmauts-ration", "iron-plate", "tin-plate")
+remove_result("liquid-rich-gas-distilation", "water")
+add_result("liquid-rich-gas-distilation", {type="fluid", name="liquid-nitrogen", amount=10})
+add_result("purier-helium", {type="fluid", name="liquid-nitrogen", amount=1})
+add_ing("helium", {type="fluid", name="hydrogen", amount=10})
+replace_ing("nexelit-matrix", "wooden-plate", "resin")
+replace_ing("nbti-alloy", "steel-plate", "titanium-plate")
+add_ing("nbti-alloy", {type="fluid", name="nitrogen", amount=150})
+replace_ing("sc-wire", "iron-plate", "tin-plate")
+add_ing("ferrite", {type="item", name="zinc-plate", amount=10})
+replace_ing("coil-core", "copper-cable", "gilded-copper-cable")
+add_ing("sc-unit", {type="fluid", name="liquid-nitrogen", amount=100})
+add_ing("sc-wire", {type="item", name="glass", amount=12})
+add_result("d2o-distilation", {type="fluid", name="oxygen", amount=5})
+add_ing("boron-mixture", {type="item", name="aluminium-plate", amount=5})
+replace_ing("boron-carbide", "coke", "carbon")
+add_ing("blanket", {type="item", name="lithium-plate", amount=10})
+add_ing("blanket", {type="item", name="lead-plate", amount=40})
+add_ing("blanket", {type="item", name="tungsten-plate", amount=40})
 
 -------------------------------------------------------------------------------
 --[[Tech]]--
