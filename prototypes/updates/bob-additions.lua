@@ -24,9 +24,31 @@ local liquid_nitrogen= {
     subgroup = "py-fusion-gases",
     order = "a",
 }
+-------------------------------------------------------------------------------
+--EVAPORATE NITROGEN
+local evaporate_nitrogen= {
+    type = "recipe",
+    name = "evaporate-nitrogen",
+    category = "evaporator",
+    enabled = "false",
+    energy_required = 2,
+    ingredients ={
+		{type="fluid", name="liquid-nitrogen", amount=5},
+    },
+    results=
+    {
+        {type="fluid", name="nitrogen", amount=50},
+    },
+    main_product= "nitrogen",
+    icon = "__bobplates__/graphics/icons/nitrogen.png",
+    subgroup = "py-fusion-gases",
+    order = "b",
+}
 
 data:extend{
-	liquid_nitrogen
+	liquid_nitrogen,
+	evaporate_nitrogen
 }
 
 bobmods.lib.tech.add_recipe_unlock("helium-processing", "liquid-nitrogen")
+bobmods.lib.tech.add_recipe_unlock("helium-processing", "evaporate-nitrogen")

@@ -326,7 +326,7 @@ local super_alloy ={
 		{type="item", name="vanadium-oxide", amount=10},
     },
     results={
-		{type="item", name="super-alloy", amount=2},
+		{type="item", name="super-alloy", amount=4},
     },
     icon = "__pyfusionenergy__/graphics/icons/super-alloy.png",
 	subgroup = "py-fusion-recipes",
@@ -824,7 +824,7 @@ local kmauts_ration= {
     },
     results=
     {
-        {type="item", name="kmauts-ration", amount=1},
+        {type="item", name="kmauts-ration", amount=2},
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/kmauts-ration.png",
@@ -910,7 +910,7 @@ local regolite_calcination= {
     {
         {type="item", name="calcinates", amount=12},
 		{type="item", name="ash", amount=3},
-		{type="fluid", name="dry-gas-stream", amount=3},
+		{type="fluid", name="dry-gas-stream", amount=4},
 		--add bobs hydrogen
     },
     --main_product= "crude",
@@ -918,7 +918,591 @@ local regolite_calcination= {
     subgroup = "py-fusion-recipes",
     order = "l",
 }
+-------------------------------------------------------------------------------
+--LIQUIFY PETGAS
+local liquid_petgas= {
+    type = "recipe",
+    name = "liquid-petgas",
+    category = "compressor",
+    enabled = "false",
+    energy_required = 1,
+    ingredients ={
+		{type="fluid", name="petroleum-gas", amount=5},
+		{type="fluid", name="water", amount=100},
+    },
+    results=
+    {
+        {type="fluid", name="liquid-petgas", amount=5},
+		{type="fluid", name="steam", amount=100},
+    },
+    --main_product= "liquid-petgas",
+    icon = "__pyfusionenergy__/graphics/icons/liquid-petgas.png",
+    subgroup = "py-fusion-gases",
+    order = "a",
+}
+-------------------------------------------------------------------------------
+--LIQUID PETGAS SEPARATION
+local liquid_petgas_separation= {
+    type = "recipe",
+    name = "liquid-petgas-separation",
+    category = "fluid-separator",
+    enabled = "false",
+    energy_required = 5,
+    ingredients ={
+		{type="fluid", name="liquid-petgas", amount=20},
+		{type="item", name="active-carbon", amount=2},
+    },
+    results=
+    {
+        {type="fluid", name="aromatics", amount=10},
+		{type="fluid", name="gas-stream", amount=20},
+    },
+    main_product= "gas-stream",
+    icon = "__pyfusionenergy__/graphics/icons/gas-stream.png",
+    subgroup = "py-fusion-gases",
+    order = "a",
+}
+-------------------------------------------------------------------------------
+--GAS STREAM FILTRATION
+local gas_stream_filtration= {
+    type = "recipe",
+    name = "gas-stream-filtration",
+    category = "carbonfilter",
+    enabled = "false",
+    energy_required = 5,
+    ingredients ={
+		{type="fluid", name="gas-stream", amount=20},
+		{type="item", name="filtration-media", amount=1},
+    },
+    results=
+    {
+        {type="fluid", name="water", amount=10},
+		{type="fluid", name="dry-gas-stream", amount=3},
+    },
+    main_product= "dry-gas-stream",
+    icon = "__pyfusionenergy__/graphics/icons/dry-gas-stream.png",
+    subgroup = "py-fusion-gases",
+    order = "a",
+}
+-------------------------------------------------------------------------------
+--LIQUID RICH GAS DISTILATION
+local liquid_rich_gas_distilation= {
+    type = "recipe",
+    name = "liquid-rich-gas-distilation",
+    category = "distilator",
+    enabled = "false",
+    energy_required = 4,
+    ingredients ={
+		{type="fluid", name="liquid-rich-gas", amount=30},
+    },
+    results=
+    {
+        {type="fluid", name="water", amount=10}, -- bobs pyliquid-nitrogen
+		{type="fluid", name="helium-rich-gas", amount=10},
+    },
+    main_product= "helium-rich-gas",
+    icon = "__pyfusionenergy__/graphics/icons/helium-rich-gas.png",
+    subgroup = "py-fusion-gases",
+    order = "a",
+}
+-------------------------------------------------------------------------------
+--HELIUM PRODUCTION
+local helium= {
+    type = "recipe",
+    name = "helium",
+    category = "gas-separator",
+    enabled = "false",
+    energy_required = 6,
+    ingredients ={
+		{type="fluid", name="purier-helium", amount=8},
+    },
+    results=
+    {
+        {type="fluid", name="water", amount=10},
+		{type="fluid", name="helium", amount=5},
+    },
+    main_product= "helium",
+    icon = "__pyfusionenergy__/graphics/icons/helium.png",
+    subgroup = "py-fusion-gases",
+    order = "aa",
+}
+-------------------------------------------------------------------------------
+--NEXELIT MATRIX
+local nexelit_matrix= {
+    type = "recipe",
+    name = "nexelit-matrix",
+    category = "nmf",
+    enabled = "false",
+    energy_required = 5,
+    ingredients ={
+		{type="fluid", name="boric-acid", amount=150},
+		{type="fluid", name="vacuum", amount=100},
+		{type="item", name="nexelit-plate", amount=4},
+		{type="item", name="wooden-plate", amount=3}, --bobs resin
+    },
+    results=
+    {
+        {type="item", name="nexelit-matrix", amount=3},
+    },
+    main_product= "nexelit-matrix",
+    icon = "__pyfusionenergy__/graphics/icons/nexelit-matrix.png",
+    subgroup = "py-fusion-items",
+    order = "a",
+}
+-------------------------------------------------------------------------------
+--NB-TI ALLOY
+local nbti_alloy= {
+    type = "recipe",
+    name = "nbti-alloy",
+    category = "advanced-foundry",
+    enabled = "false",
+    energy_required = 3,
+    ingredients ={
+		{type="item", name="niobium-plate", amount=5},
+		{type="item", name="steel-plate", amount=10}, --bobs titanium plate
+		--add nitrogen
+    },
+    results=
+    {
+        {type="item", name="nbti-alloy", amount=2},
+    },
+    main_product= "nbti-alloy",
+    icon = "__pyfusionenergy__/graphics/icons/nbti-alloy.png",
+    subgroup = "py-fusion-items",
+    order = "d",
+}
+-------------------------------------------------------------------------------
+--NENBIT MATRIX
+local nenbit_matrix= {
+    type = "recipe",
+    name = "nenbit-matrix",
+    category = "advanced-crafting",
+    enabled = "false",
+    energy_required = 15,
+    ingredients ={
+		{type="item", name="nbti-alloy", amount=2},
+		{type="item", name="nexelit-matrix", amount=10},
+    },
+    results=
+    {
+        {type="item", name="nenbit-matrix", amount=1},
+    },
+    main_product= "nenbit-matrix",
+    icon = "__pyfusionenergy__/graphics/icons/nenbit-matrix.png",
+    subgroup = "py-fusion-items",
+    order = "d",
+}
+-------------------------------------------------------------------------------
+--FERRITE
+local ferrite= {
+    type = "recipe",
+    name = "ferrite",
+    category = "hpf",
+    enabled = "false",
+    energy_required = 4,
+    ingredients ={
+		{type="item", name="iron-oxide", amount=20}, 
+		{type="item", name="nichrome", amount=3},
+		--add zinc plate
+    },
+    results=
+    {
+        {type="item", name="ferrite", amount=2},
+    },
+    main_product= "ferrite",
+    icon = "__pyfusionenergy__/graphics/icons/ferrite.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--COIL CORE
+local coil_core= {
+    type = "recipe",
+    name = "coil-core",
+    category = "advanced-crafting",
+    enabled = "false",
+    energy_required = 4,
+    ingredients ={
+		{type="item", name="ferrite", amount=4}, 
+		{type="item", name="copper-cable", amount=40}, --bobs gilded copper cable
+    },
+    results=
+    {
+        {type="item", name="coil-core", amount=1},
+    },
+    main_product= "coil-core",
+    icon = "__pyfusionenergy__/graphics/icons/coil-core.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--SUPER CONDUCTING WIRE
+local sc_wire= {
+    type = "recipe",
+    name = "sc-wire",
+    category = "crafting",
+    enabled = "false",
+    energy_required = 10,
+    ingredients ={
+		{type="item", name="iron-plate", amount=10}, --bobs tin plate
+		{type="item", name="nenbit-matrix", amount=1},
+		--add glass
+    },
+    results=
+    {
+        {type="item", name="sc-wire", amount=5},
+    },
+    main_product= "sc-wire",
+    icon = "__pyfusionenergy__/graphics/icons/superconducting-wire.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--SUPER CONDUCTING COIL
+local sc_coil= {
+    type = "recipe",
+    name = "sc-coil",
+    category = "crafting",
+    enabled = "false",
+    energy_required = 5,
+    ingredients ={
+		{type="item", name="sc-wire", amount=15},
+		{type="item", name="plastic-bar", amount=5},
+		{type="item", name="coil-core", amount=1},
+    },
+    results=
+    {
+        {type="item", name="sc-coil", amount=1},
+    },
+    main_product= "sc-coil",
+    icon = "__pyfusionenergy__/graphics/icons/superconducting-coil.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--MAGNETIC CORE
+local magnetic_core= {
+    type = "recipe",
+    name = "magnetic-core",
+    category = "advanced-crafting",
+    enabled = "false",
+    energy_required = 25,
+    ingredients ={
+		{type="item", name="sc-coil", amount=1},
+		{type="item", name="cladded-core", amount=3},
+		{type="item", name="kevlar", amount=10},
+    },
+    results=
+    {
+        {type="item", name="magnetic-core", amount=1},
+    },
+    main_product= "magnetic-core",
+    icon = "__pyfusionenergy__/graphics/icons/magnetic-core.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--DEPOSITED CORE
+local deposited_core= {
+    type = "recipe",
+    name = "deposited-core",
+    category = "gas-separator",
+    enabled = "false",
+    energy_required = 5,
+    ingredients ={
+		{type="item", name="magnetic-core", amount=1},
+		{type="item", name="vanadium-oxide", amount=10},
+    },
+    results=
+    {
+        {type="item", name="deposited-core", amount=1},
+    },
+    --main_product= "magnetic-core",
+    icon = "__pyfusionenergy__/graphics/icons/deposited-vcore.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--SUPERCONDUCTING MAGNET UNIT
+local sc_unit= {
+    type = "recipe",
+    name = "sc-unit",
+    category = "advanced-crafting",
+    enabled = "false",
+    energy_required = 20,
+    ingredients ={
+		{type="item", name="molybdenum-plate", amount=5},
+		{type="item", name="deposited-core", amount=1},
+		{type="item", name="advanced-circuit", amount=1},
+		--add liquid nitrogen
+    },
+    results=
+    {
+        {type="item", name="sc-unit", amount=1},
+    },
+    main_product= "sc-unit",
+    icon = "__pyfusionenergy__/graphics/icons/magnetic-unit.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--HEAVY WATER DISTILATION
+local d2o_distilation= {
+    type = "recipe",
+    name = "d2o-distilation",
+    category = "distilator",
+    enabled = "false",
+    energy_required = 10,
+    ingredients ={
+		{type="fluid", name="heavy-water", amount=60},
+    },
+    results=
+    {
+        {type="fluid", name="deuterium", amount=4},
+		--add oxygen
+    },
+    --main_product= "sc-unit",
+    icon = "__pyfusionenergy__/graphics/icons/deuterium.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--MILLING BORON TRIOXIDE
+local b2o3_milling= {
+    type = "recipe",
+    name = "b2o3-milling",
+    category = "ball-mill",
+    enabled = "false",
+    energy_required = 3,
+    ingredients ={
+		{type="item", name="boron-trioxide", amount=20},
+    },
+    results=
+    {
+        {type="item", name="b2o3-dust", amount=20},
+    },
+    main_product= "b2o3-dust",
+    icon = "__pyfusionenergy__/graphics/icons/boron-trioxide-dust.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--BORON MIXTURE
+local boron_mixture= {
+    type = "recipe",
+    name = "boron-mixture",
+    category = "hpf",
+    enabled = "false",
+    energy_required = 5,
+    ingredients ={
+		{type="item", name="b2o3-dust", amount=15},
+		{type="fluid", name="helium", amount=15},
+		--add bobs aluminum
+    },
+    results=
+    {
+        {type="item", name="boron-mixture", amount=1},
+    },
+    main_product= "boron-mixture",
+    icon = "__pyfusionenergy__/graphics/icons/boron-mixture.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--BORON
+local boron= {
+    type = "recipe",
+    name = "boron",
+    category = "mixer",
+    enabled = "false",
+    energy_required = 5,
+    ingredients ={
+		{type="item", name="boron-mixture", amount=3},
+		{type="fluid", name="refsyngas", amount=300},
+		--add bobs HCL
+    },
+    results=
+    {
+        {type="item", name="boron", amount=2},
+		{type="fluid", name="diborane", amount=50},
+    },
+    main_product= "boron",
+    icon = "__pyfusionenergy__/graphics/icons/boron.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--BORON CARBIDE
+local boron_carbide= {
+    type = "recipe",
+    name = "boron-carbide",
+    category = "hpf",
+    enabled = "false",
+    energy_required = 5,
+    ingredients ={
+		{type="item", name="boron-trioxide", amount=2},
+		{type="item", name="coke", amount=7}, --bobs carbon
+    },
+    results=
+    {
+        {type="item", name="boron-carbide", amount=1},
+		{type="fluid", name="carbon-dioxide", amount=3},
+    },
+    main_product= "boron-carbide",
+    icon = "__pyfusionenergy__/graphics/icons/boron-carbide.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--BLANKET CHASSI
+local blanket_chassi= {
+    type = "recipe",
+    name = "blanket-chassi",
+    category = "advanced-foundry",
+    enabled = "false",
+    energy_required = 5,
+    ingredients ={
+		{type="item", name="super-alloy", amount=10},
+		{type="item", name="ferrite", amount=10},
+		{type="item", name="molybdenum-oxide", amount=20},
+		{type="item", name="vanadium-oxide", amount=5},
+		{type="item", name="copper-plate", amount=25},
+		{type="fluid", name="helium", amount=20},
+    },
+    results=
+    {
+        {type="item", name="blanket-chassi", amount=1},
+    },
+    main_product= "blanket-chassi",
+    icon = "__pyfusionenergy__/graphics/icons/blanket-chassi.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--BLANKET
+local blanket= {
+    type = "recipe",
+    name = "blanket",
+    category = "advanced-crafting",
+    enabled = "false",
+    energy_required = 40,
+    ingredients ={
+		{type="item", name="blanket-chassi", amount=2},
+		{type="item", name="boron-carbide", amount=10},
+		{type="item", name="diamond", amount=50},
+		--add bobs lithium and lead
+    },
+    results=
+    {
+        {type="item", name="blanket", amount=1},
+    },
+    main_product= "blanket",
+    icon = "__pyfusionenergy__/graphics/icons/blanket.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--DIVERTOR
+local divertor= {
+    type = "recipe",
+    name = "divertor",
+    category = "crafting",
+    enabled = "false",
+    energy_required = 10,
+    ingredients ={
+		{type="item", name="steel-plate", amount=20},
+		{type="item", name="diamond", amount=10},
+		{type="item", name="super-alloy", amount=10},
+		--add bobs tungstein
+    },
+    results=
+    {
+        {type="item", name="divertor", amount=2},
+    },
+    main_product= "divertor",
+    icon = "__pyfusionenergy__/graphics/icons/divertor.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--WALL SHIELD
+local wall_shield= {
+    type = "recipe",
+    name = "wall-shield",
+    category = "advanced-foundry",
+    enabled = "false",
+    energy_required = 7,
+    ingredients ={
+		{type="item", name="steel-plate", amount=20},
+		{type="item", name="diamond", amount=5},
+		{type="item", name="super-alloy", amount=6},
+		{type="item", name="boron-carbide", amount=10},
+		{type="item", name="ferrite", amount=15},
+    },
+    results=
+    {
+        {type="item", name="wall-shield", amount=2},
+    },
+    main_product= "wall-shield",
+    icon = "__pyfusionenergy__/graphics/icons/wall-shield.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--DEUTERIUM FUSION
+local deuterium_fusion= {
+    type = "recipe",
+    name = "deuterium-fusion",
+    category = "fusion-01",
+    enabled = "false",
+    energy_required = 40,
+    ingredients ={
+		{type="fluid", name="deuterium", amount=50},
+		{type="fluid", name="pressured-water", amount=4000},
+		{type="item", name="blanket", amount=2},
+		{type="item", name="divertor", amount=5},
+		{type="item", name="wall-shield", amount=15},
+		{type="item", name="sc-unit", amount=20},
+		{type="fluid", name="liquid-helium", amount=30},
+		{type="fluid", name="water", amount=2000},
 
+    },
+    results=
+    {
+        {type="fluid", name="critical-steam", amount=4000, temperature=1000},
+		{type="fluid", name="helium", amount=150},
+		{type="fluid", name="tritium", amount=20},
+		{type="fluid", name="helium3", amount=30},
+		{type="fluid", name="steam", amount=2000},
+    },
+    --main_product= "blanket",
+    icon = "__pyfusionenergy__/graphics/icons/fusion-deuterium.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--HEAT EXCHANGER
+local steam_exchange= {
+    type = "recipe",
+    name = "steam-exchange",
+    category = "heat-exchanger",
+    enabled = "false",
+    energy_required = 15,
+    ingredients ={
+		{type="fluid", name="critical-steam", amount=250, temperature=1000},
+		{type="fluid", name="water", amount=250},
+
+    },
+    results=
+    {
+        {type="fluid", name="pressured-steam", amount=500, temperature=1000},
+		{type="fluid", name="steam", amount=250},
+    },
+    --main_product= "blanket",
+    icon = "__pyfusionenergy__/graphics/icons/steam-exchange.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
 ------------------------------------------------------------------------------
 data:extend{
     crushing_molybdenite,
@@ -963,7 +1547,33 @@ data:extend{
 	crush_regolite,
 	recrush_regolite,
 	milling_regolite,
-	regolite_calcination
+	regolite_calcination,
+	liquid_petgas,
+	liquid_petgas_separation,
+	gas_stream_filtration,
+	liquid_rich_gas_distilation,
+	helium,
+	nexelit_matrix,
+	nbti_alloy,
+	nenbit_matrix,
+	sc_wire,
+	ferrite,
+	coil_core,
+	sc_coil,
+	magnetic_core,
+	deposited_core,
+	sc_unit,
+	d2o_distilation,
+	b2o3_milling,
+	boron_mixture,
+	boron,
+	boron_carbide,
+	blanket_chassi,
+	blanket,
+	deuterium_fusion,
+	divertor,
+	wall_shield,
+	steam_exchange
 }
 
 -------------------------------------------------------------------------------

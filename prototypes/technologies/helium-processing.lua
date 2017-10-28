@@ -57,6 +57,10 @@ local technology = {
         },
 		{
             type = "unlock-recipe",
+            recipe = "gas-separator"
+        },
+		{
+            type = "unlock-recipe",
             recipe = "serine"
         },
 		{
@@ -71,6 +75,47 @@ local technology = {
             type = "unlock-recipe",
             recipe = "high-purified-gas"
         },
+		{
+            type = "unlock-recipe",
+            recipe = "liquid-petgas"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "liquid-petgas-separation"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "gas-stream-filtration"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "rich-gas"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "liquid-rich-gas"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "liquid-rich-gas-distilation"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "purier-helium"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "helium"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "liquid-helium"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "evaporate-helium"
+        },
+		
     },
     unit =
     {
