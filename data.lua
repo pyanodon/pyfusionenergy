@@ -111,6 +111,7 @@ require("prototypes.buildings.gas-separator")
 require("prototypes.buildings.nmf")
 require("prototypes.buildings.fusion-reactor-mk01")
 require("prototypes.buildings.heat-exchanger")
+require("prototypes.buildings.py-turbine")
 
 --ores
 require("prototypes.ore.molybdenum")

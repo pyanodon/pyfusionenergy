@@ -1482,20 +1482,20 @@ local deuterium_fusion= {
 }
 -------------------------------------------------------------------------------
 --HEAT EXCHANGER
-local steam_exchange= {
+local steam_exchange1= {
     type = "recipe",
-    name = "steam-exchange",
+    name = "steam-exchange1",
     category = "heat-exchanger",
     enabled = "false",
     energy_required = 15,
     ingredients ={
-		{type="fluid", name="critical-steam", amount=250, temperature=1000},
+		{type="fluid", name="critical-steam", amount=500, temperature=1000},
 		{type="fluid", name="water", amount=250},
 
     },
     results=
     {
-        {type="fluid", name="pressured-steam", amount=500, temperature=1000},
+        {type="fluid", name="pressured-steam", amount=1000, temperature=1000},
 		{type="fluid", name="steam", amount=250},
     },
     --main_product= "blanket",
@@ -1573,7 +1573,7 @@ data:extend{
 	deuterium_fusion,
 	divertor,
 	wall_shield,
-	steam_exchange
+	steam_exchange1
 }
 
 -------------------------------------------------------------------------------

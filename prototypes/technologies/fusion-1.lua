@@ -37,6 +37,10 @@ local technology = {
         },
 		{
             type = "unlock-recipe",
+            recipe = "py-turbine"
+        },
+		{
+            type = "unlock-recipe",
             recipe = "nexelit-matrix"
         },
 		{
@@ -125,7 +129,7 @@ local technology = {
         },
 		{
             type = "unlock-recipe",
-            recipe = "steam-exchange"
+            recipe = "steam-exchange1"
         },
 
     },
