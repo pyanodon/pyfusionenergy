@@ -101,7 +101,7 @@ local entity1={
         height = 178,
         frame_count = 40,
         line_length = 10,
-        shift = {-0.1, -0.0},
+        shift = {0.1, -0.0},
     },
     vertical_animation =
     {
@@ -110,7 +110,7 @@ local entity1={
         height = 178,
         frame_count = 40,
         line_length = 10,
-        shift = {-0.1, -0.0},
+        shift = {0.1, -0.0},
     },
 
     smoke =
