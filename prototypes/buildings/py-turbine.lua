@@ -1,25 +1,5 @@
 local Prototype = require("stdlib.prototype.prototype")
 
-local pipe_pictures = function(shift_south)
-    local north, south, east, west
-    if shift_south then
-        south =
-        {
-            filename = "__pyfusionenergy__/graphics/entity/py-turbine/bottom.png",
-            priority = "extra-high",
-            width = 40,
-            height = 32,
-            shift = shift_south
-        }
-    else
-        south = Prototype.empty_sprite()
-    end
-        west = Prototype.empty_sprite()
-        north = Prototype.empty_sprite()
-        east = Prototype.empty_sprite()
-    return {north=north, south=south, west=west, east=east}
-end
-
 -------------------------------------------------------------------------------
 --[[Recipes]]--
 local recipe1={
@@ -79,7 +59,7 @@ local entity1={
         base_area = 1,
         base_level = -1,
         pipe_covers = Prototype.Pipes.covers(false, true, true, true),
-		pipe_picture = pipe_pictures({0, 3}),
+		--pipe_picture = pipe_pictures({0, 3}),
         production_type = "input-output",
         pipe_connections =
         {
