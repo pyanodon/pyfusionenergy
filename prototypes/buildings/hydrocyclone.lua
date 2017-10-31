@@ -9,7 +9,7 @@ local recipe1={
     enabled = false,
     ingredients =
     {
-        {"niobium-pipe", 30},
+        {"pipe", 30}, --pyindustry niobium-pipe
         {"centrifuge", 1},
         {"iron-plate", 30},
         {"steel-plate", 30},

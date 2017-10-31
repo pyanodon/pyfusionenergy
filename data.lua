@@ -20,6 +20,10 @@ require("prototypes.technologies.molybdenum-processing")
 require("prototypes.technologies.vanadium-processing")
 require("prototypes.technologies.helium-processing")
 
+--ores
+require("prototypes.ore.molybdenum")
+require("prototypes.ore.volcanic-pipe")
+require("prototypes.ore.regolites")
 
 --Recipes without items
 require("prototypes.recipes.recipes")
@@ -112,9 +116,3 @@ require("prototypes.buildings.nmf")
 require("prototypes.buildings.fusion-reactor-mk01")
 require("prototypes.buildings.heat-exchanger")
 require("prototypes.buildings.py-turbine")
-
---ores
-require("prototypes.ore.molybdenum")
-require("prototypes.ore.volcanic-pipe")
-require("prototypes.ore.regolites")
-

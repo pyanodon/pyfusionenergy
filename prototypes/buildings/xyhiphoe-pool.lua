@@ -13,7 +13,7 @@ local recipe1={
         {"pump", 4},
         {"advanced-circuit", 20}, --updated-bob electronic-circuit-board
         {"steel-plate", 40},
-        {"niobium-pipe", 10}, --updated-bob brass plate
+        {"pipe", 10},
 
     },
     result= "xyhiphoe-pool",

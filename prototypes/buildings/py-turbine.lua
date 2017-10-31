@@ -1,14 +1,14 @@
 local Prototype = require("stdlib.prototype.prototype")
 
-local pipe_pictures = function(shift_north, shift_south, shift_west, shift_east)
+local pipe_pictures = function(shift_south)
     local north, south, east, west
     if shift_south then
         south =
         {
             filename = "__pyfusionenergy__/graphics/entity/py-turbine/bottom.png",
             priority = "extra-high",
-            width = 170,
-            height = 178,
+            width = 40,
+            height = 32,
             shift = shift_south
         }
     else
@@ -30,10 +30,9 @@ local recipe1={
     ingredients =
     {
         {"gasturbinemk03", 2},
-        {"niobium-pipe", 20},
+        {"pipe", 20}, --pyindustry niobium-pipe
     },
     result= "py-turbine",
-    --icon = "__pyfusionenergy__/graphics/icons/py-turbine.png",
 }
 -------------------------------------------------------------------------------
 --[[Items]]--
@@ -69,16 +68,18 @@ local entity1={
     },
     collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
-    fluid_input = {
+    fluid_input = { --Not needed for .16
         name = "pressured-steam",
         amount = 0.0,
         minimum_temperature = 1000.0
     },
     fluid_box ={
+        filter = "pressured-steam",
+        minimum_temperature = 1000,
         base_area = 1,
         base_level = -1,
         pipe_covers = Prototype.Pipes.covers(false, true, true, true),
-		pipe_picture=pipe_pictures({0,0}, {0,0}, {0,0}, {0,0}),
+		pipe_picture = pipe_pictures({0, 3}),
         production_type = "input-output",
         pipe_connections =
         {
@@ -101,7 +102,7 @@ local entity1={
         height = 178,
         frame_count = 40,
         line_length = 10,
-        shift = {-0.1, -0.0},
+        shift = {0.1, -0.0},
     },
     vertical_animation =
     {
@@ -110,7 +111,7 @@ local entity1={
         height = 178,
         frame_count = 40,
         line_length = 10,
-        shift = {-0.1, -0.0},
+        shift = {0.1, -0.0},
     },
 
     smoke =

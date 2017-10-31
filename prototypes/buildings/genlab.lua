@@ -19,7 +19,7 @@ local recipe1={
     enabled = false,
     ingredients =
     {
-        {"niobium-pipe", 10},
+        {"pipe", 10}, --pyindustry niobium-pipe
         {"assembling-machine-3", 2},
 		{"gasifier", 2},
         {"nexelit-plate", 30},
@@ -134,7 +134,7 @@ local entity1={
             }
         },
     },
-	
+
     fluid_boxes =
     {
         {
