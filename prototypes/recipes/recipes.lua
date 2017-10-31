@@ -1038,7 +1038,7 @@ local nexelit_matrix= {
 		{type="fluid", name="boric-acid", amount=150},
 		{type="fluid", name="vacuum", amount=100},
 		{type="item", name="nexelit-plate", amount=4},
-		{type="item", name="wooden-plate", amount=3}, --bobs resin
+		{type="item", name="wood", amount=3}, --bobs resin
     },
     results=
     {
@@ -1101,7 +1101,7 @@ local ferrite= {
     enabled = "false",
     energy_required = 4,
     ingredients ={
-		{type="item", name="iron-oxide", amount=20}, 
+		{type="item", name="iron-oxide", amount=20},
 		{type="item", name="nichrome", amount=3},
 		--add zinc plate
     },
@@ -1123,7 +1123,7 @@ local coil_core= {
     enabled = "false",
     energy_required = 4,
     ingredients ={
-		{type="item", name="ferrite", amount=4}, 
+		{type="item", name="ferrite", amount=4},
 		{type="item", name="copper-cable", amount=40}, --bobs gilded copper cable
     },
     results=

@@ -9,8 +9,8 @@ local recipe1={
     enabled = false,
     ingredients =
     {
-        {"py-tank-8000", 1},
-        {"py-asphalt", 20},
+        {"storage-tank", 1},
+        {"stone-brick", 20},
         {"electronic-circuit", 5}, --updated-bob basic-electronic-circuit-board
         {"steel-plate", 50},
         {"niobium-plate", 15},

@@ -9,7 +9,7 @@ local recipe1={
     enabled = false,
     ingredients =
     {
-        {"niobium-pipe", 10},
+        {"pipe", 10}, --pyindustry niobium-pipe
         {"assembling-machine-3", 2},
 		{"gasifier", 2},
         {"nexelit-plate", 30},
@@ -238,7 +238,7 @@ local entity1={
 			}
 		},
 	},
-	
+
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound =
     {

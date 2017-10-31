@@ -24,7 +24,7 @@ local recipe1={
         {"fast-transport-belt", 35},
         {"advanced-circuit", 40},
         {"steel-plate", 50},
-        {"niobium-pipe", 15},
+        {"pipe", 15}, --pyindustry niobium-pipe
 		--add glass
 
     },

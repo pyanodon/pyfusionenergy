@@ -9,7 +9,7 @@ local recipe1={
     enabled = false,
     ingredients =
     {
-        {"py-tank-8000", 1},
+        {"storage-tank", 1}, --pyindustry py-tank-8000
         {"chemical-plant", 2},
         {"iron-plate", 30}, --updated-bob titanium-plate
         {"steel-plate", 50},
