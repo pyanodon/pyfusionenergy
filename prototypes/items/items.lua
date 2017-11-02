@@ -489,6 +489,56 @@ local wall_shield ={
     order = "m",
     stack_size = 200
 }
+--LEAD-CONTAINER
+local lead_container ={
+    type = "item",
+    name = "lead-container",
+    icon = "__pyfusionenergy__/graphics/icons/lead-container.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--SCIENCE COATING
+local science_coating ={
+    type = "item",
+    name = "science-coating",
+    icon = "__pyfusionenergy__/graphics/icons/science-coating.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--COATED-CONTAINER
+local coated_container ={
+    type = "item",
+    name = "coated-container",
+    icon = "__pyfusionenergy__/graphics/icons/coated-container.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--NUCLEAR SAMPLE
+local nuclear_sample ={
+    type = "item",
+    name = "nuclear-sample",
+    icon = "__pyfusionenergy__/graphics/icons/nuclear-sample.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
+--CONTROL UNIT
+local control_unit ={
+    type = "item",
+    name = "control-unit",
+    icon = "__pyfusionenergy__/graphics/icons/control-unit.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
  -------------------------------------------------------------------------------
 data:extend(
     {
@@ -539,6 +589,11 @@ data:extend(
 		blanket_chassi,
 		blanket,
 		divertor,
-		wall_shield
+		wall_shield,
+		lead_container,
+		science_coating,
+		coated_container,
+		nuclear_sample,
+		control_unit
     }
 )

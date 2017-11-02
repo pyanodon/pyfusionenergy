@@ -1503,6 +1503,137 @@ local steam_exchange1= {
     subgroup = "py-fusion-items",
     order = "e",
 }
+-------------------------------------------------------------------------------
+--LEAD CONTAINER
+local lead_container= {
+    type = "recipe",
+    name = "lead-container",
+    category = "crafting",
+    enabled = "false",
+    energy_required = 7,
+    ingredients ={
+		{type="item", name="iron-plate", amount=20}, --bob lead plate
+		{type="item", name="nbfe-alloy", amount=10},
+    },
+    results=
+    {
+        {type="item", name="lead-container", amount=1},
+    },
+    main_product= "lead-container",
+    icon = "__pyfusionenergy__/graphics/icons/lead-container.png",
+    subgroup = "py-fusion-items",
+    order = "f",
+}
+-------------------------------------------------------------------------------
+--SCIENCE COATING
+local science_coating= {
+    type = "recipe",
+    name = "science-coating",
+    category = "advanced-crafting",
+    enabled = "false",
+    energy_required = 10,
+    ingredients ={
+		{type="item", name="diamond", amount=10},
+		{type="item", name="niobium-pipe", amount=1},
+		{type="item", name="molybdenum-plate", amount=1},
+    },
+    results=
+    {
+        {type="item", name="science-coating", amount=1},
+    },
+    main_product= "science-coating",
+    icon = "__pyfusionenergy__/graphics/icons/science-coating.png",
+    subgroup = "py-fusion-items",
+    order = "f",
+}
+-------------------------------------------------------------------------------
+--COATED CONTAINER
+local coated_container= {
+    type = "recipe",
+    name = "coated-container",
+    category = "advanced-crafting",
+    enabled = "false",
+    energy_required = 5,
+    ingredients ={
+		{type="item", name="lead-container", amount=2},
+		{type="item", name="science-coating", amount=1},
+    },
+    results=
+    {
+        {type="item", name="coated-container", amount=1},
+    },
+    main_product= "coated-container",
+    icon = "__pyfusionenergy__/graphics/icons/coated-container.png",
+    subgroup = "py-fusion-items",
+    order = "f",
+}
+-------------------------------------------------------------------------------
+--NUCLEAR SAMPLE
+local nuclear_sample= {
+    type = "recipe",
+    name = "nuclear-sample",
+    category = "mixer",
+    enabled = "false",
+    energy_required = 5,
+    ingredients ={
+		{type="item", name="uranium-ore", amount=20},
+		{type="item", name="science-pack-1", amount=1},
+		{type="fluid", name="boric-acid", amount=100},
+		{type="fluid", name="industrial-solvent", amount=100},
+		{type="fluid", name="aromatics", amount=50},
+    },
+    results=
+    {
+        {type="item", name="nuclear-sample", amount=1},
+    },
+    main_product= "nuclear-sample",
+    icon = "__pyfusionenergy__/graphics/icons/nuclear-sample.png",
+    subgroup = "py-fusion-items",
+    order = "f",
+}
+-------------------------------------------------------------------------------
+--CONTROL UNIT
+local control_unit= {
+    type = "recipe",
+    name = "control-unit",
+    category = "crafting",
+    enabled = "false",
+    energy_required = 5,
+    ingredients ={
+		{type="item", name="advanced-circuit", amount=10},
+		{type="item", name="nexelit-cartridge", amount=1},
+		{type="item", name="nenbit-matrix", amount=5},
+		{type="item", name="fuelrod-mk01", amount=2},
+    },
+    results=
+    {
+        {type="item", name="control-unit", amount=1},
+    },
+    main_product= "control-unit",
+    icon = "__pyfusionenergy__/graphics/icons/control-unit.png",
+    subgroup = "py-fusion-items",
+    order = "f",
+}
+-------------------------------------------------------------------------------
+--PRODUCTION SCIENCE PACK "should overlay the vanilla one"
+local productionscience_pack ={
+    type = "recipe",
+    name = "production-science-pack",
+    category = "advanced-crafting",
+    enabled = "true",
+    energy_required = 4,
+    ingredients ={
+        {type="item", name="control-unit", amount=1},
+        {type="item", name="coated-container", amount=1},
+		{type="item", name="nuclear-sample", amount=2},
+    },
+    results={
+        {type="item", name="production-science-pack", amount=2},
+    },
+    icon = "__pyfusionenergy__/graphics/icons/production-science-pack.png",
+    subgroup = "py-fusion-items",
+    order = "x",
+}
 ------------------------------------------------------------------------------
 data:extend{
     crushing_molybdenite,
@@ -1573,7 +1704,13 @@ data:extend{
 	deuterium_fusion,
 	divertor,
 	wall_shield,
-	steam_exchange1
+	steam_exchange1,
+	lead_container,
+	science_coating,
+	coated_container,
+	nuclear_sample,
+	control_unit,
+	productionscience_pack
 }
 
 -------------------------------------------------------------------------------

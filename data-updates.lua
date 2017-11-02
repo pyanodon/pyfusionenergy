@@ -12,3 +12,7 @@ end
 if angelsmods then
     require("prototypes.updates.angel-updates")
 end
+
+
+--production science pack override
+data.raw.tool["production-science-pack"].icon = "__pyfusionenergy__/graphics/icons/production-science-pack.png"
