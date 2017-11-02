@@ -77,21 +77,21 @@ local entity1={
     --scale=1.75,
     horizontal_animation =
     {
-        filename = "__pyfusionenergy__/graphics/entity/py-turbine/py-turbine.png",
+        filename = "__pyfusionenergy__/graphics/entity/py-turbine/py-turbine-horizontal.png",
         width = 170,
         height = 178,
         frame_count = 40,
         line_length = 10,
-        shift = {0.1, -0.0},
+        shift = {0.05, -0.0},
     },
     vertical_animation =
     {
-        filename = "__pyfusionenergy__/graphics/entity/py-turbine/py-turbine.png",
+        filename = "__pyfusionenergy__/graphics/entity/py-turbine/py-turbine-vertical.png",
         width = 170,
         height = 178,
         frame_count = 40,
         line_length = 10,
-        shift = {0.1, -0.0},
+        shift = {0.05, -0.0},
     },
 
     smoke =
