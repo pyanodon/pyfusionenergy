@@ -35,6 +35,31 @@ local technology = {
             type = "unlock-recipe",
             recipe = "automated-screener"
         },
+		{
+            type = "unlock-recipe",
+            recipe = "nmf"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "nuclear-sample"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "nexelit-matrix"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "nbti-alloy"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "nenbit-matrix"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "control-unit"
+        },
+		
     },
     unit =
     {

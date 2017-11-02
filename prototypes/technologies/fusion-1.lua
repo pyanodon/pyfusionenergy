@@ -29,27 +29,11 @@ local technology = {
         },
 		{
             type = "unlock-recipe",
-            recipe = "nmf"
-        },
-		{
-            type = "unlock-recipe",
             recipe = "py-heat-exchanger"
         },
 		{
             type = "unlock-recipe",
             recipe = "py-turbine"
-        },
-		{
-            type = "unlock-recipe",
-            recipe = "nexelit-matrix"
-        },
-		{
-            type = "unlock-recipe",
-            recipe = "nbti-alloy"
-        },
-		{
-            type = "unlock-recipe",
-            recipe = "nenbit-matrix"
         },
 		{
             type = "unlock-recipe",
