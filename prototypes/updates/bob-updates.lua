@@ -104,6 +104,7 @@ add_ing("blanket", {type="item", name="lithium-plate", amount=10})
 add_ing("blanket", {type="item", name="lead-plate", amount=40})
 add_ing("blanket", {type="item", name="tungsten-plate", amount=40})
 replace_ing("lead-container", "iron-plate", "lead-plate")
+replace_ing("science-coating", "steel-plate", "titanium-plate")
 
 -------------------------------------------------------------------------------
 --[[Tech]]--

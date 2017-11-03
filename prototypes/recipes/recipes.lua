@@ -1535,7 +1535,7 @@ local science_coating= {
     ingredients ={
 		{type="item", name="diamond", amount=10},
 		{type="item", name="niobium-pipe", amount=1},
-		{type="item", name="molybdenum-plate", amount=1},
+		{type="item", name="steel-plate", amount=10}, --bobs titanium plate
     },
     results=
     {
