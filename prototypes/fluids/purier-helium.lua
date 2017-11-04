@@ -12,6 +12,7 @@ local purier_helium= {
     ingredients ={
         {type="fluid", name="helium-rich-gas", amount=3},
 		{type="fluid", name="water", amount=100},
+		{type="fluid", name="gasoline", amount=5},
     },
     results=
     {

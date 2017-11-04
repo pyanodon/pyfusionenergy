@@ -11,6 +11,7 @@ local liquid_helium= {
     ingredients ={
 		{type="fluid", name="helium", amount=20},
 		{type="fluid", name="water", amount=600},
+		{type="fluid", name="gasoline", amount=5},
     },
     results=
     {

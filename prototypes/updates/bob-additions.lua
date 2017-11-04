@@ -13,6 +13,7 @@ local liquid_nitrogen= {
     ingredients ={
 		{type="fluid", name="nitrogen", amount=50},
 		{type="fluid", name="water", amount=100},
+		{type="fluid", name="gasoline", amount=5},
     },
     results=
     {
