@@ -99,11 +99,18 @@ local entity1={
             pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {-0.0,-0.95}, nil, nil),
             pipe_covers = Prototype.Pipes.covers(true, true, true, true),
             base_level = 1,
-            pipe_connections = {{ type="output", position = {0.0, -4.0} }},
+            pipe_connections = {{ type="output", position = {1.0, -4.0} }},
 			priority = "extra-high"
         },
-
-
+        --North2
+        {
+            production_type = "output",
+            pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {-0.0,-0.95}, nil, nil),
+            pipe_covers = Prototype.Pipes.covers(true, true, true, true),
+            base_level = 1,
+            pipe_connections = {{ type="output", position = {-1.0, -4.0} }},
+			priority = "extra-high"
+        },
         --South
         {
             production_type = "input",
@@ -111,7 +118,17 @@ local entity1={
             pipe_covers = Prototype.Pipes.covers(true, true, true, true),
             base_area = 10,
             base_level = -1,
-            pipe_connections = {{ type="input", position = {0.0, 4.0} }},
+            pipe_connections = {{ type="input", position = {1.0, 4.0} }},
+			priority = "extra-high"
+        },
+        --South2
+        {
+            production_type = "input",
+            pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {-0.00,-0.95}, nil, nil),
+            pipe_covers = Prototype.Pipes.covers(true, true, true, true),
+            base_area = 10,
+            base_level = -1,
+            pipe_connections = {{ type="input", position = {-1.0, 4.0} }},
 			priority = "extra-high"
         },
 
@@ -120,7 +137,7 @@ local entity1={
     vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
     working_sound =
     {
-        sound = { filename = "__pyfusionenergy__/sounds/bio-reactor.ogg", volume = 0.75 },
+        sound = { filename = "__pyfusionenergy__/sounds/bio-reactor.ogg", volume = 1.2 },
         idle_sound = { filename = "__pyfusionenergy__/sounds/bio-reactor.ogg", volume = 0.55 },
         apparent_volume = 2.5,
     },

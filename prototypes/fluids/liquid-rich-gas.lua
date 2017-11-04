@@ -12,6 +12,7 @@ local liquid_rich_gas= {
     ingredients ={
         {type="fluid", name="rich-gas", amount=4},
 		{type="fluid", name="water", amount=100},
+		{type="fluid", name="gasoline", amount=5},
     },
     results=
     {

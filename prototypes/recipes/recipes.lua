@@ -929,6 +929,7 @@ local liquid_petgas= {
     ingredients ={
 		{type="fluid", name="petroleum-gas", amount=5},
 		{type="fluid", name="water", amount=100},
+		{type="fluid", name="gasoline", amount=5},
     },
     results=
     {
