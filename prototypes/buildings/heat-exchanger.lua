@@ -25,8 +25,8 @@ local item1={
     name = "py-heat-exchanger",
     icon = "__pyfusionenergy__/graphics/icons/heat-exchanger.png",
     flags = {"goes-to-quickbar"},
-    subgroup = "py-fusion-buildings",
-    order = "g",
+    subgroup = "py-fusion-reactors",
+    order = "z",
     place_result = "py-heat-exchanger",
     stack_size = 10,
 }

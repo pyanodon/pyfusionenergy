@@ -14,6 +14,7 @@ require("prototypes.recipe-categories")
 --Technologies
 require("prototypes.technologies.advanced-mining-facilities")
 require("prototypes.technologies.fusion-1")
+require("prototypes.technologies.fusion-2")
 require("prototypes.technologies.diamond-mining")
 require("prototypes.technologies.regolite-mining")
 require("prototypes.technologies.molybdenum-processing")
