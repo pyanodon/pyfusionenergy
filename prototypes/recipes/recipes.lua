@@ -1442,7 +1442,7 @@ local wall_shield= {
     },
     results=
     {
-        {type="item", name="wall-shield", amount=2},
+        {type="item", name="wall-shield", amount=5},
     },
     main_product= "wall-shield",
     icon = "__pyfusionenergy__/graphics/icons/wall-shield.png",
