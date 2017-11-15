@@ -157,7 +157,7 @@ local xyhiphoe_blood ={
     ingredients ={
         {type="fluid", name="pressured-water", amount=500},
         {type="fluid", name="phytoplankton", amount=30},
-		{type="item", name="tailings-dust", amount=100},
+		{type="item", name="tailings-dust", amount=50},
     },
     results={
 		{type="fluid", name="xyhiphoe-blood", amount=20},
