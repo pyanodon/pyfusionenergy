@@ -22,7 +22,7 @@ local item1={
     icon = "__pyfusionenergy__/graphics/icons/py-turbine.png",
     flags = {"goes-to-quickbar"},
     subgroup = "py-fusion-reactors",
-    order = "b",
+    order = "x",
     place_result = "py-turbine",
     stack_size = 10,
 }

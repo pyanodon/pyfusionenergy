@@ -1450,6 +1450,28 @@ local wall_shield= {
     order = "e",
 }
 -------------------------------------------------------------------------------
+--REINFORCED WALL SHIELD
+local rwall_shield= {
+    type = "recipe",
+    name = "reinforced-wall-shield",
+    category = "advanced-foundry",
+    enabled = "false",
+    energy_required = 7,
+    ingredients ={
+		{type="item", name="wall-shield", amount=1},
+		{type="item", name="diamond", amount=1},
+		{type="fluid", name="refsyngas", amount=100},
+    },
+    results=
+    {
+        {type="item", name="reinforced-wall-shield", amount=1},
+    },
+    main_product= "reinforced-wall-shield",
+    icon = "__pyfusionenergy__/graphics/icons/rwall-shield.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
 --DEUTERIUM FUSION
 local deuterium_fusion= {
     type = "recipe",
@@ -1482,7 +1504,40 @@ local deuterium_fusion= {
     order = "e",
 }
 -------------------------------------------------------------------------------
---HEAT EXCHANGER
+--DEUTERIUM TRITIUM FUSION
+local dt_fusion= {
+    type = "recipe",
+    name = "dt-fusion",
+    category = "fusion-01",
+    enabled = "false",
+    energy_required = 40,
+    ingredients ={
+		{type="fluid", name="deuterium", amount=40},
+		{type="fluid", name="tritium", amount=20},
+		{type="fluid", name="pressured-water", amount=4500},
+		{type="item", name="blanket", amount=2},
+		{type="item", name="divertor", amount=5},
+		{type="item", name="reinforced-wall-shield", amount=15},
+		{type="item", name="sc-unit", amount=20},
+		{type="fluid", name="liquid-helium", amount=30},
+		{type="fluid", name="water", amount=3500},
+
+    },
+    results=
+    {
+        {type="fluid", name="critical-steam", amount=4000, temperature=1500},
+		{type="fluid", name="helium", amount=200},
+		{type="fluid", name="tritium", amount=5},
+		{type="fluid", name="steam", amount=3500},
+    },
+    --main_product= "blanket",
+    icon = "__pyfusionenergy__/graphics/icons/fusion-dt.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+
+-------------------------------------------------------------------------------
+--STEAM EXCHANGE 1
 local steam_exchange1= {
     type = "recipe",
     name = "steam-exchange1",
@@ -1501,6 +1556,29 @@ local steam_exchange1= {
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/steam-exchange.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--STEAM EXCHANGE 2
+local steam_exchange2= {
+    type = "recipe",
+    name = "steam-exchange2",
+    category = "heat-exchanger",
+    enabled = "false",
+    energy_required = 15,
+    ingredients ={
+		{type="fluid", name="critical-steam", amount=500, temperature=1500},
+		{type="fluid", name="water", amount=250},
+
+    },
+    results=
+    {
+        {type="fluid", name="pressured-steam", amount=1000, temperature=1500},
+		{type="fluid", name="steam", amount=250},
+    },
+    --main_product= "blanket",
+    icon = "__pyfusionenergy__/graphics/icons/steam-exchange2.png",
     subgroup = "py-fusion-items",
     order = "e",
 }
@@ -1703,9 +1781,12 @@ data:extend{
 	blanket_chassi,
 	blanket,
 	deuterium_fusion,
+	dt_fusion,
 	divertor,
 	wall_shield,
+	rwall_shield,
 	steam_exchange1,
+	steam_exchange2,
 	lead_container,
 	science_coating,
 	coated_container,

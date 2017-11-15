@@ -489,6 +489,16 @@ local wall_shield ={
     order = "m",
     stack_size = 200
 }
+--REINFORCED WALL SHIELD
+local rwall_shield ={
+    type = "item",
+    name = "reinforced-wall-shield",
+    icon = "__pyfusionenergy__/graphics/icons/rwall-shield.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 200
+}
 --LEAD-CONTAINER
 local lead_container ={
     type = "item",
@@ -590,6 +600,7 @@ data:extend(
 		blanket,
 		divertor,
 		wall_shield,
+		rwall_shield,
 		lead_container,
 		science_coating,
 		coated_container,
