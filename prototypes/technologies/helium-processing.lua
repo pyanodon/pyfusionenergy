@@ -115,7 +115,6 @@ local technology = {
             type = "unlock-recipe",
             recipe = "evaporate-helium"
         },
-		
     },
     unit =
     {

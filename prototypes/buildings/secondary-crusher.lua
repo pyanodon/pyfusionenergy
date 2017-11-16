@@ -1,5 +1,3 @@
-local Prototype = require("stdlib.prototype.prototype")
-
 -------------------------------------------------------------------------------
 --[[Recipes]]--
 local recipe1={
