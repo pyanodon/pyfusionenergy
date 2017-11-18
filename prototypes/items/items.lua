@@ -549,6 +549,26 @@ local control_unit ={
     order = "m",
     stack_size = 200
 }
+--AGZN-ALLOY
+local agzn_alloy ={
+    type = "item",
+    name = "agzn-alloy",
+    icon = "__pyfusionenergy__/graphics/icons/agzn-alloy.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 100
+}
+--SILVER FOAM
+local silver_foam ={
+    type = "item",
+    name = "silver-foam",
+    icon = "__pyfusionenergy__/graphics/icons/silver-foam.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "py-fusion-items",
+    order = "m",
+    stack_size = 100
+}
  -------------------------------------------------------------------------------
 data:extend(
     {
@@ -605,6 +625,8 @@ data:extend(
 		science_coating,
 		coated_container,
 		nuclear_sample,
-		control_unit
+		control_unit,
+		agzn_alloy,
+		silver_foam
     }
 )
