@@ -1484,7 +1484,7 @@ local deuterium_fusion= {
 		{type="fluid", name="pressured-water", amount=4000},
 		{type="item", name="blanket", amount=2},
 		{type="item", name="divertor", amount=5},
-		{type="item", name="wall-shield", amount=15},
+		{type="item", name="wall-shield", amount=10},
 		{type="item", name="sc-unit", amount=20},
 		{type="fluid", name="liquid-helium", amount=30},
 		{type="fluid", name="water", amount=2000},
@@ -1504,6 +1504,38 @@ local deuterium_fusion= {
     order = "e",
 }
 -------------------------------------------------------------------------------
+--DEUTERIUM HELIUM3 FUSION
+local dt_he3= {
+    type = "recipe",
+    name = "dt-he3",
+    category = "fusion-01",
+    enabled = "false",
+    energy_required = 40,
+    ingredients ={
+		{type="fluid", name="deuterium", amount=40},
+		{type="fluid", name="helium3", amount=90},
+		{type="fluid", name="pressured-water", amount=4000},
+		{type="item", name="blanket", amount=2},
+		{type="item", name="divertor", amount=5},
+		{type="item", name="reinforced-wall-shield", amount=10},
+		{type="item", name="sc-unit", amount=20},
+		{type="fluid", name="liquid-helium", amount=35},
+		{type="fluid", name="water", amount=5000},
+
+    },
+    results=
+    {
+        {type="fluid", name="critical-steam", amount=4000, temperature=3000},
+		{type="fluid", name="helium", amount=175},
+		{type="fluid", name="proton", amount=15},
+		{type="fluid", name="steam", amount=5000},
+    },
+    --main_product= "blanket",
+    icon = "__pyfusionenergy__/graphics/icons/fusion-he3.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
 --DEUTERIUM TRITIUM FUSION
 local dt_fusion= {
     type = "recipe",
@@ -1517,7 +1549,7 @@ local dt_fusion= {
 		{type="fluid", name="pressured-water", amount=4500},
 		{type="item", name="blanket", amount=2},
 		{type="item", name="divertor", amount=5},
-		{type="item", name="reinforced-wall-shield", amount=15},
+		{type="item", name="reinforced-wall-shield", amount=10},
 		{type="item", name="sc-unit", amount=20},
 		{type="fluid", name="liquid-helium", amount=30},
 		{type="fluid", name="water", amount=3500},
@@ -1525,7 +1557,7 @@ local dt_fusion= {
     },
     results=
     {
-        {type="fluid", name="critical-steam", amount=4000, temperature=1500},
+        {type="fluid", name="critical-steam", amount=4000, temperature=2000},
 		{type="fluid", name="helium", amount=200},
 		{type="fluid", name="tritium", amount=5},
 		{type="fluid", name="steam", amount=3500},
@@ -1568,17 +1600,40 @@ local steam_exchange2= {
     enabled = "false",
     energy_required = 15,
     ingredients ={
-		{type="fluid", name="critical-steam", amount=500, temperature=1500},
+		{type="fluid", name="critical-steam", amount=500, temperature=2000},
 		{type="fluid", name="water", amount=250},
 
     },
     results=
     {
-        {type="fluid", name="pressured-steam", amount=1000, temperature=1500},
+        {type="fluid", name="pressured-steam", amount=1000, temperature=2000},
 		{type="fluid", name="steam", amount=250},
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/steam-exchange2.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--STEAM EXCHANGE 3
+local steam_exchange3= {
+    type = "recipe",
+    name = "steam-exchange3",
+    category = "heat-exchanger",
+    enabled = "false",
+    energy_required = 15,
+    ingredients ={
+		{type="fluid", name="critical-steam", amount=500, temperature=3000},
+		{type="fluid", name="water", amount=250},
+
+    },
+    results=
+    {
+        {type="fluid", name="pressured-steam", amount=1000, temperature=3000},
+		{type="fluid", name="steam", amount=250},
+    },
+    --main_product= "blanket",
+    icon = "__pyfusionenergy__/graphics/icons/steam-exchange3.png",
     subgroup = "py-fusion-items",
     order = "e",
 }
@@ -1713,6 +1768,72 @@ local productionscience_pack ={
     subgroup = "py-fusion-items",
     order = "x",
 }
+-------------------------------------------------------------------------------
+--AGZN ALLOY
+local agzn_alloy ={
+    type = "recipe",
+    name = "agzn-alloy",
+    category = "advanced-foundry",
+    enabled = "false",
+    energy_required = 5,
+    ingredients ={
+        {type="item", name="stone", amount=10}, --bobs zinc plate
+        {type="item", name="iron-plate", amount=20}, --bobs silver plate
+		{type="fluid", name="refsyngas", amount=200},
+    },
+    results={
+        {type="item", name="agzn-alloy", amount=2},
+    },
+	main_product= "agzn-alloy",
+    icon = "__pyfusionenergy__/graphics/icons/agzn-alloy.png",
+    subgroup = "py-fusion-items",
+    order = "d",
+}
+-------------------------------------------------------------------------------
+--SILVER FOAM
+local silver_foam ={
+    type = "recipe",
+    name = "silver-foam",
+    category = "rectisol",
+    enabled = "false",
+    energy_required = 10,
+    ingredients ={
+        {type="item", name="agzn-alloy", amount=1},
+        {type="item", name="limestone", amount=30},
+		{type="fluid", name="acetylene", amount=200},
+		{type="fluid", name="water", amount=200}, --bobs hydrogen-chloride
+		{type="fluid", name="hydrogen-peroxide", amount=100},
+    },
+    results={
+        {type="item", name="silver-foam", amount=1},
+    },
+	main_product= "silver-foam",
+    icon = "__pyfusionenergy__/graphics/icons/silver-foam.png",
+    subgroup = "py-fusion-items",
+    order = "dd",
+}
+-------------------------------------------------------------------------------
+--HELIUM 3 SEPARATION
+local he3_separation ={
+    type = "recipe",
+    name = "he3-separation",
+    category = "gas-separator",
+    enabled = "false",
+    energy_required = 8,
+    ingredients ={
+        {type="item", name="silver-foam", amount=1},
+		{type="fluid", name="helium", amount=10},
+		{type="item", name="niobium-plate", amount=4},
+    },
+    results={
+        {type="fluid", name="helium3", amount=8},
+		{type="fluid", name="helium", amount=2},
+    },
+	main_product= "helium3",
+    icon = "__pyfusionenergy__/graphics/icons/helium3.png",
+    subgroup = "py-fusion-items",
+    order = "dd",
+}
 ------------------------------------------------------------------------------
 data:extend{
     crushing_molybdenite,
@@ -1787,12 +1908,17 @@ data:extend{
 	rwall_shield,
 	steam_exchange1,
 	steam_exchange2,
+	steam_exchange3,
 	lead_container,
 	science_coating,
 	coated_container,
 	nuclear_sample,
 	control_unit,
-	productionscience_pack
+	productionscience_pack,
+	dt_he3,
+	agzn_alloy,
+	silver_foam,
+	he3_separation
 }
 
 -------------------------------------------------------------------------------
