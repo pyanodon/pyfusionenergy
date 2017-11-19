@@ -80,6 +80,10 @@ data:extend{
     },
     {
         type = "recipe-category",
+        name = "fusion-02",
+    },
+    {
+        type = "recipe-category",
         name = "heat-exchanger",
     },
 }

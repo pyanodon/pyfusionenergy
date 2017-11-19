@@ -315,7 +315,7 @@ local super_alloy ={
     enabled = "false",
     energy_required = 10,
     ingredients ={
-        {type="fluid", name="carbon-dioxide", amount=100}, --helium
+        {type="fluid", name="helium", amount=10},
 		{type="item", name="steel-plate", amount=50}, --bobs nickel-plate
         {type="item", name="fuelrod-mk01", amount=2},
         {type="item", name="limestone", amount=3},
@@ -326,7 +326,7 @@ local super_alloy ={
 		{type="item", name="vanadium-oxide", amount=10},
     },
     results={
-		{type="item", name="super-alloy", amount=4},
+		{type="item", name="super-alloy", amount=5},
     },
     icon = "__pyfusionenergy__/graphics/icons/super-alloy.png",
 	subgroup = "py-fusion-recipes",
@@ -1108,7 +1108,7 @@ local ferrite= {
     },
     results=
     {
-        {type="item", name="ferrite", amount=2},
+        {type="item", name="ferrite", amount=4},
     },
     main_product= "ferrite",
     icon = "__pyfusionenergy__/graphics/icons/ferrite.png",
@@ -1280,7 +1280,7 @@ local b2o3_milling= {
     },
     results=
     {
-        {type="item", name="b2o3-dust", amount=20},
+        {type="item", name="b2o3-dust", amount=40},
     },
     main_product= "b2o3-dust",
     icon = "__pyfusionenergy__/graphics/icons/boron-trioxide-dust.png",
@@ -1302,7 +1302,7 @@ local boron_mixture= {
     },
     results=
     {
-        {type="item", name="boron-mixture", amount=1},
+        {type="item", name="boron-mixture", amount=5},
     },
     main_product= "boron-mixture",
     icon = "__pyfusionenergy__/graphics/icons/boron-mixture.png",
@@ -1346,7 +1346,7 @@ local boron_carbide= {
     },
     results=
     {
-        {type="item", name="boron-carbide", amount=1},
+        {type="item", name="boron-carbide", amount=3},
 		{type="fluid", name="carbon-dioxide", amount=3},
     },
     main_product= "boron-carbide",
@@ -1567,7 +1567,37 @@ local dt_fusion= {
     subgroup = "py-fusion-items",
     order = "e",
 }
+-------------------------------------------------------------------------------
+--BORON-PROTON FUSION
+local b_h= {
+    type = "recipe",
+    name = "b-h",
+    category = "fusion-02",
+    enabled = "false",
+    energy_required = 40,
+    ingredients ={
+		{type="fluid", name="proton", amount=45},
+		{type="fluid", name="pressured-water", amount=5000},
+		{type="item", name="blanket", amount=1},
+		{type="item", name="divertor", amount=8},
+		{type="item", name="wall-shield", amount=5},
+		{type="item", name="boron", amount=30},
+		{type="item", name="production-science-pack", amount=5},
+		{type="fluid", name="liquid-helium", amount=100},
+		{type="fluid", name="water", amount=5000},
 
+    },
+    results=
+    {
+        {type="fluid", name="critical-steam", amount=4500, temperature=4000},
+		{type="fluid", name="helium", amount=500},
+		{type="fluid", name="steam", amount=5000},
+    },
+    --main_product= "blanket",
+    icon = "__pyfusionenergy__/graphics/icons/fusion-bh.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
 -------------------------------------------------------------------------------
 --STEAM EXCHANGE 1
 local steam_exchange1= {
@@ -1634,6 +1664,29 @@ local steam_exchange3= {
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/steam-exchange3.png",
+    subgroup = "py-fusion-items",
+    order = "e",
+}
+-------------------------------------------------------------------------------
+--STEAM EXCHANGE 4
+local steam_exchange4= {
+    type = "recipe",
+    name = "steam-exchange4",
+    category = "heat-exchanger",
+    enabled = "false",
+    energy_required = 15,
+    ingredients ={
+		{type="fluid", name="critical-steam", amount=500, temperature=4000},
+		{type="fluid", name="water", amount=400},
+
+    },
+    results=
+    {
+        {type="fluid", name="pressured-steam", amount=1000, temperature=4000},
+		{type="fluid", name="steam", amount=400},
+    },
+    --main_product= "blanket",
+    icon = "__pyfusionenergy__/graphics/icons/steam-exchange4.png",
     subgroup = "py-fusion-items",
     order = "e",
 }
@@ -1738,6 +1791,7 @@ local control_unit= {
 		{type="item", name="nexelit-cartridge", amount=1},
 		{type="item", name="nenbit-matrix", amount=5},
 		{type="item", name="fuelrod-mk01", amount=2},
+		{type="item", name="iron-plate", amount=4},
     },
     results=
     {
@@ -1909,6 +1963,7 @@ data:extend{
 	steam_exchange1,
 	steam_exchange2,
 	steam_exchange3,
+	steam_exchange4,
 	lead_container,
 	science_coating,
 	coated_container,
@@ -1916,6 +1971,7 @@ data:extend{
 	control_unit,
 	productionscience_pack,
 	dt_he3,
+	b_h,
 	agzn_alloy,
 	silver_foam,
 	he3_separation
