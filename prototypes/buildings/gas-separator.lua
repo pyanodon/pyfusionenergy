@@ -100,6 +100,7 @@ local entity1={
             base_level = 1,
             pipe_connections = {{ type="output", position = {2.0, -4.0} }}
         },
+
         --North2
         {
             production_type = "output",
@@ -108,6 +109,7 @@ local entity1={
             base_level = 1,
             pipe_connections = {{ type="output", position = {-2.0, -4.0} }}
         },
+		
         --North3
         {
             production_type = "output",
@@ -116,6 +118,7 @@ local entity1={
             base_level = 1,
             pipe_connections = {{ type="output", position = {0.0, -4.0} }}
         },
+		
         --South
         {
             production_type = "input",

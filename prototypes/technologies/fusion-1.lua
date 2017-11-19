@@ -4,7 +4,7 @@ local technology = {
     icon = "__pyfusionenergy__/graphics/technology/fusion-1.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"diamond-mining"},
+    prerequisites = {"diamond-mining","helium-processing"},
     effects =
     {
 		{
@@ -18,10 +18,6 @@ local technology = {
 		{
             type = "unlock-recipe",
             recipe = "pressured-water"
-        },
-		{
-            type = "unlock-recipe",
-            recipe = "super-alloy"
         },
 		{
             type = "unlock-recipe",

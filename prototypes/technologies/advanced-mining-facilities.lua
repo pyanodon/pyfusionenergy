@@ -59,6 +59,7 @@ local technology = {
             type = "unlock-recipe",
             recipe = "control-unit"
         },
+		
     },
     unit =
     {

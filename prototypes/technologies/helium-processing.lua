@@ -4,7 +4,7 @@ local technology = {
     icon = "__pyfusionenergy__/graphics/technology/helium-processing.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"fusion-mk01"},
+    prerequisites = {"excavation-2","coal-processing-3"},
     effects =
     {
 		{
@@ -114,6 +114,10 @@ local technology = {
 		{
             type = "unlock-recipe",
             recipe = "evaporate-helium"
+        },
+		{
+            type = "unlock-recipe",
+            recipe = "super-alloy"
         },
     },
     unit =
