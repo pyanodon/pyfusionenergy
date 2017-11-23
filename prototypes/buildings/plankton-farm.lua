@@ -1,26 +1,21 @@
-local Prototype = require("stdlib.prototype.prototype")
+local Pipes = require("stdlib.data.pipes")
 
--------------------------------------------------------------------------------
---[[Recipes]]--
-local recipe1={
+local recipe1 = {
     type = "recipe",
     name = "plankton-farm",
     energy_required = 25,
     enabled = false,
-    ingredients =
-    {
+    ingredients = {
         {"storage-tank", 1},
         {"stone-brick", 20},
         {"electronic-circuit", 5}, --updated-bob basic-electronic-circuit-board
         {"steel-plate", 50},
-        {"niobium-plate", 15},
-
+        {"niobium-plate", 15}
     },
-    result= "plankton-farm",
+    result = "plankton-farm"
 }
--------------------------------------------------------------------------------
---[[Items]]--
-local item1={
+
+local item1 = {
     type = "item",
     name = "plankton-farm",
     icon = "__pyfusionenergy__/graphics/icons/plankton-farm.png",
@@ -28,15 +23,14 @@ local item1={
     subgroup = "py-fusion-buildings",
     order = "b",
     place_result = "plankton-farm",
-    stack_size = 10,
+    stack_size = 10
 }
--------------------------------------------------------------------------------
---[[Entites]]--
-local entity1={
+
+local entity1 = {
     type = "assembling-machine",
     name = "plankton-farm",
     icon = "__pyfusionenergy__/graphics/icons/plankton-farm.png",
-    flags = {"placeable-neutral","player-creation"},
+    flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "plankton-farm"},
     fast_replaceable_group = "plankton-farm",
     max_health = 700,
@@ -44,24 +38,21 @@ local entity1={
     dying_explosion = "big-explosion",
     collision_box = {{-3.2, -3.2}, {3.2, 3.2}},
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
-    module_specification =
-    {
+    module_specification = {
         module_slots = 1
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"plankton"},
     crafting_speed = 1,
-    energy_source =
-    {
+    energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
-        emissions = 0.00,
+        emissions = 0.00
     },
     energy_usage = "350kW",
     ingredient_count = 3,
-
-    animation ={
-        layers={
+    animation = {
+        layers = {
             {
                 filename = "__pyfusionenergy__/graphics/entity/plankton-farm/left.png",
                 width = 128,
@@ -69,7 +60,7 @@ local entity1={
                 line_length = 16,
                 frame_count = 126,
                 animation_speed = 0.4,
-                shift = {-1.54, -0.3},
+                shift = {-1.54, -0.3}
             },
             {
                 filename = "__pyfusionenergy__/graphics/entity/plankton-farm/right.png",
@@ -78,44 +69,38 @@ local entity1={
                 line_length = 16,
                 frame_count = 126,
                 animation_speed = 0.4,
-                shift = {2.22, -0.3},
-            },
+                shift = {2.22, -0.3}
+            }
         }
     },
-
-    fluid_boxes =
-    {
+    fluid_boxes = {
         {
             production_type = "output",
-            pipe_picture = Prototype.Pipes.pictures("assembling-machine-2", nil, {0.0,-0.93}, {0.5,0.0}, {-0.5,0.0}),
-            pipe_covers = Prototype.Pipes.covers(false, true, true, true),
+            pipe_picture = Pipes.pictures("assembling-machine-2", nil, {0.0, -0.93}, {0.5, 0.0}, {-0.5, 0.0}),
+            pipe_covers = Pipes.covers(false, true, true, true),
             base_level = 1,
             pipe_connections = {
-                { type="output", position = {0.0, 4.0} },
+                {type = "output", position = {0.0, 4.0}}
             }
         },
         {
             production_type = "input",
-            pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {0.0,-0.93}, {0.5,0.0}, {-0.5,0.0}),
-            pipe_covers = Prototype.Pipes.covers(false, true, true, true),
+            pipe_picture = Pipes.pictures("assembling-machine-3", nil, {0.0, -0.93}, {0.5, 0.0}, {-0.5, 0.0}),
+            pipe_covers = Pipes.covers(false, true, true, true),
             base_area = 10,
             base_level = -1,
             pipe_connections = {
-                { type="input", position = {0.0, -4.0} },
+                {type = "input", position = {0.0, -4.0}}
             }
         },
-        off_when_no_fluid_recipe = true,
+        off_when_no_fluid_recipe = true
     },
-    vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
-    working_sound =
-    {
-        sound = { filename = "__pyfusionenergy__/sounds/plankton-farm.ogg", volume = 1.3 },
-        idle_sound = { filename = "__pyfusionenergy__/sounds/plankton-farm.ogg", volume = 0.95 },
-        apparent_volume = 2.5,
-    },
+    vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
+    working_sound = {
+        sound = {filename = "__pyfusionenergy__/sounds/plankton-farm.ogg", volume = 1.3},
+        idle_sound = {filename = "__pyfusionenergy__/sounds/plankton-farm.ogg", volume = 0.95},
+        apparent_volume = 2.5
+    }
 }
--------------------------------------------------------------------------------
---[[Extend Data]]--
-if recipe1 then data:extend({recipe1}) end
-if item1 then data:extend({item1}) end
-if entity1 then data:extend({entity1}) end
+
+data:extend {recipe1, item1, entity1}

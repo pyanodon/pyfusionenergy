@@ -1,17 +1,9 @@
---Settings and Helpers
+require("stdlib.core")
 
-require("stdlib.table")
-require("stdlib.string")
-require("stdlib.defines.color")
-require("stdlib.defines.time")
-
---Groups
 require("prototypes.item-groups")
 
---Categories
 require("prototypes.recipe-categories")
 
---Technologies
 require("prototypes.technologies.advanced-mining-facilities")
 require("prototypes.technologies.fusion-1")
 require("prototypes.technologies.fusion-2")
@@ -23,20 +15,14 @@ require("prototypes.technologies.molybdenum-processing")
 require("prototypes.technologies.vanadium-processing")
 require("prototypes.technologies.helium-processing")
 
---ores
 require("prototypes.ore.molybdenum")
 require("prototypes.ore.volcanic-pipe")
 require("prototypes.ore.regolites")
 
---Recipes without items
 require("prototypes.recipes.recipes")
 
---Items without entities
 require("prototypes.items.items")
 
---Tiles and Terrain
-
---Fluids
 require("prototypes.fluids.molybdenite-pulp")
 require("prototypes.fluids.molybdenum-pulp")
 require("prototypes.fluids.vacuum")
@@ -96,7 +82,8 @@ require("prototypes.fluids.proton")
 require("prototypes.fluids.pressured-steam")
 require("prototypes.fluids.critical-steam")
 
---Buildings
+require("stdlib.core")
+
 require("prototypes.buildings.agitator")
 require("prototypes.buildings.thickener")
 require("prototypes.buildings.vacuum-pump")

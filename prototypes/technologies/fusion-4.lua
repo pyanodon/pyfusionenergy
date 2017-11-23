@@ -5,31 +5,29 @@ local technology = {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"fusion-mk03"},
-    effects =
-    {
-		{
+    effects = {
+        {
             type = "unlock-recipe",
             recipe = "fusion-reactor-mk02"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "b-h"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "steam-exchange4"
-        },
+        }
     },
-    unit =
-    {
+    unit = {
         count = 150,
         ingredients = {
             {"science-pack-1", 5},
-			{"science-pack-2", 4},
-			{"science-pack-3", 3},
-			{"production-science-pack", 3},
+            {"science-pack-2", 4},
+            {"science-pack-3", 3},
+            {"production-science-pack", 3}
         },
         time = 70
-    },
+    }
 }
-data:extend({technology})
+data:extend {technology}

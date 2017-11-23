@@ -1,22 +1,18 @@
-local Prototype = require("stdlib.prototype.prototype")
+local Pipes = require("stdlib.data.pipes")
 
--------------------------------------------------------------------------------
---[[Recipes]]--
-local recipe1={
+local recipe1 = {
     type = "recipe",
     name = "py-turbine",
     energy_required = 10,
     enabled = false,
-    ingredients =
-    {
+    ingredients = {
         {"gasturbinemk03", 2},
-        {"pipe", 20}, --pyindustry niobium-pipe
+        {"pipe", 20} --pyindustry niobium-pipe
     },
-    result= "py-turbine",
+    result = "py-turbine"
 }
--------------------------------------------------------------------------------
---[[Items]]--
-local item1={
+
+local item1 = {
     type = "item",
     name = "py-turbine",
     icon = "__pyfusionenergy__/graphics/icons/py-turbine.png",
@@ -24,23 +20,21 @@ local item1={
     subgroup = "py-fusion-reactors",
     order = "x",
     place_result = "py-turbine",
-    stack_size = 10,
+    stack_size = 10
 }
--------------------------------------------------------------------------------
---[[Entites]]--
-local entity1={
+
+local entity1 = {
     type = "generator",
     name = "py-turbine",
     icon = "__pyfusionenergy__/graphics/icons/py-turbine.png",
-    flags = {"placeable-neutral","player-creation"},
+    flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "py-turbine"},
     max_health = 500,
     corpse = "big-remnants",
     effectivity = 1.5,
     fluid_usage_per_tick = 0.6,
     maximum_temperature = 4000,
-    resistances =
-    {
+    resistances = {
         {
             type = "fire",
             percent = 70
@@ -48,54 +42,48 @@ local entity1={
     },
     collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
-    fluid_input = { --Not needed for .16
+    fluid_input = {
+        --Not needed for .16
         name = "pressured-steam",
         amount = 0.0,
         minimum_temperature = 1000.0
     },
-    fluid_box ={
+    fluid_box = {
         filter = "pressured-steam",
         minimum_temperature = 1000,
         base_area = 1,
         base_level = -1,
-        pipe_covers = Prototype.Pipes.covers(false, true, true, true),
-		--pipe_picture = pipe_pictures({0, 3}),
+        pipe_covers = Pipes.covers(false, true, true, true),
+        --pipe_picture = pipe_pictures({0, 3}),
         production_type = "input-output",
-        pipe_connections =
-        {
-            {type = "input-output", position = {3.0, 0.0} },
-            {type = "input-output", position = {-3.0, 0.0} },
-        },
+        pipe_connections = {
+            {type = "input-output", position = {3.0, 0.0}},
+            {type = "input-output", position = {-3.0, 0.0}}
+        }
     },
-
-    energy_source =
-    {
+    energy_source = {
         type = "electric",
         usage_priority = "secondary-output",
-        emissions = 0.04,
+        emissions = 0.04
     },
     --scale=1.75,
-    horizontal_animation =
-    {
+    horizontal_animation = {
         filename = "__pyfusionenergy__/graphics/entity/py-turbine/py-turbine-horizontal.png",
         width = 170,
         height = 178,
         frame_count = 40,
         line_length = 10,
-        shift = {0.05, -0.0},
+        shift = {0.05, -0.0}
     },
-    vertical_animation =
-    {
+    vertical_animation = {
         filename = "__pyfusionenergy__/graphics/entity/py-turbine/py-turbine-vertical.png",
         width = 170,
         height = 178,
         frame_count = 40,
         line_length = 10,
-        shift = {0.05, -0.0},
+        shift = {0.05, -0.0}
     },
-
-    smoke =
-    {
+    smoke = {
         {
             name = "turbine-smoke",
             north_position = {-0.0, -2},
@@ -104,22 +92,17 @@ local entity1={
             starting_vertical_speed = 0.08,
             slow_down_factor = 1,
             starting_frame_deviation = 60
-        },
+        }
     },
     min_perceived_performance = 0.1,
     performance_to_sound_speedup = 0.3,
     match_speed_to_activity = true,
-    vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
-    working_sound =
-    {
-        sound = { filename = "__pyfusionenergy__/sounds/py-turbine.ogg" },
-        idle_sound = { filename = "__pyfusionenergy__/sounds/py-turbine.ogg", volume = 0.65 },
-        apparent_volume = 2.5,
+    vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
+    working_sound = {
+        sound = {filename = "__pyfusionenergy__/sounds/py-turbine.ogg"},
+        idle_sound = {filename = "__pyfusionenergy__/sounds/py-turbine.ogg", volume = 0.65},
+        apparent_volume = 2.5
     }
 }
 
--------------------------------------------------------------------------------
---[[Extend Data]]--
-if recipe1 then data:extend({recipe1}) end
-if item1 then data:extend({item1}) end
-if entity1 then data:extend({entity1}) end
+data:extend {recipe1, item1, entity1}

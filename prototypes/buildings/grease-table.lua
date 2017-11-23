@@ -1,36 +1,31 @@
-local Prototype = require("stdlib.prototype.prototype")
+local Pipes = require("stdlib.data.pipes")
 
 local pipe_bottom = {
-    south =
-    {
+    south = {
         filename = "__pyfusionenergy__/graphics/entity/grease-table/bottom.png",
         priority = "high",
         width = 247,
-        height = 286,
-    },
+        height = 286
+    }
 }
 
--------------------------------------------------------------------------------
---[[Recipes]]--
-local recipe1={
+local recipe1 = {
     type = "recipe",
     name = "grease-table",
     energy_required = 10,
     enabled = false,
-    ingredients =
-    {
+    ingredients = {
         {"ground-borer", 1},
         {"iron-plate", 60}, --bobs titanium plate
         {"electric-engine-unit", 10},
         {"niobium-plate", 10},
         {"steel-plate", 60},
-        {"advanced-circuit", 20}, --updated-bob basic-electronic-circuit-board
+        {"advanced-circuit", 20} --updated-bob basic-electronic-circuit-board
     },
-    result= "grease-table",
+    result = "grease-table"
 }
--------------------------------------------------------------------------------
---[[Items]]--
-local item1={
+
+local item1 = {
     type = "item",
     name = "grease-table",
     icon = "__pyfusionenergy__/graphics/icons/grease-table.png",
@@ -38,15 +33,14 @@ local item1={
     subgroup = "py-fusion-buildings",
     order = "e",
     place_result = "grease-table",
-    stack_size = 10,
+    stack_size = 10
 }
--------------------------------------------------------------------------------
---[[Entites]]--
-local entity1={
+
+local entity1 = {
     type = "assembling-machine",
     name = "grease-table",
     icon = "__pyfusionenergy__/graphics/icons/grease-table.png",
-    flags = {"placeable-neutral","player-creation"},
+    flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "grease-table"},
     fast_replaceable_group = "grease-table",
     max_health = 700,
@@ -54,24 +48,21 @@ local entity1={
     dying_explosion = "big-explosion",
     collision_box = {{-3.4, -3.4}, {3.4, 3.4}},
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
-    module_specification =
-    {
+    module_specification = {
         module_slots = 3
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"grease"},
     crafting_speed = 1,
-    energy_source =
-    {
+    energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
-        emissions = 0.01,
+        emissions = 0.01
     },
     energy_usage = "500kW",
     ingredient_count = 4,
-
-    animation ={
-        layers={
+    animation = {
+        layers = {
             {
                 filename = "__pyfusionenergy__/graphics/entity/grease-table/left.png",
                 width = 96,
@@ -79,7 +70,7 @@ local entity1={
                 line_length = 21,
                 frame_count = 140,
                 animation_speed = 0.3,
-                shift = {-2.032, -1.0},
+                shift = {-2.032, -1.0}
             },
             {
                 filename = "__pyfusionenergy__/graphics/entity/grease-table/mid.png",
@@ -88,7 +79,7 @@ local entity1={
                 line_length = 21,
                 frame_count = 140,
                 animation_speed = 0.3,
-                shift = {0.968, -1.0},
+                shift = {0.968, -1.0}
             },
             {
                 filename = "__pyfusionenergy__/graphics/entity/grease-table/right.png",
@@ -97,56 +88,51 @@ local entity1={
                 line_length = 21,
                 frame_count = 140,
                 animation_speed = 0.3,
-                shift = {3.329, -1.0},
-            },
+                shift = {3.329, -1.0}
+            }
         }
     },
-    fluid_boxes =
-    {
+    fluid_boxes = {
         {
             production_type = "input",
-            pipe_picture = Prototype.Pipes.pictures("assembling-machine-2", nil, {-0.65, -4.95}, {0.5, 0.0}, {-0.5, 0.0}, pipe_bottom),
-            pipe_covers = Prototype.Pipes.covers(false, true, true, true),
+            pipe_picture = Pipes.pictures("assembling-machine-2", nil, {-0.65, -4.95}, {0.5, 0.0}, {-0.5, 0.0}, pipe_bottom),
+            pipe_covers = Pipes.covers(false, true, true, true),
             base_area = 10,
             base_level = -1,
-            pipe_connections = {{ type="input", position = {-2.0, -4.0} }}
+            pipe_connections = {{type = "input", position = {-2.0, -4.0}}}
         },
         {
             production_type = "input",
-            pipe_picture = Prototype.Pipes.pictures("assembling-machine-2", nil, nil, {0.5, 0.0}, {-0.5, 0.0}, pipe_bottom),
-            pipe_covers = Prototype.Pipes.covers(false, true, true, true),
+            pipe_picture = Pipes.pictures("assembling-machine-2", nil, nil, {0.5, 0.0}, {-0.5, 0.0}, pipe_bottom),
+            pipe_covers = Pipes.covers(false, true, true, true),
             base_area = 10,
             base_level = -1,
-            pipe_connections = {{ type="input", position = {0.0, -4.0} }}
+            pipe_connections = {{type = "input", position = {0.0, -4.0}}}
         },
         {
             production_type = "input",
-            pipe_picture = Prototype.Pipes.pictures("assembling-machine-2", nil, nil, {0.5, 0.0}, {-0.5, 0.0}, pipe_bottom),
-            pipe_covers = Prototype.Pipes.covers(false, true, true, true),
+            pipe_picture = Pipes.pictures("assembling-machine-2", nil, nil, {0.5, 0.0}, {-0.5, 0.0}, pipe_bottom),
+            pipe_covers = Pipes.covers(false, true, true, true),
             base_area = 10,
             base_level = -1,
-            pipe_connections = {{ type="input", position = {2.0, -4.0} }}
+            pipe_connections = {{type = "input", position = {2.0, -4.0}}}
         },
         {
             production_type = "output",
-            pipe_covers = Prototype.Pipes.covers(false, true, true, true),
+            pipe_covers = Pipes.covers(false, true, true, true),
             base_level = 1,
-            pipe_picture = Prototype.Pipes.pictures("assembling-machine-2", nil, {-0.65, -4.95}, {0.5, 0.0}, {-0.5, 0.0}, pipe_bottom),
-            pipe_connections = {{ type="output" , position = {0.0, 4.0} }}
-        },
+            pipe_picture = Pipes.pictures("assembling-machine-2", nil, {-0.65, -4.95}, {0.5, 0.0}, {-0.5, 0.0}, pipe_bottom),
+            pipe_connections = {{type = "output", position = {0.0, 4.0}}}
+        }
 
         --off_when_no_fluid_recipe = true
     },
-    vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
-    working_sound =
-    {
-        sound = { filename = "__pyfusionenergy__/sounds/grease-table.ogg", volume = 1.0 },
-        idle_sound = { filename = "__pyfusionenergy__/sounds/grease-table.ogg", volume = 0.85 },
-        apparent_volume = 2.5,
-    },
+    vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
+    working_sound = {
+        sound = {filename = "__pyfusionenergy__/sounds/grease-table.ogg", volume = 1.0},
+        idle_sound = {filename = "__pyfusionenergy__/sounds/grease-table.ogg", volume = 0.85},
+        apparent_volume = 2.5
+    }
 }
--------------------------------------------------------------------------------
---[[Extend Data]]--
-if recipe1 then data:extend({recipe1}) end
-if item1 then data:extend({item1}) end
-if entity1 then data:extend({entity1}) end
+
+data:extend {recipe1, item1, entity1}

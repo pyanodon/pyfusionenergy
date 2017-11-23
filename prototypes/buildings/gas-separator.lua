@@ -1,27 +1,22 @@
-local Prototype = require("stdlib.prototype.prototype")
+local Pipes = require("stdlib.data.pipes")
 
--------------------------------------------------------------------------------
---[[Recipes]]--
-local recipe1={
+local recipe1 = {
     type = "recipe",
     name = "gas-separator",
     energy_required = 15,
     enabled = false,
-    ingredients =
-    {
+    ingredients = {
         {"pipe", 30}, --updated-bob stone-pipe
         {"evaporator", 1},
         {"electronic-circuit", 30},
         {"steel-plate", 50},
-		{"nichrome", 30},
-        {"chemical-plant", 2},
-
+        {"nichrome", 30},
+        {"chemical-plant", 2}
     },
-    result= "gas-separator",
+    result = "gas-separator"
 }
--------------------------------------------------------------------------------
---[[Items]]--
-local item1={
+
+local item1 = {
     type = "item",
     name = "gas-separator",
     icon = "__pyfusionenergy__/graphics/icons/gas-separator.png",
@@ -29,15 +24,14 @@ local item1={
     subgroup = "py-fusion-buildings",
     order = "c",
     place_result = "gas-separator",
-    stack_size = 10,
+    stack_size = 10
 }
--------------------------------------------------------------------------------
---[[Entites]]--
-local entity1={
+
+local entity1 = {
     type = "assembling-machine",
     name = "gas-separator",
     icon = "__pyfusionenergy__/graphics/icons/gas-separator.png",
-    flags = {"placeable-neutral","player-creation"},
+    flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "gas-separator"},
     fast_replaceable_group = "gas-separator",
     max_health = 400,
@@ -45,108 +39,94 @@ local entity1={
     dying_explosion = "medium-explosion",
     collision_box = {{-3.2, -3.2}, {3.2, 3.2}},
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
-    module_specification =
-    {
+    module_specification = {
         module_slots = 4
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"gas-separator"},
     crafting_speed = 1,
-    energy_source =
-    {
+    energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
-        emissions = 0.01/3,
+        emissions = 0.01 / 3
     },
     energy_usage = "450kW",
     ingredient_count = 5,
-
-    animation =
-    {
+    animation = {
         filename = "__pyfusionenergy__/graphics/entity/gas-separator/off.png",
         width = 241,
         height = 265,
         frame_count = 1,
         --animation_speed = 0.5,
-        shift = {0.2, -0.635},
+        shift = {0.2, -0.635}
     },
-
-    working_visualisations =
-    {
+    working_visualisations = {
         {
             north_position = {0.2, -0.635},
             west_position = {0.2, -0.635},
             south_position = {0.2, -0.635},
             east_position = {0.2, -0.635},
-            animation =
-            {
+            animation = {
                 filename = "__pyfusionenergy__/graphics/entity/gas-separator/on.png",
                 frame_count = 50,
                 width = 241,
                 height = 265,
-				line_length = 8,
-                animation_speed = 0.3,
+                line_length = 8,
+                animation_speed = 0.3
             }
-        },
+        }
     },
-
-    fluid_boxes =
-    {
+    fluid_boxes = {
         --North
         {
             production_type = "output",
-            pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {-0.0,-0.95}, nil, nil),
-            pipe_covers = Prototype.Pipes.covers(true, true, true, true),
+            pipe_picture = Pipes.pictures("assembling-machine-3", nil, {-0.0, -0.95}, nil, nil),
+            pipe_covers = Pipes.covers(true, true, true, true),
             base_level = 1,
-            pipe_connections = {{ type="output", position = {2.0, -4.0} }}
+            pipe_connections = {{type = "output", position = {2.0, -4.0}}}
         },
-
         --North2
         {
             production_type = "output",
-            pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {-0.0,-0.95}, nil, nil),
-            pipe_covers = Prototype.Pipes.covers(true, true, true, true),
+            pipe_picture = Pipes.pictures("assembling-machine-3", nil, {-0.0, -0.95}, nil, nil),
+            pipe_covers = Pipes.covers(true, true, true, true),
             base_level = 1,
-            pipe_connections = {{ type="output", position = {-2.0, -4.0} }}
+            pipe_connections = {{type = "output", position = {-2.0, -4.0}}}
         },
         --North3
         {
             production_type = "output",
-            pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {-0.0,-0.95}, nil, nil),
-            pipe_covers = Prototype.Pipes.covers(true, true, true, true),
+            pipe_picture = Pipes.pictures("assembling-machine-3", nil, {-0.0, -0.95}, nil, nil),
+            pipe_covers = Pipes.covers(true, true, true, true),
             base_level = 1,
-            pipe_connections = {{ type="output", position = {0.0, -4.0} }}
+            pipe_connections = {{type = "output", position = {0.0, -4.0}}}
         },
         --South
         {
             production_type = "input",
-            pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {-0.00,-0.95}, nil, nil),
-            pipe_covers = Prototype.Pipes.covers(true, true, true, true),
+            pipe_picture = Pipes.pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
+            pipe_covers = Pipes.covers(true, true, true, true),
             base_area = 10,
             base_level = -1,
-            pipe_connections = {{ type="input", position = {-1.0, 4.0} }}
+            pipe_connections = {{type = "input", position = {-1.0, 4.0}}}
         },
         --South2
         {
             production_type = "input",
-            pipe_picture = Prototype.Pipes.pictures("assembling-machine-3", nil, {-0.00,-0.95}, nil, nil),
-            pipe_covers = Prototype.Pipes.covers(true, true, true, true),
+            pipe_picture = Pipes.pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
+            pipe_covers = Pipes.covers(true, true, true, true),
             base_area = 10,
             base_level = -1,
-            pipe_connections = {{ type="input", position = {1.0, 4.0} }}
+            pipe_connections = {{type = "input", position = {1.0, 4.0}}}
         },
-	off_when_no_fluid_recipe = true
+        off_when_no_fluid_recipe = true
     },
-    vehicle_impact_sound = { filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65 },
-    working_sound =
-    {
-        sound = { filename = "__pyfusionenergy__/sounds/gas-separator.ogg" },
-        idle_sound = { filename = "__pyfusionenergy__/sounds/gas-separator.ogg", volume = 0.75 },
-        apparent_volume = 2.5,
-    },
+    vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
+    working_sound = {
+        sound = {filename = "__pyfusionenergy__/sounds/gas-separator.ogg"},
+        idle_sound = {filename = "__pyfusionenergy__/sounds/gas-separator.ogg", volume = 0.75},
+        apparent_volume = 2.5
+    }
 }
--------------------------------------------------------------------------------
---[[Extend Data]]--
-if recipe1 then data:extend({recipe1}) end
-if item1 then data:extend({item1}) end
-if entity1 then data:extend({entity1}) end
+
+data:extend {recipe1, item1, entity1}
