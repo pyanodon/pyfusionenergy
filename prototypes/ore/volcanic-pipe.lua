@@ -1,6 +1,3 @@
--------------------------------------------------------------------------------
---[[volcanic-pipe]]--
--------------------------------------------------------------------------------
 local autoplace = {
     type = "autoplace-control",
     name = "volcanic-pipe",
@@ -17,24 +14,22 @@ local resource = {
     category = "volcanic-pipe",
     icon = "__pyfusionenergy__/graphics/icons/ores/volcanic-pipe.png",
     flags = {"placeable-neutral"},
-    order="a-b-a",
-    map_color = {r=0.917, g=0.996, b=1},
+    order = "a-b-a",
+    map_color = {r = 0.917, g = 0.996, b = 1},
     highlight = true,
-    minimum=50000,
-    normal=70000,
-    maximum=12000,
+    minimum = 50000,
+    normal = 70000,
+    maximum = 12000,
     map_grid = false,
-    minable =
-    {
+    minable = {
         hardness = 3.5,
         -- mining_particle = "volcanic-pipe-particle",
         mining_time = 4,
         result = "kimberlite-rock"
     },
-    collision_box = {{ -3.5, -3.5}, {3.5, 3.5}},
-    selection_box = {{ -1.5, -1.5}, {1.5, 1.5}},
-    autoplace =
-    {
+    collision_box = {{-3.5, -3.5}, {3.5, 3.5}},
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    autoplace = {
         control = "volcanic-pipe",
         sharpness = 0.98,
         max_probability = 0.04,
@@ -49,8 +44,8 @@ local resource = {
                 noise_persistence = 0.3,
                 starting_area_weight_optimal = 0,
                 starting_area_weight_range = 0,
-                starting_area_weight_max_range = 2,
-            },
+                starting_area_weight_max_range = 2
+            }
         }
     },
     stage_counts = {0},
@@ -61,9 +56,9 @@ local resource = {
             width = 224,
             height = 224,
             frame_count = 1,
-            variation_count = 1,
+            variation_count = 1
         }
-    },
+    }
 }
 
-data:extend{autoplace, noise, resource}
+data:extend {autoplace, noise, resource}

@@ -4,132 +4,130 @@ local technology = {
     icon = "__pyfusionenergy__/graphics/technology/helium-processing.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"excavation-2","coal-processing-3"},
-    effects =
-    {
-		{
+    prerequisites = {"excavation-2", "coal-processing-3"},
+    effects = {
+        {
             type = "unlock-recipe",
             recipe = "pressured-air"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "purified-air"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "cool-air"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "cold-clean-air"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "liquid-pure-air"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "liquid-air-distilation"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "stone-calcination"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "calcinate-separation"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "bacteria-1"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "kmauts-ration"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "kmauts-enclosure"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "bio-reactor"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "gas-separator"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "serine"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "ethanolamine"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "methyl-acrylate"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "high-purified-gas"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "liquid-petgas"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "liquid-petgas-separation"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "gas-stream-filtration"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "rich-gas"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "liquid-rich-gas"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "liquid-rich-gas-distilation"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "purier-helium"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "helium"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "liquid-helium"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "evaporate-helium"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "super-alloy"
-        },
+        }
     },
-    unit =
-    {
+    unit = {
         count = 40,
         ingredients = {
             {"science-pack-1", 3},
-			{"science-pack-2", 2},
-			{"science-pack-3", 2},
-			{"production-science-pack", 2},
+            {"science-pack-2", 2},
+            {"science-pack-3", 2},
+            {"production-science-pack", 2}
         },
         time = 75
-    },
+    }
 }
-data:extend({technology})
+data:extend {technology}

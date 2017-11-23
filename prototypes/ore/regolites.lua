@@ -1,6 +1,3 @@
--------------------------------------------------------------------------------
---[[regolites]]--
--------------------------------------------------------------------------------
 local autoplace = {
     type = "autoplace-control",
     name = "regolites",
@@ -17,24 +14,22 @@ local resource = {
     category = "regolite",
     icon = "__pyfusionenergy__/graphics/icons/ores/regolite-resource.png",
     flags = {"placeable-neutral"},
-    order="a-b-a",
-    map_color = {r=0.917, g=0.670, b=0.278},
+    order = "a-b-a",
+    map_color = {r = 0.917, g = 0.670, b = 0.278},
     highlight = true,
-    minimum=60000,
-    normal=85000,
-    maximum=15000,
+    minimum = 60000,
+    normal = 85000,
+    maximum = 15000,
     map_grid = false,
-    minable =
-    {
+    minable = {
         hardness = 2.0,
         -- mining_particle = "regolites-particle",
         mining_time = 4,
         result = "regolite-rock"
     },
-    collision_box = {{ -3.5, -3.5}, {3.5, 3.5}},
-    selection_box = {{ -2.5, -2.5}, {2.5, 2.5}},
-    autoplace =
-    {
+    collision_box = {{-3.5, -3.5}, {3.5, 3.5}},
+    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    autoplace = {
         control = "regolites",
         sharpness = 0.98,
         max_probability = 0.015,
@@ -49,8 +44,8 @@ local resource = {
                 noise_persistence = 0.3,
                 starting_area_weight_optimal = 0,
                 starting_area_weight_range = 0,
-                starting_area_weight_max_range = 2,
-            },
+                starting_area_weight_max_range = 2
+            }
         }
     },
     stage_counts = {0},
@@ -62,9 +57,9 @@ local resource = {
             height = 250,
             frame_count = 1,
             variation_count = 1,
-			shift = {0.35, -0.2},
+            shift = {0.35, -0.2}
         }
-    },
+    }
 }
 
-data:extend{autoplace, noise, resource}
+data:extend {autoplace, noise, resource}

@@ -4,44 +4,42 @@ local technology = {
     icon = "__pyfusionenergy__/graphics/technology/molybdenum-processing.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"advanced-mining-facilities","fusion-mk01","diamond-mining"},
-    effects =
-    {
-		{
+    prerequisites = {"advanced-mining-facilities", "fusion-mk01", "diamond-mining"},
+    effects = {
+        {
             type = "unlock-recipe",
             recipe = "molybdenite-pulp"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "molybdenum-pulp"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "molybdenum-concentrate"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "molybdenum-filtration"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "molybdenum-oxide"
         },
-		{
+        {
             type = "unlock-recipe",
             recipe = "molybdenum-plate"
-        },
+        }
     },
-    unit =
-    {
+    unit = {
         count = 30,
         ingredients = {
             {"science-pack-1", 2},
-			{"science-pack-2", 2},
-			{"science-pack-3", 1},
-			{"production-science-pack", 1},
+            {"science-pack-2", 2},
+            {"science-pack-3", 1},
+            {"production-science-pack", 1}
         },
         time = 70
-    },
+    }
 }
-data:extend({technology})
+data:extend {technology}

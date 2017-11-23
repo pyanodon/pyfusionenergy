@@ -1,1985 +1,1824 @@
--------------------------------------------------------------------------------
---[[Recipes without new item results]]--
--------------------------------------------------------------------------------
-
--------------------------------------------------------------------------------
---CRUSHING MOLYDBENITE
-local crushing_molybdenite ={
+local crushing_molybdenite = {
     type = "recipe",
     name = "crushing-molybdenite",
     category = "crusher",
     enabled = "false",
     energy_required = 2,
-    ingredients ={
-        {type="item", name="molybdenum-ore", amount=10},
+    ingredients = {
+        {type = "item", name = "molybdenum-ore", amount = 10}
     },
-    results={
-        {type="item", name="crushed-molybdenite", amount=10},
-        {type="item", name="stone", amount=2},
+    results = {
+        {type = "item", name = "crushed-molybdenite", amount = 10},
+        {type = "item", name = "stone", amount = 2}
     },
-    main_product= "crushed-molybdenite",
+    main_product = "crushed-molybdenite",
     icon = "__pyfusionenergy__/graphics/icons/crush-molybdenite.png",
-	subgroup = "py-crusher",
-    order = "a",
+    subgroup = "py-crusher",
+    order = "a"
 }
--------------------------------------------------------------------------------
---MILLING MOLYDBENITE
-local milling_molybdenite ={
+
+local milling_molybdenite = {
     type = "recipe",
     name = "milling-molybdenite",
     category = "ball-mill",
     enabled = "false",
     energy_required = 4,
-    ingredients ={
-        {type="item", name="crushed-molybdenite", amount=5},
+    ingredients = {
+        {type = "item", name = "crushed-molybdenite", amount = 5}
     },
-    results={
-        {type="item", name="molybdenite-dust", amount=10},
-        {type="item", name="gravel", amount=1},
+    results = {
+        {type = "item", name = "molybdenite-dust", amount = 10},
+        {type = "item", name = "gravel", amount = 1}
     },
-    main_product= "molybdenite-dust",
+    main_product = "molybdenite-dust",
     icon = "__pyfusionenergy__/graphics/icons/molybdenite-dust.png",
-	subgroup = "py-mill",
-    order = "b",
+    subgroup = "py-mill",
+    order = "b"
 }
--------------------------------------------------------------------------------
---MOLYBDENUM CONCENTRATE
-local molybdenum_concentrate ={
+
+local molybdenum_concentrate = {
     type = "recipe",
     name = "molybdenum-concentrate",
     category = "hydrocyclone",
     enabled = "false",
     energy_required = 5,
-    ingredients ={
-        {type="fluid", name="molybdenite-pulp", amount=150,},
-		{type="fluid", name="water", amount=200}, --updated-bob nitrogen-dioxide
+    ingredients = {
+        {type = "fluid", name = "molybdenite-pulp", amount = 150},
+        {type = "fluid", name = "water", amount = 200} --updated-bob nitrogen-dioxide
     },
-    results={
-        {type="item", name="molybdenum-concentrate", amount=10},
-        {type="fluid", name="dirty-water", amount=150},
+    results = {
+        {type = "item", name = "molybdenum-concentrate", amount = 10},
+        {type = "fluid", name = "dirty-water", amount = 150}
     },
-    main_product= "molybdenum-concentrate",
+    main_product = "molybdenum-concentrate",
     icon = "__pyfusionenergy__/graphics/icons/molybdenum-concentrate-hydrocyclone.png",
-	subgroup = "py-fusion-items",
-    order = "b",
+    subgroup = "py-fusion-items",
+    order = "b"
 }
--------------------------------------------------------------------------------
---MOLYBDENUM FILTRATION
-local molybdenum_filtration ={
+
+local molybdenum_filtration = {
     type = "recipe",
     name = "molybdenum-filtration",
     category = "carbonfilter",
     enabled = "false",
     energy_required = 2,
-    ingredients ={
-        {type="fluid", name="molybdenum-pulp", amount=100,},
-		{type="fluid", name="vacuum", amount=50},
-        {type="item", name="filtration-media", amount=1},
+    ingredients = {
+        {type = "fluid", name = "molybdenum-pulp", amount = 100},
+        {type = "fluid", name = "vacuum", amount = 50},
+        {type = "item", name = "filtration-media", amount = 1}
     },
-    results={
-        {type="item", name="molybdenum-sulfide", amount=10},
+    results = {
+        {type = "item", name = "molybdenum-sulfide", amount = 10}
     },
-    main_product= "molybdenum-sulfide",
+    main_product = "molybdenum-sulfide",
     icon = "__pyfusionenergy__/graphics/icons/molybdenum-sulfide.png",
-	subgroup = "py-fusion-items",
-    order = "c",
+    subgroup = "py-fusion-items",
+    order = "c"
 }
--------------------------------------------------------------------------------
---MOLYBDENUM OXIDE
-local molybdenum_oxide ={
+
+local molybdenum_oxide = {
     type = "recipe",
     name = "molybdenum-oxide",
     category = "hpf",
     enabled = "false",
     energy_required = 3,
-    ingredients ={
-        {type="item", name="molybdenum-sulfide", amount=10},
+    ingredients = {
+        {type = "item", name = "molybdenum-sulfide", amount = 10}
     },
-    results={
-        {type="item", name="molybdenum-oxide", amount=5},
-		{type="item", name="sulfur", amount=5},
+    results = {
+        {type = "item", name = "molybdenum-oxide", amount = 5},
+        {type = "item", name = "sulfur", amount = 5}
     },
-    main_product= "molybdenum-oxide",
+    main_product = "molybdenum-oxide",
     icon = "__pyfusionenergy__/graphics/icons/molybdenum-oxide.png",
-	subgroup = "py-fusion-items",
-    order = "d",
+    subgroup = "py-fusion-items",
+    order = "d"
 }
--------------------------------------------------------------------------------
---MOLYBDENUM PLATE
-local molybdenum_plate ={
+
+local molybdenum_plate = {
     type = "recipe",
     name = "molybdenum-plate",
     category = "chemistry", --bobs electrolyzer
     enabled = "false",
     energy_required = 3,
-    ingredients ={
-        {type="item", name="molybdenum-oxide", amount=5}, --add hydrogen
+    ingredients = {
+        {type = "item", name = "molybdenum-oxide", amount = 5} --add hydrogen
     },
-    results={
-        {type="item", name="molybdenum-plate", amount=1},
-		{type="fluid", name="water", amount=10},
+    results = {
+        {type = "item", name = "molybdenum-plate", amount = 1},
+        {type = "fluid", name = "water", amount = 10}
     },
-    main_product= "molybdenum-plate",
+    main_product = "molybdenum-plate",
     icon = "__pyfusionenergy__/graphics/icons/molybdenum-plate.png",
-	subgroup = "py-fusion-items",
-    order = "e",
+    subgroup = "py-fusion-items",
+    order = "e"
 }
 
--------------------------------------------------------------------------------
---PHYTOPLANKTON
-local phytoplankton ={
+local phytoplankton = {
     type = "recipe",
     name = "phytoplankton",
     category = "plankton",
     enabled = "false",
     energy_required = 15,
-    ingredients ={
-        {type="fluid", name="water", amount=500},
-		{type="item", name="crushed-iron", amount=15}, --updated-bob crushed-tin
+    ingredients = {
+        {type = "fluid", name = "water", amount = 500},
+        {type = "item", name = "crushed-iron", amount = 15} --updated-bob crushed-tin
     },
-    results={
-		{type="fluid", name="phytoplankton", amount=10},
+    results = {
+        {type = "fluid", name = "phytoplankton", amount = 10}
     },
-    main_product= "phytoplankton",
+    main_product = "phytoplankton",
     icon = "__pyfusionenergy__/graphics/icons/phytoplankton.png",
-	subgroup = "py-fusion-fluids",
-    order = "e",
+    subgroup = "py-fusion-fluids",
+    order = "e"
 }
 
--------------------------------------------------------------------------------
---XYHIPHOE-BLOOD
-local xyhiphoe_blood ={
+local xyhiphoe_blood = {
     type = "recipe",
     name = "xyhiphoe-blood",
     category = "xyhiphoe",
     enabled = "false",
     energy_required = 15,
-    ingredients ={
-        {type="fluid", name="pressured-water", amount=500},
-        {type="fluid", name="phytoplankton", amount=30},
-		{type="item", name="tailings-dust", amount=50},
+    ingredients = {
+        {type = "fluid", name = "pressured-water", amount = 500},
+        {type = "fluid", name = "phytoplankton", amount = 30},
+        {type = "item", name = "tailings-dust", amount = 50}
     },
-    results={
-		{type="fluid", name="xyhiphoe-blood", amount=20},
-		{type="fluid", name="waste-water", amount=500},
+    results = {
+        {type = "fluid", name = "xyhiphoe-blood", amount = 20},
+        {type = "fluid", name = "waste-water", amount = 500}
     },
-    main_product= "xyhiphoe-blood",
+    main_product = "xyhiphoe-blood",
     icon = "__pyfusionenergy__/graphics/icons/xyhiphoe-blood.png",
-	subgroup = "py-fusion-fluids",
-    order = "e",
+    subgroup = "py-fusion-fluids",
+    order = "e"
 }
--------------------------------------------------------------------------------
---XYHIPHOE-HYDROCYLCONE
-local xyhiphoe_hydrocyclone ={
+
+local xyhiphoe_hydrocyclone = {
     type = "recipe",
     name = "xyhiphoe-hydrocyclone",
     category = "hydrocyclone",
     enabled = "false",
     energy_required = 30,
-    ingredients ={
-        {type="fluid", name="pressured-water", amount=500},
-        {type="fluid", name="xyhiphoe-blood", amount=50},
+    ingredients = {
+        {type = "fluid", name = "pressured-water", amount = 500},
+        {type = "fluid", name = "xyhiphoe-blood", amount = 50}
     },
-    results={
-		{type="fluid", name="organic-solvent", amount=200},
+    results = {
+        {type = "fluid", name = "organic-solvent", amount = 200}
     },
-    main_product= "organic-solvent",
+    main_product = "organic-solvent",
     icon = "__pyfusionenergy__/graphics/icons/xyhiphoe-hydrocyclone.png",
-	subgroup = "py-fusion-recipes",
-    order = "a",
+    subgroup = "py-fusion-recipes",
+    order = "a"
 }
--------------------------------------------------------------------------------
---COBALT from USED SOLVENT
-local cobalt_solvent ={
+
+local cobalt_solvent = {
     type = "recipe",
     name = "cobalt-solvent",
     category = "evaporator",
     enabled = "false",
     energy_required = 8,
-    ingredients ={
-        {type="fluid", name="used-solvent", amount=50},
+    ingredients = {
+        {type = "fluid", name = "used-solvent", amount = 50}
     },
-    results={
-		{type="item", name="ash", amount=10}, --updated-bob cobalt-ore
+    results = {
+        {type = "item", name = "ash", amount = 10} --updated-bob cobalt-ore
     },
     icon = "__pyfusionenergy__/graphics/icons/used-solvent.png",
-	subgroup = "py-fusion-recipes",
-    order = "c",
+    subgroup = "py-fusion-recipes",
+    order = "c"
 }
--------------------------------------------------------------------------------
---USED SOLVENT Separation
-local solvent_separation ={
+
+local solvent_separation = {
     type = "recipe",
     name = "solvent-separation",
     category = "fluid-separator",
     enabled = "false",
     energy_required = 10,
-    ingredients ={
-        {type="fluid", name="used-solvent", amount=100},
+    ingredients = {
+        {type = "fluid", name = "used-solvent", amount = 100}
     },
-    results={
-		{type="fluid", name="organic-solvent", amount=100},
-		{type="fluid", name="blue-liquor", amount=50},
+    results = {
+        {type = "fluid", name = "organic-solvent", amount = 100},
+        {type = "fluid", name = "blue-liquor", amount = 50}
     },
-    main_product= "organic-solvent",
+    main_product = "organic-solvent",
     icon = "__pyfusionenergy__/graphics/icons/used-solvent.png",
-	subgroup = "py-fusion-recipes",
-    order = "d",
+    subgroup = "py-fusion-recipes",
+    order = "d"
 }
--------------------------------------------------------------------------------
---SODIUM CHLORATE
-local sodium_chlorate ={
+
+local sodium_chlorate = {
     type = "recipe",
     name = "sodium-chlorate",
     category = "chemistry", --bob electrolyzer
     enabled = "false",
     energy_required = 5,
-    ingredients ={
-        {type="fluid", name="steam", amount=150, temperature=165},
-		{type="fluid", name="water-saline", amount=100}, --bob salt
+    ingredients = {
+        {type = "fluid", name = "steam", amount = 150, temperature = 165},
+        {type = "fluid", name = "water-saline", amount = 100} --bob salt
     },
-    results={
-		{type="item", name="sodium-chlorate", amount=50},
-		--bob hydrogen
+    results = {
+        {type = "item", name = "sodium-chlorate", amount = 50}
+        --bob hydrogen
     },
-    main_product= "sodium-chlorate",
+    main_product = "sodium-chlorate",
     icon = "__pyfusionenergy__/graphics/icons/sodium-chlorate.png",
-	subgroup = "py-fusion-recipes",
-    order = "e",
+    subgroup = "py-fusion-recipes",
+    order = "e"
 }
--------------------------------------------------------------------------------
---VANADIUM OXIDE
-local vanadium_oxide ={
+
+local vanadium_oxide = {
     type = "recipe",
     name = "vanadium-oxide",
     category = "evaporator",
     enabled = "false",
     energy_required = 20,
-    ingredients ={
-        {type="fluid", name="vpulp-precip", amount=100},
+    ingredients = {
+        {type = "fluid", name = "vpulp-precip", amount = 100}
     },
-    results={
-		{type="item", name="vanadium-oxide", amount=5},
-		{type="fluid", name="dirty-water", amount=300},
+    results = {
+        {type = "item", name = "vanadium-oxide", amount = 5},
+        {type = "fluid", name = "dirty-water", amount = 300}
     },
-    main_product= "vanadium-oxide",
+    main_product = "vanadium-oxide",
     icon = "__pyfusionenergy__/graphics/icons/vanadium-oxide.png",
-	subgroup = "py-fusion-recipes",
-    order = "e",
+    subgroup = "py-fusion-recipes",
+    order = "e"
 }
--------------------------------------------------------------------------------
---WASTE WATER FILTRATION
-local wastewater_filtration ={
+
+local wastewater_filtration = {
     type = "recipe",
     name = "wastewater-filtration",
     category = "carbonfilter",
     enabled = "false",
     energy_required = 15,
-    ingredients ={
-        {type="fluid", name="waste-water", amount=100},
-		{type="item", name="filtration-media", amount=1},
+    ingredients = {
+        {type = "fluid", name = "waste-water", amount = 100},
+        {type = "item", name = "filtration-media", amount = 1}
     },
-    results={
-		{type="fluid", name="methanol", amount=100},
+    results = {
+        {type = "fluid", name = "methanol", amount = 100}
     },
     icon = "__pycoalprocessing__/graphics/icons/methanol.png",
-	subgroup = "py-fusion-recipes",
-    order = "f",
+    subgroup = "py-fusion-recipes",
+    order = "f"
 }
--------------------------------------------------------------------------------
---WASTE WATER RECOVERY
-local wastewater_recovery ={
+
+local wastewater_recovery = {
     type = "recipe",
     name = "wastewater-recovery",
     category = "thickener",
     enabled = "false",
     energy_required = 10,
-    ingredients ={
-        {type="fluid", name="waste-water", amount=100},
-		{type="item", name="pure-sand", amount=20},
+    ingredients = {
+        {type = "fluid", name = "waste-water", amount = 100},
+        {type = "item", name = "pure-sand", amount = 20}
     },
-    results={
-		{type="fluid", name="dirty-water", amount=150},
+    results = {
+        {type = "fluid", name = "dirty-water", amount = 150}
     },
-    main_product= "dirty-water",
+    main_product = "dirty-water",
     icon = "__pycoalprocessing__/graphics/icons/dirty-water.png",
-	subgroup = "py-fusion-recipes",
-    order = "g",
+    subgroup = "py-fusion-recipes",
+    order = "g"
 }
--------------------------------------------------------------------------------
---SUPER ALLOY
-local super_alloy ={
+
+local super_alloy = {
     type = "recipe",
     name = "super-alloy",
     category = "advanced-foundry",
     enabled = "false",
     energy_required = 10,
-    ingredients ={
-        {type="fluid", name="helium", amount=10},
-		{type="item", name="steel-plate", amount=50}, --bobs nickel-plate
-        {type="item", name="fuelrod-mk01", amount=2},
-        {type="item", name="limestone", amount=3},
-        {type="item", name="sand-casting", amount=2},
-		{type="item", name="chromium", amount=20},
-		{type="item", name="molybdenum-oxide", amount=25},
-		{type="item", name="nexelit-plate", amount=5},
-		{type="item", name="vanadium-oxide", amount=10},
+    ingredients = {
+        {type = "fluid", name = "helium", amount = 10},
+        {type = "item", name = "steel-plate", amount = 50}, --bobs nickel-plate
+        {type = "item", name = "fuelrod-mk01", amount = 2},
+        {type = "item", name = "limestone", amount = 3},
+        {type = "item", name = "sand-casting", amount = 2},
+        {type = "item", name = "chromium", amount = 20},
+        {type = "item", name = "molybdenum-oxide", amount = 25},
+        {type = "item", name = "nexelit-plate", amount = 5},
+        {type = "item", name = "vanadium-oxide", amount = 10}
     },
-    results={
-		{type="item", name="super-alloy", amount=5},
+    results = {
+        {type = "item", name = "super-alloy", amount = 5}
     },
     icon = "__pyfusionenergy__/graphics/icons/super-alloy.png",
-	subgroup = "py-fusion-recipes",
-    order = "h",
+    subgroup = "py-fusion-recipes",
+    order = "h"
 }
--------------------------------------------------------------------------------
---CRUSHED KIMBERLITE
-local crushed_kimberlite ={
+
+local crushed_kimberlite = {
     type = "recipe",
     name = "crushed-kimberlite",
     category = "crusher",
     enabled = "false",
     energy_required = 3,
-    ingredients ={
-        {type="item", name="kimberlite-rock", amount=10},
+    ingredients = {
+        {type = "item", name = "kimberlite-rock", amount = 10}
     },
-    results={
-		{type="item", name="crushed-kimberlite", amount=10},
-		{type="item", name="stone", amount=3},
+    results = {
+        {type = "item", name = "crushed-kimberlite", amount = 10},
+        {type = "item", name = "stone", amount = 3}
     },
-	--main_product= "crushed-kimberlite",
+    --main_product= "crushed-kimberlite",
     icon = "__pyfusionenergy__/graphics/icons/crush-kimberlite.png",
-	subgroup = "py-fusion-recipes",
-    order = "h",
+    subgroup = "py-fusion-recipes",
+    order = "h"
 }
--------------------------------------------------------------------------------
---KIMBERLITE SCREENING
-local screening_kimberlite ={
+
+local screening_kimberlite = {
     type = "recipe",
     name = "screening-kimberlite",
     category = "screener",
     enabled = "false",
     energy_required = 10,
-    ingredients ={
-        {type="item", name="crushed-kimberlite", amount=10},
+    ingredients = {
+        {type = "item", name = "crushed-kimberlite", amount = 10}
     },
-    results={
-		{type="item", name="kimberlite-rejects", amount=7},
-		{type="item", name="kimberlite-grade2", amount=5},
+    results = {
+        {type = "item", name = "kimberlite-rejects", amount = 7},
+        {type = "item", name = "kimberlite-grade2", amount = 5}
     },
-	--main_product= "kimberlite-grade2",
+    --main_product= "kimberlite-grade2",
     icon = "__pyfusionenergy__/graphics/icons/screening-kimberlite.png",
-	subgroup = "py-fusion-recipes",
-    order = "h",
+    subgroup = "py-fusion-recipes",
+    order = "h"
 }
--------------------------------------------------------------------------------
---KIMBERLITE REJECTS RECRUSHING
-local kimberlite_rejects_recrushing ={
+
+local kimberlite_rejects_recrushing = {
     type = "recipe",
     name = "kimberlite-recrushing",
     category = "secondary-crusher",
     enabled = "false",
     energy_required = 5,
-    ingredients ={
-        {type="item", name="kimberlite-rejects", amount=20},
+    ingredients = {
+        {type = "item", name = "kimberlite-rejects", amount = 20}
     },
-    results={
-		{type="item", name="crushed-kimberlite", amount=5},
-		{type="item", name="gravel", amount=1},
+    results = {
+        {type = "item", name = "crushed-kimberlite", amount = 5},
+        {type = "item", name = "gravel", amount = 1}
     },
-	--main_product= "crushed-kimberlite",
+    --main_product= "crushed-kimberlite",
     icon = "__pyfusionenergy__/graphics/icons/kimberlite-recrush.png",
-	subgroup = "py-fusion-recipes",
-    order = "h",
+    subgroup = "py-fusion-recipes",
+    order = "h"
 }
---KIMBERLITE WASHING
-local kimberlite_washing ={
+
+local kimberlite_washing = {
     type = "recipe",
     name = "kimberlite-washing",
     category = "washer",
     enabled = "false",
     energy_required = 5,
-    ingredients ={
-        {type="item", name="kimberlite-grade2", amount=5},
-		{type="fluid", name="water", amount=100},
+    ingredients = {
+        {type = "item", name = "kimberlite-grade2", amount = 5},
+        {type = "fluid", name = "water", amount = 100}
     },
-    results={
-		{type="item", name="kimberlite-grade3", amount=5},
-		{type="item", name="pure-kimberlite-grade2", amount=1, probability=0.6},
-		{type="fluid", name="dirty-water", amount=100},
-		{type="item", name="sand", amount=10},
+    results = {
+        {type = "item", name = "kimberlite-grade3", amount = 5},
+        {type = "item", name = "pure-kimberlite-grade2", amount = 1, probability = 0.6},
+        {type = "fluid", name = "dirty-water", amount = 100},
+        {type = "item", name = "sand", amount = 10}
     },
-	--main_product= "kimberlite-grade3",
+    --main_product= "kimberlite-grade3",
     icon = "__pyfusionenergy__/graphics/icons/kimberlite-washer.png",
-	subgroup = "py-fusion-recipes",
-    order = "h",
+    subgroup = "py-fusion-recipes",
+    order = "h"
 }
--------------------------------------------------------------------------------
---PURE KIMBERLITE 2 RECRUSHING
-local pure_kimberlite_recrushing ={
+
+local pure_kimberlite_recrushing = {
     type = "recipe",
     name = "pure-kimberlite-recrushing",
     category = "secondary-crusher",
     enabled = "false",
     energy_required = 15,
-    ingredients ={
-        {type="item", name="pure-kimberlite-grade2", amount=3},
+    ingredients = {
+        {type = "item", name = "pure-kimberlite-grade2", amount = 3}
     },
-    results={
-		{type="item", name="kimberlite-grade3", amount=2},
-		{type="item", name="gravel", amount=1},
+    results = {
+        {type = "item", name = "kimberlite-grade3", amount = 2},
+        {type = "item", name = "gravel", amount = 1}
     },
-	--main_product= "kimberlite-grade3",
+    --main_product= "kimberlite-grade3",
     icon = "__pyfusionenergy__/graphics/icons/kimberlite-grade2-recrush.png",
-	subgroup = "py-fusion-recipes",
-    order = "h",
+    subgroup = "py-fusion-recipes",
+    order = "h"
 }
--------------------------------------------------------------------------------
---KIMBERLITE RESIDUES SCREENING
-local screening_kimberlite_residue ={
+
+local screening_kimberlite_residue = {
     type = "recipe",
     name = "screening-kimberlite-residue",
     category = "screener",
     enabled = "false",
     energy_required = 15,
-    ingredients ={
-        {type="item", name="kimberlite-residue", amount=10},
+    ingredients = {
+        {type = "item", name = "kimberlite-residue", amount = 10}
     },
-    results={
-		{type="item", name="diamond-reject", amount=8},
-		{type="item", name="gravel", amount=2},
+    results = {
+        {type = "item", name = "diamond-reject", amount = 8},
+        {type = "item", name = "gravel", amount = 2}
     },
-	--main_product= "diamond-reject",
+    --main_product= "diamond-reject",
     icon = "__pyfusionenergy__/graphics/icons/screening-kimberlite-residue.png",
-	subgroup = "py-fusion-recipes",
-    order = "h",
+    subgroup = "py-fusion-recipes",
+    order = "h"
 }
--------------------------------------------------------------------------------
---DIAMOND REJECTS RECRUSHING
-local diamond_rejects_recrushing ={
+
+local diamond_rejects_recrushing = {
     type = "recipe",
     name = "diamond-rejects-recrushing",
     category = "secondary-crusher",
     enabled = "false",
     energy_required = 5,
-    ingredients ={
-        {type="item", name="diamond-reject", amount=8},
+    ingredients = {
+        {type = "item", name = "diamond-reject", amount = 8}
     },
-    results={
-		{type="item", name="pure-kimberlite-grade2", amount=5},
-		{type="item", name="gravel", amount=2},
+    results = {
+        {type = "item", name = "pure-kimberlite-grade2", amount = 5},
+        {type = "item", name = "gravel", amount = 2}
     },
-	--main_product= "pure-kimberlite-grade2",
+    --main_product= "pure-kimberlite-grade2",
     icon = "__pyfusionenergy__/graphics/icons/diamond-reject-recrush.png",
-	subgroup = "py-fusion-recipes",
-    order = "h",
+    subgroup = "py-fusion-recipes",
+    order = "h"
 }
--------------------------------------------------------------------------------
---DIAMOND REJECTS SCREENING
-local diamond_rejects_screening ={
+
+local diamond_rejects_screening = {
     type = "recipe",
     name = "diamond-rejects-screening",
     category = "screener",
     enabled = "false",
     energy_required = 6,
-    ingredients ={
-        {type="item", name="diamond-reject", amount=10},
+    ingredients = {
+        {type = "item", name = "diamond-reject", amount = 10}
     },
-    results={
-		{type="item", name="processed-rejects", amount=16},
-		{type="item", name="sand", amount=10},
+    results = {
+        {type = "item", name = "processed-rejects", amount = 16},
+        {type = "item", name = "sand", amount = 10}
     },
-	--main_product= "pure-kimberlite-grade2",
+    --main_product= "pure-kimberlite-grade2",
     icon = "__pyfusionenergy__/graphics/icons/screening-diamond-reject.png",
-	subgroup = "py-fusion-recipes",
-    order = "h",
+    subgroup = "py-fusion-recipes",
+    order = "h"
 }
--------------------------------------------------------------------------------
---REJECTS SEPARATION
-local rejects_separation ={
+
+local rejects_separation = {
     type = "recipe",
     name = "rejects-separation",
     category = "solid-separator",
     enabled = "false",
     energy_required = 1.5,
-    ingredients ={
-        {type="item", name="processed-rejects", amount=20},
+    ingredients = {
+        {type = "item", name = "processed-rejects", amount = 20}
     },
-    results={
-		{type="item", name="limestone", amount=3},
-		{type="item", name="chromite-sand", amount=6},
-		{type="item", name="diamond", amount=1, probability=0.6},
+    results = {
+        {type = "item", name = "limestone", amount = 3},
+        {type = "item", name = "chromite-sand", amount = 6},
+        {type = "item", name = "diamond", amount = 1, probability = 0.6}
     },
-	--main_product= "pure-kimberlite-grade2",
+    --main_product= "pure-kimberlite-grade2",
     icon = "__pyfusionenergy__/graphics/icons/rejects-separation.png",
     subgroup = "py-items-class",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---JIG SEPARATION
-local jig_separation= {
+
+local jig_separation = {
     type = "recipe",
     name = "jig-separation",
     category = "fluid-separator",
     enabled = "false",
     energy_required = 20,
-    ingredients ={
-        {type="fluid", name="jig-concentrate", amount=300},
+    ingredients = {
+        {type = "fluid", name = "jig-concentrate", amount = 300}
     },
-    results=
-    {
-        {type="fluid", name="jig-grade1", amount=100},
-        {type="fluid", name="jig-grade2", amount=100},
-        {type="fluid", name="jig-grade3", amount=100},
+    results = {
+        {type = "fluid", name = "jig-grade1", amount = 100},
+        {type = "fluid", name = "jig-grade2", amount = 100},
+        {type = "fluid", name = "jig-grade3", amount = 100}
     },
     --main_product= "jig-grade1",
     icon = "__pyfusionenergy__/graphics/icons/jig1.png",
     subgroup = "py-fusion-recipes",
-    order = "j",
+    order = "j"
 }
--------------------------------------------------------------------------------
---GREASING 1
-local greasing_1= {
+
+local greasing_1 = {
     type = "recipe",
     name = "greasing-1",
     category = "grease",
     enabled = "false",
     energy_required = 10,
-    ingredients ={
-        {type="fluid", name="jig-grade1", amount=50},
-		{type="fluid", name="slacked-lime", amount=100},
-		{type="fluid", name="grease", amount=25},
+    ingredients = {
+        {type = "fluid", name = "jig-grade1", amount = 50},
+        {type = "fluid", name = "slacked-lime", amount = 100},
+        {type = "fluid", name = "grease", amount = 25}
     },
-    results=
-    {
-        {type="item", name="crude-diamond", amount=7},
-        {type="fluid", name="dirty-water", amount=100},
+    results = {
+        {type = "item", name = "crude-diamond", amount = 7},
+        {type = "fluid", name = "dirty-water", amount = 100}
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/greasing-1.png",
     subgroup = "py-fusion-recipes",
-    order = "j1",
+    order = "j1"
 }
--------------------------------------------------------------------------------
---GREASING 2
-local greasing_2= {
+
+local greasing_2 = {
     type = "recipe",
     name = "greasing-2",
     category = "grease",
     enabled = "false",
     energy_required = 10,
-    ingredients ={
-        {type="fluid", name="jig-grade2", amount=50},
-		{type="fluid", name="tar", amount=100},
-		{type="fluid", name="grease", amount=25},
+    ingredients = {
+        {type = "fluid", name = "jig-grade2", amount = 50},
+        {type = "fluid", name = "tar", amount = 100},
+        {type = "fluid", name = "grease", amount = 25}
     },
-    results=
-    {
-        {type="item", name="crude-diamond", amount=5},
-        {type="fluid", name="dirty-water", amount=150},
+    results = {
+        {type = "item", name = "crude-diamond", amount = 5},
+        {type = "fluid", name = "dirty-water", amount = 150}
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/greasing-2.png",
     subgroup = "py-fusion-recipes",
-    order = "j2",
+    order = "j2"
 }
--------------------------------------------------------------------------------
---GREASING 3
-local greasing_3= {
+
+local greasing_3 = {
     type = "recipe",
     name = "greasing-3",
     category = "grease",
     enabled = "false",
     energy_required = 10,
-    ingredients ={
-        {type="fluid", name="jig-grade3", amount=50},
-		{type="fluid", name="organic-solvent", amount=100},
-		{type="fluid", name="grease", amount=25},
+    ingredients = {
+        {type = "fluid", name = "jig-grade3", amount = 50},
+        {type = "fluid", name = "organic-solvent", amount = 100},
+        {type = "fluid", name = "grease", amount = 25}
     },
-    results=
-    {
-        {type="item", name="crude-diamond", amount=2},
-        {type="fluid", name="dirty-water", amount=200},
+    results = {
+        {type = "item", name = "crude-diamond", amount = 2},
+        {type = "fluid", name = "dirty-water", amount = 200}
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/greasing-3.png",
     subgroup = "py-fusion-recipes",
-    order = "j3",
+    order = "j3"
 }
--------------------------------------------------------------------------------
---WASH CRUDE DIAMONDS
-local washing_crude= {
+
+local washing_crude = {
     type = "recipe",
     name = "washing-crude",
     category = "washer",
     enabled = "false",
     energy_required = 7,
-    ingredients ={
-        {type="fluid", name="sulfuric-acid", amount=100},
-		{type="item", name="crude-diamond", amount=20},
+    ingredients = {
+        {type = "fluid", name = "sulfuric-acid", amount = 100},
+        {type = "item", name = "crude-diamond", amount = 20}
     },
-    results=
-    {
-        {type="item", name="washed-diamond", amount=10},
-        {type="fluid", name="dirty-water", amount=120},
+    results = {
+        {type = "item", name = "washed-diamond", amount = 10},
+        {type = "fluid", name = "dirty-water", amount = 120}
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/crude-diamond-washer.png",
     subgroup = "py-fusion-recipes",
-    order = "k",
+    order = "k"
 }
--------------------------------------------------------------------------------
---CLASSIFY WASHED DIAMONDS
-local class_diamond= {
+
+local class_diamond = {
     type = "recipe",
     name = "class-diamond",
     category = "classifier",
     enabled = "false",
     energy_required = 7,
-    ingredients ={
-		{type="item", name="washed-diamond", amount=40},
+    ingredients = {
+        {type = "item", name = "washed-diamond", amount = 40}
     },
-    results=
-    {
-        {type="item", name="diamond", amount=10},
-        {type="item", name="kimberlite-residue", amount=10},
+    results = {
+        {type = "item", name = "diamond", amount = 10},
+        {type = "item", name = "kimberlite-residue", amount = 10}
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/class-diamond.png",
     subgroup = "py-fusion-recipes",
-    order = "k",
+    order = "k"
 }
--------------------------------------------------------------------------------
---COOLING AIR
-local cool_air= {
+
+local cool_air = {
     type = "recipe",
     name = "cool-air",
     category = "evaporator",
     enabled = "false",
     energy_required = 4,
-    ingredients ={
-		{type="fluid", name="purified-air", amount=60},
-		{type="fluid", name="pressured-air", amount=20}, --bobs liquid nitrogen
+    ingredients = {
+        {type = "fluid", name = "purified-air", amount = 60},
+        {type = "fluid", name = "pressured-air", amount = 20} --bobs liquid nitrogen
     },
-    results=
-    {
-        {type="fluid", name="cold-air", amount=20},
-		--add nitrogen
+    results = {
+        {type = "fluid", name = "cold-air", amount = 20}
+        --add nitrogen
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/cold-air.png",
     subgroup = "py-fusion-recipes",
-    order = "k",
+    order = "k"
 }
--------------------------------------------------------------------------------
---LIQUID AIR DISTILATION
-local liquid_air_distilation= {
+
+local liquid_air_distilation = {
     type = "recipe",
     name = "liquid-air-distilation",
     category = "distilator",
     enabled = "false",
     energy_required = 4,
-    ingredients ={
-		{type="fluid", name="liquid-pure-air", amount=5},
+    ingredients = {
+        {type = "fluid", name = "liquid-pure-air", amount = 5}
     },
-    results=
-    {
-        {type="fluid", name="dry-gas-stream", amount=1},
-		{type="fluid", name="carbon-dioxide", amount=1},
-		--add nitrogen
-		--add oxygen
+    results = {
+        {type = "fluid", name = "dry-gas-stream", amount = 1},
+        {type = "fluid", name = "carbon-dioxide", amount = 1}
+        --add nitrogen
+        --add oxygen
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/dry-gas-stream.png",
     subgroup = "py-fusion-recipes",
-    order = "l",
+    order = "l"
 }
--------------------------------------------------------------------------------
---CALCINATE STONES
-local stone_calcination= {
+
+local stone_calcination = {
     type = "recipe",
     name = "stone-calcination",
     category = "hpf",
     enabled = "false",
     energy_required = 4,
-    ingredients ={
-		{type="item", name="stone", amount=40},
+    ingredients = {
+        {type = "item", name = "stone", amount = 40}
     },
-    results=
-    {
-        {type="item", name="calcinates", amount=10},
-		{type="item", name="ash", amount=3},
-		{type="fluid", name="dry-gas-stream", amount=2},
+    results = {
+        {type = "item", name = "calcinates", amount = 10},
+        {type = "item", name = "ash", amount = 3},
+        {type = "fluid", name = "dry-gas-stream", amount = 2}
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/calcinates.png",
     subgroup = "py-fusion-recipes",
-    order = "l",
+    order = "l"
 }
--------------------------------------------------------------------------------
---CALCINATE SEPARATION
-local calcinate_separation= {
+
+local calcinate_separation = {
     type = "recipe",
     name = "calcinate-separation",
     category = "solid-separator",
     enabled = "false",
     energy_required = 2,
-    ingredients ={
-		{type="item", name="calcinates", amount=20},
+    ingredients = {
+        {type = "item", name = "calcinates", amount = 20}
     },
-    results=
-    {
-        {type="item", name="iron-ore", amount=1, probability=0.4},
-		{type="item", name="copper-ore", amount=1, probability=0.4},
-		{type="item", name="limestone", amount=1, probability=0.3},
-		{type="item", name="sulfur", amount=1, probability=0.3},
-		--add bobs minerals
+    results = {
+        {type = "item", name = "iron-ore", amount = 1, probability = 0.4},
+        {type = "item", name = "copper-ore", amount = 1, probability = 0.4},
+        {type = "item", name = "limestone", amount = 1, probability = 0.3},
+        {type = "item", name = "sulfur", amount = 1, probability = 0.3}
+        --add bobs minerals
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/calcinate-separation.png",
     subgroup = "py-fusion-recipes",
-    order = "l",
+    order = "l"
 }
--------------------------------------------------------------------------------
---IMPROVED ALIEN BACTERIA-1
-local bacteria_1= {
+
+local bacteria_1 = {
     type = "recipe",
     name = "bacteria-1",
     category = "genlab",
     enabled = "false",
     energy_required = 15,
-    ingredients ={
-		{type="item", name="nexelit-plate", amount=10},
-		{type="item", name="lens", amount=5},
-		{type="item", name="serine", amount=15},
-		{type="item", name="fawogae-substrate", amount=20},
-		{type="fluid", name="phytoplankton", amount=25},
+    ingredients = {
+        {type = "item", name = "nexelit-plate", amount = 10},
+        {type = "item", name = "lens", amount = 5},
+        {type = "item", name = "serine", amount = 15},
+        {type = "item", name = "fawogae-substrate", amount = 20},
+        {type = "fluid", name = "phytoplankton", amount = 25}
     },
-    results=
-    {
-        {type="fluid", name="bacteria-1", amount=50},
+    results = {
+        {type = "fluid", name = "bacteria-1", amount = 50}
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/bacteria-1.png",
     subgroup = "py-fusion-recipes",
-    order = "l",
+    order = "l"
 }
--------------------------------------------------------------------------------
---SERINE
-local serine= {
+
+local serine = {
     type = "recipe",
     name = "serine",
     category = "kmauts",
     enabled = "false",
     energy_required = 30,
-    ingredients ={
-		{type="item", name="kmauts-ration", amount=2},
+    ingredients = {
+        {type = "item", name = "kmauts-ration", amount = 2}
     },
-    results=
-    {
-        {type="item", name="serine", amount=10},
+    results = {
+        {type = "item", name = "serine", amount = 10}
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/serine.png",
     subgroup = "py-fusion-recipes",
-    order = "l",
+    order = "l"
 }
--------------------------------------------------------------------------------
---METHYL ACRYLATE
-local methyl_acrylate= {
+
+local methyl_acrylate = {
     type = "recipe",
     name = "methyl-acrylate",
     category = "methanol",
     enabled = "false",
     energy_required = 5,
-    ingredients =
-	{
-	    {type="item", name="iron-plate", amount=2},
-		{type="fluid", name="sulfuric-acid", amount=100},
-		{type="fluid", name="methanol", amount=100},
+    ingredients = {
+        {type = "item", name = "iron-plate", amount = 2},
+        {type = "fluid", name = "sulfuric-acid", amount = 100},
+        {type = "fluid", name = "methanol", amount = 100}
     },
-    results=
-    {
-        {type="item", name="methyl-acrylate", amount=1},
+    results = {
+        {type = "item", name = "methyl-acrylate", amount = 1}
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/methyl-acrylate.png",
     subgroup = "py-fusion-recipes",
-    order = "l",
+    order = "l"
 }
--------------------------------------------------------------------------------
---KMAUTS RATION
-local kmauts_ration= {
+
+local kmauts_ration = {
     type = "recipe",
     name = "kmauts-ration",
     category = "crafting",
     enabled = "false",
     energy_required = 5,
-    ingredients =
-	{
-	    {type="item", name="iron-plate", amount=2}, --bobs tin plate
-		{type="item", name="mukmoux-fat", amount=5},
-		{type="item", name="organics", amount=100},
-		{type="item", name="ralesia", amount=15},
+    ingredients = {
+        {type = "item", name = "iron-plate", amount = 2}, --bobs tin plate
+        {type = "item", name = "mukmoux-fat", amount = 5},
+        {type = "item", name = "organics", amount = 100},
+        {type = "item", name = "ralesia", amount = 15}
     },
-    results=
-    {
-        {type="item", name="kmauts-ration", amount=2},
+    results = {
+        {type = "item", name = "kmauts-ration", amount = 2}
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/kmauts-ration.png",
     subgroup = "py-fusion-recipes",
-    order = "l",
+    order = "l"
 }
--------------------------------------------------------------------------------
---CRUSH REGOLITE
-local crush_regolite= {
+
+local crush_regolite = {
     type = "recipe",
     name = "crush-regolite",
     category = "crusher",
     enabled = "false",
     energy_required = 3,
-    ingredients =
-	{
-	    {type="item", name="regolite-rock", amount=10},
+    ingredients = {
+        {type = "item", name = "regolite-rock", amount = 10}
     },
-    results=
-    {
-        {type="item", name="crushed-regolite", amount=5},
-        {type="item", name="stone", amount=2},
+    results = {
+        {type = "item", name = "crushed-regolite", amount = 5},
+        {type = "item", name = "stone", amount = 2}
     },
-    main_product= "crushed-regolite",
+    main_product = "crushed-regolite",
     icon = "__pyfusionenergy__/graphics/icons/crush-regolite.png",
-	subgroup = "py-fusion-recipes",
-    order = "a",
+    subgroup = "py-fusion-recipes",
+    order = "a"
 }
--------------------------------------------------------------------------------
---RECRUSH REGOLITE
-local recrush_regolite= {
+
+local recrush_regolite = {
     type = "recipe",
     name = "regolite-recrush",
     category = "secondary-crusher",
     enabled = "false",
     energy_required = 5,
-    ingredients =
-	{
-	    {type="item", name="crushed-regolite", amount=5},
+    ingredients = {
+        {type = "item", name = "crushed-regolite", amount = 5}
     },
-    results=
-    {
-        {type="item", name="powdered-regolite", amount=5},
-        {type="item", name="gravel", amount=1},
+    results = {
+        {type = "item", name = "powdered-regolite", amount = 5},
+        {type = "item", name = "gravel", amount = 1}
     },
-    main_product= "powdered-regolite",
+    main_product = "powdered-regolite",
     icon = "__pyfusionenergy__/graphics/icons/regolite-recrush.png",
-	subgroup = "py-fusion-recipes",
-    order = "a",
+    subgroup = "py-fusion-recipes",
+    order = "a"
 }
--------------------------------------------------------------------------------
---MILLING REGOLITE
-local milling_regolite ={
+
+local milling_regolite = {
     type = "recipe",
     name = "milling-regolite",
     category = "ball-mill",
     enabled = "false",
     energy_required = 4,
-    ingredients ={
-        {type="item", name="powdered-regolite", amount=5},
+    ingredients = {
+        {type = "item", name = "powdered-regolite", amount = 5}
     },
-    results={
-        {type="item", name="regolite-dust", amount=5},
-        {type="item", name="sand", amount=2},
+    results = {
+        {type = "item", name = "regolite-dust", amount = 5},
+        {type = "item", name = "sand", amount = 2}
     },
-    main_product= "regolite-dust",
+    main_product = "regolite-dust",
     icon = "__pyfusionenergy__/graphics/icons/regolite-dust.png",
-	subgroup = "py-fusion-recipes",
-    order = "b",
+    subgroup = "py-fusion-recipes",
+    order = "b"
 }
--------------------------------------------------------------------------------
---CALCINATE REGOLITES
-local regolite_calcination= {
+
+local regolite_calcination = {
     type = "recipe",
     name = "regolite-calcination",
     category = "hpf",
     enabled = "false",
     energy_required = 4,
-    ingredients ={
-		{type="item", name="regolite-dust", amount=20},
+    ingredients = {
+        {type = "item", name = "regolite-dust", amount = 20}
     },
-    results=
-    {
-        {type="item", name="calcinates", amount=12},
-		{type="item", name="ash", amount=3},
-		{type="fluid", name="dry-gas-stream", amount=4},
-		--add bobs hydrogen
+    results = {
+        {type = "item", name = "calcinates", amount = 12},
+        {type = "item", name = "ash", amount = 3},
+        {type = "fluid", name = "dry-gas-stream", amount = 4}
+        --add bobs hydrogen
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/calcinates.png",
     subgroup = "py-fusion-recipes",
-    order = "l",
+    order = "l"
 }
--------------------------------------------------------------------------------
---LIQUIFY PETGAS
-local liquid_petgas= {
+
+local liquid_petgas = {
     type = "recipe",
     name = "liquid-petgas",
     category = "compressor",
     enabled = "false",
     energy_required = 1,
-    ingredients ={
-		{type="fluid", name="petroleum-gas", amount=5},
-		{type="fluid", name="water", amount=100},
-		{type="fluid", name="gasoline", amount=5},
+    ingredients = {
+        {type = "fluid", name = "petroleum-gas", amount = 5},
+        {type = "fluid", name = "water", amount = 100},
+        {type = "fluid", name = "gasoline", amount = 5}
     },
-    results=
-    {
-        {type="fluid", name="liquid-petgas", amount=5},
-		{type="fluid", name="steam", amount=100},
+    results = {
+        {type = "fluid", name = "liquid-petgas", amount = 5},
+        {type = "fluid", name = "steam", amount = 100}
     },
     --main_product= "liquid-petgas",
     icon = "__pyfusionenergy__/graphics/icons/liquid-petgas.png",
     subgroup = "py-fusion-gases",
-    order = "a",
+    order = "a"
 }
--------------------------------------------------------------------------------
---LIQUID PETGAS SEPARATION
-local liquid_petgas_separation= {
+
+local liquid_petgas_separation = {
     type = "recipe",
     name = "liquid-petgas-separation",
     category = "fluid-separator",
     enabled = "false",
     energy_required = 5,
-    ingredients ={
-		{type="fluid", name="liquid-petgas", amount=20},
-		{type="item", name="active-carbon", amount=2},
+    ingredients = {
+        {type = "fluid", name = "liquid-petgas", amount = 20},
+        {type = "item", name = "active-carbon", amount = 2}
     },
-    results=
-    {
-        {type="fluid", name="aromatics", amount=10},
-		{type="fluid", name="gas-stream", amount=20},
+    results = {
+        {type = "fluid", name = "aromatics", amount = 10},
+        {type = "fluid", name = "gas-stream", amount = 20}
     },
-    main_product= "gas-stream",
+    main_product = "gas-stream",
     icon = "__pyfusionenergy__/graphics/icons/gas-stream.png",
     subgroup = "py-fusion-gases",
-    order = "a",
+    order = "a"
 }
--------------------------------------------------------------------------------
---GAS STREAM FILTRATION
-local gas_stream_filtration= {
+
+local gas_stream_filtration = {
     type = "recipe",
     name = "gas-stream-filtration",
     category = "carbonfilter",
     enabled = "false",
     energy_required = 5,
-    ingredients ={
-		{type="fluid", name="gas-stream", amount=20},
-		{type="item", name="filtration-media", amount=1},
+    ingredients = {
+        {type = "fluid", name = "gas-stream", amount = 20},
+        {type = "item", name = "filtration-media", amount = 1}
     },
-    results=
-    {
-        {type="fluid", name="water", amount=10},
-		{type="fluid", name="dry-gas-stream", amount=3},
+    results = {
+        {type = "fluid", name = "water", amount = 10},
+        {type = "fluid", name = "dry-gas-stream", amount = 3}
     },
-    main_product= "dry-gas-stream",
+    main_product = "dry-gas-stream",
     icon = "__pyfusionenergy__/graphics/icons/dry-gas-stream.png",
     subgroup = "py-fusion-gases",
-    order = "a",
+    order = "a"
 }
--------------------------------------------------------------------------------
---LIQUID RICH GAS DISTILATION
-local liquid_rich_gas_distilation= {
+
+local liquid_rich_gas_distilation = {
     type = "recipe",
     name = "liquid-rich-gas-distilation",
     category = "distilator",
     enabled = "false",
     energy_required = 4,
-    ingredients ={
-		{type="fluid", name="liquid-rich-gas", amount=30},
+    ingredients = {
+        {type = "fluid", name = "liquid-rich-gas", amount = 30}
     },
-    results=
-    {
-        {type="fluid", name="water", amount=10}, -- bobs pyliquid-nitrogen
-		{type="fluid", name="helium-rich-gas", amount=10},
+    results = {
+        {type = "fluid", name = "water", amount = 10}, -- bobs pyliquid-nitrogen
+        {type = "fluid", name = "helium-rich-gas", amount = 10}
     },
-    main_product= "helium-rich-gas",
+    main_product = "helium-rich-gas",
     icon = "__pyfusionenergy__/graphics/icons/helium-rich-gas.png",
     subgroup = "py-fusion-gases",
-    order = "a",
+    order = "a"
 }
--------------------------------------------------------------------------------
---HELIUM PRODUCTION
-local helium= {
+
+local helium = {
     type = "recipe",
     name = "helium",
     category = "gas-separator",
     enabled = "false",
     energy_required = 6,
-    ingredients ={
-		{type="fluid", name="purier-helium", amount=8},
+    ingredients = {
+        {type = "fluid", name = "purier-helium", amount = 8}
     },
-    results=
-    {
-        {type="fluid", name="water", amount=10},
-		{type="fluid", name="helium", amount=5},
+    results = {
+        {type = "fluid", name = "water", amount = 10},
+        {type = "fluid", name = "helium", amount = 5}
     },
-    main_product= "helium",
+    main_product = "helium",
     icon = "__pyfusionenergy__/graphics/icons/helium.png",
     subgroup = "py-fusion-gases",
-    order = "aa",
+    order = "aa"
 }
--------------------------------------------------------------------------------
---NEXELIT MATRIX
-local nexelit_matrix= {
+
+local nexelit_matrix = {
     type = "recipe",
     name = "nexelit-matrix",
     category = "nmf",
     enabled = "false",
     energy_required = 5,
-    ingredients ={
-		{type="fluid", name="boric-acid", amount=150},
-		{type="fluid", name="vacuum", amount=100},
-		{type="item", name="nexelit-plate", amount=4},
-		{type="item", name="wood", amount=3}, --bobs resin
+    ingredients = {
+        {type = "fluid", name = "boric-acid", amount = 150},
+        {type = "fluid", name = "vacuum", amount = 100},
+        {type = "item", name = "nexelit-plate", amount = 4},
+        {type = "item", name = "wood", amount = 3} --bobs resin
     },
-    results=
-    {
-        {type="item", name="nexelit-matrix", amount=3},
+    results = {
+        {type = "item", name = "nexelit-matrix", amount = 3}
     },
-    main_product= "nexelit-matrix",
+    main_product = "nexelit-matrix",
     icon = "__pyfusionenergy__/graphics/icons/nexelit-matrix.png",
     subgroup = "py-fusion-items",
-    order = "a",
+    order = "a"
 }
--------------------------------------------------------------------------------
---NB-TI ALLOY
-local nbti_alloy= {
+
+local nbti_alloy = {
     type = "recipe",
     name = "nbti-alloy",
     category = "advanced-foundry",
     enabled = "false",
     energy_required = 3,
-    ingredients ={
-		{type="item", name="niobium-plate", amount=5},
-		{type="item", name="steel-plate", amount=10}, --bobs titanium plate
-		--add nitrogen
+    ingredients = {
+        {type = "item", name = "niobium-plate", amount = 5},
+        {type = "item", name = "steel-plate", amount = 10} --bobs titanium plate
+        --add nitrogen
     },
-    results=
-    {
-        {type="item", name="nbti-alloy", amount=2},
+    results = {
+        {type = "item", name = "nbti-alloy", amount = 2}
     },
-    main_product= "nbti-alloy",
+    main_product = "nbti-alloy",
     icon = "__pyfusionenergy__/graphics/icons/nbti-alloy.png",
     subgroup = "py-fusion-items",
-    order = "d",
+    order = "d"
 }
--------------------------------------------------------------------------------
---NENBIT MATRIX
-local nenbit_matrix= {
+
+local nenbit_matrix = {
     type = "recipe",
     name = "nenbit-matrix",
     category = "advanced-crafting",
     enabled = "false",
     energy_required = 15,
-    ingredients ={
-		{type="item", name="nbti-alloy", amount=2},
-		{type="item", name="nexelit-matrix", amount=10},
+    ingredients = {
+        {type = "item", name = "nbti-alloy", amount = 2},
+        {type = "item", name = "nexelit-matrix", amount = 10}
     },
-    results=
-    {
-        {type="item", name="nenbit-matrix", amount=1},
+    results = {
+        {type = "item", name = "nenbit-matrix", amount = 1}
     },
-    main_product= "nenbit-matrix",
+    main_product = "nenbit-matrix",
     icon = "__pyfusionenergy__/graphics/icons/nenbit-matrix.png",
     subgroup = "py-fusion-items",
-    order = "d",
+    order = "d"
 }
--------------------------------------------------------------------------------
---FERRITE
-local ferrite= {
+
+local ferrite = {
     type = "recipe",
     name = "ferrite",
     category = "hpf",
     enabled = "false",
     energy_required = 4,
-    ingredients ={
-		{type="item", name="iron-oxide", amount=20},
-		{type="item", name="nichrome", amount=3},
-		--add zinc plate
+    ingredients = {
+        {type = "item", name = "iron-oxide", amount = 20},
+        {type = "item", name = "nichrome", amount = 3}
+        --add zinc plate
     },
-    results=
-    {
-        {type="item", name="ferrite", amount=4},
+    results = {
+        {type = "item", name = "ferrite", amount = 4}
     },
-    main_product= "ferrite",
+    main_product = "ferrite",
     icon = "__pyfusionenergy__/graphics/icons/ferrite.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---COIL CORE
-local coil_core= {
+
+local coil_core = {
     type = "recipe",
     name = "coil-core",
     category = "advanced-crafting",
     enabled = "false",
     energy_required = 4,
-    ingredients ={
-		{type="item", name="ferrite", amount=4},
-		{type="item", name="copper-cable", amount=40}, --bobs gilded copper cable
+    ingredients = {
+        {type = "item", name = "ferrite", amount = 4},
+        {type = "item", name = "copper-cable", amount = 40} --bobs gilded copper cable
     },
-    results=
-    {
-        {type="item", name="coil-core", amount=1},
+    results = {
+        {type = "item", name = "coil-core", amount = 1}
     },
-    main_product= "coil-core",
+    main_product = "coil-core",
     icon = "__pyfusionenergy__/graphics/icons/coil-core.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---SUPER CONDUCTING WIRE
-local sc_wire= {
+
+local sc_wire = {
     type = "recipe",
     name = "sc-wire",
     category = "crafting",
     enabled = "false",
     energy_required = 10,
-    ingredients ={
-		{type="item", name="iron-plate", amount=10}, --bobs tin plate
-		{type="item", name="nenbit-matrix", amount=1},
-		--add glass
+    ingredients = {
+        {type = "item", name = "iron-plate", amount = 10}, --bobs tin plate
+        {type = "item", name = "nenbit-matrix", amount = 1}
+        --add glass
     },
-    results=
-    {
-        {type="item", name="sc-wire", amount=5},
+    results = {
+        {type = "item", name = "sc-wire", amount = 5}
     },
-    main_product= "sc-wire",
+    main_product = "sc-wire",
     icon = "__pyfusionenergy__/graphics/icons/superconducting-wire.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---SUPER CONDUCTING COIL
-local sc_coil= {
+
+local sc_coil = {
     type = "recipe",
     name = "sc-coil",
     category = "crafting",
     enabled = "false",
     energy_required = 5,
-    ingredients ={
-		{type="item", name="sc-wire", amount=15},
-		{type="item", name="plastic-bar", amount=5},
-		{type="item", name="coil-core", amount=1},
+    ingredients = {
+        {type = "item", name = "sc-wire", amount = 15},
+        {type = "item", name = "plastic-bar", amount = 5},
+        {type = "item", name = "coil-core", amount = 1}
     },
-    results=
-    {
-        {type="item", name="sc-coil", amount=1},
+    results = {
+        {type = "item", name = "sc-coil", amount = 1}
     },
-    main_product= "sc-coil",
+    main_product = "sc-coil",
     icon = "__pyfusionenergy__/graphics/icons/superconducting-coil.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---MAGNETIC CORE
-local magnetic_core= {
+
+local magnetic_core = {
     type = "recipe",
     name = "magnetic-core",
     category = "advanced-crafting",
     enabled = "false",
     energy_required = 25,
-    ingredients ={
-		{type="item", name="sc-coil", amount=1},
-		{type="item", name="cladded-core", amount=3},
-		{type="item", name="kevlar", amount=10},
+    ingredients = {
+        {type = "item", name = "sc-coil", amount = 1},
+        {type = "item", name = "cladded-core", amount = 3},
+        {type = "item", name = "kevlar", amount = 10}
     },
-    results=
-    {
-        {type="item", name="magnetic-core", amount=1},
+    results = {
+        {type = "item", name = "magnetic-core", amount = 1}
     },
-    main_product= "magnetic-core",
+    main_product = "magnetic-core",
     icon = "__pyfusionenergy__/graphics/icons/magnetic-core.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---DEPOSITED CORE
-local deposited_core= {
+
+local deposited_core = {
     type = "recipe",
     name = "deposited-core",
     category = "gas-separator",
     enabled = "false",
     energy_required = 5,
-    ingredients ={
-		{type="item", name="magnetic-core", amount=1},
-		{type="item", name="vanadium-oxide", amount=10},
+    ingredients = {
+        {type = "item", name = "magnetic-core", amount = 1},
+        {type = "item", name = "vanadium-oxide", amount = 10}
     },
-    results=
-    {
-        {type="item", name="deposited-core", amount=1},
+    results = {
+        {type = "item", name = "deposited-core", amount = 1}
     },
     --main_product= "magnetic-core",
     icon = "__pyfusionenergy__/graphics/icons/deposited-vcore.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---SUPERCONDUCTING MAGNET UNIT
-local sc_unit= {
+
+local sc_unit = {
     type = "recipe",
     name = "sc-unit",
     category = "advanced-crafting",
     enabled = "false",
     energy_required = 20,
-    ingredients ={
-		{type="item", name="molybdenum-plate", amount=5},
-		{type="item", name="deposited-core", amount=1},
-		{type="item", name="advanced-circuit", amount=1},
-		--add liquid nitrogen
+    ingredients = {
+        {type = "item", name = "molybdenum-plate", amount = 5},
+        {type = "item", name = "deposited-core", amount = 1},
+        {type = "item", name = "advanced-circuit", amount = 1}
+        --add liquid nitrogen
     },
-    results=
-    {
-        {type="item", name="sc-unit", amount=1},
+    results = {
+        {type = "item", name = "sc-unit", amount = 1}
     },
-    main_product= "sc-unit",
+    main_product = "sc-unit",
     icon = "__pyfusionenergy__/graphics/icons/magnetic-unit.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---HEAVY WATER DISTILATION
-local d2o_distilation= {
+
+local d2o_distilation = {
     type = "recipe",
     name = "d2o-distilation",
     category = "distilator",
     enabled = "false",
     energy_required = 10,
-    ingredients ={
-		{type="fluid", name="heavy-water", amount=60},
+    ingredients = {
+        {type = "fluid", name = "heavy-water", amount = 60}
     },
-    results=
-    {
-        {type="fluid", name="deuterium", amount=4},
-		--add oxygen
+    results = {
+        {type = "fluid", name = "deuterium", amount = 4}
+        --add oxygen
     },
     --main_product= "sc-unit",
     icon = "__pyfusionenergy__/graphics/icons/deuterium.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---MILLING BORON TRIOXIDE
-local b2o3_milling= {
+
+local b2o3_milling = {
     type = "recipe",
     name = "b2o3-milling",
     category = "ball-mill",
     enabled = "false",
     energy_required = 3,
-    ingredients ={
-		{type="item", name="boron-trioxide", amount=20},
+    ingredients = {
+        {type = "item", name = "boron-trioxide", amount = 20}
     },
-    results=
-    {
-        {type="item", name="b2o3-dust", amount=40},
+    results = {
+        {type = "item", name = "b2o3-dust", amount = 40}
     },
-    main_product= "b2o3-dust",
+    main_product = "b2o3-dust",
     icon = "__pyfusionenergy__/graphics/icons/boron-trioxide-dust.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---BORON MIXTURE
-local boron_mixture= {
+
+local boron_mixture = {
     type = "recipe",
     name = "boron-mixture",
     category = "hpf",
     enabled = "false",
     energy_required = 5,
-    ingredients ={
-		{type="item", name="b2o3-dust", amount=15},
-		{type="fluid", name="helium", amount=15},
-		--add bobs aluminum
+    ingredients = {
+        {type = "item", name = "b2o3-dust", amount = 15},
+        {type = "fluid", name = "helium", amount = 15}
+        --add bobs aluminum
     },
-    results=
-    {
-        {type="item", name="boron-mixture", amount=5},
+    results = {
+        {type = "item", name = "boron-mixture", amount = 5}
     },
-    main_product= "boron-mixture",
+    main_product = "boron-mixture",
     icon = "__pyfusionenergy__/graphics/icons/boron-mixture.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---BORON
-local boron= {
+
+local boron = {
     type = "recipe",
     name = "boron",
     category = "mixer",
     enabled = "false",
     energy_required = 5,
-    ingredients ={
-		{type="item", name="boron-mixture", amount=3},
-		{type="fluid", name="refsyngas", amount=300},
-		--add bobs HCL
+    ingredients = {
+        {type = "item", name = "boron-mixture", amount = 3},
+        {type = "fluid", name = "refsyngas", amount = 300}
+        --add bobs HCL
     },
-    results=
-    {
-        {type="item", name="boron", amount=2},
-		{type="fluid", name="diborane", amount=50},
+    results = {
+        {type = "item", name = "boron", amount = 2},
+        {type = "fluid", name = "diborane", amount = 50}
     },
-    main_product= "boron",
+    main_product = "boron",
     icon = "__pyfusionenergy__/graphics/icons/boron.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---BORON CARBIDE
-local boron_carbide= {
+
+local boron_carbide = {
     type = "recipe",
     name = "boron-carbide",
     category = "hpf",
     enabled = "false",
     energy_required = 5,
-    ingredients ={
-		{type="item", name="boron-trioxide", amount=2},
-		{type="item", name="coke", amount=7}, --bobs carbon
+    ingredients = {
+        {type = "item", name = "boron-trioxide", amount = 2},
+        {type = "item", name = "coke", amount = 7} --bobs carbon
     },
-    results=
-    {
-        {type="item", name="boron-carbide", amount=3},
-		{type="fluid", name="carbon-dioxide", amount=3},
+    results = {
+        {type = "item", name = "boron-carbide", amount = 3},
+        {type = "fluid", name = "carbon-dioxide", amount = 3}
     },
-    main_product= "boron-carbide",
+    main_product = "boron-carbide",
     icon = "__pyfusionenergy__/graphics/icons/boron-carbide.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---BLANKET CHASSI
-local blanket_chassi= {
+
+local blanket_chassi = {
     type = "recipe",
     name = "blanket-chassi",
     category = "advanced-foundry",
     enabled = "false",
     energy_required = 5,
-    ingredients ={
-		{type="item", name="super-alloy", amount=10},
-		{type="item", name="ferrite", amount=10},
-		{type="item", name="molybdenum-oxide", amount=20},
-		{type="item", name="vanadium-oxide", amount=5},
-		{type="item", name="copper-plate", amount=25},
-		{type="fluid", name="helium", amount=20},
+    ingredients = {
+        {type = "item", name = "super-alloy", amount = 10},
+        {type = "item", name = "ferrite", amount = 10},
+        {type = "item", name = "molybdenum-oxide", amount = 20},
+        {type = "item", name = "vanadium-oxide", amount = 5},
+        {type = "item", name = "copper-plate", amount = 25},
+        {type = "fluid", name = "helium", amount = 20}
     },
-    results=
-    {
-        {type="item", name="blanket-chassi", amount=1},
+    results = {
+        {type = "item", name = "blanket-chassi", amount = 1}
     },
-    main_product= "blanket-chassi",
+    main_product = "blanket-chassi",
     icon = "__pyfusionenergy__/graphics/icons/blanket-chassi.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---BLANKET
-local blanket= {
+
+local blanket = {
     type = "recipe",
     name = "blanket",
     category = "advanced-crafting",
     enabled = "false",
     energy_required = 40,
-    ingredients ={
-		{type="item", name="blanket-chassi", amount=2},
-		{type="item", name="boron-carbide", amount=10},
-		{type="item", name="diamond", amount=50},
-		--add bobs lithium and lead
+    ingredients = {
+        {type = "item", name = "blanket-chassi", amount = 2},
+        {type = "item", name = "boron-carbide", amount = 10},
+        {type = "item", name = "diamond", amount = 50}
+        --add bobs lithium and lead
     },
-    results=
-    {
-        {type="item", name="blanket", amount=1},
+    results = {
+        {type = "item", name = "blanket", amount = 1}
     },
-    main_product= "blanket",
+    main_product = "blanket",
     icon = "__pyfusionenergy__/graphics/icons/blanket.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---DIVERTOR
-local divertor= {
+
+local divertor = {
     type = "recipe",
     name = "divertor",
     category = "crafting",
     enabled = "false",
     energy_required = 10,
-    ingredients ={
-		{type="item", name="steel-plate", amount=20},
-		{type="item", name="diamond", amount=10},
-		{type="item", name="super-alloy", amount=10},
-		--add bobs tungstein
+    ingredients = {
+        {type = "item", name = "steel-plate", amount = 20},
+        {type = "item", name = "diamond", amount = 10},
+        {type = "item", name = "super-alloy", amount = 10}
+        --add bobs tungstein
     },
-    results=
-    {
-        {type="item", name="divertor", amount=2},
+    results = {
+        {type = "item", name = "divertor", amount = 2}
     },
-    main_product= "divertor",
+    main_product = "divertor",
     icon = "__pyfusionenergy__/graphics/icons/divertor.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---WALL SHIELD
-local wall_shield= {
+
+local wall_shield = {
     type = "recipe",
     name = "wall-shield",
     category = "advanced-foundry",
     enabled = "false",
     energy_required = 7,
-    ingredients ={
-		{type="item", name="steel-plate", amount=20},
-		{type="item", name="diamond", amount=5},
-		{type="item", name="super-alloy", amount=6},
-		{type="item", name="boron-carbide", amount=10},
-		{type="item", name="ferrite", amount=15},
+    ingredients = {
+        {type = "item", name = "steel-plate", amount = 20},
+        {type = "item", name = "diamond", amount = 5},
+        {type = "item", name = "super-alloy", amount = 6},
+        {type = "item", name = "boron-carbide", amount = 10},
+        {type = "item", name = "ferrite", amount = 15}
     },
-    results=
-    {
-        {type="item", name="wall-shield", amount=5},
+    results = {
+        {type = "item", name = "wall-shield", amount = 5}
     },
-    main_product= "wall-shield",
+    main_product = "wall-shield",
     icon = "__pyfusionenergy__/graphics/icons/wall-shield.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---REINFORCED WALL SHIELD
-local rwall_shield= {
+
+local rwall_shield = {
     type = "recipe",
     name = "reinforced-wall-shield",
     category = "advanced-foundry",
     enabled = "false",
     energy_required = 7,
-    ingredients ={
-		{type="item", name="wall-shield", amount=1},
-		{type="item", name="diamond", amount=1},
-		{type="fluid", name="refsyngas", amount=100},
+    ingredients = {
+        {type = "item", name = "wall-shield", amount = 1},
+        {type = "item", name = "diamond", amount = 1},
+        {type = "fluid", name = "refsyngas", amount = 100}
     },
-    results=
-    {
-        {type="item", name="reinforced-wall-shield", amount=1},
+    results = {
+        {type = "item", name = "reinforced-wall-shield", amount = 1}
     },
-    main_product= "reinforced-wall-shield",
+    main_product = "reinforced-wall-shield",
     icon = "__pyfusionenergy__/graphics/icons/rwall-shield.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---DEUTERIUM FUSION
-local deuterium_fusion= {
+
+local deuterium_fusion = {
     type = "recipe",
     name = "deuterium-fusion",
     category = "fusion-01",
     enabled = "false",
     energy_required = 40,
-    ingredients ={
-		{type="fluid", name="deuterium", amount=50},
-		{type="fluid", name="pressured-water", amount=4000},
-		{type="item", name="blanket", amount=2},
-		{type="item", name="divertor", amount=5},
-		{type="item", name="wall-shield", amount=10},
-		{type="item", name="sc-unit", amount=20},
-		{type="fluid", name="liquid-helium", amount=30},
-		{type="fluid", name="water", amount=2000},
-
+    ingredients = {
+        {type = "fluid", name = "deuterium", amount = 50},
+        {type = "fluid", name = "pressured-water", amount = 4000},
+        {type = "item", name = "blanket", amount = 2},
+        {type = "item", name = "divertor", amount = 5},
+        {type = "item", name = "wall-shield", amount = 10},
+        {type = "item", name = "sc-unit", amount = 20},
+        {type = "fluid", name = "liquid-helium", amount = 30},
+        {type = "fluid", name = "water", amount = 2000}
     },
-    results=
-    {
-        {type="fluid", name="critical-steam", amount=4000, temperature=1000},
-		{type="fluid", name="helium", amount=150},
-		{type="fluid", name="tritium", amount=20},
-		{type="fluid", name="helium3", amount=30},
-		{type="fluid", name="steam", amount=2000},
+    results = {
+        {type = "fluid", name = "critical-steam", amount = 4000, temperature = 1000},
+        {type = "fluid", name = "helium", amount = 150},
+        {type = "fluid", name = "tritium", amount = 20},
+        {type = "fluid", name = "helium3", amount = 30},
+        {type = "fluid", name = "steam", amount = 2000}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/fusion-deuterium.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---DEUTERIUM HELIUM3 FUSION
-local dt_he3= {
+
+local dt_he3 = {
     type = "recipe",
     name = "dt-he3",
     category = "fusion-01",
     enabled = "false",
     energy_required = 40,
-    ingredients ={
-		{type="fluid", name="deuterium", amount=40},
-		{type="fluid", name="helium3", amount=90},
-		{type="fluid", name="pressured-water", amount=4000},
-		{type="item", name="blanket", amount=2},
-		{type="item", name="divertor", amount=5},
-		{type="item", name="reinforced-wall-shield", amount=10},
-		{type="item", name="sc-unit", amount=20},
-		{type="fluid", name="liquid-helium", amount=35},
-		{type="fluid", name="water", amount=5000},
-
+    ingredients = {
+        {type = "fluid", name = "deuterium", amount = 40},
+        {type = "fluid", name = "helium3", amount = 90},
+        {type = "fluid", name = "pressured-water", amount = 4000},
+        {type = "item", name = "blanket", amount = 2},
+        {type = "item", name = "divertor", amount = 5},
+        {type = "item", name = "reinforced-wall-shield", amount = 10},
+        {type = "item", name = "sc-unit", amount = 20},
+        {type = "fluid", name = "liquid-helium", amount = 35},
+        {type = "fluid", name = "water", amount = 5000}
     },
-    results=
-    {
-        {type="fluid", name="critical-steam", amount=4000, temperature=3000},
-		{type="fluid", name="helium", amount=175},
-		{type="fluid", name="proton", amount=15},
-		{type="fluid", name="steam", amount=5000},
+    results = {
+        {type = "fluid", name = "critical-steam", amount = 4000, temperature = 3000},
+        {type = "fluid", name = "helium", amount = 175},
+        {type = "fluid", name = "proton", amount = 15},
+        {type = "fluid", name = "steam", amount = 5000}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/fusion-he3.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---DEUTERIUM TRITIUM FUSION
-local dt_fusion= {
+
+local dt_fusion = {
     type = "recipe",
     name = "dt-fusion",
     category = "fusion-01",
     enabled = "false",
     energy_required = 40,
-    ingredients ={
-		{type="fluid", name="deuterium", amount=40},
-		{type="fluid", name="tritium", amount=20},
-		{type="fluid", name="pressured-water", amount=4500},
-		{type="item", name="blanket", amount=2},
-		{type="item", name="divertor", amount=5},
-		{type="item", name="reinforced-wall-shield", amount=10},
-		{type="item", name="sc-unit", amount=20},
-		{type="fluid", name="liquid-helium", amount=30},
-		{type="fluid", name="water", amount=3500},
-
+    ingredients = {
+        {type = "fluid", name = "deuterium", amount = 40},
+        {type = "fluid", name = "tritium", amount = 20},
+        {type = "fluid", name = "pressured-water", amount = 4500},
+        {type = "item", name = "blanket", amount = 2},
+        {type = "item", name = "divertor", amount = 5},
+        {type = "item", name = "reinforced-wall-shield", amount = 10},
+        {type = "item", name = "sc-unit", amount = 20},
+        {type = "fluid", name = "liquid-helium", amount = 30},
+        {type = "fluid", name = "water", amount = 3500}
     },
-    results=
-    {
-        {type="fluid", name="critical-steam", amount=4000, temperature=2000},
-		{type="fluid", name="helium", amount=200},
-		{type="fluid", name="tritium", amount=5},
-		{type="fluid", name="steam", amount=3500},
+    results = {
+        {type = "fluid", name = "critical-steam", amount = 4000, temperature = 2000},
+        {type = "fluid", name = "helium", amount = 200},
+        {type = "fluid", name = "tritium", amount = 5},
+        {type = "fluid", name = "steam", amount = 3500}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/fusion-dt.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---BORON-PROTON FUSION
-local b_h= {
+
+local b_h = {
     type = "recipe",
     name = "b-h",
     category = "fusion-02",
     enabled = "false",
     energy_required = 40,
-    ingredients ={
-		{type="fluid", name="proton", amount=45},
-		{type="fluid", name="pressured-water", amount=5000},
-		{type="item", name="blanket", amount=1},
-		{type="item", name="divertor", amount=8},
-		{type="item", name="wall-shield", amount=5},
-		{type="item", name="boron", amount=30},
-		{type="item", name="production-science-pack", amount=5},
-		{type="fluid", name="liquid-helium", amount=100},
-		{type="fluid", name="water", amount=5000},
-
+    ingredients = {
+        {type = "fluid", name = "proton", amount = 45},
+        {type = "fluid", name = "pressured-water", amount = 5000},
+        {type = "item", name = "blanket", amount = 1},
+        {type = "item", name = "divertor", amount = 8},
+        {type = "item", name = "wall-shield", amount = 5},
+        {type = "item", name = "boron", amount = 30},
+        {type = "item", name = "production-science-pack", amount = 5},
+        {type = "fluid", name = "liquid-helium", amount = 100},
+        {type = "fluid", name = "water", amount = 5000}
     },
-    results=
-    {
-        {type="fluid", name="critical-steam", amount=4500, temperature=4000},
-		{type="fluid", name="helium", amount=500},
-		{type="fluid", name="steam", amount=5000},
+    results = {
+        {type = "fluid", name = "critical-steam", amount = 4500, temperature = 4000},
+        {type = "fluid", name = "helium", amount = 500},
+        {type = "fluid", name = "steam", amount = 5000}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/fusion-bh.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---STEAM EXCHANGE 1
-local steam_exchange1= {
+
+local steam_exchange1 = {
     type = "recipe",
     name = "steam-exchange1",
     category = "heat-exchanger",
     enabled = "false",
     energy_required = 15,
-    ingredients ={
-		{type="fluid", name="critical-steam", amount=500, temperature=1000},
-		{type="fluid", name="water", amount=250},
-
+    ingredients = {
+        {type = "fluid", name = "critical-steam", amount = 500, temperature = 1000},
+        {type = "fluid", name = "water", amount = 250}
     },
-    results=
-    {
-        {type="fluid", name="pressured-steam", amount=1000, temperature=1000},
-		{type="fluid", name="steam", amount=250},
+    results = {
+        {type = "fluid", name = "pressured-steam", amount = 1000, temperature = 1000},
+        {type = "fluid", name = "steam", amount = 250}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/steam-exchange.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---STEAM EXCHANGE 2
-local steam_exchange2= {
+
+local steam_exchange2 = {
     type = "recipe",
     name = "steam-exchange2",
     category = "heat-exchanger",
     enabled = "false",
     energy_required = 15,
-    ingredients ={
-		{type="fluid", name="critical-steam", amount=500, temperature=2000},
-		{type="fluid", name="water", amount=250},
-
+    ingredients = {
+        {type = "fluid", name = "critical-steam", amount = 500, temperature = 2000},
+        {type = "fluid", name = "water", amount = 250}
     },
-    results=
-    {
-        {type="fluid", name="pressured-steam", amount=1000, temperature=2000},
-		{type="fluid", name="steam", amount=250},
+    results = {
+        {type = "fluid", name = "pressured-steam", amount = 1000, temperature = 2000},
+        {type = "fluid", name = "steam", amount = 250}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/steam-exchange2.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---STEAM EXCHANGE 3
-local steam_exchange3= {
+
+local steam_exchange3 = {
     type = "recipe",
     name = "steam-exchange3",
     category = "heat-exchanger",
     enabled = "false",
     energy_required = 15,
-    ingredients ={
-		{type="fluid", name="critical-steam", amount=500, temperature=3000},
-		{type="fluid", name="water", amount=250},
-
+    ingredients = {
+        {type = "fluid", name = "critical-steam", amount = 500, temperature = 3000},
+        {type = "fluid", name = "water", amount = 250}
     },
-    results=
-    {
-        {type="fluid", name="pressured-steam", amount=1000, temperature=3000},
-		{type="fluid", name="steam", amount=250},
+    results = {
+        {type = "fluid", name = "pressured-steam", amount = 1000, temperature = 3000},
+        {type = "fluid", name = "steam", amount = 250}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/steam-exchange3.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---STEAM EXCHANGE 4
-local steam_exchange4= {
+
+local steam_exchange4 = {
     type = "recipe",
     name = "steam-exchange4",
     category = "heat-exchanger",
     enabled = "false",
     energy_required = 15,
-    ingredients ={
-		{type="fluid", name="critical-steam", amount=500, temperature=4000},
-		{type="fluid", name="water", amount=400},
-
+    ingredients = {
+        {type = "fluid", name = "critical-steam", amount = 500, temperature = 4000},
+        {type = "fluid", name = "water", amount = 400}
     },
-    results=
-    {
-        {type="fluid", name="pressured-steam", amount=1000, temperature=4000},
-		{type="fluid", name="steam", amount=400},
+    results = {
+        {type = "fluid", name = "pressured-steam", amount = 1000, temperature = 4000},
+        {type = "fluid", name = "steam", amount = 400}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/steam-exchange4.png",
     subgroup = "py-fusion-items",
-    order = "e",
+    order = "e"
 }
--------------------------------------------------------------------------------
---LEAD CONTAINER
-local lead_container= {
+
+local lead_container = {
     type = "recipe",
     name = "lead-container",
     category = "crafting",
     enabled = "false",
     energy_required = 7,
-    ingredients ={
-		{type="item", name="iron-plate", amount=20}, --bob lead plate
-		{type="item", name="nbfe-alloy", amount=10},
+    ingredients = {
+        {type = "item", name = "iron-plate", amount = 20}, --bob lead plate
+        {type = "item", name = "nbfe-alloy", amount = 10}
     },
-    results=
-    {
-        {type="item", name="lead-container", amount=1},
+    results = {
+        {type = "item", name = "lead-container", amount = 1}
     },
-    main_product= "lead-container",
+    main_product = "lead-container",
     icon = "__pyfusionenergy__/graphics/icons/lead-container.png",
     subgroup = "py-fusion-items",
-    order = "f",
+    order = "f"
 }
--------------------------------------------------------------------------------
---SCIENCE COATING
-local science_coating= {
+
+local science_coating = {
     type = "recipe",
     name = "science-coating",
     category = "advanced-crafting",
     enabled = "false",
     energy_required = 10,
-    ingredients ={
-		{type="item", name="diamond", amount=10},
-		{type="item", name="niobium-pipe", amount=1},
-		{type="item", name="steel-plate", amount=10}, --bobs titanium plate
+    ingredients = {
+        {type = "item", name = "diamond", amount = 10},
+        {type = "item", name = "pipe", amount = 1}, --pyindustry niobium-pipe
+        {type = "item", name = "steel-plate", amount = 10} --bobs titanium plate
     },
-    results=
-    {
-        {type="item", name="science-coating", amount=1},
+    results = {
+        {type = "item", name = "science-coating", amount = 1}
     },
-    main_product= "science-coating",
+    main_product = "science-coating",
     icon = "__pyfusionenergy__/graphics/icons/science-coating.png",
     subgroup = "py-fusion-items",
-    order = "f",
+    order = "f"
 }
--------------------------------------------------------------------------------
---COATED CONTAINER
-local coated_container= {
+
+local coated_container = {
     type = "recipe",
     name = "coated-container",
     category = "advanced-crafting",
     enabled = "false",
     energy_required = 5,
-    ingredients ={
-		{type="item", name="lead-container", amount=2},
-		{type="item", name="science-coating", amount=1},
+    ingredients = {
+        {type = "item", name = "lead-container", amount = 2},
+        {type = "item", name = "science-coating", amount = 1}
     },
-    results=
-    {
-        {type="item", name="coated-container", amount=1},
+    results = {
+        {type = "item", name = "coated-container", amount = 1}
     },
-    main_product= "coated-container",
+    main_product = "coated-container",
     icon = "__pyfusionenergy__/graphics/icons/coated-container.png",
     subgroup = "py-fusion-items",
-    order = "f",
+    order = "f"
 }
--------------------------------------------------------------------------------
---NUCLEAR SAMPLE
-local nuclear_sample= {
+
+local nuclear_sample = {
     type = "recipe",
     name = "nuclear-sample",
     category = "mixer",
     enabled = "false",
     energy_required = 5,
-    ingredients ={
-		{type="item", name="uranium-ore", amount=20},
-		{type="item", name="science-pack-1", amount=1},
-		{type="fluid", name="boric-acid", amount=100},
-		{type="fluid", name="industrial-solvent", amount=100},
-		{type="fluid", name="aromatics", amount=50},
+    ingredients = {
+        {type = "item", name = "uranium-ore", amount = 20},
+        {type = "item", name = "science-pack-1", amount = 1},
+        {type = "fluid", name = "boric-acid", amount = 100},
+        {type = "fluid", name = "industrial-solvent", amount = 100},
+        {type = "fluid", name = "aromatics", amount = 50}
     },
-    results=
-    {
-        {type="item", name="nuclear-sample", amount=1},
+    results = {
+        {type = "item", name = "nuclear-sample", amount = 1}
     },
-    main_product= "nuclear-sample",
+    main_product = "nuclear-sample",
     icon = "__pyfusionenergy__/graphics/icons/nuclear-sample.png",
     subgroup = "py-fusion-items",
-    order = "f",
+    order = "f"
 }
--------------------------------------------------------------------------------
---CONTROL UNIT
-local control_unit= {
+
+local control_unit = {
     type = "recipe",
     name = "control-unit",
     category = "crafting",
     enabled = "false",
     energy_required = 5,
-    ingredients ={
-		{type="item", name="advanced-circuit", amount=10},
-		{type="item", name="nexelit-cartridge", amount=1},
-		{type="item", name="nenbit-matrix", amount=5},
-		{type="item", name="fuelrod-mk01", amount=2},
-		{type="item", name="iron-plate", amount=4},
+    ingredients = {
+        {type = "item", name = "advanced-circuit", amount = 10},
+        {type = "item", name = "nexelit-cartridge", amount = 1},
+        {type = "item", name = "nenbit-matrix", amount = 5},
+        {type = "item", name = "fuelrod-mk01", amount = 2},
+        {type = "item", name = "iron-plate", amount = 4}
     },
-    results=
-    {
-        {type="item", name="control-unit", amount=1},
+    results = {
+        {type = "item", name = "control-unit", amount = 1}
     },
-    main_product= "control-unit",
+    main_product = "control-unit",
     icon = "__pyfusionenergy__/graphics/icons/control-unit.png",
     subgroup = "py-fusion-items",
-    order = "f",
+    order = "f"
 }
--------------------------------------------------------------------------------
---PRODUCTION SCIENCE PACK "should overlay the vanilla one"
-local productionscience_pack ={
+
+local productionscience_pack = {
     type = "recipe",
     name = "production-science-pack",
     category = "advanced-crafting",
     enabled = "true",
     energy_required = 4,
-    ingredients ={
-        {type="item", name="control-unit", amount=1},
-        {type="item", name="coated-container", amount=1},
-		{type="item", name="nuclear-sample", amount=2},
+    ingredients = {
+        {type = "item", name = "control-unit", amount = 1},
+        {type = "item", name = "coated-container", amount = 1},
+        {type = "item", name = "nuclear-sample", amount = 2}
     },
-    results={
-        {type="item", name="production-science-pack", amount=2},
+    results = {
+        {type = "item", name = "production-science-pack", amount = 2}
     },
     icon = "__pyfusionenergy__/graphics/icons/production-science-pack.png",
     subgroup = "py-fusion-items",
-    order = "x",
+    order = "x"
 }
--------------------------------------------------------------------------------
---AGZN ALLOY
-local agzn_alloy ={
+
+local agzn_alloy = {
     type = "recipe",
     name = "agzn-alloy",
     category = "advanced-foundry",
     enabled = "false",
     energy_required = 5,
-    ingredients ={
-        {type="item", name="stone", amount=10}, --bobs zinc plate
-        {type="item", name="iron-plate", amount=20}, --bobs silver plate
-		{type="fluid", name="refsyngas", amount=200},
+    ingredients = {
+        {type = "item", name = "stone", amount = 10}, --bobs zinc plate
+        {type = "item", name = "iron-plate", amount = 20}, --bobs silver plate
+        {type = "fluid", name = "refsyngas", amount = 200}
     },
-    results={
-        {type="item", name="agzn-alloy", amount=2},
+    results = {
+        {type = "item", name = "agzn-alloy", amount = 2}
     },
-	main_product= "agzn-alloy",
+    main_product = "agzn-alloy",
     icon = "__pyfusionenergy__/graphics/icons/agzn-alloy.png",
     subgroup = "py-fusion-items",
-    order = "d",
+    order = "d"
 }
--------------------------------------------------------------------------------
---SILVER FOAM
-local silver_foam ={
+
+local silver_foam = {
     type = "recipe",
     name = "silver-foam",
     category = "rectisol",
     enabled = "false",
     energy_required = 10,
-    ingredients ={
-        {type="item", name="agzn-alloy", amount=1},
-        {type="item", name="limestone", amount=30},
-		{type="fluid", name="acetylene", amount=200},
-		{type="fluid", name="water", amount=200}, --bobs hydrogen-chloride
-		{type="fluid", name="hydrogen-peroxide", amount=100},
+    ingredients = {
+        {type = "item", name = "agzn-alloy", amount = 1},
+        {type = "item", name = "limestone", amount = 30},
+        {type = "fluid", name = "acetylene", amount = 200},
+        {type = "fluid", name = "water", amount = 200}, --bobs hydrogen-chloride
+        {type = "fluid", name = "hydrogen-peroxide", amount = 100}
     },
-    results={
-        {type="item", name="silver-foam", amount=1},
+    results = {
+        {type = "item", name = "silver-foam", amount = 1}
     },
-	main_product= "silver-foam",
+    main_product = "silver-foam",
     icon = "__pyfusionenergy__/graphics/icons/silver-foam.png",
     subgroup = "py-fusion-items",
-    order = "dd",
+    order = "dd"
 }
--------------------------------------------------------------------------------
---HELIUM 3 SEPARATION
-local he3_separation ={
+
+local he3_separation = {
     type = "recipe",
     name = "he3-separation",
     category = "gas-separator",
     enabled = "false",
     energy_required = 8,
-    ingredients ={
-        {type="item", name="silver-foam", amount=1},
-		{type="fluid", name="helium", amount=10},
-		{type="item", name="niobium-plate", amount=4},
+    ingredients = {
+        {type = "item", name = "silver-foam", amount = 1},
+        {type = "fluid", name = "helium", amount = 10},
+        {type = "item", name = "niobium-plate", amount = 4}
     },
-    results={
-        {type="fluid", name="helium3", amount=8},
-		{type="fluid", name="helium", amount=2},
+    results = {
+        {type = "fluid", name = "helium3", amount = 8},
+        {type = "fluid", name = "helium", amount = 2}
     },
-	main_product= "helium3",
+    main_product = "helium3",
     icon = "__pyfusionenergy__/graphics/icons/helium3.png",
     subgroup = "py-fusion-items",
-    order = "dd",
-}
-------------------------------------------------------------------------------
-data:extend{
-    crushing_molybdenite,
-	milling_molybdenite,
-	molybdenum_concentrate,
-	molybdenum_filtration,
-	molybdenum_oxide,
-	molybdenum_plate,
-	phytoplankton,
-	xyhiphoe_blood,
-	xyhiphoe_hydrocyclone,
-	cobalt_solvent,
-	solvent_separation,
-	sodium_chlorate,
-	vanadium_oxide,
-	wastewater_filtration,
-	wastewater_recovery,
-	super_alloy,
-	crushed_kimberlite,
-	screening_kimberlite,
-	kimberlite_rejects_recrushing,
-	kimberlite_washing,
-	pure_kimberlite_recrushing,
-	screening_kimberlite_residue,
-	diamond_rejects_recrushing,
-	diamond_rejects_screening,
-	rejects_separation,
-	jig_separation,
-	greasing_1,
-	greasing_2,
-	greasing_3,
-	washing_crude,
-	class_diamond,
-	cool_air,
-	liquid_air_distilation,
-	stone_calcination,
-	calcinate_separation,
-	bacteria_1,
-	serine,
-	methyl_acrylate,
-	kmauts_ration,
-	crush_regolite,
-	recrush_regolite,
-	milling_regolite,
-	regolite_calcination,
-	liquid_petgas,
-	liquid_petgas_separation,
-	gas_stream_filtration,
-	liquid_rich_gas_distilation,
-	helium,
-	nexelit_matrix,
-	nbti_alloy,
-	nenbit_matrix,
-	sc_wire,
-	ferrite,
-	coil_core,
-	sc_coil,
-	magnetic_core,
-	deposited_core,
-	sc_unit,
-	d2o_distilation,
-	b2o3_milling,
-	boron_mixture,
-	boron,
-	boron_carbide,
-	blanket_chassi,
-	blanket,
-	deuterium_fusion,
-	dt_fusion,
-	divertor,
-	wall_shield,
-	rwall_shield,
-	steam_exchange1,
-	steam_exchange2,
-	steam_exchange3,
-	steam_exchange4,
-	lead_container,
-	science_coating,
-	coated_container,
-	nuclear_sample,
-	control_unit,
-	productionscience_pack,
-	dt_he3,
-	b_h,
-	agzn_alloy,
-	silver_foam,
-	he3_separation
+    order = "dd"
 }
 
--------------------------------------------------------------------------------
---[[Additional Tech unlocks]]--
--------------------------------------------------------------------------------
+data:extend {
+    crushing_molybdenite,
+    milling_molybdenite,
+    molybdenum_concentrate,
+    molybdenum_filtration,
+    molybdenum_oxide,
+    molybdenum_plate,
+    phytoplankton,
+    xyhiphoe_blood,
+    xyhiphoe_hydrocyclone,
+    cobalt_solvent,
+    solvent_separation,
+    sodium_chlorate,
+    vanadium_oxide,
+    wastewater_filtration,
+    wastewater_recovery,
+    super_alloy,
+    crushed_kimberlite,
+    screening_kimberlite,
+    kimberlite_rejects_recrushing,
+    kimberlite_washing,
+    pure_kimberlite_recrushing,
+    screening_kimberlite_residue,
+    diamond_rejects_recrushing,
+    diamond_rejects_screening,
+    rejects_separation,
+    jig_separation,
+    greasing_1,
+    greasing_2,
+    greasing_3,
+    washing_crude,
+    class_diamond,
+    cool_air,
+    liquid_air_distilation,
+    stone_calcination,
+    calcinate_separation,
+    bacteria_1,
+    serine,
+    methyl_acrylate,
+    kmauts_ration,
+    crush_regolite,
+    recrush_regolite,
+    milling_regolite,
+    regolite_calcination,
+    liquid_petgas,
+    liquid_petgas_separation,
+    gas_stream_filtration,
+    liquid_rich_gas_distilation,
+    helium,
+    nexelit_matrix,
+    nbti_alloy,
+    nenbit_matrix,
+    sc_wire,
+    ferrite,
+    coil_core,
+    sc_coil,
+    magnetic_core,
+    deposited_core,
+    sc_unit,
+    d2o_distilation,
+    b2o3_milling,
+    boron_mixture,
+    boron,
+    boron_carbide,
+    blanket_chassi,
+    blanket,
+    deuterium_fusion,
+    dt_fusion,
+    divertor,
+    wall_shield,
+    rwall_shield,
+    steam_exchange1,
+    steam_exchange2,
+    steam_exchange3,
+    steam_exchange4,
+    lead_container,
+    science_coating,
+    coated_container,
+    nuclear_sample,
+    control_unit,
+    productionscience_pack,
+    dt_he3,
+    b_h,
+    agzn_alloy,
+    silver_foam,
+    he3_separation
+}
+
 local crusher = data.raw.technology["crusher"].effects
 crusher[#crusher + 1] = {
     type = "unlock-recipe",

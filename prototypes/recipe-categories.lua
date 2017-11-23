@@ -1,104 +1,97 @@
--------------------------------------------------------------------------------
---[[Recipe Categories]]--
--------------------------------------------------------------------------------
-data:extend{
+data:extend {
     {
         type = "recipe-category",
-        name = "agitator",
+        name = "agitator"
     },
     {
         type = "recipe-category",
-        name = "thickener",
+        name = "thickener"
     },
     {
         type = "recipe-category",
-        name = "vacuum",
+        name = "vacuum"
     },
     {
         type = "recipe-category",
-        name = "plankton",
+        name = "plankton"
     },
     {
         type = "recipe-category",
-        name = "xyhiphoe",
+        name = "xyhiphoe"
     },
     {
         type = "recipe-category",
-        name = "hydrocyclone",
+        name = "hydrocyclone"
     },
     {
         type = "recipe-category",
-        name = "mixer",
+        name = "mixer"
     },
     {
         type = "recipe-category",
-        name = "screener",
+        name = "screener"
     },
     {
         type = "recipe-category",
-        name = "secondary-crusher",
+        name = "secondary-crusher"
     },
     {
         type = "recipe-category",
-        name = "pan",
+        name = "pan"
     },
     {
         type = "recipe-category",
-        name = "jig",
+        name = "jig"
     },
     {
         type = "recipe-category",
-        name = "grease",
+        name = "grease"
     },
     {
         type = "recipe-category",
-        name = "compressor",
+        name = "compressor"
     },
     {
         type = "recipe-category",
-        name = "genlab",
+        name = "genlab"
     },
     {
         type = "recipe-category",
-        name = "kmauts",
+        name = "kmauts"
     },
     {
         type = "recipe-category",
-        name = "bio-reactor",
+        name = "bio-reactor"
     },
     {
         type = "recipe-category",
-        name = "gas-separator",
+        name = "gas-separator"
     },
     {
         type = "recipe-category",
-        name = "nmf",
+        name = "nmf"
     },
     {
         type = "recipe-category",
-        name = "fusion-01",
+        name = "fusion-01"
     },
     {
         type = "recipe-category",
-        name = "fusion-02",
+        name = "fusion-02"
     },
     {
         type = "recipe-category",
-        name = "heat-exchanger",
-    },
+        name = "heat-exchanger"
+    }
 }
 
-
--------------------------------------------------------------------------------
---[[Resource Categories]]--
--------------------------------------------------------------------------------
-data:extend{
+data:extend {
     {
-      type = "resource-category",
-      name = "volcanic-pipe",
+        type = "resource-category",
+        name = "volcanic-pipe"
     },
     {
         type = "resource-category",
-        name = "regolite",
-    },
+        name = "regolite"
+    }
 }
