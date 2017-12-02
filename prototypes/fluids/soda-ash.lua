@@ -10,7 +10,7 @@ local soda_ash = {
         {type = "fluid", name = "water-saline", amount = 250}
     },
     results = {
-        {type = "fluid", name = "soda-ash", amount = 100}
+        {type = "fluid", name = "soda-ash", amount = 200}
     },
     main_product = "soda-ash",
     icon = "__pyfusionenergy__/graphics/icons/agitation-soda-ash.png",
