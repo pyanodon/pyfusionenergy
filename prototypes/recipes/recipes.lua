@@ -1612,7 +1612,7 @@ local nuclear_sample = {
     enabled = "false",
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "uranium-ore", amount = 20},
+        {type = "item", name = "uranium-ore", amount = 100},
         {type = "item", name = "science-pack-1", amount = 1},
         {type = "fluid", name = "boric-acid", amount = 100},
         {type = "fluid", name = "industrial-solvent", amount = 100},
@@ -1653,7 +1653,7 @@ local productionscience_pack = {
     type = "recipe",
     name = "production-science-pack",
     category = "advanced-crafting",
-    enabled = "true",
+    enabled = "false",
     energy_required = 4,
     ingredients = {
         {type = "item", name = "control-unit", amount = 1},
