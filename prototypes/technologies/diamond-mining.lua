@@ -12,6 +12,10 @@ local technology = {
         },
         {
             type = "unlock-recipe",
+            recipe = "vacuum"
+        },
+        {
+            type = "unlock-recipe",
             recipe = "diamond-mine"
         },
         {
@@ -125,7 +129,7 @@ local technology = {
         {
             type = "unlock-recipe",
             recipe = "coated-container"
-        }
+        },
         {
             type = "unlock-recipe",
             recipe = "production-science-pack"

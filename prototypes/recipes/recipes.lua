@@ -961,7 +961,7 @@ local nexelit_matrix = {
         {type = "item", name = "wood", amount = 3} --bobs resin
     },
     results = {
-        {type = "item", name = "nexelit-matrix", amount = 3}
+        {type = "item", name = "nexelit-matrix", amount = 4}
     },
     main_product = "nexelit-matrix",
     icon = "__pyfusionenergy__/graphics/icons/nexelit-matrix.png",
@@ -1000,7 +1000,7 @@ local nenbit_matrix = {
         {type = "item", name = "nexelit-matrix", amount = 10}
     },
     results = {
-        {type = "item", name = "nenbit-matrix", amount = 1}
+        {type = "item", name = "nenbit-matrix", amount = 2}
     },
     main_product = "nenbit-matrix",
     icon = "__pyfusionenergy__/graphics/icons/nenbit-matrix.png",
@@ -1636,12 +1636,12 @@ local control_unit = {
     ingredients = {
         {type = "item", name = "advanced-circuit", amount = 10},
         {type = "item", name = "nexelit-cartridge", amount = 1},
-        {type = "item", name = "nenbit-matrix", amount = 5},
+        {type = "item", name = "nenbit-matrix", amount = 4},
         {type = "item", name = "fuelrod-mk01", amount = 2},
         {type = "item", name = "iron-plate", amount = 4}
     },
     results = {
-        {type = "item", name = "control-unit", amount = 1}
+        {type = "item", name = "control-unit", amount = 2}
     },
     main_product = "control-unit",
     icon = "__pyfusionenergy__/graphics/icons/control-unit.png",
@@ -1661,7 +1661,7 @@ local productionscience_pack = {
         {type = "item", name = "nuclear-sample", amount = 2}
     },
     results = {
-        {type = "item", name = "production-science-pack", amount = 2}
+        {type = "item", name = "production-science-pack", amount = 3}
     },
     icon = "__pyfusionenergy__/graphics/icons/production-science-pack.png",
     subgroup = "py-fusion-items",
