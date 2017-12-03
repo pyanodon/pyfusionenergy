@@ -8,6 +8,10 @@ local technology = {
     effects = {
         {
             type = "unlock-recipe",
+            recipe = "vacuum-pump"
+        },
+        {
+            type = "unlock-recipe",
             recipe = "diamond-mine"
         },
         {
@@ -121,6 +125,10 @@ local technology = {
         {
             type = "unlock-recipe",
             recipe = "coated-container"
+        }
+        {
+            type = "unlock-recipe",
+            recipe = "production-science-pack"
         }
     },
     unit = {
