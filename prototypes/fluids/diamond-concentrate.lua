@@ -9,7 +9,7 @@ local diamond_concentrate = {
         {type = "fluid", name = "soda-ash", amount = 100}
     },
     results = {
-        {type = "fluid", name = "diamond-concentrate", amount = 100},
+        {type = "fluid", name = "diamond-concentrate", amount = 150},
         {type = "item", name = "diamond-reject", amount = 15},
         {type = "fluid", name = "dirty-water", amount = 200}
     },

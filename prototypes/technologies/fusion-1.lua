@@ -8,10 +8,6 @@ local technology = {
     effects = {
         {
             type = "unlock-recipe",
-            recipe = "vacuum"
-        },
-        {
-            type = "unlock-recipe",
             recipe = "pressured-water"
         },
         {
