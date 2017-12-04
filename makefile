@@ -37,7 +37,7 @@ git: tag
 
 github-release:
 	curl --data '{"tag_name": "v$(VERSION_STRING)","target_commitish": "master","name": "v$(VERSION_STRING)","body": "Release of version $(VERSION_STRING)","draft": false,"prerelease": false}' https://api.github.com/repos/pyanodon/pYCoalprocesing/releases?access_token=$(TOKEN);
-	#curl 'https://api.github.com/repos/pyanodon/pYCoalprocesing/releases/v$(VERSION_STRING)/assets?access_token=$(TOKEN)&name=$(OUTPUT_NAME).zip' --header 'Content-Type: application/zip' --upload-file $(BUILD_DIR)/$(OUTPUT_NAME).zip -X POST;
+	#curl 'https://api.github.com/repos/pyanodon/pyfusionenergy/releases/v$(VERSION_STRING)/assets?access_token=$(TOKEN)&name=$(OUTPUT_NAME).zip' --header 'Content-Type: application/zip' --upload-file $(BUILD_DIR)/$(OUTPUT_NAME).zip -X POST;
 
 package-copy: $(PKG_DIRS) $(PKG_FILES)
 	@mkdir -p $(OUTPUT_DIR)
