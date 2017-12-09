@@ -638,7 +638,7 @@ local liquid_air_distilation = {
     },
     results = {
         {type = "fluid", name = "dry-gas-stream", amount = 1},
-        {type = "fluid", name = "carbon-dioxide", amount = 1}
+        {type = "fluid", name = "helium", amount = 1, probability = 0.4}
         --add nitrogen
         --add oxygen
     },
