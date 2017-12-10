@@ -37,6 +37,7 @@ replace_ing("centrifugal-pan", "pipe", "titanium-pipe")
 add_ing("centrifugal-pan", {type = "item", name = "tungsten-plate", amount = 20})
 
 replace_ing("compressor", "iron-gear-wheel", "titanium-bearing")
+add_ing("compressor", {type = "item", name = "tungsten-plate", amount = 20})
 
 replace_ing("genlab", "iron-gear-wheel", "nitinol-bearing")
 add_ing("genlab", {type = "item", name = "glass", amount = 50})
