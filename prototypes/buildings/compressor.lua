@@ -9,7 +9,6 @@ local recipe1 = {
         {"pipe", 20}, --pyindustry niobium-pipe
         {"evaporator", 1},
         {"engine-unit", 4},
-        {"super-alloy", 30},
         {"steel-plate", 30},
         {"iron-gear-wheel", 30} --updated-bob titanium-bearing
     },
