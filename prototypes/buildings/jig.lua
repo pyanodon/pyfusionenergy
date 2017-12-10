@@ -65,7 +65,7 @@ local recipe1 = {
         {"secondary-crusher", 1},
         {"advanced-circuit", 20},
         {"steel-plate", 25},
-        {"assembling-machine-3", 2},
+        {"assembling-machine-2", 2},
         {"pipe", 40} --updated-bob titanium-pipe
     },
     result = "jig",
