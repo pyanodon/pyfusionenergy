@@ -239,7 +239,7 @@ local vanadium_oxide = {
         {type = "fluid", name = "vpulp-precip", amount = 100}
     },
     results = {
-        {type = "item", name = "vanadium-oxide", amount = 5},
+        {type = "item", name = "vanadium-oxide", amount = 10},
         {type = "fluid", name = "dirty-water", amount = 300}
     },
     main_product = "vanadium-oxide",
@@ -719,7 +719,7 @@ local serine = {
     enabled = "false",
     energy_required = 30,
     ingredients = {
-        {type = "item", name = "kmauts-ration", amount = 2}
+        {type = "item", name = "kmauts-ration", amount = 1}
     },
     results = {
         {type = "item", name = "serine", amount = 10}
@@ -759,11 +759,11 @@ local kmauts_ration = {
     ingredients = {
         {type = "item", name = "iron-plate", amount = 2}, --bobs tin plate
         {type = "item", name = "mukmoux-fat", amount = 5},
-        {type = "item", name = "organics", amount = 100},
+        {type = "item", name = "organics", amount = 50},
         {type = "item", name = "ralesia", amount = 15}
     },
     results = {
-        {type = "item", name = "kmauts-ration", amount = 2}
+        {type = "item", name = "kmauts-ration", amount = 3}
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/kmauts-ration.png",
@@ -1612,7 +1612,7 @@ local nuclear_sample = {
     enabled = "false",
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "uranium-ore", amount = 100},
+        {type = "item", name = "uranium-ore", amount = 50},
         {type = "item", name = "science-pack-1", amount = 1},
         {type = "fluid", name = "boric-acid", amount = 100},
         {type = "fluid", name = "industrial-solvent", amount = 100},
