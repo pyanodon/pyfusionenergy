@@ -239,7 +239,7 @@ local vanadium_oxide = {
         {type = "fluid", name = "vpulp-precip", amount = 100}
     },
     results = {
-        {type = "item", name = "vanadium-oxide", amount = 10},
+        {type = "item", name = "vanadium-oxide", amount = 15},
         {type = "fluid", name = "dirty-water", amount = 300}
     },
     main_product = "vanadium-oxide",
