@@ -5,12 +5,12 @@ local vpulp4 = {
     enabled = "false",
     energy_required = 5,
     ingredients = {
-        {type = "fluid", name = "pregnant-solution", amount = 150},
+        {type = "fluid", name = "pregnant-solution", amount = 100},
         {type = "item", name = "sodium-chlorate", amount = 100}
     },
     results = {
         {type = "fluid", name = "vpulp4", amount = 100},
-        {type = "item", name = "vanadium-oxide", amount = 1, probability = 0.2}
+        {type = "item", name = "vanadium-oxide", amount = 1, probability = 0.3}
     },
     main_product = "vpulp4",
     icon = "__pyfusionenergy__/graphics/icons/agitation-vpulp4.png",
