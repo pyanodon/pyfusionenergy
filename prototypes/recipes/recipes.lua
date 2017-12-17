@@ -1277,7 +1277,7 @@ local blanket = {
     ingredients = {
         {type = "item", name = "blanket-chassi", amount = 2},
         {type = "item", name = "boron-carbide", amount = 10},
-        {type = "item", name = "diamond", amount = 50}
+        {type = "item", name = "diamond", amount = 20}
         --add bobs lithium and lead
     },
     results = {
