@@ -298,9 +298,9 @@ local super_alloy = {
         {type = "item", name = "limestone", amount = 3},
         {type = "item", name = "sand-casting", amount = 2},
         {type = "item", name = "chromium", amount = 20},
-        {type = "item", name = "molybdenum-oxide", amount = 25},
+        {type = "item", name = "molybdenum-oxide", amount = 10},
         {type = "item", name = "nexelit-plate", amount = 5},
-        {type = "item", name = "vanadium-oxide", amount = 10}
+        {type = "item", name = "vanadium-oxide", amount = 8}
     },
     results = {
         {type = "item", name = "super-alloy", amount = 5}
