@@ -36,6 +36,10 @@ local technology = {
         },
         {
             type = "unlock-recipe",
+            recipe = "gravel-calcination"
+        },
+        {
+            type = "unlock-recipe",
             recipe = "calcinate-separation"
         },
         {

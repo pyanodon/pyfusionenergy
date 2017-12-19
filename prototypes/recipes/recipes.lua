@@ -667,6 +667,25 @@ local stone_calcination = {
     subgroup = "py-fusion-recipes",
     order = "l"
 }
+local gravel_calcination = {
+    type = "recipe",
+    name = "gravel-calcination",
+    category = "hpf",
+    enabled = "false",
+    energy_required = 4,
+    ingredients = {
+        {type = "item", name = "gravel", amount = 50}
+    },
+    results = {
+        {type = "item", name = "calcinates", amount = 10},
+        {type = "item", name = "ash", amount = 3},
+        {type = "fluid", name = "dry-gas-stream", amount = 2}
+    },
+    --main_product= "crude",
+    icon = "__pyfusionenergy__/graphics/icons/calcinates.png",
+    subgroup = "py-fusion-recipes",
+    order = "l"
+}
 
 local calcinate_separation = {
     type = "recipe",
@@ -1766,6 +1785,7 @@ data:extend {
     cool_air,
     liquid_air_distilation,
     stone_calcination,
+	gravel_calcination
     calcinate_separation,
     bacteria_1,
     serine,
