@@ -15,7 +15,6 @@ local recipe1 = {
     energy_required = 5,
     enabled = false,
     ingredients = {
-        {"electric-engine-unit", 2},
         {"iron-plate", 20},
         {"steel-plate", 10},
         {"iron-gear-wheel", 10},
