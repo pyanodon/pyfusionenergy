@@ -2,7 +2,8 @@ local autoplace = {
     type = "autoplace-control",
     name = "volcanic-pipe",
     richness = true,
-    order = "b-e"
+    order = "b-e",
+    category = "resource",
 }
 local noise = {
     type = "noise-layer",

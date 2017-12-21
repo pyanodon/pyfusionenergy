@@ -2,7 +2,8 @@ local autoplace = {
     type = "autoplace-control",
     name = "regolites",
     richness = true,
-    order = "b-e"
+    order = "b-e",
+    category = "resource",
 }
 local noise = {
     type = "noise-layer",
