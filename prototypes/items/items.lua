@@ -1,4 +1,6 @@
-local molybdenum_ore = {
+local Item = require("stdlib/data/item")
+
+Item {
     type = "item",
     name = "molybdenum-ore",
     icon = "__pyfusionenergy__/graphics/icons/ores/molybdenum.png",
@@ -8,7 +10,7 @@ local molybdenum_ore = {
     stack_size = 200
 }
 
-local kimberlite_rock = {
+Item {
     type = "item",
     name = "kimberlite-rock",
     icon = "__pyfusionenergy__/graphics/icons/ores/kimberlite-rock.png",
@@ -18,7 +20,7 @@ local kimberlite_rock = {
     stack_size = 500
 }
 
-local regolite_rock = {
+Item {
     type = "item",
     name = "regolite-rock",
     icon = "__pyfusionenergy__/graphics/icons/ores/regolite-rock.png",
@@ -28,7 +30,7 @@ local regolite_rock = {
     stack_size = 200
 }
 
-local crushed_kimberlite = {
+Item {
     type = "item",
     name = "crushed-kimberlite",
     icon = "__pyfusionenergy__/graphics/icons/crushed-kimberlite.png",
@@ -38,7 +40,7 @@ local crushed_kimberlite = {
     stack_size = 500
 }
 
-local kimberlite_rejects = {
+Item {
     type = "item",
     name = "kimberlite-rejects",
     icon = "__pyfusionenergy__/graphics/icons/kimberlite-rejects.png",
@@ -48,7 +50,7 @@ local kimberlite_rejects = {
     stack_size = 500
 }
 
-local kimberlite_grade2 = {
+Item {
     type = "item",
     name = "kimberlite-grade2",
     icon = "__pyfusionenergy__/graphics/icons/kimberlite-grade2.png",
@@ -58,7 +60,7 @@ local kimberlite_grade2 = {
     stack_size = 500
 }
 
-local pure_kimberlite_grade2 = {
+Item {
     type = "item",
     name = "pure-kimberlite-grade2",
     icon = "__pyfusionenergy__/graphics/icons/pure-kimberlite-grade2.png",
@@ -68,7 +70,7 @@ local pure_kimberlite_grade2 = {
     stack_size = 500
 }
 
-local kimberlite_grade3 = {
+Item {
     type = "item",
     name = "kimberlite-grade3",
     icon = "__pyfusionenergy__/graphics/icons/kimberlite-grade3.png",
@@ -78,7 +80,7 @@ local kimberlite_grade3 = {
     stack_size = 500
 }
 
-local kimberlite_residue = {
+Item {
     type = "item",
     name = "kimberlite-residue",
     icon = "__pyfusionenergy__/graphics/icons/kimberlite-residue.png",
@@ -88,7 +90,7 @@ local kimberlite_residue = {
     stack_size = 500
 }
 
-local diamond_reject = {
+Item {
     type = "item",
     name = "diamond-reject",
     icon = "__pyfusionenergy__/graphics/icons/diamond-reject.png",
@@ -98,7 +100,7 @@ local diamond_reject = {
     stack_size = 500
 }
 
-local processed_rejects = {
+Item {
     type = "item",
     name = "processed-rejects",
     icon = "__pyfusionenergy__/graphics/icons/processed-rejects.png",
@@ -108,7 +110,7 @@ local processed_rejects = {
     stack_size = 500
 }
 
-local crushed_molybdenite = {
+Item {
     type = "item",
     name = "crushed-molybdenite",
     icon = "__pyfusionenergy__/graphics/icons/crushed-molybdenite.png",
@@ -118,7 +120,7 @@ local crushed_molybdenite = {
     stack_size = 300
 }
 
-local molybdenite_dust = {
+Item {
     type = "item",
     name = "molybdenite-dust",
     icon = "__pyfusionenergy__/graphics/icons/molybdenite-dust.png",
@@ -128,7 +130,7 @@ local molybdenite_dust = {
     stack_size = 500
 }
 
-local molybdenum_concentrate = {
+Item {
     type = "item",
     name = "molybdenum-concentrate",
     icon = "__pyfusionenergy__/graphics/icons/molybdenum-concentrate.png",
@@ -138,7 +140,7 @@ local molybdenum_concentrate = {
     stack_size = 500
 }
 
-local molybdenum_sulfide = {
+Item {
     type = "item",
     name = "molybdenum-sulfide",
     icon = "__pyfusionenergy__/graphics/icons/molybdenum-sulfide.png",
@@ -148,7 +150,7 @@ local molybdenum_sulfide = {
     stack_size = 100
 }
 
-local molybdenum_oxide = {
+Item {
     type = "item",
     name = "molybdenum-oxide",
     icon = "__pyfusionenergy__/graphics/icons/molybdenum-oxide.png",
@@ -158,7 +160,7 @@ local molybdenum_oxide = {
     stack_size = 100
 }
 
-local molybdenum_plate = {
+Item {
     type = "item",
     name = "molybdenum-plate",
     icon = "__pyfusionenergy__/graphics/icons/molybdenum-plate.png",
@@ -168,7 +170,7 @@ local molybdenum_plate = {
     stack_size = 150
 }
 
-local sodium_chlorate = {
+Item {
     type = "item",
     name = "sodium-chlorate",
     icon = "__pyfusionenergy__/graphics/icons/sodium-chlorate.png",
@@ -178,7 +180,7 @@ local sodium_chlorate = {
     stack_size = 200
 }
 
-local vanadium_oxide = {
+Item {
     type = "item",
     name = "vanadium-oxide",
     icon = "__pyfusionenergy__/graphics/icons/vanadium-oxide.png",
@@ -188,7 +190,7 @@ local vanadium_oxide = {
     stack_size = 200
 }
 
-local super_alloy = {
+Item {
     type = "item",
     name = "super-alloy",
     icon = "__pyfusionenergy__/graphics/icons/super-alloy.png",
@@ -198,7 +200,7 @@ local super_alloy = {
     stack_size = 50
 }
 
-local crude_diamond = {
+Item {
     type = "item",
     name = "crude-diamond",
     icon = "__pyfusionenergy__/graphics/icons/crude-diamond.png",
@@ -208,7 +210,7 @@ local crude_diamond = {
     stack_size = 200
 }
 
-local washed_diamond = {
+Item {
     type = "item",
     name = "washed-diamond",
     icon = "__pyfusionenergy__/graphics/icons/washed-diamond.png",
@@ -218,7 +220,7 @@ local washed_diamond = {
     stack_size = 100
 }
 
-local diamond = {
+Item {
     type = "item",
     name = "diamond",
     icon = "__pyfusionenergy__/graphics/icons/diamond.png",
@@ -228,7 +230,7 @@ local diamond = {
     stack_size = 50
 }
 
-local calcinates = {
+Item {
     type = "item",
     name = "calcinates",
     icon = "__pyfusionenergy__/graphics/icons/calcinates.png",
@@ -238,7 +240,7 @@ local calcinates = {
     stack_size = 400
 }
 
-local serine = {
+Item {
     type = "item",
     name = "serine",
     icon = "__pyfusionenergy__/graphics/icons/serine.png",
@@ -248,7 +250,7 @@ local serine = {
     stack_size = 200
 }
 
-local methyl_acrylate = {
+Item {
     type = "item",
     name = "methyl-acrylate",
     icon = "__pyfusionenergy__/graphics/icons/methyl-acrylate.png",
@@ -258,7 +260,7 @@ local methyl_acrylate = {
     stack_size = 250
 }
 
-local kmauts_ration = {
+Item {
     type = "item",
     name = "kmauts-ration",
     icon = "__pyfusionenergy__/graphics/icons/kmauts-ration.png",
@@ -268,7 +270,7 @@ local kmauts_ration = {
     stack_size = 100
 }
 
-local crushed_regolite = {
+Item {
     type = "item",
     name = "crushed-regolite",
     icon = "__pyfusionenergy__/graphics/icons/crushed-regolite.png",
@@ -278,7 +280,7 @@ local crushed_regolite = {
     stack_size = 500
 }
 
-local powdered_regolite = {
+Item {
     type = "item",
     name = "powdered-regolite",
     icon = "__pyfusionenergy__/graphics/icons/powdered-regolite.png",
@@ -288,7 +290,7 @@ local powdered_regolite = {
     stack_size = 500
 }
 
-local regolite_dust = {
+Item {
     type = "item",
     name = "regolite-dust",
     icon = "__pyfusionenergy__/graphics/icons/regolite-dust.png",
@@ -298,7 +300,7 @@ local regolite_dust = {
     stack_size = 500
 }
 
-local nexelit_matrix = {
+Item {
     type = "item",
     name = "nexelit-matrix",
     icon = "__pyfusionenergy__/graphics/icons/nexelit-matrix.png",
@@ -308,7 +310,7 @@ local nexelit_matrix = {
     stack_size = 200
 }
 
-local nbti_alloy = {
+Item {
     type = "item",
     name = "nbti-alloy",
     icon = "__pyfusionenergy__/graphics/icons/nbti-alloy.png",
@@ -318,7 +320,7 @@ local nbti_alloy = {
     stack_size = 200
 }
 
-local nenbit_matrix = {
+Item {
     type = "item",
     name = "nenbit-matrix",
     icon = "__pyfusionenergy__/graphics/icons/nenbit-matrix.png",
@@ -328,7 +330,7 @@ local nenbit_matrix = {
     stack_size = 200
 }
 
-local ferrite = {
+Item {
     type = "item",
     name = "ferrite",
     icon = "__pyfusionenergy__/graphics/icons/ferrite.png",
@@ -338,7 +340,7 @@ local ferrite = {
     stack_size = 200
 }
 
-local coil_core = {
+Item {
     type = "item",
     name = "coil-core",
     icon = "__pyfusionenergy__/graphics/icons/coil-core.png",
@@ -348,7 +350,7 @@ local coil_core = {
     stack_size = 200
 }
 
-local sc_wire = {
+Item {
     type = "item",
     name = "sc-wire",
     icon = "__pyfusionenergy__/graphics/icons/superconducting-wire.png",
@@ -358,7 +360,7 @@ local sc_wire = {
     stack_size = 200
 }
 
-local sc_coil = {
+Item {
     type = "item",
     name = "sc-coil",
     icon = "__pyfusionenergy__/graphics/icons/superconducting-coil.png",
@@ -368,7 +370,7 @@ local sc_coil = {
     stack_size = 200
 }
 
-local magnetic_core = {
+Item {
     type = "item",
     name = "magnetic-core",
     icon = "__pyfusionenergy__/graphics/icons/magnetic-core.png",
@@ -378,7 +380,7 @@ local magnetic_core = {
     stack_size = 200
 }
 
-local deposited_core = {
+Item {
     type = "item",
     name = "deposited-core",
     icon = "__pyfusionenergy__/graphics/icons/deposited-vcore.png",
@@ -388,7 +390,7 @@ local deposited_core = {
     stack_size = 200
 }
 
-local sc_unit = {
+Item {
     type = "item",
     name = "sc-unit",
     icon = "__pyfusionenergy__/graphics/icons/magnetic-unit.png",
@@ -398,7 +400,7 @@ local sc_unit = {
     stack_size = 200
 }
 
-local b2o3_dust = {
+Item {
     type = "item",
     name = "b2o3-dust",
     icon = "__pyfusionenergy__/graphics/icons/boron-trioxide-dust.png",
@@ -408,7 +410,7 @@ local b2o3_dust = {
     stack_size = 200
 }
 
-local boron_mixture = {
+Item {
     type = "item",
     name = "boron-mixture",
     icon = "__pyfusionenergy__/graphics/icons/boron-mixture.png",
@@ -418,7 +420,7 @@ local boron_mixture = {
     stack_size = 200
 }
 
-local boron = {
+Item {
     type = "item",
     name = "boron",
     icon = "__pyfusionenergy__/graphics/icons/boron.png",
@@ -428,7 +430,7 @@ local boron = {
     stack_size = 200
 }
 
-local boron_carbide = {
+Item {
     type = "item",
     name = "boron-carbide",
     icon = "__pyfusionenergy__/graphics/icons/boron-carbide.png",
@@ -438,7 +440,7 @@ local boron_carbide = {
     stack_size = 200
 }
 
-local blanket_chassi = {
+Item {
     type = "item",
     name = "blanket-chassi",
     icon = "__pyfusionenergy__/graphics/icons/blanket-chassi.png",
@@ -448,7 +450,7 @@ local blanket_chassi = {
     stack_size = 200
 }
 
-local blanket = {
+Item {
     type = "item",
     name = "blanket",
     icon = "__pyfusionenergy__/graphics/icons/blanket.png",
@@ -458,7 +460,7 @@ local blanket = {
     stack_size = 200
 }
 
-local divertor = {
+Item {
     type = "item",
     name = "divertor",
     icon = "__pyfusionenergy__/graphics/icons/divertor.png",
@@ -468,7 +470,7 @@ local divertor = {
     stack_size = 200
 }
 
-local wall_shield = {
+Item {
     type = "item",
     name = "wall-shield",
     icon = "__pyfusionenergy__/graphics/icons/wall-shield.png",
@@ -478,7 +480,7 @@ local wall_shield = {
     stack_size = 200
 }
 
-local rwall_shield = {
+Item {
     type = "item",
     name = "reinforced-wall-shield",
     icon = "__pyfusionenergy__/graphics/icons/rwall-shield.png",
@@ -488,7 +490,7 @@ local rwall_shield = {
     stack_size = 200
 }
 
-local lead_container = {
+Item {
     type = "item",
     name = "lead-container",
     icon = "__pyfusionenergy__/graphics/icons/lead-container.png",
@@ -498,7 +500,7 @@ local lead_container = {
     stack_size = 200
 }
 
-local science_coating = {
+Item {
     type = "item",
     name = "science-coating",
     icon = "__pyfusionenergy__/graphics/icons/science-coating.png",
@@ -508,7 +510,7 @@ local science_coating = {
     stack_size = 200
 }
 
-local coated_container = {
+Item {
     type = "item",
     name = "coated-container",
     icon = "__pyfusionenergy__/graphics/icons/coated-container.png",
@@ -518,7 +520,7 @@ local coated_container = {
     stack_size = 200
 }
 
-local nuclear_sample = {
+Item {
     type = "item",
     name = "nuclear-sample",
     icon = "__pyfusionenergy__/graphics/icons/nuclear-sample.png",
@@ -528,7 +530,7 @@ local nuclear_sample = {
     stack_size = 200
 }
 
-local control_unit = {
+Item {
     type = "item",
     name = "control-unit",
     icon = "__pyfusionenergy__/graphics/icons/control-unit.png",
@@ -538,7 +540,7 @@ local control_unit = {
     stack_size = 200
 }
 
-local agzn_alloy = {
+Item {
     type = "item",
     name = "agzn-alloy",
     icon = "__pyfusionenergy__/graphics/icons/agzn-alloy.png",
@@ -548,7 +550,7 @@ local agzn_alloy = {
     stack_size = 100
 }
 
-local silver_foam = {
+Item {
     type = "item",
     name = "silver-foam",
     icon = "__pyfusionenergy__/graphics/icons/silver-foam.png",
@@ -556,63 +558,4 @@ local silver_foam = {
     subgroup = "py-fusion-items",
     order = "m",
     stack_size = 100
-}
-
-data:extend {
-    molybdenum_ore,
-    crushed_molybdenite,
-    molybdenite_dust,
-    molybdenum_concentrate,
-    molybdenum_sulfide,
-    molybdenum_oxide,
-    molybdenum_plate,
-    sodium_chlorate,
-    vanadium_oxide,
-    kimberlite_rock,
-    crushed_kimberlite,
-    kimberlite_rejects,
-    kimberlite_grade2,
-    kimberlite_grade3,
-    pure_kimberlite_grade2,
-    kimberlite_residue,
-    diamond_reject,
-    processed_rejects,
-    super_alloy,
-    diamond,
-    regolite_rock,
-    crude_diamond,
-    washed_diamond,
-    calcinates,
-    serine,
-    methyl_acrylate,
-    kmauts_ration,
-    crushed_regolite,
-    powdered_regolite,
-    regolite_dust,
-    nexelit_matrix,
-    nbti_alloy,
-    nenbit_matrix,
-    sc_wire,
-    ferrite,
-    coil_core,
-    sc_coil,
-    magnetic_core,
-    deposited_core,
-    sc_unit,
-    b2o3_dust,
-    boron_mixture,
-    boron,
-    boron_carbide,
-    blanket_chassi,
-    blanket,
-    divertor,
-    wall_shield,
-    rwall_shield,
-    lead_container,
-    science_coating,
-    coated_container,
-    nuclear_sample,
-    control_unit,
-    agzn_alloy,
-    silver_foam
 }

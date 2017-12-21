@@ -1,4 +1,6 @@
-local crushing_molybdenite = {
+local Recipe = require("stdlib/data/recipe")
+
+Recipe {
     type = "recipe",
     name = "crushing-molybdenite",
     category = "crusher",
@@ -17,7 +19,7 @@ local crushing_molybdenite = {
     order = "a"
 }
 
-local milling_molybdenite = {
+Recipe {
     type = "recipe",
     name = "milling-molybdenite",
     category = "ball-mill",
@@ -36,7 +38,7 @@ local milling_molybdenite = {
     order = "b"
 }
 
-local molybdenum_concentrate = {
+Recipe {
     type = "recipe",
     name = "molybdenum-concentrate",
     category = "hydrocyclone",
@@ -56,7 +58,7 @@ local molybdenum_concentrate = {
     order = "b"
 }
 
-local molybdenum_filtration = {
+Recipe {
     type = "recipe",
     name = "molybdenum-filtration",
     category = "carbonfilter",
@@ -76,7 +78,7 @@ local molybdenum_filtration = {
     order = "c"
 }
 
-local molybdenum_oxide = {
+Recipe {
     type = "recipe",
     name = "molybdenum-oxide",
     category = "hpf",
@@ -95,7 +97,7 @@ local molybdenum_oxide = {
     order = "d"
 }
 
-local molybdenum_plate = {
+Recipe {
     type = "recipe",
     name = "molybdenum-plate",
     category = "chemistry", --bobs electrolyzer
@@ -114,7 +116,7 @@ local molybdenum_plate = {
     order = "e"
 }
 
-local phytoplankton = {
+Recipe {
     type = "recipe",
     name = "phytoplankton",
     category = "plankton",
@@ -133,7 +135,7 @@ local phytoplankton = {
     order = "e"
 }
 
-local xyhiphoe_blood = {
+Recipe {
     type = "recipe",
     name = "xyhiphoe-blood",
     category = "xyhiphoe",
@@ -154,7 +156,7 @@ local xyhiphoe_blood = {
     order = "e"
 }
 
-local xyhiphoe_hydrocyclone = {
+Recipe {
     type = "recipe",
     name = "xyhiphoe-hydrocyclone",
     category = "hydrocyclone",
@@ -173,7 +175,7 @@ local xyhiphoe_hydrocyclone = {
     order = "a"
 }
 
-local cobalt_solvent = {
+Recipe {
     type = "recipe",
     name = "cobalt-solvent",
     category = "evaporator",
@@ -190,7 +192,7 @@ local cobalt_solvent = {
     order = "c"
 }
 
-local solvent_separation = {
+Recipe {
     type = "recipe",
     name = "solvent-separation",
     category = "fluid-separator",
@@ -209,7 +211,7 @@ local solvent_separation = {
     order = "d"
 }
 
-local sodium_chlorate = {
+Recipe {
     type = "recipe",
     name = "sodium-chlorate",
     category = "chemistry", --bob electrolyzer
@@ -229,7 +231,7 @@ local sodium_chlorate = {
     order = "e"
 }
 
-local vanadium_oxide = {
+Recipe {
     type = "recipe",
     name = "vanadium-oxide",
     category = "evaporator",
@@ -248,7 +250,7 @@ local vanadium_oxide = {
     order = "e"
 }
 
-local wastewater_filtration = {
+Recipe {
     type = "recipe",
     name = "wastewater-filtration",
     category = "carbonfilter",
@@ -266,7 +268,7 @@ local wastewater_filtration = {
     order = "f"
 }
 
-local wastewater_recovery = {
+Recipe {
     type = "recipe",
     name = "wastewater-recovery",
     category = "thickener",
@@ -285,7 +287,7 @@ local wastewater_recovery = {
     order = "g"
 }
 
-local super_alloy = {
+Recipe {
     type = "recipe",
     name = "super-alloy",
     category = "advanced-foundry",
@@ -310,7 +312,7 @@ local super_alloy = {
     order = "h"
 }
 
-local crushed_kimberlite = {
+Recipe {
     type = "recipe",
     name = "crushed-kimberlite",
     category = "crusher",
@@ -329,7 +331,7 @@ local crushed_kimberlite = {
     order = "h"
 }
 
-local screening_kimberlite = {
+Recipe {
     type = "recipe",
     name = "screening-kimberlite",
     category = "screener",
@@ -348,7 +350,7 @@ local screening_kimberlite = {
     order = "h"
 }
 
-local kimberlite_rejects_recrushing = {
+Recipe {
     type = "recipe",
     name = "kimberlite-recrushing",
     category = "secondary-crusher",
@@ -367,7 +369,7 @@ local kimberlite_rejects_recrushing = {
     order = "h"
 }
 
-local kimberlite_washing = {
+Recipe {
     type = "recipe",
     name = "kimberlite-washing",
     category = "washer",
@@ -389,7 +391,7 @@ local kimberlite_washing = {
     order = "h"
 }
 
-local pure_kimberlite_recrushing = {
+Recipe {
     type = "recipe",
     name = "pure-kimberlite-recrushing",
     category = "secondary-crusher",
@@ -408,7 +410,7 @@ local pure_kimberlite_recrushing = {
     order = "h"
 }
 
-local screening_kimberlite_residue = {
+Recipe {
     type = "recipe",
     name = "screening-kimberlite-residue",
     category = "screener",
@@ -427,7 +429,7 @@ local screening_kimberlite_residue = {
     order = "h"
 }
 
-local diamond_rejects_recrushing = {
+Recipe {
     type = "recipe",
     name = "diamond-rejects-recrushing",
     category = "secondary-crusher",
@@ -446,7 +448,7 @@ local diamond_rejects_recrushing = {
     order = "h"
 }
 
-local diamond_rejects_screening = {
+Recipe {
     type = "recipe",
     name = "diamond-rejects-screening",
     category = "screener",
@@ -465,7 +467,7 @@ local diamond_rejects_screening = {
     order = "h"
 }
 
-local rejects_separation = {
+Recipe {
     type = "recipe",
     name = "rejects-separation",
     category = "solid-separator",
@@ -485,7 +487,7 @@ local rejects_separation = {
     order = "e"
 }
 
-local jig_separation = {
+Recipe {
     type = "recipe",
     name = "jig-separation",
     category = "fluid-separator",
@@ -505,7 +507,7 @@ local jig_separation = {
     order = "j"
 }
 
-local greasing_1 = {
+Recipe {
     type = "recipe",
     name = "greasing-1",
     category = "grease",
@@ -526,7 +528,7 @@ local greasing_1 = {
     order = "j1"
 }
 
-local greasing_2 = {
+Recipe {
     type = "recipe",
     name = "greasing-2",
     category = "grease",
@@ -547,7 +549,7 @@ local greasing_2 = {
     order = "j2"
 }
 
-local greasing_3 = {
+Recipe {
     type = "recipe",
     name = "greasing-3",
     category = "grease",
@@ -568,7 +570,7 @@ local greasing_3 = {
     order = "j3"
 }
 
-local washing_crude = {
+Recipe {
     type = "recipe",
     name = "washing-crude",
     category = "washer",
@@ -588,7 +590,7 @@ local washing_crude = {
     order = "k"
 }
 
-local class_diamond = {
+Recipe {
     type = "recipe",
     name = "class-diamond",
     category = "classifier",
@@ -607,7 +609,7 @@ local class_diamond = {
     order = "k"
 }
 
-local cool_air = {
+Recipe {
     type = "recipe",
     name = "cool-air",
     category = "evaporator",
@@ -627,7 +629,7 @@ local cool_air = {
     order = "k"
 }
 
-local liquid_air_distilation = {
+Recipe {
     type = "recipe",
     name = "liquid-air-distilation",
     category = "distilator",
@@ -648,7 +650,7 @@ local liquid_air_distilation = {
     order = "l"
 }
 
-local stone_calcination = {
+Recipe {
     type = "recipe",
     name = "stone-calcination",
     category = "hpf",
@@ -667,7 +669,7 @@ local stone_calcination = {
     subgroup = "py-fusion-recipes",
     order = "l"
 }
-local gravel_calcination = {
+Recipe {
     type = "recipe",
     name = "gravel-calcination",
     category = "hpf",
@@ -687,7 +689,7 @@ local gravel_calcination = {
     order = "l"
 }
 
-local calcinate_separation = {
+Recipe {
     type = "recipe",
     name = "calcinate-separation",
     category = "solid-separator",
@@ -709,7 +711,7 @@ local calcinate_separation = {
     order = "l"
 }
 
-local bacteria_1 = {
+Recipe {
     type = "recipe",
     name = "bacteria-1",
     category = "genlab",
@@ -731,7 +733,7 @@ local bacteria_1 = {
     order = "l"
 }
 
-local serine = {
+Recipe {
     type = "recipe",
     name = "serine",
     category = "kmauts",
@@ -749,7 +751,7 @@ local serine = {
     order = "l"
 }
 
-local methyl_acrylate = {
+Recipe {
     type = "recipe",
     name = "methyl-acrylate",
     category = "methanol",
@@ -769,7 +771,7 @@ local methyl_acrylate = {
     order = "l"
 }
 
-local kmauts_ration = {
+Recipe {
     type = "recipe",
     name = "kmauts-ration",
     category = "crafting",
@@ -790,7 +792,7 @@ local kmauts_ration = {
     order = "l"
 }
 
-local crush_regolite = {
+Recipe {
     type = "recipe",
     name = "crush-regolite",
     category = "crusher",
@@ -809,7 +811,7 @@ local crush_regolite = {
     order = "a"
 }
 
-local recrush_regolite = {
+Recipe {
     type = "recipe",
     name = "regolite-recrush",
     category = "secondary-crusher",
@@ -828,7 +830,7 @@ local recrush_regolite = {
     order = "a"
 }
 
-local milling_regolite = {
+Recipe {
     type = "recipe",
     name = "milling-regolite",
     category = "ball-mill",
@@ -847,7 +849,7 @@ local milling_regolite = {
     order = "b"
 }
 
-local regolite_calcination = {
+Recipe {
     type = "recipe",
     name = "regolite-calcination",
     category = "hpf",
@@ -868,7 +870,7 @@ local regolite_calcination = {
     order = "l"
 }
 
-local liquid_petgas = {
+Recipe {
     type = "recipe",
     name = "liquid-petgas",
     category = "compressor",
@@ -889,7 +891,7 @@ local liquid_petgas = {
     order = "a"
 }
 
-local liquid_petgas_separation = {
+Recipe {
     type = "recipe",
     name = "liquid-petgas-separation",
     category = "fluid-separator",
@@ -909,7 +911,7 @@ local liquid_petgas_separation = {
     order = "a"
 }
 
-local gas_stream_filtration = {
+Recipe {
     type = "recipe",
     name = "gas-stream-filtration",
     category = "carbonfilter",
@@ -929,7 +931,7 @@ local gas_stream_filtration = {
     order = "a"
 }
 
-local liquid_rich_gas_distilation = {
+Recipe {
     type = "recipe",
     name = "liquid-rich-gas-distilation",
     category = "distilator",
@@ -948,7 +950,7 @@ local liquid_rich_gas_distilation = {
     order = "a"
 }
 
-local helium = {
+Recipe {
     type = "recipe",
     name = "helium",
     category = "gas-separator",
@@ -967,7 +969,7 @@ local helium = {
     order = "aa"
 }
 
-local nexelit_matrix = {
+Recipe {
     type = "recipe",
     name = "nexelit-matrix",
     category = "nmf",
@@ -988,7 +990,7 @@ local nexelit_matrix = {
     order = "a"
 }
 
-local nbti_alloy = {
+Recipe {
     type = "recipe",
     name = "nbti-alloy",
     category = "advanced-foundry",
@@ -1008,7 +1010,7 @@ local nbti_alloy = {
     order = "d"
 }
 
-local nenbit_matrix = {
+Recipe {
     type = "recipe",
     name = "nenbit-matrix",
     category = "advanced-crafting",
@@ -1027,7 +1029,7 @@ local nenbit_matrix = {
     order = "d"
 }
 
-local ferrite = {
+Recipe {
     type = "recipe",
     name = "ferrite",
     category = "hpf",
@@ -1047,7 +1049,7 @@ local ferrite = {
     order = "e"
 }
 
-local coil_core = {
+Recipe {
     type = "recipe",
     name = "coil-core",
     category = "advanced-crafting",
@@ -1066,7 +1068,7 @@ local coil_core = {
     order = "e"
 }
 
-local sc_wire = {
+Recipe {
     type = "recipe",
     name = "sc-wire",
     category = "crafting",
@@ -1086,7 +1088,7 @@ local sc_wire = {
     order = "e"
 }
 
-local sc_coil = {
+Recipe {
     type = "recipe",
     name = "sc-coil",
     category = "crafting",
@@ -1106,7 +1108,7 @@ local sc_coil = {
     order = "e"
 }
 
-local magnetic_core = {
+Recipe {
     type = "recipe",
     name = "magnetic-core",
     category = "advanced-crafting",
@@ -1126,7 +1128,7 @@ local magnetic_core = {
     order = "e"
 }
 
-local deposited_core = {
+Recipe {
     type = "recipe",
     name = "deposited-core",
     category = "gas-separator",
@@ -1145,7 +1147,7 @@ local deposited_core = {
     order = "e"
 }
 
-local sc_unit = {
+Recipe {
     type = "recipe",
     name = "sc-unit",
     category = "advanced-crafting",
@@ -1166,7 +1168,7 @@ local sc_unit = {
     order = "e"
 }
 
-local d2o_distilation = {
+Recipe {
     type = "recipe",
     name = "d2o-distilation",
     category = "distilator",
@@ -1185,7 +1187,7 @@ local d2o_distilation = {
     order = "e"
 }
 
-local b2o3_milling = {
+Recipe {
     type = "recipe",
     name = "b2o3-milling",
     category = "ball-mill",
@@ -1203,7 +1205,7 @@ local b2o3_milling = {
     order = "e"
 }
 
-local boron_mixture = {
+Recipe {
     type = "recipe",
     name = "boron-mixture",
     category = "hpf",
@@ -1223,7 +1225,7 @@ local boron_mixture = {
     order = "e"
 }
 
-local boron = {
+Recipe {
     type = "recipe",
     name = "boron",
     category = "mixer",
@@ -1244,7 +1246,7 @@ local boron = {
     order = "e"
 }
 
-local boron_carbide = {
+Recipe {
     type = "recipe",
     name = "boron-carbide",
     category = "hpf",
@@ -1264,7 +1266,7 @@ local boron_carbide = {
     order = "e"
 }
 
-local blanket_chassi = {
+Recipe {
     type = "recipe",
     name = "blanket-chassi",
     category = "advanced-foundry",
@@ -1287,7 +1289,7 @@ local blanket_chassi = {
     order = "e"
 }
 
-local blanket = {
+Recipe {
     type = "recipe",
     name = "blanket",
     category = "advanced-crafting",
@@ -1308,7 +1310,7 @@ local blanket = {
     order = "e"
 }
 
-local divertor = {
+Recipe {
     type = "recipe",
     name = "divertor",
     category = "crafting",
@@ -1329,7 +1331,7 @@ local divertor = {
     order = "e"
 }
 
-local wall_shield = {
+Recipe {
     type = "recipe",
     name = "wall-shield",
     category = "advanced-foundry",
@@ -1351,7 +1353,7 @@ local wall_shield = {
     order = "e"
 }
 
-local rwall_shield = {
+Recipe {
     type = "recipe",
     name = "reinforced-wall-shield",
     category = "advanced-foundry",
@@ -1371,7 +1373,7 @@ local rwall_shield = {
     order = "e"
 }
 
-local deuterium_fusion = {
+Recipe {
     type = "recipe",
     name = "deuterium-fusion",
     category = "fusion-01",
@@ -1400,7 +1402,7 @@ local deuterium_fusion = {
     order = "e"
 }
 
-local dt_he3 = {
+Recipe {
     type = "recipe",
     name = "dt-he3",
     category = "fusion-01",
@@ -1429,7 +1431,7 @@ local dt_he3 = {
     order = "e"
 }
 
-local dt_fusion = {
+Recipe {
     type = "recipe",
     name = "dt-fusion",
     category = "fusion-01",
@@ -1458,7 +1460,7 @@ local dt_fusion = {
     order = "e"
 }
 
-local b_h = {
+Recipe {
     type = "recipe",
     name = "b-h",
     category = "fusion-02",
@@ -1486,7 +1488,7 @@ local b_h = {
     order = "e"
 }
 
-local steam_exchange1 = {
+Recipe {
     type = "recipe",
     name = "steam-exchange1",
     category = "heat-exchanger",
@@ -1506,7 +1508,7 @@ local steam_exchange1 = {
     order = "e"
 }
 
-local steam_exchange2 = {
+Recipe {
     type = "recipe",
     name = "steam-exchange2",
     category = "heat-exchanger",
@@ -1526,7 +1528,7 @@ local steam_exchange2 = {
     order = "e"
 }
 
-local steam_exchange3 = {
+Recipe {
     type = "recipe",
     name = "steam-exchange3",
     category = "heat-exchanger",
@@ -1546,7 +1548,7 @@ local steam_exchange3 = {
     order = "e"
 }
 
-local steam_exchange4 = {
+Recipe {
     type = "recipe",
     name = "steam-exchange4",
     category = "heat-exchanger",
@@ -1566,7 +1568,7 @@ local steam_exchange4 = {
     order = "e"
 }
 
-local lead_container = {
+Recipe {
     type = "recipe",
     name = "lead-container",
     category = "crafting",
@@ -1585,7 +1587,7 @@ local lead_container = {
     order = "f"
 }
 
-local science_coating = {
+Recipe {
     type = "recipe",
     name = "science-coating",
     category = "advanced-crafting",
@@ -1605,7 +1607,7 @@ local science_coating = {
     order = "f"
 }
 
-local coated_container = {
+Recipe {
     type = "recipe",
     name = "coated-container",
     category = "advanced-crafting",
@@ -1624,7 +1626,7 @@ local coated_container = {
     order = "f"
 }
 
-local nuclear_sample = {
+Recipe {
     type = "recipe",
     name = "nuclear-sample",
     category = "mixer",
@@ -1646,7 +1648,7 @@ local nuclear_sample = {
     order = "f"
 }
 
-local control_unit = {
+Recipe {
     type = "recipe",
     name = "control-unit",
     category = "crafting",
@@ -1668,7 +1670,7 @@ local control_unit = {
     order = "f"
 }
 
-local productionscience_pack = {
+Recipe {
     type = "recipe",
     name = "production-science-pack",
     category = "advanced-crafting",
@@ -1687,7 +1689,7 @@ local productionscience_pack = {
     order = "x"
 }
 
-local agzn_alloy = {
+Recipe {
     type = "recipe",
     name = "agzn-alloy",
     category = "advanced-foundry",
@@ -1707,7 +1709,7 @@ local agzn_alloy = {
     order = "d"
 }
 
-local silver_foam = {
+Recipe {
     type = "recipe",
     name = "silver-foam",
     category = "rectisol",
@@ -1729,7 +1731,7 @@ local silver_foam = {
     order = "dd"
 }
 
-local he3_separation = {
+Recipe {
     type = "recipe",
     name = "he3-separation",
     category = "gas-separator",
@@ -1748,95 +1750,6 @@ local he3_separation = {
     icon = "__pyfusionenergy__/graphics/icons/helium3.png",
     subgroup = "py-fusion-items",
     order = "dd"
-}
-
-data:extend {
-    crushing_molybdenite,
-    milling_molybdenite,
-    molybdenum_concentrate,
-    molybdenum_filtration,
-    molybdenum_oxide,
-    molybdenum_plate,
-    phytoplankton,
-    xyhiphoe_blood,
-    xyhiphoe_hydrocyclone,
-    cobalt_solvent,
-    solvent_separation,
-    sodium_chlorate,
-    vanadium_oxide,
-    wastewater_filtration,
-    wastewater_recovery,
-    super_alloy,
-    crushed_kimberlite,
-    screening_kimberlite,
-    kimberlite_rejects_recrushing,
-    kimberlite_washing,
-    pure_kimberlite_recrushing,
-    screening_kimberlite_residue,
-    diamond_rejects_recrushing,
-    diamond_rejects_screening,
-    rejects_separation,
-    jig_separation,
-    greasing_1,
-    greasing_2,
-    greasing_3,
-    washing_crude,
-    class_diamond,
-    cool_air,
-    liquid_air_distilation,
-    stone_calcination,
-	gravel_calcination
-    calcinate_separation,
-    bacteria_1,
-    serine,
-    methyl_acrylate,
-    kmauts_ration,
-    crush_regolite,
-    recrush_regolite,
-    milling_regolite,
-    regolite_calcination,
-    liquid_petgas,
-    liquid_petgas_separation,
-    gas_stream_filtration,
-    liquid_rich_gas_distilation,
-    helium,
-    nexelit_matrix,
-    nbti_alloy,
-    nenbit_matrix,
-    sc_wire,
-    ferrite,
-    coil_core,
-    sc_coil,
-    magnetic_core,
-    deposited_core,
-    sc_unit,
-    d2o_distilation,
-    b2o3_milling,
-    boron_mixture,
-    boron,
-    boron_carbide,
-    blanket_chassi,
-    blanket,
-    deuterium_fusion,
-    dt_fusion,
-    divertor,
-    wall_shield,
-    rwall_shield,
-    steam_exchange1,
-    steam_exchange2,
-    steam_exchange3,
-    steam_exchange4,
-    lead_container,
-    science_coating,
-    coated_container,
-    nuclear_sample,
-    control_unit,
-    productionscience_pack,
-    dt_he3,
-    b_h,
-    agzn_alloy,
-    silver_foam,
-    he3_separation
 }
 
 local crusher = data.raw.technology["crusher"].effects

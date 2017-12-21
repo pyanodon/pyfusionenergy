@@ -3,7 +3,8 @@ data:extend {
         type = "autoplace-control",
         name = "molybdenum-ore",
         richness = true,
-        order = "b-e"
+        order = "b-e",
+        category = "resource",
     },
     {
         type = "noise-layer",
