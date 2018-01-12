@@ -4,7 +4,7 @@ local technology = {
     icon = "__pyfusionenergy__/graphics/technology/molybdenum-processing.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"advanced-mining-facilities", "fusion-mk01", "diamond-mining"},
+    prerequisites = {"advanced-mining-facilities", "fusion-mk01"},
     effects = {
         {
             type = "unlock-recipe",

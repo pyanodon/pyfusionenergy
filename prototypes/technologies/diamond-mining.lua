@@ -4,7 +4,7 @@ local technology = {
     icon = "__pyfusionenergy__/graphics/technology/diamond-mining.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"excavation-2", "coal-processing-3"},
+    prerequisites = {"excavation-2"},
     effects = {
         {
             type = "unlock-recipe",
