@@ -4,7 +4,7 @@ local technology = {
     icon = "__pyfusionenergy__/graphics/technology/regolite-mining.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"diamond-mining", "advanced-mining-facilities", "helium-processing"},
+    prerequisites = {"advanced-mining-facilities", "helium-processing"},
     effects = {
         {
             type = "unlock-recipe",

@@ -4,7 +4,7 @@ local technology = {
     icon = "__pyfusionenergy__/graphics/technology/vanadium-processing.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"advanced-mining-facilities", "diamond-mining"},
+    prerequisites = {"advanced-mining-facilities"},
     effects = {
         {
             type = "unlock-recipe",
