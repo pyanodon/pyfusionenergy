@@ -1,4 +1,4 @@
-local liquid_nitrogen = {
+Recipe {
     type = "recipe",
     name = "liquid-nitrogen",
     category = "compressor",
@@ -17,9 +17,9 @@ local liquid_nitrogen = {
     icon = "__pyfusionenergy__/graphics/icons/compress-nitrogen.png",
     subgroup = "py-fusion-gases",
     order = "a"
-}
+}:add_unlock("helium-processing")
 
-local evaporate_nitrogen = {
+Recipe {
     type = "recipe",
     name = "evaporate-nitrogen",
     category = "evaporator",
@@ -35,12 +35,4 @@ local evaporate_nitrogen = {
     icon = "__bobplates__/graphics/icons/nitrogen.png",
     subgroup = "py-fusion-gases",
     order = "b"
-}
-
-data:extend {
-    liquid_nitrogen,
-    evaporate_nitrogen
-}
-
-bobmods.lib.tech.add_recipe_unlock("helium-processing", "liquid-nitrogen")
-bobmods.lib.tech.add_recipe_unlock("helium-processing", "evaporate-nitrogen")
+}:add_unlock("helium-processing")

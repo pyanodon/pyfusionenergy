@@ -1,4 +1,4 @@
-local blue_liquor = {
+Recipe {
     type = "recipe",
     name = "blue-liquor",
     category = "thickener",
@@ -11,14 +11,10 @@ local blue_liquor = {
     },
     results = {
         {type = "fluid", name = "blue-liquor", amount = 200}
-    },
-    main_product = "blue-liquor",
-    icon = "__pyfusionenergy__/graphics/icons/blue-liquor.png",
-    subgroup = "py-fusion-fluids",
-    order = "i"
+    }
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "blue-liquor",
     icon = "__pyfusionenergy__/graphics/icons/blue-liquor.png",
@@ -32,5 +28,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "i"
 }
-
-data:extend {fluid, blue_liquor}

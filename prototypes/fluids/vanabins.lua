@@ -1,4 +1,4 @@
-local vanabins = {
+Recipe {
     type = "recipe",
     name = "vanabins",
     category = "quenching-tower",
@@ -10,14 +10,10 @@ local vanabins = {
     },
     results = {
         {type = "fluid", name = "vanabins", amount = 100}
-    },
-    main_product = "vanabins",
-    icon = "__pyfusionenergy__/graphics/icons/vanabins.png",
-    subgroup = "py-fusion-fluids",
-    order = "h"
+    }
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "vanabins",
     icon = "__pyfusionenergy__/graphics/icons/vanabins.png",
@@ -31,5 +27,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "h"
 }
-
-data:extend {fluid, vanabins}

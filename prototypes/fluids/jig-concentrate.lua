@@ -1,4 +1,4 @@
-local jig_diamond_concentrate = {
+Recipe {
     type = "recipe",
     name = "jig-diamond-concentrate",
     category = "jig",
@@ -18,7 +18,7 @@ local jig_diamond_concentrate = {
     order = "j"
 }
 
-local jig_diamond_tailings = {
+Recipe {
     type = "recipe",
     name = "jig-diamond-tailings",
     category = "jig",
@@ -38,7 +38,7 @@ local jig_diamond_tailings = {
     order = "j"
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "jig-concentrate",
     icon = "__pyfusionenergy__/graphics/icons/jig-concentrate.png",
@@ -52,5 +52,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "i"
 }
-
-data:extend {fluid, jig_diamond_concentrate, jig_diamond_tailings}

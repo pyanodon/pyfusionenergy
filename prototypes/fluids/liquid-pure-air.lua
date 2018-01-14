@@ -1,4 +1,4 @@
-local liquid_pure_air = {
+Recipe {
     type = "recipe",
     name = "liquid-pure-air",
     category = "compressor",
@@ -19,7 +19,7 @@ local liquid_pure_air = {
     order = "a"
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "liquid-pure-air",
     icon = "__pyfusionenergy__/graphics/icons/liquid-pure-air.png",
@@ -33,5 +33,3 @@ local fluid = {
     subgroup = "py-fusion-gases",
     order = "c"
 }
-
-data:extend {fluid, liquid_pure_air}

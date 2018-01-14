@@ -1,4 +1,4 @@
-local purified_air = {
+Recipe {
     type = "recipe",
     name = "purified-air",
     category = "carbonfilter",
@@ -10,14 +10,10 @@ local purified_air = {
     },
     results = {
         {type = "fluid", name = "purified-air", amount = 10}
-    },
-    main_product = "purified-air",
-    icon = "__pyfusionenergy__/graphics/icons/purified-air.png",
-    subgroup = "py-fusion-gases",
-    order = "a"
+    }
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "purified-air",
     icon = "__pyfusionenergy__/graphics/icons/purified-air.png",
@@ -31,5 +27,3 @@ local fluid = {
     subgroup = "py-fusion-gases",
     order = "c"
 }
-
-data:extend {fluid, purified_air}

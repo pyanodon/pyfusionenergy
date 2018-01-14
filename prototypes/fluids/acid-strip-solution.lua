@@ -1,4 +1,4 @@
-local acid_strip = {
+Recipe {
     type = "recipe",
     name = "acid-strip-solution",
     category = "methanol",
@@ -11,14 +11,10 @@ local acid_strip = {
     },
     results = {
         {type = "fluid", name = "acid-strip-solution", amount = 300}
-    },
-    main_product = "acid-strip-solution",
-    icon = "__pyfusionenergy__/graphics/icons/acid-strip-solution.png",
-    subgroup = "py-fusion-fluids",
-    order = "r"
+    }
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "acid-strip-solution",
     icon = "__pyfusionenergy__/graphics/icons/acid-strip-solution.png",
@@ -32,5 +28,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "i"
 }
-
-data:extend {fluid, acid_strip}

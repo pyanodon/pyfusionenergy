@@ -1,4 +1,4 @@
-local rich_gas = {
+Recipe {
     type = "recipe",
     name = "rich-gas",
     category = "distilator",
@@ -12,13 +12,10 @@ local rich_gas = {
         {type = "fluid", name = "methanol", amount = 10},
         {type = "fluid", name = "helium-rich-gas", amount = 10}
     },
-    --main_product= "rich-gas",
-    icon = "__pyfusionenergy__/graphics/icons/rich-gas.png",
-    subgroup = "py-fusion-fluids",
-    order = "i"
+    main_product= "rich-gas"
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "rich-gas",
     icon = "__pyfusionenergy__/graphics/icons/rich-gas.png",
@@ -32,5 +29,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "d"
 }
-
-data:extend {fluid, rich_gas}

@@ -1,15 +1,17 @@
-local autoplace = {
+Data {
     type = "autoplace-control",
     name = "volcanic-pipe",
     richness = true,
     order = "b-e",
-    category = "resource",
+    category = "resource"
 }
-local noise = {
+
+Data {
     type = "noise-layer",
     name = "volcanic-pipe"
 }
-local resource = {
+
+Entity {
     type = "resource",
     name = "volcanic-pipe",
     category = "volcanic-pipe",
@@ -26,7 +28,9 @@ local resource = {
         hardness = 3.5,
         -- mining_particle = "volcanic-pipe-particle",
         mining_time = 4,
-        result = "kimberlite-rock"
+        results = {
+            {"kimberlite-rock", 1}
+        }
     },
     collision_box = {{-3.5, -3.5}, {3.5, 3.5}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
@@ -61,5 +65,3 @@ local resource = {
         }
     }
 }
-
-data:extend {autoplace, noise, resource}

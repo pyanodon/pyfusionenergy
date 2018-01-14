@@ -1,4 +1,4 @@
-local molybdenite_pulp = {
+Recipe {
     type = "recipe",
     name = "molybdenite-pulp",
     category = "agitator",
@@ -10,14 +10,10 @@ local molybdenite_pulp = {
     },
     results = {
         {type = "fluid", name = "molybdenite-pulp", amount = 100}
-    },
-    main_product = "molybdenite-pulp",
-    icon = "__pyfusionenergy__/graphics/icons/molybdenite-pulp.png",
-    subgroup = "py-fusion-fluids",
-    order = "a"
+    }
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "molybdenite-pulp",
     icon = "__pyfusionenergy__/graphics/icons/molybdenite-pulp.png",
@@ -31,5 +27,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "a"
 }
-
-data:extend {fluid, molybdenite_pulp}

@@ -1,5 +1,3 @@
-local Item = require("stdlib/data/item")
-
 Item {
     type = "item",
     name = "molybdenum-ore",

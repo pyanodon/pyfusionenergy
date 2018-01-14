@@ -1,4 +1,4 @@
-local technology = {
+Technology {
     type = "technology",
     name = "molybdenum-processing",
     icon = "__pyfusionenergy__/graphics/technology/molybdenum-processing.png",
@@ -42,4 +42,3 @@ local technology = {
         time = 70
     }
 }
-data:extend {technology}

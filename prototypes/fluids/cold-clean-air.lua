@@ -1,4 +1,4 @@
-local cold_clean_air = {
+Recipe {
     type = "recipe",
     name = "cold-clean-air",
     category = "carbonfilter",
@@ -13,12 +13,9 @@ local cold_clean_air = {
         {type = "fluid", name = "petroleum-gas", amount = 3}
     },
     main_product = "cold-clean-air",
-    icon = "__pyfusionenergy__/graphics/icons/cold-clean-air.png",
-    subgroup = "py-fusion-fluids",
-    order = "r"
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "cold-clean-air",
     icon = "__pyfusionenergy__/graphics/icons/cold-clean-air.png",
@@ -32,5 +29,3 @@ local fluid = {
     subgroup = "py-fusion-gases",
     order = "c"
 }
-
-data:extend {fluid, cold_clean_air}

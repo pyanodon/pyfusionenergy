@@ -1,4 +1,4 @@
-local recipe1 = {
+Recipe {
     type = "recipe",
     name = "automated-screener",
     energy_required = 10,
@@ -11,10 +11,12 @@ local recipe1 = {
         {"steel-plate", 60},
         {"advanced-circuit", 20} --updated-bob basic-electronic-circuit-board
     },
-    result = "automated-screener"
+    results = {
+        {"automated-screener", 1}
+    }
 }
 
-local item1 = {
+Item {
     type = "item",
     name = "automated-screener",
     icon = "__pyfusionenergy__/graphics/icons/automated-screener.png",
@@ -25,7 +27,7 @@ local item1 = {
     stack_size = 10
 }
 
-local entity1 = {
+Entity {
     type = "assembling-machine",
     name = "automated-screener",
     icon = "__pyfusionenergy__/graphics/icons/automated-screener.png",
@@ -88,5 +90,3 @@ local entity1 = {
         apparent_volume = 2.5
     }
 }
-
-data:extend {recipe1, item1, entity1}

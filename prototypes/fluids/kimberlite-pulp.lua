@@ -1,4 +1,4 @@
-local kimberlite_pulp = {
+Recipe {
     type = "recipe",
     name = "kimberlite-pulp",
     category = "mixer",
@@ -19,7 +19,7 @@ local kimberlite_pulp = {
     order = "j"
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "kimberlite-pulp",
     icon = "__pyfusionenergy__/graphics/icons/kimberlite-pulp.png",
@@ -33,5 +33,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "i"
 }
-
-data:extend {fluid, kimberlite_pulp}

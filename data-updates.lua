@@ -7,4 +7,4 @@ if angelsmods then
     require("prototypes.updates.angel-updates")
 end
 
-data.raw.tool["production-science-pack"].icon = "__pyfusionenergy__/graphics/icons/production-science-pack.png"
+data.raw["tool"]["production-science-pack"].icon = "__pyfusionenergy__/graphics/icons/production-science-pack.png"

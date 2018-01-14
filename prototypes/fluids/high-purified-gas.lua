@@ -1,4 +1,4 @@
-local high_purified_gas = {
+Recipe {
     type = "recipe",
     name = "high-purified-gas",
     category = "fluid-separator",
@@ -11,14 +11,10 @@ local high_purified_gas = {
     results = {
         {type = "fluid", name = "high-purified-gas", amount = 100},
         {type = "fluid", name = "carbon-dioxide", amount = 30}
-    },
-    --main_product= "high-purified-gas",
-    icon = "__pyfusionenergy__/graphics/icons/high-purified-gas.png",
-    subgroup = "py-fusion-fluids",
-    order = "i"
+    }
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "high-purified-gas",
     icon = "__pyfusionenergy__/graphics/icons/high-purified-gas.png",
@@ -32,5 +28,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "d"
 }
-
-data:extend {fluid, high_purified_gas}

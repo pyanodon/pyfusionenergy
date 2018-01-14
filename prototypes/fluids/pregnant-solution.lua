@@ -1,4 +1,4 @@
-local pregnant_solution = {
+Recipe {
     type = "recipe",
     name = "pregnant-solution",
     category = "hydrocyclone",
@@ -17,7 +17,7 @@ local pregnant_solution = {
     order = "s"
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "pregnant-solution",
     icon = "__pyfusionenergy__/graphics/icons/pregnant-solution.png",
@@ -31,5 +31,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "s"
 }
-
-data:extend {fluid, pregnant_solution}

@@ -1,4 +1,4 @@
-local soda_ash = {
+Recipe {
     type = "recipe",
     name = "soda-ash",
     category = "agitator",
@@ -18,7 +18,7 @@ local soda_ash = {
     order = "s"
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "soda-ash",
     icon = "__pyfusionenergy__/graphics/icons/soda-ash.png",
@@ -32,5 +32,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "s"
 }
-
-data:extend {fluid, soda_ash}

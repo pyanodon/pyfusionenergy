@@ -1,4 +1,4 @@
-local diamond_tailings = {
+Recipe {
     type = "recipe",
     name = "diamond-tailings",
     category = "pan",
@@ -19,7 +19,7 @@ local diamond_tailings = {
     order = "j"
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "diamond-tailings",
     icon = "__pyfusionenergy__/graphics/icons/diamond-tailings.png",
@@ -33,5 +33,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "i"
 }
-
-data:extend {fluid, diamond_tailings}

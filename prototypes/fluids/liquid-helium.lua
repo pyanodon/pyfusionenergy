@@ -1,4 +1,4 @@
-local liquid_helium = {
+Recipe {
     type = "recipe",
     name = "liquid-helium",
     category = "compressor",
@@ -14,11 +14,9 @@ local liquid_helium = {
         {type = "fluid", name = "steam", amount = 600}
     },
     main_product = "liquid-helium",
-    icon = "__pyfusionenergy__/graphics/icons/liquid-helium.png",
-    subgroup = "py-fusion-fluids",
-    order = "c"
 }
-local evaporate_helium = {
+
+Recipe {
     type = "recipe",
     name = "evaporate-helium",
     category = "evaporator",
@@ -36,7 +34,7 @@ local evaporate_helium = {
     order = "c"
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "liquid-helium",
     icon = "__pyfusionenergy__/graphics/icons/liquid-helium.png",
@@ -50,5 +48,3 @@ local fluid = {
     subgroup = "py-fusion-gases",
     order = "c"
 }
-
-data:extend {fluid, liquid_helium, evaporate_helium}
