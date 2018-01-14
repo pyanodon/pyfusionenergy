@@ -1,4 +1,4 @@
-local pressured_vpulp = {
+Recipe {
     type = "recipe",
     name = "pressured-vpulp",
     category = "vacuum",
@@ -9,14 +9,10 @@ local pressured_vpulp = {
     },
     results = {
         {type = "fluid", name = "pressured-vpulp", amount = 100}
-    },
-    main_product = "pressured-vpulp",
-    icon = "__pyfusionenergy__/graphics/icons/pressured-vpulp.png",
-    subgroup = "py-fusion-fluids",
-    order = "m"
+    }
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "pressured-vpulp",
     icon = "__pyfusionenergy__/graphics/icons/pressured-vpulp.png",
@@ -30,5 +26,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "m"
 }
-
-data:extend {fluid, pressured_vpulp}

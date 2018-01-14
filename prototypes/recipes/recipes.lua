@@ -17,7 +17,7 @@ Recipe {
     icon = "__pyfusionenergy__/graphics/icons/crush-molybdenite.png",
     subgroup = "py-crusher",
     order = "a"
-}
+}:add_unlock("crusher")
 
 Recipe {
     type = "recipe",
@@ -36,7 +36,7 @@ Recipe {
     icon = "__pyfusionenergy__/graphics/icons/molybdenite-dust.png",
     subgroup = "py-mill",
     order = "b"
-}
+}:add_unlock("crusher")
 
 Recipe {
     type = "recipe",
@@ -1750,14 +1750,4 @@ Recipe {
     icon = "__pyfusionenergy__/graphics/icons/helium3.png",
     subgroup = "py-fusion-items",
     order = "dd"
-}
-
-local crusher = data.raw.technology["crusher"].effects
-crusher[#crusher + 1] = {
-    type = "unlock-recipe",
-    recipe = "crushing-molybdenite"
-}
-crusher[#crusher + 1] = {
-    type = "unlock-recipe",
-    recipe = "milling-molybdenite"
 }

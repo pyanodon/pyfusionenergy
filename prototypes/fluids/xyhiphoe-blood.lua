@@ -1,4 +1,4 @@
-local fluid = {
+Fluid {
     type = "fluid",
     name = "xyhiphoe-blood",
     icon = "__pyfusionenergy__/graphics/icons/xyhiphoe-blood.png",
@@ -12,5 +12,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "e"
 }
-
-data:extend {fluid}

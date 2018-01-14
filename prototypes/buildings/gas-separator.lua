@@ -1,6 +1,4 @@
-local Pipes = require("stdlib.data.pipes")
-
-local recipe1 = {
+Recipe {
     type = "recipe",
     name = "gas-separator",
     energy_required = 15,
@@ -13,10 +11,12 @@ local recipe1 = {
         {"nichrome", 30},
         {"chemical-plant", 2}
     },
-    result = "gas-separator"
+    results = {
+        {"gas-separator", 1}
+    }
 }
 
-local item1 = {
+Item {
     type = "item",
     name = "gas-separator",
     icon = "__pyfusionenergy__/graphics/icons/gas-separator.png",
@@ -27,7 +27,7 @@ local item1 = {
     stack_size = 10
 }
 
-local entity1 = {
+Entity {
     type = "assembling-machine",
     name = "gas-separator",
     icon = "__pyfusionenergy__/graphics/icons/gas-separator.png",
@@ -128,5 +128,3 @@ local entity1 = {
         apparent_volume = 2.5
     }
 }
-
-data:extend {recipe1, item1, entity1}

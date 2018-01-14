@@ -1,4 +1,4 @@
-local recipe1 = {
+Recipe {
     type = "recipe",
     name = "diamond-mine",
     energy_required = 10,
@@ -11,10 +11,12 @@ local recipe1 = {
         {"steel-plate", 100},
         {"advanced-circuit", 30} --updated-bob basic-electronic-circuit-board
     },
-    result = "diamond-mine"
+    results = {
+        {"diamond-mine", 1}
+    }
 }
 
-local item1 = {
+Item {
     type = "item",
     name = "diamond-mine",
     icon = "__pyfusionenergy__/graphics/icons/diamond-mine.png",
@@ -25,7 +27,7 @@ local item1 = {
     stack_size = 10
 }
 
-local entity1 = {
+Entity {
     type = "mining-drill",
     name = "diamond-mine",
     icon = "__pyfusionenergy__/graphics/icons/diamond-mine.png",
@@ -87,5 +89,3 @@ local entity1 = {
         apparent_volume = 2.5
     }
 }
-
-data:extend {recipe1, item1, entity1}

@@ -1,4 +1,4 @@
-local diamond_concentrate = {
+Recipe {
     type = "recipe",
     name = "diamond-concentrate",
     category = "pan",
@@ -19,7 +19,7 @@ local diamond_concentrate = {
     order = "j"
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "diamond-concentrate",
     icon = "__pyfusionenergy__/graphics/icons/diamond-concentrate.png",
@@ -33,5 +33,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "i"
 }
-
-data:extend {fluid, diamond_concentrate}

@@ -1,4 +1,4 @@
-local organic_vanadate = {
+Recipe {
     type = "recipe",
     name = "organic-vanadate",
     category = "mixer",
@@ -19,7 +19,7 @@ local organic_vanadate = {
     order = "o"
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "organic-vanadate",
     icon = "__pyfusionenergy__/graphics/icons/organic-vanadate.png",
@@ -33,5 +33,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "o"
 }
-
-data:extend {fluid, organic_vanadate}

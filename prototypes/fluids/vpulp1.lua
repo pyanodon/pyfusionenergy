@@ -1,4 +1,4 @@
-local vpulp1 = {
+Recipe {
     type = "recipe",
     name = "vpulp1",
     category = "agitator",
@@ -17,7 +17,7 @@ local vpulp1 = {
     order = "j"
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "vpulp1",
     icon = "__pyfusionenergy__/graphics/icons/vpulp1.png",
@@ -31,5 +31,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "i"
 }
-
-data:extend {fluid, vpulp1}

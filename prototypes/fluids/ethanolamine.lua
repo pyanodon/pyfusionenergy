@@ -1,4 +1,4 @@
-local ethanolamine = {
+Recipe {
     type = "recipe",
     name = "ethanolamine",
     category = "bio-reactor",
@@ -10,14 +10,10 @@ local ethanolamine = {
     },
     results = {
         {type = "fluid", name = "ethanolamine", amount = 200}
-    },
-    main_product = "ethanolamine",
-    icon = "__pyfusionenergy__/graphics/icons/ethanolamine.png",
-    subgroup = "py-fusion-fluids",
-    order = "i"
+    }
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "ethanolamine",
     icon = "__pyfusionenergy__/graphics/icons/ethanolamine.png",
@@ -31,5 +27,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "d"
 }
-
-data:extend {fluid, ethanolamine}

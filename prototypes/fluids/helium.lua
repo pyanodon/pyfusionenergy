@@ -1,4 +1,4 @@
-local fluid = {
+Fluid {
     type = "fluid",
     name = "helium",
     icon = "__pyfusionenergy__/graphics/icons/helium.png",
@@ -12,5 +12,3 @@ local fluid = {
     subgroup = "py-fusion-gases",
     order = "c"
 }
-
-data:extend {fluid}

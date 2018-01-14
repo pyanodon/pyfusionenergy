@@ -1,4 +1,4 @@
-local purier_helium = {
+Recipe {
     type = "recipe",
     name = "purier-helium",
     category = "compressor",
@@ -13,13 +13,10 @@ local purier_helium = {
         {type = "fluid", name = "steam", amount = 100},
         {type = "fluid", name = "purier-helium", amount = 2}
     },
-    main_product = "purier-helium",
-    icon = "__pyfusionenergy__/graphics/icons/purier-helium.png",
-    subgroup = "py-fusion-fluids",
-    order = "i"
+    main_product = "purier-helium"
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "purier-helium",
     icon = "__pyfusionenergy__/graphics/icons/purier-helium.png",
@@ -33,5 +30,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "d"
 }
-
-data:extend {fluid, purier_helium}

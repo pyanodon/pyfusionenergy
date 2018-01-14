@@ -1,4 +1,4 @@
-local vanadium_solution = {
+Recipe {
     type = "recipe",
     name = "vanadium-solution",
     category = "evaporator",
@@ -9,14 +9,10 @@ local vanadium_solution = {
     },
     results = {
         {type = "fluid", name = "vanadium-solution", amount = 100}
-    },
-    main_product = "vanadium-solution",
-    icon = "__pyfusionenergy__/graphics/icons/vanadium-solution.png",
-    subgroup = "py-fusion-fluids",
-    order = "p"
+    }
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "vanadium-solution",
     icon = "__pyfusionenergy__/graphics/icons/vanadium-solution.png",
@@ -30,5 +26,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "p"
 }
-
-data:extend {fluid, vanadium_solution}

@@ -1,15 +1,17 @@
-local autoplace = {
+Data {
     type = "autoplace-control",
     name = "regolites",
     richness = true,
     order = "b-e",
     category = "resource",
 }
-local noise = {
+
+Data {
     type = "noise-layer",
     name = "regolites"
 }
-local resource = {
+
+Entity {
     type = "resource",
     name = "regolites",
     category = "regolite",
@@ -26,7 +28,9 @@ local resource = {
         hardness = 2.0,
         -- mining_particle = "regolites-particle",
         mining_time = 4,
-        result = "regolite-rock"
+        results = {
+            {"regolite-rock", 1}
+        }
     },
     collision_box = {{-3.5, -3.5}, {3.5, 3.5}},
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
@@ -62,5 +66,3 @@ local resource = {
         }
     }
 }
-
-data:extend {autoplace, noise, resource}

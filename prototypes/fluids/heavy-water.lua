@@ -1,4 +1,4 @@
-local heavy_water = {
+Recipe {
     type = "recipe",
     name = "heavy-water",
     category = "quenching-tower",
@@ -10,14 +10,10 @@ local heavy_water = {
     },
     results = {
         {type = "fluid", name = "heavy-water", amount = 10}
-    },
-    main_product = "heavy-water",
-    icon = "__pyfusionenergy__/graphics/icons/heavy-water.png",
-    subgroup = "py-fusion-fluids",
-    order = "c"
+    }
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "heavy-water",
     icon = "__pyfusionenergy__/graphics/icons/heavy-water.png",
@@ -31,5 +27,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "c"
 }
-
-data:extend {fluid, heavy_water}

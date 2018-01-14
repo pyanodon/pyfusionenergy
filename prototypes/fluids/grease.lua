@@ -1,4 +1,4 @@
-local grease = {
+Recipe {
     type = "recipe",
     name = "grease",
     category = "fts-reactor",
@@ -12,14 +12,10 @@ local grease = {
     },
     results = {
         {type = "fluid", name = "grease", amount = 100}
-    },
-    --main_product= "grease",
-    icon = "__pyfusionenergy__/graphics/icons/grease.png",
-    subgroup = "py-fusion-fluids",
-    order = "c"
+    }
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "grease",
     icon = "__pyfusionenergy__/graphics/icons/grease.png",
@@ -33,5 +29,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "c"
 }
-
-data:extend {fluid, grease}

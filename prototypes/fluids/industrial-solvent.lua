@@ -1,4 +1,4 @@
-local industrial_solvent = {
+Recipe{
     type = "recipe",
     name = "industrial-solvent",
     category = "mixer",
@@ -11,14 +11,10 @@ local industrial_solvent = {
     },
     results = {
         {type = "fluid", name = "industrial-solvent", amount = 100}
-    },
-    main_product = "industrial-solvent",
-    icon = "__pyfusionenergy__/graphics/icons/mixer-industrial-solvent.png",
-    subgroup = "py-fusion-fluids",
-    order = "r"
+    }
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "industrial-solvent",
     icon = "__pyfusionenergy__/graphics/icons/industrial-solvent.png",
@@ -32,5 +28,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "r"
 }
-
-data:extend {fluid, industrial_solvent}

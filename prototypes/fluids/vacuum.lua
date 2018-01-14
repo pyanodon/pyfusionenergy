@@ -1,4 +1,4 @@
-local vacuum = {
+Recipe {
     type = "recipe",
     name = "vacuum",
     category = "vacuum",
@@ -7,14 +7,10 @@ local vacuum = {
     ingredients = {},
     results = {
         {type = "fluid", name = "vacuum", amount = 10}
-    },
-    main_product = "vacuum",
-    icon = "__pyfusionenergy__/graphics/icons/vacuum.png",
-    subgroup = "py-fusion-fluids",
-    order = "c"
+    }
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "vacuum",
     icon = "__pyfusionenergy__/graphics/icons/vacuum.png",
@@ -28,5 +24,3 @@ local fluid = {
     subgroup = "py-fusion-fluids",
     order = "c"
 }
-
-data:extend {fluid, vacuum}

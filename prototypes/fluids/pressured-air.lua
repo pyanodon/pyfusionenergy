@@ -1,4 +1,4 @@
-local pressured_air = {
+Recipe {
     type = "recipe",
     name = "pressured-air",
     category = "vacuum",
@@ -7,14 +7,10 @@ local pressured_air = {
     ingredients = {},
     results = {
         {type = "fluid", name = "pressured-air", amount = 10}
-    },
-    main_product = "pressured-air",
-    icon = "__pyfusionenergy__/graphics/icons/pressured-air.png",
-    subgroup = "py-fusion-gases",
-    order = "a"
+    }
 }
 
-local fluid = {
+Fluid {
     type = "fluid",
     name = "pressured-air",
     icon = "__pyfusionenergy__/graphics/icons/pressured-air.png",
@@ -28,5 +24,3 @@ local fluid = {
     subgroup = "py-fusion-gases",
     order = "c"
 }
-
-data:extend {fluid, pressured_air}

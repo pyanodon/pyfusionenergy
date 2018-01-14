@@ -1,4 +1,4 @@
-local recipe1 = {
+Recipe {
     type = "recipe",
     name = "secondary-crusher",
     energy_required = 25,
@@ -10,10 +10,12 @@ local recipe1 = {
         {"nbfe-alloy", 30},
         {"steel-plate", 40}
     },
-    result = "secondary-crusher"
+    results = {
+        {"secondary-crusher", 1}
+    }
 }
 
-local item1 = {
+Item {
     type = "item",
     name = "secondary-crusher",
     icon = "__pyfusionenergy__/graphics/icons/secondary-crusher.png",
@@ -24,7 +26,7 @@ local item1 = {
     stack_size = 10
 }
 
-local entity1 = {
+Entity {
     type = "assembling-machine",
     name = "secondary-crusher",
     icon = "__pyfusionenergy__/graphics/icons/secondary-crusher.png",
@@ -78,5 +80,3 @@ local entity1 = {
         apparent_volume = 2.5
     }
 }
-
-data:extend {recipe1, item1, entity1}
