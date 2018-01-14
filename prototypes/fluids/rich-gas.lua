@@ -19,6 +19,7 @@ Fluid {
     type = "fluid",
     name = "rich-gas",
     icon = "__pyfusionenergy__/graphics/icons/rich-gas.png",
+    icon_size = 32,
     default_temperature = 15,
     base_color = {r = 0.235, g = 0.65, b = 0.435},
     flow_color = {r = 0.235, g = 0.65, b = 0.435},
