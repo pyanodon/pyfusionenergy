@@ -19,6 +19,7 @@ Fluid {
     type = "fluid",
     name = "molybdenum-pulp",
     icon = "__pyfusionenergy__/graphics/icons/molybdenum-pulp.png",
+	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 0.278, g = 0.36, b = 0.458},
     flow_color = {r = 0.278, g = 0.36, b = 0.458},

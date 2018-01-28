@@ -2,6 +2,7 @@ Fluid {
     type = "fluid",
     name = "xyhiphoe-blood",
     icon = "__pyfusionenergy__/graphics/icons/xyhiphoe-blood.png",
+	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 0.278, g = 0.0, b = 0.796},
     flow_color = {r = 0.278, g = 0.0, b = 0.796},

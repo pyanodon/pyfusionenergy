@@ -16,6 +16,7 @@ Fluid {
     type = "fluid",
     name = "pressured-water",
     icon = "__pyfusionenergy__/graphics/icons/pressured-water.png",
+	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 0.031, g = 0.372, b = 0.423},
     flow_color = {r = 0.031, g = 0.372, b = 0.423},

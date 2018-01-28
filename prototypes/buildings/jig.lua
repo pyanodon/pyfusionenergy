@@ -69,13 +69,13 @@ Recipe {
     results = {
         {"jig", 1}
     },
-    icon = "__pyfusionenergy__/graphics/icons/jig.png"
 }
 
 Item {
     type = "item",
     name = "jig",
     icon = "__pyfusionenergy__/graphics/icons/jig.png",
+	icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "py-fusion-buildings",
     order = "d",
@@ -87,6 +87,7 @@ Entity {
     type = "assembling-machine",
     name = "jig",
     icon = "__pyfusionenergy__/graphics/icons/jig.png",
+	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "jig"},
     fast_replaceable_group = "jig",

@@ -15,6 +15,7 @@ Recipe {
     },
     main_product = "crushed-molybdenite",
     icon = "__pyfusionenergy__/graphics/icons/crush-molybdenite.png",
+	icon_size = 32,
     subgroup = "py-crusher",
     order = "a"
 }:add_unlock("crusher")
@@ -33,9 +34,6 @@ Recipe {
         {type = "item", name = "gravel", amount = 1}
     },
     main_product = "molybdenite-dust",
-    icon = "__pyfusionenergy__/graphics/icons/molybdenite-dust.png",
-    subgroup = "py-mill",
-    order = "b"
 }:add_unlock("crusher")
 
 Recipe {
@@ -54,6 +52,7 @@ Recipe {
     },
     main_product = "molybdenum-concentrate",
     icon = "__pyfusionenergy__/graphics/icons/molybdenum-concentrate-hydrocyclone.png",
+	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "b"
 }
@@ -73,9 +72,6 @@ Recipe {
         {type = "item", name = "molybdenum-sulfide", amount = 10}
     },
     main_product = "molybdenum-sulfide",
-    icon = "__pyfusionenergy__/graphics/icons/molybdenum-sulfide.png",
-    subgroup = "py-fusion-items",
-    order = "c"
 }
 
 Recipe {
@@ -92,9 +88,6 @@ Recipe {
         {type = "item", name = "sulfur", amount = 5}
     },
     main_product = "molybdenum-oxide",
-    icon = "__pyfusionenergy__/graphics/icons/molybdenum-oxide.png",
-    subgroup = "py-fusion-items",
-    order = "d"
 }
 
 Recipe {
@@ -111,9 +104,6 @@ Recipe {
         {type = "fluid", name = "water", amount = 10}
     },
     main_product = "molybdenum-plate",
-    icon = "__pyfusionenergy__/graphics/icons/molybdenum-plate.png",
-    subgroup = "py-fusion-items",
-    order = "e"
 }
 
 Recipe {
@@ -130,9 +120,6 @@ Recipe {
         {type = "fluid", name = "phytoplankton", amount = 10}
     },
     main_product = "phytoplankton",
-    icon = "__pyfusionenergy__/graphics/icons/phytoplankton.png",
-    subgroup = "py-fusion-fluids",
-    order = "e"
 }
 
 Recipe {
@@ -151,9 +138,6 @@ Recipe {
         {type = "fluid", name = "waste-water", amount = 500}
     },
     main_product = "xyhiphoe-blood",
-    icon = "__pyfusionenergy__/graphics/icons/xyhiphoe-blood.png",
-    subgroup = "py-fusion-fluids",
-    order = "e"
 }
 
 Recipe {
@@ -170,9 +154,6 @@ Recipe {
         {type = "fluid", name = "organic-solvent", amount = 200}
     },
     main_product = "organic-solvent",
-    icon = "__pyfusionenergy__/graphics/icons/xyhiphoe-hydrocyclone.png",
-    subgroup = "py-fusion-recipes",
-    order = "a"
 }
 
 Recipe {
@@ -188,6 +169,7 @@ Recipe {
         {type = "item", name = "ash", amount = 10} --updated-bob cobalt-ore
     },
     icon = "__pyfusionenergy__/graphics/icons/used-solvent.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "c"
 }
@@ -207,6 +189,7 @@ Recipe {
     },
     main_product = "organic-solvent",
     icon = "__pyfusionenergy__/graphics/icons/used-solvent.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "d"
 }
@@ -226,9 +209,6 @@ Recipe {
         --bob hydrogen
     },
     main_product = "sodium-chlorate",
-    icon = "__pyfusionenergy__/graphics/icons/sodium-chlorate.png",
-    subgroup = "py-fusion-recipes",
-    order = "e"
 }
 
 Recipe {
@@ -245,9 +225,6 @@ Recipe {
         {type = "fluid", name = "dirty-water", amount = 300}
     },
     main_product = "vanadium-oxide",
-    icon = "__pyfusionenergy__/graphics/icons/vanadium-oxide.png",
-    subgroup = "py-fusion-recipes",
-    order = "e"
 }
 
 Recipe {
@@ -263,9 +240,6 @@ Recipe {
     results = {
         {type = "fluid", name = "methanol", amount = 100}
     },
-    icon = "__pycoalprocessing__/graphics/icons/methanol.png",
-    subgroup = "py-fusion-recipes",
-    order = "f"
 }
 
 Recipe {
@@ -282,9 +256,6 @@ Recipe {
         {type = "fluid", name = "dirty-water", amount = 150}
     },
     main_product = "dirty-water",
-    icon = "__pycoalprocessing__/graphics/icons/dirty-water.png",
-    subgroup = "py-fusion-recipes",
-    order = "g"
 }
 
 Recipe {
@@ -307,9 +278,6 @@ Recipe {
     results = {
         {type = "item", name = "super-alloy", amount = 5}
     },
-    icon = "__pyfusionenergy__/graphics/icons/super-alloy.png",
-    subgroup = "py-fusion-recipes",
-    order = "h"
 }
 
 Recipe {
@@ -327,6 +295,7 @@ Recipe {
     },
     --main_product= "crushed-kimberlite",
     icon = "__pyfusionenergy__/graphics/icons/crush-kimberlite.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
 }
@@ -346,6 +315,7 @@ Recipe {
     },
     --main_product= "kimberlite-grade2",
     icon = "__pyfusionenergy__/graphics/icons/screening-kimberlite.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
 }
@@ -365,6 +335,7 @@ Recipe {
     },
     --main_product= "crushed-kimberlite",
     icon = "__pyfusionenergy__/graphics/icons/kimberlite-recrush.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
 }
@@ -387,6 +358,7 @@ Recipe {
     },
     --main_product= "kimberlite-grade3",
     icon = "__pyfusionenergy__/graphics/icons/kimberlite-washer.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
 }
@@ -406,6 +378,7 @@ Recipe {
     },
     --main_product= "kimberlite-grade3",
     icon = "__pyfusionenergy__/graphics/icons/kimberlite-grade2-recrush.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
 }
@@ -425,6 +398,7 @@ Recipe {
     },
     --main_product= "diamond-reject",
     icon = "__pyfusionenergy__/graphics/icons/screening-kimberlite-residue.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
 }
@@ -444,6 +418,7 @@ Recipe {
     },
     --main_product= "pure-kimberlite-grade2",
     icon = "__pyfusionenergy__/graphics/icons/diamond-reject-recrush.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
 }
@@ -463,6 +438,7 @@ Recipe {
     },
     --main_product= "pure-kimberlite-grade2",
     icon = "__pyfusionenergy__/graphics/icons/screening-diamond-reject.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
 }
@@ -483,6 +459,7 @@ Recipe {
     },
     --main_product= "pure-kimberlite-grade2",
     icon = "__pyfusionenergy__/graphics/icons/rejects-separation.png",
+	icon_size = 32,
     subgroup = "py-items-class",
     order = "e"
 }
@@ -503,6 +480,7 @@ Recipe {
     },
     --main_product= "jig-grade1",
     icon = "__pyfusionenergy__/graphics/icons/jig1.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "j"
 }
@@ -524,6 +502,7 @@ Recipe {
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/greasing-1.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "j1"
 }
@@ -545,6 +524,7 @@ Recipe {
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/greasing-2.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "j2"
 }
@@ -566,6 +546,7 @@ Recipe {
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/greasing-3.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "j3"
 }
@@ -586,6 +567,7 @@ Recipe {
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/crude-diamond-washer.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "k"
 }
@@ -605,6 +587,7 @@ Recipe {
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/class-diamond.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "k"
 }
@@ -623,10 +606,7 @@ Recipe {
         {type = "fluid", name = "cold-air", amount = 20}
         --add nitrogen
     },
-    --main_product= "crude",
-    icon = "__pyfusionenergy__/graphics/icons/cold-air.png",
-    subgroup = "py-fusion-recipes",
-    order = "k"
+    main_product= "cold-air",
 }
 
 Recipe {
@@ -644,10 +624,7 @@ Recipe {
         --add nitrogen
         --add oxygen
     },
-    --main_product= "crude",
-    icon = "__pyfusionenergy__/graphics/icons/dry-gas-stream.png",
-    subgroup = "py-fusion-recipes",
-    order = "l"
+    main_product= "dry-gas-stream",
 }
 
 Recipe {
@@ -664,10 +641,7 @@ Recipe {
         {type = "item", name = "ash", amount = 3},
         {type = "fluid", name = "dry-gas-stream", amount = 2}
     },
-    --main_product= "crude",
-    icon = "__pyfusionenergy__/graphics/icons/calcinates.png",
-    subgroup = "py-fusion-recipes",
-    order = "l"
+    main_product= "calcinates",
 }
 Recipe {
     type = "recipe",
@@ -683,10 +657,7 @@ Recipe {
         {type = "item", name = "ash", amount = 3},
         {type = "fluid", name = "dry-gas-stream", amount = 2}
     },
-    --main_product= "crude",
-    icon = "__pyfusionenergy__/graphics/icons/calcinates.png",
-    subgroup = "py-fusion-recipes",
-    order = "l"
+    main_product= "calcinates",
 }
 
 Recipe {
@@ -707,6 +678,7 @@ Recipe {
     },
     --main_product= "crude",
     icon = "__pyfusionenergy__/graphics/icons/calcinate-separation.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "l"
 }
@@ -727,10 +699,6 @@ Recipe {
     results = {
         {type = "fluid", name = "bacteria-1", amount = 50}
     },
-    --main_product= "crude",
-    icon = "__pyfusionenergy__/graphics/icons/bacteria-1.png",
-    subgroup = "py-fusion-recipes",
-    order = "l"
 }
 
 Recipe {
@@ -745,10 +713,6 @@ Recipe {
     results = {
         {type = "item", name = "serine", amount = 10}
     },
-    --main_product= "crude",
-    icon = "__pyfusionenergy__/graphics/icons/serine.png",
-    subgroup = "py-fusion-recipes",
-    order = "l"
 }
 
 Recipe {
@@ -765,10 +729,6 @@ Recipe {
     results = {
         {type = "item", name = "methyl-acrylate", amount = 1}
     },
-    --main_product= "crude",
-    icon = "__pyfusionenergy__/graphics/icons/methyl-acrylate.png",
-    subgroup = "py-fusion-recipes",
-    order = "l"
 }
 
 Recipe {
@@ -786,10 +746,6 @@ Recipe {
     results = {
         {type = "item", name = "kmauts-ration", amount = 3}
     },
-    --main_product= "crude",
-    icon = "__pyfusionenergy__/graphics/icons/kmauts-ration.png",
-    subgroup = "py-fusion-recipes",
-    order = "l"
 }
 
 Recipe {
@@ -807,6 +763,7 @@ Recipe {
     },
     main_product = "crushed-regolite",
     icon = "__pyfusionenergy__/graphics/icons/crush-regolite.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "a"
 }
@@ -826,6 +783,7 @@ Recipe {
     },
     main_product = "powdered-regolite",
     icon = "__pyfusionenergy__/graphics/icons/regolite-recrush.png",
+	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "a"
 }
@@ -844,9 +802,6 @@ Recipe {
         {type = "item", name = "sand", amount = 2}
     },
     main_product = "regolite-dust",
-    icon = "__pyfusionenergy__/graphics/icons/regolite-dust.png",
-    subgroup = "py-fusion-recipes",
-    order = "b"
 }
 
 Recipe {
@@ -864,10 +819,7 @@ Recipe {
         {type = "fluid", name = "dry-gas-stream", amount = 4}
         --add bobs hydrogen
     },
-    --main_product= "crude",
-    icon = "__pyfusionenergy__/graphics/icons/calcinates.png",
-    subgroup = "py-fusion-recipes",
-    order = "l"
+    main_product= "calcinates",
 }
 
 Recipe {
@@ -885,10 +837,7 @@ Recipe {
         {type = "fluid", name = "liquid-petgas", amount = 5},
         {type = "fluid", name = "steam", amount = 100}
     },
-    --main_product= "liquid-petgas",
-    icon = "__pyfusionenergy__/graphics/icons/liquid-petgas.png",
-    subgroup = "py-fusion-gases",
-    order = "a"
+    main_product= "liquid-petgas",
 }
 
 Recipe {
@@ -906,9 +855,6 @@ Recipe {
         {type = "fluid", name = "gas-stream", amount = 20}
     },
     main_product = "gas-stream",
-    icon = "__pyfusionenergy__/graphics/icons/gas-stream.png",
-    subgroup = "py-fusion-gases",
-    order = "a"
 }
 
 Recipe {
@@ -926,9 +872,6 @@ Recipe {
         {type = "fluid", name = "dry-gas-stream", amount = 3}
     },
     main_product = "dry-gas-stream",
-    icon = "__pyfusionenergy__/graphics/icons/dry-gas-stream.png",
-    subgroup = "py-fusion-gases",
-    order = "a"
 }
 
 Recipe {
@@ -945,9 +888,6 @@ Recipe {
         {type = "fluid", name = "helium-rich-gas", amount = 10}
     },
     main_product = "helium-rich-gas",
-    icon = "__pyfusionenergy__/graphics/icons/helium-rich-gas.png",
-    subgroup = "py-fusion-gases",
-    order = "a"
 }
 
 Recipe {
@@ -964,9 +904,6 @@ Recipe {
         {type = "fluid", name = "helium", amount = 5}
     },
     main_product = "helium",
-    icon = "__pyfusionenergy__/graphics/icons/helium.png",
-    subgroup = "py-fusion-gases",
-    order = "aa"
 }
 
 Recipe {
@@ -984,10 +921,6 @@ Recipe {
     results = {
         {type = "item", name = "nexelit-matrix", amount = 4}
     },
-    main_product = "nexelit-matrix",
-    icon = "__pyfusionenergy__/graphics/icons/nexelit-matrix.png",
-    subgroup = "py-fusion-items",
-    order = "a"
 }
 
 Recipe {
@@ -1004,10 +937,6 @@ Recipe {
     results = {
         {type = "item", name = "nbti-alloy", amount = 2}
     },
-    main_product = "nbti-alloy",
-    icon = "__pyfusionenergy__/graphics/icons/nbti-alloy.png",
-    subgroup = "py-fusion-items",
-    order = "d"
 }
 
 Recipe {
@@ -1023,10 +952,6 @@ Recipe {
     results = {
         {type = "item", name = "nenbit-matrix", amount = 2}
     },
-    main_product = "nenbit-matrix",
-    icon = "__pyfusionenergy__/graphics/icons/nenbit-matrix.png",
-    subgroup = "py-fusion-items",
-    order = "d"
 }
 
 Recipe {
@@ -1043,10 +968,6 @@ Recipe {
     results = {
         {type = "item", name = "ferrite", amount = 4}
     },
-    main_product = "ferrite",
-    icon = "__pyfusionenergy__/graphics/icons/ferrite.png",
-    subgroup = "py-fusion-items",
-    order = "e"
 }
 
 Recipe {
@@ -1062,10 +983,6 @@ Recipe {
     results = {
         {type = "item", name = "coil-core", amount = 1}
     },
-    main_product = "coil-core",
-    icon = "__pyfusionenergy__/graphics/icons/coil-core.png",
-    subgroup = "py-fusion-items",
-    order = "e"
 }
 
 Recipe {
@@ -1082,10 +999,6 @@ Recipe {
     results = {
         {type = "item", name = "sc-wire", amount = 5}
     },
-    main_product = "sc-wire",
-    icon = "__pyfusionenergy__/graphics/icons/superconducting-wire.png",
-    subgroup = "py-fusion-items",
-    order = "e"
 }
 
 Recipe {
@@ -1102,10 +1015,6 @@ Recipe {
     results = {
         {type = "item", name = "sc-coil", amount = 1}
     },
-    main_product = "sc-coil",
-    icon = "__pyfusionenergy__/graphics/icons/superconducting-coil.png",
-    subgroup = "py-fusion-items",
-    order = "e"
 }
 
 Recipe {
@@ -1122,10 +1031,6 @@ Recipe {
     results = {
         {type = "item", name = "magnetic-core", amount = 1}
     },
-    main_product = "magnetic-core",
-    icon = "__pyfusionenergy__/graphics/icons/magnetic-core.png",
-    subgroup = "py-fusion-items",
-    order = "e"
 }
 
 Recipe {
@@ -1141,10 +1046,6 @@ Recipe {
     results = {
         {type = "item", name = "deposited-core", amount = 1}
     },
-    --main_product= "magnetic-core",
-    icon = "__pyfusionenergy__/graphics/icons/deposited-vcore.png",
-    subgroup = "py-fusion-items",
-    order = "e"
 }
 
 Recipe {
@@ -1162,10 +1063,6 @@ Recipe {
     results = {
         {type = "item", name = "sc-unit", amount = 1}
     },
-    main_product = "sc-unit",
-    icon = "__pyfusionenergy__/graphics/icons/magnetic-unit.png",
-    subgroup = "py-fusion-items",
-    order = "e"
 }
 
 Recipe {
@@ -1181,10 +1078,7 @@ Recipe {
         {type = "fluid", name = "deuterium", amount = 4}
         --add oxygen
     },
-    --main_product= "sc-unit",
-    icon = "__pyfusionenergy__/graphics/icons/deuterium.png",
-    subgroup = "py-fusion-items",
-    order = "e"
+    main_product= "deuterium",
 }
 
 Recipe {
@@ -1199,10 +1093,6 @@ Recipe {
     results = {
         {type = "item", name = "b2o3-dust", amount = 40}
     },
-    main_product = "b2o3-dust",
-    icon = "__pyfusionenergy__/graphics/icons/boron-trioxide-dust.png",
-    subgroup = "py-fusion-items",
-    order = "e"
 }
 
 Recipe {
@@ -1219,10 +1109,6 @@ Recipe {
     results = {
         {type = "item", name = "boron-mixture", amount = 5}
     },
-    main_product = "boron-mixture",
-    icon = "__pyfusionenergy__/graphics/icons/boron-mixture.png",
-    subgroup = "py-fusion-items",
-    order = "e"
 }
 
 Recipe {
@@ -1241,9 +1127,6 @@ Recipe {
         {type = "fluid", name = "diborane", amount = 50}
     },
     main_product = "boron",
-    icon = "__pyfusionenergy__/graphics/icons/boron.png",
-    subgroup = "py-fusion-items",
-    order = "e"
 }
 
 Recipe {
@@ -1261,9 +1144,6 @@ Recipe {
         {type = "fluid", name = "carbon-dioxide", amount = 3}
     },
     main_product = "boron-carbide",
-    icon = "__pyfusionenergy__/graphics/icons/boron-carbide.png",
-    subgroup = "py-fusion-items",
-    order = "e"
 }
 
 Recipe {
@@ -1283,10 +1163,6 @@ Recipe {
     results = {
         {type = "item", name = "blanket-chassi", amount = 1}
     },
-    main_product = "blanket-chassi",
-    icon = "__pyfusionenergy__/graphics/icons/blanket-chassi.png",
-    subgroup = "py-fusion-items",
-    order = "e"
 }
 
 Recipe {
@@ -1304,10 +1180,6 @@ Recipe {
     results = {
         {type = "item", name = "blanket", amount = 1}
     },
-    main_product = "blanket",
-    icon = "__pyfusionenergy__/graphics/icons/blanket.png",
-    subgroup = "py-fusion-items",
-    order = "e"
 }
 
 Recipe {
@@ -1325,10 +1197,6 @@ Recipe {
     results = {
         {type = "item", name = "divertor", amount = 2}
     },
-    main_product = "divertor",
-    icon = "__pyfusionenergy__/graphics/icons/divertor.png",
-    subgroup = "py-fusion-items",
-    order = "e"
 }
 
 Recipe {
@@ -1347,10 +1215,6 @@ Recipe {
     results = {
         {type = "item", name = "wall-shield", amount = 5}
     },
-    main_product = "wall-shield",
-    icon = "__pyfusionenergy__/graphics/icons/wall-shield.png",
-    subgroup = "py-fusion-items",
-    order = "e"
 }
 
 Recipe {
@@ -1367,10 +1231,6 @@ Recipe {
     results = {
         {type = "item", name = "reinforced-wall-shield", amount = 1}
     },
-    main_product = "reinforced-wall-shield",
-    icon = "__pyfusionenergy__/graphics/icons/rwall-shield.png",
-    subgroup = "py-fusion-items",
-    order = "e"
 }
 
 Recipe {
@@ -1398,6 +1258,7 @@ Recipe {
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/fusion-deuterium.png",
+	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
 }
@@ -1427,6 +1288,7 @@ Recipe {
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/fusion-he3.png",
+	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
 }
@@ -1456,6 +1318,7 @@ Recipe {
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/fusion-dt.png",
+	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
 }
@@ -1484,6 +1347,7 @@ Recipe {
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/fusion-bh.png",
+	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
 }
@@ -1504,6 +1368,7 @@ Recipe {
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/steam-exchange.png",
+	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
 }
@@ -1524,6 +1389,7 @@ Recipe {
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/steam-exchange2.png",
+	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
 }
@@ -1544,6 +1410,7 @@ Recipe {
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/steam-exchange3.png",
+	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
 }
@@ -1564,6 +1431,7 @@ Recipe {
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/steam-exchange4.png",
+	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
 }
@@ -1581,10 +1449,6 @@ Recipe {
     results = {
         {type = "item", name = "lead-container", amount = 1}
     },
-    main_product = "lead-container",
-    icon = "__pyfusionenergy__/graphics/icons/lead-container.png",
-    subgroup = "py-fusion-items",
-    order = "f"
 }
 
 Recipe {
@@ -1601,10 +1465,6 @@ Recipe {
     results = {
         {type = "item", name = "science-coating", amount = 1}
     },
-    main_product = "science-coating",
-    icon = "__pyfusionenergy__/graphics/icons/science-coating.png",
-    subgroup = "py-fusion-items",
-    order = "f"
 }
 
 Recipe {
@@ -1620,10 +1480,6 @@ Recipe {
     results = {
         {type = "item", name = "coated-container", amount = 1}
     },
-    main_product = "coated-container",
-    icon = "__pyfusionenergy__/graphics/icons/coated-container.png",
-    subgroup = "py-fusion-items",
-    order = "f"
 }
 
 Recipe {
@@ -1642,10 +1498,6 @@ Recipe {
     results = {
         {type = "item", name = "nuclear-sample", amount = 1}
     },
-    main_product = "nuclear-sample",
-    icon = "__pyfusionenergy__/graphics/icons/nuclear-sample.png",
-    subgroup = "py-fusion-items",
-    order = "f"
 }
 
 Recipe {
@@ -1664,10 +1516,6 @@ Recipe {
     results = {
         {type = "item", name = "control-unit", amount = 2}
     },
-    main_product = "control-unit",
-    icon = "__pyfusionenergy__/graphics/icons/control-unit.png",
-    subgroup = "py-fusion-items",
-    order = "f"
 }
 
 Recipe {
@@ -1685,6 +1533,7 @@ Recipe {
         {type = "item", name = "production-science-pack", amount = 3}
     },
     icon = "__pyfusionenergy__/graphics/icons/production-science-pack.png",
+	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "x"
 }
@@ -1703,10 +1552,6 @@ Recipe {
     results = {
         {type = "item", name = "agzn-alloy", amount = 2}
     },
-    main_product = "agzn-alloy",
-    icon = "__pyfusionenergy__/graphics/icons/agzn-alloy.png",
-    subgroup = "py-fusion-items",
-    order = "d"
 }
 
 Recipe {
@@ -1725,10 +1570,6 @@ Recipe {
     results = {
         {type = "item", name = "silver-foam", amount = 1}
     },
-    main_product = "silver-foam",
-    icon = "__pyfusionenergy__/graphics/icons/silver-foam.png",
-    subgroup = "py-fusion-items",
-    order = "dd"
 }
 
 Recipe {
@@ -1747,7 +1588,4 @@ Recipe {
         {type = "fluid", name = "helium", amount = 2}
     },
     main_product = "helium3",
-    icon = "__pyfusionenergy__/graphics/icons/helium3.png",
-    subgroup = "py-fusion-items",
-    order = "dd"
 }

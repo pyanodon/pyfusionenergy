@@ -15,6 +15,7 @@ Entity {
     type = "resource",
     name = "molybdenum-ore",
     icon = "__pyfusionenergy__/graphics/icons/ores/molybdenum.png",
+	icon_size = 32,
     flags = {"placeable-neutral"},
     order = "a-b-a",
     map_color = {r = 0.294, g = 0.45, b = 0.643},

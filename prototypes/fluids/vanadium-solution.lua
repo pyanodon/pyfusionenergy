@@ -16,6 +16,7 @@ Fluid {
     type = "fluid",
     name = "vanadium-solution",
     icon = "__pyfusionenergy__/graphics/icons/vanadium-solution.png",
+	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 0.866, g = 0.192, b = 0.192},
     flow_color = {r = 0.866, g = 0.192, b = 0.192},

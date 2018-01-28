@@ -13,6 +13,7 @@ Recipe {
     },
     main_product = "pregnant-solution",
     icon = "__pyfusionenergy__/graphics/icons/pregnant-solution-hydrocyclone.png",
+	icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "s"
 }
@@ -21,6 +22,7 @@ Fluid {
     type = "fluid",
     name = "pregnant-solution",
     icon = "__pyfusionenergy__/graphics/icons/pregnant-solution.png",
+	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 0.878, g = 0.725, b = 0.282},
     flow_color = {r = 0.878, g = 0.725, b = 0.282},
