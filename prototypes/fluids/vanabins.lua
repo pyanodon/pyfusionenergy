@@ -17,6 +17,7 @@ Fluid {
     type = "fluid",
     name = "vanabins",
     icon = "__pyfusionenergy__/graphics/icons/vanabins.png",
+	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 0.447, g = 0.109, b = 1},
     flow_color = {r = 0.447, g = 0.109, b = 1},

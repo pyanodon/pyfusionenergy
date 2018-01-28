@@ -19,6 +19,7 @@ Fluid {
     type = "fluid",
     name = "grease",
     icon = "__pyfusionenergy__/graphics/icons/grease.png",
+	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 0.541, g = 0.686, b = 0.250},
     flow_color = {r = 0.541, g = 0.686, b = 0.250},

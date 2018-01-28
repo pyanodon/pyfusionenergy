@@ -15,6 +15,7 @@ Recipe {
     },
     main_product = "kimberlite-pulp",
     icon = "__pyfusionenergy__/graphics/icons/mixer-kimberlite-pulp.png",
+	icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "j"
 }
@@ -23,6 +24,7 @@ Fluid {
     type = "fluid",
     name = "kimberlite-pulp",
     icon = "__pyfusionenergy__/graphics/icons/kimberlite-pulp.png",
+	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 0.478, g = 0.545, b = 0.556},
     flow_color = {r = 0.478, g = 0.545, b = 0.556},

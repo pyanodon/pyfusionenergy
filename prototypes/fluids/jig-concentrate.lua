@@ -14,6 +14,7 @@ Recipe {
     },
     main_product = "jig-concentrate",
     icon = "__pyfusionenergy__/graphics/icons/jig-diamond-concentrate.png",
+	icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "j"
 }
@@ -34,6 +35,7 @@ Recipe {
     },
     main_product = "jig-concentrate",
     icon = "__pyfusionenergy__/graphics/icons/jig-diamond-tailings.png",
+	icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "j"
 }
@@ -42,6 +44,7 @@ Fluid {
     type = "fluid",
     name = "jig-concentrate",
     icon = "__pyfusionenergy__/graphics/icons/jig-concentrate.png",
+	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 0.478, g = 0.8, b = 0.949},
     flow_color = {r = 0.478, g = 0.8, b = 0.949},

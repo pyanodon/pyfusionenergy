@@ -15,13 +15,13 @@ Recipe {
     results = {
         {"fusion-reactor-mk01", 1}
     },
-    icon = "__pyfusionenergy__/graphics/icons/fusion-reactor-mk01.png"
 }
 
 Item {
     type = "item",
     name = "fusion-reactor-mk01",
     icon = "__pyfusionenergy__/graphics/icons/fusion-reactor-mk01.png",
+	icon_size = 32,
     flags = {"goes-to-quickbar"},
     subgroup = "py-fusion-reactors",
     order = "a",
@@ -33,6 +33,7 @@ Entity {
     type = "assembling-machine",
     name = "fusion-reactor-mk01",
     icon = "__pyfusionenergy__/graphics/icons/fusion-reactor-mk01.png",
+	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "fusion-reactor-mk01"},
     fast_replaceable_group = "fusion-reactor-mk01",

@@ -16,6 +16,7 @@ Entity {
     name = "volcanic-pipe",
     category = "volcanic-pipe",
     icon = "__pyfusionenergy__/graphics/icons/ores/volcanic-pipe.png",
+	icon_size = 32,
     flags = {"placeable-neutral"},
     order = "a-b-a",
     map_color = {r = 0.917, g = 0.996, b = 1},

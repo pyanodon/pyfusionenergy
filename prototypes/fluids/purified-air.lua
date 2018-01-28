@@ -17,6 +17,7 @@ Fluid {
     type = "fluid",
     name = "purified-air",
     icon = "__pyfusionenergy__/graphics/icons/purified-air.png",
+	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 0.270, g = 0.772, b = 1.0},
     flow_color = {r = 0.270, g = 0.772, b = 1.0},

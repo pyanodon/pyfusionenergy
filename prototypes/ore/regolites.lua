@@ -16,6 +16,7 @@ Entity {
     name = "regolites",
     category = "regolite",
     icon = "__pyfusionenergy__/graphics/icons/ores/regolite-resource.png",
+	icon_size = 32,
     flags = {"placeable-neutral"},
     order = "a-b-a",
     map_color = {r = 0.917, g = 0.670, b = 0.278},

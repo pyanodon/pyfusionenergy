@@ -30,6 +30,7 @@ Recipe {
     },
     main_product = "helium",
     icon = "__pyfusionenergy__/graphics/icons/helium.png",
+	icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "c"
 }
@@ -38,6 +39,7 @@ Fluid {
     type = "fluid",
     name = "liquid-helium",
     icon = "__pyfusionenergy__/graphics/icons/liquid-helium.png",
+	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 1, g = 0.952, b = 0.835},
     flow_color = {r = 1, g = 0.952, b = 0.835},

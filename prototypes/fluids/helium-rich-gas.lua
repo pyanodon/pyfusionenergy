@@ -2,6 +2,7 @@ Fluid {
     type = "fluid",
     name = "helium-rich-gas",
     icon = "__pyfusionenergy__/graphics/icons/helium-rich-gas.png",
+	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 0.737, g = 0.815, b = 0.0},
     flow_color = {r = 0.737, g = 0.815, b = 0.0},

@@ -15,6 +15,7 @@ Recipe {
     },
     main_product = "liquid-nitrogen",
     icon = "__pyfusionenergy__/graphics/icons/compress-nitrogen.png",
+	icon_size = 32,
     subgroup = "py-fusion-gases",
     order = "a"
 }:add_unlock("helium-processing")
@@ -33,6 +34,7 @@ Recipe {
     },
     main_product = "nitrogen",
     icon = "__bobplates__/graphics/icons/nitrogen.png",
+	icon_size = 32,
     subgroup = "py-fusion-gases",
     order = "b"
 }:add_unlock("helium-processing")

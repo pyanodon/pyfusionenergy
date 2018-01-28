@@ -15,6 +15,7 @@ Recipe {
     },
     main_product = "organic-vanadate",
     icon = "__pyfusionenergy__/graphics/icons/mixer-organic-vanadate.png",
+	icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "o"
 }
@@ -23,6 +24,7 @@ Fluid {
     type = "fluid",
     name = "organic-vanadate",
     icon = "__pyfusionenergy__/graphics/icons/organic-vanadate.png",
+	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 0.627, g = 0.376, b = 0.125},
     flow_color = {r = 0.627, g = 0.376, b = 0.125},
