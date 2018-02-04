@@ -1589,3 +1589,23 @@ Recipe {
     },
     main_product = "helium3",
 }
+Recipe {
+    type = "recipe",
+    name = "mining-molybdenum",
+    category = "ground-borer",
+    enabled = "false",
+    energy_required = 1.2,
+    ingredients = {
+        {type = "fluid", name = "lubricant", amount = 100},
+        {type = "fluid", name = "coal-gas", amount = 100},
+        {type = "item", name = "drill-head", amount = 3}
+    },
+    results = {
+        {type = "item", name = "molybdenum-ore", amount = 20}
+    },
+    main_product = "molybdenum-ore",
+    icon = "__pyfusionenergy__/graphics/icons/drilling-mo.png",
+    icon_size = 32,
+    subgroup = "py-drilling",
+    order = "c"
+}:add_unlock("excavation-2")
