@@ -12,9 +12,9 @@ local change_value = function(recipe_str, field, val)
 end
 
 replace_ing("agitator", "iron-plate", "glass")
-replace_ing("agitator", "electronic-circuit", "basic-electronic-circuit-board")
+replace_ing("agitator", "electronic-circuit", "basic-circuit-board")
 
-replace_ing("thickener", "electronic-circuit", "basic-electronic-circuit-board")
+replace_ing("thickener", "electronic-circuit", "basic-circuit-board")
 replace_ing("thickener", "pipe", "brass-alloy")
 
 replace_ing("hydrocyclone", "iron-gear-wheel", "titanium-bearing")
