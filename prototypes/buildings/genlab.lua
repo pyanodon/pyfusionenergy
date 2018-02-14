@@ -123,16 +123,16 @@ Entity {
     fluid_boxes = {
         {
             production_type = "output",
-            pipe_picture = Pipes.pictures("assembling-machine-3", nil, {-2.0, -4.25}, nil, nil, pipe),
-            pipe_covers = Pipes.covers(true, true, true, true),
+            pipe_picture = Data.Pipes.pictures("assembling-machine-3", nil, {-2.0, -4.25}, nil, nil, pipe),
+            pipe_covers = Data.Pipes.covers(true, true, true, true),
             base_level = 1,
             pipe_connections = {{type = "output", position = {-2.0, -4.0}}},
             priority = "extra-high"
         },
         {
             production_type = "input",
-            pipe_picture = Pipes.pictures("assembling-machine-3", nil, {-2.00, -4.25}, nil, nil, pipe),
-            pipe_covers = Pipes.covers(true, true, true, true),
+            pipe_picture = Data.Pipes.pictures("assembling-machine-3", nil, {-2.00, -4.25}, nil, nil, pipe),
+            pipe_covers = Data.Pipes.covers(true, true, true, true),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {2.0, 4.0}}},

@@ -80,30 +80,30 @@ Entity {
     fluid_boxes = {
         {
             production_type = "output",
-            pipe_picture = Pipes.pictures("assembling-machine-3", nil, {-0.0, -0.95}, {0.6, -0.1}, {-0.6, -0.1}),
-            pipe_covers = Pipes.covers(true, true, true, true),
+            pipe_picture = Data.Pipes.pictures("assembling-machine-3", nil, {-0.0, -0.95}, {0.6, -0.1}, {-0.6, -0.1}),
+            pipe_covers = Data.Pipes.covers(true, true, true, true),
             base_level = 1,
             pipe_connections = {{type = "output", position = {0.0, -4.0}}}
         },
         {
             production_type = "output",
-            pipe_picture = Pipes.pictures("assembling-machine-3", nil, {-0.0, -0.95}, {0.6, -0.1}, {-0.6, -0.1}),
-            pipe_covers = Pipes.covers(true, true, true, true),
+            pipe_picture = Data.Pipes.pictures("assembling-machine-3", nil, {-0.0, -0.95}, {0.6, -0.1}, {-0.6, -0.1}),
+            pipe_covers = Data.Pipes.covers(true, true, true, true),
             base_level = 1,
             pipe_connections = {{type = "output", position = {-4.0, 0.0}}}
         },
         {
             production_type = "input",
-            pipe_picture = Pipes.pictures("assembling-machine-3", nil, {-0.00, -0.95}, {0.6, -0.1}, {-0.6, -0.1}),
-            pipe_covers = Pipes.covers(true, true, true, true),
+            pipe_picture = Data.Pipes.pictures("assembling-machine-3", nil, {-0.00, -0.95}, {0.6, -0.1}, {-0.6, -0.1}),
+            pipe_covers = Data.Pipes.covers(true, true, true, true),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {4.0, 0.0}}}
         },
         {
             production_type = "input",
-            pipe_picture = Pipes.pictures("assembling-machine-3", nil, {-0.00, -0.95}, {0.6, -0.1}, {-0.6, -0.1}),
-            pipe_covers = Pipes.covers(true, true, true, true),
+            pipe_picture = Data.Pipes.pictures("assembling-machine-3", nil, {-0.00, -0.95}, {0.6, -0.1}, {-0.6, -0.1}),
+            pipe_covers = Data.Pipes.covers(true, true, true, true),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {0.0, 4.0}}}
