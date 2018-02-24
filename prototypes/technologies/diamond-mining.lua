@@ -1,4 +1,4 @@
-Technology {
+TECHNOLOGY {
     type = "technology",
     name = "diamond-mining",
     icon = "__pyfusionenergy__/graphics/technology/diamond-mining.png",

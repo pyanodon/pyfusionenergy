@@ -1,4 +1,4 @@
-Fluid {
+FLUID {
     type = "fluid",
     name = "bacteria-1",
     icon = "__pyfusionenergy__/graphics/icons/bacteria-1.png",

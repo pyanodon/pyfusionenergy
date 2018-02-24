@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "bio-reactor",
     energy_required = 10,
@@ -16,7 +16,7 @@ Recipe {
     }
 }
 
-Item {
+ITEM {
     type = "item",
     name = "bio-reactor",
     icon = "__pyfusionenergy__/graphics/icons/bio-reactor.png",
@@ -28,7 +28,7 @@ Item {
     stack_size = 10
 }
 
-Entity {
+ENTITY {
     type = "assembling-machine",
     name = "bio-reactor",
     icon = "__pyfusionenergy__/graphics/icons/bio-reactor.png",
@@ -83,8 +83,8 @@ Entity {
         --North
         {
             production_type = "output",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-3", nil, {-0.0, -0.95}, nil, nil),
-            pipe_covers = Data.Pipes.covers(true, true, true, true),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {-0.0, -0.95}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(true, true, true, true),
             base_level = 1,
             pipe_connections = {{type = "output", position = {1.0, -4.0}}},
             priority = "extra-high"
@@ -92,8 +92,8 @@ Entity {
         --North2
         {
             production_type = "output",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-3", nil, {-0.0, -0.95}, nil, nil),
-            pipe_covers = Data.Pipes.covers(true, true, true, true),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {-0.0, -0.95}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(true, true, true, true),
             base_level = 1,
             pipe_connections = {{type = "output", position = {-1.0, -4.0}}},
             priority = "extra-high"
@@ -101,8 +101,8 @@ Entity {
         --South
         {
             production_type = "input",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
-            pipe_covers = Data.Pipes.covers(true, true, true, true),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(true, true, true, true),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {1.0, 4.0}}},
@@ -111,8 +111,8 @@ Entity {
         --South2
         {
             production_type = "input",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
-            pipe_covers = Data.Pipes.covers(true, true, true, true),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(true, true, true, true),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {-1.0, 4.0}}},

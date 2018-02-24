@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "vanabins",
     category = "quenching-tower",
@@ -13,7 +13,7 @@ Recipe {
     }
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "vanabins",
     icon = "__pyfusionenergy__/graphics/icons/vanabins.png",

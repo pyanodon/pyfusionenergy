@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "vanadates",
     category = "carbonfilter",
@@ -13,7 +13,7 @@ Recipe {
     }
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "vanadates",
     icon = "__pyfusionenergy__/graphics/icons/vanadates.png",

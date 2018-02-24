@@ -1,6 +1,4 @@
-local Recipe = require("stdlib/data/recipe")
-
-Recipe {
+RECIPE {
     type = "recipe",
     name = "crushing-molybdenite",
     category = "crusher",
@@ -20,7 +18,7 @@ Recipe {
     order = "a"
 }:add_unlock("crusher")
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "milling-molybdenite",
     category = "ball-mill",
@@ -36,7 +34,7 @@ Recipe {
     main_product = "molybdenite-dust",
 }:add_unlock("crusher")
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "molybdenum-concentrate",
     category = "hydrocyclone",
@@ -57,7 +55,7 @@ Recipe {
     order = "b"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "molybdenum-filtration",
     category = "carbonfilter",
@@ -74,7 +72,7 @@ Recipe {
     main_product = "molybdenum-sulfide",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "molybdenum-oxide",
     category = "hpf",
@@ -90,7 +88,7 @@ Recipe {
     main_product = "molybdenum-oxide",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "molybdenum-plate",
     category = "chemistry", --bobs electrolyzer
@@ -106,7 +104,7 @@ Recipe {
     main_product = "molybdenum-plate",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "phytoplankton",
     category = "plankton",
@@ -122,7 +120,7 @@ Recipe {
     main_product = "phytoplankton",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "xyhiphoe-blood",
     category = "xyhiphoe",
@@ -140,7 +138,7 @@ Recipe {
     main_product = "xyhiphoe-blood",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "xyhiphoe-hydrocyclone",
     category = "hydrocyclone",
@@ -156,7 +154,7 @@ Recipe {
     main_product = "organic-solvent",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "cobalt-solvent",
     category = "evaporator",
@@ -174,7 +172,7 @@ Recipe {
     order = "c"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "solvent-separation",
     category = "fluid-separator",
@@ -194,7 +192,7 @@ Recipe {
     order = "d"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "sodium-chlorate",
     category = "chemistry", --bob electrolyzer
@@ -211,7 +209,7 @@ Recipe {
     main_product = "sodium-chlorate",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "vanadium-oxide",
     category = "evaporator",
@@ -227,7 +225,7 @@ Recipe {
     main_product = "vanadium-oxide",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "wastewater-filtration",
     category = "carbonfilter",
@@ -242,7 +240,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "wastewater-recovery",
     category = "thickener",
@@ -258,7 +256,7 @@ Recipe {
     main_product = "dirty-water",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "super-alloy",
     category = "advanced-foundry",
@@ -280,7 +278,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "crushed-kimberlite",
     category = "crusher",
@@ -300,7 +298,7 @@ Recipe {
     order = "h"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "screening-kimberlite",
     category = "screener",
@@ -320,7 +318,7 @@ Recipe {
     order = "h"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "kimberlite-recrushing",
     category = "secondary-crusher",
@@ -340,7 +338,7 @@ Recipe {
     order = "h"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "kimberlite-washing",
     category = "washer",
@@ -363,7 +361,7 @@ Recipe {
     order = "h"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "pure-kimberlite-recrushing",
     category = "secondary-crusher",
@@ -383,7 +381,7 @@ Recipe {
     order = "h"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "screening-kimberlite-residue",
     category = "screener",
@@ -403,7 +401,7 @@ Recipe {
     order = "h"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "diamond-rejects-recrushing",
     category = "secondary-crusher",
@@ -423,7 +421,7 @@ Recipe {
     order = "h"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "diamond-rejects-screening",
     category = "screener",
@@ -443,7 +441,7 @@ Recipe {
     order = "h"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "rejects-separation",
     category = "solid-separator",
@@ -464,7 +462,7 @@ Recipe {
     order = "e"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "jig-separation",
     category = "fluid-separator",
@@ -485,7 +483,7 @@ Recipe {
     order = "j"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "greasing-1",
     category = "grease",
@@ -507,7 +505,7 @@ Recipe {
     order = "j1"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "greasing-2",
     category = "grease",
@@ -529,7 +527,7 @@ Recipe {
     order = "j2"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "greasing-3",
     category = "grease",
@@ -551,7 +549,7 @@ Recipe {
     order = "j3"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "washing-crude",
     category = "washer",
@@ -572,7 +570,7 @@ Recipe {
     order = "k"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "class-diamond",
     category = "classifier",
@@ -592,7 +590,7 @@ Recipe {
     order = "k"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "cool-air",
     category = "evaporator",
@@ -609,7 +607,7 @@ Recipe {
     main_product= "cold-air",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "liquid-air-distilation",
     category = "distilator",
@@ -627,7 +625,7 @@ Recipe {
     main_product= "dry-gas-stream",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "stone-calcination",
     category = "hpf",
@@ -643,7 +641,7 @@ Recipe {
     },
     main_product= "calcinates",
 }
-Recipe {
+RECIPE {
     type = "recipe",
     name = "gravel-calcination",
     category = "hpf",
@@ -660,7 +658,7 @@ Recipe {
     main_product= "calcinates",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "calcinate-separation",
     category = "solid-separator",
@@ -683,7 +681,7 @@ Recipe {
     order = "l"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "bacteria-1",
     category = "genlab",
@@ -701,7 +699,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "serine",
     category = "kmauts",
@@ -715,7 +713,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "methyl-acrylate",
     category = "methanol",
@@ -731,7 +729,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "kmauts-ration",
     category = "crafting",
@@ -748,7 +746,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "crush-regolite",
     category = "crusher",
@@ -768,7 +766,7 @@ Recipe {
     order = "a"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "regolite-recrush",
     category = "secondary-crusher",
@@ -788,7 +786,7 @@ Recipe {
     order = "a"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "milling-regolite",
     category = "ball-mill",
@@ -804,7 +802,7 @@ Recipe {
     main_product = "regolite-dust",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "regolite-calcination",
     category = "hpf",
@@ -822,7 +820,7 @@ Recipe {
     main_product= "calcinates",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "liquid-petgas",
     category = "compressor",
@@ -840,7 +838,7 @@ Recipe {
     main_product= "liquid-petgas",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "liquid-petgas-separation",
     category = "fluid-separator",
@@ -857,7 +855,7 @@ Recipe {
     main_product = "gas-stream",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "gas-stream-filtration",
     category = "carbonfilter",
@@ -874,7 +872,7 @@ Recipe {
     main_product = "dry-gas-stream",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "liquid-rich-gas-distilation",
     category = "distilator",
@@ -890,7 +888,7 @@ Recipe {
     main_product = "helium-rich-gas",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "helium",
     category = "gas-separator",
@@ -906,7 +904,7 @@ Recipe {
     main_product = "helium",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "nexelit-matrix",
     category = "nmf",
@@ -923,7 +921,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "nbti-alloy",
     category = "advanced-foundry",
@@ -939,7 +937,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "nenbit-matrix",
     category = "advanced-crafting",
@@ -954,7 +952,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "ferrite",
     category = "hpf",
@@ -970,7 +968,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "coil-core",
     category = "advanced-crafting",
@@ -985,7 +983,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "sc-wire",
     category = "crafting",
@@ -1001,7 +999,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "sc-coil",
     category = "crafting",
@@ -1017,7 +1015,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "magnetic-core",
     category = "advanced-crafting",
@@ -1033,7 +1031,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "deposited-core",
     category = "gas-separator",
@@ -1048,7 +1046,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "sc-unit",
     category = "advanced-crafting",
@@ -1065,7 +1063,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "d2o-distilation",
     category = "distilator",
@@ -1081,7 +1079,7 @@ Recipe {
     main_product= "deuterium",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "b2o3-milling",
     category = "ball-mill",
@@ -1095,7 +1093,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "boron-mixture",
     category = "hpf",
@@ -1111,7 +1109,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "boron",
     category = "mixer",
@@ -1129,7 +1127,7 @@ Recipe {
     main_product = "boron",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "boron-carbide",
     category = "hpf",
@@ -1146,7 +1144,7 @@ Recipe {
     main_product = "boron-carbide",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "blanket-chassi",
     category = "advanced-foundry",
@@ -1165,7 +1163,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "blanket",
     category = "advanced-crafting",
@@ -1182,7 +1180,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "divertor",
     category = "crafting",
@@ -1199,7 +1197,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "wall-shield",
     category = "advanced-foundry",
@@ -1217,7 +1215,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "reinforced-wall-shield",
     category = "advanced-foundry",
@@ -1233,7 +1231,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "deuterium-fusion",
     category = "fusion-01",
@@ -1263,7 +1261,7 @@ Recipe {
     order = "e"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "dt-he3",
     category = "fusion-01",
@@ -1293,7 +1291,7 @@ Recipe {
     order = "e"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "dt-fusion",
     category = "fusion-01",
@@ -1323,7 +1321,7 @@ Recipe {
     order = "e"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "b-h",
     category = "fusion-02",
@@ -1352,7 +1350,7 @@ Recipe {
     order = "e"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "steam-exchange1",
     category = "heat-exchanger",
@@ -1373,7 +1371,7 @@ Recipe {
     order = "e"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "steam-exchange2",
     category = "heat-exchanger",
@@ -1394,7 +1392,7 @@ Recipe {
     order = "e"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "steam-exchange3",
     category = "heat-exchanger",
@@ -1415,7 +1413,7 @@ Recipe {
     order = "e"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "steam-exchange4",
     category = "heat-exchanger",
@@ -1436,7 +1434,7 @@ Recipe {
     order = "e"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "lead-container",
     category = "crafting",
@@ -1451,7 +1449,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "science-coating",
     category = "advanced-crafting",
@@ -1467,7 +1465,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "coated-container",
     category = "advanced-crafting",
@@ -1482,7 +1480,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "nuclear-sample",
     category = "mixer",
@@ -1500,7 +1498,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "control-unit",
     category = "crafting",
@@ -1518,7 +1516,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "production-science-pack",
     category = "advanced-crafting",
@@ -1538,7 +1536,7 @@ Recipe {
     order = "x"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "agzn-alloy",
     category = "advanced-foundry",
@@ -1554,7 +1552,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "silver-foam",
     category = "rectisol",
@@ -1572,7 +1570,7 @@ Recipe {
     },
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "he3-separation",
     category = "gas-separator",
@@ -1589,7 +1587,7 @@ Recipe {
     },
     main_product = "helium3",
 }
-Recipe {
+RECIPE {
     type = "recipe",
     name = "mining-molybdenum",
     category = "ground-borer",

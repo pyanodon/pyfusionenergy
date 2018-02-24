@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "organic-vanadate",
     category = "mixer",
@@ -20,7 +20,7 @@ Recipe {
     order = "o"
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "organic-vanadate",
     icon = "__pyfusionenergy__/graphics/icons/organic-vanadate.png",

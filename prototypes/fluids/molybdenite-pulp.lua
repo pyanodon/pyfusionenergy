@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "molybdenite-pulp",
     category = "agitator",
@@ -13,7 +13,7 @@ Recipe {
     }
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "molybdenite-pulp",
     icon = "__pyfusionenergy__/graphics/icons/molybdenite-pulp.png",

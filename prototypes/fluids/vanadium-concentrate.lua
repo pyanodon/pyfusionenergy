@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "vanadium-concentrate",
     category = "mixer",
@@ -17,7 +17,7 @@ Recipe {
     main_product = "vanadium-concentrate"
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "vanadium-concentrate",
     icon = "__pyfusionenergy__/graphics/icons/vanadium-concentrate.png",

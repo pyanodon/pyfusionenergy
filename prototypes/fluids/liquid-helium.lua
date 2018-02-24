@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "liquid-helium",
     category = "compressor",
@@ -16,7 +16,7 @@ Recipe {
     main_product = "liquid-helium",
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "evaporate-helium",
     category = "evaporator",
@@ -35,7 +35,7 @@ Recipe {
     order = "c"
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "liquid-helium",
     icon = "__pyfusionenergy__/graphics/icons/liquid-helium.png",

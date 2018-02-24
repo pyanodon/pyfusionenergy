@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "acid-strip-solution",
     category = "methanol",
@@ -14,7 +14,7 @@ Recipe {
     }
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "acid-strip-solution",
     icon = "__pyfusionenergy__/graphics/icons/acid-strip-solution.png",

@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "py-turbine",
     energy_required = 10,
@@ -12,7 +12,7 @@ Recipe {
     }
 }
 
-Item {
+ITEM {
     type = "item",
     name = "py-turbine",
     icon = "__pyfusionenergy__/graphics/icons/py-turbine.png",
@@ -24,7 +24,7 @@ Item {
     stack_size = 10
 }
 
-Entity {
+ENTITY {
     type = "generator",
     name = "py-turbine",
     icon = "__pyfusionenergy__/graphics/icons/py-turbine.png",
@@ -55,7 +55,7 @@ Entity {
         minimum_temperature = 1000,
         base_area = 1,
         base_level = -1,
-        pipe_covers = Data.Pipes.covers(false, true, true, true),
+        pipe_covers = DATA.Pipes.covers(false, true, true, true),
         --pipe_picture = pipe_pictures({0, 3}),
         production_type = "input-output",
         pipe_connections = {

@@ -7,7 +7,7 @@ local pipes = {
     }
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "vacuum-pump",
     energy_required = 5,
@@ -23,7 +23,7 @@ Recipe {
     }
 }
 
-Item {
+ITEM {
     type = "item",
     name = "vacuum-pump",
     icon = "__pyfusionenergy__/graphics/icons/vacuum-pump.png",
@@ -35,7 +35,7 @@ Item {
     stack_size = 10
 }
 
-Entity {
+ENTITY {
     type = "assembling-machine",
     name = "vacuum-pump",
     icon = "__pyfusionenergy__/graphics/icons/vacuum-pump.png",
@@ -73,16 +73,16 @@ Entity {
     fluid_boxes = {
         {
             production_type = "input",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-2", nil, {0.18, -2.6}, nil, nil, pipes),
-            pipe_covers = Data.Pipes.covers(false, true, false, false),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.18, -2.6}, nil, nil, pipes),
+            pipe_covers = DATA.Pipes.covers(false, true, false, false),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {0.0, -2.0}}}
         },
         {
             production_type = "output",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-2", nil, {0.18, -2.6}, nil, nil, pipes),
-            pipe_covers = Data.Pipes.covers(false, true, false, false),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.18, -2.6}, nil, nil, pipes),
+            pipe_covers = DATA.Pipes.covers(false, true, false, false),
             base_level = 1,
             pipe_connections = {{type = "output", position = {0.0, 2.0}}}
         },

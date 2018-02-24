@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "diamond-concentrate",
     category = "pan",
@@ -20,7 +20,7 @@ Recipe {
     order = "j"
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "diamond-concentrate",
     icon = "__pyfusionenergy__/graphics/icons/diamond-concentrate.png",

@@ -1,4 +1,4 @@
-Fluid {
+FLUID {
     type = "fluid",
     name = "jig-grade1",
     icon = "__pyfusionenergy__/graphics/icons/jig1.png",

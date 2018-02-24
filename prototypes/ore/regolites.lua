@@ -1,4 +1,4 @@
-Data {
+DATA {
     type = "autoplace-control",
     name = "regolites",
     richness = true,
@@ -6,12 +6,12 @@ Data {
     category = "resource",
 }
 
-Data {
+DATA {
     type = "noise-layer",
     name = "regolites"
 }
 
-Entity {
+ENTITY {
     type = "resource",
     name = "regolites",
     category = "regolite",

@@ -7,7 +7,7 @@ local pipes = {
     }
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "thickener",
     energy_required = 25,
@@ -24,7 +24,7 @@ Recipe {
     }
 }
 
-Item {
+ITEM {
     type = "item",
     name = "thickener",
     icon = "__pyfusionenergy__/graphics/icons/thickener.png",
@@ -36,7 +36,7 @@ Item {
     stack_size = 10
 }
 
-Entity {
+ENTITY {
     type = "assembling-machine",
     name = "thickener",
     icon = "__pyfusionenergy__/graphics/icons/thickener.png",
@@ -88,31 +88,31 @@ Entity {
         --1
         {
             production_type = "input",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-3", nil, {1.19, -4.4}, nil, nil, pipes),
-            pipe_covers = Data.Pipes.covers(false, true, false, false),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {1.19, -4.4}, nil, nil, pipes),
+            pipe_covers = DATA.Pipes.covers(false, true, false, false),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {-1.0, 4.0}}}
         },
         {
             production_type = "input",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-3", nil, {1.19, -4.4}, nil, nil, pipes),
-            pipe_covers = Data.Pipes.covers(false, true, false, false),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {1.19, -4.4}, nil, nil, pipes),
+            pipe_covers = DATA.Pipes.covers(false, true, false, false),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {-4.0, -1.0}}}
         },
         {
             production_type = "output",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-3", nil, {1.19, -4.4}, nil, nil, pipes),
-            pipe_covers = Data.Pipes.covers(false, true, false, false),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {1.19, -4.4}, nil, nil, pipes),
+            pipe_covers = DATA.Pipes.covers(false, true, false, false),
             base_level = 1,
             pipe_connections = {{type = "output", position = {1.0, -4.0}}}
         },
         {
             production_type = "output",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-3", nil, {1.19, -4.4}, nil, nil, pipes),
-            pipe_covers = Data.Pipes.covers(false, true, false, false),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {1.19, -4.4}, nil, nil, pipes),
+            pipe_covers = DATA.Pipes.covers(false, true, false, false),
             base_level = 1,
             pipe_connections = {{type = "output", position = {4.0, 1.0}}}
         },

@@ -1,4 +1,4 @@
-Data {
+DATA {
     type = "autoplace-control",
     name = "volcanic-pipe",
     richness = true,
@@ -6,12 +6,12 @@ Data {
     category = "resource"
 }
 
-Data {
+DATA {
     type = "noise-layer",
     name = "volcanic-pipe"
 }
 
-Entity {
+ENTITY {
     type = "resource",
     name = "volcanic-pipe",
     category = "volcanic-pipe",
