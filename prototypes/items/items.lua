@@ -1,4 +1,4 @@
-Item {
+ITEM {
     type = "item",
     name = "molybdenum-ore",
     icon = "__pyfusionenergy__/graphics/icons/ores/molybdenum.png",
@@ -9,7 +9,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "kimberlite-rock",
     icon = "__pyfusionenergy__/graphics/icons/ores/kimberlite-rock.png",
@@ -20,7 +20,7 @@ Item {
     stack_size = 500
 }
 
-Item {
+ITEM {
     type = "item",
     name = "regolite-rock",
     icon = "__pyfusionenergy__/graphics/icons/ores/regolite-rock.png",
@@ -31,7 +31,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "crushed-kimberlite",
     icon = "__pyfusionenergy__/graphics/icons/crushed-kimberlite.png",
@@ -42,7 +42,7 @@ Item {
     stack_size = 500
 }
 
-Item {
+ITEM {
     type = "item",
     name = "kimberlite-rejects",
     icon = "__pyfusionenergy__/graphics/icons/kimberlite-rejects.png",
@@ -53,7 +53,7 @@ Item {
     stack_size = 500
 }
 
-Item {
+ITEM {
     type = "item",
     name = "kimberlite-grade2",
     icon = "__pyfusionenergy__/graphics/icons/kimberlite-grade2.png",
@@ -64,7 +64,7 @@ Item {
     stack_size = 500
 }
 
-Item {
+ITEM {
     type = "item",
     name = "pure-kimberlite-grade2",
     icon = "__pyfusionenergy__/graphics/icons/pure-kimberlite-grade2.png",
@@ -75,7 +75,7 @@ Item {
     stack_size = 500
 }
 
-Item {
+ITEM {
     type = "item",
     name = "kimberlite-grade3",
     icon = "__pyfusionenergy__/graphics/icons/kimberlite-grade3.png",
@@ -86,7 +86,7 @@ Item {
     stack_size = 500
 }
 
-Item {
+ITEM {
     type = "item",
     name = "kimberlite-residue",
     icon = "__pyfusionenergy__/graphics/icons/kimberlite-residue.png",
@@ -97,7 +97,7 @@ Item {
     stack_size = 500
 }
 
-Item {
+ITEM {
     type = "item",
     name = "diamond-reject",
     icon = "__pyfusionenergy__/graphics/icons/diamond-reject.png",
@@ -108,7 +108,7 @@ Item {
     stack_size = 500
 }
 
-Item {
+ITEM {
     type = "item",
     name = "processed-rejects",
     icon = "__pyfusionenergy__/graphics/icons/processed-rejects.png",
@@ -119,7 +119,7 @@ Item {
     stack_size = 500
 }
 
-Item {
+ITEM {
     type = "item",
     name = "crushed-molybdenite",
     icon = "__pyfusionenergy__/graphics/icons/crushed-molybdenite.png",
@@ -130,7 +130,7 @@ Item {
     stack_size = 300
 }
 
-Item {
+ITEM {
     type = "item",
     name = "molybdenite-dust",
     icon = "__pyfusionenergy__/graphics/icons/molybdenite-dust.png",
@@ -141,7 +141,7 @@ Item {
     stack_size = 500
 }
 
-Item {
+ITEM {
     type = "item",
     name = "molybdenum-concentrate",
     icon = "__pyfusionenergy__/graphics/icons/molybdenum-concentrate.png",
@@ -152,7 +152,7 @@ Item {
     stack_size = 500
 }
 
-Item {
+ITEM {
     type = "item",
     name = "molybdenum-sulfide",
     icon = "__pyfusionenergy__/graphics/icons/molybdenum-sulfide.png",
@@ -163,7 +163,7 @@ Item {
     stack_size = 100
 }
 
-Item {
+ITEM {
     type = "item",
     name = "molybdenum-oxide",
     icon = "__pyfusionenergy__/graphics/icons/molybdenum-oxide.png",
@@ -174,7 +174,7 @@ Item {
     stack_size = 100
 }
 
-Item {
+ITEM {
     type = "item",
     name = "molybdenum-plate",
     icon = "__pyfusionenergy__/graphics/icons/molybdenum-plate.png",
@@ -185,7 +185,7 @@ Item {
     stack_size = 150
 }
 
-Item {
+ITEM {
     type = "item",
     name = "sodium-chlorate",
     icon = "__pyfusionenergy__/graphics/icons/sodium-chlorate.png",
@@ -196,7 +196,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "vanadium-oxide",
     icon = "__pyfusionenergy__/graphics/icons/vanadium-oxide.png",
@@ -207,7 +207,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "super-alloy",
     icon = "__pyfusionenergy__/graphics/icons/super-alloy.png",
@@ -218,7 +218,7 @@ Item {
     stack_size = 50
 }
 
-Item {
+ITEM {
     type = "item",
     name = "crude-diamond",
     icon = "__pyfusionenergy__/graphics/icons/crude-diamond.png",
@@ -229,7 +229,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "washed-diamond",
     icon = "__pyfusionenergy__/graphics/icons/washed-diamond.png",
@@ -240,7 +240,7 @@ Item {
     stack_size = 100
 }
 
-Item {
+ITEM {
     type = "item",
     name = "diamond",
     icon = "__pyfusionenergy__/graphics/icons/diamond.png",
@@ -251,7 +251,7 @@ Item {
     stack_size = 50
 }
 
-Item {
+ITEM {
     type = "item",
     name = "calcinates",
     icon = "__pyfusionenergy__/graphics/icons/calcinates.png",
@@ -262,7 +262,7 @@ Item {
     stack_size = 400
 }
 
-Item {
+ITEM {
     type = "item",
     name = "serine",
     icon = "__pyfusionenergy__/graphics/icons/serine.png",
@@ -273,7 +273,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "methyl-acrylate",
     icon = "__pyfusionenergy__/graphics/icons/methyl-acrylate.png",
@@ -284,7 +284,7 @@ Item {
     stack_size = 250
 }
 
-Item {
+ITEM {
     type = "item",
     name = "kmauts-ration",
     icon = "__pyfusionenergy__/graphics/icons/kmauts-ration.png",
@@ -295,7 +295,7 @@ Item {
     stack_size = 100
 }
 
-Item {
+ITEM {
     type = "item",
     name = "crushed-regolite",
     icon = "__pyfusionenergy__/graphics/icons/crushed-regolite.png",
@@ -306,7 +306,7 @@ Item {
     stack_size = 500
 }
 
-Item {
+ITEM {
     type = "item",
     name = "powdered-regolite",
     icon = "__pyfusionenergy__/graphics/icons/powdered-regolite.png",
@@ -317,7 +317,7 @@ Item {
     stack_size = 500
 }
 
-Item {
+ITEM {
     type = "item",
     name = "regolite-dust",
     icon = "__pyfusionenergy__/graphics/icons/regolite-dust.png",
@@ -328,7 +328,7 @@ Item {
     stack_size = 500
 }
 
-Item {
+ITEM {
     type = "item",
     name = "nexelit-matrix",
     icon = "__pyfusionenergy__/graphics/icons/nexelit-matrix.png",
@@ -339,7 +339,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "nbti-alloy",
     icon = "__pyfusionenergy__/graphics/icons/nbti-alloy.png",
@@ -350,7 +350,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "nenbit-matrix",
     icon = "__pyfusionenergy__/graphics/icons/nenbit-matrix.png",
@@ -361,7 +361,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "ferrite",
     icon = "__pyfusionenergy__/graphics/icons/ferrite.png",
@@ -372,7 +372,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "coil-core",
     icon = "__pyfusionenergy__/graphics/icons/coil-core.png",
@@ -383,7 +383,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "sc-wire",
     icon = "__pyfusionenergy__/graphics/icons/superconducting-wire.png",
@@ -394,7 +394,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "sc-coil",
     icon = "__pyfusionenergy__/graphics/icons/superconducting-coil.png",
@@ -405,7 +405,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "magnetic-core",
     icon = "__pyfusionenergy__/graphics/icons/magnetic-core.png",
@@ -416,7 +416,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "deposited-core",
     icon = "__pyfusionenergy__/graphics/icons/deposited-vcore.png",
@@ -427,7 +427,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "sc-unit",
     icon = "__pyfusionenergy__/graphics/icons/magnetic-unit.png",
@@ -438,7 +438,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "b2o3-dust",
     icon = "__pyfusionenergy__/graphics/icons/boron-trioxide-dust.png",
@@ -449,7 +449,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "boron-mixture",
     icon = "__pyfusionenergy__/graphics/icons/boron-mixture.png",
@@ -460,7 +460,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "boron",
     icon = "__pyfusionenergy__/graphics/icons/boron.png",
@@ -471,7 +471,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "boron-carbide",
     icon = "__pyfusionenergy__/graphics/icons/boron-carbide.png",
@@ -482,7 +482,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "blanket-chassi",
     icon = "__pyfusionenergy__/graphics/icons/blanket-chassi.png",
@@ -493,7 +493,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "blanket",
     icon = "__pyfusionenergy__/graphics/icons/blanket.png",
@@ -504,7 +504,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "divertor",
     icon = "__pyfusionenergy__/graphics/icons/divertor.png",
@@ -515,7 +515,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "wall-shield",
     icon = "__pyfusionenergy__/graphics/icons/wall-shield.png",
@@ -526,7 +526,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "reinforced-wall-shield",
     icon = "__pyfusionenergy__/graphics/icons/rwall-shield.png",
@@ -537,7 +537,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "lead-container",
     icon = "__pyfusionenergy__/graphics/icons/lead-container.png",
@@ -548,7 +548,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "science-coating",
     icon = "__pyfusionenergy__/graphics/icons/science-coating.png",
@@ -559,7 +559,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "coated-container",
     icon = "__pyfusionenergy__/graphics/icons/coated-container.png",
@@ -570,7 +570,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "nuclear-sample",
     icon = "__pyfusionenergy__/graphics/icons/nuclear-sample.png",
@@ -581,7 +581,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "control-unit",
     icon = "__pyfusionenergy__/graphics/icons/control-unit.png",
@@ -592,7 +592,7 @@ Item {
     stack_size = 200
 }
 
-Item {
+ITEM {
     type = "item",
     name = "agzn-alloy",
     icon = "__pyfusionenergy__/graphics/icons/agzn-alloy.png",
@@ -603,7 +603,7 @@ Item {
     stack_size = 100
 }
 
-Item {
+ITEM {
     type = "item",
     name = "silver-foam",
     icon = "__pyfusionenergy__/graphics/icons/silver-foam.png",

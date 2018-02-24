@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "pressured-vpulp",
     category = "vacuum",
@@ -12,7 +12,7 @@ Recipe {
     }
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "pressured-vpulp",
     icon = "__pyfusionenergy__/graphics/icons/pressured-vpulp.png",

@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "pressured-water",
     category = "vacuum",
@@ -12,7 +12,7 @@ Recipe {
     }
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "pressured-water",
     icon = "__pyfusionenergy__/graphics/icons/pressured-water.png",

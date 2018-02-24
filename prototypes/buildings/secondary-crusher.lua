@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "secondary-crusher",
     energy_required = 25,
@@ -15,7 +15,7 @@ Recipe {
     }
 }
 
-Item {
+ITEM {
     type = "item",
     name = "secondary-crusher",
     icon = "__pyfusionenergy__/graphics/icons/secondary-crusher.png",
@@ -27,7 +27,7 @@ Item {
     stack_size = 10
 }
 
-Entity {
+ENTITY {
     type = "assembling-machine",
     name = "secondary-crusher",
     icon = "__pyfusionenergy__/graphics/icons/secondary-crusher.png",

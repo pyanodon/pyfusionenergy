@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "pregnant-solution",
     category = "hydrocyclone",
@@ -18,7 +18,7 @@ Recipe {
     order = "s"
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "pregnant-solution",
     icon = "__pyfusionenergy__/graphics/icons/pregnant-solution.png",

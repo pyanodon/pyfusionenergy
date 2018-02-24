@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "soda-ash",
     category = "agitator",
@@ -19,7 +19,7 @@ Recipe {
     order = "s"
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "soda-ash",
     icon = "__pyfusionenergy__/graphics/icons/soda-ash.png",

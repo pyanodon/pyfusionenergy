@@ -1,4 +1,4 @@
-Technology {
+TECHNOLOGY {
     type = "technology",
     name = "fusion-mk04",
     icon = "__pyfusionenergy__/graphics/technology/fusion-4.png",

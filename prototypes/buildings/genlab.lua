@@ -7,7 +7,7 @@ local pipe = {
     }
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "genlab",
     energy_required = 10,
@@ -26,7 +26,7 @@ Recipe {
     }
 }
 
-Item {
+ITEM {
     type = "item",
     name = "genlab",
     icon = "__pyfusionenergy__/graphics/icons/genlab.png",
@@ -38,7 +38,7 @@ Item {
     stack_size = 10
 }
 
-Entity {
+ENTITY {
     type = "assembling-machine",
     name = "genlab",
     icon = "__pyfusionenergy__/graphics/icons/genlab.png",
@@ -123,16 +123,16 @@ Entity {
     fluid_boxes = {
         {
             production_type = "output",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-3", nil, {-2.0, -4.25}, nil, nil, pipe),
-            pipe_covers = Data.Pipes.covers(true, true, true, true),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {-2.0, -4.25}, nil, nil, pipe),
+            pipe_covers = DATA.Pipes.covers(true, true, true, true),
             base_level = 1,
             pipe_connections = {{type = "output", position = {-2.0, -4.0}}},
             priority = "extra-high"
         },
         {
             production_type = "input",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-3", nil, {-2.00, -4.25}, nil, nil, pipe),
-            pipe_covers = Data.Pipes.covers(true, true, true, true),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {-2.00, -4.25}, nil, nil, pipe),
+            pipe_covers = DATA.Pipes.covers(true, true, true, true),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {2.0, 4.0}}},

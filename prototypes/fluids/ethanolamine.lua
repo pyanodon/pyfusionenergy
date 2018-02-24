@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "ethanolamine",
     category = "bio-reactor",
@@ -13,7 +13,7 @@ Recipe {
     }
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "ethanolamine",
     icon = "__pyfusionenergy__/graphics/icons/ethanolamine.png",

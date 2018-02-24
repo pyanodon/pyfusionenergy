@@ -1,4 +1,4 @@
-Technology {
+TECHNOLOGY {
     type = "technology",
     name = "vanadium-processing",
     icon = "__pyfusionenergy__/graphics/technology/vanadium-processing.png",

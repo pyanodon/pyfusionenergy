@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "plankton-farm",
     energy_required = 25,
@@ -15,7 +15,7 @@ Recipe {
     }
 }
 
-Item {
+ITEM {
     type = "item",
     name = "plankton-farm",
     icon = "__pyfusionenergy__/graphics/icons/plankton-farm.png",
@@ -27,7 +27,7 @@ Item {
     stack_size = 10
 }
 
-Entity {
+ENTITY {
     type = "assembling-machine",
     name = "plankton-farm",
     icon = "__pyfusionenergy__/graphics/icons/plankton-farm.png",
@@ -78,8 +78,8 @@ Entity {
     fluid_boxes = {
         {
             production_type = "output",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.93}, {0.5, 0.0}, {-0.5, 0.0}),
-            pipe_covers = Data.Pipes.covers(false, true, true, true),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.0, -0.93}, {0.5, 0.0}, {-0.5, 0.0}),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
             base_level = 1,
             pipe_connections = {
                 {type = "output", position = {0.0, 4.0}}
@@ -87,8 +87,8 @@ Entity {
         },
         {
             production_type = "input",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-3", nil, {0.0, -0.93}, {0.5, 0.0}, {-0.5, 0.0}),
-            pipe_covers = Data.Pipes.covers(false, true, true, true),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {0.0, -0.93}, {0.5, 0.0}, {-0.5, 0.0}),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
             base_area = 10,
             base_level = -1,
             pipe_connections = {

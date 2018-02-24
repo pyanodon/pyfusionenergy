@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "rich-gas",
     category = "distilator",
@@ -15,7 +15,7 @@ Recipe {
     main_product= "rich-gas"
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "rich-gas",
     icon = "__pyfusionenergy__/graphics/icons/rich-gas.png",

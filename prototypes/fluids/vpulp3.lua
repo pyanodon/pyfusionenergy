@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "vpulp3",
     category = "agitator",
@@ -18,7 +18,7 @@ Recipe {
     order = "l"
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "vpulp3",
     icon = "__pyfusionenergy__/graphics/icons/vpulp3.png",

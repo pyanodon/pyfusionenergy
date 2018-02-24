@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "regolite-mine",
     energy_required = 10,
@@ -17,7 +17,7 @@ Recipe {
     }
 }
 
-Item {
+ITEM {
     type = "item",
     name = "regolite-mine",
     icon = "__pyfusionenergy__/graphics/icons/regolite-mine.png",
@@ -29,7 +29,7 @@ Item {
     stack_size = 10
 }
 
-Entity {
+ENTITY {
     type = "mining-drill",
     name = "regolite-mine",
     icon = "__pyfusionenergy__/graphics/icons/regolite-mine.png",

@@ -53,7 +53,7 @@ local pipe_right = {
     }
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "jig",
     energy_required = 15,
@@ -71,7 +71,7 @@ Recipe {
     },
 }
 
-Item {
+ITEM {
     type = "item",
     name = "jig",
     icon = "__pyfusionenergy__/graphics/icons/jig.png",
@@ -83,7 +83,7 @@ Item {
     stack_size = 5
 }
 
-Entity {
+ENTITY {
     type = "assembling-machine",
     name = "jig",
     icon = "__pyfusionenergy__/graphics/icons/jig.png",
@@ -137,32 +137,32 @@ Entity {
     fluid_boxes = {
         {
             production_type = "input",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-2", {1.8, 4.3}, {-1.2, -4.65}, {4.8, -1.7}, {-4.27, 1.3}, pipe_left),
-            pipe_covers = Data.Pipes.covers(false, true, false, false),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", {1.8, 4.3}, {-1.2, -4.65}, {4.8, -1.7}, {-4.27, 1.3}, pipe_left),
+            pipe_covers = DATA.Pipes.covers(false, true, false, false),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {-1.5, -4.5}}}
         },
         {
             production_type = "output",
-            pipe_covers = Data.Pipes.covers(false, true, false, false),
+            pipe_covers = DATA.Pipes.covers(false, true, false, false),
             base_level = 1,
-            pipe_picture = Data.Pipes.pictures("assembling-machine-2", {1.8, 4.3}, {-1.2, -4.65}, {4.8, -1.7}, {-4.27, 1.3}, pipe_left),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", {1.8, 4.3}, {-1.2, -4.65}, {4.8, -1.7}, {-4.27, 1.3}, pipe_left),
             pipe_connections = {{type = "output", position = {1.5, 4.5}}}
         },
         {
             production_type = "input",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-2", {-1.2, 4.3}, {1.8, -4.65}, {4.8, 1.3}, {-4.27, -1.8}, pipe_right),
-            pipe_covers = Data.Pipes.covers(false, true, false, false),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", {-1.2, 4.3}, {1.8, -4.65}, {4.8, 1.3}, {-4.27, -1.8}, pipe_right),
+            pipe_covers = DATA.Pipes.covers(false, true, false, false),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {1.5, -4.5}}}
         },
         {
             production_type = "output",
-            pipe_covers = Data.Pipes.covers(false, true, false, false),
+            pipe_covers = DATA.Pipes.covers(false, true, false, false),
             base_level = 1,
-            pipe_picture = Data.Pipes.pictures("assembling-machine-2", {-1.2, 4.3}, {1.8, -4.65}, {4.8, 1.3}, {-4.27, -1.8}, pipe_right),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", {-1.2, 4.3}, {1.8, -4.65}, {4.8, 1.3}, {-4.27, -1.8}, pipe_right),
             pipe_connections = {{type = "output", position = {-1.5, 4.5}}}
         },
         off_when_no_fluid_recipe = true

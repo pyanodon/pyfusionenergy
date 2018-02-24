@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "purier-helium",
     category = "compressor",
@@ -16,7 +16,7 @@ Recipe {
     main_product = "purier-helium"
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "purier-helium",
     icon = "__pyfusionenergy__/graphics/icons/purier-helium.png",

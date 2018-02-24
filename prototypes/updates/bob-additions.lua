@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "liquid-nitrogen",
     category = "compressor",
@@ -20,7 +20,7 @@ Recipe {
     order = "a"
 }:add_unlock("helium-processing")
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "evaporate-nitrogen",
     category = "evaporator",

@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "heavy-water",
     category = "quenching-tower",
@@ -13,7 +13,7 @@ Recipe {
     }
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "heavy-water",
     icon = "__pyfusionenergy__/graphics/icons/heavy-water.png",

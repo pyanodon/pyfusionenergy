@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "vanadium-solution",
     category = "evaporator",
@@ -12,7 +12,7 @@ Recipe {
     }
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "vanadium-solution",
     icon = "__pyfusionenergy__/graphics/icons/vanadium-solution.png",

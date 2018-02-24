@@ -1,4 +1,4 @@
-Technology {
+TECHNOLOGY {
     type = "technology",
     name = "helium-processing",
     icon = "__pyfusionenergy__/graphics/technology/helium-processing.png",

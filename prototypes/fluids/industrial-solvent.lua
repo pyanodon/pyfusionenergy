@@ -1,4 +1,4 @@
-Recipe{
+RECIPE{
     type = "recipe",
     name = "industrial-solvent",
     category = "mixer",
@@ -14,7 +14,7 @@ Recipe{
     }
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "industrial-solvent",
     icon = "__pyfusionenergy__/graphics/icons/industrial-solvent.png",

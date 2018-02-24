@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "kmauts-enclosure",
     energy_required = 10,
@@ -17,7 +17,7 @@ Recipe {
     }
 }
 
-Item {
+ITEM {
     type = "item",
     name = "kmauts-enclosure",
     icon = "__pyfusionenergy__/graphics/icons/kmauts-enclosure.png",
@@ -29,7 +29,7 @@ Item {
     stack_size = 10
 }
 
-Entity {
+ENTITY {
     type = "assembling-machine",
     name = "kmauts-enclosure",
     icon = "__pyfusionenergy__/graphics/icons/kmauts-enclosure.png",

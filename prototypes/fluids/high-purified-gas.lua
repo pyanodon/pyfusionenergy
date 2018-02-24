@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "high-purified-gas",
     category = "fluid-separator",
@@ -15,7 +15,7 @@ Recipe {
     main_product = "high-purified-gas"
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "high-purified-gas",
     icon = "__pyfusionenergy__/graphics/icons/high-purified-gas.png",

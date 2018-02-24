@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "automated-screener",
     energy_required = 10,
@@ -16,7 +16,7 @@ Recipe {
     }
 }
 
-Item {
+ITEM {
     type = "item",
     name = "automated-screener",
     icon = "__pyfusionenergy__/graphics/icons/automated-screener.png",
@@ -28,7 +28,7 @@ Item {
     stack_size = 10
 }
 
-Entity {
+ENTITY {
     type = "assembling-machine",
     name = "automated-screener",
     icon = "__pyfusionenergy__/graphics/icons/automated-screener.png",

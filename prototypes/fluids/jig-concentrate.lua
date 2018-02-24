@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "jig-diamond-concentrate",
     category = "jig",
@@ -19,7 +19,7 @@ Recipe {
     order = "j"
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "jig-diamond-tailings",
     category = "jig",
@@ -40,7 +40,7 @@ Recipe {
     order = "j"
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "jig-concentrate",
     icon = "__pyfusionenergy__/graphics/icons/jig-concentrate.png",

@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "liquid-pure-air",
     category = "compressor",
@@ -20,7 +20,7 @@ Recipe {
     order = "a"
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "liquid-pure-air",
     icon = "__pyfusionenergy__/graphics/icons/liquid-pure-air.png",

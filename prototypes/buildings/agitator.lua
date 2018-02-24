@@ -25,7 +25,7 @@ local pipes = {
     }
 }
 
-Recipe {
+RECIPE {
     type = "recipe",
     name = "agitator",
     energy_required = 15,
@@ -43,7 +43,7 @@ Recipe {
     }
 }
 
-Item {
+ITEM {
     type = "item",
     name = "agitator",
     icon = "__pyfusionenergy__/graphics/icons/agitator.png",
@@ -55,7 +55,7 @@ Item {
     stack_size = 10
 }
 
-Entity {
+ENTITY {
     type = "assembling-machine",
     name = "agitator",
     icon = "__pyfusionenergy__/graphics/icons/agitator.png",
@@ -93,31 +93,31 @@ Entity {
     fluid_boxes = {
         {
             production_type = "input",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-2", {0.17, 2.85}, {0.18, -2.9}, {3.1, -0.15}, {-2.9, -0.2}, pipes),
-            pipe_covers = Data.Pipes.covers(false, true, true, false),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", {0.17, 2.85}, {0.18, -2.9}, {3.1, -0.15}, {-2.9, -0.2}, pipes),
+            pipe_covers = DATA.Pipes.covers(false, true, true, false),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {3.0, -0.0}}}
         },
         {
             production_type = "input",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-2", {0.17, 2.85}, {0.18, -2.9}, {3.1, -0.15}, {-2.9, -0.2}, pipes),
-            pipe_covers = Data.Pipes.covers(false, true, true, false),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", {0.17, 2.85}, {0.18, -2.9}, {3.1, -0.15}, {-2.9, -0.2}, pipes),
+            pipe_covers = DATA.Pipes.covers(false, true, true, false),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {0.0, 3.0}}}
         },
         {
             production_type = "output",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-2", {0.17, 2.85}, {0.18, -2.9}, {3.1, -0.15}, {-2.9, -0.2}, pipes),
-            pipe_covers = Data.Pipes.covers(false, true, true, false),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", {0.17, 2.85}, {0.18, -2.9}, {3.1, -0.15}, {-2.9, -0.2}, pipes),
+            pipe_covers = DATA.Pipes.covers(false, true, true, false),
             base_level = 1,
             pipe_connections = {{type = "output", position = {-3.0, -0.0}}}
         },
         {
             production_type = "output",
-            pipe_picture = Data.Pipes.pictures("assembling-machine-2", {0.17, 2.85}, {0.18, -2.9}, {3.1, -0.15}, {-2.9, -0.2}, pipes),
-            pipe_covers = Data.Pipes.covers(false, true, true, false),
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", {0.17, 2.85}, {0.18, -2.9}, {3.1, -0.15}, {-2.9, -0.2}, pipes),
+            pipe_covers = DATA.Pipes.covers(false, true, true, false),
             base_level = 1,
             pipe_connections = {{type = "output", position = {0.0, -3.0}}}
         },

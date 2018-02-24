@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "kimberlite-pulp",
     category = "mixer",
@@ -20,7 +20,7 @@ Recipe {
     order = "j"
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "kimberlite-pulp",
     icon = "__pyfusionenergy__/graphics/icons/kimberlite-pulp.png",

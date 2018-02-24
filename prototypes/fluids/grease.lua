@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "grease",
     category = "fts-reactor",
@@ -15,7 +15,7 @@ Recipe {
     }
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "grease",
     icon = "__pyfusionenergy__/graphics/icons/grease.png",

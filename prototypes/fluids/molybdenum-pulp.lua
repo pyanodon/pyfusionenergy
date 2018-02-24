@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "molybdenum-pulp",
     category = "thickener",
@@ -15,7 +15,7 @@ Recipe {
     main_product = "molybdenum-pulp"
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "molybdenum-pulp",
     icon = "__pyfusionenergy__/graphics/icons/molybdenum-pulp.png",

@@ -1,4 +1,4 @@
-Recipe {
+RECIPE {
     type = "recipe",
     name = "cold-clean-air",
     category = "carbonfilter",
@@ -15,7 +15,7 @@ Recipe {
     main_product = "cold-clean-air",
 }
 
-Fluid {
+FLUID {
     type = "fluid",
     name = "cold-clean-air",
     icon = "__pyfusionenergy__/graphics/icons/cold-clean-air.png",
