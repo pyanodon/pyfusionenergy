@@ -53,7 +53,7 @@ ENTITY {
         emissions = 0.02
     },
     energy_usage = "400kW",
-    ingredient_count = 4,
+    ingredient_count = 8,
     animation = {
         filename = "__pyfusionenergy__/graphics/entity/bio-reactor/off.png",
         width = 246,
