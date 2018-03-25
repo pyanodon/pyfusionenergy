@@ -12,6 +12,10 @@ TECHNOLOGY {
         },
         {
             type = "unlock-recipe",
+            recipe = "mo-mine"
+        },
+        {
+            type = "unlock-recipe",
             recipe = "molybdenum-pulp"
         },
         {

@@ -92,6 +92,10 @@ data:extend {
     },
     {
         type = "resource-category",
+        name = "molybdenum"
+    },
+    {
+        type = "resource-category",
         name = "regolite"
     }
 }
