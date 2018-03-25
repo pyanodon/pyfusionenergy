@@ -14,16 +14,18 @@ DATA {
 ENTITY {
     type = "resource",
     name = "molybdenum-ore",
+    category = "molybdenum",
     icon = "__pyfusionenergy__/graphics/icons/ores/molybdenum.png",
 	icon_size = 32,
     flags = {"placeable-neutral"},
     order = "a-b-a",
     map_color = {r = 0.294, g = 0.45, b = 0.643},
+    highlight = true,
     minimum = 500,
     normal = 1500,
     maximum = 6000,
     minable = {
-        hardness = 1.5,
+        hardness = 1,
         -- mining_particle = "molybdenum-ore-particle",
         mining_time = 3,
         results = {
