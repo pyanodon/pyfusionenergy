@@ -23,7 +23,7 @@ RECIPE("molybdenum-oxide"):add_ingredient({type = "fluid", name = "oxygen", amou
 remove_result("molybdenum-oxide", "sulfur")
 add_result("molybdenum-oxide", {type = "fluid", name = "sulfur-dioxide", amount = 50})
 
-RECIPE("molybdenum-plate"):add_ingredient({type = "fluid", name = "hydrogen", amount = 100}):set_category("electrolysis")
+RECIPE("molybdenum-plate"):add_ingredient({type = "fluid", name = "hydrogen", amount = 100}):change_category("electrolysis")
 
 remove_result("cobalt-solvent", "ash")
 add_result("cobalt-solvent", {type = "item", name = "cobalt-ore", amount = 5})
@@ -31,7 +31,7 @@ add_result("cobalt-solvent", {type = "item", name = "cobalt-ore", amount = 5})
 RECIPE("soda-ash"):replace_ingredient("ppd", "sodium-hydroxide")
 RECIPE("vpulp3"):replace_ingredient("petroleum-gas", "nitrogen-dioxide")
 
-RECIPE("sodium-chlorate"):remove_ingredient('sodium-chlorate', 'water-saline'):add_ingredient({type = "item", name = "salt", amount = 20}):set_category('electrolysis')
+RECIPE("sodium-chlorate"):remove_ingredient('sodium-chlorate', 'water-saline'):add_ingredient({type = "item", name = "salt", amount = 20}):change_category('electrolysis')
 add_result("sodium-chlorate", {type = "fluid", name = "hydrogen", amount = 150})
 
 RECIPE("vpulp-precip"):replace_ingredient("water", "nitrogen-dioxide")
