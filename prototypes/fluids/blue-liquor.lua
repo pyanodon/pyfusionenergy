@@ -19,7 +19,7 @@ FLUID {
     name = "blue-liquor",
     icon = "__pyfusionenergy__/graphics/icons/blue-liquor.png",
 	icon_size = 32,
-    default_temperature = 15,
+    default_temperature = 10,
     base_color = {r = 0.137, g = 0.525, b = 1},
     flow_color = {r = 0.137, g = 0.525, b = 1},
     max_temperature = 100,

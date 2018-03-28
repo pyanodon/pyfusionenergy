@@ -16,10 +16,6 @@ TECHNOLOGY {
         },
         {
             type = "unlock-recipe",
-            recipe = "py-heat-exchanger"
-        },
-        {
-            type = "unlock-recipe",
             recipe = "py-turbine"
         },
         {

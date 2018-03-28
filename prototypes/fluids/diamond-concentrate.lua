@@ -25,7 +25,7 @@ FLUID {
     name = "diamond-concentrate",
     icon = "__pyfusionenergy__/graphics/icons/diamond-concentrate.png",
 	icon_size = 32,
-    default_temperature = 15,
+    default_temperature = 10,
     base_color = {r = 0.627, g = 0.764, b = 0.850},
     flow_color = {r = 0.627, g = 0.764, b = 0.850},
     max_temperature = 100,

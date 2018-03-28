@@ -19,7 +19,7 @@ FLUID {
     name = "acid-strip-solution",
     icon = "__pyfusionenergy__/graphics/icons/acid-strip-solution.png",
 	icon_size = 32,
-    default_temperature = 15,
+    default_temperature = 10,
     base_color = {r = 0.521, g = 0.176, b = 0.003},
     flow_color = {r = 0.521, g = 0.176, b = 0.003},
     max_temperature = 100,

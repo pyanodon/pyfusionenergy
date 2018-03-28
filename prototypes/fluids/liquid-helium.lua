@@ -40,7 +40,7 @@ FLUID {
     name = "liquid-helium",
     icon = "__pyfusionenergy__/graphics/icons/liquid-helium.png",
 	icon_size = 32,
-    default_temperature = 15,
+    default_temperature = 10,
     base_color = {r = 1, g = 0.952, b = 0.835},
     flow_color = {r = 1, g = 0.952, b = 0.835},
     max_temperature = 100,
