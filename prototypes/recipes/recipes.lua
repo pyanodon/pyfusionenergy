@@ -1607,3 +1607,24 @@ RECIPE {
     subgroup = "py-drilling",
     order = "c"
 }:add_unlock("excavation-2")
+
+RECIPE {
+    type = "recipe",
+    name = "steam-heating",
+    category = "heat-exchanger",
+    enabled = "false",
+    energy_required = 10,
+    ingredients = {
+        {type = "fluid", name = "steam", amount = 500, temperature = 60},
+        {type = "fluid", name = "water", amount = 100},
+        {type = "item", name = "fuelrod-mk01", amount = 2},
+    },
+    results = {
+        {type = "fluid", name = "steam", amount = 500, temperature = 500},
+    },
+    main_product= "steam",
+    icon = "__pyfusionenergy__/graphics/icons/steam-heating.png",
+	icon_size = 32,
+    subgroup = "py-fusion-items",
+    order = "e"
+}:add_unlock("coal-processing-3")

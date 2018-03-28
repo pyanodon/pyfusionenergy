@@ -8,12 +8,13 @@ RECIPE {
         {"automated-factory", 1},
         {"stone-brick", 70}, --pyindustry py-ashpalt
         {"cooling-tower-mk01", 2},
+        {"advanced-circuit", 5},
         {"pipe", 20} --pyindustry niobium-pipe
     },
     results = {
         {"py-heat-exchanger", 1}
     }
-}
+}:add_unlock("fuel-production")
 
 ITEM {
     type = "item",

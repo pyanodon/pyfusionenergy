@@ -25,7 +25,7 @@ FLUID {
     name = "liquid-pure-air",
     icon = "__pyfusionenergy__/graphics/icons/liquid-pure-air.png",
 	icon_size = 32,
-    default_temperature = 15,
+    default_temperature = 10,
     base_color = {r = 0.560, g = 0.862, b = 1.0},
     flow_color = {r = 0.560, g = 0.862, b = 1.0},
     max_temperature = 100,

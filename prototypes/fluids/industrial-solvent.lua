@@ -19,7 +19,7 @@ FLUID {
     name = "industrial-solvent",
     icon = "__pyfusionenergy__/graphics/icons/industrial-solvent.png",
 	icon_size = 32,
-    default_temperature = 15,
+    default_temperature = 10,
     base_color = {r = 0.941, g = 0.305, b = 0.215},
     flow_color = {r = 0.941, g = 0.305, b = 0.215},
     max_temperature = 100,

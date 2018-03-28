@@ -18,7 +18,7 @@ FLUID {
     name = "ethanolamine",
     icon = "__pyfusionenergy__/graphics/icons/ethanolamine.png",
 	icon_size = 32,
-    default_temperature = 15,
+    default_temperature = 10,
     base_color = {r = 0.917, g = 0.866, b = 0.360},
     flow_color = {r = 0.917, g = 0.866, b = 0.360},
     max_temperature = 100,

@@ -22,7 +22,7 @@ FLUID {
     name = "vanadium-concentrate",
     icon = "__pyfusionenergy__/graphics/icons/vanadium-concentrate.png",
 	icon_size = 32,
-    default_temperature = 15,
+    default_temperature = 10,
     base_color = {r = 0.396, g = 0.701, b = 0.607},
     flow_color = {r = 0.396, g = 0.701, b = 0.607},
     max_temperature = 100,

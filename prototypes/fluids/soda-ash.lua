@@ -24,7 +24,7 @@ FLUID {
     name = "soda-ash",
     icon = "__pyfusionenergy__/graphics/icons/soda-ash.png",
 	icon_size = 32,
-    default_temperature = 15,
+    default_temperature = 10,
     base_color = {r = 0.678, g = 0.717, b = 0.776},
     flow_color = {r = 0.678, g = 0.717, b = 0.776},
     max_temperature = 100,

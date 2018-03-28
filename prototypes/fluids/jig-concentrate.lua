@@ -45,7 +45,7 @@ FLUID {
     name = "jig-concentrate",
     icon = "__pyfusionenergy__/graphics/icons/jig-concentrate.png",
 	icon_size = 32,
-    default_temperature = 15,
+    default_temperature = 10,
     base_color = {r = 0.478, g = 0.8, b = 0.949},
     flow_color = {r = 0.478, g = 0.8, b = 0.949},
     max_temperature = 100,
