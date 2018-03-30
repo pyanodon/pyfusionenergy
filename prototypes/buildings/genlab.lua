@@ -84,7 +84,7 @@ ENTITY {
                 width = 140,
                 height = 163,
                 line_length = 14,
-                animation_speed = 0.2,
+                animation_speed = 0.3,
                 priority = "medium",
                 run_mode = "forward-then-backward"
             }
