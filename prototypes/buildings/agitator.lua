@@ -80,7 +80,7 @@ ENTITY {
         emissions = 0.05 / 3
     },
     energy_usage = "200kW",
-    ingredient_count = 3,
+    ingredient_count = 10,
     animation = {
         filename = "__pyfusionenergy__/graphics/entity/agitator/agitator.png",
         width = 169,
