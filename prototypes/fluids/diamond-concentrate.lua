@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "diamond-concentrate",
     category = "pan",
-    enabled = "false",
+    enabled = false,
     energy_required = 25,
     ingredients = {
         {type = "fluid", name = "diamond-tailings", amount = 100},

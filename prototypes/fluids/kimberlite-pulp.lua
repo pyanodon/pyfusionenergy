@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "kimberlite-pulp",
     category = "mixer",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "item", name = "kimberlite-grade3", amount = 15},

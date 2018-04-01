@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "acid-strip-solution",
     category = "methanol",
-    enabled = "false",
+    enabled = false,
     energy_required = 12,
     ingredients = {
         {type = "fluid", name = "water", amount = 200},

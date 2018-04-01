@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "pressured-water",
     category = "vacuum",
-    enabled = "false",
+    enabled = false,
     energy_required = 2.5,
     ingredients = {
         {type = "fluid", name = "water", amount = 250}

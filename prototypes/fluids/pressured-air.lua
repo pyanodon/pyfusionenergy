@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "pressured-air",
     category = "vacuum",
-    enabled = "false",
+    enabled = false,
     energy_required = 2,
     ingredients = {},
     results = {

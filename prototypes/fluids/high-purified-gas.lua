@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "high-purified-gas",
     category = "fluid-separator",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "dry-gas-stream", amount = 10},

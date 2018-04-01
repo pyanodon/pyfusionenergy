@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "grease",
     category = "fts-reactor",
-    enabled = "false",
+    enabled = false,
     energy_required = 6,
     ingredients = {
         {type = "item", name = "mukmoux-fat", amount = 20},

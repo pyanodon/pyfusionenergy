@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "ethanolamine",
     category = "bio-reactor",
-    enabled = "false",
+    enabled = false,
     energy_required = 15,
     ingredients = {
         {type = "fluid", name = "bacteria-1", amount = 100},

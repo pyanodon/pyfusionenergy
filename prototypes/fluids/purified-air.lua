@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "purified-air",
     category = "carbonfilter",
-    enabled = "false",
+    enabled = false,
     energy_required = 1,
     ingredients = {
         {type = "fluid", name = "pressured-air", amount = 20},

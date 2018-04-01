@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "liquid-nitrogen",
     category = "compressor",
-    enabled = "false",
+    enabled = false,
     energy_required = 1,
     ingredients = {
         {type = "fluid", name = "nitrogen", amount = 50},
@@ -24,7 +24,7 @@ RECIPE {
     type = "recipe",
     name = "evaporate-nitrogen",
     category = "evaporator",
-    enabled = "false",
+    enabled = false,
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "liquid-nitrogen", amount = 5}

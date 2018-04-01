@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "liquid-helium",
     category = "compressor",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "helium", amount = 20},
@@ -20,7 +20,7 @@ RECIPE {
     type = "recipe",
     name = "evaporate-helium",
     category = "evaporator",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "liquid-helium", amount = 2}
