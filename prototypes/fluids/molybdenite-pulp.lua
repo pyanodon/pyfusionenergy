@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "molybdenite-pulp",
     category = "agitator",
-    enabled = "false",
+    enabled = false,
     energy_required = 8,
     ingredients = {
         {type = "fluid", name = "water", amount = 300},

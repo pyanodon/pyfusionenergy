@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "soda-ash",
     category = "agitator",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "water", amount = 250},

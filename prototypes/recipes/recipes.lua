@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "crushing-molybdenite",
     category = "crusher",
-    enabled = "false",
+    enabled = false,
     energy_required = 2,
     ingredients = {
         {type = "item", name = "molybdenum-ore", amount = 10}
@@ -22,7 +22,7 @@ RECIPE {
     type = "recipe",
     name = "milling-molybdenite",
     category = "ball-mill",
-    enabled = "false",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "item", name = "crushed-molybdenite", amount = 5}
@@ -38,7 +38,7 @@ RECIPE {
     type = "recipe",
     name = "molybdenum-concentrate",
     category = "hydrocyclone",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "molybdenite-pulp", amount = 150},
@@ -59,7 +59,7 @@ RECIPE {
     type = "recipe",
     name = "molybdenum-filtration",
     category = "carbonfilter",
-    enabled = "false",
+    enabled = false,
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "molybdenum-pulp", amount = 100},
@@ -76,7 +76,7 @@ RECIPE {
     type = "recipe",
     name = "molybdenum-oxide",
     category = "hpf",
-    enabled = "false",
+    enabled = false,
     energy_required = 3,
     ingredients = {
         {type = "item", name = "molybdenum-sulfide", amount = 10}
@@ -92,7 +92,7 @@ RECIPE {
     type = "recipe",
     name = "molybdenum-plate",
     category = "chemistry", --bobs electrolyzer
-    enabled = "false",
+    enabled = false,
     energy_required = 3,
     ingredients = {
         {type = "item", name = "molybdenum-oxide", amount = 5} --add hydrogen
@@ -108,7 +108,7 @@ RECIPE {
     type = "recipe",
     name = "phytoplankton",
     category = "plankton",
-    enabled = "false",
+    enabled = false,
     energy_required = 15,
     ingredients = {
         {type = "fluid", name = "water", amount = 500},
@@ -124,7 +124,7 @@ RECIPE {
     type = "recipe",
     name = "xyhiphoe-blood",
     category = "xyhiphoe",
-    enabled = "false",
+    enabled = false,
     energy_required = 15,
     ingredients = {
         {type = "fluid", name = "pressured-water", amount = 500},
@@ -142,7 +142,7 @@ RECIPE {
     type = "recipe",
     name = "xyhiphoe-hydrocyclone",
     category = "hydrocyclone",
-    enabled = "false",
+    enabled = false,
     energy_required = 30,
     ingredients = {
         {type = "fluid", name = "pressured-water", amount = 500},
@@ -158,7 +158,7 @@ RECIPE {
     type = "recipe",
     name = "cobalt-solvent",
     category = "evaporator",
-    enabled = "false",
+    enabled = false,
     energy_required = 8,
     ingredients = {
         {type = "fluid", name = "used-solvent", amount = 50}
@@ -176,7 +176,7 @@ RECIPE {
     type = "recipe",
     name = "solvent-separation",
     category = "fluid-separator",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "used-solvent", amount = 100}
@@ -196,7 +196,7 @@ RECIPE {
     type = "recipe",
     name = "sodium-chlorate",
     category = "chemistry", --bob electrolyzer
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "steam", amount = 150, temperature = 165},
@@ -213,7 +213,7 @@ RECIPE {
     type = "recipe",
     name = "vanadium-oxide",
     category = "evaporator",
-    enabled = "false",
+    enabled = false,
     energy_required = 20,
     ingredients = {
         {type = "fluid", name = "vpulp-precip", amount = 100}
@@ -229,7 +229,7 @@ RECIPE {
     type = "recipe",
     name = "wastewater-filtration",
     category = "carbonfilter",
-    enabled = "false",
+    enabled = false,
     energy_required = 15,
     ingredients = {
         {type = "fluid", name = "waste-water", amount = 100},
@@ -244,7 +244,7 @@ RECIPE {
     type = "recipe",
     name = "wastewater-recovery",
     category = "thickener",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "waste-water", amount = 100},
@@ -260,7 +260,7 @@ RECIPE {
     type = "recipe",
     name = "super-alloy",
     category = "advanced-foundry",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "helium", amount = 10},
@@ -282,7 +282,7 @@ RECIPE {
     type = "recipe",
     name = "crushed-kimberlite",
     category = "crusher",
-    enabled = "false",
+    enabled = false,
     energy_required = 3,
     ingredients = {
         {type = "item", name = "kimberlite-rock", amount = 10}
@@ -302,7 +302,7 @@ RECIPE {
     type = "recipe",
     name = "screening-kimberlite",
     category = "screener",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "item", name = "crushed-kimberlite", amount = 10}
@@ -322,7 +322,7 @@ RECIPE {
     type = "recipe",
     name = "kimberlite-recrushing",
     category = "secondary-crusher",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "item", name = "kimberlite-rejects", amount = 20}
@@ -342,7 +342,7 @@ RECIPE {
     type = "recipe",
     name = "kimberlite-washing",
     category = "washer",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "item", name = "kimberlite-grade2", amount = 5},
@@ -365,7 +365,7 @@ RECIPE {
     type = "recipe",
     name = "pure-kimberlite-recrushing",
     category = "secondary-crusher",
-    enabled = "false",
+    enabled = false,
     energy_required = 15,
     ingredients = {
         {type = "item", name = "pure-kimberlite-grade2", amount = 3}
@@ -385,7 +385,7 @@ RECIPE {
     type = "recipe",
     name = "screening-kimberlite-residue",
     category = "screener",
-    enabled = "false",
+    enabled = false,
     energy_required = 15,
     ingredients = {
         {type = "item", name = "kimberlite-residue", amount = 10}
@@ -405,7 +405,7 @@ RECIPE {
     type = "recipe",
     name = "diamond-rejects-recrushing",
     category = "secondary-crusher",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "item", name = "diamond-reject", amount = 8}
@@ -425,7 +425,7 @@ RECIPE {
     type = "recipe",
     name = "diamond-rejects-screening",
     category = "screener",
-    enabled = "false",
+    enabled = false,
     energy_required = 6,
     ingredients = {
         {type = "item", name = "diamond-reject", amount = 10}
@@ -445,7 +445,7 @@ RECIPE {
     type = "recipe",
     name = "rejects-separation",
     category = "solid-separator",
-    enabled = "false",
+    enabled = false,
     energy_required = 1.5,
     ingredients = {
         {type = "item", name = "processed-rejects", amount = 20}
@@ -466,7 +466,7 @@ RECIPE {
     type = "recipe",
     name = "jig-separation",
     category = "fluid-separator",
-    enabled = "false",
+    enabled = false,
     energy_required = 20,
     ingredients = {
         {type = "fluid", name = "jig-concentrate", amount = 300}
@@ -487,7 +487,7 @@ RECIPE {
     type = "recipe",
     name = "greasing-1",
     category = "grease",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "jig-grade1", amount = 50},
@@ -509,7 +509,7 @@ RECIPE {
     type = "recipe",
     name = "greasing-2",
     category = "grease",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "jig-grade2", amount = 50},
@@ -531,7 +531,7 @@ RECIPE {
     type = "recipe",
     name = "greasing-3",
     category = "grease",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "jig-grade3", amount = 50},
@@ -553,7 +553,7 @@ RECIPE {
     type = "recipe",
     name = "washing-crude",
     category = "washer",
-    enabled = "false",
+    enabled = false,
     energy_required = 7,
     ingredients = {
         {type = "fluid", name = "sulfuric-acid", amount = 100},
@@ -574,7 +574,7 @@ RECIPE {
     type = "recipe",
     name = "class-diamond",
     category = "classifier",
-    enabled = "false",
+    enabled = false,
     energy_required = 7,
     ingredients = {
         {type = "item", name = "washed-diamond", amount = 40}
@@ -594,7 +594,7 @@ RECIPE {
     type = "recipe",
     name = "cool-air",
     category = "evaporator",
-    enabled = "false",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "purified-air", amount = 60},
@@ -611,7 +611,7 @@ RECIPE {
     type = "recipe",
     name = "liquid-air-distilation",
     category = "distilator",
-    enabled = "false",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "liquid-pure-air", amount = 5}
@@ -629,7 +629,7 @@ RECIPE {
     type = "recipe",
     name = "stone-calcination",
     category = "hpf",
-    enabled = "false",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "item", name = "stone", amount = 40}
@@ -645,7 +645,7 @@ RECIPE {
     type = "recipe",
     name = "gravel-calcination",
     category = "hpf",
-    enabled = "false",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "item", name = "gravel", amount = 50}
@@ -662,7 +662,7 @@ RECIPE {
     type = "recipe",
     name = "calcinate-separation",
     category = "solid-separator",
-    enabled = "false",
+    enabled = false,
     energy_required = 2,
     ingredients = {
         {type = "item", name = "calcinates", amount = 20}
@@ -685,7 +685,7 @@ RECIPE {
     type = "recipe",
     name = "bacteria-1",
     category = "genlab",
-    enabled = "false",
+    enabled = false,
     energy_required = 15,
     ingredients = {
         {type = "item", name = "nexelit-plate", amount = 10},
@@ -703,7 +703,7 @@ RECIPE {
     type = "recipe",
     name = "serine",
     category = "kmauts",
-    enabled = "false",
+    enabled = false,
     energy_required = 30,
     ingredients = {
         {type = "item", name = "kmauts-ration", amount = 1}
@@ -717,7 +717,7 @@ RECIPE {
     type = "recipe",
     name = "methyl-acrylate",
     category = "methanol",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "item", name = "iron-plate", amount = 2},
@@ -733,7 +733,7 @@ RECIPE {
     type = "recipe",
     name = "kmauts-ration",
     category = "crafting",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "item", name = "iron-plate", amount = 2}, --bobs tin plate
@@ -750,7 +750,7 @@ RECIPE {
     type = "recipe",
     name = "crush-regolite",
     category = "crusher",
-    enabled = "false",
+    enabled = false,
     energy_required = 3,
     ingredients = {
         {type = "item", name = "regolite-rock", amount = 10}
@@ -770,7 +770,7 @@ RECIPE {
     type = "recipe",
     name = "regolite-recrush",
     category = "secondary-crusher",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "item", name = "crushed-regolite", amount = 5}
@@ -790,7 +790,7 @@ RECIPE {
     type = "recipe",
     name = "milling-regolite",
     category = "ball-mill",
-    enabled = "false",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "item", name = "powdered-regolite", amount = 5}
@@ -806,7 +806,7 @@ RECIPE {
     type = "recipe",
     name = "regolite-calcination",
     category = "hpf",
-    enabled = "false",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "item", name = "regolite-dust", amount = 20}
@@ -824,7 +824,7 @@ RECIPE {
     type = "recipe",
     name = "liquid-petgas",
     category = "compressor",
-    enabled = "false",
+    enabled = false,
     energy_required = 1,
     ingredients = {
         {type = "fluid", name = "petroleum-gas", amount = 5},
@@ -842,7 +842,7 @@ RECIPE {
     type = "recipe",
     name = "liquid-petgas-separation",
     category = "fluid-separator",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "liquid-petgas", amount = 20},
@@ -859,7 +859,7 @@ RECIPE {
     type = "recipe",
     name = "gas-stream-filtration",
     category = "carbonfilter",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "gas-stream", amount = 20},
@@ -876,7 +876,7 @@ RECIPE {
     type = "recipe",
     name = "liquid-rich-gas-distilation",
     category = "distilator",
-    enabled = "false",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "liquid-rich-gas", amount = 30}
@@ -892,7 +892,7 @@ RECIPE {
     type = "recipe",
     name = "helium",
     category = "gas-separator",
-    enabled = "false",
+    enabled = false,
     energy_required = 6,
     ingredients = {
         {type = "fluid", name = "purier-helium", amount = 8}
@@ -908,7 +908,7 @@ RECIPE {
     type = "recipe",
     name = "nexelit-matrix",
     category = "nmf",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "boric-acid", amount = 150},
@@ -925,7 +925,7 @@ RECIPE {
     type = "recipe",
     name = "nbti-alloy",
     category = "advanced-foundry",
-    enabled = "false",
+    enabled = false,
     energy_required = 3,
     ingredients = {
         {type = "item", name = "niobium-plate", amount = 5},
@@ -941,7 +941,7 @@ RECIPE {
     type = "recipe",
     name = "nenbit-matrix",
     category = "advanced-crafting",
-    enabled = "false",
+    enabled = false,
     energy_required = 15,
     ingredients = {
         {type = "item", name = "nbti-alloy", amount = 2},
@@ -956,7 +956,7 @@ RECIPE {
     type = "recipe",
     name = "ferrite",
     category = "hpf",
-    enabled = "false",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "item", name = "iron-oxide", amount = 20},
@@ -972,7 +972,7 @@ RECIPE {
     type = "recipe",
     name = "coil-core",
     category = "advanced-crafting",
-    enabled = "false",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "item", name = "ferrite", amount = 4},
@@ -987,7 +987,7 @@ RECIPE {
     type = "recipe",
     name = "sc-wire",
     category = "crafting",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "item", name = "iron-plate", amount = 10}, --bobs tin plate
@@ -1003,7 +1003,7 @@ RECIPE {
     type = "recipe",
     name = "sc-coil",
     category = "crafting",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "item", name = "sc-wire", amount = 15},
@@ -1019,7 +1019,7 @@ RECIPE {
     type = "recipe",
     name = "magnetic-core",
     category = "advanced-crafting",
-    enabled = "false",
+    enabled = false,
     energy_required = 25,
     ingredients = {
         {type = "item", name = "sc-coil", amount = 1},
@@ -1035,7 +1035,7 @@ RECIPE {
     type = "recipe",
     name = "deposited-core",
     category = "gas-separator",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "item", name = "magnetic-core", amount = 1},
@@ -1050,7 +1050,7 @@ RECIPE {
     type = "recipe",
     name = "sc-unit",
     category = "advanced-crafting",
-    enabled = "false",
+    enabled = false,
     energy_required = 20,
     ingredients = {
         {type = "item", name = "molybdenum-plate", amount = 5},
@@ -1067,7 +1067,7 @@ RECIPE {
     type = "recipe",
     name = "d2o-distilation",
     category = "distilator",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "heavy-water", amount = 60}
@@ -1083,7 +1083,7 @@ RECIPE {
     type = "recipe",
     name = "b2o3-milling",
     category = "ball-mill",
-    enabled = "false",
+    enabled = false,
     energy_required = 3,
     ingredients = {
         {type = "item", name = "boron-trioxide", amount = 20}
@@ -1097,7 +1097,7 @@ RECIPE {
     type = "recipe",
     name = "boron-mixture",
     category = "hpf",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "item", name = "b2o3-dust", amount = 15},
@@ -1113,7 +1113,7 @@ RECIPE {
     type = "recipe",
     name = "boron",
     category = "mixer",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "item", name = "boron-mixture", amount = 3},
@@ -1131,7 +1131,7 @@ RECIPE {
     type = "recipe",
     name = "boron-carbide",
     category = "hpf",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "item", name = "boron-trioxide", amount = 2},
@@ -1148,7 +1148,7 @@ RECIPE {
     type = "recipe",
     name = "blanket-chassi",
     category = "advanced-foundry",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "item", name = "super-alloy", amount = 10},
@@ -1167,7 +1167,7 @@ RECIPE {
     type = "recipe",
     name = "blanket",
     category = "advanced-crafting",
-    enabled = "false",
+    enabled = false,
     energy_required = 40,
     ingredients = {
         {type = "item", name = "blanket-chassi", amount = 2},
@@ -1184,7 +1184,7 @@ RECIPE {
     type = "recipe",
     name = "divertor",
     category = "crafting",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "item", name = "steel-plate", amount = 20},
@@ -1201,7 +1201,7 @@ RECIPE {
     type = "recipe",
     name = "wall-shield",
     category = "advanced-foundry",
-    enabled = "false",
+    enabled = false,
     energy_required = 7,
     ingredients = {
         {type = "item", name = "steel-plate", amount = 20},
@@ -1219,7 +1219,7 @@ RECIPE {
     type = "recipe",
     name = "reinforced-wall-shield",
     category = "advanced-foundry",
-    enabled = "false",
+    enabled = false,
     energy_required = 7,
     ingredients = {
         {type = "item", name = "wall-shield", amount = 1},
@@ -1235,7 +1235,7 @@ RECIPE {
     type = "recipe",
     name = "deuterium-fusion",
     category = "fusion-01",
-    enabled = "false",
+    enabled = false,
     energy_required = 40,
     ingredients = {
         {type = "fluid", name = "deuterium", amount = 50},
@@ -1265,7 +1265,7 @@ RECIPE {
     type = "recipe",
     name = "dt-he3",
     category = "fusion-01",
-    enabled = "false",
+    enabled = false,
     energy_required = 40,
     ingredients = {
         {type = "fluid", name = "deuterium", amount = 40},
@@ -1295,7 +1295,7 @@ RECIPE {
     type = "recipe",
     name = "dt-fusion",
     category = "fusion-01",
-    enabled = "false",
+    enabled = false,
     energy_required = 40,
     ingredients = {
         {type = "fluid", name = "deuterium", amount = 40},
@@ -1325,7 +1325,7 @@ RECIPE {
     type = "recipe",
     name = "b-h",
     category = "fusion-02",
-    enabled = "false",
+    enabled = false,
     energy_required = 40,
     ingredients = {
         {type = "fluid", name = "proton", amount = 45},
@@ -1354,7 +1354,7 @@ RECIPE {
     type = "recipe",
     name = "steam-exchange1",
     category = "heat-exchanger",
-    enabled = "false",
+    enabled = false,
     energy_required = 15,
     ingredients = {
         {type = "fluid", name = "critical-steam", amount = 500, temperature = 1000},
@@ -1375,7 +1375,7 @@ RECIPE {
     type = "recipe",
     name = "steam-exchange2",
     category = "heat-exchanger",
-    enabled = "false",
+    enabled = false,
     energy_required = 15,
     ingredients = {
         {type = "fluid", name = "critical-steam", amount = 500, temperature = 2000},
@@ -1396,7 +1396,7 @@ RECIPE {
     type = "recipe",
     name = "steam-exchange3",
     category = "heat-exchanger",
-    enabled = "false",
+    enabled = false,
     energy_required = 15,
     ingredients = {
         {type = "fluid", name = "critical-steam", amount = 500, temperature = 3000},
@@ -1417,7 +1417,7 @@ RECIPE {
     type = "recipe",
     name = "steam-exchange4",
     category = "heat-exchanger",
-    enabled = "false",
+    enabled = false,
     energy_required = 15,
     ingredients = {
         {type = "fluid", name = "critical-steam", amount = 500, temperature = 4000},
@@ -1438,7 +1438,7 @@ RECIPE {
     type = "recipe",
     name = "lead-container",
     category = "crafting",
-    enabled = "false",
+    enabled = false,
     energy_required = 7,
     ingredients = {
         {type = "item", name = "iron-plate", amount = 20}, --bob lead plate
@@ -1453,7 +1453,7 @@ RECIPE {
     type = "recipe",
     name = "science-coating",
     category = "advanced-crafting",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "item", name = "diamond", amount = 10},
@@ -1469,7 +1469,7 @@ RECIPE {
     type = "recipe",
     name = "coated-container",
     category = "advanced-crafting",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "item", name = "lead-container", amount = 2},
@@ -1484,7 +1484,7 @@ RECIPE {
     type = "recipe",
     name = "nuclear-sample",
     category = "mixer",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "item", name = "uranium-ore", amount = 50},
@@ -1502,7 +1502,7 @@ RECIPE {
     type = "recipe",
     name = "control-unit",
     category = "crafting",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "item", name = "advanced-circuit", amount = 10},
@@ -1520,7 +1520,7 @@ RECIPE {
     type = "recipe",
     name = "production-science-pack",
     category = "advanced-crafting",
-    enabled = "false",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "item", name = "control-unit", amount = 1},
@@ -1540,7 +1540,7 @@ RECIPE {
     type = "recipe",
     name = "agzn-alloy",
     category = "advanced-foundry",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "item", name = "stone", amount = 10}, --bobs zinc plate
@@ -1556,7 +1556,7 @@ RECIPE {
     type = "recipe",
     name = "silver-foam",
     category = "rectisol",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "item", name = "agzn-alloy", amount = 1},
@@ -1574,7 +1574,7 @@ RECIPE {
     type = "recipe",
     name = "he3-separation",
     category = "gas-separator",
-    enabled = "false",
+    enabled = false,
     energy_required = 8,
     ingredients = {
         {type = "item", name = "silver-foam", amount = 1},
@@ -1591,7 +1591,7 @@ RECIPE {
     type = "recipe",
     name = "mining-molybdenum",
     category = "ground-borer",
-    enabled = "false",
+    enabled = false,
     energy_required = 1.2,
     ingredients = {
         {type = "fluid", name = "lubricant", amount = 100},
@@ -1612,7 +1612,7 @@ RECIPE {
     type = "recipe",
     name = "steam-heating",
     category = "heat-exchanger",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "steam", amount = 500, temperature = 60},

@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "pregnant-solution",
     category = "hydrocyclone",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "acid-strip-solution", amount = 150},

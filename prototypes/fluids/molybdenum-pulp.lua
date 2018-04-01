@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "molybdenum-pulp",
     category = "thickener",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "water", amount = 300},

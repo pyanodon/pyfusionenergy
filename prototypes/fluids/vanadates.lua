@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "vanadates",
     category = "carbonfilter",
-    enabled = "false",
+    enabled = false,
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "pressured-vpulp", amount = 200},

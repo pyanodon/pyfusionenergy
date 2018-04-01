@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "heavy-water",
     category = "quenching-tower",
-    enabled = "false",
+    enabled = false,
     energy_required = 6,
     ingredients = {
         {type = "item", name = "sulfur", amount = 25},

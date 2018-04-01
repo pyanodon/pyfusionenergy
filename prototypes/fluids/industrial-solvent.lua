@@ -2,7 +2,7 @@ RECIPE{
     type = "recipe",
     name = "industrial-solvent",
     category = "mixer",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "organic-solvent", amount = 200},

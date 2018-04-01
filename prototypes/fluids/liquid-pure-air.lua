@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "liquid-pure-air",
     category = "compressor",
-    enabled = "false",
+    enabled = false,
     energy_required = 1,
     ingredients = {
         {type = "fluid", name = "cold-clean-air", amount = 5},

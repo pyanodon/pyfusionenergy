@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "vanabins",
     category = "quenching-tower",
-    enabled = "false",
+    enabled = false,
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "xyhiphoe-blood", amount = 20},

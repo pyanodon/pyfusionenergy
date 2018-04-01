@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "cold-clean-air",
     category = "carbonfilter",
-    enabled = "false",
+    enabled = false,
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "cold-air", amount = 20},

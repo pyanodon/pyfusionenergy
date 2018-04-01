@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "organic-vanadate",
     category = "mixer",
-    enabled = "false",
+    enabled = false,
     energy_required = 15,
     ingredients = {
         {type = "fluid", name = "vanadates", amount = 200},

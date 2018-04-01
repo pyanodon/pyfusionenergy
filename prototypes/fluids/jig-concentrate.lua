@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "jig-diamond-concentrate",
     category = "jig",
-    enabled = "false",
+    enabled = false,
     energy_required = 20,
     ingredients = {
         {type = "fluid", name = "diamond-concentrate", amount = 200},
@@ -23,7 +23,7 @@ RECIPE {
     type = "recipe",
     name = "jig-diamond-tailings",
     category = "jig",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "diamond-tailings", amount = 250},

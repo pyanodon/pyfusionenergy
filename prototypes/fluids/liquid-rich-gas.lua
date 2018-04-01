@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "liquid-rich-gas",
     category = "compressor",
-    enabled = "false",
+    enabled = false,
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "rich-gas", amount = 4},

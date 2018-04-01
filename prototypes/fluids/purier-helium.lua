@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "purier-helium",
     category = "compressor",
-    enabled = "false",
+    enabled = false,
     energy_required = 1,
     ingredients = {
         {type = "fluid", name = "helium-rich-gas", amount = 3},

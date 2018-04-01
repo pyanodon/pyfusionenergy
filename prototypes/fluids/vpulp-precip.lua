@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "vpulp-precip",
     category = "agitator",
-    enabled = "false",
+    enabled = false,
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "vpulp5", amount = 100},

@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "rich-gas",
     category = "distilator",
-    enabled = "false",
+    enabled = false,
     energy_required = 6,
     ingredients = {
         {type = "fluid", name = "high-purified-gas", amount = 100}

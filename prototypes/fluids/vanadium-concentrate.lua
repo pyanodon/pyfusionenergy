@@ -2,7 +2,7 @@ RECIPE {
     type = "recipe",
     name = "vanadium-concentrate",
     category = "mixer",
-    enabled = "false",
+    enabled = false,
     energy_required = 15,
     ingredients = {
         {type = "fluid", name = "industrial-solvent", amount = 200},
