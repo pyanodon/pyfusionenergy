@@ -35,7 +35,7 @@ ENTITY {
     corpse = "big-remnants",
     effectivity = 1.5,
     fluid_usage_per_tick = 0.6,
-    maximum_temperature = 4000,
+    maximum_temperature = 5000,
     resistances = {
         {
             type = "fire",
