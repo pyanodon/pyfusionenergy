@@ -83,9 +83,9 @@ ENTITY {
     working_visualisations = {
         {
             north_position = {0.0, -0.58},
-            west_position = {0.0, -0.0},
-            south_position = {0.0, -0.0},
-            east_position = {0.0, -0.0},
+            west_position = {0.0, -0.58},
+            south_position = {0.0, -0.58},
+            east_position = {0.0, -0.58},
             animation = {
                 filename = "__pyfusionenergy__/graphics/entity/fusion-reactor-mk02/on.png",
                 frame_count = 42,
