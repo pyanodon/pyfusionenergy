@@ -9,7 +9,7 @@ RECIPE {
         {"electric-engine-unit", 2},
         {"nbfe-alloy", 30},
         {"steel-plate", 100},
-        {"electric-circuit", 30} --updated-bob basic-electronic-circuit-board
+        {"electronic-circuit", 30} --updated-bob basic-electronic-circuit-board
     },
     results = {
         {"mo-mine", 1}
