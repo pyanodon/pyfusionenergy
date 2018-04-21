@@ -38,7 +38,7 @@ ENTITY {
     autoplace = {
         control = "volcanic-pipe",
         sharpness = 0.98,
-        max_probability = 0.04,
+        max_probability = 0.03,
         richness_multiplier = 100,
         richness_multiplier_distance_bonus = 100,
         richness_base = 50000,
