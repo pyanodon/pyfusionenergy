@@ -58,14 +58,16 @@ ENTITY {
       smoke =
       {
         {
-          name = "turbine-smoke",
-          north_position = {0.0, -2.0},
-          east_position = {0.75, -0.75},
-          frequency = 20,
-          starting_vertical_speed = 0.1,
-          slow_down_factor = 1,
-          starting_frame_deviation = 60
-        }
+            name = "turbine-smoke",
+            north_position = {0.0, -2.0},
+            south_position = {0.0, -2.0},
+            east_position = {0.0, -2.0},
+            west_position = {0.0, -2.0},
+            frequency = 20,
+            starting_vertical_speed = 0.1,
+            slow_down_factor = 1,
+            starting_frame_deviation = 60
+          }
       },
     },
     energy_usage = "550kW",
