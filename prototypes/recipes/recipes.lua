@@ -1631,25 +1631,6 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
-    name = "log8",
-    category = "nursery",
-    enabled = false,
-    energy_required = 20,
-    ingredients = {
-        {type = "fluid", name = "waste-water", amount = 200},
-        {type = "fluid", name = "carbon-dioxide", amount = 250}
-    },
-    results = {
-        {type = "item", name = "log", amount = 3}
-    },
-    icon = "__pyfusionenergy__/graphics/icons/log8.png",
-    icon_size = 32,
-    subgroup = "py-items",
-    order = "c9"
-}:add_unlock("vanadium-processing")
-
-RECIPE {
-    type = "recipe",
     name = "log7",
     category = "nursery",
     enabled = false,
@@ -1664,4 +1645,23 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-items",
     order = "c9"
+}:add_unlock("vanadium-processing")
+
+RECIPE {
+    type = "recipe",
+    name = "log8",
+    category = "nursery",
+    enabled = false,
+    energy_required = 20,
+    ingredients = {
+        {type = "fluid", name = "waste-water", amount = 200},
+        {type = "fluid", name = "carbon-dioxide", amount = 250}
+    },
+    results = {
+        {type = "item", name = "log", amount = 3}
+    },
+    icon = "__pyfusionenergy__/graphics/icons/log8.png",
+    icon_size = 32,
+    subgroup = "py-items",
+    order = "c9-1"
 }:add_unlock("vanadium-processing")
