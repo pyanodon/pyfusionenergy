@@ -1238,11 +1238,11 @@ RECIPE {
     enabled = false,
     energy_required = 40,
     ingredients = {
-        {type = "fluid", name = "deuterium", amount = 50},
+        {type = "fluid", name = "deuterium", amount = 100},
         {type = "fluid", name = "pressured-water", amount = 4000},
-        {type = "item", name = "blanket", amount = 2},
-        {type = "item", name = "divertor", amount = 5},
-        {type = "item", name = "wall-shield", amount = 10},
+        {type = "item", name = "blanket", amount = 1},
+        {type = "item", name = "divertor", amount = 2},
+        {type = "item", name = "wall-shield", amount = 5},
         {type = "item", name = "sc-unit", amount = 20},
         {type = "fluid", name = "liquid-helium", amount = 30},
         {type = "fluid", name = "water", amount = 2000}
@@ -1268,12 +1268,12 @@ RECIPE {
     enabled = false,
     energy_required = 40,
     ingredients = {
-        {type = "fluid", name = "deuterium", amount = 40},
+        {type = "fluid", name = "deuterium", amount = 200},
         {type = "fluid", name = "helium3", amount = 90},
         {type = "fluid", name = "pressured-water", amount = 4000},
-        {type = "item", name = "blanket", amount = 2},
-        {type = "item", name = "divertor", amount = 5},
-        {type = "item", name = "reinforced-wall-shield", amount = 10},
+        {type = "item", name = "blanket", amount = 1},
+        {type = "item", name = "divertor", amount = 3},
+        {type = "item", name = "reinforced-wall-shield", amount = 5},
         {type = "item", name = "sc-unit", amount = 20},
         {type = "fluid", name = "liquid-helium", amount = 35},
         {type = "fluid", name = "water", amount = 5000}
@@ -1298,12 +1298,12 @@ RECIPE {
     enabled = false,
     energy_required = 40,
     ingredients = {
-        {type = "fluid", name = "deuterium", amount = 40},
+        {type = "fluid", name = "deuterium", amount = 80},
         {type = "fluid", name = "tritium", amount = 20},
         {type = "fluid", name = "pressured-water", amount = 4500},
         {type = "item", name = "blanket", amount = 2},
-        {type = "item", name = "divertor", amount = 5},
-        {type = "item", name = "reinforced-wall-shield", amount = 10},
+        {type = "item", name = "divertor", amount = 2},
+        {type = "item", name = "reinforced-wall-shield", amount = 5},
         {type = "item", name = "sc-unit", amount = 20},
         {type = "fluid", name = "liquid-helium", amount = 30},
         {type = "fluid", name = "water", amount = 3500}
