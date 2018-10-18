@@ -22,8 +22,8 @@ ENTITY {
     map_color = {r = 0.294, g = 0.45, b = 0.643},
     highlight = true,
     minimum = 500,
-    normal = 1500,
-    maximum = 6000,
+    normal = 1000,
+    maximum = 3000,
     minable = {
         hardness = 1,
         -- mining_particle = "molybdenum-ore-particle",
@@ -40,7 +40,7 @@ ENTITY {
         richness_multiplier = 1500,
         richness_multiplier_distance_bonus = 30,
         richness_base = 500,
-        coverage = 0.02,
+        coverage = 0.006,
         peaks = {
             {
                 noise_layer = "molybdenum-ore",

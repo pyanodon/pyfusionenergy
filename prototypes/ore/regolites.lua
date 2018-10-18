@@ -21,9 +21,9 @@ ENTITY {
     order = "a-b-a",
     map_color = {r = 0.917, g = 0.670, b = 0.278},
     highlight = true,
-    minimum = 60000,
-    normal = 85000,
-    maximum = 15000,
+    minimum = 20000,
+    normal = 30000,
+    maximum = 40000,
     map_grid = false,
     minable = {
         hardness = 2.0,
@@ -42,7 +42,7 @@ ENTITY {
         richness_multiplier = 110,
         richness_multiplier_distance_bonus = 90,
         richness_base = 50000,
-        coverage = 0.02,
+        coverage = 0.007,
         peaks = {
             {
                 noise_layer = "regolites",
