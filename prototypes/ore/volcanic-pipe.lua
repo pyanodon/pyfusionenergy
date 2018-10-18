@@ -19,7 +19,7 @@ ENTITY {
 	icon_size = 32,
     flags = {"placeable-neutral"},
     order = "a-b-a",
-    map_color = {r = 0.917, g = 0.996, b = 1},
+    map_color = {r = 0.152, g = 0.909, b = 1},
     highlight = true,
     minimum = 10000,
     normal = 30000,
@@ -41,8 +41,8 @@ ENTITY {
         max_probability = 0.03,
         richness_multiplier = 100,
         richness_multiplier_distance_bonus = 100,
-        richness_base = 50000,
-        coverage = 0.008,
+        richness_base = 20000,
+        coverage = 0.002,
         peaks = {
             {
                 noise_layer = "volcanic-pipe",
