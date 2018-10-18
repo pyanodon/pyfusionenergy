@@ -21,9 +21,9 @@ ENTITY {
     order = "a-b-a",
     map_color = {r = 0.917, g = 0.996, b = 1},
     highlight = true,
-    minimum = 50000,
-    normal = 70000,
-    maximum = 12000,
+    minimum = 10000,
+    normal = 30000,
+    maximum = 40000,
     map_grid = false,
     minable = {
         hardness = 3.5,
@@ -42,7 +42,7 @@ ENTITY {
         richness_multiplier = 100,
         richness_multiplier_distance_bonus = 100,
         richness_base = 50000,
-        coverage = 0.02,
+        coverage = 0.008,
         peaks = {
             {
                 noise_layer = "volcanic-pipe",
