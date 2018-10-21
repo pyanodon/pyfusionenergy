@@ -21,9 +21,6 @@ ENTITY {
     order = "a-b-a",
     map_color = {r = 0.294, g = 0.45, b = 0.643},
     highlight = true,
-    minimum = 500,
-    normal = 1000,
-    maximum = 3000,
     minable = {
         hardness = 1,
         -- mining_particle = "molybdenum-ore-particle",
@@ -36,19 +33,16 @@ ENTITY {
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     autoplace = {
         control = "molybdenum-ore",
-        sharpness = 1,
+        sharpness = 15/17,
         richness_multiplier = 1500,
-        richness_multiplier_distance_bonus = 30,
-        richness_base = 500,
-        coverage = 0.006,
+        richness_multiplier_distance_bonus = 25,
+        richness_base = 10,
+        coverage = 0.0002,
         peaks = {
             {
                 noise_layer = "molybdenum-ore",
-                noise_octaves_difference = -1.5,
-                noise_persistence = 0.3,
-                starting_area_weight_optimal = 0,
-                starting_area_weight_range = 0,
-                starting_area_weight_max_range = 2
+                noise_octaves_difference = -0.85,
+                noise_persistence = 0.4,
             }
         }
     },
