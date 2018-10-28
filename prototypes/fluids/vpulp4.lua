@@ -6,7 +6,7 @@ RECIPE {
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "pregnant-solution", amount = 100},
-        {type = "item", name = "sodium-chlorate", amount = 100}
+        {type = "item", name = "sodium-chlorate", amount = 20}
     },
     results = {
         {type = "fluid", name = "vpulp4", amount = 100},

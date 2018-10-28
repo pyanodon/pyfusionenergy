@@ -195,7 +195,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "sodium-chlorate",
-    category = "chemistry", --bob electrolyzer
+    category = "chemistry", --electrolyzer
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -203,7 +203,7 @@ RECIPE {
         {type = "fluid", name = "water-saline", amount = 100} --bob salt
     },
     results = {
-        {type = "item", name = "sodium-chlorate", amount = 50}
+        {type = "item", name = "sodium-chlorate", amount = 5}
         --bob hydrogen
     },
     main_product = "sodium-chlorate",
