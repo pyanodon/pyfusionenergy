@@ -52,7 +52,7 @@ ENTITY {
         emissions = 0.01
     },
     energy_usage = "450kW",
-    ingredient_count = 4,
+    ingredient_count = 10,
     animation = {
         filename = "__pyfusionenergy__/graphics/entity/mixer/mixer.png",
         width = 246,
@@ -78,6 +78,14 @@ ENTITY {
             pipe_covers = DATA.Pipes.covers(true, true, true, true),
             base_level = 1,
             pipe_connections = {{type = "output", position = {2.0, -4.0}}}
+        },
+        --North3
+        {
+            production_type = "output",
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {-0.0, -0.95}, nil, nil),
+            pipe_covers = DATA.Pipes.covers(true, true, true, true),
+            base_level = 1,
+            pipe_connections = {{type = "output", position = {0.0, -4.0}}}
         },
         --South
         {
