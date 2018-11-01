@@ -308,7 +308,7 @@ RECIPE {
         {type = "item", name = "crushed-kimberlite", amount = 10}
     },
     results = {
-        {type = "item", name = "kimberlite-rejects", amount = 7},
+        {type = "item", name = "kimberlite-rejects", amount = 4},
         {type = "item", name = "kimberlite-grade2", amount = 5}
     },
     --main_product= "kimberlite-grade2",
@@ -328,7 +328,7 @@ RECIPE {
         {type = "item", name = "kimberlite-rejects", amount = 20}
     },
     results = {
-        {type = "item", name = "crushed-kimberlite", amount = 5},
+        {type = "item", name = "crushed-kimberlite", amount = 1},
         {type = "item", name = "gravel", amount = 1}
     },
     --main_product= "crushed-kimberlite",
