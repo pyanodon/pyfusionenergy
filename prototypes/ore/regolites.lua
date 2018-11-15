@@ -31,7 +31,6 @@ ENTITY {
         mining_time = 4,
         results = {
 			{type = "item", name = "regolite-rock", amount = 1},
-			{type = "item", name = "nexelit-ore", amount = 1, probability = 0.5},
         }
     },
     resource_patch_search_radius = 12,
