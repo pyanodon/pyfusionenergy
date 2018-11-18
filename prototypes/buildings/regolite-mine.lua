@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     ingredients = {
         {"soil-extractormk01", 2},
-        {"automated-factory", 1},
+        {"automated-factory-mk02", 1},
         {"iron-plate", 60}, --bobs tungsten-plate
         {"jaw-crusher", 1},
         {"nbfe-alloy", 20},
