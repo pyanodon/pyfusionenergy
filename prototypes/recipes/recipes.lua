@@ -264,7 +264,7 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "helium", amount = 10},
-        {type = "item", name = "steel-plate", amount = 50}, --bobs nickel-plate
+        {type = "item", name = "steel-plate", amount = 50},
         {type = "item", name = "fuelrod-mk01", amount = 2},
         {type = "item", name = "limestone", amount = 3},
         {type = "item", name = "sand-casting", amount = 2},
