@@ -899,7 +899,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "water", amount = 10},
-        {type = "fluid", name = "helium", amount = 5}
+        {type = "fluid", name = "helium", amount = 10}
     },
     main_product = "helium",
 }
