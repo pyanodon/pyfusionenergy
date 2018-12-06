@@ -8,7 +8,7 @@ RECIPE {
         {type = "item", name = "molybdenum-ore", amount = 10}
     },
     results = {
-        {type = "item", name = "crushed-molybdenite", amount = 10},
+        {type = "item", name = "crushed-molybdenite", amount = 5},
         {type = "item", name = "stone", amount = 2}
     },
     main_product = "crushed-molybdenite",
@@ -83,7 +83,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "molybdenum-oxide", amount = 5},
-        {type = "item", name = "sulfur", amount = 5}
+        {type = "item", name = "sulfur", amount = 1}
     },
     main_product = "molybdenum-oxide",
 }
