@@ -1243,7 +1243,7 @@ RECIPE {
         {type = "item", name = "blanket", amount = 1},
         {type = "item", name = "divertor", amount = 2},
         {type = "item", name = "wall-shield", amount = 5},
-        {type = "item", name = "sc-unit", amount = 20},
+        {type = "item", name = "sc-unit", amount = 4},
         {type = "fluid", name = "liquid-helium", amount = 30},
         {type = "fluid", name = "water", amount = 2000}
     },
@@ -1274,7 +1274,7 @@ RECIPE {
         {type = "item", name = "blanket", amount = 1},
         {type = "item", name = "divertor", amount = 3},
         {type = "item", name = "reinforced-wall-shield", amount = 5},
-        {type = "item", name = "sc-unit", amount = 20},
+        {type = "item", name = "sc-unit", amount = 4},
         {type = "fluid", name = "liquid-helium", amount = 35},
         {type = "fluid", name = "water", amount = 5000}
     },
@@ -1304,7 +1304,7 @@ RECIPE {
         {type = "item", name = "blanket", amount = 2},
         {type = "item", name = "divertor", amount = 2},
         {type = "item", name = "reinforced-wall-shield", amount = 5},
-        {type = "item", name = "sc-unit", amount = 20},
+        {type = "item", name = "sc-unit", amount = 4},
         {type = "fluid", name = "liquid-helium", amount = 30},
         {type = "fluid", name = "water", amount = 3500}
     },
