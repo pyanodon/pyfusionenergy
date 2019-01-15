@@ -411,7 +411,7 @@ RECIPE {
         {type = "item", name = "diamond-reject", amount = 8}
     },
     results = {
-        {type = "item", name = "pure-kimberlite-grade2", amount = 5},
+        {type = "item", name = "pure-kimberlite-grade2", amount = 2},
         {type = "item", name = "gravel", amount = 2}
     },
     --main_product= "pure-kimberlite-grade2",
