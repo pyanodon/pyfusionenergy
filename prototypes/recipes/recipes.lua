@@ -98,7 +98,7 @@ RECIPE {
         {type = "item", name = "molybdenum-oxide", amount = 5} --add hydrogen
     },
     results = {
-        {type = "item", name = "molybdenum-plate", amount = 1},
+        {type = "item", name = "molybdenum-plate", amount = 2},
         {type = "fluid", name = "water", amount = 10}
     },
     main_product = "molybdenum-plate",
