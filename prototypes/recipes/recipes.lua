@@ -1599,7 +1599,7 @@ RECIPE {
         {type = "item", name = "drill-head", amount = 3}
     },
     results = {
-        {type = "item", name = "molybdenum-ore", amount = 20}
+        {type = "item", name = "molybdenum-ore", amount = 15}
     },
     main_product = "molybdenum-ore",
     icon = "__pyfusionenergy__/graphics/icons/drilling-mo.png",
