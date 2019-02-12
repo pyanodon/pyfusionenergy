@@ -8,10 +8,6 @@ TECHNOLOGY {
     effects = {
         {
             type = "unlock-recipe",
-            recipe = "vacuum-pump"
-        },
-        {
-            type = "unlock-recipe",
             recipe = "vacuum"
         },
         {
