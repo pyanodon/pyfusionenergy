@@ -21,7 +21,7 @@ RECIPE {
     results = {
         {"vacuum-pump", 1}
     }
-}
+}:add_unlock("coal-processing-1")
 
 ITEM {
     type = "item",

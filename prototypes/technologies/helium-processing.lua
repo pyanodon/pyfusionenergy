@@ -8,10 +8,6 @@ TECHNOLOGY {
     effects = {
         {
             type = "unlock-recipe",
-            recipe = "pressured-air"
-        },
-        {
-            type = "unlock-recipe",
             recipe = "purified-air"
         },
         {
