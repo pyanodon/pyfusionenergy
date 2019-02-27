@@ -11,7 +11,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "liquid-pure-air", amount = 5},
-        {type = "fluid", name = "steam", amount = 100}
+        {type = "fluid", name = "steam", amount = 100, temperature = 60}
     },
     main_product = "liquid-pure-air",
     icon = "__pyfusionenergy__/graphics/icons/compress-cold-air.png",
