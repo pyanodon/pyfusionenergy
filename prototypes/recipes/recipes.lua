@@ -1615,12 +1615,12 @@ RECIPE {
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "fluid", name = "steam", amount = 500, temperature = 60},
+        {type = "fluid", name = "steam", amount = 1000, temperature = 60},
         {type = "fluid", name = "water", amount = 100},
-        {type = "item", name = "fuelrod-mk01", amount = 2},
+        {type = "item", name = "fuelrod-mk01", amount = 1},
     },
     results = {
-        {type = "fluid", name = "steam", amount = 500, temperature = 500},
+        {type = "fluid", name = "steam", amount = 1000, temperature = 500},
     },
     main_product= "steam",
     icon = "__pyfusionenergy__/graphics/icons/steam-heating.png",
