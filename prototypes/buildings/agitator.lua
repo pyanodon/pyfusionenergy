@@ -48,7 +48,7 @@ ITEM {
     name = "agitator",
     icon = "__pyfusionenergy__/graphics/icons/agitator.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-fusion-buildings",
     order = "a",
     place_result = "agitator",

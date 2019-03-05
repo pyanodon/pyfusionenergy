@@ -22,7 +22,7 @@ ITEM {
     name = "fusion-reactor-mk01",
     icon = "__pyfusionenergy__/graphics/icons/fusion-reactor-mk01.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-fusion-reactors",
     order = "a",
     place_result = "fusion-reactor-mk01",

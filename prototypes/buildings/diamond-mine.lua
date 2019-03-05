@@ -21,7 +21,7 @@ ITEM {
     name = "diamond-mine",
     icon = "__pyfusionenergy__/graphics/icons/diamond-mine.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-fusion-buildings",
     order = "a",
     place_result = "diamond-mine",

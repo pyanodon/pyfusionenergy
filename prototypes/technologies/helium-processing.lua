@@ -122,9 +122,9 @@ TECHNOLOGY {
     unit = {
         count = 40,
         ingredients = {
-            {"science-pack-1", 3},
-            {"science-pack-2", 2},
-            {"science-pack-3", 2},
+            {"automation-science-pack", 3},
+            {"logistic-science-pack", 2},
+            {"chemical-science-pack", 2},
         },
         time = 75
     }

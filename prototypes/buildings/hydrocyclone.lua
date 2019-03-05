@@ -20,7 +20,7 @@ ITEM {
     name = "hydrocyclone",
     icon = "__pyfusionenergy__/graphics/icons/hydrocyclone.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-fusion-buildings",
     order = "c",
     place_result = "hydrocyclone",
