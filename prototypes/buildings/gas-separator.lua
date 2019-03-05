@@ -21,7 +21,7 @@ ITEM {
     name = "gas-separator",
     icon = "__pyfusionenergy__/graphics/icons/gas-separator.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-fusion-buildings",
     order = "c",
     place_result = "gas-separator",
