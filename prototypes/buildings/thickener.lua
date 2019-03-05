@@ -29,7 +29,7 @@ ITEM {
     name = "thickener",
     icon = "__pyfusionenergy__/graphics/icons/thickener.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-fusion-buildings",
     order = "b",
     place_result = "thickener",

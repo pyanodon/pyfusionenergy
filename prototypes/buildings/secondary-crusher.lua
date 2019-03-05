@@ -20,7 +20,7 @@ ITEM {
     name = "secondary-crusher",
     icon = "__pyfusionenergy__/graphics/icons/secondary-crusher.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-fusion-buildings",
     order = "b",
     place_result = "secondary-crusher",

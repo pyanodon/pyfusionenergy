@@ -21,7 +21,7 @@ ITEM {
     name = "mo-mine",
     icon = "__pyfusionenergy__/graphics/icons/mo-mine.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-fusion-buildings",
     order = "a",
     place_result = "mo-mine",
