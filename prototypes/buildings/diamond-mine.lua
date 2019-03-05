@@ -47,7 +47,7 @@ ENTITY {
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     --crafting_categories = {"rare-earth"},
-    mining_speed = 1,
+    mining_speed = 2,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
