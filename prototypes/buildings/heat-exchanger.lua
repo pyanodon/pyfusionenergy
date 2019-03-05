@@ -21,7 +21,7 @@ ITEM {
     name = "py-heat-exchanger",
     icon = "__pyfusionenergy__/graphics/icons/heat-exchanger.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-fusion-reactors",
     order = "z",
     place_result = "py-heat-exchanger",

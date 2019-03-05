@@ -20,7 +20,7 @@ ITEM {
     name = "xyhiphoe-pool",
     icon = "__pyfusionenergy__/graphics/icons/xyhiphoe-pool.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-fusion-buildings",
     order = "b",
     place_result = "xyhiphoe-pool",

@@ -28,7 +28,7 @@ ITEM {
     name = "vacuum-pump",
     icon = "__pyfusionenergy__/graphics/icons/vacuum-pump.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-fusion-buildings",
     order = "c",
     place_result = "vacuum-pump",

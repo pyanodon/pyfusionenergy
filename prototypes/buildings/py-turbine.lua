@@ -17,7 +17,7 @@ ITEM {
     name = "py-turbine",
     icon = "__pyfusionenergy__/graphics/icons/py-turbine.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-fusion-reactors",
     order = "x",
     place_result = "py-turbine",

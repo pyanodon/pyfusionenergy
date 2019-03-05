@@ -76,7 +76,7 @@ ITEM {
     name = "jig",
     icon = "__pyfusionenergy__/graphics/icons/jig.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-fusion-buildings",
     order = "d",
     place_result = "jig",

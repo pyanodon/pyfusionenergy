@@ -1488,7 +1488,7 @@ RECIPE {
     energy_required = 5,
     ingredients = {
         {type = "item", name = "uranium-ore", amount = 50},
-        {type = "item", name = "science-pack-1", amount = 1},
+        {type = "item", name = "automation-science-pack", amount = 1},
         {type = "fluid", name = "boric-acid", amount = 100},
         {type = "fluid", name = "industrial-solvent", amount = 100},
         {type = "fluid", name = "aromatics", amount = 50}

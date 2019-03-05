@@ -31,7 +31,7 @@ ITEM {
     name = "nmf",
     icon = "__pyfusionenergy__/graphics/icons/nmf.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-fusion-buildings",
     order = "b",
     place_result = "nmf",

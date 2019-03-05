@@ -22,7 +22,7 @@ ITEM {
     name = "kmauts-enclosure",
     icon = "__pyfusionenergy__/graphics/icons/kmauts-enclosure.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-fusion-buildings",
     order = "d",
     place_result = "kmauts-enclosure",

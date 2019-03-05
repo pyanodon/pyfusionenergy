@@ -20,7 +20,7 @@ ITEM {
     name = "mixer",
     icon = "__pyfusionenergy__/graphics/icons/mixer.png",
 	icon_size = 32,
-    flags = {"goes-to-quickbar"},
+    flags = {},
     subgroup = "py-fusion-buildings",
     order = "g",
     place_result = "mixer",
