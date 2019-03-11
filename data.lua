@@ -1,4 +1,4 @@
-require("stdlib/data/data").create_data_globals()
+require("__stdlib__/stdlib/data/data").Util.create_data_globals()
 
 require("prototypes/item-groups")
 
@@ -82,7 +82,7 @@ require("prototypes/fluids/proton")
 require("prototypes/fluids/pressured-steam")
 require("prototypes/fluids/critical-steam")
 
-require("stdlib/core")
+require("__stdlib__/stdlib/core")
 
 require("prototypes/buildings/agitator")
 require("prototypes/buildings/thickener")
