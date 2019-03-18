@@ -46,7 +46,7 @@ ENTITY {
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"screener"},
-    crafting_speed = 1,
+    crafting_speed = 2,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
@@ -62,7 +62,7 @@ ENTITY {
                 height = 256,
                 line_length = 21,
                 frame_count = 150,
-                animation_speed = 0.3,
+                animation_speed = 0.2,
                 shift = {-2.032, -0.5}
             },
             {
@@ -71,7 +71,7 @@ ENTITY {
                 height = 256,
                 line_length = 21,
                 frame_count = 150,
-                animation_speed = 0.3,
+                animation_speed = 0.2,
                 shift = {0.968, -0.5}
             },
             {
@@ -80,7 +80,7 @@ ENTITY {
                 height = 256,
                 line_length = 21,
                 frame_count = 150,
-                animation_speed = 0.3,
+                animation_speed = 0.2,
                 shift = {3.032, -0.5}
             }
         }
