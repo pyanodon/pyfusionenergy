@@ -27,7 +27,6 @@ local recipes_list =
 	"sc-coil",
 	"sc-wire"
 	}
-	
 local Cat_list =
 	{
 	"agitator",
