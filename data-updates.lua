@@ -1,5 +1,5 @@
 require("__stdlib__/stdlib/data/data").Util.create_data_globals()
-
+local FUN = require("__pycoalprocessing__/functions/functions")
 
 
 ITEM("production-science-pack", "tool").icon = "__pyfusionenergy__/graphics/icons/production-science-pack.png"
@@ -15,3 +15,45 @@ TECHNOLOGY('speed-module-3'):remove_prereq('production-science-pack'):add_prereq
 TECHNOLOGY('productivity-module-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
 TECHNOLOGY('effectivity-module-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
 TECHNOLOGY('effect-transmission'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
+
+local recipes_list =
+	{
+	"molybdenum-plate",
+	"sodium-chlorate",
+	"kmauts-ration",
+	"control-unit",
+	"divertor",
+	"lead-container",
+	"sc-coil",
+	"sc-wire"
+	}
+	
+local Cat_list =
+	{
+	"agitator",
+	"thickener",
+	"vacuum",
+	"plankton",
+	"xyhiphoe",
+	"hydrocyclone",
+	"mixer",
+	"screener",
+	"secondary-crusher",
+	"pan",
+	"jig",
+	"grease",
+	"compressor",
+	"genlab",
+	"kmauts",
+	"bio-reactor",
+	"gas-separator",
+	"nmf",
+	"fusion-01",
+	"fusion-02",
+	"heat-exchanger"
+	}
+
+--adding to module limitation list
+FUN.recipe_add_prod(recipes_list,Cat_list)
+FUN.add_buildings(recipes_list)
+FUN.productivity(recipes_list)
