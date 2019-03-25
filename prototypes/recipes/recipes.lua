@@ -112,7 +112,7 @@ RECIPE {
     energy_required = 15,
     ingredients = {
         {type = "fluid", name = "water", amount = 500},
-        {type = "item", name = "crushed-iron", amount = 15} --updated-bob crushed-tin
+        {type = "item", name = "iron-ore", amount = 15} 
     },
     results = {
         {type = "fluid", name = "phytoplankton", amount = 10}
