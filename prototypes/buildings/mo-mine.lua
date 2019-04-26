@@ -6,7 +6,7 @@ RECIPE {
     ingredients = {
         {"laser-turret", 2},
         {"electric-mining-drill", 3}, --bobs titanium plate
-        {"electric-engine-unit", 2},
+        {"engine-unit", 4},
         {"nbfe-alloy", 30},
         {"steel-plate", 100},
         {"electronic-circuit", 30} --updated-bob basic-electronic-circuit-board
