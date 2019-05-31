@@ -112,7 +112,7 @@ RECIPE {
     energy_required = 15,
     ingredients = {
         {type = "fluid", name = "water", amount = 500},
-        {type = "item", name = "iron-ore", amount = 15}
+        {type = "item", name = "iron-ore", amount = 8}
     },
     results = {
         {type = "fluid", name = "phytoplankton", amount = 10}
