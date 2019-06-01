@@ -92,7 +92,17 @@ ENTITY {
             base_area = 10,
             base_level = -1,
             pipe_connections = {
-                {type = "input", position = {0.0, -4.0}}
+                {type = "input", position = {1.0, -4.0}}
+            }
+        },
+        {
+            production_type = "input",
+            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {0.0, -0.93}, {0.5, 0.0}, {-0.5, 0.0}),
+            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            base_area = 10,
+            base_level = -1,
+            pipe_connections = {
+                {type = "input", position = {-1.0, -4.0}}
             }
         },
         off_when_no_fluid_recipe = true
