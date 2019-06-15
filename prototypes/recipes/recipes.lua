@@ -1024,7 +1024,7 @@ RECIPE {
     ingredients = {
         {type = "item", name = "sc-coil", amount = 1},
         {type = "item", name = "cladded-core", amount = 3},
-        {type = "item", name = "kevlar", amount = 10}
+        {type = "item", name = "kevlar", amount = 8}
     },
     results = {
         {type = "item", name = "magnetic-core", amount = 1}
