@@ -610,7 +610,7 @@ RECIPE {
 }:add_unlock("helium-processing")
 
 else
-    
+
 RECIPE {
     type = "recipe",
     name = "cool-air",
