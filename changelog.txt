@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.6
+  Balances:
+    - Balanced cold clean air.
+    - Balanced purified air.
+    - Balanced nitrogen when pyRO is active.
+---------------------------------------------------------------------------------------------------
 Version: 1.2.5
   Balances:
     - reduced kevlar in magnetic core.

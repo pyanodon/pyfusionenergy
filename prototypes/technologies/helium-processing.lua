@@ -12,10 +12,6 @@ TECHNOLOGY {
         },
         {
             type = "unlock-recipe",
-            recipe = "cool-air"
-        },
-        {
-            type = "unlock-recipe",
             recipe = "cold-clean-air"
         },
         {
