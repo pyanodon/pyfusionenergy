@@ -5,11 +5,11 @@ RECIPE {
     enabled = false,
     energy_required = 1,
     ingredients = {
-        {type = "fluid", name = "pressured-air", amount = 20},
-        {type = "item", name = "active-carbon", amount = 2}
+        {type = "fluid", name = "pressured-air", amount = 100},
+        {type = "item", name = "active-carbon", amount = 3}
     },
     results = {
-        {type = "fluid", name = "purified-air", amount = 10}
+        {type = "fluid", name = "purified-air", amount = 50}
     }
 }
 
