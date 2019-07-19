@@ -1687,3 +1687,21 @@ RECIPE {
     subgroup = "py-items",
     order = "c9-1"
 }:add_unlock("vanadium-processing")
+
+RECIPE {
+    type = "recipe",
+    name = "acidgas-2",
+    category = "compressor",
+    enabled = false,
+    energy_required = 2,
+    ingredients = {
+        {type = "fluid", name = "flue-gas", amount = 2000},
+        {type = "fluid", name = "water", amount = 600},
+        {type = "fluid", name = "gasoline", amount = 5}
+    },
+    results = {
+        {type = "fluid", name = "acidgas", amount = 30},
+        {type = "fluid", name = "steam", amount = 600, temperature = 60}
+    },
+    main_product = "acidgas",
+}:add_unlock("regolite-mining")
