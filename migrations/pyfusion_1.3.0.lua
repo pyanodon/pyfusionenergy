@@ -1,9 +1,7 @@
-for _, force in pairs(game.forces) do
-    for _, tech in pairs(force.technologies) do
-        for _, unlock in pairs(tech.effects or {}) do
-            if unlock.type == 'unlock-recipe' then
-                force.recipes[unlock.recipe].enabled = tech.researched
-            end
-        end
-    end
+game.reload_script()
+
+for _,player in pairs(game.players) do
+   player.force.reset_recipes()
+   player.force.reset_technologies()
+   player.force.reset_technology_effects()
 end
