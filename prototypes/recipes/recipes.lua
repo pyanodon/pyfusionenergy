@@ -639,10 +639,8 @@ RECIPE {
         {type = "fluid", name = "liquid-pure-air", amount = 5}
     },
     results = {
-        {type = "fluid", name = "dry-gas-stream", amount = 1},
+        {type = "fluid", name = "dry-gas-stream", probability = 0.2},
         {type = "fluid", name = "helium", amount = 1, probability = 0.4}
-        --add nitrogen
-        --add oxygen
     },
     main_product= "dry-gas-stream",
 }
@@ -921,7 +919,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "water", amount = 10},
-        {type = "fluid", name = "helium", amount = 10}
+        {type = "fluid", name = "helium", amount = 50}
     },
     main_product = "helium",
 }
