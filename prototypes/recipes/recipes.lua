@@ -639,7 +639,7 @@ RECIPE {
         {type = "fluid", name = "liquid-pure-air", amount = 5}
     },
     results = {
-        {type = "fluid", name = "dry-gas-stream", probability = 0.2},
+        {type = "fluid", name = "dry-gas-stream", amount = 1, probability = 0.2},
         {type = "fluid", name = "helium", amount = 1, probability = 0.4}
     },
     main_product= "dry-gas-stream",
