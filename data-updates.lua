@@ -15,6 +15,8 @@ TECHNOLOGY('speed-module-3'):remove_prereq('production-science-pack'):add_prereq
 TECHNOLOGY('productivity-module-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
 TECHNOLOGY('effectivity-module-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
 TECHNOLOGY('effect-transmission'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
+TECHNOLOGY('laser-turrets'):remove_pack('chemical-science-pack')
+TECHNOLOGY('laser'):remove_pack('chemical-science-pack')
 
 local recipes_list =
 	{
