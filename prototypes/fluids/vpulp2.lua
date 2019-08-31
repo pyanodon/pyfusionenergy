@@ -6,7 +6,7 @@ RECIPE {
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "vpulp1", amount = 200},
-        {type = "item", name = "crushed-iron", amount = 50}
+        {type = "item", name = "crushed-iron", amount = 5}
     },
     results = {
         {type = "fluid", name = "vpulp2", amount = 100}
