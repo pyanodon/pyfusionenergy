@@ -125,11 +125,11 @@ RECIPE {
     name = "xyhiphoe-blood",
     category = "xyhiphoe",
     enabled = false,
-    energy_required = 15,
+    energy_required = 12,
     ingredients = {
         {type = "fluid", name = "pressured-water", amount = 500},
         {type = "fluid", name = "phytoplankton", amount = 30},
-        {type = "item", name = "tailings-dust", amount = 50}
+        {type = "item", name = "tailings-dust", amount = 30}
     },
     results = {
         {type = "fluid", name = "xyhiphoe-blood", amount = 20},
