@@ -63,7 +63,7 @@ ENTITY {
                 height = 256,
                 line_length = 21,
                 frame_count = 150,
-                animation_speed = 0.2,
+                animation_speed = 0.4,
                 shift = {-2.032, -0.5}
             },
             {
@@ -72,7 +72,7 @@ ENTITY {
                 height = 256,
                 line_length = 21,
                 frame_count = 150,
-                animation_speed = 0.2,
+                animation_speed = 0.4,
                 shift = {0.968, -0.5}
             },
             {
@@ -81,7 +81,7 @@ ENTITY {
                 height = 256,
                 line_length = 21,
                 frame_count = 150,
-                animation_speed = 0.2,
+                animation_speed = 0.4,
                 shift = {3.032, -0.5}
             }
         }
