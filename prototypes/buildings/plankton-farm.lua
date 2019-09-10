@@ -33,7 +33,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/plankton-farm.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "plankton-farm"},
+    minable = {mining_time = 0.5, result = "plankton-farm"},
     fast_replaceable_group = "plankton-farm",
     max_health = 700,
     corpse = "big-remnants",

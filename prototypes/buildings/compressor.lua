@@ -33,7 +33,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/compressor.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "compressor"},
+    minable = {mining_time = 0.5, result = "compressor"},
     fast_replaceable_group = "compressor",
     max_health = 400,
     corpse = "big-remnants",

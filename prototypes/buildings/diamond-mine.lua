@@ -34,7 +34,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/diamond-mine.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "diamond-mine"},
+    minable = {mining_time = 0.5, result = "diamond-mine"},
     fast_replaceable_group = "diamond-mine",
     max_health = 600,
     resource_categories = {"volcanic-pipe"},

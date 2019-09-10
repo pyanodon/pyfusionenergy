@@ -44,7 +44,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/genlab.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "genlab"},
+    minable = {mining_time = 0.5, result = "genlab"},
     fast_replaceable_group = "genlab",
     max_health = 400,
     corpse = "big-remnants",

@@ -35,7 +35,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/fusion-reactor-mk01.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "fusion-reactor-mk01"},
+    minable = {mining_time = 0.5, result = "fusion-reactor-mk01"},
     fast_replaceable_group = "fusion-reactor-mk01",
     max_health = 300,
     corpse = "big-remnants",

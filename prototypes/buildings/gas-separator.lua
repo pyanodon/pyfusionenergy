@@ -34,7 +34,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/gas-separator.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "gas-separator"},
+    minable = {mining_time = 0.5, result = "gas-separator"},
     fast_replaceable_group = "gas-separator",
     max_health = 400,
     corpse = "big-remnants",

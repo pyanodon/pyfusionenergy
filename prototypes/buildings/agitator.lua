@@ -61,7 +61,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/agitator.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "agitator"},
+    minable = {mining_time = 0.5, result = "agitator"},
     fast_replaceable_group = "agitator",
     max_health = 700,
     corpse = "big-remnants",
