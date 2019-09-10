@@ -1,5 +1,9 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.3.6
+Version: 1.3.8
+  Changes:
+    - Cosmetic updates.
+---------------------------------------------------------------------------------------------------
+Version: 1.3.7
   Changes:
     - Cosmetic updates.
     - Reduced tailings dust in some vanadium recipes.
