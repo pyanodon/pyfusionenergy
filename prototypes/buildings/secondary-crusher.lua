@@ -33,7 +33,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/secondary-crusher.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "secondary-crusher"},
+    minable = {mining_time = 0.5, result = "secondary-crusher"},
     fast_replaceable_group = "secondary-crusher",
     max_health = 700,
     corpse = "big-remnants",

@@ -30,7 +30,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/py-turbine.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "py-turbine"},
+    minable = {mining_time = 0.5, result = "py-turbine"},
     max_health = 500,
     corpse = "big-remnants",
     effectivity = 1.5,

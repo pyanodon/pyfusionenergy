@@ -42,7 +42,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/thickener.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "thickener"},
+    minable = {mining_time = 0.5, result = "thickener"},
     fast_replaceable_group = "thickener",
     max_health = 700,
     corpse = "big-remnants",

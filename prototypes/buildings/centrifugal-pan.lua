@@ -88,7 +88,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/centrifugal-pan.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "centrifugal-pan"},
+    minable = {mining_time = 0.5, result = "centrifugal-pan"},
     fast_replaceable_group = "centrifugal-pan",
     max_health = 300,
     corpse = "big-remnants",

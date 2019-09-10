@@ -34,7 +34,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/bio-reactor.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "bio-reactor"},
+    minable = {mining_time = 0.5, result = "bio-reactor"},
     fast_replaceable_group = "bio-reactor",
     max_health = 400,
     corpse = "big-remnants",

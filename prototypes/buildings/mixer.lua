@@ -33,7 +33,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/mixer.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "mixer"},
+    minable = {mining_time = 0.5, result = "mixer"},
     fast_replaceable_group = "mixer",
     max_health = 400,
     corpse = "big-remnants",

@@ -34,7 +34,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/mo-mine.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "mo-mine"},
+    minable = {mining_time = 0.5, result = "mo-mine"},
     fast_replaceable_group = "mo-mine",
     max_health = 600,
     resource_categories = {"molybdenum"},

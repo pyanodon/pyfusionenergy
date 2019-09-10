@@ -89,7 +89,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/jig.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "jig"},
+    minable = {mining_time = 0.5, result = "jig"},
     fast_replaceable_group = "jig",
     max_health = 300,
     corpse = "big-remnants",

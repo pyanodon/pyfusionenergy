@@ -34,7 +34,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/heat-exchanger.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "py-heat-exchanger"},
+    minable = {mining_time = 0.5, result = "py-heat-exchanger"},
     fast_replaceable_group = "py-heat-exchanger",
     max_health = 400,
     corpse = "big-remnants",

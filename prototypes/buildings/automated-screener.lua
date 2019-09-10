@@ -34,7 +34,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/automated-screener.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "automated-screener"},
+    minable = {mining_time = 0.5, result = "automated-screener"},
     fast_replaceable_group = "automated-screener",
     max_health = 700,
     corpse = "big-remnants",

@@ -43,7 +43,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/grease-table.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "grease-table"},
+    minable = {mining_time = 0.5, result = "grease-table"},
     fast_replaceable_group = "grease-table",
     max_health = 700,
     corpse = "big-remnants",

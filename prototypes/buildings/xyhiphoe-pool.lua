@@ -33,7 +33,7 @@ ENTITY {
     icon = "__pyfusionenergy__/graphics/icons/xyhiphoe-pool.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 1, result = "xyhiphoe-pool"},
+    minable = {mining_time = 0.5, result = "xyhiphoe-pool"},
     fast_replaceable_group = "xyhiphoe-pool",
     max_health = 700,
     corpse = "big-remnants",
