@@ -303,7 +303,7 @@ RECIPE {
     name = "screening-kimberlite",
     category = "screener",
     enabled = false,
-    energy_required = 10,
+    energy_required = 5,
     ingredients = {
         {type = "item", name = "crushed-kimberlite", amount = 10}
     },
@@ -366,7 +366,7 @@ RECIPE {
     name = "pure-kimberlite-recrushing",
     category = "secondary-crusher",
     enabled = false,
-    energy_required = 15,
+    energy_required = 5,
     ingredients = {
         {type = "item", name = "pure-kimberlite-grade2", amount = 3}
     },
@@ -386,7 +386,7 @@ RECIPE {
     name = "screening-kimberlite-residue",
     category = "screener",
     enabled = false,
-    energy_required = 15,
+    energy_required = 10,
     ingredients = {
         {type = "item", name = "kimberlite-residue", amount = 10}
     },
@@ -446,7 +446,7 @@ RECIPE {
     name = "rejects-separation",
     category = "solid-separator",
     enabled = false,
-    energy_required = 1.5,
+    energy_required = 2,
     ingredients = {
         {type = "item", name = "processed-rejects", amount = 20}
     },
@@ -467,7 +467,7 @@ RECIPE {
     name = "jig-separation",
     category = "fluid-separator",
     enabled = false,
-    energy_required = 20,
+    energy_required = 10,
     ingredients = {
         {type = "fluid", name = "jig-concentrate", amount = 300}
     },
@@ -488,7 +488,7 @@ RECIPE {
     name = "greasing-1",
     category = "grease",
     enabled = false,
-    energy_required = 10,
+    energy_required = 3,
     ingredients = {
         {type = "fluid", name = "jig-grade1", amount = 50},
         {type = "fluid", name = "slacked-lime", amount = 100},
@@ -510,7 +510,7 @@ RECIPE {
     name = "greasing-2",
     category = "grease",
     enabled = false,
-    energy_required = 10,
+    energy_required = 3,
     ingredients = {
         {type = "fluid", name = "jig-grade2", amount = 50},
         {type = "fluid", name = "tar", amount = 100},
@@ -532,7 +532,7 @@ RECIPE {
     name = "greasing-3",
     category = "grease",
     enabled = false,
-    energy_required = 10,
+    energy_required = 3,
     ingredients = {
         {type = "fluid", name = "jig-grade3", amount = 50},
         {type = "fluid", name = "organic-solvent", amount = 100},
