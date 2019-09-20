@@ -580,7 +580,7 @@ RECIPE {
         {type = "item", name = "washed-diamond", amount = 40}
     },
     results = {
-        {type = "item", name = "diamond", amount = 10},
+        {type = "item", name = "diamond", amount = 20},
         {type = "item", name = "kimberlite-residue", amount = 10}
     },
     --main_product= "crude",
