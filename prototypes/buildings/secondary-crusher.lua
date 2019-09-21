@@ -21,7 +21,7 @@ ITEM {
     icon = "__pyfusionenergy__/graphics/icons/secondary-crusher.png",
 	icon_size = 32,
     flags = {},
-    subgroup = "py-fusion-buildings",
+    subgroup = "py-fusion-buildings-mk01",
     order = "b",
     place_result = "secondary-crusher",
     stack_size = 10

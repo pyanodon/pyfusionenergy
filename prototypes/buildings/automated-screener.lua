@@ -19,10 +19,10 @@ RECIPE {
 ITEM {
     type = "item",
     name = "automated-screener",
-    icon = "__pyfusionenergy__/graphics/icons/automated-screener.png",
-	icon_size = 32,
+    icon = "__pyfusionenergy__/graphics/icons/automated-screener-mk01.png",
+	icon_size = 64,
     flags = {},
-    subgroup = "py-fusion-buildings",
+    subgroup = "py-fusion-buildings-mk01",
     order = "d",
     place_result = "automated-screener",
     stack_size = 10
@@ -31,8 +31,8 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "automated-screener",
-    icon = "__pyfusionenergy__/graphics/icons/automated-screener.png",
-	icon_size = 32,
+    icon = "__pyfusionenergy__/graphics/icons/automated-screener-mk01.png",
+	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "automated-screener"},
     fast_replaceable_group = "automated-screener",

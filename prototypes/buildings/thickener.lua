@@ -30,7 +30,7 @@ ITEM {
     icon = "__pyfusionenergy__/graphics/icons/thickener.png",
 	icon_size = 32,
     flags = {},
-    subgroup = "py-fusion-buildings",
+    subgroup = "py-fusion-buildings-mk01",
     order = "b",
     place_result = "thickener",
     stack_size = 10
