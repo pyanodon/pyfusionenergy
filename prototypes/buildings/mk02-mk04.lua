@@ -20,7 +20,7 @@ if settings.startup['add-tiers'].value and mods['pyrawores'] then
 		"thickener",
 		"vacuum-pump",
 		"xyhiphoe-pool",
-		}	
+		}
 
 	for _, mach in pairs(fusionmachines) do
 
