@@ -32,7 +32,7 @@ ITEM {
     icon = "__pyfusionenergy__/graphics/icons/genlab.png",
 	icon_size = 32,
     flags = {},
-    subgroup = "py-fusion-buildings",
+    subgroup = "py-fusion-buildings-mk01",
     order = "d",
     place_result = "genlab",
     stack_size = 10

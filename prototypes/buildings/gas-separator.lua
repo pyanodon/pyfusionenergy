@@ -22,7 +22,7 @@ ITEM {
     icon = "__pyfusionenergy__/graphics/icons/gas-separator.png",
 	icon_size = 32,
     flags = {},
-    subgroup = "py-fusion-buildings",
+    subgroup = "py-fusion-buildings-mk01",
     order = "c",
     place_result = "gas-separator",
     stack_size = 10

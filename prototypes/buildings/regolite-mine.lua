@@ -22,7 +22,7 @@ ITEM {
     icon = "__pyfusionenergy__/graphics/icons/regolite-mine.png",
 	icon_size = 32,
     flags = {},
-    subgroup = "py-fusion-buildings",
+    subgroup = "py-fusion-buildings-mk01",
     order = "a",
     place_result = "regolite-mine",
     stack_size = 10
