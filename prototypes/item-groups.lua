@@ -9,9 +9,27 @@ data:extend {
     },
     {
         type = "item-subgroup",
-        name = "py-fusion-buildings",
+        name = "py-fusion-buildings-mk01",
         group = "fusion-energy",
-        order = "a1"
+        order = "a-a"
+    },
+    {
+        type = "item-subgroup",
+        name = "py-fusion-buildings-mk02",
+        group = "fusion-energy",
+        order = "a-b"
+    },
+    {
+        type = "item-subgroup",
+        name = "py-fusion-buildings-mk03",
+        group = "fusion-energy",
+        order = "a-c"
+    },
+    {
+        type = "item-subgroup",
+        name = "py-fusion-buildings-mk04",
+        group = "fusion-energy",
+        order = "a-d"
     },
     {
         type = "item-subgroup",
