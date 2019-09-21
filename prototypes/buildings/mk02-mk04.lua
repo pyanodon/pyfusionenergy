@@ -1,5 +1,3 @@
-
-
 if settings.startup['add-tiers'].value and mods['pyrawores'] then
 
 	local fusionmachines =
@@ -22,11 +20,10 @@ if settings.startup['add-tiers'].value and mods['pyrawores'] then
 		"thickener",
 		"vacuum-pump",
 		"xyhiphoe-pool",
-		}
-	
-	
-	for m, mach in pairs(fusionmachines) do
-	
+		}	
+
+	for _, mach in pairs(fusionmachines) do
+
 		log(mach)
 
 		RECIPE {
@@ -90,7 +87,7 @@ if settings.startup['add-tiers'].value and mods['pyrawores'] then
 		working_sound = data.raw['assembling-machine'][mach].working_sound,
 		localised_name = mach .. ' MK02'
 	}
-	
+
 	RECIPE {
 		type = "recipe",
 		name = mach .. '-mk03',
@@ -120,7 +117,7 @@ if settings.startup['add-tiers'].value and mods['pyrawores'] then
 		stack_size = 10,
 		localised_name = mach .. ' MK03'
 	}
-	
+
 	ENTITY {
 		type = "assembling-machine",
 		name = mach .. '-mk03',
@@ -150,7 +147,7 @@ if settings.startup['add-tiers'].value and mods['pyrawores'] then
 		working_sound = data.raw['assembling-machine'][mach].working_sound,
 		localised_name = mach .. ' MK03'
 	}
-	
+
 	RECIPE {
 		type = "recipe",
 		name = mach .. '-mk04',
@@ -179,7 +176,7 @@ if settings.startup['add-tiers'].value and mods['pyrawores'] then
 		stack_size = 10,
 		localised_name = mach .. ' MK04'
 	}
-	
+
 	ENTITY {
 		type = "assembling-machine",
 		name = mach .. '-mk04',
@@ -209,7 +206,5 @@ if settings.startup['add-tiers'].value and mods['pyrawores'] then
 		working_sound = data.raw['assembling-machine'][mach].working_sound,
 		localised_name = mach .. ' MK04'
 	}
-		
 	end
-	
 end
