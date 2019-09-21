@@ -21,7 +21,7 @@ ITEM {
     icon = "__pyfusionenergy__/graphics/icons/hydrocyclone.png",
 	icon_size = 32,
     flags = {},
-    subgroup = "py-fusion-buildings",
+    subgroup = "py-fusion-buildings-mk01",
     order = "c",
     place_result = "hydrocyclone",
     stack_size = 10

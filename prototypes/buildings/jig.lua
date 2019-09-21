@@ -77,7 +77,7 @@ ITEM {
     icon = "__pyfusionenergy__/graphics/icons/jig.png",
 	icon_size = 32,
     flags = {},
-    subgroup = "py-fusion-buildings",
+    subgroup = "py-fusion-buildings-mk01",
     order = "d",
     place_result = "jig",
     stack_size = 5

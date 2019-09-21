@@ -31,7 +31,7 @@ ITEM {
     icon = "__pyfusionenergy__/graphics/icons/grease-table.png",
 	icon_size = 32,
     flags = {},
-    subgroup = "py-fusion-buildings",
+    subgroup = "py-fusion-buildings-mk01",
     order = "e",
     place_result = "grease-table",
     stack_size = 10
