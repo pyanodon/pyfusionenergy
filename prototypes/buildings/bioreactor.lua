@@ -22,7 +22,7 @@ ITEM {
     icon = "__pyfusionenergy__/graphics/icons/bio-reactor.png",
 	icon_size = 32,
     flags = {},
-    subgroup = "py-fusion-buildings-mk01",
+    subgroup = "py-fusion-buildings-miners",
     order = "d",
     place_result = "bio-reactor",
     stack_size = 10

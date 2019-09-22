@@ -21,7 +21,7 @@ ITEM {
     icon = "__pyfusionenergy__/graphics/icons/plankton-farm.png",
 	icon_size = 32,
     flags = {},
-    subgroup = "py-fusion-buildings-mk01",
+    subgroup = "py-fusion-buildings-miners",
     order = "b",
     place_result = "plankton-farm",
     stack_size = 10
