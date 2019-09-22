@@ -56,19 +56,19 @@ TECHNOLOGY {
         },
         {
             type = "unlock-recipe",
-            recipe = "secondary-crusher"
+            recipe = "secondary-crusher-mk01"
         },
         {
             type = "unlock-recipe",
-            recipe = "grease-table"
+            recipe = "grease-table-mk01"
         },
         {
             type = "unlock-recipe",
-            recipe = "centrifugal-pan"
+            recipe = "centrifugal-pan-mk01"
         },
         {
             type = "unlock-recipe",
-            recipe = "jig"
+            recipe = "jig-mk01"
         },
         {
             type = "unlock-recipe",

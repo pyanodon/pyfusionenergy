@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     ingredients = {
         {"fusion-reactor-mk01", 1},
-        {"mixer", 1},
+        {"mixer-mk02", 1},
         {"advanced-circuit", 50},
         {"niobium-plate", 100},
         {"super-alloy", 50}

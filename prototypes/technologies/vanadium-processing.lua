@@ -12,7 +12,7 @@ TECHNOLOGY {
         },
         {
             type = "unlock-recipe",
-            recipe = "xyhiphoe-pool"
+            recipe = "xyhiphoe-pool-mk01"
         },
         {
             type = "unlock-recipe",

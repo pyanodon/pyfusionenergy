@@ -8,19 +8,19 @@ TECHNOLOGY {
     effects = {
         {
             type = "unlock-recipe",
-            recipe = "agitator"
+            recipe = "agitator-mk01"
         },
         {
             type = "unlock-recipe",
-            recipe = "thickener"
+            recipe = "thickener-mk01"
         },
         {
             type = "unlock-recipe",
-            recipe = "hydrocyclone"
+            recipe = "hydrocyclone-mk01"
         },
         {
             type = "unlock-recipe",
-            recipe = "mixer"
+            recipe = "mixer-mk01"
         },
         {
             type = "unlock-recipe",
@@ -32,11 +32,11 @@ TECHNOLOGY {
         },
         {
             type = "unlock-recipe",
-            recipe = "automated-screener"
+            recipe = "automated-screener-mk01"
         },
         {
             type = "unlock-recipe",
-            recipe = "nmf"
+            recipe = "nmf-mk01"
         },
         {
             type = "unlock-recipe",

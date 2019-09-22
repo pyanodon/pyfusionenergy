@@ -12,7 +12,7 @@ TECHNOLOGY {
         },
         {
             type = "unlock-recipe",
-            recipe = "genlab"
+            recipe = "genlab-mk01"
         },
         {
             type = "unlock-recipe",
