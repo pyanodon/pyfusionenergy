@@ -10,7 +10,7 @@ local pipes = {
 RECIPE {
     type = "recipe",
     name = "vacuum-pump-mk01",
-    energy_required = 5,
+    energy_required = 1,
     enabled = false,
     ingredients = {
         {"iron-plate", 20},
