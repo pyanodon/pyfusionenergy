@@ -3,6 +3,7 @@ Version: 1.4.3
   Changes:
     - Cosmetics
     - Fixed missing buildings
+    - Added missing recipe and entity to migration script
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.2
   Changes:
