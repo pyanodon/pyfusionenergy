@@ -99,7 +99,7 @@ ENTITY {
 			line_length = 10,
 			animation_speed = 1,
 			shift = {0.1, -0.0},
-			tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
+			tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0},
 			}
 		}
     },
