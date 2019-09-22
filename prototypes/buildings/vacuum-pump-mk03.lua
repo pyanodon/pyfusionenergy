@@ -82,6 +82,7 @@ ENTITY {
         frame_count = 20,
         line_length = 5,
         animation_speed = 1,
+        tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0},
         shift = {0.187, -0.656}
 		}
 		}
