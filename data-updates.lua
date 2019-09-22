@@ -1,7 +1,7 @@
 require("__stdlib__/stdlib/data/data").Util.create_data_globals()
 local FUN = require("__pycoalprocessing__/prototypes/functions/functions")
 
-require('prototypes/buildings/mk02-mk04')
+--require('prototypes/buildings/mk02-mk04')
 
 ITEM("production-science-pack", "tool").icon = "__pyfusionenergy__/graphics/icons/production-science-pack.png"
 

@@ -31,6 +31,12 @@ data:extend {
         group = "fusion-energy",
         order = "a-d"
     },
+	{
+        type = "item-subgroup",
+        name = "py-fusion-buildings-miners",
+        group = "fusion-energy",
+        order = "a-e"
+    },
     {
         type = "item-subgroup",
         name = "py-fusion-items",

@@ -22,7 +22,7 @@ ITEM {
     icon = "__pyfusionenergy__/graphics/icons/mo-mine.png",
 	icon_size = 32,
     flags = {},
-    subgroup = "py-fusion-buildings-mk01",
+    subgroup = "py-fusion-buildings-miners",
     order = "a",
     place_result = "mo-mine",
     stack_size = 10

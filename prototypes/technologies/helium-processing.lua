@@ -44,7 +44,7 @@ TECHNOLOGY {
         },
         {
             type = "unlock-recipe",
-            recipe = "kmauts-enclosure"
+            recipe = "kmauts-enclosure-mk01"
         },
         {
             type = "unlock-recipe",
@@ -52,7 +52,7 @@ TECHNOLOGY {
         },
         {
             type = "unlock-recipe",
-            recipe = "gas-separator"
+            recipe = "gas-separator-mk01"
         },
         {
             type = "unlock-recipe",

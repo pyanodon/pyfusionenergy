@@ -12,7 +12,7 @@ TECHNOLOGY {
         },
         {
             type = "unlock-recipe",
-            recipe = "compressor"
+            recipe = "compressor-mk01"
         },
         {
             type = "unlock-recipe",

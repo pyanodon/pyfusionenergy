@@ -1,23 +1,23 @@
 if settings.startup['add-tiers'].value and mods['pyrawores'] then
     local fusionmachines = {
-        --'agitator',
+        'agitator',
         'automated-screener',
         --'bio-reactor',
-        --'centrifugal-pan',
-        --'compressor',
-       -- 'gas-separator',
-        --'genlab',
-        --'grease-table',
-       -- 'hydrocyclone',
-        --'jig',
-       -- 'kmauts-enclosure',
-       -- 'mixer',
-        --'nmf',
+        'centrifugal-pan',
+        'compressor',
+		'gas-separator',
+        'genlab',
+        'grease-table',
+        'hydrocyclone',
+        'jig',
+        'kmauts-enclosure',
+        'mixer',
+        'nmf',
         --'plankton-farm',
-        --'secondary-crusher',
-        --'thickener',
+        'secondary-crusher',
+        'thickener',
         --'vacuum-pump',
-        --'xyhiphoe-pool'
+        'xyhiphoe-pool'
     }
 
     for _, mach in pairs(fusionmachines) do

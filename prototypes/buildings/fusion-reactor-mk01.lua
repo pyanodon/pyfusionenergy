@@ -4,8 +4,8 @@ RECIPE {
     energy_required = 15,
     enabled = false,
     ingredients = {
-        {"vacuum-pump", 5},
-        {"mixer", 1},
+        {"vacuum-pump-mk01", 5},
+        {"mixer-mk01", 1},
         {"advanced-circuit", 50},
         {"steel-plate", 120},
         {"gasturbinemk03", 1},

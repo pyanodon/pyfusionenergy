@@ -4,7 +4,7 @@ RECIPE {
     energy_required = 10,
     enabled = false,
     ingredients = {
-        {"mixer", 1},
+        {"mixer-mk01", 1},
         {"gasturbinemk02", 1},
         {"chemical-plant", 2},
         {"super-alloy", 35},
