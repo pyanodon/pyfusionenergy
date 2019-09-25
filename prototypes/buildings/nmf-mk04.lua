@@ -14,9 +14,9 @@ RECIPE {
     enabled = false,
     ingredients = {
                 {'nmf-mk03', 1},
-                {'super-steel', 30},
-                {'low-density-structure', 15},
-                {'nbfe-alloy', 20}
+                --{'super-steel', 30},
+                --{'low-density-structure', 15},
+                --{'nbfe-alloy', 20}
             },
     results = {
         {"nmf-mk04", 1}

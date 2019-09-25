@@ -14,9 +14,9 @@ RECIPE {
     enabled = false,
     ingredients = {
                 {'thickener-mk03', 1},
-                {'super-steel', 30},
-                {'low-density-structure', 15},
-                {'nbfe-alloy', 20}
+                --{'super-steel', 30},
+                --{'low-density-structure', 15},
+                --{'nbfe-alloy', 20}
             },
     results = {
         {"thickener-mk04", 1}

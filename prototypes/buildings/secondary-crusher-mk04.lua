@@ -5,9 +5,9 @@ RECIPE {
     enabled = false,
     ingredients = {
                 {'secondary-crusher-mk03', 1},
-                {'super-steel', 30},
-                {'low-density-structure', 15},
-                {'nbfe-alloy', 20}
+                --{'super-steel', 30},
+                --{'low-density-structure', 15},
+                --{'nbfe-alloy', 20}
             },
     results = {
         {"secondary-crusher-mk04", 1}
