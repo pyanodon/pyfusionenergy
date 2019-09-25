@@ -60,8 +60,8 @@ RECIPE {
     enabled = false,
     ingredients = {
                 {"jig-mk01", 1},
-                {'duralumin', 15},
-                {'lead-plate', 10},
+                --{'duralumin', 15},
+                --{'lead-plate', 10},
                 {'nexelit-plate', 15},
                 {'advanced-circuit', 10}
             },

@@ -59,9 +59,9 @@ RECIPE {
     enabled = false,
     ingredients = {
                 {'centrifugal-pan-mk03', 1},
-                {'super-steel', 30},
-                {'low-density-structure', 15},
-                {'nbfe-alloy', 20}
+                --{'super-steel', 30},
+                --{'low-density-structure', 15},
+                --{'nbfe-alloy', 20}
             },
     results = {
         {"centrifugal-pan-mk04", 1}

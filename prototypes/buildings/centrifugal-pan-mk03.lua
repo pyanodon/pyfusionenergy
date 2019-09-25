@@ -59,9 +59,9 @@ RECIPE {
     enabled = false,
     ingredients = {
                 {"centrifugal-pan-mk02", 1},
-                {'titanium-plate', 20},
-                {'stainless-steel', 20},
-                {'tin-plate', 20},
+                --{'titanium-plate', 20},
+                --{'stainless-steel', 20},
+                --{'tin-plate', 20},
                 {'processing-unit', 10}
             },
     results = {

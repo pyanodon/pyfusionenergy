@@ -95,9 +95,9 @@ if settings.startup['add-tiers'].value and mods['pyrawores'] then
             enabled = false,
             ingredients = {
                 {mach .. '-mk02', 1},
-                {'titanium-plate', 20},
-                {'stainless-steel', 20},
-                {'tin-plate', 20},
+                --{'titanium-plate', 20},
+                --{'stainless-steel', 20},
+                --{'tin-plate', 20},
                 {'processing-unit', 10}
             },
             results = {
@@ -155,9 +155,9 @@ if settings.startup['add-tiers'].value and mods['pyrawores'] then
             enabled = false,
             ingredients = {
                 {mach .. '-mk03', 1},
-                {'super-steel', 30},
-                {'low-density-structure', 15},
-                {'nbfe-alloy', 20}
+                --{'super-steel', 30},
+                --{'low-density-structure', 15},
+                --{'nbfe-alloy', 20}
             },
             results = {
                 {mach .. '-mk04', 1}

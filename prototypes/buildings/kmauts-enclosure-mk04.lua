@@ -5,9 +5,9 @@ RECIPE {
     enabled = false,
     ingredients = {
                 {'kmauts-enclosure-mk03', 1},
-                {'super-steel', 30},
-                {'low-density-structure', 15},
-                {'nbfe-alloy', 20}
+                --{'super-steel', 30},
+                --{'low-density-structure', 15},
+                --{'nbfe-alloy', 20}
             },
     results = {
         {"kmauts-enclosure-mk04", 1}

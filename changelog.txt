@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.7
+  Changes:
+    - removed pyrawores items from mk02-mk04 building as it cuased an error when pyro wasnt enabled
+---------------------------------------------------------------------------------------------------
 Version: 1.4.6
   Changes:
     - none...just testing new system
