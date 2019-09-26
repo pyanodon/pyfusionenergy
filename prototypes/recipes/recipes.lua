@@ -82,7 +82,7 @@ RECIPE {
         {type = "item", name = "molybdenum-sulfide", amount = 10}
     },
     results = {
-        {type = "item", name = "molybdenum-oxide", amount = 5},
+        {type = "item", name = "molybdenum-oxide", amount = 10},
         {type = "item", name = "sulfur", amount = 1}
     },
     main_product = "molybdenum-oxide",
@@ -95,7 +95,7 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "item", name = "molybdenum-oxide", amount = 5} --add hydrogen
+        {type = "item", name = "molybdenum-oxide", amount = 10} --add hydrogen
     },
     results = {
         {type = "item", name = "molybdenum-plate", amount = 3},
@@ -1173,7 +1173,7 @@ RECIPE {
     ingredients = {
         {type = "item", name = "super-alloy", amount = 10},
         {type = "item", name = "ferrite", amount = 10},
-        {type = "item", name = "molybdenum-oxide", amount = 20},
+        {type = "item", name = "molybdenum-oxide", amount = 5},
         {type = "item", name = "vanadium-oxide", amount = 5},
         {type = "item", name = "copper-plate", amount = 25},
         {type = "fluid", name = "helium", amount = 20}
@@ -1272,7 +1272,11 @@ RECIPE {
         {type = "fluid", name = "helium", amount = 150},
         {type = "fluid", name = "tritium", amount = 20},
         {type = "fluid", name = "helium3", amount = 30},
-        {type = "fluid", name = "steam", amount = 2000, temperature = 60}
+        {type = "fluid", name = "steam", amount = 2000, temperature = 60},
+        {type = "item", name = "blanket", amount = 1, probability = 0.5},
+        {type = "item", name = "divertor", amount = 1, probability = 0.5},
+        {type = "item", name = "wall-shield", amount = 3, probability = 0.5},
+        {type = "item", name = "sc-unit", amount = 3, probability = 0.5},
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/fusion-deuterium.png",
@@ -1302,7 +1306,11 @@ RECIPE {
         {type = "fluid", name = "critical-steam", amount = 4000, temperature = 3000},
         {type = "fluid", name = "helium", amount = 175},
         {type = "fluid", name = "proton", amount = 15},
-        {type = "fluid", name = "steam", amount = 5000, temperature = 60}
+        {type = "fluid", name = "steam", amount = 5000, temperature = 60},
+        {type = "item", name = "blanket", amount = 1, probability = 0.5},
+        {type = "item", name = "divertor", amount = 1, probability = 0.5},
+        {type = "item", name = "reinforced-wall-shield", amount = 3, probability = 0.5},
+        {type = "item", name = "sc-unit", amount = 3, probability = 0.5},
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/fusion-he3.png",
@@ -1332,7 +1340,11 @@ RECIPE {
         {type = "fluid", name = "critical-steam", amount = 4000, temperature = 2000},
         {type = "fluid", name = "helium", amount = 200},
         {type = "fluid", name = "tritium", amount = 5},
-        {type = "fluid", name = "steam", amount = 3500, temperature = 60}
+        {type = "fluid", name = "steam", amount = 3500, temperature = 60},
+        {type = "item", name = "blanket", amount = 1, probability = 0.5},
+        {type = "item", name = "divertor", amount = 1, probability = 0.5},
+        {type = "item", name = "reinforced-wall-shield", amount = 3, probability = 0.5},
+        {type = "item", name = "sc-unit", amount = 3, probability = 0.5},
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/fusion-dt.png",
@@ -1353,7 +1365,7 @@ RECIPE {
         {type = "item", name = "blanket", amount = 1},
         {type = "item", name = "divertor", amount = 8},
         {type = "item", name = "wall-shield", amount = 5},
-        {type = "item", name = "boron", amount = 30},
+        {type = "item", name = "boron", amount = 15},
         {type = "item", name = "production-science-pack", amount = 5},
         {type = "fluid", name = "liquid-helium", amount = 100},
         {type = "fluid", name = "water", amount = 5000}
@@ -1361,7 +1373,10 @@ RECIPE {
     results = {
         {type = "fluid", name = "critical-steam", amount = 4500, temperature = 4000},
         {type = "fluid", name = "helium", amount = 500},
-        {type = "fluid", name = "steam", amount = 5000, temperature = 60}
+        {type = "fluid", name = "steam", amount = 5000, temperature = 60},
+        {type = "item", name = "blanket", amount = 1, probability = 0.6},
+        {type = "item", name = "divertor", amount = 2, probability = 0.6},
+        {type = "item", name = "wall-shield", amount = 3, probability = 0.5},
     },
     --main_product= "blanket",
     icon = "__pyfusionenergy__/graphics/icons/fusion-bh.png",
