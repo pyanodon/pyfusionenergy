@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.4.8
+  Changes:
+    - Rebalanced Mo end chain.
+    - Rebalanced blankets.
+    - Removed productivity modules in fusion reactors.
+---------------------------------------------------------------------------------------------------
 Version: 1.4.7
   Changes:
     - removed pyrawores items from mk02-mk04 building as it cuased an error when pyro wasnt enabled
