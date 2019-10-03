@@ -934,12 +934,12 @@ RECIPE {
         {type = "fluid", name = "boric-acid", amount = 150},
         {type = "fluid", name = "vacuum", amount = 100},
         {type = "item", name = "nexelit-plate", amount = 4},
-        {type = "item", name = "wood", amount = 3} --bobs resin
+        {type = "item", name = "treated-wood", amount = 3}
     },
     results = {
         {type = "item", name = "nexelit-matrix", amount = 4}
     },
-}
+}:replace_ingredient("treated-wood", "phenolicboard")
 
 RECIPE {
     type = "recipe",
