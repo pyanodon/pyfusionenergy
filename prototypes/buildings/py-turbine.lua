@@ -33,8 +33,8 @@ ENTITY {
     minable = {mining_time = 0.5, result = "py-turbine"},
     max_health = 500,
     corpse = "big-remnants",
-    effectivity = 1.5,
-    fluid_usage_per_tick = 0.6,
+    effectivity = 2.0,
+    fluid_usage_per_tick = 60,
     maximum_temperature = 5000,
     resistances = {
         {
@@ -66,7 +66,7 @@ ENTITY {
     energy_source = {
         type = "electric",
         usage_priority = "secondary-output",
-        emissions_per_minute = 0.06,
+        emissions_per_minute = 0.02,
     },
     --scale=1.75,
     horizontal_animation = {
