@@ -939,7 +939,7 @@ RECIPE {
     results = {
         {type = "item", name = "nexelit-matrix", amount = 4}
     },
-}:replace_ingredient("treated-wood", "phenolicboard")
+}
 
 RECIPE {
     type = "recipe",

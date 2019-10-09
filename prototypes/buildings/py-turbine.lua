@@ -34,7 +34,7 @@ ENTITY {
     max_health = 500,
     corpse = "big-remnants",
     effectivity = 2.0,
-    fluid_usage_per_tick = 60,
+    fluid_usage_per_tick = 9,
     maximum_temperature = 5000,
     resistances = {
         {
