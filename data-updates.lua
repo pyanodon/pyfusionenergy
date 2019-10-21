@@ -20,6 +20,7 @@ TECHNOLOGY('laser-turrets'):remove_pack('chemical-science-pack')
 TECHNOLOGY('laser'):remove_pack('chemical-science-pack')
 if not mods['pypetroleumhandling'] then
 TECHNOLOGY('electric-engine'):remove_pack('chemical-science-pack')
+TECHNOLOGY('advanced-oil-processing'):remove_pack('chemical-science-pack')
 end
 
 local recipes_list =
