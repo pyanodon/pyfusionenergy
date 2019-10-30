@@ -1071,15 +1071,15 @@ RECIPE {
     name = "sc-unit",
     category = "advanced-crafting",
     enabled = false,
-    energy_required = 20,
+    energy_required = 30,
     ingredients = {
-        {type = "item", name = "molybdenum-plate", amount = 5},
-        {type = "item", name = "deposited-core", amount = 1},
-        {type = "item", name = "advanced-circuit", amount = 1}
+        {type = "item", name = "molybdenum-plate", amount = 10},
+        {type = "item", name = "deposited-core", amount = 2},
+        {type = "item", name = "advanced-circuit", amount = 2}
         --add liquid nitrogen
     },
     results = {
-        {type = "item", name = "sc-unit", amount = 1}
+        {type = "item", name = "sc-unit", amount = 3}
     },
 }
 
@@ -1171,7 +1171,7 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "super-alloy", amount = 10},
+        {type = "item", name = "super-alloy", amount = 6},
         {type = "item", name = "ferrite", amount = 10},
         {type = "item", name = "molybdenum-oxide", amount = 5},
         {type = "item", name = "vanadium-oxide", amount = 5},
@@ -1179,7 +1179,7 @@ RECIPE {
         {type = "fluid", name = "helium", amount = 20}
     },
     results = {
-        {type = "item", name = "blanket-chassi", amount = 1}
+        {type = "item", name = "blanket-chassi", amount = 3}
     },
 }
 
@@ -1196,7 +1196,7 @@ RECIPE {
         --add bobs lithium and lead
     },
     results = {
-        {type = "item", name = "blanket", amount = 1}
+        {type = "item", name = "blanket", amount = 2}
     },
 }
 
