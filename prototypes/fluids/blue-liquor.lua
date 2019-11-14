@@ -7,7 +7,7 @@ RECIPE {
     ingredients = {
         {type = "fluid", name = "vanabins", amount = 60},
         {type = "fluid", name = "water", amount = 100},
-        {type = "item", name = "tailings-dust", amount = 50}
+        {type = "item", name = "tailings-dust", amount = 30}
     },
     results = {
         {type = "fluid", name = "blue-liquor", amount = 200}
