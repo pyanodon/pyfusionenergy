@@ -406,13 +406,13 @@ RECIPE {
     name = "diamond-rejects-recrushing",
     category = "secondary-crusher",
     enabled = false,
-    energy_required = 5,
+    energy_required = 3,
     ingredients = {
         {type = "item", name = "diamond-reject", amount = 8}
     },
     results = {
-        {type = "item", name = "pure-kimberlite-grade2", amount = 2},
-        {type = "item", name = "gravel", amount = 2}
+        {type = "item", name = "pure-kimberlite-grade2", amount = 2, probability = 0.7},
+        {type = "item", name = "gravel", amount = 2, probability = 0.5}
     },
     --main_product= "pure-kimberlite-grade2",
     icon = "__pyfusionenergy__/graphics/icons/diamond-reject-recrush.png",
