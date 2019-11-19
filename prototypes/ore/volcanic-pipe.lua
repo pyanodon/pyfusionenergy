@@ -26,7 +26,7 @@ ENTITY {
     maximum = 40000,
     map_grid = false,
     minable = {
-        hardness = 3.5,
+        hardness = 1.5,
         -- mining_particle = "volcanic-pipe-particle",
         mining_time = 4,
         results = {
