@@ -3,14 +3,14 @@ RECIPE {
     name = "jig-diamond-concentrate",
     category = "jig",
     enabled = false,
-    energy_required = 20,
+    energy_required = 8,
     ingredients = {
         {type = "fluid", name = "diamond-concentrate", amount = 200},
         {type = "fluid", name = "water", amount = 500}
     },
     results = {
         {type = "fluid", name = "jig-concentrate", amount = 100},
-        {type = "fluid", name = "dirty-water", amount = 350}
+        {type = "fluid", name = "dirty-water", amount = 250}
     },
     main_product = "jig-concentrate",
     icon = "__pyfusionenergy__/graphics/icons/jig-diamond-concentrate.png",

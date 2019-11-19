@@ -53,7 +53,7 @@ ENTITY {
         usage_priority = "secondary-input",
         emissions_per_minute = 0.06,
     },
-    energy_usage = "650kW",
+    energy_usage = "750kW",
     mining_power = 6,
     resource_searching_radius = 0.49,
     vector_to_place_result = {0, -3.65},

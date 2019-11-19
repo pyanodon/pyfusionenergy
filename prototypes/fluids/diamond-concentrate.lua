@@ -3,7 +3,7 @@ RECIPE {
     name = "diamond-concentrate",
     category = "pan",
     enabled = false,
-    energy_required = 25,
+    energy_required = 15,
     ingredients = {
         {type = "fluid", name = "diamond-tailings", amount = 100},
         {type = "fluid", name = "soda-ash", amount = 100}
