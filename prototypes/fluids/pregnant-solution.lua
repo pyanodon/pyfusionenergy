@@ -12,7 +12,7 @@ RECIPE {
         {type = "fluid", name = "pregnant-solution", amount = 300}
     },
     main_product = "pregnant-solution",
-    icon = "__pyfusionenergy__/graphics/icons/pregnant-solution-hydrocyclone.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/pregnant-solution-hydrocyclone.png",
 	icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "s"
@@ -21,7 +21,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "pregnant-solution",
-    icon = "__pyfusionenergy__/graphics/icons/pregnant-solution.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/pregnant-solution.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.878, g = 0.725, b = 0.282},

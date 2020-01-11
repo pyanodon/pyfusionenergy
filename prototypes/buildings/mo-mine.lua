@@ -19,7 +19,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "mo-mine",
-    icon = "__pyfusionenergy__/graphics/icons/mo-mine.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/mo-mine.png",
 	icon_size = 32,
     flags = {},
     subgroup = "py-fusion-buildings-miners",
@@ -31,7 +31,7 @@ ITEM {
 ENTITY {
     type = "mining-drill",
     name = "mo-mine",
-    icon = "__pyfusionenergy__/graphics/icons/mo-mine.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/mo-mine.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "mo-mine"},
@@ -82,7 +82,7 @@ ENTITY {
     animations = {
         layers = {
             {
-                filename = "__pyfusionenergy__/graphics/entity/mo-mine/left.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/mo-mine/left.png",
                 width = 111,
                 height = 275,
                 line_length = 18,
@@ -91,7 +91,7 @@ ENTITY {
                 shift = util.by_pixel(-55, -26)
             },
             {
-                filename = "__pyfusionenergy__/graphics/entity/mo-mine/right.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/mo-mine/right.png",
                 width = 113,
                 height = 275,
                 line_length = 18,
@@ -100,7 +100,7 @@ ENTITY {
                 shift = util.by_pixel(54, -26)
             },
             {
-                filename = "__pyfusionenergy__/graphics/entity/mo-mine/sh-1.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/mo-mine/sh-1.png",
                 width = 144,
                 height = 182,
                 line_length = 14,
@@ -110,7 +110,7 @@ ENTITY {
                 shift = util.by_pixel(-33, 23)
             },
             {
-                filename = "__pyfusionenergy__/graphics/entity/mo-mine/sh-2.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/mo-mine/sh-2.png",
                 width = 145,
                 height = 182,
                 line_length = 14,
@@ -123,8 +123,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergy__/sounds/regolite-mine.ogg", volume = 1.0},
-        idle_sound = {filename = "__pyfusionenergy__/sounds/regolite-mine.ogg", volume = 0.7},
+        sound = {filename = "__pyfusionenergygraphics__/sounds/regolite-mine.ogg", volume = 1.0},
+        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/regolite-mine.ogg", volume = 0.7},
         apparent_volume = 2.5
     }
 }

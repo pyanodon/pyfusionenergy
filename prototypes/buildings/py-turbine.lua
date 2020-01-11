@@ -15,7 +15,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "py-turbine",
-    icon = "__pyfusionenergy__/graphics/icons/py-turbine.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/py-turbine.png",
 	icon_size = 32,
     flags = {},
     subgroup = "py-fusion-reactors",
@@ -27,7 +27,7 @@ ITEM {
 ENTITY {
     type = "generator",
     name = "py-turbine",
-    icon = "__pyfusionenergy__/graphics/icons/py-turbine.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/py-turbine.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "py-turbine"},
@@ -70,7 +70,7 @@ ENTITY {
     },
     --scale=1.75,
     horizontal_animation = {
-        filename = "__pyfusionenergy__/graphics/entity/py-turbine/py-turbine-horizontal.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/py-turbine/py-turbine-horizontal.png",
         width = 170,
         height = 178,
         frame_count = 40,
@@ -78,7 +78,7 @@ ENTITY {
         shift = {0.05, -0.0}
     },
     vertical_animation = {
-        filename = "__pyfusionenergy__/graphics/entity/py-turbine/py-turbine-vertical.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/py-turbine/py-turbine-vertical.png",
         width = 170,
         height = 178,
         frame_count = 40,
@@ -101,8 +101,8 @@ ENTITY {
     match_speed_to_activity = true,
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergy__/sounds/py-turbine.ogg"},
-        idle_sound = {filename = "__pyfusionenergy__/sounds/py-turbine.ogg", volume = 0.65},
+        sound = {filename = "__pyfusionenergygraphics__/sounds/py-turbine.ogg"},
+        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/py-turbine.ogg", volume = 0.65},
         apparent_volume = 2.5
     }
 }

@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "diamond-mining",
-    icon = "__pyfusionenergy__/graphics/technology/diamond-mining.png",
+    icon = "__pyfusionenergygraphics__/graphics/technology/diamond-mining.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"excavation-2"},
