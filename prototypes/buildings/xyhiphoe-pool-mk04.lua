@@ -17,7 +17,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "xyhiphoe-pool-mk04",
-    icon = "__pyfusionenergy__/graphics/icons/xyhiphoe-pool-mk04.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/xyhiphoe-pool-mk04.png",
 	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk04",
@@ -29,7 +29,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "xyhiphoe-pool-mk04",
-    icon = "__pyfusionenergy__/graphics/icons/xyhiphoe-pool-mk04.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/xyhiphoe-pool-mk04.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "xyhiphoe-pool-mk04"},
@@ -56,7 +56,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pyfusionenergy__/graphics/entity/xyhiphoe-pool/left.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/xyhiphoe-pool/left.png",
                 width = 96,
                 height = 318,
                 line_length = 21,
@@ -65,7 +65,7 @@ ENTITY {
                 shift = {-2.532, -0.966}
             },
 			{
-                filename = "__pyfusionenergy__/graphics/entity/xyhiphoe-pool/left-mask.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/xyhiphoe-pool/left-mask.png",
                 width = 96,
                 height = 318,
                 line_length = 21,
@@ -75,7 +75,7 @@ ENTITY {
 				tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
             },
             {
-                filename = "__pyfusionenergy__/graphics/entity/xyhiphoe-pool/mid.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/xyhiphoe-pool/mid.png",
                 width = 96,
                 height = 318,
                 line_length = 21,
@@ -84,7 +84,7 @@ ENTITY {
                 shift = {0.468, -0.966}
             },
 			{
-                filename = "__pyfusionenergy__/graphics/entity/xyhiphoe-pool/mid-mask.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/xyhiphoe-pool/mid-mask.png",
                 width = 96,
                 height = 318,
                 line_length = 21,
@@ -94,7 +94,7 @@ ENTITY {
 				tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
             },
             {
-                filename = "__pyfusionenergy__/graphics/entity/xyhiphoe-pool/right.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/xyhiphoe-pool/right.png",
                 width = 82,
                 height = 318,
                 line_length = 21,
@@ -103,7 +103,7 @@ ENTITY {
                 shift = {3.250, -0.966}
             },
 			{
-                filename = "__pyfusionenergy__/graphics/entity/xyhiphoe-pool/right-mask.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/xyhiphoe-pool/right-mask.png",
                 width = 82,
                 height = 318,
                 line_length = 21,
@@ -157,8 +157,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergy__/sounds/xyhiphoe-pool.ogg", volume = 1.3},
-        idle_sound = {filename = "__pyfusionenergy__/sounds/xyhiphoe-pool.ogg", volume = 0.95},
+        sound = {filename = "__pyfusionenergygraphics__/sounds/xyhiphoe-pool.ogg", volume = 1.3},
+        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/xyhiphoe-pool.ogg", volume = 0.95},
         apparent_volume = 2.5
     }
 }

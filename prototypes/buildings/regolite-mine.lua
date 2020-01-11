@@ -19,7 +19,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "regolite-mine",
-    icon = "__pyfusionenergy__/graphics/icons/regolite-mine.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/regolite-mine.png",
 	icon_size = 32,
     flags = {},
     subgroup = "py-fusion-buildings-miners",
@@ -31,7 +31,7 @@ ITEM {
 ENTITY {
     type = "mining-drill",
     name = "regolite-mine",
-    icon = "__pyfusionenergy__/graphics/icons/regolite-mine.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/regolite-mine.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "regolite-mine"},
@@ -64,7 +64,7 @@ ENTITY {
     animations = {
         layers = {
             {
-                filename = "__pyfusionenergy__/graphics/entity/regolite-mine/regolite-left.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/regolite-mine/regolite-left.png",
                 width = 96,
                 height = 250,
                 line_length = 21,
@@ -73,7 +73,7 @@ ENTITY {
                 shift = {-1.9, -0.2}
             },
             {
-                filename = "__pyfusionenergy__/graphics/entity/regolite-mine/regolite-mid.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/regolite-mine/regolite-mid.png",
                 width = 96,
                 height = 250,
                 line_length = 21,
@@ -82,7 +82,7 @@ ENTITY {
                 shift = {1.1, -0.2}
             },
             {
-                filename = "__pyfusionenergy__/graphics/entity/regolite-mine/regolite-right.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/regolite-mine/regolite-right.png",
                 width = 48,
                 height = 250,
                 line_length = 21,
@@ -94,8 +94,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergy__/sounds/regolite-mine.ogg", volume = 1.0},
-        idle_sound = {filename = "__pyfusionenergy__/sounds/regolite-mine.ogg", volume = 0.7},
+        sound = {filename = "__pyfusionenergygraphics__/sounds/regolite-mine.ogg", volume = 1.0},
+        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/regolite-mine.ogg", volume = 0.7},
         apparent_volume = 2.5
     }
 }

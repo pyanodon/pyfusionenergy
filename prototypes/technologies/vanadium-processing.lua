@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "vanadium-processing",
-    icon = "__pyfusionenergy__/graphics/technology/vanadium-processing.png",
+    icon = "__pyfusionenergygraphics__/graphics/technology/vanadium-processing.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"advanced-mining-facilities"},

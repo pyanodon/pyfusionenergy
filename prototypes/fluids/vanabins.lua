@@ -16,7 +16,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "vanabins",
-    icon = "__pyfusionenergy__/graphics/icons/vanabins.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/vanabins.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.447, g = 0.109, b = 1},

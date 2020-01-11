@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "fusion-mk03",
-    icon = "__pyfusionenergy__/graphics/technology/fusion-3.png",
+    icon = "__pyfusionenergygraphics__/graphics/technology/fusion-3.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"fusion-mk02"},

@@ -18,7 +18,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "hydrocyclone-mk01",
-    icon = "__pyfusionenergy__/graphics/icons/hydrocyclone-mk01.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/hydrocyclone-mk01.png",
 	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk01",
@@ -30,7 +30,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "hydrocyclone-mk01",
-    icon = "__pyfusionenergy__/graphics/icons/hydrocyclone-mk01.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/hydrocyclone-mk01.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "hydrocyclone-mk01"},
@@ -57,7 +57,7 @@ ENTITY {
     animation = {
 		layers = {
 			{
-        filename = "__pyfusionenergy__/graphics/entity/hydrocyclone/hydrocyclone-off.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-off.png",
         width = 270,
         height = 304,
         frame_count = 1,
@@ -65,7 +65,7 @@ ENTITY {
         shift = {0.687, -1.281}
 		},
 		{
-        filename = "__pyfusionenergy__/graphics/entity/hydrocyclone/hydrocyclone-off-mask.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-off-mask.png",
         width = 270,
         height = 304,
         frame_count = 1,
@@ -84,13 +84,13 @@ ENTITY {
             animation = {
 				layers = {
 					{
-                filename = "__pyfusionenergy__/graphics/entity/hydrocyclone/hydrocyclone-on.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-on.png",
                 frame_count = 1,
                 width = 270,
                 height = 304
 				},
 				{
-                filename = "__pyfusionenergy__/graphics/entity/hydrocyclone/hydrocyclone-on-mask.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-on-mask.png",
                 frame_count = 1,
                 width = 270,
                 height = 304,
@@ -139,8 +139,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergy__/sounds/hydrocyclone.ogg"},
-        idle_sound = {filename = "__pyfusionenergy__/sounds/hydrocyclone.ogg", volume = 0.75},
+        sound = {filename = "__pyfusionenergygraphics__/sounds/hydrocyclone.ogg"},
+        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/hydrocyclone.ogg", volume = 0.75},
         apparent_volume = 2.5
     }
 }

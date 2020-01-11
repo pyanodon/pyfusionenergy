@@ -1,24 +1,24 @@
 local pipe_left = {
     north = {
-        filename = "__pyfusionenergy__/graphics/entity/jig/top-left.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/jig/top-left.png",
         priority = "low",
         width = 276,
         height = 268
     },
     south = {
-        filename = "__pyfusionenergy__/graphics/entity/jig/bottom-right.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/jig/bottom-right.png",
         priority = "high",
         width = 276,
         height = 268
     },
     east = {
-        filename = "__pyfusionenergy__/graphics/entity/jig/right-top.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/jig/right-top.png",
         priority = "high",
         width = 276,
         height = 268
     },
     west = {
-        filename = "__pyfusionenergy__/graphics/entity/jig/left-bottom.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/jig/left-bottom.png",
         priority = "high",
         width = 276,
         height = 268
@@ -28,25 +28,25 @@ local pipe_left = {
 
 local pipe_right = {
     north = {
-        filename = "__pyfusionenergy__/graphics/entity/jig/top-right.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/jig/top-right.png",
         priority = "low",
         width = 276,
         height = 268
     },
     south = {
-        filename = "__pyfusionenergy__/graphics/entity/jig/bottom-left.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/jig/bottom-left.png",
         priority = "high",
         width = 276,
         height = 268
     },
     east = {
-        filename = "__pyfusionenergy__/graphics/entity/jig/right-bottom.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/jig/right-bottom.png",
         priority = "high",
         width = 276,
         height = 268
     },
     west = {
-        filename = "__pyfusionenergy__/graphics/entity/jig/left-top.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/jig/left-top.png",
         priority = "high",
         width = 276,
         height = 268
@@ -73,7 +73,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "jig-mk03",
-    icon = "__pyfusionenergy__/graphics/icons/jig-mk03.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/jig-mk03.png",
 	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk03",
@@ -85,7 +85,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "jig-mk03",
-    icon = "__pyfusionenergy__/graphics/icons/jig-mk03.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/jig-mk03.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "jig-mk03"},
@@ -112,7 +112,7 @@ ENTITY {
     animation = {
 	layers = {
 	{
-        filename = "__pyfusionenergy__/graphics/entity/jig/off.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/jig/off.png",
         width = 276,
         height = 268,
         frame_count = 1,
@@ -121,7 +121,7 @@ ENTITY {
         shift = {0.3, -0.2}
     },
 	{
-        filename = "__pyfusionenergy__/graphics/entity/jig/off-mask.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/jig/off-mask.png",
         width = 276,
         height = 268,
         frame_count = 1,
@@ -141,7 +141,7 @@ ENTITY {
             animation = {
 			layers = {
 			{
-                filename = "__pyfusionenergy__/graphics/entity/jig/on.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/jig/on.png",
                 frame_count = 120,
                 line_length = 12,
                 width = 160,
@@ -149,7 +149,7 @@ ENTITY {
                 animation_speed = 0.3
 			},
 			{
-                filename = "__pyfusionenergy__/graphics/entity/jig/on-mask.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/jig/on-mask.png",
                 frame_count = 120,
                 line_length = 12,
                 width = 160,
@@ -196,8 +196,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergy__/sounds/jig.ogg", volume = 1.2},
-        idle_sound = {filename = "__pyfusionenergy__/sounds/jig.ogg", volume = 0.7},
+        sound = {filename = "__pyfusionenergygraphics__/sounds/jig.ogg", volume = 1.2},
+        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/jig.ogg", volume = 0.7},
         apparent_volume = 2.5
     }
 }

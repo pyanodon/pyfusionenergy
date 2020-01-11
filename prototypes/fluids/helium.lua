@@ -1,7 +1,7 @@
 FLUID {
     type = "fluid",
     name = "helium",
-    icon = "__pyfusionenergy__/graphics/icons/helium.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/helium.png",
 	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 1, g = 0.952, b = 0.835},

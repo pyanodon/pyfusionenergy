@@ -20,7 +20,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "fusion-reactor-mk01",
-    icon = "__pyfusionenergy__/graphics/icons/fusion-reactor-mk01.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/fusion-reactor-mk01.png",
 	icon_size = 32,
     flags = {},
     subgroup = "py-fusion-reactors",
@@ -32,7 +32,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "fusion-reactor-mk01",
-    icon = "__pyfusionenergy__/graphics/icons/fusion-reactor-mk01.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/fusion-reactor-mk01.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "fusion-reactor-mk01"},
@@ -57,7 +57,7 @@ ENTITY {
     energy_usage = "800kW",
     ingredient_count = 8,
     animation = {
-        filename = "__pyfusionenergy__/graphics/entity/fusion-reactor-mk01/off.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk01/off.png",
         width = 345,
         height = 331,
         frame_count = 1,
@@ -72,7 +72,7 @@ ENTITY {
             south_position = {-0.49, -1.282},
             east_position = {-0.49, -1.282},
             animation = {
-                filename = "__pyfusionenergy__/graphics/entity/fusion-reactor-mk01/on.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk01/on.png",
                 frame_count = 50,
                 line_length = 7,
                 width = 288,
@@ -161,8 +161,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergy__/sounds/fusion-reactor-mk01.ogg", volume = 1.5},
-        idle_sound = {filename = "__pyfusionenergy__/sounds/fusion-reactor-mk01.ogg", volume = 0.85},
+        sound = {filename = "__pyfusionenergygraphics__/sounds/fusion-reactor-mk01.ogg", volume = 1.5},
+        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/fusion-reactor-mk01.ogg", volume = 0.85},
         apparent_volume = 2.5
     }
 }

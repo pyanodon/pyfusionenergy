@@ -19,7 +19,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "liquid-rich-gas",
-    icon = "__pyfusionenergy__/graphics/icons/liquid-rich-gas.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/liquid-rich-gas.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.235, g = 0.65, b = 0.435},
