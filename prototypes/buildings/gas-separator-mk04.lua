@@ -17,7 +17,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "gas-separator-mk04",
-    icon = "__pyfusionenergygraphics__/graphics/icons/gas-separator-mk04.png",
+    icon = "__pyfusionenergy__/graphics/icons/gas-separator-mk04.png",
 	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk04",
@@ -29,7 +29,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "gas-separator-mk04",
-    icon = "__pyfusionenergygraphics__/graphics/icons/gas-separator-mk04.png",
+    icon = "__pyfusionenergy__/graphics/icons/gas-separator-mk04.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "gas-separator-mk04"},
@@ -56,7 +56,7 @@ ENTITY {
     animation = {
 		layers = {
 			{
-			filename = "__pyfusionenergygraphics__/graphics/entity/gas-separator/off.png",
+			filename = "__pyfusionenergy__/graphics/entity/gas-separator/off.png",
 			width = 241,
 			height = 265,
 			frame_count = 1,
@@ -64,7 +64,7 @@ ENTITY {
 			shift = {0.2, -0.635}
 			},
 			{
-			filename = "__pyfusionenergygraphics__/graphics/entity/gas-separator/off-mask.png",
+			filename = "__pyfusionenergy__/graphics/entity/gas-separator/off-mask.png",
 			width = 241,
 			height = 265,
 			frame_count = 1,
@@ -83,7 +83,7 @@ ENTITY {
             animation = {
 				layers = {
 					{
-                filename = "__pyfusionenergygraphics__/graphics/entity/gas-separator/on.png",
+                filename = "__pyfusionenergy__/graphics/entity/gas-separator/on.png",
                 frame_count = 50,
                 width = 241,
                 height = 265,
@@ -91,7 +91,7 @@ ENTITY {
                 animation_speed = 0.3
 				},
 				{
-                filename = "__pyfusionenergygraphics__/graphics/entity/gas-separator/on-mask.png",
+                filename = "__pyfusionenergy__/graphics/entity/gas-separator/on-mask.png",
                 frame_count = 50,
                 width = 241,
                 height = 265,
@@ -150,8 +150,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergygraphics__/sounds/gas-separator.ogg"},
-        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/gas-separator.ogg", volume = 0.75},
+        sound = {filename = "__pyfusionenergy__/sounds/gas-separator.ogg"},
+        idle_sound = {filename = "__pyfusionenergy__/sounds/gas-separator.ogg", volume = 0.75},
         apparent_volume = 2.5
     }
 }

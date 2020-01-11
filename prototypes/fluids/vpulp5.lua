@@ -13,7 +13,7 @@ RECIPE {
         {type = "item", name = "vanadium-oxide", amount = 1, probability = 0.2}
     },
     main_product = "vpulp5",
-    icon = "__pyfusionenergygraphics__/graphics/icons/agitation-vpulp5.png",
+    icon = "__pyfusionenergy__/graphics/icons/agitation-vpulp5.png",
 	icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "l"
@@ -22,7 +22,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "vpulp5",
-    icon = "__pyfusionenergygraphics__/graphics/icons/vpulp5.png",
+    icon = "__pyfusionenergy__/graphics/icons/vpulp5.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.870, g = 0, b = 1},

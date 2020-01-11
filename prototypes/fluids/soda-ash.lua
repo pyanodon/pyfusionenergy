@@ -13,7 +13,7 @@ RECIPE {
         {type = "fluid", name = "soda-ash", amount = 200}
     },
     main_product = "soda-ash",
-    icon = "__pyfusionenergygraphics__/graphics/icons/agitation-soda-ash.png",
+    icon = "__pyfusionenergy__/graphics/icons/agitation-soda-ash.png",
 	icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "s"
@@ -22,7 +22,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "soda-ash",
-    icon = "__pyfusionenergygraphics__/graphics/icons/soda-ash.png",
+    icon = "__pyfusionenergy__/graphics/icons/soda-ash.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.678, g = 0.717, b = 0.776},

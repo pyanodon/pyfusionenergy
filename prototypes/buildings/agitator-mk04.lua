@@ -1,24 +1,24 @@
 local pipes = {
     north = {
-        filename = "__pyfusionenergygraphics__/graphics/entity/agitator/top.png",
+        filename = "__pyfusionenergy__/graphics/entity/agitator/top.png",
         priority = "low",
         width = 169,
         height = 168
     },
     south = {
-        filename = "__pyfusionenergygraphics__/graphics/entity/agitator/bottom.png",
+        filename = "__pyfusionenergy__/graphics/entity/agitator/bottom.png",
         priority = "extra-high",
         width = 169,
         height = 168
     },
     west = {
-        filename = "__pyfusionenergygraphics__/graphics/entity/agitator/left.png",
+        filename = "__pyfusionenergy__/graphics/entity/agitator/left.png",
         priority = "very-low",
         width = 169,
         height = 168
     },
     east = {
-        filename = "__pyfusionenergygraphics__/graphics/entity/agitator/right.png",
+        filename = "__pyfusionenergy__/graphics/entity/agitator/right.png",
         priority = "extra-high",
         width = 169,
         height = 168
@@ -44,7 +44,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "agitator-mk04",
-    icon = "__pyfusionenergygraphics__/graphics/icons/agitator-mk04.png",
+    icon = "__pyfusionenergy__/graphics/icons/agitator-mk04.png",
 	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk04",
@@ -56,7 +56,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "agitator-mk04",
-    icon = "__pyfusionenergygraphics__/graphics/icons/agitator-mk04.png",
+    icon = "__pyfusionenergy__/graphics/icons/agitator-mk04.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "agitator-mk04"},
@@ -83,7 +83,7 @@ ENTITY {
     animation = {
 		layers = {
 			{
-			filename = "__pyfusionenergygraphics__/graphics/entity/agitator/agitator.png",
+			filename = "__pyfusionenergy__/graphics/entity/agitator/agitator.png",
 			width = 169,
 			height = 160,
 			frame_count = 50,
@@ -92,7 +92,7 @@ ENTITY {
 			shift = {0.1, -0.0}
 			},
 			{
-			filename = "__pyfusionenergygraphics__/graphics/entity/agitator/agitator-mask.png",
+			filename = "__pyfusionenergy__/graphics/entity/agitator/agitator-mask.png",
 			width = 169,
 			height = 160,
 			frame_count = 50,
@@ -138,8 +138,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergygraphics__/sounds/agitator.ogg", volume = 1.1},
-        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/agitator.ogg", volume = 0.95},
+        sound = {filename = "__pyfusionenergy__/sounds/agitator.ogg", volume = 1.1},
+        idle_sound = {filename = "__pyfusionenergy__/sounds/agitator.ogg", volume = 0.95},
         apparent_volume = 2.5
     }
 }

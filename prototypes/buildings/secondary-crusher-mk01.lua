@@ -18,7 +18,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "secondary-crusher-mk01",
-    icon = "__pyfusionenergygraphics__/graphics/icons/secondary-crusher-mk01.png",
+    icon = "__pyfusionenergy__/graphics/icons/secondary-crusher-mk01.png",
 	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk01",
@@ -30,7 +30,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "secondary-crusher-mk01",
-    icon = "__pyfusionenergygraphics__/graphics/icons/secondary-crusher-mk01.png",
+    icon = "__pyfusionenergy__/graphics/icons/secondary-crusher-mk01.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "secondary-crusher-mk01"},
@@ -57,7 +57,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pyfusionenergygraphics__/graphics/entity/secondary-crusher/left.png",
+                filename = "__pyfusionenergy__/graphics/entity/secondary-crusher/left.png",
                 width = 128,
                 height = 238,
                 line_length = 16,
@@ -66,7 +66,7 @@ ENTITY {
                 shift = {-1.657, -0.281}
             },
 			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/secondary-crusher/left-mask.png",
+                filename = "__pyfusionenergy__/graphics/entity/secondary-crusher/left-mask.png",
                 width = 128,
                 height = 238,
                 line_length = 16,
@@ -76,7 +76,7 @@ ENTITY {
 				tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
             },
             {
-                filename = "__pyfusionenergygraphics__/graphics/entity/secondary-crusher/right.png",
+                filename = "__pyfusionenergy__/graphics/entity/secondary-crusher/right.png",
                 width = 108,
                 height = 238,
                 line_length = 16,
@@ -85,7 +85,7 @@ ENTITY {
                 shift = {2.03, -0.281}
             },
 			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/secondary-crusher/right-mask.png",
+                filename = "__pyfusionenergy__/graphics/entity/secondary-crusher/right-mask.png",
                 width = 108,
                 height = 238,
                 line_length = 16,
@@ -98,8 +98,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergygraphics__/sounds/secondary-crusher.ogg", volume = 1.1},
-        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/secondary-crusher.ogg", volume = 0.60},
+        sound = {filename = "__pyfusionenergy__/sounds/secondary-crusher.ogg", volume = 1.1},
+        idle_sound = {filename = "__pyfusionenergy__/sounds/secondary-crusher.ogg", volume = 0.60},
         apparent_volume = 2.5
     }
 }

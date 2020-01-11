@@ -14,7 +14,7 @@ RECIPE {
         {type = "fluid", name = "dirty-water", amount = 200}
     },
     main_product = "diamond-concentrate",
-    icon = "__pyfusionenergygraphics__/graphics/icons/pan-diamond-concentrate.png",
+    icon = "__pyfusionenergy__/graphics/icons/pan-diamond-concentrate.png",
 	icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "j"
@@ -23,7 +23,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "diamond-concentrate",
-    icon = "__pyfusionenergygraphics__/graphics/icons/diamond-concentrate.png",
+    icon = "__pyfusionenergy__/graphics/icons/diamond-concentrate.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.627, g = 0.764, b = 0.850},

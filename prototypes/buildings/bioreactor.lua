@@ -19,7 +19,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "bio-reactor",
-    icon = "__pyfusionenergygraphics__/graphics/icons/bio-reactor.png",
+    icon = "__pyfusionenergy__/graphics/icons/bio-reactor.png",
 	icon_size = 32,
     flags = {},
     subgroup = "py-fusion-buildings-miners",
@@ -31,7 +31,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "bio-reactor",
-    icon = "__pyfusionenergygraphics__/graphics/icons/bio-reactor.png",
+    icon = "__pyfusionenergy__/graphics/icons/bio-reactor.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "bio-reactor"},
@@ -56,7 +56,7 @@ ENTITY {
     energy_usage = "400kW",
     ingredient_count = 8,
     animation = {
-        filename = "__pyfusionenergygraphics__/graphics/entity/bio-reactor/off.png",
+        filename = "__pyfusionenergy__/graphics/entity/bio-reactor/off.png",
         width = 246,
         height = 236,
         frame_count = 1,
@@ -70,7 +70,7 @@ ENTITY {
             south_position = {0.312, -0.218},
             east_position = {0.312, -0.218},
             animation = {
-                filename = "__pyfusionenergygraphics__/graphics/entity/bio-reactor/on.png",
+                filename = "__pyfusionenergy__/graphics/entity/bio-reactor/on.png",
                 frame_count = 50,
                 width = 246,
                 height = 236,
@@ -123,8 +123,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergygraphics__/sounds/bio-reactor.ogg", volume = 1.2},
-        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/bio-reactor.ogg", volume = 0.55},
+        sound = {filename = "__pyfusionenergy__/sounds/bio-reactor.ogg", volume = 1.2},
+        idle_sound = {filename = "__pyfusionenergy__/sounds/bio-reactor.ogg", volume = 0.55},
         apparent_volume = 2.5
     }
 }

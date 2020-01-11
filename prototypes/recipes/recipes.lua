@@ -12,7 +12,7 @@ RECIPE {
         {type = "item", name = "stone", amount = 2}
     },
     main_product = "crushed-molybdenite",
-    icon = "__pyfusionenergygraphics__/graphics/icons/crush-molybdenite.png",
+    icon = "__pyfusionenergy__/graphics/icons/crush-molybdenite.png",
 	icon_size = 32,
     subgroup = "py-crusher",
     order = "a"
@@ -49,7 +49,7 @@ RECIPE {
         {type = "fluid", name = "dirty-water", amount = 150}
     },
     main_product = "molybdenum-concentrate",
-    icon = "__pyfusionenergygraphics__/graphics/icons/molybdenum-concentrate-hydrocyclone.png",
+    icon = "__pyfusionenergy__/graphics/icons/molybdenum-concentrate-hydrocyclone.png",
 	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "b"
@@ -166,7 +166,7 @@ RECIPE {
     results = {
         {type = "item", name = "ash", amount = 10} --updated-bob cobalt-ore
     },
-    icon = "__pyfusionenergygraphics__/graphics/icons/used-solvent.png",
+    icon = "__pyfusionenergy__/graphics/icons/used-solvent.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "c"
@@ -186,7 +186,7 @@ RECIPE {
         {type = "fluid", name = "blue-liquor", amount = 50}
     },
     main_product = "organic-solvent",
-    icon = "__pyfusionenergygraphics__/graphics/icons/used-solvent.png",
+    icon = "__pyfusionenergy__/graphics/icons/used-solvent.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "d"
@@ -292,7 +292,7 @@ RECIPE {
         {type = "item", name = "stone", amount = 3}
     },
     --main_product= "crushed-kimberlite",
-    icon = "__pyfusionenergygraphics__/graphics/icons/crush-kimberlite.png",
+    icon = "__pyfusionenergy__/graphics/icons/crush-kimberlite.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
@@ -312,7 +312,7 @@ RECIPE {
         {type = "item", name = "kimberlite-grade2", amount = 5}
     },
     --main_product= "kimberlite-grade2",
-    icon = "__pyfusionenergygraphics__/graphics/icons/screening-kimberlite.png",
+    icon = "__pyfusionenergy__/graphics/icons/screening-kimberlite.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
@@ -332,7 +332,7 @@ RECIPE {
         {type = "item", name = "gravel", amount = 1}
     },
     --main_product= "crushed-kimberlite",
-    icon = "__pyfusionenergygraphics__/graphics/icons/kimberlite-recrush.png",
+    icon = "__pyfusionenergy__/graphics/icons/kimberlite-recrush.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
@@ -355,7 +355,7 @@ RECIPE {
         {type = "item", name = "sand", amount = 10}
     },
     --main_product= "kimberlite-grade3",
-    icon = "__pyfusionenergygraphics__/graphics/icons/kimberlite-washer.png",
+    icon = "__pyfusionenergy__/graphics/icons/kimberlite-washer.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
@@ -375,7 +375,7 @@ RECIPE {
         {type = "item", name = "gravel", amount = 1}
     },
     --main_product= "kimberlite-grade3",
-    icon = "__pyfusionenergygraphics__/graphics/icons/kimberlite-grade2-recrush.png",
+    icon = "__pyfusionenergy__/graphics/icons/kimberlite-grade2-recrush.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
@@ -395,7 +395,7 @@ RECIPE {
         {type = "item", name = "gravel", amount = 2}
     },
     --main_product= "diamond-reject",
-    icon = "__pyfusionenergygraphics__/graphics/icons/screening-kimberlite-residue.png",
+    icon = "__pyfusionenergy__/graphics/icons/screening-kimberlite-residue.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
@@ -415,7 +415,7 @@ RECIPE {
         {type = "item", name = "gravel", amount = 2, probability = 0.5}
     },
     --main_product= "pure-kimberlite-grade2",
-    icon = "__pyfusionenergygraphics__/graphics/icons/diamond-reject-recrush.png",
+    icon = "__pyfusionenergy__/graphics/icons/diamond-reject-recrush.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
@@ -435,7 +435,7 @@ RECIPE {
         {type = "item", name = "sand", amount = 10}
     },
     --main_product= "pure-kimberlite-grade2",
-    icon = "__pyfusionenergygraphics__/graphics/icons/screening-diamond-reject.png",
+    icon = "__pyfusionenergy__/graphics/icons/screening-diamond-reject.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
@@ -456,7 +456,7 @@ RECIPE {
         {type = "item", name = "diamond", amount = 1, probability = 0.6}
     },
     --main_product= "pure-kimberlite-grade2",
-    icon = "__pyfusionenergygraphics__/graphics/icons/rejects-separation.png",
+    icon = "__pyfusionenergy__/graphics/icons/rejects-separation.png",
 	icon_size = 32,
     subgroup = "py-items-class",
     order = "e"
@@ -477,7 +477,7 @@ RECIPE {
         {type = "fluid", name = "jig-grade3", amount = 100}
     },
     --main_product= "jig-grade1",
-    icon = "__pyfusionenergygraphics__/graphics/icons/jig1.png",
+    icon = "__pyfusionenergy__/graphics/icons/jig1.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "j"
@@ -499,7 +499,7 @@ RECIPE {
         {type = "fluid", name = "dirty-water", amount = 100}
     },
     --main_product= "crude",
-    icon = "__pyfusionenergygraphics__/graphics/icons/greasing-1.png",
+    icon = "__pyfusionenergy__/graphics/icons/greasing-1.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "j1"
@@ -521,7 +521,7 @@ RECIPE {
         {type = "fluid", name = "dirty-water", amount = 150}
     },
     --main_product= "crude",
-    icon = "__pyfusionenergygraphics__/graphics/icons/greasing-2.png",
+    icon = "__pyfusionenergy__/graphics/icons/greasing-2.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "j2"
@@ -543,7 +543,7 @@ RECIPE {
         {type = "fluid", name = "dirty-water", amount = 200}
     },
     --main_product= "crude",
-    icon = "__pyfusionenergygraphics__/graphics/icons/greasing-3.png",
+    icon = "__pyfusionenergy__/graphics/icons/greasing-3.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "j3"
@@ -564,7 +564,7 @@ RECIPE {
         {type = "fluid", name = "dirty-water", amount = 120}
     },
     --main_product= "crude",
-    icon = "__pyfusionenergygraphics__/graphics/icons/crude-diamond-washer.png",
+    icon = "__pyfusionenergy__/graphics/icons/crude-diamond-washer.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "k"
@@ -584,7 +584,7 @@ RECIPE {
         {type = "item", name = "kimberlite-residue", amount = 10}
     },
     --main_product= "crude",
-    icon = "__pyfusionenergygraphics__/graphics/icons/class-diamond.png",
+    icon = "__pyfusionenergy__/graphics/icons/class-diamond.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "k"
@@ -695,7 +695,7 @@ RECIPE {
         --add bobs minerals
     },
     --main_product= "crude",
-    icon = "__pyfusionenergygraphics__/graphics/icons/calcinate-separation.png",
+    icon = "__pyfusionenergy__/graphics/icons/calcinate-separation.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "l"
@@ -780,7 +780,7 @@ RECIPE {
         {type = "item", name = "stone", amount = 2}
     },
     main_product = "crushed-regolite",
-    icon = "__pyfusionenergygraphics__/graphics/icons/crush-regolite.png",
+    icon = "__pyfusionenergy__/graphics/icons/crush-regolite.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "a"
@@ -800,7 +800,7 @@ RECIPE {
         {type = "item", name = "gravel", amount = 1}
     },
     main_product = "powdered-regolite",
-    icon = "__pyfusionenergygraphics__/graphics/icons/regolite-recrush.png",
+    icon = "__pyfusionenergy__/graphics/icons/regolite-recrush.png",
 	icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "a"
@@ -1279,7 +1279,7 @@ RECIPE {
         {type = "item", name = "sc-unit", amount = 3, probability = 0.5},
     },
     --main_product= "blanket",
-    icon = "__pyfusionenergygraphics__/graphics/icons/fusion-deuterium.png",
+    icon = "__pyfusionenergy__/graphics/icons/fusion-deuterium.png",
 	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
@@ -1313,7 +1313,7 @@ RECIPE {
         {type = "item", name = "sc-unit", amount = 3, probability = 0.5},
     },
     --main_product= "blanket",
-    icon = "__pyfusionenergygraphics__/graphics/icons/fusion-he3.png",
+    icon = "__pyfusionenergy__/graphics/icons/fusion-he3.png",
 	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
@@ -1347,7 +1347,7 @@ RECIPE {
         {type = "item", name = "sc-unit", amount = 3, probability = 0.5},
     },
     --main_product= "blanket",
-    icon = "__pyfusionenergygraphics__/graphics/icons/fusion-dt.png",
+    icon = "__pyfusionenergy__/graphics/icons/fusion-dt.png",
 	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
@@ -1379,7 +1379,7 @@ RECIPE {
         {type = "item", name = "wall-shield", amount = 3, probability = 0.5},
     },
     --main_product= "blanket",
-    icon = "__pyfusionenergygraphics__/graphics/icons/fusion-bh.png",
+    icon = "__pyfusionenergy__/graphics/icons/fusion-bh.png",
 	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
@@ -1400,7 +1400,7 @@ RECIPE {
         {type = "fluid", name = "steam", amount = 250, temperature = 60}
     },
     --main_product= "blanket",
-    icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange.png",
+    icon = "__pyfusionenergy__/graphics/icons/steam-exchange.png",
 	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
@@ -1421,7 +1421,7 @@ RECIPE {
         {type = "fluid", name = "steam", amount = 250, temperature = 60}
     },
     --main_product= "blanket",
-    icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange2.png",
+    icon = "__pyfusionenergy__/graphics/icons/steam-exchange2.png",
 	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
@@ -1442,7 +1442,7 @@ RECIPE {
         {type = "fluid", name = "steam", amount = 250, temperature = 60}
     },
     --main_product= "blanket",
-    icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange3.png",
+    icon = "__pyfusionenergy__/graphics/icons/steam-exchange3.png",
 	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
@@ -1463,7 +1463,7 @@ RECIPE {
         {type = "fluid", name = "steam", amount = 400, temperature = 60}
     },
     --main_product= "blanket",
-    icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange4.png",
+    icon = "__pyfusionenergy__/graphics/icons/steam-exchange4.png",
 	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
@@ -1565,7 +1565,7 @@ RECIPE {
     results = {
         {type = "item", name = "production-science-pack", amount = 3}
     },
-    icon = "__pyfusionenergygraphics__/graphics/icons/production-science-pack.png",
+    icon = "__pyfusionenergy__/graphics/icons/production-science-pack.png",
 	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "x"
@@ -1637,7 +1637,7 @@ RECIPE {
         {type = "item", name = "molybdenum-ore", amount = 15}
     },
     main_product = "molybdenum-ore",
-    icon = "__pyfusionenergygraphics__/graphics/icons/drilling-mo.png",
+    icon = "__pyfusionenergy__/graphics/icons/drilling-mo.png",
     icon_size = 32,
     subgroup = "py-drilling",
     order = "c"
@@ -1658,7 +1658,7 @@ RECIPE {
         {type = "fluid", name = "steam", amount = 1000, temperature = 500},
     },
     main_product= "steam",
-    icon = "__pyfusionenergygraphics__/graphics/icons/steam-heating.png",
+    icon = "__pyfusionenergy__/graphics/icons/steam-heating.png",
 	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
@@ -1676,7 +1676,7 @@ RECIPE {
     results = {
         {type = "item", name = "log", amount = 3}
     },
-    icon = "__pyfusionenergygraphics__/graphics/icons/log7.png",
+    icon = "__pyfusionenergy__/graphics/icons/log7.png",
     icon_size = 32,
     subgroup = "py-items",
     order = "c9"
@@ -1695,7 +1695,7 @@ RECIPE {
     results = {
         {type = "item", name = "log", amount = 3}
     },
-    icon = "__pyfusionenergygraphics__/graphics/icons/log8.png",
+    icon = "__pyfusionenergy__/graphics/icons/log8.png",
     icon_size = 32,
     subgroup = "py-items",
     order = "c9-1"

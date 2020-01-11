@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "advanced-mining-facilities",
-    icon = "__pyfusionenergygraphics__/graphics/technology/advanced-mining-facilities.png",
+    icon = "__pyfusionenergy__/graphics/technology/advanced-mining-facilities.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"diamond-mining"},

@@ -19,7 +19,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "py-heat-exchanger",
-    icon = "__pyfusionenergygraphics__/graphics/icons/heat-exchanger.png",
+    icon = "__pyfusionenergy__/graphics/icons/heat-exchanger.png",
 	icon_size = 32,
     flags = {},
     subgroup = "py-fusion-reactors",
@@ -31,7 +31,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "py-heat-exchanger",
-    icon = "__pyfusionenergygraphics__/graphics/icons/heat-exchanger.png",
+    icon = "__pyfusionenergy__/graphics/icons/heat-exchanger.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "py-heat-exchanger"},
@@ -56,7 +56,7 @@ ENTITY {
     energy_usage = "150kW",
     ingredient_count = 4,
     animation = {
-        filename = "__pyfusionenergygraphics__/graphics/entity/heat-exchanger/off.png",
+        filename = "__pyfusionenergy__/graphics/entity/heat-exchanger/off.png",
         width = 224,
         height = 224,
         frame_count = 1,
@@ -70,7 +70,7 @@ ENTITY {
             south_position = {0.0, -0.2},
             east_position = {0.0, -0.2},
             animation = {
-                filename = "__pyfusionenergygraphics__/graphics/entity/heat-exchanger/on.png",
+                filename = "__pyfusionenergy__/graphics/entity/heat-exchanger/on.png",
                 frame_count = 80,
                 width = 224,
                 height = 224,
@@ -114,8 +114,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergygraphics__/sounds/heat-exchanger.ogg"},
-        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/heat-exchanger.ogg", volume = 0.75},
+        sound = {filename = "__pyfusionenergy__/sounds/heat-exchanger.ogg"},
+        idle_sound = {filename = "__pyfusionenergy__/sounds/heat-exchanger.ogg", volume = 0.75},
         apparent_volume = 2.5
     }
 }

@@ -1,6 +1,6 @@
 local pipes = {
     south = {
-        filename = "__pyfusionenergygraphics__/graphics/entity/nmf/bottom.png",
+        filename = "__pyfusionenergy__/graphics/entity/nmf/bottom.png",
         priority = "extra-high",
         width = 232,
         height = 245
@@ -27,7 +27,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "nmf-mk03",
-    icon = "__pyfusionenergygraphics__/graphics/icons/nmf-mk03.png",
+    icon = "__pyfusionenergy__/graphics/icons/nmf-mk03.png",
 	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk03",
@@ -39,7 +39,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "nmf-mk03",
-    icon = "__pyfusionenergygraphics__/graphics/icons/nmf-mk03.png",
+    icon = "__pyfusionenergy__/graphics/icons/nmf-mk03.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "nmf-mk03"},
@@ -66,7 +66,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pyfusionenergygraphics__/graphics/entity/nmf/left.png",
+                filename = "__pyfusionenergy__/graphics/entity/nmf/left.png",
                 width = 128,
                 height = 245,
                 line_length = 15,
@@ -74,7 +74,7 @@ ENTITY {
                 animation_speed = 0.8,
                 shift = {-1.5, -0.0}
             },{
-                filename = "__pyfusionenergygraphics__/graphics/entity/nmf/left-mask.png",
+                filename = "__pyfusionenergy__/graphics/entity/nmf/left-mask.png",
                 width = 128,
                 height = 245,
                 line_length = 15,
@@ -84,7 +84,7 @@ ENTITY {
 				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
             },
             {
-                filename = "__pyfusionenergygraphics__/graphics/entity/nmf/right.png",
+                filename = "__pyfusionenergy__/graphics/entity/nmf/right.png",
                 width = 104,
                 height = 245,
                 line_length = 15,
@@ -93,7 +93,7 @@ ENTITY {
                 shift = {2.1, -0.0}
             },
 			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/nmf/right-mask.png",
+                filename = "__pyfusionenergy__/graphics/entity/nmf/right-mask.png",
                 width = 104,
                 height = 245,
                 line_length = 15,
@@ -140,8 +140,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergygraphics__/sounds/nmf.ogg", volume = 1.3},
-        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/nmf.ogg", volume = 0.95},
+        sound = {filename = "__pyfusionenergy__/sounds/nmf.ogg", volume = 1.3},
+        idle_sound = {filename = "__pyfusionenergy__/sounds/nmf.ogg", volume = 0.95},
         apparent_volume = 2.5
     }
 }

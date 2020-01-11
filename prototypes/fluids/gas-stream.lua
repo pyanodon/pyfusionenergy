@@ -1,7 +1,7 @@
 FLUID {
     type = "fluid",
     name = "gas-stream",
-    icon = "__pyfusionenergygraphics__/graphics/icons/gas-stream.png",
+    icon = "__pyfusionenergy__/graphics/icons/gas-stream.png",
 	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 0.692, g = 0.284, b = 0.190},

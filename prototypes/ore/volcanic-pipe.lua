@@ -15,7 +15,7 @@ ENTITY {
     type = "resource",
     name = "volcanic-pipe",
     category = "volcanic-pipe",
-    icon = "__pyfusionenergygraphics__/graphics/icons/ores/volcanic-pipe.png",
+    icon = "__pyfusionenergy__/graphics/icons/ores/volcanic-pipe.png",
 	icon_size = 32,
     flags = {"placeable-neutral"},
     order = "a-b-a",
@@ -57,7 +57,7 @@ ENTITY {
     stage_counts = {0},
     stages = {
         sheet = {
-            filename = "__pyfusionenergygraphics__/graphics/entity/ores/volcanic-pipe.png",
+            filename = "__pyfusionenergy__/graphics/entity/ores/volcanic-pipe.png",
             priority = "extra-high",
             width = 224,
             height = 224,

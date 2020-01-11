@@ -18,7 +18,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "compressor-mk02",
-    icon = "__pyfusionenergygraphics__/graphics/icons/compressor-mk02.png",
+    icon = "__pyfusionenergy__/graphics/icons/compressor-mk02.png",
 	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk02",
@@ -30,7 +30,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "compressor-mk02",
-    icon = "__pyfusionenergygraphics__/graphics/icons/compressor-mk02.png",
+    icon = "__pyfusionenergy__/graphics/icons/compressor-mk02.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "compressor-mk02"},
@@ -57,7 +57,7 @@ ENTITY {
     animation = {
 		layers = {
 			{
-			filename = "__pyfusionenergygraphics__/graphics/entity/compressor/off.png",
+			filename = "__pyfusionenergy__/graphics/entity/compressor/off.png",
 			width = 261,
 			height = 252,
 			frame_count = 1,
@@ -65,7 +65,7 @@ ENTITY {
 			shift = {0.55, -0.45}
 			},
 			{
-			filename = "__pyfusionenergygraphics__/graphics/entity/compressor/off-mask.png",
+			filename = "__pyfusionenergy__/graphics/entity/compressor/off-mask.png",
 			width = 261,
 			height = 252,
 			frame_count = 1,
@@ -84,7 +84,7 @@ ENTITY {
             animation = {
 				layers = {
 					{
-					filename = "__pyfusionenergygraphics__/graphics/entity/compressor/on.png",
+					filename = "__pyfusionenergy__/graphics/entity/compressor/on.png",
 					frame_count = 50,
 					width = 261,
 					height = 252,
@@ -93,7 +93,7 @@ ENTITY {
 					priority = "medium"
 					},
 					{
-					filename = "__pyfusionenergygraphics__/graphics/entity/compressor/on-mask.png",
+					filename = "__pyfusionenergy__/graphics/entity/compressor/on-mask.png",
 					frame_count = 50,
 					width = 261,
 					height = 252,
@@ -166,8 +166,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergygraphics__/sounds/compressor.ogg", volume = 0.7},
-        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/compressor.ogg", volume = 0.5},
+        sound = {filename = "__pyfusionenergy__/sounds/compressor.ogg", volume = 0.7},
+        idle_sound = {filename = "__pyfusionenergy__/sounds/compressor.ogg", volume = 0.5},
         apparent_volume = 2.5
     }
 }

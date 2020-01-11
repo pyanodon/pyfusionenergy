@@ -18,7 +18,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "cold-clean-air",
-    icon = "__pyfusionenergygraphics__/graphics/icons/cold-clean-air.png",
+    icon = "__pyfusionenergy__/graphics/icons/cold-clean-air.png",
 	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 0.560, g = 0.862, b = 1.0},
