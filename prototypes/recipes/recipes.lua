@@ -1159,7 +1159,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "boron-carbide", amount = 3},
-        {type = "fluid", name = "carbon-dioxide", amount = 3}
+        {type = "fluid", name = "carbon-dioxide", amount = 30}
     },
     main_product = "boron-carbide",
 }
