@@ -1,6 +1,6 @@
 local pipes = {
     south = {
-        filename = "__pyfusionenergygraphics__/graphics/entity/thickener/bottom.png",
+        filename = "__pyfusionenergy__/graphics/entity/thickener/bottom.png",
         priority = "extra-high",
         width = 237,
         height = 260
@@ -27,7 +27,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "thickener-mk01",
-    icon = "__pyfusionenergygraphics__/graphics/icons/thickener-mk01.png",
+    icon = "__pyfusionenergy__/graphics/icons/thickener-mk01.png",
 	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk01",
@@ -39,7 +39,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "thickener-mk01",
-    icon = "__pyfusionenergygraphics__/graphics/icons/thickener-mk01.png",
+    icon = "__pyfusionenergy__/graphics/icons/thickener-mk01.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "thickener-mk01"},
@@ -66,7 +66,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pyfusionenergygraphics__/graphics/entity/thickener/thickener-bottom.png",
+                filename = "__pyfusionenergy__/graphics/entity/thickener/thickener-bottom.png",
                 width = 237,
                 height = 132,
                 line_length = 8,
@@ -75,7 +75,7 @@ ENTITY {
                 shift = {0.19, 1.42}
             },
 			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/thickener/thickener-bottom-mask.png",
+                filename = "__pyfusionenergy__/graphics/entity/thickener/thickener-bottom-mask.png",
                 width = 237,
                 height = 132,
                 line_length = 8,
@@ -85,7 +85,7 @@ ENTITY {
 				tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
             },
             {
-                filename = "__pyfusionenergygraphics__/graphics/entity/thickener/thickener-top.png",
+                filename = "__pyfusionenergy__/graphics/entity/thickener/thickener-top.png",
                 width = 237,
                 height = 128,
                 line_length = 8,
@@ -94,7 +94,7 @@ ENTITY {
                 shift = {0.19, -2.640}
             },
 			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/thickener/thickener-top-mask.png",
+                filename = "__pyfusionenergy__/graphics/entity/thickener/thickener-top-mask.png",
                 width = 237,
                 height = 128,
                 line_length = 8,
@@ -141,8 +141,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergygraphics__/sounds/thickener.ogg", volume = 1.3},
-        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/thickener.ogg", volume = 0.95},
+        sound = {filename = "__pyfusionenergy__/sounds/thickener.ogg", volume = 1.3},
+        idle_sound = {filename = "__pyfusionenergy__/sounds/thickener.ogg", volume = 0.95},
         apparent_volume = 2.5
     }
 }

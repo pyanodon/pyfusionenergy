@@ -14,7 +14,7 @@ RECIPE {
         {type = "fluid", name = "diamond-concentrate", amount = 20}
     },
     main_product = "diamond-tailings",
-    icon = "__pyfusionenergygraphics__/graphics/icons/pan-diamond-tailings.png",
+    icon = "__pyfusionenergy__/graphics/icons/pan-diamond-tailings.png",
 	icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "j"
@@ -23,7 +23,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "diamond-tailings",
-    icon = "__pyfusionenergygraphics__/graphics/icons/diamond-tailings.png",
+    icon = "__pyfusionenergy__/graphics/icons/diamond-tailings.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.317, g = 0.470, b = 0.482},

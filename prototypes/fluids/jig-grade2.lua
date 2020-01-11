@@ -1,7 +1,7 @@
 FLUID {
     type = "fluid",
     name = "jig-grade2",
-    icon = "__pyfusionenergygraphics__/graphics/icons/jig2.png",
+    icon = "__pyfusionenergy__/graphics/icons/jig2.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.995, g = 0.278, b = 0.576},

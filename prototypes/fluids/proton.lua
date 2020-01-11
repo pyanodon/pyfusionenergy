@@ -1,7 +1,7 @@
 FLUID {
     type = "fluid",
     name = "proton",
-    icon = "__pyfusionenergygraphics__/graphics/icons/proton.png",
+    icon = "__pyfusionenergy__/graphics/icons/proton.png",
 	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 0.325, g = 0.921, b = 0.341},

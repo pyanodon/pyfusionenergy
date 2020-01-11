@@ -1,6 +1,6 @@
 local pipe_bottom = {
     south = {
-        filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/bottom.png",
+        filename = "__pyfusionenergy__/graphics/entity/grease-table/bottom.png",
         priority = "high",
         width = 247,
         height = 286
@@ -26,7 +26,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "grease-table-mk04",
-    icon = "__pyfusionenergygraphics__/graphics/icons/grease-table-mk04.png",
+    icon = "__pyfusionenergy__/graphics/icons/grease-table-mk04.png",
 	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk04",
@@ -38,7 +38,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "grease-table-mk04",
-    icon = "__pyfusionenergygraphics__/graphics/icons/grease-table-mk04.png",
+    icon = "__pyfusionenergy__/graphics/icons/grease-table-mk04.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "grease-table-mk04"},
@@ -65,7 +65,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/left.png",
+                filename = "__pyfusionenergy__/graphics/entity/grease-table/left.png",
                 width = 96,
                 height = 286,
                 line_length = 21,
@@ -74,7 +74,7 @@ ENTITY {
                 shift = {-2.032, -1.0}
             },
 			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/left-mask.png",
+                filename = "__pyfusionenergy__/graphics/entity/grease-table/left-mask.png",
                 width = 96,
                 height = 286,
                 line_length = 21,
@@ -84,7 +84,7 @@ ENTITY {
 				tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
             },
             {
-                filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/mid.png",
+                filename = "__pyfusionenergy__/graphics/entity/grease-table/mid.png",
                 width = 96,
                 height = 286,
                 line_length = 21,
@@ -93,7 +93,7 @@ ENTITY {
                 shift = {0.968, -1.0}
             },
 			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/mid-mask.png",
+                filename = "__pyfusionenergy__/graphics/entity/grease-table/mid-mask.png",
                 width = 96,
                 height = 286,
                 line_length = 21,
@@ -103,7 +103,7 @@ ENTITY {
 				tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
             },
             {
-                filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/right.png",
+                filename = "__pyfusionenergy__/graphics/entity/grease-table/right.png",
                 width = 55,
                 height = 286,
                 line_length = 21,
@@ -112,7 +112,7 @@ ENTITY {
                 shift = {3.329, -1.0}
             },
 			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/right-mask.png",
+                filename = "__pyfusionenergy__/graphics/entity/grease-table/right-mask.png",
                 width = 55,
                 height = 286,
                 line_length = 21,
@@ -160,8 +160,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergygraphics__/sounds/grease-table.ogg", volume = 1.0},
-        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/grease-table.ogg", volume = 0.85},
+        sound = {filename = "__pyfusionenergy__/sounds/grease-table.ogg", volume = 1.0},
+        idle_sound = {filename = "__pyfusionenergy__/sounds/grease-table.ogg", volume = 0.85},
         apparent_volume = 2.5
     }
 }

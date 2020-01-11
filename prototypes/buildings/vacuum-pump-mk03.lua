@@ -1,6 +1,6 @@
 local pipes = {
     south = {
-        filename = "__pyfusionenergygraphics__/graphics/entity/vacuum-pump/bottom.png",
+        filename = "__pyfusionenergy__/graphics/entity/vacuum-pump/bottom.png",
         priority = "extra-high",
         width = 110,
         height = 148
@@ -28,7 +28,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "vacuum-pump-mk03",
-    icon = "__pyfusionenergygraphics__/graphics/icons/vacuum-pump-mk03.png",
+    icon = "__pyfusionenergy__/graphics/icons/vacuum-pump-mk03.png",
 	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk03",
@@ -40,7 +40,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "vacuum-pump-mk03",
-    icon = "__pyfusionenergygraphics__/graphics/icons/vacuum-pump-mk03.png",
+    icon = "__pyfusionenergy__/graphics/icons/vacuum-pump-mk03.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "vacuum-pump-mk03"},
@@ -67,7 +67,7 @@ ENTITY {
     animation = {
 	layers = {
 		{
-        filename = "__pyfusionenergygraphics__/graphics/entity/vacuum-pump/vacuum-pump.png",
+        filename = "__pyfusionenergy__/graphics/entity/vacuum-pump/vacuum-pump.png",
         width = 110,
         height = 148,
         frame_count = 20,
@@ -76,7 +76,7 @@ ENTITY {
         shift = {0.187, -0.656}
 		},
 		{
-        filename = "__pyfusionenergygraphics__/graphics/entity/vacuum-pump/vacuum-pump-mask.png",
+        filename = "__pyfusionenergy__/graphics/entity/vacuum-pump/vacuum-pump-mask.png",
         width = 110,
         height = 148,
         frame_count = 20,
@@ -107,8 +107,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergygraphics__/sounds/vacuum-pump.ogg", volume = 0.8},
-        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/vacuum-pump.ogg", volume = 0.40},
+        sound = {filename = "__pyfusionenergy__/sounds/vacuum-pump.ogg", volume = 0.8},
+        idle_sound = {filename = "__pyfusionenergy__/sounds/vacuum-pump.ogg", volume = 0.40},
         apparent_volume = 2.5
     }
 }

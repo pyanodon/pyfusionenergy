@@ -14,7 +14,7 @@ RECIPE {
         {type = "fluid", name = "vanadium-solution", amount = 100}
     },
     main_product = "organic-vanadate",
-    icon = "__pyfusionenergygraphics__/graphics/icons/mixer-organic-vanadate.png",
+    icon = "__pyfusionenergy__/graphics/icons/mixer-organic-vanadate.png",
 	icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "o"
@@ -23,7 +23,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "organic-vanadate",
-    icon = "__pyfusionenergygraphics__/graphics/icons/organic-vanadate.png",
+    icon = "__pyfusionenergy__/graphics/icons/organic-vanadate.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.627, g = 0.376, b = 0.125},

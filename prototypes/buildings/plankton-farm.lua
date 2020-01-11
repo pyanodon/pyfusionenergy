@@ -18,7 +18,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "plankton-farm",
-    icon = "__pyfusionenergygraphics__/graphics/icons/plankton-farm.png",
+    icon = "__pyfusionenergy__/graphics/icons/plankton-farm.png",
 	icon_size = 32,
     flags = {},
     subgroup = "py-fusion-buildings-miners",
@@ -30,7 +30,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "plankton-farm",
-    icon = "__pyfusionenergygraphics__/graphics/icons/plankton-farm.png",
+    icon = "__pyfusionenergy__/graphics/icons/plankton-farm.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "plankton-farm"},
@@ -57,7 +57,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pyfusionenergygraphics__/graphics/entity/plankton-farm/left.png",
+                filename = "__pyfusionenergy__/graphics/entity/plankton-farm/left.png",
                 width = 128,
                 height = 243,
                 line_length = 16,
@@ -66,7 +66,7 @@ ENTITY {
                 shift = {-1.54, -0.3}
             },
             {
-                filename = "__pyfusionenergygraphics__/graphics/entity/plankton-farm/right.png",
+                filename = "__pyfusionenergy__/graphics/entity/plankton-farm/right.png",
                 width = 113,
                 height = 243,
                 line_length = 16,
@@ -110,8 +110,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergygraphics__/sounds/plankton-farm.ogg", volume = 1.3},
-        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/plankton-farm.ogg", volume = 0.95},
+        sound = {filename = "__pyfusionenergy__/sounds/plankton-farm.ogg", volume = 1.3},
+        idle_sound = {filename = "__pyfusionenergy__/sounds/plankton-farm.ogg", volume = 0.95},
         apparent_volume = 2.5
     }
 }

@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "fusion-mk01",
-    icon = "__pyfusionenergygraphics__/graphics/technology/fusion-1.png",
+    icon = "__pyfusionenergy__/graphics/technology/fusion-1.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"diamond-mining", "helium-processing"},

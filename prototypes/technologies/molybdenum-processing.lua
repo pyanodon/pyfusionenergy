@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "molybdenum-processing",
-    icon = "__pyfusionenergygraphics__/graphics/technology/molybdenum-processing.png",
+    icon = "__pyfusionenergy__/graphics/technology/molybdenum-processing.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"advanced-mining-facilities", "fusion-mk01"},

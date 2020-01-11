@@ -17,7 +17,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "mixer-mk04",
-    icon = "__pyfusionenergygraphics__/graphics/icons/mixer-mk04.png",
+    icon = "__pyfusionenergy__/graphics/icons/mixer-mk04.png",
 	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk04",
@@ -29,7 +29,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "mixer-mk04",
-    icon = "__pyfusionenergygraphics__/graphics/icons/mixer-mk04.png",
+    icon = "__pyfusionenergy__/graphics/icons/mixer-mk04.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "mixer-mk04"},
@@ -56,7 +56,7 @@ ENTITY {
     animation = {
 	layers = {
 	{
-        filename = "__pyfusionenergygraphics__/graphics/entity/mixer/mixer.png",
+        filename = "__pyfusionenergy__/graphics/entity/mixer/mixer.png",
         width = 246,
         height = 233,
         frame_count = 64,
@@ -65,7 +65,7 @@ ENTITY {
         shift = {0.312, -0.156}
     },
 	{
-        filename = "__pyfusionenergygraphics__/graphics/entity/mixer/mixer-mask.png",
+        filename = "__pyfusionenergy__/graphics/entity/mixer/mixer-mask.png",
         width = 246,
         height = 233,
         frame_count = 64,
@@ -132,8 +132,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergygraphics__/sounds/mixer.ogg"},
-        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/mixer.ogg", volume = 0.75},
+        sound = {filename = "__pyfusionenergy__/sounds/mixer.ogg"},
+        idle_sound = {filename = "__pyfusionenergy__/sounds/mixer.ogg", volume = 0.75},
         apparent_volume = 2.5
     }
 }

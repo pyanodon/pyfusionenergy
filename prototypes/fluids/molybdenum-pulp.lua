@@ -18,7 +18,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "molybdenum-pulp",
-    icon = "__pyfusionenergygraphics__/graphics/icons/molybdenum-pulp.png",
+    icon = "__pyfusionenergy__/graphics/icons/molybdenum-pulp.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.278, g = 0.36, b = 0.458},

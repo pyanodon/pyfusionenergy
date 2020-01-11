@@ -17,7 +17,7 @@ RECIPE{
 FLUID {
     type = "fluid",
     name = "industrial-solvent",
-    icon = "__pyfusionenergygraphics__/graphics/icons/industrial-solvent.png",
+    icon = "__pyfusionenergy__/graphics/icons/industrial-solvent.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.941, g = 0.305, b = 0.215},

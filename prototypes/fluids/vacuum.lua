@@ -13,7 +13,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "vacuum",
-    icon = "__pyfusionenergygraphics__/graphics/icons/vacuum.png",
+    icon = "__pyfusionenergy__/graphics/icons/vacuum.png",
 	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 0.01, g = 0.01, b = 0.01},
