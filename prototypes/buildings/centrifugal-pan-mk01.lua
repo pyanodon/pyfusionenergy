@@ -1,24 +1,24 @@
 local pipe_left = {
     north = {
-        filename = "__pyfusionenergy__/graphics/entity/centrifugal-pan/top-left.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/top-left.png",
         priority = "low",
         width = 320,
         height = 336
     },
     south = {
-        filename = "__pyfusionenergy__/graphics/entity/centrifugal-pan/bottom-right.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/bottom-right.png",
         priority = "high",
         width = 320,
         height = 336
     },
     east = {
-        filename = "__pyfusionenergy__/graphics/entity/centrifugal-pan/right-top.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/right-top.png",
         priority = "high",
         width = 320,
         height = 336
     },
     west = {
-        filename = "__pyfusionenergy__/graphics/entity/centrifugal-pan/left-bottom.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/left-bottom.png",
         priority = "high",
         width = 320,
         height = 336
@@ -27,25 +27,25 @@ local pipe_left = {
 
 local pipe_right = {
     north = {
-        filename = "__pyfusionenergy__/graphics/entity/centrifugal-pan/top-right.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/top-right.png",
         priority = "low",
         width = 320,
         height = 336
     },
     south = {
-        filename = "__pyfusionenergy__/graphics/entity/centrifugal-pan/bottom-left.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/bottom-left.png",
         priority = "high",
         width = 320,
         height = 336
     },
     east = {
-        filename = "__pyfusionenergy__/graphics/entity/centrifugal-pan/right-bottom.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/right-bottom.png",
         priority = "high",
         width = 320,
         height = 336
     },
     west = {
-        filename = "__pyfusionenergy__/graphics/entity/centrifugal-pan/left-top.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/left-top.png",
         priority = "high",
         width = 320,
         height = 336
@@ -73,7 +73,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "centrifugal-pan-mk01",
-    icon = "__pyfusionenergy__/graphics/icons/centrifugal-pan-mk01.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/centrifugal-pan-mk01.png",
 	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk01",
@@ -85,7 +85,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "centrifugal-pan-mk01",
-    icon = "__pyfusionenergy__/graphics/icons/centrifugal-pan-mk01.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/centrifugal-pan-mk01.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "centrifugal-pan-mk01"},
@@ -112,7 +112,7 @@ ENTITY {
     animation = {
 		layers = {
 			{
-			filename = "__pyfusionenergy__/graphics/entity/centrifugal-pan/off.png",
+			filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/off.png",
 			width = 320,
 			height = 328,
 			frame_count = 1,
@@ -121,7 +121,7 @@ ENTITY {
 			shift = {0.02, -0.10}
 			},
 			{
-			filename = "__pyfusionenergy__/graphics/entity/centrifugal-pan/off-mask.png",
+			filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/off-mask.png",
 			width = 320,
 			height = 328,
 			frame_count = 1,
@@ -139,7 +139,7 @@ ENTITY {
             south_position = {0.02, -0.22},
             east_position = {0.02, -0.22},
             animation = {
-                filename = "__pyfusionenergy__/graphics/entity/centrifugal-pan/on.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/on.png",
                 frame_count = 100,
                 line_length = 10,
                 width = 192,
@@ -183,8 +183,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergy__/sounds/centrifugal-pan.ogg"},
-        idle_sound = {filename = "__pyfusionenergy__/sounds/centrifugal-pan.ogg", volume = 0.65},
+        sound = {filename = "__pyfusionenergygraphics__/sounds/centrifugal-pan.ogg"},
+        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/centrifugal-pan.ogg", volume = 0.65},
         apparent_volume = 2.5
     }
 }

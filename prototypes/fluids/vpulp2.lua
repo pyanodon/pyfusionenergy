@@ -12,7 +12,7 @@ RECIPE {
         {type = "fluid", name = "vpulp2", amount = 100}
     },
     main_product = "vpulp2",
-    icon = "__pyfusionenergy__/graphics/icons/agitation-vpulp2.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/agitation-vpulp2.png",
 	icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "k"
@@ -21,7 +21,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "vpulp2",
-    icon = "__pyfusionenergy__/graphics/icons/vpulp2.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/vpulp2.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.870, g = 0, b = 1},

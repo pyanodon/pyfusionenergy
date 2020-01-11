@@ -1,7 +1,7 @@
 FLUID {
     type = "fluid",
     name = "tritium",
-    icon = "__pyfusionenergy__/graphics/icons/tritium.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/tritium.png",
 	icon_size = 32,
     default_temperature = 15,
     base_color = {r = 1, g = 0.960, b = 0.392},

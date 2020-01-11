@@ -1,7 +1,7 @@
 FLUID {
     type = "fluid",
     name = "used-solvent",
-    icon = "__pyfusionenergy__/graphics/icons/used-solvent.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/used-solvent.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.300, g = 0.300, b = 0.300},

@@ -13,7 +13,7 @@ RECIPE {
         {type = "fluid", name = "dirty-water", amount = 250}
     },
     main_product = "jig-concentrate",
-    icon = "__pyfusionenergy__/graphics/icons/jig-diamond-concentrate.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/jig-diamond-concentrate.png",
 	icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "j"
@@ -34,7 +34,7 @@ RECIPE {
         {type = "fluid", name = "dirty-water", amount = 350}
     },
     main_product = "jig-concentrate",
-    icon = "__pyfusionenergy__/graphics/icons/jig-diamond-tailings.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/jig-diamond-tailings.png",
 	icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "j"
@@ -43,7 +43,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "jig-concentrate",
-    icon = "__pyfusionenergy__/graphics/icons/jig-concentrate.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/jig-concentrate.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.478, g = 0.8, b = 0.949},

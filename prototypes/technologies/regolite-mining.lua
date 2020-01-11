@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "regolite-mining",
-    icon = "__pyfusionenergy__/graphics/technology/regolite-mining.png",
+    icon = "__pyfusionenergygraphics__/graphics/technology/regolite-mining.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"advanced-mining-facilities", "helium-processing"},

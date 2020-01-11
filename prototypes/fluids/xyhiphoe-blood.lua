@@ -1,7 +1,7 @@
 FLUID {
     type = "fluid",
     name = "xyhiphoe-blood",
-    icon = "__pyfusionenergy__/graphics/icons/xyhiphoe-blood.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/xyhiphoe-blood.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.278, g = 0.0, b = 0.796},

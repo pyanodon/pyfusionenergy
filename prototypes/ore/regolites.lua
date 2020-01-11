@@ -15,7 +15,7 @@ ENTITY {
     type = "resource",
     name = "regolites",
     category = "regolite",
-    icon = "__pyfusionenergy__/graphics/icons/ores/regolite-resource.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/ores/regolite-resource.png",
 	icon_size = 32,
     flags = {"placeable-neutral"},
     order = "a-b-a",
@@ -64,7 +64,7 @@ ENTITY {
     stage_counts = {0},
     stages = {
         sheet = {
-            filename = "__pyfusionenergy__/graphics/entity/ores/regolite-resource.png",
+            filename = "__pyfusionenergygraphics__/graphics/entity/ores/regolite-resource.png",
             priority = "extra-high",
             width = 240,
             height = 250,

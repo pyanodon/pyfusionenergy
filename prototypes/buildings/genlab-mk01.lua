@@ -1,6 +1,6 @@
 local pipe = {
     south = {
-        filename = "__pyfusionenergy__/graphics/entity/genlab/bottom.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/genlab/bottom.png",
         priority = "extra-high",
         width = 224,
         height = 257
@@ -29,7 +29,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "genlab-mk01",
-    icon = "__pyfusionenergy__/graphics/icons/genlab-mk01.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/genlab-mk01.png",
 	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk01",
@@ -41,7 +41,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "genlab-mk01",
-    icon = "__pyfusionenergy__/graphics/icons/genlab-mk01.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/genlab-mk01.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "genlab-mk01"},
@@ -68,7 +68,7 @@ ENTITY {
     animation = {
 		layers = {
 		{
-        filename = "__pyfusionenergy__/graphics/entity/genlab/off.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/genlab/off.png",
         width = 224,
         height = 257,
         frame_count = 1,
@@ -76,7 +76,7 @@ ENTITY {
         shift = {-0.00, -0.15}
 		},
 		{
-        filename = "__pyfusionenergy__/graphics/entity/genlab/off-mask.png",
+        filename = "__pyfusionenergygraphics__/graphics/entity/genlab/off-mask.png",
         width = 224,
         height = 257,
         frame_count = 1,
@@ -93,7 +93,7 @@ ENTITY {
             south_position = {-0.25, -1.624},
             east_position = {-0.25, -1.624},
             animation = {
-                filename = "__pyfusionenergy__/graphics/entity/genlab/main.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/genlab/main.png",
                 frame_count = 100,
                 width = 140,
                 height = 163,
@@ -109,7 +109,7 @@ ENTITY {
             south_position = {-0.0, -3.156},
             east_position = {-0.0, -3.156},
             animation = {
-                filename = "__pyfusionenergy__/graphics/entity/genlab/cooler.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/genlab/cooler.png",
                 frame_count = 80,
                 width = 224,
                 height = 64,
@@ -124,7 +124,7 @@ ENTITY {
             south_position = {2.0, -0.556},
             east_position = {2.0, -0.556},
             animation = {
-                filename = "__pyfusionenergy__/graphics/entity/genlab/smoke.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/genlab/smoke.png",
                 frame_count = 50,
                 width = 96,
                 height = 96,
@@ -156,8 +156,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergy__/sounds/genlab.ogg", volume = 1.2},
-        idle_sound = {filename = "__pyfusionenergy__/sounds/genlab.ogg", volume = 0.75},
+        sound = {filename = "__pyfusionenergygraphics__/sounds/genlab.ogg", volume = 1.2},
+        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/genlab.ogg", volume = 0.75},
         apparent_volume = 2.5
     }
 }
