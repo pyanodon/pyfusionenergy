@@ -16,7 +16,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "vanadates",
-    icon = "__pyfusionenergy__/graphics/icons/vanadates.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/vanadates.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.141, g = 0.082, b = 0.396},

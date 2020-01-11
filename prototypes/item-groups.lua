@@ -4,7 +4,7 @@ data:extend {
         name = "fusion-energy",
         order = "u",
         inventory_order = "u",
-        icon = "__pyfusionenergy__/graphics/technology/item-group.png",
+        icon = "__pyfusionenergygraphics__/graphics/technology/item-group.png",
         icon_size = 64
     },
     {

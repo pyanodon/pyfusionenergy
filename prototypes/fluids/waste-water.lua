@@ -1,7 +1,7 @@
 FLUID {
     type = "fluid",
     name = "waste-water",
-    icon = "__pyfusionenergy__/graphics/icons/waste-water.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/waste-water.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.274, g = 0.341, b = 0.313},

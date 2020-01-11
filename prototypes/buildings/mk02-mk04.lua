@@ -45,7 +45,7 @@ if settings.startup['add-tiers'].value and mods['pyrawores'] then
         ITEM {
             type = 'item',
             name = mach .. '-mk02',
-            icon = "__pyfusionenergy__/graphics/icons/" .. mach .. "-mk02.png",
+            icon = "__pyfusionenergygraphics__/graphics/icons/" .. mach .. "-mk02.png",
             icon_size = 64,
             flags = {},
             subgroup = 'py-fusion-buildings-mk02',
@@ -58,7 +58,7 @@ if settings.startup['add-tiers'].value and mods['pyrawores'] then
         ENTITY {
             type = 'assembling-machine',
             name = mach .. '-mk02',
-            icon = "__pyfusionenergy__/graphics/icons/" .. mach .. "-mk02.png",
+            icon = "__pyfusionenergygraphics__/graphics/icons/" .. mach .. "-mk02.png",
             icon_size = 64,
             flags = {'placeable-neutral', 'player-creation'},
             minable = {mining_time = 0.5, result = mach .. '-mk02'},
@@ -108,7 +108,7 @@ if settings.startup['add-tiers'].value and mods['pyrawores'] then
         ITEM {
             type = 'item',
             name = mach .. '-mk03',
-            icon = "__pyfusionenergy__/graphics/icons/" .. mach .. "-mk03.png",
+            icon = "__pyfusionenergygraphics__/graphics/icons/" .. mach .. "-mk03.png",
             icon_size = 64,
             flags = {},
             subgroup = 'py-fusion-buildings-mk03',
@@ -121,7 +121,7 @@ if settings.startup['add-tiers'].value and mods['pyrawores'] then
         ENTITY {
             type = 'assembling-machine',
             name = mach .. '-mk03',
-            icon = "__pyfusionenergy__/graphics/icons/" .. mach .. "-mk03.png",
+            icon = "__pyfusionenergygraphics__/graphics/icons/" .. mach .. "-mk03.png",
             icon_size = 64,
             flags = {'placeable-neutral', 'player-creation'},
             minable = {mining_time = 0.5, result = mach .. '-mk03'},
@@ -167,7 +167,7 @@ if settings.startup['add-tiers'].value and mods['pyrawores'] then
         ITEM {
             type = 'item',
             name = mach .. '-mk04',
-            icon = "__pyfusionenergy__/graphics/icons/" .. mach .. "-mk04.png",
+            icon = "__pyfusionenergygraphics__/graphics/icons/" .. mach .. "-mk04.png",
             icon_size = 64,
             flags = {},
             subgroup = 'py-fusion-buildings-mk04',
@@ -180,7 +180,7 @@ if settings.startup['add-tiers'].value and mods['pyrawores'] then
         ENTITY {
             type = 'assembling-machine',
             name = mach .. '-mk04',
-            icon = "__pyfusionenergy__/graphics/icons/" .. mach .. "-mk04.png",
+            icon = "__pyfusionenergygraphics__/graphics/icons/" .. mach .. "-mk04.png",
             icon_size = 64,
             flags = {'placeable-neutral', 'player-creation'},
             minable = {mining_time = 0.5, result = mach .. '-mk04'},

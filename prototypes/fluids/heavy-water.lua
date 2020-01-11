@@ -16,7 +16,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "heavy-water",
-    icon = "__pyfusionenergy__/graphics/icons/heavy-water.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/heavy-water.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.423, g = 0.678, b = 0.823},

@@ -14,7 +14,7 @@ RECIPE {
         {type = "fluid", name = "steam", amount = 100, temperature = 60}
     },
     main_product = "liquid-pure-air",
-    icon = "__pyfusionenergy__/graphics/icons/compress-cold-air.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/compress-cold-air.png",
 	icon_size = 32,
     subgroup = "py-fusion-gases",
     order = "a"
@@ -23,7 +23,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "liquid-pure-air",
-    icon = "__pyfusionenergy__/graphics/icons/liquid-pure-air.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/liquid-pure-air.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.560, g = 0.862, b = 1.0},

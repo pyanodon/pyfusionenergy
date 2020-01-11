@@ -19,7 +19,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "diamond-mine",
-    icon = "__pyfusionenergy__/graphics/icons/diamond-mine.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/diamond-mine.png",
 	icon_size = 32,
     flags = {},
     subgroup = "py-fusion-buildings-miners",
@@ -31,7 +31,7 @@ ITEM {
 ENTITY {
     type = "mining-drill",
     name = "diamond-mine",
-    icon = "__pyfusionenergy__/graphics/icons/diamond-mine.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/diamond-mine.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "diamond-mine"},
@@ -65,7 +65,7 @@ ENTITY {
     animations = {
         layers = {
             {
-                filename = "__pyfusionenergy__/graphics/entity/diamond-mine/diamond-left.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/diamond-mine/diamond-left.png",
                 width = 128,
                 height = 224,
                 line_length = 15,
@@ -74,7 +74,7 @@ ENTITY {
                 shift = {-1.5, -0.0}
             },
             {
-                filename = "__pyfusionenergy__/graphics/entity/diamond-mine/diamond-right.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/diamond-mine/diamond-right.png",
                 width = 136,
                 height = 224,
                 line_length = 15,
@@ -86,8 +86,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergy__/sounds/diamond-mine.ogg", volume = 1.0},
-        idle_sound = {filename = "__pyfusionenergy__/sounds/diamond-mine.ogg", volume = 0.7},
+        sound = {filename = "__pyfusionenergygraphics__/sounds/diamond-mine.ogg", volume = 1.0},
+        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/diamond-mine.ogg", volume = 0.7},
         apparent_volume = 2.5
     }
 }

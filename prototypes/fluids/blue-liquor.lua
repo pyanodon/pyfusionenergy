@@ -17,7 +17,7 @@ RECIPE {
 FLUID {
     type = "fluid",
     name = "blue-liquor",
-    icon = "__pyfusionenergy__/graphics/icons/blue-liquor.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/blue-liquor.png",
 	icon_size = 32,
     default_temperature = 10,
     base_color = {r = 0.137, g = 0.525, b = 1},

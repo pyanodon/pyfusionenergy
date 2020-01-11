@@ -18,7 +18,7 @@ RECIPE {
 ITEM {
     type = "item",
     name = "fusion-reactor-mk02",
-    icon = "__pyfusionenergy__/graphics/icons/fusion-reactor-mk02.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/fusion-reactor-mk02.png",
 	icon_size = 32,
     flags = {},
     subgroup = "py-fusion-reactors",
@@ -30,7 +30,7 @@ ITEM {
 ENTITY {
     type = "assembling-machine",
     name = "fusion-reactor-mk02",
-    icon = "__pyfusionenergy__/graphics/icons/fusion-reactor-mk02.png",
+    icon = "__pyfusionenergygraphics__/graphics/icons/fusion-reactor-mk02.png",
 	icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "fusion-reactor-mk02"},
@@ -57,7 +57,7 @@ ENTITY {
     animation = {
         layers = {
             {
-                filename = "__pyfusionenergy__/graphics/entity/fusion-reactor-mk02/off.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk02/off.png",
                 priority = "high",
                 width = 321,
                 height = 361,
@@ -68,7 +68,7 @@ ENTITY {
                 shift = {0.0, -0.687}
             },
             {
-                filename = "__pyfusionenergy__/graphics/entity/fusion-reactor-mk02/shadow.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk02/shadow.png",
                 priority = "low",
                 width = 339,
                 height = 361,
@@ -88,7 +88,7 @@ ENTITY {
             south_position = {0.0, -0.58},
             east_position = {0.0, -0.58},
             animation = {
-                filename = "__pyfusionenergy__/graphics/entity/fusion-reactor-mk02/on.png",
+                filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk02/on.png",
                 frame_count = 42,
                 line_length = 6,
                 width = 321,
@@ -177,8 +177,8 @@ ENTITY {
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact.ogg", volume = 0.65},
     working_sound = {
-        sound = {filename = "__pyfusionenergy__/sounds/fusion-reactor-mk02.ogg", volume = 1.5},
-        idle_sound = {filename = "__pyfusionenergy__/sounds/fusion-reactor-mk02.ogg", volume = 0.85},
+        sound = {filename = "__pyfusionenergygraphics__/sounds/fusion-reactor-mk02.ogg", volume = 1.5},
+        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/fusion-reactor-mk02.ogg", volume = 0.85},
         apparent_volume = 2.5
     }
 }
