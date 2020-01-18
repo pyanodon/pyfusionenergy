@@ -4,7 +4,7 @@ RECIPE {
     energy_required = 10,
     enabled = false,
     ingredients = {
-        {"laser-turret", 2},
+        {"small-lamp", 50},
         {"electric-mining-drill", 3}, --bobs titanium plate
         {"engine-unit", 4},
         {"nbfe-alloy", 30},
