@@ -4,6 +4,7 @@ local FUN = require("__pycoalprocessing__/prototypes/functions/functions")
 --require('prototypes/buildings/mk02-mk04')
 
 ITEM("production-science-pack", "tool").icon = "__pyfusionenergygraphics__/graphics/icons/production-science-pack.png"
+ITEM("production-science-pack", "tool"):set("icon_size", 32)
 
 RECIPE("production-science-pack"):remove_unlock('production-science-pack')
 TECHNOLOGY('production-science-pack'):remove_prereq('advanced-material-processing-2'):remove_prereq('productivity-module'):remove_prereq('railway')
