@@ -33,7 +33,7 @@ ENTITY {
     minable = {mining_time = 0.5, result = "py-turbine"},
     max_health = 500,
     corpse = "big-remnants",
-    effectivity = 6.0,
+    effectivity = 8.0,
     fluid_usage_per_tick = 9,
     maximum_temperature = 5000,
     resistances = {

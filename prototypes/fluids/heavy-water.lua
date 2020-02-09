@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     energy_required = 6,
     ingredients = {
-        {type = "item", name = "sulfur", amount = 10},
+        {type = "item", name = "sulfur", amount = 5},
         {type = "fluid", name = "pressured-water", amount = 1000}
     },
     results = {
