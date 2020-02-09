@@ -1360,7 +1360,7 @@ RECIPE {
     enabled = false,
     energy_required = 40,
     ingredients = {
-        {type = "fluid", name = "proton", amount = 45},
+        {type = "fluid", name = "proton", amount = 15},
         {type = "fluid", name = "pressured-water", amount = 5000},
         {type = "item", name = "blanket", amount = 1},
         {type = "item", name = "divertor", amount = 8},
