@@ -1027,7 +1027,7 @@ RECIPE {
     energy_required = 5,
     ingredients = {
         {type = "item", name = "sc-wire", amount = 10},
-        {type = "item", name = "plastic-bar", amount = 5},
+        {type = "item", name = "plastic-bar", amount = 10},
         {type = "item", name = "coil-core", amount = 1}
     },
     results = {
