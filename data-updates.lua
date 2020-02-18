@@ -7,6 +7,7 @@ ITEM("production-science-pack", "tool").icon = "__pyfusionenergygraphics__/graph
 ITEM("production-science-pack", "tool"):set("icon_size", 32)
 
 RECIPE("production-science-pack"):remove_unlock('production-science-pack')
+RECIPE('rocket-silo'):replace_ingredient("steel-plate", "super-alloy")
 TECHNOLOGY('production-science-pack'):remove_prereq('advanced-material-processing-2'):remove_prereq('productivity-module'):remove_prereq('railway')
 TECHNOLOGY('automation-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
 TECHNOLOGY('logistics-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
