@@ -1650,14 +1650,14 @@ RECIPE {
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "fluid", name = "steam", amount = 1000, temperature = 60},
+        {type = "fluid", name = "steam", amount = 1000, maximum_temperature = 500},
         {type = "fluid", name = "water", amount = 100},
         {type = "item", name = "fuelrod-mk01", amount = 1},
     },
     results = {
         {type = "fluid", name = "steam", amount = 1000, temperature = 500},
     },
-    main_product= "steam",
+    main_product = "steam",
     icon = "__pyfusionenergygraphics__/graphics/icons/steam-heating.png",
 	icon_size = 32,
     subgroup = "py-fusion-items",
