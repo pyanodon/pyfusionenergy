@@ -1556,14 +1556,14 @@ RECIPE {
     name = "production-science-pack",
     category = "advanced-crafting",
     enabled = false,
-    energy_required = 4,
+    energy_required = 10,
     ingredients = {
-        {type = "item", name = "control-unit", amount = 1},
-        {type = "item", name = "coated-container", amount = 1},
-        {type = "item", name = "nuclear-sample", amount = 2}
+        {type = "item", name = "control-unit", amount = 2},
+        {type = "item", name = "coated-container", amount = 2},
+        {type = "item", name = "nuclear-sample", amount = 4}
     },
     results = {
-        {type = "item", name = "production-science-pack", amount = 3}
+        {type = "item", name = "production-science-pack", amount = 6}
     },
     icon = "__pyfusionenergygraphics__/graphics/icons/production-science-pack.png",
 	icon_size = 32,
