@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.6.1
+Date: 2020-03-26
+  Changes:
+    - Fixed agitador recipe for non pyHT players.
+    - Increased pollution absorption in all organic buildings.
+---------------------------------------------------------------------------------------------------
 Version: 1.6.0
 Date: 2020-03-08
   Changes:

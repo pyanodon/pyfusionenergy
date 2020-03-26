@@ -31,7 +31,7 @@ RECIPE {
     energy_required = 15,
     enabled = false,
     ingredients = {
-        {"electric-engine-unit", 3},
+        {"engine-unit", 3},
         {"iron-plate", 40}, --updated-bob glass
         {"electronic-circuit", 20}, --updated-bob basic-electronic-circuit-board
         {"steel-plate", 30},
