@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "fusion-reactor-mk02",
-    energy_required = 15,
+    energy_required = 0.5,
     enabled = false,
     ingredients = {
         {"fusion-reactor-mk01", 1},
@@ -19,7 +19,7 @@ ITEM {
     type = "item",
     name = "fusion-reactor-mk02",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-reactor-mk02.png",
-	icon_size = 32,
+	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-reactors",
     order = "a",
@@ -31,7 +31,7 @@ ENTITY {
     type = "assembling-machine",
     name = "fusion-reactor-mk02",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-reactor-mk02.png",
-	icon_size = 32,
+	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "fusion-reactor-mk02"},
     fast_replaceable_group = "fusion-reactor-mk02",

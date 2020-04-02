@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "regolite-mine",
-    energy_required = 10,
+    energy_required = 0.5,
     enabled = false,
     ingredients = {
         {"soil-extractormk01", 2},
@@ -20,7 +20,7 @@ ITEM {
     type = "item",
     name = "regolite-mine",
     icon = "__pyfusionenergygraphics__/graphics/icons/regolite-mine.png",
-	icon_size = 32,
+	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-miners",
     order = "a",
@@ -32,7 +32,7 @@ ENTITY {
     type = "mining-drill",
     name = "regolite-mine",
     icon = "__pyfusionenergygraphics__/graphics/icons/regolite-mine.png",
-	icon_size = 32,
+	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "regolite-mine"},
     fast_replaceable_group = "regolite-mine",

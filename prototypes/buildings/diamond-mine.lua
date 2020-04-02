@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "diamond-mine",
-    energy_required = 10,
+    energy_required = 0.5,
     enabled = false,
     ingredients = {
         {"iron-plate", 60}, --bobs titanium plate
@@ -19,7 +19,7 @@ ITEM {
     type = "item",
     name = "diamond-mine",
     icon = "__pyfusionenergygraphics__/graphics/icons/diamond-mine.png",
-	icon_size = 32,
+	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-miners",
     order = "a",
@@ -31,7 +31,7 @@ ENTITY {
     type = "mining-drill",
     name = "diamond-mine",
     icon = "__pyfusionenergygraphics__/graphics/icons/diamond-mine.png",
-	icon_size = 32,
+	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "diamond-mine"},
     fast_replaceable_group = "diamond-mine",

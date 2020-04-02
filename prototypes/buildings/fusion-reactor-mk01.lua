@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "fusion-reactor-mk01",
-    energy_required = 15,
+    energy_required = 0.5,
     enabled = false,
     ingredients = {
         {"vacuum-pump-mk01", 5},
@@ -21,7 +21,7 @@ ITEM {
     type = "item",
     name = "fusion-reactor-mk01",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-reactor-mk01.png",
-	icon_size = 32,
+	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-reactors",
     order = "a",
@@ -33,7 +33,7 @@ ENTITY {
     type = "assembling-machine",
     name = "fusion-reactor-mk01",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-reactor-mk01.png",
-	icon_size = 32,
+	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "fusion-reactor-mk01"},
     fast_replaceable_group = "fusion-reactor-mk01",
