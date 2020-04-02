@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "py-turbine",
-    energy_required = 10,
+    energy_required = 0.5,
     enabled = false,
     ingredients = {
         {"gasturbinemk03", 2},
@@ -16,7 +16,7 @@ ITEM {
     type = "item",
     name = "py-turbine",
     icon = "__pyfusionenergygraphics__/graphics/icons/py-turbine.png",
-	icon_size = 32,
+	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-reactors",
     order = "x",
@@ -28,7 +28,7 @@ ENTITY {
     type = "generator",
     name = "py-turbine",
     icon = "__pyfusionenergygraphics__/graphics/icons/py-turbine.png",
-	icon_size = 32,
+	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "py-turbine"},
     max_health = 500,

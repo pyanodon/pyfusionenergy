@@ -1,39 +1,37 @@
 RECIPE {
     type = "recipe",
-    name = "plankton-farm",
+    name = "plankton-farm-mk02",
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"storage-tank", 1},
-        {"stone-brick", 20},
-        {"electronic-circuit", 5}, --updated-bob basic-electronic-circuit-board
-        {"steel-plate", 50},
-        {"niobium-plate", 15}
+        {"plankton-farm", 1},
+        {'nexelit-plate', 15},
+        {'advanced-circuit', 10}
     },
     results = {
-        {"plankton-farm", 1}
+        {"plankton-farm-mk02", 1}
     }
 }
 
 ITEM {
     type = "item",
-    name = "plankton-farm",
-    icon = "__pyfusionenergygraphics__/graphics/icons/plankton-farm.png",
+    name = "plankton-farm-mk02",
+    icon = "__pyfusionenergygraphics__/graphics/icons/plankton-farm-mk02.png",
 	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-miners",
     order = "b",
-    place_result = "plankton-farm",
+    place_result = "plankton-farm-mk02",
     stack_size = 10
 }
 
 ENTITY {
     type = "assembling-machine",
-    name = "plankton-farm",
-    icon = "__pyfusionenergygraphics__/graphics/icons/plankton-farm.png",
+    name = "plankton-farm-mk02",
+    icon = "__pyfusionenergygraphics__/graphics/icons/plankton-farm-mk02.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "plankton-farm"},
+    minable = {mining_time = 0.5, result = "plankton-farm-mk02"},
     fast_replaceable_group = "plankton-farm",
     max_health = 700,
     corpse = "big-remnants",
@@ -42,17 +40,17 @@ ENTITY {
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
     match_animation_speed_to_activity = false,
     module_specification = {
-        module_slots = 1
+        module_slots = 2
     },
     allowed_effects = {"consumption", "speed"},
     crafting_categories = {"plankton"},
-    crafting_speed = 1,
+    crafting_speed = 2,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
         emissions_per_minute = -35,
     },
-    energy_usage = "350kW",
+    energy_usage = "550kW",
     ingredient_count = 10,
     animation = {
         layers = {
@@ -73,7 +71,7 @@ ENTITY {
                 frame_count = 126,
                 animation_speed = 0.4,
                 shift = {-1.54, -0.3},
-                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+                tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
             },
             {
                 filename = "__pyfusionenergygraphics__/graphics/entity/plankton-farm/right.png",
@@ -92,7 +90,7 @@ ENTITY {
                 frame_count = 126,
                 animation_speed = 0.4,
                 shift = {2.22, -0.3},
-                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+                tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
             }
         }
     },

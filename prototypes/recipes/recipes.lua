@@ -1012,7 +1012,6 @@ RECIPE {
     ingredients = {
         {type = "item", name = "iron-plate", amount = 10}, --bobs tin plate
         {type = "item", name = "nenbit-matrix", amount = 1}
-        --add glass
     },
     results = {
         {type = "item", name = "sc-wire", amount = 5}

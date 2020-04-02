@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "bio-reactor",
-    energy_required = 10,
+    energy_required = 0.5,
     enabled = false,
     ingredients = {
         {"mixer-mk01", 1},
@@ -20,7 +20,7 @@ ITEM {
     type = "item",
     name = "bio-reactor",
     icon = "__pyfusionenergygraphics__/graphics/icons/bio-reactor.png",
-	icon_size = 32,
+	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-miners",
     order = "d",
@@ -32,7 +32,7 @@ ENTITY {
     type = "assembling-machine",
     name = "bio-reactor",
     icon = "__pyfusionenergygraphics__/graphics/icons/bio-reactor.png",
-	icon_size = 32,
+	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "bio-reactor"},
     fast_replaceable_group = "bio-reactor",

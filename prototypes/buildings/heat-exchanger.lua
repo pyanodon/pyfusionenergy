@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "py-heat-exchanger",
-    energy_required = 15,
+    energy_required = 0.5,
     enabled = false,
     ingredients = {
         {"storage-tank", 1}, --pyindustry py-tank-8000
@@ -20,7 +20,7 @@ ITEM {
     type = "item",
     name = "py-heat-exchanger",
     icon = "__pyfusionenergygraphics__/graphics/icons/heat-exchanger.png",
-	icon_size = 32,
+	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-reactors",
     order = "z",
@@ -32,7 +32,7 @@ ENTITY {
     type = "assembling-machine",
     name = "py-heat-exchanger",
     icon = "__pyfusionenergygraphics__/graphics/icons/heat-exchanger.png",
-	icon_size = 32,
+	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "py-heat-exchanger"},
     fast_replaceable_group = "py-heat-exchanger",

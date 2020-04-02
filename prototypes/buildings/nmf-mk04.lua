@@ -10,7 +10,7 @@ local pipes = {
 RECIPE {
     type = "recipe",
     name = "nmf-mk04",
-    energy_required = 25,
+    energy_required = 0.5,
     enabled = false,
     ingredients = {
                 {'nmf-mk03', 1},

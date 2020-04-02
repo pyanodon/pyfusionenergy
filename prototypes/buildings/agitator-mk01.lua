@@ -32,8 +32,8 @@ RECIPE {
     enabled = false,
     ingredients = {
         {"engine-unit", 3},
-        {"iron-plate", 40}, --updated-bob glass
-        {"electronic-circuit", 20}, --updated-bob basic-electronic-circuit-board
+        {"iron-plate", 40},
+        {"electronic-circuit", 20},
         {"steel-plate", 30},
         {"iron-gear-wheel", 40},
         {"plastic-bar", 30}
