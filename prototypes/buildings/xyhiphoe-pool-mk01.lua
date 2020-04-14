@@ -4,7 +4,7 @@ RECIPE {
     energy_required = 25,
     enabled = false,
     ingredients = {
-        {"ralesia-plantation", 1},
+        {"ralesia-plantation-mk01", 1},
         {"pump", 4},
         {"advanced-circuit", 20}, --updated-bob electronic-circuit-board
         {"steel-plate", 40},
