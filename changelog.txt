@@ -2,7 +2,7 @@
 Version: 1.6.3
 Date: 2020-04-13
   Changes:
-    - updated ralesia and fawogae names related to pycoalprocessing changes
+    - Updated ralesia and fawogae names related to pycoalprocessing changes
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.2
 Date: 2020-04-02
@@ -14,7 +14,7 @@ Date: 2020-04-02
 Version: 1.6.1
 Date: 2020-03-26
   Changes:
-    - Fixed agitador recipe for non pyHT players.
+    - Fixed agitator recipe for non pyHT players.
     - Increased pollution absorption in all organic buildings.
 ---------------------------------------------------------------------------------------------------
 Version: 1.6.0
@@ -76,11 +76,11 @@ Version: 1.4.8
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.7
   Changes:
-    - removed pyrawores items from mk02-mk04 building as it cuased an error when pyro wasnt enabled
+    - Removed pyrawores items from mk02-mk04 building as it cuased an error when pyro wasnt enabled
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.6
   Changes:
-    - none...just testing new system
+    - None... Just testing new system
 ---------------------------------------------------------------------------------------------------
 Version: 1.4.4
   Changes:
@@ -157,7 +157,7 @@ Version: 1.2.6
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.5
   Balances:
-    - reduced kevlar in magnetic core.
+    - Reduced kevlar in magnetic core.
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.4
   Bugfixes:
@@ -186,7 +186,7 @@ Version: 1.1.9
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.8
   Balances:
-    - small speed adjustments.
+    - Small speed adjustments.
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.6
   Bugfixes:
