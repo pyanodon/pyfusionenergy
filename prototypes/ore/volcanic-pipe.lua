@@ -21,12 +21,8 @@ ENTITY {
     order = "a-b-a",
     map_color = {r = 0.152, g = 0.909, b = 1},
     highlight = true,
-    minimum = 10000,
-    normal = 30000,
-    maximum = 40000,
     map_grid = false,
     minable = {
-        hardness = 1.0,
         -- mining_particle = "volcanic-pipe-particle",
         mining_time = 4,
         results = {
@@ -35,24 +31,19 @@ ENTITY {
     },
     collision_box = {{-3.5, -3.5}, {3.5, 3.5}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-    autoplace = {
-        control = "volcanic-pipe",
-        sharpness = 0.98,
-        max_probability = 0.03,
-        richness_multiplier = 100,
-        richness_multiplier_distance_bonus = 100,
-        richness_base = 20000,
-        coverage = 0.002,
-        peaks = {
-            {
-                noise_layer = "volcanic-pipe",
-                noise_octaves_difference = -1.5,
-                noise_persistence = 0.3,
-                starting_area_weight_optimal = 0,
-                starting_area_weight_range = 0,
-                starting_area_weight_max_range = 2
-            }
-        }
+    tree_removal_probability = 0.7,
+    tree_removal_max_distance = 32 * 32,
+    autoplace = resource_autoplace.resource_autoplace_settings {
+        name = "volcanic-pipe",
+        order = "b",
+        base_density = 10,
+        base_spots_per_km2 = 1.25,
+        has_starting_area_placement = false,
+        random_spot_size_minimum = 2,
+        random_spot_size_maximum = 4,
+        regular_rq_factor_multiplier = 1,
+        starting_rq_factor_multiplier = 2,
+        candidate_spot_count = 20
     },
     stage_counts = {0},
     stages = {
