@@ -2,7 +2,7 @@ DATA {
     type = "autoplace-control",
     name = "molybdenum-ore",
     richness = true,
-    order = "b-e",
+    order = "p-moly",
     category = "resource"
 }
 
