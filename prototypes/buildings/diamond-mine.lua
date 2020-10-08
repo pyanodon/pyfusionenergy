@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "diamond-mine",
-    energy_required = 0.5,
+    energy_required = 1,
     enabled = false,
     ingredients = {
         {"iron-plate", 60}, --bobs titanium plate

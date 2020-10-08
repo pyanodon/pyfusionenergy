@@ -55,7 +55,7 @@ local pipe_right = {
 RECIPE {
     type = "recipe",
     name = "centrifugal-pan-mk02",
-    energy_required = 15,
+    energy_required = 1,
     enabled = false,
     ingredients = {
                 {"centrifugal-pan-mk01", 1},

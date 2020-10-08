@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "kmauts-enclosure-mk04",
-    energy_required = 10,
+    energy_required = 1,
     enabled = false,
     ingredients = {
                 {'kmauts-enclosure-mk03', 1},

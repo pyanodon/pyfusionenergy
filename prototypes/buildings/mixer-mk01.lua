@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "mixer-mk01",
-    energy_required = 15,
+    energy_required = 1,
     enabled = false,
     ingredients = {
         {"storage-tank", 1}, --pyindustry py-tank-8000

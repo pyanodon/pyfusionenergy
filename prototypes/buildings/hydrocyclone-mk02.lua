@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "hydrocyclone-mk02",
-    energy_required = 15,
+    energy_required = 1,
     enabled = false,
     ingredients = {
                 {"hydrocyclone-mk01", 1},

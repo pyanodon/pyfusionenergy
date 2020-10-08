@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "gas-separator-mk04",
-    energy_required = 15,
+    energy_required = 1,
     enabled = false,
     ingredients = {
                 {'gas-separator-mk03', 1},

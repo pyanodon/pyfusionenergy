@@ -56,7 +56,7 @@ local pipe_right = {
 RECIPE {
     type = "recipe",
     name = "jig-mk04",
-    energy_required = 15,
+    energy_required = 1,
     enabled = false,
     ingredients = {
                 {'jig-mk03', 1},

@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "automated-screener-mk04",
-    energy_required = 10,
+    energy_required = 1,
     enabled = false,
     ingredients = {
                 {'automated-screener-mk03', 1},

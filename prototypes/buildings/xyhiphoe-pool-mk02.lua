@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "xyhiphoe-pool-mk02",
-    energy_required = 25,
+    energy_required = 1,
     enabled = false,
     ingredients = {
                 {"xyhiphoe-pool-mk01", 1},

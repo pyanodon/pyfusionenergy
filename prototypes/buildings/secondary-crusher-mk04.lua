@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "secondary-crusher-mk04",
-    energy_required = 25,
+    energy_required = 1,
     enabled = false,
     ingredients = {
                 {'secondary-crusher-mk03', 1},

@@ -28,7 +28,7 @@ local pipes = {
 RECIPE {
     type = "recipe",
     name = "agitator-mk02",
-    energy_required = 15,
+    energy_required = 1,
     enabled = false,
     ingredients = {
                 {"agitator-mk01", 1},

@@ -10,7 +10,7 @@ local pipe_bottom = {
 RECIPE {
     type = "recipe",
     name = "grease-table-mk03",
-    energy_required = 10,
+    energy_required = 1,
     enabled = false,
     ingredients = {
                 {'grease-table-mk02', 1},

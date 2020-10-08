@@ -10,7 +10,7 @@ local pipe = {
 RECIPE {
     type = "recipe",
     name = "genlab-mk02",
-    energy_required = 10,
+    energy_required = 1,
     enabled = false,
     ingredients = {
                 {"genlab-mk01", 1},

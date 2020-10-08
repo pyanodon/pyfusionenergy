@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "hydrocyclone-mk01",
-    energy_required = 15,
+    energy_required = 1,
     enabled = false,
     ingredients = {
         {"pipe", 30}, --pyindustry niobium-pipe
