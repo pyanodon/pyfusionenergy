@@ -7,5 +7,21 @@
   "contact": "",
   "homepage": "https://forums.factorio.com/viewtopic.php?f=94&t=51490&sid=f5d85f769fccb0ac398bf4036f829064",
   "description": "Adds fusion energy production chain to the game",
-  "dependencies": ["pycoalprocessing >= 1.0.11", "pyfusionenergygraphics >= 1.0.0"]
+  "dependencies": [
+    "pycoalprocessing >= 1.0.11",
+    "pyfusionenergygraphics >= 1.0.0"
+  ],
+  "package": {
+    "ignore": [],
+    "git_publish_branch": "master",
+    "no_git_push": false,
+    "no_portal_upload": false,
+    "scripts": {
+      "datestamp": "../pycoalprocessing/.github/publish/datestamp.sh",
+      "prepackage": "../pycoalprocessing/.github/publish/prepackage.sh",
+      "prepublish": "../pycoalprocessing/.github/publish/prepublish.sh",
+      "publish": "../pycoalprocessing/.github/publish/publish.sh",
+      "version": "../pycoalprocessing/.github/publish/version.sh"
+    }
+  }
 }
