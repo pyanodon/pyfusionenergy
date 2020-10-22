@@ -54,7 +54,6 @@ ENTITY {
         emissions_per_minute = 0.06,
     },
     energy_usage = "150kW",
-    ingredient_count = 4,
     animation = {
         filename = "__pyfusionenergygraphics__/graphics/entity/heat-exchanger/off.png",
         width = 224,

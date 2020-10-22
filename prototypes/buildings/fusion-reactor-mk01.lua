@@ -55,7 +55,6 @@ ENTITY {
         emissions_per_minute = 0.06,
     },
     energy_usage = "800kW",
-    ingredient_count = 8,
     animation = {
         filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk01/off.png",
         width = 345,
