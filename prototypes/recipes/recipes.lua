@@ -1032,7 +1032,7 @@ RECIPE {
     results = {
         {type = "item", name = "sc-coil", amount = 1}
     },
-}
+}:add_ingredient({type = 'item', name = 're-tin', amount = 1})
 
 RECIPE {
     type = "recipe",
@@ -1041,14 +1041,14 @@ RECIPE {
     enabled = false,
     energy_required = 25,
     ingredients = {
-        {type = "item", name = "sc-coil", amount = 1},
+        {type = "item", name = "sc-coil", amount = 2},
         {type = "item", name = "cladded-core", amount = 3},
         {type = "item", name = "kevlar", amount = 8}
     },
     results = {
         {type = "item", name = "magnetic-core", amount = 1}
     },
-}
+}:add_ingredient({type = 'item', name = 'ndfeb-alloy', amount = 1})
 
 RECIPE {
     type = "recipe",
