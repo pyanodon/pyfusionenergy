@@ -149,7 +149,7 @@ RECIPE {
         {type = "fluid", name = "xyhiphoe-blood", amount = 50}
     },
     results = {
-        {type = "fluid", name = "organic-solvent", amount = 200}
+        {type = "fluid", name = "organic-solvent", amount = 100}
     },
     main_product = "organic-solvent",
 }
