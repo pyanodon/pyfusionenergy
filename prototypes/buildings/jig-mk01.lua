@@ -146,7 +146,7 @@ ENTITY {
                 line_length = 12,
                 width = 160,
                 height = 192,
-                animation_speed = 0.3
+                animation_speed = 0.4
 			},
 			{
                 filename = "__pyfusionenergygraphics__/graphics/entity/jig/on-mask.png",
@@ -154,7 +154,7 @@ ENTITY {
                 line_length = 12,
                 width = 160,
                 height = 192,
-                animation_speed = 0.3,
+                animation_speed = 0.4,
 				tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
 			}
 			}
