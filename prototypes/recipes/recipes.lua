@@ -16,7 +16,7 @@ RECIPE {
 	icon_size = 32,
     subgroup = "py-crusher",
     order = "a"
-}:add_unlock("crusher")
+}:add_unlock("molybdenum-processing")
 
 RECIPE {
     type = "recipe",
@@ -32,7 +32,7 @@ RECIPE {
         {type = "item", name = "gravel", amount = 1}
     },
     main_product = "molybdenite-dust",
-}:add_unlock("crusher")
+}:add_unlock("molybdenum-processing")
 
 RECIPE {
     type = "recipe",
@@ -42,11 +42,11 @@ RECIPE {
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "molybdenite-pulp", amount = 150},
-        {type = "fluid", name = "water", amount = 200} --updated-bob nitrogen-dioxide
+        {type = "fluid", name = "water", amount = 200}
     },
     results = {
         {type = "item", name = "molybdenum-concentrate", amount = 10},
-        {type = "fluid", name = "dirty-water", amount = 150}
+        {type = "fluid", name = "dirty-water-light", amount = 150}
     },
     main_product = "molybdenum-concentrate",
     icon = "__pyfusionenergygraphics__/graphics/icons/molybdenum-concentrate-hydrocyclone.png",
@@ -220,7 +220,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "vanadium-oxide", amount = 15},
-        {type = "fluid", name = "dirty-water", amount = 300}
+        {type = "fluid", name = "dirty-water-light", amount = 300}
     },
     main_product = "vanadium-oxide",
 }
@@ -251,9 +251,9 @@ RECIPE {
         {type = "item", name = "pure-sand", amount = 20}
     },
     results = {
-        {type = "fluid", name = "dirty-water", amount = 150}
+        {type = "fluid", name = "dirty-water-light", amount = 150}
     },
-    main_product = "dirty-water",
+    main_product = "dirty-water-light",
 }
 
 RECIPE {
@@ -351,7 +351,7 @@ RECIPE {
     results = {
         {type = "item", name = "kimberlite-grade3", amount = 5},
         {type = "item", name = "pure-kimberlite-grade2", amount = 1, probability = 0.6},
-        {type = "fluid", name = "dirty-water", amount = 100},
+        {type = "fluid", name = "dirty-water-light", amount = 100},
         {type = "item", name = "sand", amount = 10}
     },
     --main_product= "kimberlite-grade3",
@@ -496,7 +496,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "crude-diamond", amount = 7},
-        {type = "fluid", name = "dirty-water", amount = 100}
+        {type = "fluid", name = "dirty-water-light", amount = 100}
     },
     --main_product= "crude",
     icon = "__pyfusionenergygraphics__/graphics/icons/greasing-1.png",
@@ -518,7 +518,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "crude-diamond", amount = 5},
-        {type = "fluid", name = "dirty-water", amount = 150}
+        {type = "fluid", name = "dirty-water-heavy", amount = 150}
     },
     --main_product= "crude",
     icon = "__pyfusionenergygraphics__/graphics/icons/greasing-2.png",
@@ -540,7 +540,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "crude-diamond", amount = 2},
-        {type = "fluid", name = "dirty-water", amount = 200}
+        {type = "fluid", name = "dirty-water-heavy", amount = 200}
     },
     --main_product= "crude",
     icon = "__pyfusionenergygraphics__/graphics/icons/greasing-3.png",
@@ -561,7 +561,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "washed-diamond", amount = 10},
-        {type = "fluid", name = "dirty-water", amount = 120}
+        {type = "fluid", name = "dirty-water-light", amount = 120}
     },
     --main_product= "crude",
     icon = "__pyfusionenergygraphics__/graphics/icons/crude-diamond-washer.png",

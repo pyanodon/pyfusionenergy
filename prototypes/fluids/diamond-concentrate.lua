@@ -11,7 +11,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "diamond-concentrate", amount = 150},
         {type = "item", name = "diamond-reject", amount = 15},
-        {type = "fluid", name = "dirty-water", amount = 200}
+        {type = "fluid", name = "dirty-water-light", amount = 200}
     },
     main_product = "diamond-concentrate",
     icon = "__pyfusionenergygraphics__/graphics/icons/pan-diamond-concentrate.png",
