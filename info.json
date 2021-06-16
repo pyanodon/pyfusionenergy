@@ -9,7 +9,7 @@
   "description": "Adds fusion energy production chain to the game",
   "dependencies": [
     "pycoalprocessing >= 1.0.11",
-    "pyfusionenergygraphics >= 1.0.0"
+    "~ pyfusionenergygraphics >= 1.0.0"
   ],
   "package": {
     "ignore": [],
