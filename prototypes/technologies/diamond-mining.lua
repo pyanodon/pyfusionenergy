@@ -126,10 +126,6 @@ TECHNOLOGY {
             type = "unlock-recipe",
             recipe = "coated-container"
         },
-        {
-            type = "unlock-recipe",
-            recipe = "production-science-pack"
-        }
     },
     unit = {
         count = 30,

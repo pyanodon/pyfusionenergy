@@ -4,22 +4,32 @@ local FUN = require("__pycoalprocessing__/prototypes/functions/functions")
 ITEM("production-science-pack", "tool").icon = "__pyfusionenergygraphics__/graphics/icons/production-science-pack.png"
 ITEM("production-science-pack", "tool"):set("icon_size", 32)
 
-RECIPE("production-science-pack"):remove_unlock('production-science-pack')
+--RECIPE("production-science-pack"):remove_unlock('production-science-pack')
 RECIPE('rocket-silo'):replace_ingredient("steel-plate", "super-alloy")
-TECHNOLOGY('production-science-pack'):remove_prereq('advanced-material-processing-2'):remove_prereq('productivity-module'):remove_prereq('railway')
-TECHNOLOGY('automation-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
-TECHNOLOGY('logistics-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
-TECHNOLOGY('coal-liquefaction'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
-TECHNOLOGY('kovarex-enrichment-process'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
-TECHNOLOGY('nuclear-fuel-reprocessing'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
-TECHNOLOGY('speed-module-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
-TECHNOLOGY('productivity-module-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
-TECHNOLOGY('effectivity-module-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
-TECHNOLOGY('effect-transmission'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
-TECHNOLOGY('laser-turrets'):remove_pack('chemical-science-pack')
-TECHNOLOGY('laser'):remove_pack('chemical-science-pack')
+TECHNOLOGY("production-science-pack"):remove_prereq("uranium-processing"):remove_prereq("speed-module-2"):remove_prereq("effectivity-module-2"):remove_prereq("robotics"):remove_prereq("filtration-2"):remove_prereq("energy-3"):add_prereq("advanced-mining-facilities"):add_prereq("diamond-mining")
+
+--TECHNOLOGY('automation-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
+
+--TECHNOLOGY('logistics-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
+
+--TECHNOLOGY('coal-liquefaction'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
+
+--TECHNOLOGY('kovarex-enrichment-process'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
+
+--TECHNOLOGY('nuclear-fuel-reprocessing'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
+
+--TECHNOLOGY('speed-module-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
+
+--TECHNOLOGY('productivity-module-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
+
+--TECHNOLOGY('effectivity-module-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
+
+--TECHNOLOGY('effect-transmission'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
+
+--TECHNOLOGY('laser-turrets'):remove_pack('chemical-science-pack')
+--TECHNOLOGY('laser'):remove_pack('chemical-science-pack')
 if not mods['pypetroleumhandling'] then
-TECHNOLOGY('electric-engine'):remove_pack('chemical-science-pack')
+--TECHNOLOGY('electric-engine'):remove_pack('chemical-science-pack')
 TECHNOLOGY('advanced-oil-processing'):remove_pack('chemical-science-pack')
 end
 
