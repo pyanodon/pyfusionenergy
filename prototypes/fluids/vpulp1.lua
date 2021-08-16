@@ -3,7 +3,7 @@ RECIPE {
     name = "vpulp1",
     category = "agitator",
     enabled = false,
-    energy_required = 10,
+    energy_required = 5,
     ingredients = {
         {type = "fluid", name = "blue-liquor", amount = 100},
         {type = "fluid", name = "steam", amount = 300, temperature = 165}
