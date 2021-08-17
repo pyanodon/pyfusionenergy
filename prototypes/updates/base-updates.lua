@@ -5,7 +5,7 @@
     name = "satellite",
     energy_required = 5,
     enabled = false,
-    category = "crafting",
+    category = "advanced-crafting",
     ingredients =
     {
       {"low-density-structure", 100},
