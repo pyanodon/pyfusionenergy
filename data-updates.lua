@@ -2,11 +2,13 @@ require("__stdlib__/stdlib/data/data").Util.create_data_globals()
 local FUN = require("__pycoalprocessing__/prototypes/functions/functions")
 
 require("prototypes/updates/base-updates")
+require("prototypes/updates/pycoalprocessing-updates")
 
 ITEM("production-science-pack", "tool").icon = "__pyfusionenergygraphics__/graphics/icons/production-science-pack.png"
 ITEM("production-science-pack", "tool"):set("icon_size", 32)
 
 --RECIPE("production-science-pack"):remove_unlock('production-science-pack')
+
 RECIPE('rocket-silo'):replace_ingredient("steel-plate", "super-alloy")
 TECHNOLOGY("production-science-pack"):remove_prereq("uranium-processing"):remove_prereq("speed-module-2"):remove_prereq("effectivity-module-2"):remove_prereq("robotics"):remove_prereq("filtration-2"):remove_prereq("energy-3"):add_prereq("advanced-mining-facilities"):add_prereq("diamond-mining")
 
@@ -30,10 +32,6 @@ TECHNOLOGY("production-science-pack"):remove_prereq("uranium-processing"):remove
 
 --TECHNOLOGY('laser-turrets'):remove_pack('chemical-science-pack')
 --TECHNOLOGY('laser'):remove_pack('chemical-science-pack')
-if not mods['pypetroleumhandling'] then
---TECHNOLOGY('electric-engine'):remove_pack('chemical-science-pack')
-TECHNOLOGY('advanced-oil-processing'):remove_pack('chemical-science-pack')
-end
 
 local recipes_list =
 	{
