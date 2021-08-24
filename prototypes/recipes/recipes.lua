@@ -1596,7 +1596,7 @@ RECIPE {
         {type = "item", name = "agzn-alloy", amount = 1},
         {type = "item", name = "limestone", amount = 30},
         {type = "fluid", name = "acetylene", amount = 200},
-        {type = "fluid", name = "water", amount = 200}, --bobs hydrogen-chloride
+        {type = "fluid", name = "water", amount = 200},
         {type = "fluid", name = "hydrogen-peroxide", amount = 100}
     },
     results = {
@@ -1717,3 +1717,25 @@ RECIPE {
     },
     main_product = "acidgas",
 }:add_unlock("regolite-mining")
+
+RECIPE {
+    type = "recipe",
+    name = "gasoline",
+    category = "fluid-separator",
+    enabled = false,
+    energy_required = 2.8,
+    ingredients = {
+        {type = "fluid", name = "olefin", amount = 300},
+        {type = "item", name = "nexelit-plate", amount = 2},
+        --{type="fluid", name="hydrogen", amount=20},
+        {type = "fluid", name = "light-oil", amount = 200}
+    },
+    results = {
+        {type = "fluid", name = "gasoline", amount = 150}
+    },
+    main_product = "gasoline",
+    icon = "__pycoalprocessinggraphics__/graphics/icons/gasoline.png",
+    icon_size = 32,
+    subgroup = "py-fluids",
+    order = "d6"
+}:add_unlock("fuel-production")
