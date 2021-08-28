@@ -647,39 +647,6 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
-    name = "stone-calcination",
-    category = "hpf",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-        {type = "item", name = "stone", amount = 40}
-    },
-    results = {
-        {type = "item", name = "calcinates", amount = 10},
-        {type = "item", name = "ash", amount = 3},
-        {type = "fluid", name = "dry-gas-stream", amount = 2}
-    },
-    main_product= "calcinates",
-}
-RECIPE {
-    type = "recipe",
-    name = "gravel-calcination",
-    category = "hpf",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-        {type = "item", name = "gravel", amount = 50}
-    },
-    results = {
-        {type = "item", name = "calcinates", amount = 10},
-        {type = "item", name = "ash", amount = 3},
-        {type = "fluid", name = "dry-gas-stream", amount = 2}
-    },
-    main_product= "calcinates",
-}
-
-RECIPE {
-    type = "recipe",
     name = "calcinate-separation",
     category = "solid-separator",
     enabled = false,
@@ -834,7 +801,7 @@ RECIPE {
     results = {
         {type = "item", name = "calcinates", amount = 12},
         {type = "item", name = "ash", amount = 3},
-        {type = "fluid", name = "dry-gas-stream", amount = 4}
+        {type = "fluid", name = "dry-gas-stream", amount = 10}
         --add bobs hydrogen
     },
     main_product= "calcinates",
