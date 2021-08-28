@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/vanadium-processing.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"advanced-mining-facilities"},
+    prerequisites = {"production-science-pack"},
     effects = {
         {
             type = "unlock-recipe",
@@ -117,6 +117,7 @@ TECHNOLOGY {
             {"automation-science-pack", 2},
             {"logistic-science-pack", 2},
             {"chemical-science-pack", 1},
+            {"production-science-pack", 1}
         },
         time = 70
     }

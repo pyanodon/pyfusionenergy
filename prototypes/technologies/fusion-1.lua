@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/fusion-1.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"diamond-mining", "helium-processing"},
+    prerequisites = {"helium-processing"},
     effects = {
         {
             type = "unlock-recipe",

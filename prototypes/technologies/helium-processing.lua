@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/helium-processing.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"excavation-2"},
+    prerequisites = {"automation-3"},
     effects = {
         {
             type = "unlock-recipe",
@@ -21,14 +21,6 @@ TECHNOLOGY {
         {
             type = "unlock-recipe",
             recipe = "liquid-air-distilation"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "stone-calcination"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "gravel-calcination"
         },
         {
             type = "unlock-recipe",
@@ -53,6 +45,10 @@ TECHNOLOGY {
         {
             type = "unlock-recipe",
             recipe = "gas-separator-mk01"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "compressor-mk01"
         },
         {
             type = "unlock-recipe",
@@ -121,6 +117,7 @@ TECHNOLOGY {
             {"automation-science-pack", 3},
             {"logistic-science-pack", 2},
             {"chemical-science-pack", 2},
+            {"production-science-pack", 1}
         },
         time = 75
     }

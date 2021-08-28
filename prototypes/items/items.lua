@@ -634,3 +634,14 @@ ITEM {
     order = "g",
     stack_size = 100
 }
+
+ITEM {
+    type = "item",
+    name = "plutonium",
+    icon = "__pyfusionenergygraphics__/graphics/icons/pu-239.png",
+    icon_size = 64,
+    flags = {},
+    subgroup = "intermediate-product",
+    order = "s",
+    stack_size = 100
+}

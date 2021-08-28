@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/fusion-3.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"fusion-mk02"},
+    prerequisites = {"fusion-mk02", "utility-science-pack"},
     effects = {
         {
             type = "unlock-recipe",
@@ -33,7 +33,8 @@ TECHNOLOGY {
             {"automation-science-pack", 5},
             {"logistic-science-pack", 4},
             {"chemical-science-pack", 3},
-            {"production-science-pack", 3}
+            {"production-science-pack", 3},
+            {"utility-science-pack", 2}
         },
         time = 70
     }

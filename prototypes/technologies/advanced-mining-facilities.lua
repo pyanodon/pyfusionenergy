@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/advanced-mining-facilities.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"diamond-mining", "filtration-2"},
+    prerequisites = {"uranium-processing", "electric-engine"},
     effects = {
         {
             type = "unlock-recipe",
@@ -38,26 +38,6 @@ TECHNOLOGY {
             type = "unlock-recipe",
             recipe = "nmf-mk01"
         },
-        {
-            type = "unlock-recipe",
-            recipe = "nuclear-sample"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "nexelit-matrix"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "nbti-alloy"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "nenbit-matrix"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "control-unit"
-        }
     },
     unit = {
         count = 50,

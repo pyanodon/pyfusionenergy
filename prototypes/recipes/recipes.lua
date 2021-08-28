@@ -906,7 +906,7 @@ RECIPE {
     results = {
         {type = "item", name = "nexelit-matrix", amount = 4}
     },
-}
+}:add_unlock('production-science-pack')
 
 RECIPE {
     type = "recipe",
@@ -916,13 +916,12 @@ RECIPE {
     energy_required = 3,
     ingredients = {
         {type = "item", name = "niobium-plate", amount = 5},
-        {type = "item", name = "steel-plate", amount = 10} --bobs titanium plate
-        --add nitrogen
+        {type = "item", name = "steel-plate", amount = 10}
     },
     results = {
         {type = "item", name = "nbti-alloy", amount = 2}
     },
-}
+}:add_unlock('production-science-pack')
 
 RECIPE {
     type = "recipe",
@@ -937,7 +936,7 @@ RECIPE {
     results = {
         {type = "item", name = "nenbit-matrix", amount = 2}
     },
-}
+}:add_unlock('production-science-pack')
 
 RECIPE {
     type = "recipe",
@@ -1488,7 +1487,7 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "uranium-ore", amount = 50},
+        {type = "item", name = "plutonium", amount = 5},
         {type = "item", name = "automation-science-pack", amount = 1},
         {type = "fluid", name = "boric-acid", amount = 100},
         {type = "fluid", name = "industrial-solvent", amount = 100},
@@ -1497,7 +1496,7 @@ RECIPE {
     results = {
         {type = "item", name = "nuclear-sample", amount = 1}
     },
-}
+}:add_unlock('production-science-pack')
 
 RECIPE {
     type = "recipe",
@@ -1515,7 +1514,7 @@ RECIPE {
     results = {
         {type = "item", name = "control-unit", amount = 2}
     },
-}
+}:add_unlock('production-science-pack')
 
 RECIPE {
     type = "recipe",
