@@ -13,7 +13,7 @@ RECIPE {
     results = {
         {"plankton-farm", 1}
     }
-}
+}:add_unlock('xyhiphoe')
 
 ITEM {
     type = "item",

@@ -13,7 +13,7 @@ RECIPE {
     results = {
         {"xyhiphoe-pool-mk01", 1}
     }
-}
+}:add_unlock('xyhiphoe')
 
 ITEM {
     type = "item",

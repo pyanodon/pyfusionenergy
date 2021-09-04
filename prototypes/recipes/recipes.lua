@@ -118,7 +118,7 @@ RECIPE {
         {type = "fluid", name = "phytoplankton", amount = 10}
     },
     main_product = "phytoplankton",
-}
+}:add_unlock('xyhiphoe')
 
 RECIPE {
     type = "recipe",
@@ -136,7 +136,7 @@ RECIPE {
         {type = "fluid", name = "waste-water", amount = 500}
     },
     main_product = "xyhiphoe-blood",
-}
+}:add_unlock('xyhiphoe')
 
 RECIPE {
     type = "recipe",
@@ -152,7 +152,7 @@ RECIPE {
         {type = "fluid", name = "organic-solvent", amount = 100}
     },
     main_product = "organic-solvent",
-}
+}:add_unlock('xyhiphoe')
 
 RECIPE {
     type = "recipe",
@@ -238,7 +238,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "methanol", amount = 100}
     },
-}
+}:add_unlock('xyhiphoe')
 
 RECIPE {
     type = "recipe",
@@ -254,7 +254,7 @@ RECIPE {
         {type = "fluid", name = "dirty-water-light", amount = 150}
     },
     main_product = "dirty-water-light",
-}
+}:add_unlock('xyhiphoe')
 
 RECIPE {
     type = "recipe",
@@ -1645,7 +1645,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-items",
     order = "c9"
-}:add_unlock("vanadium-processing")
+}:add_unlock("wood-processing-3")
 
 RECIPE {
     type = "recipe",
@@ -1664,7 +1664,7 @@ RECIPE {
     icon_size = 32,
     subgroup = "py-items",
     order = "c9-1"
-}:add_unlock("vanadium-processing")
+}:add_unlock("wood-processing-3")
 
 RECIPE {
     type = "recipe",

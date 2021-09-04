@@ -14,6 +14,8 @@ require("prototypes/technologies/regolite-mining")
 require("prototypes/technologies/molybdenum-processing")
 require("prototypes/technologies/vanadium-processing")
 require("prototypes/technologies/helium-processing")
+require("prototypes.technologies/xyhiphoe")
+require("prototypes/technologies/wood-processing-3")
 
 require("prototypes/ore/molybdenum")
 require("prototypes/ore/volcanic-pipe")

@@ -4,28 +4,8 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/vanadium-processing.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"production-science-pack"},
+    prerequisites = {"production-science-pack", "xyhiphoe"},
     effects = {
-        {
-            type = "unlock-recipe",
-            recipe = "plankton-farm"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "xyhiphoe-pool-mk01"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "phytoplankton"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "xyhiphoe-blood"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "xyhiphoe-hydrocyclone"
-        },
         {
             type = "unlock-recipe",
             recipe = "vanabins"
