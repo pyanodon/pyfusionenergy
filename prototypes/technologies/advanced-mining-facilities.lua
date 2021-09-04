@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/advanced-mining-facilities.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"uranium-processing", "electric-engine"},
+    prerequisites = {"uranium-processing", "electric-engine", "excavation-1", "logistics-2"},
     effects = {
         {
             type = "unlock-recipe",
