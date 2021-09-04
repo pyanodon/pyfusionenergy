@@ -2,6 +2,10 @@
 --TECHNOLOGY
 TECHNOLOGY("energy-3"):add_prereq("advanced-material-processing-2")
 
+TECHNOLOGY("logistic-science-pack"):add_prereq('boron')
+
+TECHNOLOGY("energy-1"):add_prereq('boron')
+
 RECIPE("acetylene"):add_unlock('fusion-mk03')
 
 --ACETYLENE to CM1
@@ -65,3 +69,13 @@ RECIPE {
     subgroup = "py-combustion",
     order = "j"
 }:add_unlock("energy-3")
+
+RECIPE("borax-washing"):remove_unlock('energy-1'):add_unlock('boron')
+
+RECIPE("boron-trioxide"):remove_unlock('logistic-science-pack'):add_unlock("boron")
+
+RECIPE("boric-acid"):remove_unlock('logistic-science-pack'):add_unlock("boron")
+
+RECIPE("diborane"):remove_unlock('energy-1'):add_unlock("boron")
+
+RECIPE("borax-mine"):remove_unlock('energy-1'):add_unlock("boron")

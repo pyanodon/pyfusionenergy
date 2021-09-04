@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/fusion-1.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"helium-processing"},
+    prerequisites = {"helium-processing", "boron-2"},
     effects = {
         {
             type = "unlock-recipe",
@@ -53,22 +53,6 @@ TECHNOLOGY {
         {
             type = "unlock-recipe",
             recipe = "d2o-distilation"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "b2o3-milling"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "boron-mixture"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "boron"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "boron-carbide"
         },
         {
             type = "unlock-recipe",
