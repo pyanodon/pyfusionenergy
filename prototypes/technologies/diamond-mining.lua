@@ -8,10 +8,6 @@ TECHNOLOGY {
     effects = {
         {
             type = "unlock-recipe",
-            recipe = "vacuum"
-        },
-        {
-            type = "unlock-recipe",
             recipe = "diamond-mine"
         },
         {

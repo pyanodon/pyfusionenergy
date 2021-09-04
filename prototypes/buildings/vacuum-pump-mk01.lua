@@ -21,7 +21,7 @@ RECIPE {
     results = {
         {"vacuum-pump-mk01", 1}
     }
-}:add_unlock("placeholder")
+}:add_unlock("advanced-mining-facilities")
 
 ITEM {
     type = "item",

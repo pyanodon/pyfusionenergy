@@ -38,6 +38,10 @@ TECHNOLOGY {
             type = "unlock-recipe",
             recipe = "nmf-mk01"
         },
+        {
+            type = "unlock-recipe",
+            recipe = "vacuum"
+        },
     },
     unit = {
         count = 50,
