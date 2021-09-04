@@ -1,4 +1,7 @@
 
+--TECHNOLOGY
+TECHNOLOGY("energy-3"):add_prereq("advanced-material-processing-2")
+
 RECIPE("acetylene"):add_unlock('fusion-mk03')
 
 --ACETYLENE to CM1
