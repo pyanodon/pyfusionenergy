@@ -6,7 +6,7 @@ RECIPE {
     ingredients = {
         {"mixer-mk01", 1},
         {"gasturbinemk02", 1},
-        {"chemical-plant", 2},
+        {"chemical-plant-mk01", 2},
         {"super-alloy", 35},
         {"steel-plate", 30}
         --add glass

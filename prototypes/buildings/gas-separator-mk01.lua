@@ -9,7 +9,7 @@ RECIPE {
         {"electronic-circuit", 30},
         {"steel-plate", 50},
         {"nichrome", 30},
-        {"chemical-plant", 2}
+        {"chemical-plant-mk01", 2}
     },
     results = {
         {"gas-separator-mk01", 1}
