@@ -1224,7 +1224,7 @@ RECIPE {
     energy_required = 40,
     ingredients = {
         {type = "fluid", name = "deuterium", amount = 100},
-        {type = "fluid", name = "pressured-water", amount = 4000},
+        {type = "fluid", name = "pressured-water", amount = 4500},
         {type = "item", name = "blanket", amount = 1},
         {type = "item", name = "divertor", amount = 2},
         {type = "item", name = "wall-shield", amount = 5},
@@ -1233,7 +1233,7 @@ RECIPE {
         {type = "fluid", name = "water", amount = 2000}
     },
     results = {
-        {type = "fluid", name = "critical-steam", amount = 4000, temperature = 1000},
+        {type = "fluid", name = "critical-steam", amount = 4500, temperature = 1000},
         {type = "fluid", name = "helium", amount = 150},
         {type = "fluid", name = "tritium", amount = 20},
         {type = "fluid", name = "helium3", amount = 30},
