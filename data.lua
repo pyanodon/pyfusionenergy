@@ -87,7 +87,7 @@ require("prototypes/fluids/critical-steam")
 
 --pull in unused gasoline from pycoal
 require("__pycoalprocessing__/prototypes/fluids/gasoline")
-require('__pycoalprocessing__/prototypes/fluids/acetylene')
+require("__pycoalprocessing__/prototypes/fluids/acetylene")
 
 require("__stdlib__/stdlib/core")
 
@@ -189,4 +189,5 @@ require("prototypes/buildings/nmf-mk04")
 
 end
 
-data.raw.fluid['gasoline'].fuel_value = '1.2MJ'
+data.raw.fluid["gasoline"].fuel_value = '1.2MJ'
+data.raw.fluid["acetylene"].fuel_value = "1MJ"
