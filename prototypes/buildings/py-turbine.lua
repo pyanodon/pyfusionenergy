@@ -33,8 +33,8 @@ ENTITY {
     minable = {mining_time = 0.5, result = "py-turbine"},
     max_health = 500,
     corpse = "big-remnants",
-    effectivity = 8.0,
-    fluid_usage_per_tick = 9,
+    effectivity = 1,
+    fluid_usage_per_tick = 1,
     maximum_temperature = 5000,
     resistances = {
         {
@@ -48,11 +48,11 @@ ENTITY {
         --Not needed for .16
         name = "pressured-steam",
         amount = 0.0,
-        minimum_temperature = 1000.0
+        minimum_temperature = 500.0
     },
     fluid_box = {
         filter = "pressured-steam",
-        minimum_temperature = 1000,
+        minimum_temperature = 500,
         base_area = 1,
         base_level = -1,
         pipe_covers = DATA.Pipes.covers(false, true, true, true),
