@@ -48,13 +48,13 @@ ENTITY {
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"fusion-01"},
-    crafting_speed = 1,
+    crafting_speed = 10,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
         emissions_per_minute = 0.06,
     },
-    energy_usage = "800kW",
+    energy_usage = "5GW",
     animation = {
         filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk01/off.png",
         width = 345,

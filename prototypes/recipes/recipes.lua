@@ -1233,7 +1233,7 @@ RECIPE {
         {type = "fluid", name = "water", amount = 2000}
     },
     results = {
-        {type = "fluid", name = "critical-steam", amount = 4500, temperature = 1000},
+        {type = "fluid", name = "critical-steam", amount = 4000, temperature = 1000},
         {type = "fluid", name = "helium", amount = 150},
         {type = "fluid", name = "tritium", amount = 20},
         {type = "fluid", name = "helium3", amount = 30},
@@ -1253,7 +1253,7 @@ RECIPE {
 RECIPE {
     type = "recipe",
     name = "dt-he3",
-    category = "fusion-01",
+    category = "fusion-02",
     enabled = false,
     energy_required = 40,
     ingredients = {
@@ -1336,7 +1336,7 @@ RECIPE {
         {type = "fluid", name = "water", amount = 5000}
     },
     results = {
-        {type = "fluid", name = "critical-steam", amount = 4500, temperature = 4000},
+        {type = "fluid", name = "critical-steam", amount = 4000, temperature = 4000},
         {type = "fluid", name = "helium", amount = 500},
         {type = "fluid", name = "steam", amount = 5000, temperature = 60},
         {type = "item", name = "blanket", amount = 1, probability = 0.6},
@@ -1355,13 +1355,13 @@ RECIPE {
     name = "steam-exchange1",
     category = "heat-exchanger",
     enabled = false,
-    energy_required = 15,
+    energy_required = 10,
     ingredients = {
-        {type = "fluid", name = "critical-steam", amount = 500, temperature = 1000},
+        {type = "fluid", name = "critical-steam", amount = 1000, temperature = 1000},
         {type = "fluid", name = "water", amount = 250}
     },
     results = {
-        {type = "fluid", name = "pressured-steam", amount = 1000, temperature = 1000},
+        {type = "fluid", name = "pressured-steam", amount = 2000, temperature = 1000},
         {type = "fluid", name = "steam", amount = 250, temperature = 60}
     },
     --main_product= "blanket",
@@ -1376,13 +1376,13 @@ RECIPE {
     name = "steam-exchange2",
     category = "heat-exchanger",
     enabled = false,
-    energy_required = 15,
+    energy_required = 10,
     ingredients = {
-        {type = "fluid", name = "critical-steam", amount = 500, temperature = 2000},
+        {type = "fluid", name = "critical-steam", amount = 1000, temperature = 2000},
         {type = "fluid", name = "water", amount = 250}
     },
     results = {
-        {type = "fluid", name = "pressured-steam", amount = 1000, temperature = 2000},
+        {type = "fluid", name = "pressured-steam", amount = 2000, temperature = 2000},
         {type = "fluid", name = "steam", amount = 250, temperature = 60}
     },
     --main_product= "blanket",
@@ -1397,13 +1397,13 @@ RECIPE {
     name = "steam-exchange3",
     category = "heat-exchanger",
     enabled = false,
-    energy_required = 15,
+    energy_required = 10,
     ingredients = {
-        {type = "fluid", name = "critical-steam", amount = 500, temperature = 3000},
+        {type = "fluid", name = "critical-steam", amount = 1000, temperature = 3000},
         {type = "fluid", name = "water", amount = 250}
     },
     results = {
-        {type = "fluid", name = "pressured-steam", amount = 1000, temperature = 3000},
+        {type = "fluid", name = "pressured-steam", amount = 2000, temperature = 3000},
         {type = "fluid", name = "steam", amount = 250, temperature = 60}
     },
     --main_product= "blanket",
@@ -1418,13 +1418,13 @@ RECIPE {
     name = "steam-exchange4",
     category = "heat-exchanger",
     enabled = false,
-    energy_required = 15,
+    energy_required = 10,
     ingredients = {
-        {type = "fluid", name = "critical-steam", amount = 500, temperature = 4000},
+        {type = "fluid", name = "critical-steam", amount = 1000, temperature = 4000},
         {type = "fluid", name = "water", amount = 400}
     },
     results = {
-        {type = "fluid", name = "pressured-steam", amount = 1000, temperature = 4000},
+        {type = "fluid", name = "pressured-steam", amount = 2000, temperature = 4000},
         {type = "fluid", name = "steam", amount = 400, temperature = 60}
     },
     --main_product= "blanket",

@@ -34,7 +34,7 @@ ENTITY {
     max_health = 500,
     corpse = "big-remnants",
     effectivity = 1,
-    fluid_usage_per_tick = 1,
+    fluid_usage_per_tick = 33.33,
     maximum_temperature = 5000,
     resistances = {
         {
@@ -44,12 +44,6 @@ ENTITY {
     },
     collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
-    fluid_input = {
-        --Not needed for .16
-        name = "pressured-steam",
-        amount = 0.0,
-        minimum_temperature = 500.0
-    },
     fluid_box = {
         filter = "pressured-steam",
         minimum_temperature = 500,

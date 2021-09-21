@@ -46,13 +46,13 @@ ENTITY {
     },
     allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     crafting_categories = {"fusion-02"},
-    crafting_speed = 1,
+    crafting_speed = 20,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
         emissions_per_minute = 0.06,
     },
-    energy_usage = "1500kW",
+    energy_usage = "40GW",
     animation = {
         layers = {
             {
