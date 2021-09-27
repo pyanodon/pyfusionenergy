@@ -19,6 +19,7 @@ RECIPE {
     order = "j"
 }
 
+--[[
 RECIPE {
     type = "recipe",
     name = "jig-diamond-tailings",
@@ -39,6 +40,7 @@ RECIPE {
     subgroup = "py-fusion-fluids",
     order = "j"
 }
+]]--
 
 FLUID {
     type = "fluid",
