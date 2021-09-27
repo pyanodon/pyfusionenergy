@@ -1627,7 +1627,7 @@ RECIPE {
 	icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
-}:add_unlock("coal-processing-3")
+}:add_unlock("fusion-mk01")
 
 RECIPE {
     type = "recipe",

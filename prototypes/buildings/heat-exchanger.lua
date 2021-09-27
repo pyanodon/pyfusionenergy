@@ -14,7 +14,7 @@ RECIPE {
     results = {
         {"py-heat-exchanger", 1}
     }
-}:add_unlock("fuel-production")
+}:add_unlock("fusion-mk01")
 
 ITEM {
     type = "item",
