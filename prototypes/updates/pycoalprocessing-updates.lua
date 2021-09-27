@@ -6,7 +6,7 @@ TECHNOLOGY("logistic-science-pack"):add_prereq('boron')
 
 TECHNOLOGY("energy-1"):add_prereq('boron')
 
-RECIPE("acetylene"):add_unlock('fusion-mk03')
+RECIPE("acetylene"):add_unlock("filtration-2")
 
 --ACETYLENE to CM1
 RECIPE {
