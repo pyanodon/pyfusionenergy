@@ -72,10 +72,6 @@ TECHNOLOGY {
         },
         {
             type = "unlock-recipe",
-            recipe = "jig-diamond-tailings"
-        },
-        {
-            type = "unlock-recipe",
             recipe = "diamond-rejects-screening"
         },
         {
