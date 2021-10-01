@@ -11,7 +11,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "liquid-helium", amount = 2},
-        {type = "fluid", name = "steam", amount = 600, temperature = 60}
+        {type = "fluid", name = "steam", amount = 600, temperature = 150}
     },
     main_product = "liquid-helium",
 }

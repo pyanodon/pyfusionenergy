@@ -820,7 +820,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "liquid-petgas", amount = 5},
-        {type = "fluid", name = "steam", amount = 100, temperature = 60}
+        {type = "fluid", name = "steam", amount = 100, temperature = 150}
     },
     main_product= "liquid-petgas",
 }
@@ -1237,7 +1237,7 @@ RECIPE {
         {type = "fluid", name = "helium", amount = 150},
         {type = "fluid", name = "tritium", amount = 20},
         {type = "fluid", name = "helium3", amount = 30},
-        {type = "fluid", name = "steam", amount = 2000, temperature = 60},
+        {type = "fluid", name = "steam", amount = 2000, temperature = 150},
         {type = "item", name = "blanket", amount = 1, probability = 0.5},
         {type = "item", name = "divertor", amount = 1, probability = 0.5},
         {type = "item", name = "wall-shield", amount = 3, probability = 0.5},
@@ -1271,7 +1271,7 @@ RECIPE {
         {type = "fluid", name = "critical-steam", amount = 4000, temperature = 3000},
         {type = "fluid", name = "helium", amount = 175},
         {type = "fluid", name = "proton", amount = 15},
-        {type = "fluid", name = "steam", amount = 5000, temperature = 60},
+        {type = "fluid", name = "steam", amount = 5000, temperature = 150},
         {type = "item", name = "blanket", amount = 1, probability = 0.5},
         {type = "item", name = "divertor", amount = 1, probability = 0.5},
         {type = "item", name = "reinforced-wall-shield", amount = 3, probability = 0.5},
@@ -1305,7 +1305,7 @@ RECIPE {
         {type = "fluid", name = "critical-steam", amount = 4000, temperature = 2000},
         {type = "fluid", name = "helium", amount = 200},
         {type = "fluid", name = "tritium", amount = 5},
-        {type = "fluid", name = "steam", amount = 3500, temperature = 60},
+        {type = "fluid", name = "steam", amount = 3500, temperature = 150},
         {type = "item", name = "blanket", amount = 1, probability = 0.5},
         {type = "item", name = "divertor", amount = 1, probability = 0.5},
         {type = "item", name = "reinforced-wall-shield", amount = 3, probability = 0.5},
@@ -1338,7 +1338,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "critical-steam", amount = 4000, temperature = 4000},
         {type = "fluid", name = "helium", amount = 500},
-        {type = "fluid", name = "steam", amount = 5000, temperature = 60},
+        {type = "fluid", name = "steam", amount = 5000, temperature = 150},
         {type = "item", name = "blanket", amount = 1, probability = 0.6},
         {type = "item", name = "divertor", amount = 2, probability = 0.6},
         {type = "item", name = "wall-shield", amount = 3, probability = 0.5},
@@ -1362,7 +1362,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "pressured-steam", amount = 2000, temperature = 1000},
-        {type = "fluid", name = "steam", amount = 250, temperature = 60}
+        {type = "fluid", name = "steam", amount = 250, temperature = 150}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange.png",
@@ -1383,7 +1383,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "pressured-steam", amount = 2000, temperature = 2000},
-        {type = "fluid", name = "steam", amount = 250, temperature = 60}
+        {type = "fluid", name = "steam", amount = 250, temperature = 150}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange2.png",
@@ -1404,7 +1404,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "pressured-steam", amount = 2000, temperature = 3000},
-        {type = "fluid", name = "steam", amount = 250, temperature = 60}
+        {type = "fluid", name = "steam", amount = 250, temperature = 150}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange3.png",
@@ -1425,7 +1425,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "pressured-steam", amount = 2000, temperature = 4000},
-        {type = "fluid", name = "steam", amount = 400, temperature = 60}
+        {type = "fluid", name = "steam", amount = 400, temperature = 150}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange4.png",
@@ -1679,7 +1679,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "acidgas", amount = 30},
-        {type = "fluid", name = "steam", amount = 600, temperature = 60}
+        {type = "fluid", name = "steam", amount = 600, temperature = 150}
     },
     main_product = "acidgas",
 }:add_unlock("regolite-mining")
