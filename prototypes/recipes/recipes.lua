@@ -1705,3 +1705,39 @@ RECIPE {
     subgroup = "py-fluids",
     order = "d6"
 }:add_unlock("fuel-production")
+
+RECIPE {
+    type = "recipe",
+    name = "plutonium-fuel-cell",
+    enabled = false,
+    energy_required = 10,
+    ingredients = {
+        {type = "item", name = "niobium-plate", amount = 3},
+        {type = "item", name = "molybdenum-plate", amount = 2},
+        {type = "item", name = "uranium-238", amount = 12},
+        {type = "item", name = "plutonium", amount = 2},
+    },
+    results = {
+        {type = "item", name = "mox-fuel-cell", amount = 1},
+    },
+    main_product = "mox-fuel-cell",
+}:add_unlock("kovarex-enrichment-process-2")
+
+
+RECIPE {
+    type = "recipe",
+    name = "plutonium-fuel-reprocessing",
+    category = "centrifuging",
+    enabled = false,
+    energy_required = 60,
+    ingredients = {
+        {type = "item", name = "used-up-mox-fuel-cell", amount = 2},
+    },
+    results = {
+        {type = "item", name = "uranium-238", amount = 12},
+        {type = "item", name = "plutonium", amount = 12}
+    },
+    main_product = "plutonium",
+    subgroup = "intermediate-product",
+    order = "t",
+}:add_unlock("kovarex-enrichment-process-2")

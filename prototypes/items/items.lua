@@ -645,3 +645,28 @@ ITEM {
     order = "s",
     stack_size = 100
 }
+
+ITEM {
+    type = 'item',
+    name = 'mox-fuel-cell',
+    icon = '__pyfusionenergygraphics__/graphics/icons/mox-fuel-cell.png',
+    icon_size = 32,
+    fuel_category = 'nuclear',
+    burnt_result = 'used-up-mox-fuel-cell',
+    fuel_value = '20GJ',
+    fuel_glow_color = {0,0,1,1},
+    flags = {},
+    subgroup = "intermediate-product",
+    order = "r[uranium-processing]-a[uranium-fuel-cell]a",
+    stack_size = 50
+}
+
+ITEM {
+    type = "item",
+    name = "used-up-mox-fuel-cell",
+    icon = "__pyfusionenergygraphics__/graphics/icons/used-up-mox-fuel-cell.png",
+    icon_size = 32,
+    subgroup = "intermediate-product",
+    order = "r[used-up-uranium-fuel-cell]a",
+    stack_size = 50
+  }

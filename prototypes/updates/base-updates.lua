@@ -4,6 +4,19 @@ local fun = require("__pycoalprocessing__/prototypes/functions/functions")
 --((TECHNOLOGY))--
 TECHNOLOGY('nuclear-fuel-reprocessing'):remove_prereq('production-science-pack'):remove_pack('production-science-pack')
 
+data.raw.technology["kovarex-enrichment-process"].unit =
+{
+  ingredients =
+  {
+    {"automation-science-pack", 6},
+    {"logistic-science-pack", 4},
+    {"chemical-science-pack", 2},
+    {"production-science-pack", 1}
+  },
+  time = 30,
+  count = 150
+}
+
 --((RECIPES))--
 
 fun.add_result("nuclear-fuel-reprocessing", {type = "item", name = "plutonium", amount = 2})
