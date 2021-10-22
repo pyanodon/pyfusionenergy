@@ -8,10 +8,6 @@ TECHNOLOGY {
     effects = {
         {
             type = "unlock-recipe",
-            recipe = "pressured-water"
-        },
-        {
-            type = "unlock-recipe",
             recipe = "genlab-mk01"
         },
         {

@@ -10,7 +10,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "pressured-water", amount = 200}
     }
-}
+}:add_unlock('xyhiphoe')
 
 FLUID {
     type = "fluid",
