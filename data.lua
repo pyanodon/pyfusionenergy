@@ -192,3 +192,5 @@ end
 
 data.raw.fluid["gasoline"].fuel_value = '1.2MJ'
 data.raw.fluid["acetylene"].fuel_value = "1MJ"
+
+table.insert(data.raw['fluid-turret']['flamethrower-turret'].attack_parameters.fluids, {type = 'gasoline', damage_modifier = 2})
