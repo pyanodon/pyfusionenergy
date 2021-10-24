@@ -21,6 +21,7 @@ data.raw.technology["kovarex-enrichment-process"].unit =
 
 fun.add_result("nuclear-fuel-reprocessing", {type = "item", name = "plutonium", amount = 2})
 RECIPE("nuclear-fuel-reprocessing"):set_fields{energy_required = 30}
+RECIPE('guar-gum-plantation-mk04'):add_ingredient({type = "item", name = "super-alloy", amount = 20})
 
 --space science
   RECIPE{
