@@ -3,15 +3,15 @@ ITEM {
     name = "molybdenum-ore",
     icon = "__pyfusionenergygraphics__/graphics/icons/mip/moly-01.png",
     icon_size = 64,
-    icon_mipmaps = 6,
+
     pictures =
     {
-      { size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-01.png",   scale = 0.25, mipmap_count = 1 },
-      { size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-02.png",   scale = 0.25, mipmap_count = 1 },
-      { size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-03.png",   scale = 0.25, mipmap_count = 1 },
-      { size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-04.png",   scale = 0.25, mipmap_count = 1 },
-      { size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-05.png",   scale = 0.25, mipmap_count = 1 },
-      { size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-06.png",   scale = 0.25, mipmap_count = 1 },
+      { size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-01.png",   scale = 0.25},
+      { size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-02.png",   scale = 0.25},
+      { size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-03.png",   scale = 0.25},
+      { size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-04.png",   scale = 0.25},
+      { size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-05.png",   scale = 0.25},
+      { size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-06.png",   scale = 0.25},
     },
     flags = {},
     subgroup = "py-fusion-items",
