@@ -5,11 +5,11 @@ RECIPE {
     enabled = false,
     ingredients = {
         {"small-lamp", 50},
-        {"electric-mining-drill", 3}, --bobs titanium plate
+        {"electric-mining-drill", 3},
         {"engine-unit", 4},
         {"nbfe-alloy", 30},
         {"steel-plate", 100},
-        {"electronic-circuit", 30} --updated-bob basic-electronic-circuit-board
+        {"electronic-circuit", 30}
     },
     results = {
         {"mo-mine", 1}
