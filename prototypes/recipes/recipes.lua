@@ -1161,7 +1161,7 @@ RECIPE {
         --add bobs lithium and lead
     },
     results = {
-        {type = "item", name = "blanket", amount = 2}
+        {type = "item", name = "blanket", amount = 3}
     },
 }
 
