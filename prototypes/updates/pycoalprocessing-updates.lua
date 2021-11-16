@@ -70,6 +70,21 @@ RECIPE {
     order = "j"
 }:add_unlock("energy-3")
 
+RECIPE {
+    type = "recipe",
+    name = "iron-oxide",
+    category = "chemistry",
+    enabled = false,
+    energy_required = 5,
+    ingredients = {
+        {type = "fluid", name = "hydrogen-peroxide", amount = 100},
+        {type = "item", name = "iron-plate", amount = 5}
+    },
+    results = {
+        {type = "item", name = "iron-oxide", amount = 10}
+    }
+}:add_unlock("coal-processing-2")
+
 RECIPE("borax-washing"):remove_unlock('energy-1'):add_unlock('boron')
 
 RECIPE("boron-trioxide"):remove_unlock('logistic-science-pack'):add_unlock("boron")
