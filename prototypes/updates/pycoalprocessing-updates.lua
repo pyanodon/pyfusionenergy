@@ -2,9 +2,7 @@
 --TECHNOLOGY
 TECHNOLOGY("energy-3"):add_prereq("advanced-material-processing-2")
 
-TECHNOLOGY("logistic-science-pack"):add_prereq('boron')
-
-TECHNOLOGY("energy-1"):add_prereq('boron')
+TECHNOLOGY("energy-1"):add_prereq('boron'):remove_prereq('coal-processing-1')
 
 RECIPE("acetylene"):add_unlock("filtration-2")
 
@@ -83,7 +81,7 @@ RECIPE {
     results = {
         {type = "item", name = "iron-oxide", amount = 10}
     }
-}:add_unlock("coal-processing-2")
+}:add_unlock("sulfur-processing")
 
 RECIPE("borax-washing"):remove_unlock('energy-1'):add_unlock('boron')
 
@@ -94,3 +92,5 @@ RECIPE("boric-acid"):remove_unlock('logistic-science-pack'):add_unlock("boron")
 RECIPE("diborane"):remove_unlock('energy-1'):add_unlock("boron")
 
 RECIPE("borax-mine"):remove_unlock('energy-1'):add_unlock("boron")
+
+RECIPE("filtration-media"):remove_unlock("advanced-oil-processing"):add_unlock("filtration-2")
