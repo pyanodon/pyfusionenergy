@@ -14,6 +14,8 @@ TECHNOLOGY('speed-module-3'):add_prereq('speed-module-2')
 
 TECHNOLOGY('effectivity-module-3'):add_prereq('effectivity-module-2')
 
+TECHNOLOGY('power-armor-mk2'):add_prereq('speed-module-2'):add_prereq('effectivity-module-2')
+
 data.raw.technology["kovarex-enrichment-process"].unit =
 {
   ingredients =
