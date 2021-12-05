@@ -16,3 +16,4 @@ TECHNOLOGY {
         time = 70
     }
 }
+
