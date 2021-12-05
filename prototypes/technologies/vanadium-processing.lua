@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/vanadium-processing.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"chemical-science-pack"},
+    prerequisites = {"xyhiphoe"},
     effects = {
         {
             type = "unlock-recipe",

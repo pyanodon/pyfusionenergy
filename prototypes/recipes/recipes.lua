@@ -199,7 +199,7 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "fluid", name = "steam", amount = 150, temperature = 165},
+        {type = "fluid", name = "steam", amount = 150},
         {type = "fluid", name = "water-saline", amount = 100} --bob salt
     },
     results = {
