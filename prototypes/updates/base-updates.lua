@@ -16,6 +16,12 @@ TECHNOLOGY('effectivity-module-3'):add_prereq('effectivity-module-2')
 
 TECHNOLOGY('power-armor-mk2'):add_prereq('speed-module-2'):add_prereq('effectivity-module-2')
 
+TECHNOLOGY('advanced-oil-processing'):add_prereq('fuel-production')
+
+TECHNOLOGY('rocket-silo'):add_prereq('super-alloy')
+
+TECHNOLOGY('space-science-pack'):add_prereq('fusion-mk02')
+
 data.raw.technology["kovarex-enrichment-process"].unit =
 {
   ingredients =
@@ -35,6 +41,7 @@ data.raw.technology["kovarex-enrichment-process"].unit =
 fun.add_result("nuclear-fuel-reprocessing", {type = "item", name = "plutonium", amount = 2})
 RECIPE("nuclear-fuel-reprocessing"):set_fields{energy_required = 30}
 RECIPE('guar-gum-plantation-mk04'):add_ingredient({type = "item", name = "super-alloy", amount = 20})
+RECIPE('compressor-mk01'):add_unlock('advanced-oil-processing')
 
 --space science
   RECIPE{

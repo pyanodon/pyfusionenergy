@@ -4,12 +4,8 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/fusion-1.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"helium-processing", "boron-2", "energy-3", "molybdenum-processing", "vanadium-processing", "cooling-tower-1"},
+    prerequisites = {"helium-processing-2", "boron-2", "energy-3", "cooling-tower-1"},
     effects = {
-        {
-            type = "unlock-recipe",
-            recipe = "genlab-mk01"
-        },
         {
             type = "unlock-recipe",
             recipe = "py-turbine"

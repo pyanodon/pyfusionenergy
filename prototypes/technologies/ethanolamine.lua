@@ -1,38 +1,30 @@
 TECHNOLOGY {
     type = "technology",
-    name = "helium-processing",
-    icon = "__pyfusionenergygraphics__/graphics/technology/helium-processing.png",
-    icon_size = 128,
+    name = "ethanolamine",
+    icon = "__pyfusionenergygraphics__/graphics/icons/ethanolamine.png",
+    icon_size = 32,
     order = "c-a",
-    prerequisites = {"fuel-production", "production-science-pack"},
+    prerequisites = {"super-alloy", "energy-2", "kmauts"},
     effects = {
         {
             type = "unlock-recipe",
-            recipe = "compressor-mk01"
+            recipe = "bio-reactor"
         },
         {
             type = "unlock-recipe",
-            recipe = "pressured-air"
+            recipe = "genlab-mk01"
         },
         {
             type = "unlock-recipe",
-            recipe = "purified-air"
+            recipe = "bacteria-1"
         },
         {
             type = "unlock-recipe",
-            recipe = "cool-air"
+            recipe = "methyl-acrylate"
         },
         {
             type = "unlock-recipe",
-            recipe = "cold-clean-air"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "liquid-pure-air"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "liquid-air-distilation"
+            recipe = "ethanolamine"
         }
     },
     unit = {

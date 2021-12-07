@@ -1,38 +1,46 @@
 TECHNOLOGY {
     type = "technology",
-    name = "helium-processing",
+    name = "helium-processing-2",
     icon = "__pyfusionenergygraphics__/graphics/technology/helium-processing.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"fuel-production", "production-science-pack"},
+    prerequisites = {"ethanolamine", "liquid-petroleum-processing", "regolite-mining"},
     effects = {
         {
             type = "unlock-recipe",
-            recipe = "compressor-mk01"
+            recipe = "gas-separator-mk01"
         },
         {
             type = "unlock-recipe",
-            recipe = "pressured-air"
+            recipe = "high-purified-gas"
         },
         {
             type = "unlock-recipe",
-            recipe = "purified-air"
+            recipe = "rich-gas"
         },
         {
             type = "unlock-recipe",
-            recipe = "cool-air"
+            recipe = "liquid-rich-gas"
         },
         {
             type = "unlock-recipe",
-            recipe = "cold-clean-air"
+            recipe = "liquid-rich-gas-distilation"
         },
         {
             type = "unlock-recipe",
-            recipe = "liquid-pure-air"
+            recipe = "purier-helium"
         },
         {
             type = "unlock-recipe",
-            recipe = "liquid-air-distilation"
+            recipe = "helium"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "liquid-helium"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "evaporate-helium"
         }
     },
     unit = {

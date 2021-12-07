@@ -1,10 +1,10 @@
 TECHNOLOGY {
     type = "technology",
-    name = "helium-processing",
-    icon = "__pyfusionenergygraphics__/graphics/technology/helium-processing.png",
-    icon_size = 128,
+    name = "liquid-petroleum-processing",
+    icon = "__pyfusionenergygraphics__/graphics/icons/liquid-petgas.png",
+    icon_size = 32,
     order = "c-a",
-    prerequisites = {"fuel-production", "production-science-pack"},
+    prerequisites = {"production-science-pack", "fuel-production"},
     effects = {
         {
             type = "unlock-recipe",
@@ -12,27 +12,15 @@ TECHNOLOGY {
         },
         {
             type = "unlock-recipe",
-            recipe = "pressured-air"
+            recipe = "liquid-petgas"
         },
         {
             type = "unlock-recipe",
-            recipe = "purified-air"
+            recipe = "liquid-petgas-separation"
         },
         {
             type = "unlock-recipe",
-            recipe = "cool-air"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "cold-clean-air"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "liquid-pure-air"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "liquid-air-distilation"
+            recipe = "gas-stream-filtration"
         }
     },
     unit = {

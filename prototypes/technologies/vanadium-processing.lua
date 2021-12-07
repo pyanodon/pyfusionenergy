@@ -81,14 +81,6 @@ TECHNOLOGY {
         {
             type = "unlock-recipe",
             recipe = "vanadium-oxide"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "wastewater-filtration"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "wastewater-recovery"
         }
     },
     unit = {
