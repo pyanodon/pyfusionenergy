@@ -8,6 +8,10 @@ TECHNOLOGY {
     effects = {
         {
             type = "unlock-recipe",
+            recipe = "fusion-reactor-mk02"
+        },
+        {
+            type = "unlock-recipe",
             recipe = "dt-he3"
         },
         {

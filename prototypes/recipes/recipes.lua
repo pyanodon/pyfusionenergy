@@ -590,27 +590,6 @@ RECIPE {
     order = "k"
 }
 
-if mods["pyrawores"] then
-
-RECIPE {
-    type = "recipe",
-    name = "cool-air-1",
-    category = "evaporator",
-    enabled = false,
-    energy_required = 4,
-    ingredients = {
-        {type = "fluid", name = "purified-air", amount = 120},
-        {type = "fluid", name = "liquid-nitrogen", amount = 45} -- liquid nitrogen
-    },
-    results = {
-        {type = "fluid", name = "cold-air", amount = 45},
-        {type = "fluid", name = "nitrogen", amount = 450}
-    },
-    main_product= "cold-air",
-}:add_unlock("helium-processing")
-
-else
-
 RECIPE {
     type = "recipe",
     name = "cool-air",
@@ -625,9 +604,7 @@ RECIPE {
         {type = "fluid", name = "cold-air", amount = 45}
     },
     main_product= "cold-air",
-}:add_unlock("helium-processing")
-
-end
+}
 
 RECIPE {
     type = "recipe",
@@ -1682,7 +1659,7 @@ RECIPE {
         {type = "fluid", name = "steam", amount = 600, temperature = 150}
     },
     main_product = "acidgas",
-}:add_unlock("regolite-mining")
+}:add_unlock("advanced-oil-processing")
 
 RECIPE {
     type = "recipe",

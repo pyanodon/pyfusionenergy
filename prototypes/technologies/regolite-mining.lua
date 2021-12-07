@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/regolite-mining.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"helium-processing"},
+    prerequisites = {"super-alloy"},
     effects = {
         {
             type = "unlock-recipe",
@@ -25,6 +25,10 @@ TECHNOLOGY {
         {
             type = "unlock-recipe",
             recipe = "regolite-calcination"
+        },
+        {
+            type = "unlock-recipe",
+            recipe = "calcinate-separation"
         }
     },
     unit = {
