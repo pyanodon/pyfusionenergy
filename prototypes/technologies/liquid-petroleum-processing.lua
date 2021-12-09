@@ -1,8 +1,8 @@
 TECHNOLOGY {
     type = "technology",
     name = "liquid-petroleum-processing",
-    icon = "__pyfusionenergygraphics__/graphics/icons/liquid-petgas.png",
-    icon_size = 32,
+    icon = "__pyfusionenergygraphics__/graphics/technology/liquid-petroleum-processing.png",
+    icon_size = 128,
     order = "c-a",
     prerequisites = {"production-science-pack", "fuel-production"},
     effects = {

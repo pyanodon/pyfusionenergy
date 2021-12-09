@@ -1,8 +1,8 @@
 TECHNOLOGY {
     type = "technology",
     name = "kmauts",
-    icon = "__pyfusionenergygraphics__/graphics/icons/kmauts-enclosure-mk01.png",
-    icon_size = 64,
+    icon = "__pyfusionenergygraphics__/graphics/technology/kmauts.png",
+    icon_size = 128,
     order = "c-a",
     prerequisites = {"automation-3"},
     effects = {

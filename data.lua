@@ -5,6 +5,7 @@ require("prototypes/item-groups")
 require("prototypes/recipe-categories")
 
 require("prototypes/technologies/advanced-mining-facilities")
+require("prototypes/technologies/sc-unit")
 require("prototypes/technologies/fusion-1")
 require("prototypes/technologies/fusion-2")
 require("prototypes/technologies/fusion-3")
