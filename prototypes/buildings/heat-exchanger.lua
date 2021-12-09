@@ -7,7 +7,7 @@ RECIPE {
         {"storage-tank", 1}, --pyindustry py-tank-8000
         {"automated-factory-mk01", 1},
         {"stone-brick", 70}, --pyindustry py-ashpalt
-        {"cooling-tower-mk01", 2},
+        {"cooling-tower-mk02", 2},
         {"advanced-circuit", 5},
         {"pipe", 20} --pyindustry niobium-pipe
     },

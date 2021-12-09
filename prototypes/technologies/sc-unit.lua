@@ -1,50 +1,42 @@
 TECHNOLOGY {
     type = "technology",
-    name = "fusion-mk01",
-    icon = "__pyfusionenergygraphics__/graphics/technology/fusion-1.png",
-    icon_size = 128,
+    name = "sc-unit",
+    icon = "__pyfusionenergygraphics__/graphics/icons/magnetic-unit.png",
+    icon_size = 32,
     order = "c-a",
-    prerequisites = {"energy-3", "helium-processing-2", "sc-unit", "boron-2", "cooling-tower-2"},
+    prerequisites = {"vanadium-processing", "molybdenum-processing"},
     effects = {
         {
             type = "unlock-recipe",
-            recipe = "py-turbine"
+            recipe = "gas-separator-mk01"
         },
         {
             type = "unlock-recipe",
-            recipe = "heavy-water"
+            recipe = "sc-wire"
         },
         {
             type = "unlock-recipe",
-            recipe = "d2o-distilation"
+            recipe = "ferrite"
         },
         {
             type = "unlock-recipe",
-            recipe = "blanket-chassi"
+            recipe = "coil-core"
         },
         {
             type = "unlock-recipe",
-            recipe = "blanket"
+            recipe = "sc-coil"
         },
         {
             type = "unlock-recipe",
-            recipe = "divertor"
+            recipe = "magnetic-core"
         },
         {
             type = "unlock-recipe",
-            recipe = "wall-shield"
+            recipe = "deposited-core"
         },
         {
             type = "unlock-recipe",
-            recipe = "fusion-reactor-mk01"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "deuterium-fusion"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "steam-exchange1"
+            recipe = "sc-unit"
         }
     },
     unit = {
