@@ -441,7 +441,7 @@ ITEM {
     type = "item",
     name = "sc-unit",
     icon = "__pyfusionenergygraphics__/graphics/icons/magnetic-unit.png",
-	icon_size = 32,
+	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
