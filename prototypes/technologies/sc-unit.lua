@@ -1,8 +1,8 @@
 TECHNOLOGY {
     type = "technology",
     name = "sc-unit",
-    icon = "__pyfusionenergygraphics__/graphics/icons/magnetic-unit.png",
-    icon_size = 32,
+    icon = "__pyfusionenergygraphics__/graphics/technology/sc-unit.png",
+    icon_size = 128,
     order = "c-a",
     prerequisites = {"vanadium-processing", "molybdenum-processing"},
     effects = {
