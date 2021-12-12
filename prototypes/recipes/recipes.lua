@@ -991,7 +991,7 @@ RECIPE {
     results = {
         {type = "item", name = "magnetic-core", amount = 1}
     },
-}:add_ingredient({type = 'item', name = 'ndfeb-alloy', amount = 1})
+}
 
 RECIPE {
     type = "recipe",
