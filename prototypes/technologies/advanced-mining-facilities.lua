@@ -8,19 +8,11 @@ TECHNOLOGY {
     effects = {
         {
             type = "unlock-recipe",
-            recipe = "agitator-mk01"
-        },
-        {
-            type = "unlock-recipe",
             recipe = "thickener-mk01"
         },
         {
             type = "unlock-recipe",
             recipe = "hydrocyclone-mk01"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "mixer-mk01"
         },
         {
             type = "unlock-recipe",
