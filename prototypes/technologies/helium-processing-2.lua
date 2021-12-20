@@ -8,10 +8,6 @@ TECHNOLOGY {
     effects = {
         {
             type = "unlock-recipe",
-            recipe = "gas-separator-mk01"
-        },
-        {
-            type = "unlock-recipe",
             recipe = "high-purified-gas"
         },
         {

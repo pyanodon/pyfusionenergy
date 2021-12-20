@@ -41,7 +41,7 @@ RECIPE {
     results = {
         {"agitator-mk01", 1}
     }
-}
+}:add_unlock("fluid-processing-machines-1")
 
 ITEM {
     type = "item",
