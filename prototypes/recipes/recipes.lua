@@ -883,7 +883,7 @@ RECIPE {
     results = {
         {type = "item", name = "nexelit-matrix", amount = 4}
     },
-}:add_unlock('production-science-pack')
+}:add_unlock('nenbit-matrix')
 
 RECIPE {
     type = "recipe",
@@ -898,7 +898,7 @@ RECIPE {
     results = {
         {type = "item", name = "nbti-alloy", amount = 2}
     },
-}:add_unlock('production-science-pack')
+}:add_unlock('nenbit-matrix')
 
 RECIPE {
     type = "recipe",
@@ -913,7 +913,7 @@ RECIPE {
     results = {
         {type = "item", name = "nenbit-matrix", amount = 2}
     },
-}:add_unlock('production-science-pack')
+}:add_unlock('nenbit-matrix')
 
 RECIPE {
     type = "recipe",

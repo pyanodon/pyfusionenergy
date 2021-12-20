@@ -4,7 +4,7 @@ local fun = require("__pycoalprocessing__/prototypes/functions/functions")
 --((TECHNOLOGY))--
 TECHNOLOGY('nuclear-fuel-reprocessing'):remove_prereq('production-science-pack'):remove_pack('production-science-pack')
 
-TECHNOLOGY('production-science-pack'):remove_prereq('electric-engine'):add_prereq('advanced-material-processing-2')
+TECHNOLOGY('production-science-pack'):remove_prereq('electric-engine'):add_prereq('advanced-material-processing-2'):add_prereq('nenbit-matrix')
 
 TECHNOLOGY('logistics-3'):remove_prereq('logistics-2')
 
