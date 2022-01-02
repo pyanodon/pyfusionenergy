@@ -1,40 +1,37 @@
 RECIPE {
     type = "recipe",
-    name = "py-heat-exchanger",
+    name = "py-heat-exchanger-mk03",
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"storage-tank", 1},
-        {"automated-factory-mk01", 1},
-        {"stone-brick", 70},
-        {"electronic-circuit", 5},
-        {"pipe", 20}
+        {"py-heat-exchanger-mk02", 1},
+        {'processing-unit', 15},
     },
     results = {
-        {"py-heat-exchanger", 1}
+        {"py-heat-exchanger-mk03", 1}
     }
-}:add_unlock("fusion-mk01")
+}
 
 ITEM {
     type = "item",
-    name = "py-heat-exchanger",
-    icon = "__pyfusionenergygraphics__/graphics/icons/py-heat-exchanger.png",
+    name = "py-heat-exchanger-mk03",
+    icon = "__pyfusionenergygraphics__/graphics/icons/py-heat-exchanger-mk03.png",
 	icon_size = 64,
     flags = {},
-    subgroup = "py-fusion-buildings-mk01",
+    subgroup = "py-fusion-buildings-mk03",
     order = "z",
-    place_result = "py-heat-exchanger",
+    place_result = "py-heat-exchanger-mk03",
     stack_size = 10
 }
 
 ENTITY {
     type = "assembling-machine",
-    name = "py-heat-exchanger",
+    name = "py-heat-exchanger-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/py-heat-exchanger.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "py-heat-exchanger"},
-    fast_replaceable_group = "py-heat-exchanger",
+    minable = {mining_time = 0.5, result = "py-heat-exchanger-mk03"},
+    fast_replaceable_group = "py-heat-exchanger-mk03",
     max_health = 400,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
@@ -42,17 +39,17 @@ ENTITY {
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
     match_animation_speed_to_activity = false,
     module_specification = {
-        module_slots = 1
+        module_slots = 3
     },
     allowed_effects = {"consumption", "speed", "pollution"},
     crafting_categories = {"heat-exchanger"},
-    crafting_speed = 2,
+    crafting_speed = 6,
     energy_source = {
         type = "electric",
         usage_priority = "secondary-input",
         emissions_per_minute = 0.06,
     },
-    energy_usage = "500kW",
+    energy_usage = "850kW",
     animation = {
         layers = {
             {
@@ -68,7 +65,7 @@ ENTITY {
                 width = 224,
                 height = 224,
                 frame_count = 1,
-                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0},
+                tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0},
                 shift = {0.0, -0.2},
             },
         },
@@ -98,7 +95,7 @@ ENTITY {
                 frame_count = 80,
                 width = 224,
                 height = 224,
-                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0},
+                tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0},
                 line_length = 9,
                 animation_speed = 0.5
             }
