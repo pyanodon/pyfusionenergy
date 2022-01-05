@@ -1569,11 +1569,11 @@ RECIPE {
     name = "mining-molybdenum",
     category = "ground-borer",
     enabled = false,
-    energy_required = 1.2,
+    energy_required = 3,
     ingredients = {
         {type = "fluid", name = "lubricant", amount = 100},
         {type = "fluid", name = "coal-gas", amount = 100},
-        {type = "item", name = "drill-head", amount = 3}
+        {type = "item", name = "drill-head", amount = 2}
     },
     results = {
         {type = "item", name = "molybdenum-ore", amount = 15}
