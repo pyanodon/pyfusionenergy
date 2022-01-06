@@ -53,7 +53,7 @@ RECIPE('compressor-mk01'):add_unlock('advanced-oil-processing')
     ingredients =
     {
       {"low-density-structure", 100},
-      {"fusion-reactor-mk01", 5},
+      {"fusion-reactor-mk01", 1},
       {"processing-unit", 100},
       {type = "fluid", name = "deuterium", amount = 200},
       {type = "fluid", name = "helium3", amount = 100},
