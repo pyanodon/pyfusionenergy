@@ -5,6 +5,7 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"fusion-mk02", "utility-science-pack"},
+    dependencies = {"fusion-mk02"},
     effects = {
         {
             type = "unlock-recipe",

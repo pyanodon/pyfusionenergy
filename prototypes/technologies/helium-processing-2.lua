@@ -5,6 +5,7 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     prerequisites = {"ethanolamine", "liquid-petroleum-processing", "regolite-mining"},
+    dependencies = {"helium-processing", "liquid-petroleum-processing", "regolite-mining"},
     effects = {
         {
             type = "unlock-recipe",
