@@ -5,6 +5,7 @@ RECIPE {
     enabled = false,
     ingredients = {
         {"plankton-farm-mk02", 1},
+        {"electric-engine-unit", 2},
         {'processing-unit', 10}
     },
     results = {

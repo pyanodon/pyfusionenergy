@@ -4,11 +4,11 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"storage-tank", 1}, --pyindustry py-tank-8000
+        {"storage-tank", 1},
         {"chemical-plant-mk01", 2},
-        {"iron-plate", 30}, --updated-bob titanium-plate
+        {"iron-plate", 30},
         {"steel-plate", 50},
-        {"iron-gear-wheel", 30} --updated-bob titanium-bearing
+        {"iron-gear-wheel", 30}
     },
     results = {
         {"mixer-mk01", 1}

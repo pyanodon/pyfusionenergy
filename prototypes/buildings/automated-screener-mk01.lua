@@ -6,7 +6,6 @@ RECIPE {
     ingredients = {
         {"ground-borer", 1},
         {"iron-plate", 60}, --bobs titanium plate
-        {"electric-engine-unit", 10},
         {"niobium-plate", 10},
         {"steel-plate", 60},
         {"advanced-circuit", 20} --updated-bob basic-electronic-circuit-board

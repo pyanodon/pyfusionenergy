@@ -15,7 +15,8 @@ RECIPE {
     ingredients = {
         {"vacuum-pump-mk01", 1},
         {"steel-plate", 10},
-        {"electronic-circuit", 10},
+        {"electronic-circuit", 3},
+        {"engine-unit", 1},
         {"iron-gear-wheel", 10},
         {"pipe", 10}
     },

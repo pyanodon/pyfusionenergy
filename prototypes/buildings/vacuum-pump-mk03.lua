@@ -14,6 +14,7 @@ RECIPE {
     enabled = false,
     ingredients = {
         {"vacuum-pump-mk02", 1},
+        {"electric-engine-unit", 1},
         {"molybdenum-plate", 10},
         {"steel-plate", 10},
         {"iron-gear-wheel", 30},

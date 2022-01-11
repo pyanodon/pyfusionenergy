@@ -13,7 +13,7 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"electric-engine-unit", 1},
+        {"steam-engine", 1},
         {"small-lamp", 4},
         {"electronic-circuit", 10}, --updated-bob basic-electronic-circuit-board
         {"steel-plate", 50},

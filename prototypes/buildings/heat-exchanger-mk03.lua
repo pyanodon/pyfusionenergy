@@ -6,6 +6,7 @@ RECIPE {
     ingredients = {
         {"py-heat-exchanger-mk02", 1},
         {'processing-unit', 15},
+        {"electric-engine-unit", 4},
     },
     results = {
         {"py-heat-exchanger-mk03", 1}

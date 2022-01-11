@@ -6,6 +6,7 @@ RECIPE {
     ingredients = {
         {"plankton-farm", 1},
         {'nexelit-plate', 15},
+        {"engine-unit", 1},
         {'advanced-circuit', 10}
     },
     results = {

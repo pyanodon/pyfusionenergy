@@ -4,7 +4,7 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"electric-engine-unit", 1},
+        {"steam-engine", 1},
         {"small-lamp", 1},
         {"electronic-circuit", 25}, --updated-bob electronic-logic-board
         {"nbfe-alloy", 30},
