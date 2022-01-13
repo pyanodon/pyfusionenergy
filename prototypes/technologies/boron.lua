@@ -24,6 +24,7 @@ TECHNOLOGY {
     order = "c-a",
     --upgrade = true,
     prerequisites = {"helium-processing"},
+    dependencies = {"boron"},
     effects = {},
     unit = {
         count = 30,

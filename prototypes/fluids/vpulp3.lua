@@ -6,7 +6,7 @@ RECIPE {
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "vpulp2", amount = 100},
-        {type = "fluid", name = "petroleum-gas", amount = 100} --bobs nitrogen dioxide
+        {type = "fluid", name = "petroleum-gas", amount = 100}
     },
     results = {
         {type = "fluid", name = "vpulp3", amount = 100}

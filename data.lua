@@ -121,9 +121,9 @@ require("prototypes/buildings/nmf-mk01")
 require("prototypes/buildings/fusion-reactor-mk01")
 require("prototypes/buildings/fusion-reactor-mk02")
 require("prototypes/buildings/heat-exchanger")
-require("prototypes/buildings/heat-exchanger-mk02")
-require("prototypes/buildings/heat-exchanger-mk03")
-require("prototypes/buildings/heat-exchanger-mk04")
+-- require("prototypes/buildings/heat-exchanger-mk02")
+-- require("prototypes/buildings/heat-exchanger-mk03")
+-- require("prototypes/buildings/heat-exchanger-mk04")
 require("prototypes/buildings/py-turbine")
 require("prototypes/buildings/mo-mine")
 
@@ -144,10 +144,6 @@ require("prototypes/buildings/vacuum-pump-mk04")
 require("prototypes/buildings/plankton-farm-mk02")
 require("prototypes/buildings/plankton-farm-mk03")
 require("prototypes/buildings/plankton-farm-mk04")
-
-require("prototypes/buildings/xyhiphoe-pool-mk02")
-require("prototypes/buildings/xyhiphoe-pool-mk03")
-require("prototypes/buildings/xyhiphoe-pool-mk04")
 
 require("prototypes/buildings/hydrocyclone-mk02")
 require("prototypes/buildings/hydrocyclone-mk03")
@@ -181,14 +177,6 @@ require("prototypes/buildings/compressor-mk02")
 require("prototypes/buildings/compressor-mk03")
 require("prototypes/buildings/compressor-mk04")
 
-require("prototypes/buildings/genlab-mk02")
-require("prototypes/buildings/genlab-mk03")
-require("prototypes/buildings/genlab-mk04")
-
-require("prototypes/buildings/kmauts-enclosure-mk02")
-require("prototypes/buildings/kmauts-enclosure-mk03")
-require("prototypes/buildings/kmauts-enclosure-mk04")
-
 require("prototypes/buildings/gas-separator-mk02")
 require("prototypes/buildings/gas-separator-mk03")
 require("prototypes/buildings/gas-separator-mk04")
@@ -197,6 +185,20 @@ require("prototypes/buildings/nmf-mk02")
 require("prototypes/buildings/nmf-mk03")
 require("prototypes/buildings/nmf-mk04")
 
+end
+
+if mods['pyalienlife'] then
+    require("prototypes/buildings/kmauts-enclosure-mk02")
+    require("prototypes/buildings/kmauts-enclosure-mk03")
+    require("prototypes/buildings/kmauts-enclosure-mk04")
+
+    require("prototypes/buildings/genlab-mk02")
+    require("prototypes/buildings/genlab-mk03")
+    require("prototypes/buildings/genlab-mk04")
+
+    require("prototypes/buildings/xyhiphoe-pool-mk02")
+    require("prototypes/buildings/xyhiphoe-pool-mk03")
+    require("prototypes/buildings/xyhiphoe-pool-mk04")
 end
 
 data.raw.fluid["gasoline"].fuel_value = '1.2MJ'
