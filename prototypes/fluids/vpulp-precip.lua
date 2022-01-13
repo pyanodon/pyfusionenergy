@@ -6,7 +6,7 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "vpulp5", amount = 100},
-        {type = "fluid", name = "water", amount = 200} --bob nitrogen dioxide
+        {type = "fluid", name = "water", amount = 200}
     },
     results = {
         {type = "fluid", name = "vpulp-precip", amount = 100},
