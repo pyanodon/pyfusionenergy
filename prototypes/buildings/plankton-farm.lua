@@ -8,7 +8,8 @@ RECIPE {
         {"stone-brick", 20},
         {"electronic-circuit", 5}, --updated-bob basic-electronic-circuit-board
         {"steel-plate", 50},
-        {"niobium-plate", 15}
+        {"niobium-plate", 15},
+        {"steam-engine", 3},
     },
     results = {
         {"plankton-farm", 1}

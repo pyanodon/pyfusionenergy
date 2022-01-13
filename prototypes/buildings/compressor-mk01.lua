@@ -6,7 +6,7 @@ RECIPE {
     ingredients = {
         {"pipe", 20}, --pyindustry niobium-pipe
         {"evaporator", 1},
-        {"engine-unit", 4},
+        {"steam-engine", 3},
         {"steel-plate", 30},
         {"iron-gear-wheel", 30} --updated-bob titanium-bearing
     },

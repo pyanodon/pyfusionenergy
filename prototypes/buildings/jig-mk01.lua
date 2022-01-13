@@ -59,7 +59,7 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"electric-engine-unit", 6},
+        {"steam-engine", 5},
         {"secondary-crusher-mk01", 1},
         {"advanced-circuit", 20},
         {"steel-plate", 25},

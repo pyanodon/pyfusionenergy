@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     ingredients = {
         {"pipe", 30}, --pyindustry niobium-pipe
-        {"centrifuge", 1},
+        {"steam-engine", 2},
         {"iron-plate", 30},
         {"steel-plate", 30},
         {"iron-gear-wheel", 30} --updated-bob titanium-bearing

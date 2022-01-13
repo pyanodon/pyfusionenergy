@@ -14,6 +14,7 @@ RECIPE {
     enabled = false,
     ingredients = {
                 {"grease-table-mk01", 1},
+                {"engine-unit", 10},
                 --{'duralumin', 15},
                 --{'lead-plate', 10},
                 {'nexelit-plate', 15},

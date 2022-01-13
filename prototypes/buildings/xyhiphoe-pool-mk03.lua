@@ -5,9 +5,7 @@ RECIPE {
     enabled = false,
     ingredients = {
                 {'xyhiphoe-pool-mk02', 1},
-                --{'titanium-plate', 20},
-                --{'stainless-steel', 20},
-                --{'tin-plate', 20},
+                {"electric-engine-unit", 4},
                 {'processing-unit', 10}
             },
     results = {

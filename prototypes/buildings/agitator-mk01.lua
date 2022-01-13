@@ -31,7 +31,7 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"engine-unit", 3},
+        {"steam-engine", 3},
         {"iron-plate", 40},
         {"electronic-circuit", 20},
         {"steel-plate", 30},

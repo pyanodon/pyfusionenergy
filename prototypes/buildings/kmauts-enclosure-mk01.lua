@@ -5,7 +5,6 @@ RECIPE {
     enabled = false,
     ingredients = {
         {"pipe", 10}, --pyindustry niobium-pipe
-        {"assembling-machine-3", 2},
         {"gasifier", 2},
         {"nexelit-plate", 30},
         {"steel-plate", 40},
