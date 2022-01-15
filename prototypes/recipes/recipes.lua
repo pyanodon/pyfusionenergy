@@ -1053,7 +1053,7 @@ RECIPE {
     results = {
         {type = "item", name = "b2o3-dust", amount = 40}
     },
-}:add_unlock("boron-2")
+}:add_unlock("boron-mk02")
 
 RECIPE {
     type = "recipe",
@@ -1069,7 +1069,7 @@ RECIPE {
     results = {
         {type = "item", name = "boron-mixture", amount = 5}
     },
-}:add_unlock("boron-2")
+}:add_unlock("boron-mk02")
 
 RECIPE {
     type = "recipe",
@@ -1087,7 +1087,7 @@ RECIPE {
         {type = "fluid", name = "diborane", amount = 50}
     },
     main_product = "boron",
-}:add_unlock("boron-2")
+}:add_unlock("boron-mk02")
 
 RECIPE {
     type = "recipe",
@@ -1104,7 +1104,7 @@ RECIPE {
         {type = "fluid", name = "carbon-dioxide", amount = 30}
     },
     main_product = "boron-carbide",
-}:add_unlock("boron-2")
+}:add_unlock("boron-mk02")
 
 RECIPE {
     type = "recipe",

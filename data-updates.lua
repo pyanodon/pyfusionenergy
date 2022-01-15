@@ -10,7 +10,7 @@ ITEM("production-science-pack", "tool"):set("icon_size", 32)
 --RECIPE("production-science-pack"):remove_unlock('production-science-pack')
 
 RECIPE('rocket-silo'):replace_ingredient("steel-plate", "super-alloy")
-TECHNOLOGY("production-science-pack"):remove_prereq("uranium-processing"):remove_prereq("speed-module-2"):remove_prereq("effectivity-module-2"):remove_prereq("robotics"):remove_prereq("filtration-2"):remove_prereq("energy-3"):add_prereq("nuclear-fuel-reprocessing"):add_prereq("diamond-mining")
+TECHNOLOGY("production-science-pack"):remove_prereq("uranium-processing"):remove_prereq("speed-module-2"):remove_prereq("effectivity-module-2"):remove_prereq("robotics"):remove_prereq("filtration-mk02"):remove_prereq("energy-3"):add_prereq("nuclear-fuel-reprocessing"):add_prereq("diamond-mining")
 
 --TECHNOLOGY('automation-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
 
