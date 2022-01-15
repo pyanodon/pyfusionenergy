@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/water-invertebrates.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"advanced-mining-facilities", "filtration-2"},
+    prerequisites = {"advanced-mining-facilities", "filtration-mk02"},
     effects = {},
     unit = {
         count = 100,

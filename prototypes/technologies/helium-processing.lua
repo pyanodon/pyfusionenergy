@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "helium-processing",
-    icon = "__pyfusionenergygraphics__/graphics/technology/helium-processing.png",
+    icon = "__pyfusionenergygraphics__/graphics/technology/helium-processing-mk01.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"fuel-production", "production-science-pack"},

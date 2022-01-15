@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "boron",
-    icon = "__pyfusionenergygraphics__/graphics/technology/boron.png",
+    icon = "__pyfusionenergygraphics__/graphics/technology/boron-mk01.png",
     icon_size = 128,
     order = "c-a",
     --upgrade = true,
@@ -18,8 +18,8 @@ TECHNOLOGY {
 
 TECHNOLOGY {
     type = "technology",
-    name = "boron-2",
-    icon = "__pyfusionenergygraphics__/graphics/technology/boron.png",
+    name = "boron-mk02",
+    icon = "__pyfusionenergygraphics__/graphics/technology/boron-mk02.png",
     icon_size = 128,
     order = "c-a",
     --upgrade = true,

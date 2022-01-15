@@ -6,7 +6,7 @@ TECHNOLOGY("energy-1"):add_prereq('boron'):remove_prereq('coal-processing-1')
 
 TECHNOLOGY("fine-electronics"):remove_prereq("plastics")
 
-RECIPE("acetylene"):add_unlock("filtration-2")
+RECIPE("acetylene"):add_unlock("filtration-mk02")
 
 --ACETYLENE to CM1
 RECIPE {
@@ -44,7 +44,7 @@ RECIPE {
     results = {
         {type = "item", name = "calcium-carbide", amount = 10}
     }
-}:add_unlock("filtration-2")
+}:add_unlock("filtration-mk02")
 
 --GASOLINE to CM1
 RECIPE {
@@ -95,4 +95,4 @@ RECIPE("diborane"):remove_unlock('energy-1'):add_unlock("boron")
 
 RECIPE("borax-mine"):remove_unlock('energy-1'):add_unlock("boron")
 
-RECIPE("filtration-media"):remove_unlock("advanced-oil-processing"):add_unlock("filtration-2")
+RECIPE("filtration-media"):remove_unlock("advanced-oil-processing"):add_unlock("filtration-mk02")
