@@ -31,7 +31,7 @@ ENTITY {
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "py-heat-exchanger-mk04"},
-    fast_replaceable_group = "py-heat-exchanger-mk04",
+    fast_replaceable_group = "py-heat-exchanger",
     max_health = 400,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",

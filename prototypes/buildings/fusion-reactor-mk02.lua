@@ -34,7 +34,7 @@ ENTITY {
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "fusion-reactor-mk02"},
-    fast_replaceable_group = "fusion-reactor-mk02",
+    fast_replaceable_group = "fusion-reactor",
     max_health = 300,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
