@@ -1,6 +1,6 @@
 RECIPE {
     type = "recipe",
-    name = "bio-reactor",
+    name = "bio-reactor-mk01",
     energy_required = 0.5,
     enabled = false,
     ingredients = {
@@ -12,29 +12,29 @@ RECIPE {
         --add glass
     },
     results = {
-        {"bio-reactor", 1}
+        {"bio-reactor-mk01", 1}
     }
 }
 
 ITEM {
     type = "item",
-    name = "bio-reactor",
+    name = "bio-reactor-mk01",
     icon = "__pyfusionenergygraphics__/graphics/icons/bio-reactor.png",
 	icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-miners",
     order = "d",
-    place_result = "bio-reactor",
+    place_result = "bio-reactor-mk01",
     stack_size = 10
 }
 
 ENTITY {
     type = "assembling-machine",
-    name = "bio-reactor",
+    name = "bio-reactor-mk01",
     icon = "__pyfusionenergygraphics__/graphics/icons/bio-reactor.png",
 	icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "bio-reactor"},
+    minable = {mining_time = 0.5, result = "bio-reactor-mk01"},
     fast_replaceable_group = "bio-reactor",
     max_health = 400,
     corpse = "big-remnants",

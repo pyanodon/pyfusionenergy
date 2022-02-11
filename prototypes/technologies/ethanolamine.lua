@@ -8,7 +8,7 @@ TECHNOLOGY {
     effects = {
         {
             type = "unlock-recipe",
-            recipe = "bio-reactor"
+            recipe = "bio-reactor-mk01"
         },
         {
             type = "unlock-recipe",
