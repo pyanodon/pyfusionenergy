@@ -89,9 +89,9 @@ end
 
 RECIPE("borax-washing"):remove_unlock('energy-1'):add_unlock('boron')
 
-RECIPE("boron-trioxide"):remove_unlock('logistic-science-pack'):add_unlock("boron")
+RECIPE("boron-trioxide"):remove_unlock('lab-instrument'):add_unlock("boron")
 
-RECIPE("boric-acid"):remove_unlock('logistic-science-pack'):add_unlock("boron")
+RECIPE("boric-acid"):remove_unlock('lab-instrument'):add_unlock("boron")
 
 RECIPE("diborane"):remove_unlock('energy-1'):add_unlock("boron")
 
