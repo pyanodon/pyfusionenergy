@@ -5,7 +5,7 @@ require("prototypes/updates/base-updates")
 require("prototypes/updates/pycoalprocessing-updates")
 
 ITEM("production-science-pack", "tool").icon = "__pyfusionenergygraphics__/graphics/icons/production-science-pack.png"
-ITEM("production-science-pack", "tool"):set("icon_size", 32)
+ITEM("production-science-pack", "tool"):set("icon_size", 64)
 ITEM("production-science-pack", "tool"):set("icon_mipmaps", nil)
 
 --RECIPE("production-science-pack"):remove_unlock('production-science-pack')

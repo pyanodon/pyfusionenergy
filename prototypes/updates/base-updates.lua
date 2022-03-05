@@ -77,7 +77,7 @@ RECIPE('compressor-mk01'):add_unlock('advanced-oil-processing')
     {
       {"rocket-control-unit", 10},
       {"low-density-structure", 5},
-      {"super-alloy", 5},
+      {"super-alloy", 8},
       {"rocket-fuel", 10}
     },
     result= "rocket-part"
