@@ -106,18 +106,6 @@ TECHNOLOGY {
             type = "unlock-recipe",
             recipe = "class-diamond"
         },
-        {
-            type = "unlock-recipe",
-            recipe = "lead-container"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "science-coating"
-        },
-        {
-            type = "unlock-recipe",
-            recipe = "coated-container"
-        },
     },
     unit = {
         count = 30,

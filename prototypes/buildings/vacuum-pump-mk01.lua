@@ -21,7 +21,7 @@ RECIPE {
     results = {
         {"vacuum-pump-mk01", 1}
     }
-}:add_unlock("advanced-mining-facilities")
+}:add_unlock("fluid-pressurization")
 
 ITEM {
     type = "item",

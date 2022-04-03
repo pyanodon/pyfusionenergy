@@ -8,7 +8,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "pressured-air", amount = 20}
     }
-}
+}:add_unlock("fluid-pressurization")
 
 FLUID {
     type = "fluid",

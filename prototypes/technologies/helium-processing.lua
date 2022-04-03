@@ -12,10 +12,6 @@ TECHNOLOGY {
         },
         {
             type = "unlock-recipe",
-            recipe = "pressured-air"
-        },
-        {
-            type = "unlock-recipe",
             recipe = "purified-air"
         },
         {
