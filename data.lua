@@ -25,6 +25,7 @@ require("prototypes/technologies/xyhiphoe")
 require("prototypes/technologies/wood-processing-3")
 require("prototypes/technologies/boron")
 require("prototypes/technologies/kovarex-enrichment-process-2")
+require("prototypes/technologies/fluid-pressurization")
 
 require("prototypes/ore/molybdenum")
 require("prototypes/ore/volcanic-pipe")
