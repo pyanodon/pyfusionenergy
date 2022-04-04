@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "fluid-pressurization",
-    icon = "__pycoalprocessinggraphics__/graphics/missing_icon.png",
+    icon = "__pyfusionenergygraphics__/graphics/technology/fluid-pressurization.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {"steel-processing"},
