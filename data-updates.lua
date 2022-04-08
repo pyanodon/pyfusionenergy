@@ -8,29 +8,8 @@ ITEM("production-science-pack", "tool").icon = "__pyfusionenergygraphics__/graph
 ITEM("production-science-pack", "tool"):set("icon_size", 64)
 ITEM("production-science-pack", "tool"):set("icon_mipmaps", nil)
 
---RECIPE("production-science-pack"):remove_unlock('production-science-pack')
-
 RECIPE('rocket-silo'):replace_ingredient("steel-plate", "super-alloy")
 TECHNOLOGY("production-science-pack"):remove_prereq("uranium-processing"):remove_prereq("speed-module-2"):remove_prereq("effectivity-module-2"):remove_prereq("robotics"):remove_prereq("filtration-mk02"):remove_prereq("energy-3"):add_prereq("nuclear-fuel-reprocessing"):add_prereq("diamond-mining")
-
---TECHNOLOGY('automation-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
-
---TECHNOLOGY('logistics-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
-
---TECHNOLOGY('coal-liquefaction'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
-
---TECHNOLOGY('kovarex-enrichment-process'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
-
---TECHNOLOGY('speed-module-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
-
---TECHNOLOGY('productivity-module-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
-
---TECHNOLOGY('effectivity-module-3'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
-
---TECHNOLOGY('effect-transmission'):remove_prereq('production-science-pack'):add_prereq('diamond-mining')
-
---TECHNOLOGY('laser-turrets'):remove_pack('chemical-science-pack')
---TECHNOLOGY('laser'):remove_pack('chemical-science-pack')
 
 local recipes_list =
 	{
