@@ -8,9 +8,6 @@ ITEM("production-science-pack", "tool").icon = "__pyfusionenergygraphics__/graph
 ITEM("production-science-pack", "tool"):set("icon_size", 64)
 ITEM("production-science-pack", "tool"):set("icon_mipmaps", nil)
 
-RECIPE('rocket-silo'):replace_ingredient("steel-plate", "super-alloy")
-TECHNOLOGY("production-science-pack"):remove_prereq("uranium-processing"):remove_prereq("speed-module-2"):remove_prereq("effectivity-module-2"):remove_prereq("robotics"):remove_prereq("filtration-mk02"):remove_prereq("energy-3"):add_prereq("nuclear-fuel-reprocessing"):add_prereq("diamond-mining")
-
 local recipes_list =
 	{
   "calcium-carbide",
