@@ -1080,7 +1080,6 @@ RECIPE {
     ingredients = {
         {type = "item", name = "boron-mixture", amount = 3},
         {type = "fluid", name = "refsyngas", amount = 300}
-        --add bobs HCL
     },
     results = {
         {type = "item", name = "boron", amount = 2},
