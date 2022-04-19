@@ -77,7 +77,7 @@ ITEM {
     subgroup = "py-fusion-buildings-mk02",
     order = "d",
     place_result = "centrifugal-pan-mk02",
-    stack_size = 5
+    stack_size = 10
 }
 
 ENTITY {

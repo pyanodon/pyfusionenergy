@@ -78,7 +78,7 @@ ITEM {
     subgroup = "py-fusion-buildings-mk02",
     order = "d",
     place_result = "jig-mk02",
-    stack_size = 5
+    stack_size = 10
 }
 
 ENTITY {

@@ -24,7 +24,7 @@ ITEM {
     subgroup = "py-fusion-reactors",
     order = "a",
     place_result = "fusion-reactor-mk02",
-    stack_size = 5
+    stack_size = 10
 }
 
 ENTITY {
