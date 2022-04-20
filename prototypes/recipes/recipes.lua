@@ -1752,7 +1752,7 @@ RECIPE {
     results = {
         {type = "item", name = "calcium-carbide", amount = 10}
     }
-}:add_unlock("filtration-mk02")
+}
 
 --GASOLINE to CM1
 RECIPE {
