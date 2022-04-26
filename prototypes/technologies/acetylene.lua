@@ -1,7 +1,7 @@
 TECHNOLOGY {
     type = "technology",
     name = "acetylene",
-    icon = "__pycoalprocessinggraphics__/graphics/technology/missing_icon.png",
+    icon = "__pyfusionenergygraphics__/graphics/technology/acetylene.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {},
