@@ -16,7 +16,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "a",
-    stack_size = 500
+    stack_size = 50
 }
 
 ITEM {
@@ -27,7 +27,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "a",
-    stack_size = 500
+    stack_size = 50
 }
 
 ITEM {
@@ -38,7 +38,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "a",
-    stack_size = 500
+    stack_size = 50
 }
 
 ITEM {
@@ -49,7 +49,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -60,7 +60,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -71,7 +71,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -82,7 +82,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -93,7 +93,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -104,7 +104,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -115,7 +115,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -126,7 +126,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "a",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -137,7 +137,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "b",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -148,7 +148,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "c",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -159,7 +159,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "d",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -170,7 +170,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "e",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -181,7 +181,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "f",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -192,7 +192,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "g",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -203,7 +203,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "h",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -214,7 +214,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "i",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -225,7 +225,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "j",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -236,7 +236,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "k",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -247,7 +247,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "k",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -258,7 +258,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "k",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -269,7 +269,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "k",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -280,7 +280,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "k",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -291,7 +291,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "l",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -302,7 +302,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "l",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -313,7 +313,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "l",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -324,7 +324,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "l",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -335,7 +335,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "l",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -346,7 +346,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -357,7 +357,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -368,7 +368,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -379,7 +379,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -390,7 +390,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -401,7 +401,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -412,7 +412,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -423,7 +423,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -434,7 +434,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -445,7 +445,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -456,7 +456,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -467,7 +467,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -478,7 +478,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -489,7 +489,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -500,7 +500,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -511,7 +511,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -522,7 +522,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -533,7 +533,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -544,7 +544,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -555,7 +555,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -566,7 +566,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -577,7 +577,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -588,7 +588,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -599,7 +599,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -610,7 +610,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -621,7 +621,7 @@ ITEM {
     flags = {},
     subgroup = "py-fusion-items",
     order = "m",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -632,7 +632,7 @@ ITEM {
     flags = {},
     subgroup = "py-items",
     order = "g",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -643,7 +643,7 @@ ITEM {
     flags = {},
     subgroup = "intermediate-product",
     order = "s",
-    stack_size = 500
+    stack_size = 100
 }
 
 ITEM {
@@ -658,7 +658,7 @@ ITEM {
     flags = {},
     subgroup = "intermediate-product",
     order = "r[uranium-processing]-a[uranium-fuel-cell]a",
-    stack_size = 500
+    stack_size = 50
 }
 
 ITEM {
@@ -668,5 +668,5 @@ ITEM {
     icon_size = 32,
     subgroup = "intermediate-product",
     order = "r[used-up-uranium-fuel-cell]a",
-    stack_size = 500
+    stack_size = 50
   }
