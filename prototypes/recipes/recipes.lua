@@ -1709,7 +1709,7 @@ RECIPE {
         {type = "item", name = "used-up-mox-fuel-cell", amount = 2},
     },
     results = {
-        {type = "item", name = "uranium-238", amount = 12},
+        {type = "item", name = "uranium-238", amount = 6},
         {type = "item", name = "plutonium", amount = 12}
     },
     main_product = "plutonium",
