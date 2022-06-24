@@ -12,5 +12,6 @@ FLUID {
     pressure_to_speed_ratio = 0.4,
     flow_to_energy_ratio = 0.59,
     subgroup = "py-fusion-fluids",
-    order = "c"
+    order = "c",
+    auto_barrel = false
 }
