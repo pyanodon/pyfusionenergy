@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/nenbit-matrix.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"advanced-mining-facilities"},
+    prerequisites = {},
     effects = {},
     unit = {
         count = 50,

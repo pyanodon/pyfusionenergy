@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/fluid-pressurization.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"steel-processing"},
+    prerequisites = {},
     effects = {},
     unit = {
         count = 50,

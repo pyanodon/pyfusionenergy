@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/kmauts.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"automation-3"},
+    prerequisites = {},
     effects = {
         {
             type = "unlock-recipe",
