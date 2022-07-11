@@ -23,7 +23,7 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     --upgrade = true,
-    prerequisites = {"helium-processing"},
+    prerequisites = {},
     dependencies = {"boron"},
     effects = {},
     unit = {

@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/fusion-3.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"fusion-mk02", "utility-science-pack"},
+    prerequisites = {"fusion-mk02"},
     dependencies = {"fusion-mk02"},
     effects = {
         {

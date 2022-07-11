@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/helium-processing-mk01.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"fuel-production", "production-science-pack"},
+    prerequisites = {},
     effects = {
         {
             type = "unlock-recipe",

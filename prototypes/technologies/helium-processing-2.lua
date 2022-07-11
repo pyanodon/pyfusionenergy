@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/helium-processing-mk02.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"ethanolamine", "liquid-petroleum-processing", "regolite-mining"},
+    prerequisites = {},
     dependencies = {"helium-processing", "liquid-petroleum-processing", "regolite-mining"},
     effects = {
         {

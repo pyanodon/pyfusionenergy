@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/super-alloy.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"helium-processing", "molybdenum-processing", "vanadium-processing"},
+    prerequisites = {},
     effects = {
         {
             type = "unlock-recipe",

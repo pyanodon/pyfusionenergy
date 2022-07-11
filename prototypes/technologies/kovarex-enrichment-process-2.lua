@@ -5,7 +5,7 @@ TECHNOLOGY{
 
     icon = '__pyfusionenergygraphics__/graphics/technology/kovarex-enrichment-process-2.png',
     effects = {},
-    prerequisites = {'kovarex-enrichment-process', 'molybdenum-processing'},
+    prerequisites = {},
     dependencies = {'kovarex-enrichment-process'},
     unit = {
         ingredients = {

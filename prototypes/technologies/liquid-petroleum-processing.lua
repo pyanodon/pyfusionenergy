@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/liquid-petroleum-processing.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"production-science-pack", "fuel-production"},
+    prerequisites = {},
     effects = {
         {
             type = "unlock-recipe",

@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/diamond-mining.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"advanced-mining-facilities", "filtration-mk02"},
+    prerequisites = {},
     effects = {
         {
             type = "unlock-recipe",

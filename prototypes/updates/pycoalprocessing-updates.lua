@@ -1,7 +1,5 @@
 
 --TECHNOLOGY
-TECHNOLOGY("energy-3"):add_prereq("advanced-material-processing-2")
-
 TECHNOLOGY("energy-1"):add_prereq('boron'):remove_prereq('coal-processing-1')
 
 TECHNOLOGY("fine-electronics"):remove_prereq("plastics")

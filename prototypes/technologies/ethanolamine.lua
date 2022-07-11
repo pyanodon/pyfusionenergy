@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/ethanolamine.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"super-alloy", "energy-2", "kmauts"},
+    prerequisites = {},
     effects = {
         {
             type = "unlock-recipe",

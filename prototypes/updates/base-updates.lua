@@ -4,25 +4,13 @@ local fun = require("__pycoalprocessing__/prototypes/functions/functions")
 --((TECHNOLOGY))--
 TECHNOLOGY('nuclear-fuel-reprocessing'):remove_prereq('production-science-pack'):remove_pack('production-science-pack')
 
-TECHNOLOGY('production-science-pack'):remove_prereq('electric-engine'):add_prereq('advanced-material-processing-2'):add_prereq('nenbit-matrix')
-
-TECHNOLOGY('logistics-3'):remove_prereq('logistics-2')
-
-TECHNOLOGY('destroyer'):add_prereq('speed-module')
+TECHNOLOGY('production-science-pack'):remove_prereq('electric-engine')
 
 TECHNOLOGY('speed-module-3'):add_prereq('speed-module-2')
 
 TECHNOLOGY('effectivity-module-3'):add_prereq('effectivity-module-2')
 
-TECHNOLOGY('power-armor-mk2'):add_prereq('speed-module-2'):add_prereq('effectivity-module-2')
-
-TECHNOLOGY('advanced-oil-processing'):add_prereq('fuel-production')
-
-TECHNOLOGY('rocket-silo'):add_prereq('super-alloy')
-
-TECHNOLOGY('space-science-pack'):add_prereq('fusion-mk02')
-
-TECHNOLOGY("production-science-pack"):remove_prereq("uranium-processing"):remove_prereq("speed-module-2"):remove_prereq("effectivity-module-2"):remove_prereq("robotics"):remove_prereq("filtration-mk02"):remove_prereq("energy-3"):add_prereq("nuclear-fuel-reprocessing"):add_prereq("diamond-mining")
+TECHNOLOGY("production-science-pack"):remove_prereq("uranium-processing"):remove_prereq("speed-module-2"):remove_prereq("effectivity-module-2"):remove_prereq("robotics"):remove_prereq("filtration-mk02"):remove_prereq("energy-3")
 
 data.raw.technology["kovarex-enrichment-process"].unit =
 {
