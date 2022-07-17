@@ -4,13 +4,9 @@ local fun = require("__pycoalprocessing__/prototypes/functions/functions")
 --((TECHNOLOGY))--
 TECHNOLOGY('nuclear-fuel-reprocessing'):remove_prereq('production-science-pack'):remove_pack('production-science-pack')
 
-TECHNOLOGY('production-science-pack'):remove_prereq('electric-engine')
-
 TECHNOLOGY('speed-module-3'):add_prereq('speed-module-2')
 
 TECHNOLOGY('effectivity-module-3'):add_prereq('effectivity-module-2')
-
-TECHNOLOGY("production-science-pack"):remove_prereq("uranium-processing"):remove_prereq("speed-module-2"):remove_prereq("effectivity-module-2"):remove_prereq("robotics"):remove_prereq("filtration-mk02"):remove_prereq("energy-3")
 
 data.raw.technology["kovarex-enrichment-process"].unit =
 {
