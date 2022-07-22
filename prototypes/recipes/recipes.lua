@@ -1730,7 +1730,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 1600},
-        {type = "fluid", name = "steam", amount = 100, temperature = 120, catalyst_amount = 100}
+        {type = "fluid", name = "steam", amount = 100, temperature = 150, catalyst_amount = 100}
     },
     icon = "__pycoalprocessinggraphics__/graphics/icons/combustion-acetylene.png",
     icon_size = 32,
@@ -1769,7 +1769,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 2600},
-        {type = "fluid", name = "steam", amount = 1000, temperature = 100, catalyst_amount = 1000}
+        {type = "fluid", name = "steam", amount = 1000, temperature = 150, catalyst_amount = 1000}
     },
     icon = "__pycoalprocessinggraphics__/graphics/icons/combustion-gasoline.png",
     icon_size = 32,
