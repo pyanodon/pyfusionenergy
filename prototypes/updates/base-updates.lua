@@ -16,7 +16,7 @@ data.raw.technology["kovarex-enrichment-process"].unit =
     {"logistic-science-pack", 4},
     {"chemical-science-pack", 2},
     {'military-science-pack', 2},
-    {"production-science-pack", 1}
+    --{"production-science-pack", 1}
   },
   time = 30,
   count = 150
