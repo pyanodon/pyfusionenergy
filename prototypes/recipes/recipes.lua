@@ -1013,15 +1013,15 @@ RECIPE {
     name = "sc-unit",
     category = "advanced-crafting",
     enabled = false,
-    energy_required = 30,
+    energy_required = 180,
     ingredients = {
-        {type = "item", name = "molybdenum-plate", amount = 10},
-        {type = "item", name = "deposited-core", amount = 2},
-        {type = "item", name = "advanced-circuit", amount = 2}
+        {type = "item", name = "molybdenum-plate", amount = 60},
+        {type = "item", name = "deposited-core", amount = 12},
+        {type = "item", name = "advanced-circuit", amount = 12}
         --add liquid nitrogen
     },
     results = {
-        {type = "item", name = "sc-unit", amount = 3}
+        {type = "item", name = "sc-unit", amount = 18}
     },
 }
 
