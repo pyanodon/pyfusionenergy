@@ -240,6 +240,7 @@ RECIPE {
     },
 }:add_unlock('xyhiphoe')
 
+--[[
 RECIPE {
     type = "recipe",
     name = "wastewater-recovery",
@@ -255,6 +256,7 @@ RECIPE {
     },
     main_product = "dirty-water-light",
 }:add_unlock('xyhiphoe')
+]]--
 
 RECIPE {
     type = "recipe",
