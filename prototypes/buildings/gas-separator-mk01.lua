@@ -14,7 +14,7 @@ RECIPE {
     results = {
         {"gas-separator-mk01", 1}
     }
-}:add_unlock("fluid-processing-machines-1")
+}:add_unlock("helium-processing-mk02")
 
 ITEM {
     type = "item",

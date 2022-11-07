@@ -13,7 +13,7 @@ RECIPE {
     results = {
         {"mixer-mk01", 1}
     }
-}:add_unlock("fluid-processing-machines-1")
+}:add_unlock("advanced-mining-facilities")
 
 ITEM {
     type = "item",
