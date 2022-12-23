@@ -111,7 +111,7 @@ RECIPE {
     enabled = false,
     energy_required = 15,
     ingredients = {
-        {type = "fluid", name = "water", amount = 500, fluidbox_index = 2},
+        {type = "fluid", name = "water", amount = 500},
         {type = "item", name = "iron-ore", amount = 8}
     },
     results = {
