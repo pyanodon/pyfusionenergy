@@ -1509,9 +1509,7 @@ RECIPE {
         {type = "item", name = "production-science-pack", amount = 6}
     },
     icon = "__pyfusionenergygraphics__/graphics/icons/production-science-pack.png",
-	icon_size = 64,
-    subgroup = "py-fusion-items",
-    order = "x"
+	icon_size = 64
 }
 
 RECIPE {

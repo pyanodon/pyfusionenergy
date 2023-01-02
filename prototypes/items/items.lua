@@ -641,7 +641,7 @@ ITEM {
     icon = "__pyfusionenergygraphics__/graphics/icons/pu-239.png",
     icon_size = 64,
     flags = {},
-    subgroup = "intermediate-product",
+    subgroup = "py-fusion-items",
     order = "s",
     stack_size = 100
 }
@@ -656,7 +656,7 @@ ITEM {
     fuel_value = '20GJ',
     fuel_glow_color = {0,0,1,1},
     flags = {},
-    subgroup = "intermediate-product",
+    subgroup = "py-fusion-items",
     order = "r[uranium-processing]-a[uranium-fuel-cell]a",
     stack_size = 50
 }
@@ -666,7 +666,7 @@ ITEM {
     name = "used-up-mox-fuel-cell",
     icon = "__pyfusionenergygraphics__/graphics/icons/used-up-mox-fuel-cell.png",
     icon_size = 32,
-    subgroup = "intermediate-product",
+    subgroup = "py-fusion-items",
     order = "r[used-up-uranium-fuel-cell]a",
     stack_size = 50
   }
