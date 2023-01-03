@@ -39,6 +39,12 @@ data:extend {
     },
     {
         type = "item-subgroup",
+        name = "py-fusion-reactors",
+        group = "fusion-energy",
+        order = "a-f"
+    },
+    {
+        type = "item-subgroup",
         name = "py-fusion-items",
         group = "fusion-energy",
         order = "s"
@@ -61,10 +67,4 @@ data:extend {
         group = "fusion-energy",
         order = "u"
     },
-    {
-        type = "item-subgroup",
-        name = "py-fusion-reactors",
-        group = "fusion-energy",
-        order = "z"
-    }
 }
