@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.5
+Date: 2023-3-28
+  Changes:
+    - updated russian and chinese languages
+    - removed several recipes from the allowed prod list
+---------------------------------------------------------------------------------------------------
 Version: 2.0.4
 Date: 2023-1-5
   Changes:
