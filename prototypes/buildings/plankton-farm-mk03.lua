@@ -130,5 +130,6 @@ ENTITY {
         sound = {filename = "__pyfusionenergygraphics__/sounds/plankton-farm.ogg", volume = 1.3},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/plankton-farm.ogg", volume = 0.3},
         apparent_volume = 2.5
-    }
+    },
+    next_upgrade = 'plankton-farm-mk04'
 }

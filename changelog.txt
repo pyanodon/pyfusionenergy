@@ -2,7 +2,8 @@
 Version: 2.0.6
 Date: ?
   Changes:
-    -  update chinese translation. credit sdqwo
+    - update chinese translation. credit sdqwo
+    - allow many entities to work with the upgrade planner
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.5
 Date: 2023-3-28
