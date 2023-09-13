@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.7
+Date: ???
+  Changes:
+    - entity name locale now attached to correct entity name (https://github.com/pyanodon/pybugreports/issues/318)
+---------------------------------------------------------------------------------------------------
 Version: 2.0.6
 Date: 2023-7-25
   Changes:
