@@ -3,6 +3,7 @@ Version: 2.0.7
 Date: ???
   Changes:
     - entity name locale now attached to correct entity name (https://github.com/pyanodon/pybugreports/issues/318)
+    - added decentralised PyPP cache file
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.6
 Date: 2023-7-25
