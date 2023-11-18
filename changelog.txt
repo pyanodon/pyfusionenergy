@@ -5,6 +5,7 @@ Date: ???
     - entity name locale now attached to correct entity name (https://github.com/pyanodon/pybugreports/issues/318)
     - added decentralised PyPP cache file
     - fixed crash when used with circuit processing mod by trainwreck
+    - added circuit connections to the molybdenum mine
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.6
 Date: 2023-7-25
