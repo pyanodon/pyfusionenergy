@@ -4,6 +4,10 @@ require("prototypes/item-groups")
 
 require("prototypes/recipe-categories")
 
+-- (( Circuit Connector Definitions )) --
+require('prototypes/circuit-connector-definitions')
+-- ))
+
 require("prototypes/technologies/advanced-mining-facilities")
 require("prototypes/technologies/sc-unit")
 require("prototypes/technologies/fusion-1")
