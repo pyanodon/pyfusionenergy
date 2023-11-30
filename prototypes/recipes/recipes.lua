@@ -1225,7 +1225,8 @@ RECIPE {
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-deuterium.png",
 	icon_size = 32,
     subgroup = "py-fusion-items",
-    order = "e"
+    order = "e",
+    show_details_in_recipe_tooltip = false
 }
 
 RECIPE {
@@ -1259,7 +1260,8 @@ RECIPE {
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-he3.png",
 	icon_size = 32,
     subgroup = "py-fusion-items",
-    order = "e"
+    order = "e",
+    show_details_in_recipe_tooltip = false
 }
 
 RECIPE {
@@ -1293,7 +1295,8 @@ RECIPE {
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-dt.png",
 	icon_size = 32,
     subgroup = "py-fusion-items",
-    order = "e"
+    order = "e",
+    show_details_in_recipe_tooltip = false
 }
 
 RECIPE {
@@ -1325,7 +1328,8 @@ RECIPE {
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-bh.png",
 	icon_size = 32,
     subgroup = "py-fusion-items",
-    order = "e"
+    order = "e",
+    show_details_in_recipe_tooltip = false
 }
 
 RECIPE {
