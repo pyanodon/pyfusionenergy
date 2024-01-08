@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.8
-Date: ?
+Date: 2024-1-8
   Changes:
     - added show_details_in_recipe_tooltip to recipes with many fluid outputs (https://github.com/pyanodon/pycoalprocessing/issues/338)
     - updated chinese translation (翻译：aotix，基于咸鱼拓展而来。)
