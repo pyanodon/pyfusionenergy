@@ -1085,7 +1085,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "boron", amount = 2},
-        {type = "fluid", name = "diborane", amount = 50}
+        {type = "fluid", name = "diborane", amount = 50, catalyst_amount = 50}
     },
     main_product = "boron",
 }:add_unlock("boron-mk02")
