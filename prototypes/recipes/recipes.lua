@@ -1053,7 +1053,7 @@ RECIPE {
         {type = "item", name = "boron-trioxide", amount = 20}
     },
     results = {
-        {type = "item", name = "b2o3-dust", amount = 40}
+        {type = "item", name = "b2o3-dust", amount = 10}
     },
 }:add_unlock("boron-mk02")
 
