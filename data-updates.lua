@@ -11,7 +11,6 @@ ITEM("production-science-pack", "tool"):set("icon_mipmaps", nil)
 local recipes_list =
 	{
   "acetylene",
-  "b2o3-milling",
   "bacteria-1",
   "blanket-chassi",
   "blanket",
