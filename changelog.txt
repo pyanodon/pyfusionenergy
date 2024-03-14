@@ -1,8 +1,8 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.9
-Date: ?
+Date: 2024-3-13
   Changes:
-    - made boron trioxide dust 4X more expensive and removed productivity (https://github.com/pyanodon/pybugreports/issues/426)
+    - set catalyst amount on diborane in boron recipe
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.8
 Date: 2024-1-8
