@@ -39,6 +39,7 @@ ENTITY {
     autoplace = {
         name = "regolites",
         order = "b-regolites",
+        control = "regolites",
         -- We return the chance of spawning on any given tile here
         probability_expression = noise.define_noise_function( function(x, y, tile, map)
             -- This is the user's map setting for the frequency of this ore
