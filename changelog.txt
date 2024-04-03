@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.12
+Date: 2024-4-??
+  Changes:
+    - increased vacuum pump energy consumption mk01: 150kw -> 1MW, mk02: 300kw -> 3MW, mk03: 450kw -> 6MW, mk04: 600kw -> 10MW
+    - increased pressurized air output from 20 -> 200
+    - reduced pressurized vanadium pulp craft time from 2.5 -> 2 seconds. doubled input and output 100 -> 200
+    - reduced pressurized water craft time from 2.5 -> 2 seconds. increased input and output rate from 200 -> 500
+    - doubled vacuum craft time from 1 -> 2 seconds. increased vacuum output from 10 -> 200
+---------------------------------------------------------------------------------------------------
 Version: 2.0.11
 Date: 2024-4-1
   Changes:
