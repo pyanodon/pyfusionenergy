@@ -7,6 +7,7 @@ Date: 2024-4-??
     - reduced pressurized vanadium pulp craft time from 2.5 -> 2 seconds. doubled input and output 100 -> 200
     - reduced pressurized water craft time from 2.5 -> 2 seconds. increased input and output rate from 200 -> 500
     - doubled vacuum craft time from 1 -> 2 seconds. increased vacuum output from 10 -> 200
+    - Removed molybdenum-plate from the productivity list. (https://github.com/pyanodon/pybugreports/issues/428)
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.11
 Date: 2024-4-1

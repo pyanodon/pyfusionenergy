@@ -51,7 +51,6 @@ local recipes_list =
   "molybdenite-pulp",
   "molybdenum-concentrate",
   "molybdenum-oxide",
-  "molybdenum-plate",
   "molybdenum-pulp",
   "nenbit-matrix",
   "nexelit-matrix",
