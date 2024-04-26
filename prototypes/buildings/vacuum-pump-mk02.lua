@@ -93,6 +93,7 @@ ENTITY {
             pipe_covers = DATA.Pipes.covers(false, true, false, false),
             base_area = 10,
             base_level = -1,
+	    height = 2,
             pipe_connections = {{type = "input-output", position = {-2.0, -0}},{type = "input-output", position = {2.0, -0}}}
         },
         {
