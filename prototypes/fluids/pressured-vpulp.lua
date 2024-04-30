@@ -3,12 +3,12 @@ RECIPE {
     name = "pressured-vpulp",
     category = "vacuum",
     enabled = false,
-    energy_required = 2.5,
+    energy_required = 2,
     ingredients = {
-        {type = "fluid", name = "vpulp3", amount = 100}
+        {type = "fluid", name = "vpulp3", amount = 200}
     },
     results = {
-        {type = "fluid", name = "pressured-vpulp", amount = 100}
+        {type = "fluid", name = "pressured-vpulp", amount = 200}
     }
 }
 

@@ -3,12 +3,12 @@ RECIPE {
     name = "pressured-water",
     category = "vacuum",
     enabled = false,
-    energy_required = 2.5,
+    energy_required = 2,
     ingredients = {
-        {type = "fluid", name = "water", amount = 200}
+        {type = "fluid", name = "water", amount = 500}
     },
     results = {
-        {type = "fluid", name = "pressured-water", amount = 200}
+        {type = "fluid", name = "pressured-water", amount = 500}
     }
 }:add_unlock('fluid-pressurization')
 

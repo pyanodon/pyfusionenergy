@@ -3,10 +3,10 @@ RECIPE {
     name = "vacuum",
     category = "vacuum",
     enabled = false,
-    energy_required = 1,
+    energy_required = 2,
     ingredients = {},
     results = {
-        {type = "fluid", name = "vacuum", amount = 10}
+        {type = "fluid", name = "vacuum", amount = 200}
     }
 }:add_unlock("fluid-pressurization")
 
