@@ -1,17 +1,17 @@
-local noise = require("noise")
+local noise = require 'noise'
 
-DATA {
+data:extend{{
     type = "autoplace-control",
     name = "volcanic-pipe",
     richness = true,
     order = "r-vo",
     category = "resource"
-}
+}}
 
-DATA {
+data:extend{{
     type = "noise-layer",
     name = "volcanic-pipe"
-}
+}}
 
 ENTITY {
     type = "resource",

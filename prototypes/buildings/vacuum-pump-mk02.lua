@@ -89,8 +89,8 @@ ENTITY {
     fluid_boxes = {
         {
             production_type = "input",
-            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.18, -2.6}, nil, nil, pipes),
-            pipe_covers = DATA.Pipes.covers(false, true, false, false),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.18, -2.6}, nil, nil, pipes),
+            pipe_covers = py.pipe_covers(false, true, false, false),
             base_area = 10,
             base_level = -1,
 	    height = 2,
@@ -98,9 +98,11 @@ ENTITY {
         },
         {
             production_type = "output",
-            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {0.18, -2.6}, nil, nil, pipes),
-            pipe_covers = DATA.Pipes.covers(false, true, false, false),
-            base_level = 1,
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.18, -2.6}, nil, nil, pipes),
+            pipe_covers = py.pipe_covers(false, true, false, false),
+            base_area = 10,
+            base_level = -1,
+	        height = 2,
             pipe_connections = {{type = "input-output", position = {0.0, 2.0}},{type = "input-output", position = {0.0, -2.0}}}
         },
         off_when_no_fluid_recipe = true
