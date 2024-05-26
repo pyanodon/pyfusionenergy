@@ -69,7 +69,6 @@ local recipes_list =
   "steam-heating",
   "vacuum",
   "wall-shield",
-  "wastewater-recovery",
   "xyhiphoe-blood",
   "xyhiphoe-hydrocyclone",
 }
