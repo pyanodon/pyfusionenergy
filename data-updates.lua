@@ -1,8 +1,5 @@
-require("__stdlib__/stdlib/data/data").Util.create_data_globals()
-local FUN = require("__pycoalprocessing__/prototypes/functions/functions")
-
-require("prototypes/updates/base-updates")
-require("prototypes/updates/pycoalprocessing-updates")
+require 'prototypes/updates/base-updates'
+require 'prototypes/updates/pycoalprocessing-updates'
 
 ITEM("production-science-pack", "tool").icon = "__pyfusionenergygraphics__/graphics/icons/production-science-pack.png"
 ITEM("production-science-pack", "tool"):set("icon_size", 64)
@@ -72,13 +69,12 @@ local recipes_list =
   "steam-heating",
   "vacuum",
   "wall-shield",
-  "wastewater-recovery",
   "xyhiphoe-blood",
   "xyhiphoe-hydrocyclone",
 }
 
 --adding to module limitation list
-FUN.productivity(recipes_list)
+py.allow_productivity(recipes_list)
 
 if register_cache_file ~= nil then
     register_cache_file({"pycoalprocessing", "pyfusionenergy"}, "__pyfusionenergy__/cached-configs/pycoalprocessing+pyfusionenergy.lua")

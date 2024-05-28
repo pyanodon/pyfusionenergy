@@ -78,32 +78,32 @@ ENTITY {
         --North
         {
             production_type = "output",
-            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {-0.0, -0.95}, nil, nil),
-            pipe_covers = DATA.Pipes.covers(true, true, true, true),
+            pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {-0.0, -0.95}, nil, nil),
+            pipe_covers = py.pipe_covers(true, true, true, true),
             base_level = 1,
             pipe_connections = {{type = "output", position = {-2.0, -4.0}}}
         },
         --North2
         {
             production_type = "output",
-            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {-0.0, -0.95}, nil, nil),
-            pipe_covers = DATA.Pipes.covers(true, true, true, true),
+            pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {-0.0, -0.95}, nil, nil),
+            pipe_covers = py.pipe_covers(true, true, true, true),
             base_level = 1,
             pipe_connections = {{type = "output", position = {2.0, -4.0}}}
         },
         --North3
         {
             production_type = "output",
-            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {-0.0, -0.95}, nil, nil),
-            pipe_covers = DATA.Pipes.covers(true, true, true, true),
+            pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {-0.0, -0.95}, nil, nil),
+            pipe_covers = py.pipe_covers(true, true, true, true),
             base_level = 1,
             pipe_connections = {{type = "output", position = {0.0, -4.0}}}
         },
         --South
         {
             production_type = "input",
-            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
-            pipe_covers = DATA.Pipes.covers(true, true, true, true),
+            pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
+            pipe_covers = py.pipe_covers(true, true, true, true),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {-2.0, 4.0}}}
@@ -111,8 +111,8 @@ ENTITY {
         --South2
         {
             production_type = "input",
-            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
-            pipe_covers = DATA.Pipes.covers(true, true, true, true),
+            pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
+            pipe_covers = py.pipe_covers(true, true, true, true),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {0.0, 4.0}}}
@@ -120,8 +120,8 @@ ENTITY {
         --South3
         {
             production_type = "input",
-            pipe_picture = DATA.Pipes.pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
-            pipe_covers = DATA.Pipes.covers(true, true, true, true),
+            pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
+            pipe_covers = py.pipe_covers(true, true, true, true),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {2.0, 4.0}}}

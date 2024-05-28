@@ -112,8 +112,6 @@ ENTITY {
 			width = 320,
 			height = 328,
 			frame_count = 1,
-			--line_length = 10,
-			--animation_speed = 1,
 			shift = {0.02, -0.10}
 			},
 			{
@@ -121,8 +119,6 @@ ENTITY {
 			width = 320,
 			height = 328,
 			frame_count = 1,
-			--line_length = 10,
-			--animation_speed = 1,
 			shift = {0.02, -0.10},
 			tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
 			}
@@ -147,32 +143,32 @@ ENTITY {
     fluid_boxes = {
         {
             production_type = "input",
-            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", {2.5, 5.3}, {-1.5, -5.7}, {5.5, -2.5}, {-5.5, 2.4}, pipe_left),
-            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", {2.5, 5.3}, {-1.5, -5.7}, {5.5, -2.5}, {-5.5, 2.4}, pipe_left),
+            pipe_covers = py.pipe_covers(false, true, true, true),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {-2.5, -5.5}}}
         },
         {
             production_type = "output",
-            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            pipe_covers = py.pipe_covers(false, true, true, true),
             base_level = 1,
-            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", {2.5, 5.3}, {-1.5, -5.7}, {5.5, -2.5}, {-5.5, 2.4}, pipe_left),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", {2.5, 5.3}, {-1.5, -5.7}, {5.5, -2.5}, {-5.5, 2.4}, pipe_left),
             pipe_connections = {{type = "output", position = {2.5, 5.5}}}
         },
         {
             production_type = "input",
-            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {2.5, -5.7}, {5.5, 2.5}, {-5.5, -2.5}, pipe_right),
-            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {2.5, -5.7}, {5.5, 2.5}, {-5.5, -2.5}, pipe_right),
+            pipe_covers = py.pipe_covers(false, true, true, true),
             base_area = 10,
             base_level = -1,
             pipe_connections = {{type = "input", position = {2.5, -5.5}}}
         },
         {
             production_type = "output",
-            pipe_covers = DATA.Pipes.covers(false, true, true, true),
+            pipe_covers = py.pipe_covers(false, true, true, true),
             base_level = 1,
-            pipe_picture = DATA.Pipes.pictures("assembling-machine-2", nil, {2.5, -5.7}, {5.5, 2.5}, {-5.5, -2.5}, pipe_right),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {2.5, -5.7}, {5.5, 2.5}, {-5.5, -2.5}, pipe_right),
             pipe_connections = {{type = "output", position = {-2.5, 5.5}}}
         },
         off_when_no_fluid_recipe = true
