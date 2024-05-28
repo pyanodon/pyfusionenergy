@@ -240,24 +240,6 @@ RECIPE {
     },
 }:add_unlock('xyhiphoe')
 
---[[
-RECIPE {
-    type = "recipe",
-    name = "wastewater-recovery",
-    category = "thickener",
-    enabled = false,
-    energy_required = 10,
-    ingredients = {
-        {type = "fluid", name = "waste-water", amount = 100},
-        {type = "item", name = "pure-sand", amount = 20}
-    },
-    results = {
-        {type = "fluid", name = "dirty-water-light", amount = 150}
-    },
-    main_product = "dirty-water-light",
-}:add_unlock('xyhiphoe')
-]]--
-
 RECIPE {
     type = "recipe",
     name = "super-alloy",
