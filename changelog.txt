@@ -1,7 +1,9 @@
+---------------------------------------------------------------------------------------------------
 Version: 2.0.14
 Date: When it's done
   Changes:
     - Added circuit connectivity to Diamond and Regolite mines (credit: JStMorgan)
+    - Fixed that the secondary crusher played audio when it was idle (https://github.com/pyanodon/pybugreports/issues/503)
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.13
 Date: 2024-4-30
