@@ -90,18 +90,18 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.18, -2.6}, nil, nil, pipes),
             pipe_covers = py.pipe_covers(false, true, false, false),
-            base_area = 10,
-            base_level = -1,
-	        height = 2,
+            base_area = 20,
+            base_level = 0,
+            height = 1,
             pipe_connections = {{type = "input-output", position = {-2.0, -0}},{type = "input-output", position = {2.0, -0}}}
         },
         {
             production_type = "output",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.18, -2.6}, nil, nil, pipes),
             pipe_covers = py.pipe_covers(false, true, false, false),
-            base_area = 10,
-            base_level = -1,
-	        height = 2,
+            base_area = 20,
+            base_level = 0,
+            height = 1,
             pipe_connections = {{type = "input-output", position = {0.0, 2.0}},{type = "input-output", position = {0.0, -2.0}}}
         },
         off_when_no_fluid_recipe = true
