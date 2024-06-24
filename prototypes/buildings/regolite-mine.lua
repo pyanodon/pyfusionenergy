@@ -4,7 +4,7 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"soil-extractormk01", 2},
+        {"soil-extractor-mk01", 2},
         {"iron-plate", 60}, --bobs tungsten-plate
         {"jaw-crusher", 1},
         {"nbfe-alloy", 20},
