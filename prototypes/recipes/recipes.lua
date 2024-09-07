@@ -799,7 +799,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "liquid-petgas", amount = 5},
-        {type = "fluid", name = "steam", amount = 100, temperature = 150}
+        {type = "fluid", name = "steam", amount = 100, temperature = 150, catalyst_amount = 100}
     },
     main_product= "liquid-petgas",
 }
