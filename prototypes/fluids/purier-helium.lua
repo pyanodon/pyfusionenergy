@@ -10,7 +10,7 @@ RECIPE {
         {type = "fluid", name = "gasoline", amount = 5}
     },
     results = {
-        {type = "fluid", name = "steam", amount = 100, temperature = 150},
+        {type = "fluid", name = "steam", amount = 100, temperature = 150, catalyst_amount = 100},
         {type = "fluid", name = "purier-helium", amount = 2}
     },
     main_product = "purier-helium"
