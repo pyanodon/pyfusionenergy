@@ -1,7 +1,7 @@
 -- Holds circuit connection definitions for PyFE entities.
 -- variation counts from 0 (Python-like).
 
-circuit_connector_definitions["diamond-mine"] = circuit_connector_definitions.create
+circuit_connector_definitions["diamond-mine"] = circuit_connector_definitions.create_vector
 (
   universal_connector_template,
   {--Directions are up, right, down, left.
@@ -12,7 +12,7 @@ circuit_connector_definitions["diamond-mine"] = circuit_connector_definitions.cr
   }
 )
 
-circuit_connector_definitions["molybdenum-mine"] = circuit_connector_definitions.create
+circuit_connector_definitions["molybdenum-mine"] = circuit_connector_definitions.create_vector
 (
   universal_connector_template,
   {--Directions are up, right, down, left.
@@ -23,7 +23,7 @@ circuit_connector_definitions["molybdenum-mine"] = circuit_connector_definitions
   }
 )
 
-circuit_connector_definitions["regolite-mine"] = circuit_connector_definitions.create
+circuit_connector_definitions["regolite-mine"] = circuit_connector_definitions.create_vector
 (
   universal_connector_template,
   {--Directions are up, right, down, left.
