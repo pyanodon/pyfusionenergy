@@ -91,18 +91,14 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.18, -2.6}, nil, nil, pipes),
             pipe_covers = py.pipe_covers(false, true, false, false),
-            base_area = 20,
-            base_level = 0,
-	        height = 1,
+            volume = 2000,
             pipe_connections = {{flow_direction = "input-output", position = {-1.2, -0}, direction = defines.direction.west},{flow_direction = "input-output", position = {2.0, -0}}}
         },
         {
             production_type = "output",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {0.18, -2.6}, nil, nil, pipes),
             pipe_covers = py.pipe_covers(false, true, false, false),
-            base_area = 20,
-            base_level = 0,
-	        height = 1,
+            volume = 2000,
             pipe_connections = {{flow_direction = "input-output", position = {0.0, 1.2}, direction = defines.direction.south},{flow_direction = "input-output", position = {0.0, -2.0}}}
         },
         off_when_no_fluid_recipe = true

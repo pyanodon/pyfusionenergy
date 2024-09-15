@@ -83,7 +83,7 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            base_area = 10,
+            volume = 1000,
             base_level = -1,
             pipe_connections = {{flow_direction = "input", position = {-0.5, -4.8}, direction = defines.direction.north}}
         },
@@ -91,7 +91,7 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            base_area = 10,
+            volume = 1000,
             base_level = -1,
             pipe_connections = {{flow_direction = "input", position = {-2.5, -4.8}, direction = defines.direction.north}}
         },
@@ -99,7 +99,7 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            base_area = 10,
+            volume = 1000,
             base_level = -1,
             pipe_connections = {{flow_direction = "input", position = {-4.5, -4.8}, direction = defines.direction.north}}
         },
@@ -107,7 +107,7 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            base_area = 10,
+            volume = 1000,
             base_level = -1,
             pipe_connections = {{flow_direction = "input", position = {1.5, -4.8}, direction = defines.direction.north}}
         },
@@ -115,42 +115,42 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            base_area = 10,
+            volume = 1000,
             base_level = -1,
             pipe_connections = {{flow_direction = "input", position = {3.5, -4.8}, direction = defines.direction.north}}
         },
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, true, true),
-            base_level = 1,
+            volume = 100,
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
             pipe_connections = {{flow_direction = "output", position = {0.5, 4.8}, direction = defines.direction.south}}
         },
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, true, true),
-            base_level = 1,
+            volume = 100,
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
             pipe_connections = {{flow_direction = "output", position = {4.5, 4.8}, direction = defines.direction.south}}
         },
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, true, true),
-            base_level = 1,
+            volume = 100,
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
             pipe_connections = {{flow_direction = "output", position = {2.5, 4.8}, direction = defines.direction.south}}
         },
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, true, true),
-            base_level = 1,
+            volume = 100,
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
             pipe_connections = {{flow_direction = "output", position = {-1.5, 4.8}, direction = defines.direction.south}}
         },
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, true, true),
-            base_level = 1,
+            volume = 100,
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
             pipe_connections = {{flow_direction = "output", position = {-3.5, 4.8}, direction = defines.direction.south}}
         },
