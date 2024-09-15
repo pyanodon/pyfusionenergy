@@ -1799,7 +1799,9 @@ RECIPE {
       {type = "item", name = "reinforced-wall-shield", amount = 3},
       {type = "item", name = "sc-unit", amount = 4},
     },
-    results = {type = "item", name = "satellite", amount = 1},
+    results = {
+        {type = "item", name = "satellite", amount = 1}
+    },
     requester_paste_multiplier = 1
 }
 
@@ -1816,5 +1818,7 @@ RECIPE {
         {type = "item", name = "super-alloy", amount = 28},
         {type = "item", name = "rocket-fuel", amount = 210}
     },
-    results = {type = "item", name = "rocket-part", amount = 1},
+    results = {
+        {type = "item", name = "rocket-part", amount = 1}
+    },
 }
