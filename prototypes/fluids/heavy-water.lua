@@ -19,6 +19,7 @@ FLUID {
     icon = "__pyfusionenergygraphics__/graphics/icons/heavy-water.png",
 	icon_size = 32,
     default_temperature = 10,
+    base_flow_rate = 100,
     base_color = {r = 0.423, g = 0.678, b = 0.823},
     flow_color = {r = 1, g = 1, b = 1},
     max_temperature = 100,
