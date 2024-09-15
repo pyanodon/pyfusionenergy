@@ -8,10 +8,10 @@ data:extend{{
     category = "resource"
 }}
 
-data:extend{{
-    type = "noise-layer",
-    name = "molybdenum-ore"
-}}
+-- data:extend{{
+--     type = "noise-layer",
+--     name = "molybdenum-ore"
+-- }}
 
 ENTITY {
     type = "resource",
