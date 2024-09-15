@@ -6,6 +6,11 @@ data:extend{{
     category = "resource"
 }}
 
+-- data:extend{{
+--     type = "noise-layer",
+--     name = "volcanic-pipe"
+-- }}
+
 data:extend{
     {
         type = "noise-expression",

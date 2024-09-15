@@ -6,6 +6,11 @@ data:extend{{
     category = "resource",
 }}
 
+-- data:extend{{
+--     type = "noise-layer",
+--     name = "regolites"
+-- }}
+
 data:extend{
     {
         type = "noise-expression",
