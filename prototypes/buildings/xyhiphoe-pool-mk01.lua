@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"ralesia-plantation-mk01", 1},
-        {"pump", 4},
-        {"advanced-circuit", 20}, --updated-bob electronic-circuit-board
-        {"steel-plate", 40},
-        {"pipe", 10}
+        {type = "item", name = "ralesia-plantation-mk01", amount = 1},
+        {type = "item", name = "pump", amount = 4},
+        {type = "item", name = "advanced-circuit", amount = 20}, --updated-bob electronic-circuit-board
+        {type = "item", name = "steel-plate", amount = 40},
+        {type = "item", name = "pipe", amount = 10}
     },
     results = {
-        {"xyhiphoe-pool-mk01", 1}
+        {type = "item", name = "xyhiphoe-pool-mk01", amount = 1}
     }
 }:add_unlock('xyhiphoe')
 

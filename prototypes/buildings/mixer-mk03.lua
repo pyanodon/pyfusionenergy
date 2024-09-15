@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {'mixer-mk02', 1},
-                {"electric-engine-unit", 10},
-                {'processing-unit', 10}
+                {type = "item", name = 'mixer-mk02', amount = 1},
+                {type = "item", name = "electric-engine-unit", amount = 10},
+                {type = "item", name = 'processing-unit', amount = 10}
             },
     results = {
-        {"mixer-mk03", 1}
+        {type = "item", name = "mixer-mk03", amount = 1}
     }
 }
 

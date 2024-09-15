@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"storage-tank", 1},
-        {"chemical-plant-mk01", 2},
-        {"iron-plate", 30},
-        {"steel-plate", 50},
-        {"iron-gear-wheel", 30}
+        {type = "item", name = "storage-tank", amount = 1},
+        {type = "item", name = "chemical-plant-mk01", amount = 2},
+        {type = "item", name = "iron-plate", amount = 30},
+        {type = "item", name = "steel-plate", amount = 50},
+        {type = "item", name = "iron-gear-wheel", amount = 30}
     },
     results = {
-        {"mixer-mk01", 1}
+        {type = "item", name = "mixer-mk01", amount = 1}
     }
 }:add_unlock("advanced-mining-facilities")
 

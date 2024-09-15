@@ -13,15 +13,15 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {"grease-table-mk01", 1},
-                {"engine-unit", 10},
-                --{'duralumin', 15},
-                --{'lead-plate', 10},
-                {'nexelit-plate', 15},
-                {'advanced-circuit', 10}
+                {type = "item", name = "grease-table-mk01", amount = 1},
+                {type = "item", name = "engine-unit", amount = 10},
+                --{type = "item", name = 'duralumin', amount = 15},
+                --{type = "item", name = 'lead-plate', amount = 10},
+                {type = "item", name = 'nexelit-plate', amount = 15},
+                {type = "item", name = 'advanced-circuit', amount = 10}
             },
     results = {
-        {"grease-table-mk02", 1}
+        {type = "item", name = "grease-table-mk02", amount = 1}
     }
 }
 

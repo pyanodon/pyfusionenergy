@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {'kmauts-enclosure-mk02', 1},
-                --{'titanium-plate', 20},
-                --{'stainless-steel', 20},
-                --{'tin-plate', 20},
-                {'processing-unit', 10}
+                {type = "item", name = 'kmauts-enclosure-mk02', amount = 1},
+                --{type = "item", name = 'titanium-plate', amount = 20},
+                --{type = "item", name = 'stainless-steel', amount = 20},
+                --{type = "item", name = 'tin-plate', amount = 20},
+                {type = "item", name = 'processing-unit', amount = 10}
             },
     results = {
-        {"kmauts-enclosure-mk03", 1}
+        {type = "item", name = "kmauts-enclosure-mk03", amount = 1}
     }
 }
 

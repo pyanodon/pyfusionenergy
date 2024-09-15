@@ -13,15 +13,15 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"vacuum-pump-mk01", 1},
-        {"steel-plate", 10},
-        {"electronic-circuit", 3},
-        {"engine-unit", 1},
-        {"iron-gear-wheel", 10},
-        {"pipe", 10}
+        {type = "item", name = "vacuum-pump-mk01", amount = 1},
+        {type = "item", name = "steel-plate", amount = 10},
+        {type = "item", name = "electronic-circuit", amount = 3},
+        {type = "item", name = "engine-unit", amount = 1},
+        {type = "item", name = "iron-gear-wheel", amount = 10},
+        {type = "item", name = "pipe", amount = 10}
     },
     results = {
-        {"vacuum-pump-mk02", 1}
+        {type = "item", name = "vacuum-pump-mk02", amount = 1}
     }
 }
 

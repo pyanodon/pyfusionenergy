@@ -4,15 +4,15 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"storage-tank", 1},
-        {"stone-brick", 20},
-        {"electronic-circuit", 5}, --updated-bob basic-electronic-circuit-board
-        {"steel-plate", 50},
-        {"niobium-plate", 15},
-        {"steam-engine", 3},
+        {type = "item", name = "storage-tank", amount = 1},
+        {type = "item", name = "stone-brick", amount = 20},
+        {type = "item", name = "electronic-circuit", amount = 5}, --updated-bob basic-electronic-circuit-board
+        {type = "item", name = "steel-plate", amount = 50},
+        {type = "item", name = "niobium-plate", amount = 15},
+        {type = "item", name = "steam-engine", amount = 3},
     },
     results = {
-        {"plankton-farm", 1}
+        {type = "item", name = "plankton-farm", amount = 1}
     }
 }:add_unlock('xyhiphoe')
 

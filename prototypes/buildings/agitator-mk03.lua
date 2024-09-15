@@ -31,12 +31,12 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {'agitator-mk02', 1},
-                {"electric-engine-unit", 3},
-                {'processing-unit', 10}
+                {type = "item", name = 'agitator-mk02', amount = 1},
+                {type = "item", name = "electric-engine-unit", amount = 3},
+                {type = "item", name = 'processing-unit', amount = 10}
             },
     results = {
-        {"agitator-mk03", 1}
+        {type = "item", name = "agitator-mk03", amount = 1}
     }
 }
 

@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"fusion-reactor-mk01", 1},
-        {"mixer-mk01", 1},
-        {"advanced-circuit", 50},
-        {"niobium-plate", 100},
-        {"super-alloy", 50}
+        {type = "item", name = "fusion-reactor-mk01", amount = 1},
+        {type = "item", name = "mixer-mk01", amount = 1},
+        {type = "item", name = "advanced-circuit", amount = 50},
+        {type = "item", name = "niobium-plate", amount = 100},
+        {type = "item", name = "super-alloy", amount = 50}
     },
     results = {
-        {"fusion-reactor-mk02", 1}
+        {type = "item", name = "fusion-reactor-mk02", amount = 1}
     },
 }
 

@@ -4,15 +4,15 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"pipe", 30}, --updated-bob stone-pipe
-        {"evaporator", 1},
-        {"electronic-circuit", 30},
-        {"steel-plate", 50},
-        {"nichrome", 30},
-        {"chemical-plant-mk01", 2}
+        {type = "item", name = "pipe", amount = 30}, --updated-bob stone-pipe
+        {type = "item", name = "evaporator", amount = 1},
+        {type = "item", name = "electronic-circuit", amount = 30},
+        {type = "item", name = "steel-plate", amount = 50},
+        {type = "item", name = "nichrome", amount = 30},
+        {type = "item", name = "chemical-plant-mk01", amount = 2}
     },
     results = {
-        {"gas-separator-mk01", 1}
+        {type = "item", name = "gas-separator-mk01", amount = 1}
     }
 }:add_unlock("helium-processing-mk02")
 

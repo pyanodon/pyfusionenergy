@@ -13,16 +13,16 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"evaporator", 2},
-        {"botanical-nursery", 1},
-        {"fast-transport-belt", 35},
-        {"advanced-circuit", 40},
-        {"steel-plate", 50},
-        {"pipe", 15} --pyindustry niobium-pipe
+        {type = "item", name = "evaporator", amount = 2},
+        {type = "item", name = "botanical-nursery", amount = 1},
+        {type = "item", name = "fast-transport-belt", amount = 35},
+        {type = "item", name = "advanced-circuit", amount = 40},
+        {type = "item", name = "steel-plate", amount = 50},
+        {type = "item", name = "pipe", amount = 15} --pyindustry niobium-pipe
         --add glass
     },
     results = {
-        {"nmf-mk01", 1}
+        {type = "item", name = "nmf-mk01", amount = 1}
     }
 }
 

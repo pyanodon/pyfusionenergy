@@ -4,13 +4,13 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"plankton-farm", 1},
-        {'nexelit-plate', 15},
-        {"engine-unit", 1},
-        {'advanced-circuit', 10}
+        {type = "item", name = "plankton-farm", amount = 1},
+        {type = "item", name = 'nexelit-plate', amount = 15},
+        {type = "item", name = "engine-unit", amount = 1},
+        {type = "item", name = 'advanced-circuit', amount = 10}
     },
     results = {
-        {"plankton-farm-mk02", 1}
+        {type = "item", name = "plankton-farm-mk02", amount = 1}
     }
 }
 

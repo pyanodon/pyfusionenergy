@@ -4,11 +4,11 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"gasturbinemk03", 2},
-        {"pipe", 20} --pyindustry niobium-pipe
+        {type = "item", name = "gasturbinemk03", amount = 2},
+        {type = "item", name = "pipe", amount = 20} --pyindustry niobium-pipe
     },
     results = {
-        {"py-turbine", 1}
+        {type = "item", name = "py-turbine", amount = 1}
     }
 }
 

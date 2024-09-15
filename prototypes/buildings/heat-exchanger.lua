@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"storage-tank", 1},
-        {"automated-factory-mk01", 1},
-        {"stone-brick", 70},
-        {"electronic-circuit", 5},
-        {"pipe", 20}
+        {type = "item", name = "storage-tank", amount = 1},
+        {type = "item", name = "automated-factory-mk01", amount = 1},
+        {type = "item", name = "stone-brick", amount = 70},
+        {type = "item", name = "electronic-circuit", amount = 5},
+        {type = "item", name = "pipe", amount = 20}
     },
     results = {
-        {"py-heat-exchanger", 1}
+        {type = "item", name = "py-heat-exchanger", amount = 1}
     }
 }:add_unlock("fusion-mk01")
 

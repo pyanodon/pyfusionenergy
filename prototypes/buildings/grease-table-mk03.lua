@@ -13,12 +13,12 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {'grease-table-mk02', 1},
-                {"electric-engine-unit", 5},
-                {'processing-unit', 10}
+                {type = "item", name = 'grease-table-mk02', amount = 1},
+                {type = "item", name = "electric-engine-unit", amount = 5},
+                {type = "item", name = 'processing-unit', amount = 10}
             },
     results = {
-        {"grease-table-mk03", 1}
+        {type = "item", name = "grease-table-mk03", amount = 1}
     }
 }
 

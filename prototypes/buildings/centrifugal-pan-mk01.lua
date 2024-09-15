@@ -58,15 +58,15 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"vacuum-pump-mk01", 3},
-        {"mixer-mk01", 1},
-        {"advanced-circuit", 25},
-        {"steel-plate", 20},
-        {"tailings-pond", 1},
-        {"pipe", 40} --updated-bob titanium-pipe
+        {type = "item", name = "vacuum-pump-mk01", amount = 3},
+        {type = "item", name = "mixer-mk01", amount = 1},
+        {type = "item", name = "advanced-circuit", amount = 25},
+        {type = "item", name = "steel-plate", amount = 20},
+        {type = "item", name = "tailings-pond", amount = 1},
+        {type = "item", name = "pipe", amount = 40} --updated-bob titanium-pipe
     },
     results = {
-        {"centrifugal-pan-mk01", 1}
+        {type = "item", name = "centrifugal-pan-mk01", amount = 1}
     },
 }
 

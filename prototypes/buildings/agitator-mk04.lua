@@ -31,13 +31,13 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {'agitator-mk03', 1},
-                --{'super-steel', 30},
-                --{'low-density-structure', 15},
-                --{'nbfe-alloy', 20}
+                {type = "item", name = 'agitator-mk03', amount = 1},
+                --{type = "item", name = 'super-steel', amount = 30},
+                --{type = "item", name = 'low-density-structure', amount = 15},
+                --{type = "item", name = 'nbfe-alloy', amount = 20}
             },
     results = {
-        {"agitator-mk04", 1}
+        {type = "item", name = "agitator-mk04", amount = 1}
     }
 }
 

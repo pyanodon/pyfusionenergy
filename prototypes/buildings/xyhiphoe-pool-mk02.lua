@@ -4,13 +4,13 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {"xyhiphoe-pool-mk01", 1},
-                {"engine-unit", 1},
-                {'nexelit-plate', 15},
-                {'advanced-circuit', 10}
+                {type = "item", name = "xyhiphoe-pool-mk01", amount = 1},
+                {type = "item", name = "engine-unit", amount = 1},
+                {type = "item", name = 'nexelit-plate', amount = 15},
+                {type = "item", name = 'advanced-circuit', amount = 10}
             },
     results = {
-        {"xyhiphoe-pool-mk02", 1}
+        {type = "item", name = "xyhiphoe-pool-mk02", amount = 1}
     }
 }
 

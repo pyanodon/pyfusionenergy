@@ -4,15 +4,15 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"mixer-mk01", 1},
-        {"gasturbinemk02", 1},
-        {"chemical-plant-mk01", 2},
-        {"super-alloy", 35},
-        {"steel-plate", 30}
+        {type = "item", name = "mixer-mk01", amount = 1},
+        {type = "item", name = "gasturbinemk02", amount = 1},
+        {type = "item", name = "chemical-plant-mk01", amount = 2},
+        {type = "item", name = "super-alloy", amount = 35},
+        {type = "item", name = "steel-plate", amount = 30}
         --add glass
     },
     results = {
-        {"bio-reactor-mk01", 1}
+        {type = "item", name = "bio-reactor-mk01", amount = 1}
     }
 }
 

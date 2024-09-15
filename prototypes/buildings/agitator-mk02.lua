@@ -31,13 +31,13 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {"agitator-mk01", 1},
-                {"engine-unit", 3},
-                {'nexelit-plate', 15},
-                {'advanced-circuit', 10}
+                {type = "item", name = "agitator-mk01", amount = 1},
+                {type = "item", name = "engine-unit", amount = 3},
+                {type = "item", name = 'nexelit-plate', amount = 15},
+                {type = "item", name = 'advanced-circuit', amount = 10}
             },
     results = {
-        {"agitator-mk02", 1}
+        {type = "item", name = "agitator-mk02", amount = 1}
     }
 }
 

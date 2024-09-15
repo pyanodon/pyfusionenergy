@@ -13,13 +13,13 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"iron-plate", 20},
-        {"steel-plate", 10},
-        {"iron-gear-wheel", 10},
-        {"pipe", 10}
+        {type = "item", name = "iron-plate", amount = 20},
+        {type = "item", name = "steel-plate", amount = 10},
+        {type = "item", name = "iron-gear-wheel", amount = 10},
+        {type = "item", name = "pipe", amount = 10}
     },
     results = {
-        {"vacuum-pump-mk01", 1}
+        {type = "item", name = "vacuum-pump-mk01", amount = 1}
     }
 }:add_unlock("fluid-pressurization")
 

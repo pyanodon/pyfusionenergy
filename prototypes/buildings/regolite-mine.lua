@@ -4,15 +4,15 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"soil-extractor-mk01", 2},
-        {"iron-plate", 60}, --bobs tungsten-plate
-        {"jaw-crusher", 1},
-        {"nbfe-alloy", 20},
-        {"super-alloy", 50},
-        {"advanced-circuit", 40} --updated-bob basic-electronic-circuit-board
+        {type = "item", name = "soil-extractor-mk01", amount = 2},
+        {type = "item", name = "iron-plate", amount = 60}, --bobs tungsten-plate
+        {type = "item", name = "jaw-crusher", amount = 1},
+        {type = "item", name = "nbfe-alloy", amount = 20},
+        {type = "item", name = "super-alloy", amount = 50},
+        {type = "item", name = "advanced-circuit", amount = 40} --updated-bob basic-electronic-circuit-board
     },
     results = {
-        {"regolite-mine", 1}
+        {type = "item", name = "regolite-mine", amount = 1}
     }
 }
 

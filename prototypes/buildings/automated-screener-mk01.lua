@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"ground-borer", 1},
-        {"iron-plate", 60}, --bobs titanium plate
-        {"niobium-plate", 10},
-        {"steel-plate", 60},
-        {"advanced-circuit", 20} --updated-bob basic-electronic-circuit-board
+        {type = "item", name = "ground-borer", amount = 1},
+        {type = "item", name = "iron-plate", amount = 60}, --bobs titanium plate
+        {type = "item", name = "niobium-plate", amount = 10},
+        {type = "item", name = "steel-plate", amount = 60},
+        {type = "item", name = "advanced-circuit", amount = 20} --updated-bob basic-electronic-circuit-board
     },
     results = {
-        {"automated-screener-mk01", 1}
+        {type = "item", name = "automated-screener-mk01", amount = 1}
     }
 }
 

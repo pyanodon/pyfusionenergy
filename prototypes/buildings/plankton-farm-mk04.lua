@@ -4,10 +4,10 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"plankton-farm-mk03", 1},
+        {type = "item", name = "plankton-farm-mk03", amount = 1},
     },
     results = {
-        {"plankton-farm-mk04", 1}
+        {type = "item", name = "plankton-farm-mk04", amount = 1}
     }
 }
 

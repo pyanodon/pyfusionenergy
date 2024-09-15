@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"steam-engine", 1},
-        {"small-lamp", 1},
-        {"electronic-circuit", 25}, --updated-bob electronic-logic-board
-        {"nbfe-alloy", 30},
-        {"steel-plate", 40}
+        {type = "item", name = "steam-engine", amount = 1},
+        {type = "item", name = "small-lamp", amount = 1},
+        {type = "item", name = "electronic-circuit", amount = 25}, --updated-bob electronic-logic-board
+        {type = "item", name = "nbfe-alloy", amount = 30},
+        {type = "item", name = "steel-plate", amount = 40}
     },
     results = {
-        {"secondary-crusher-mk01", 1}
+        {type = "item", name = "secondary-crusher-mk01", amount = 1}
     }
 }
 

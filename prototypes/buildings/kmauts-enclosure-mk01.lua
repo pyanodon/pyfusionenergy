@@ -4,15 +4,15 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"pipe", 10}, --pyindustry niobium-pipe
-        {"gasifier", 2},
-        {"nexelit-plate", 30},
-        {"steel-plate", 40},
-        {"iron-gear-wheel", 30} --updated-bob nitinol-bearing
+        {type = "item", name = "pipe", amount = 10}, --pyindustry niobium-pipe
+        {type = "item", name = "gasifier", amount = 2},
+        {type = "item", name = "nexelit-plate", amount = 30},
+        {type = "item", name = "steel-plate", amount = 40},
+        {type = "item", name = "iron-gear-wheel", amount = 30} --updated-bob nitinol-bearing
         --add glass
     },
     results = {
-        {"kmauts-enclosure-mk01", 1}
+        {type = "item", name = "kmauts-enclosure-mk01", amount = 1}
     }
 }
 

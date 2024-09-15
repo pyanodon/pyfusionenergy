@@ -4,15 +4,15 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"small-lamp", 50},
-        {"electric-mining-drill", 3},
-        {"engine-unit", 4},
-        {"nbfe-alloy", 30},
-        {"steel-plate", 100},
-        {"electronic-circuit", 30}
+        {type = "item", name = "small-lamp", amount = 50},
+        {type = "item", name = "electric-mining-drill", amount = 3},
+        {type = "item", name = "engine-unit", amount = 4},
+        {type = "item", name = "nbfe-alloy", amount = 30},
+        {type = "item", name = "steel-plate", amount = 100},
+        {type = "item", name = "electronic-circuit", amount = 30}
     },
     results = {
-        {"mo-mine", 1}
+        {type = "item", name = "mo-mine", amount = 1}
     }
 }
 

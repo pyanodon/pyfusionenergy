@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {"kmauts-enclosure-mk01", 1},
-                --{'duralumin', 15},
-                --{'lead-plate', 10},
-                {'nexelit-plate', 15},
-                {'advanced-circuit', 10}
+                {type = "item", name = "kmauts-enclosure-mk01", amount = 1},
+                --{type = "item", name = 'duralumin', amount = 15},
+                --{type = "item", name = 'lead-plate', amount = 10},
+                {type = "item", name = 'nexelit-plate', amount = 15},
+                {type = "item", name = 'advanced-circuit', amount = 10}
             },
     results = {
-        {"kmauts-enclosure-mk02", 1}
+        {type = "item", name = "kmauts-enclosure-mk02", amount = 1}
     }
 }
 
