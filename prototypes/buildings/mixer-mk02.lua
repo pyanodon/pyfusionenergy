@@ -82,7 +82,7 @@ ENTITY {
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {-0.0, -0.95}, nil, nil),
             pipe_covers = py.pipe_covers(true, true, true, true),
             base_level = 1,
-            pipe_connections = {{type = "output", position = {-2.0, -4.0}}}
+            pipe_connections = {{flow_direction = "output", position = {-2.0, -3.2}, direction = defines.direction.north}}
         },
         --North2
         {
@@ -90,7 +90,7 @@ ENTITY {
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {-0.0, -0.95}, nil, nil),
             pipe_covers = py.pipe_covers(true, true, true, true),
             base_level = 1,
-            pipe_connections = {{type = "output", position = {2.0, -4.0}}}
+            pipe_connections = {{flow_direction = "output", position = {2.0, -3.2}, direction = defines.direction.north}}
         },
         --North3
         {
@@ -98,7 +98,7 @@ ENTITY {
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {-0.0, -0.95}, nil, nil),
             pipe_covers = py.pipe_covers(true, true, true, true),
             base_level = 1,
-            pipe_connections = {{type = "output", position = {0.0, -4.0}}}
+            pipe_connections = {{flow_direction = "output", position = {0.0, -3.2}, direction = defines.direction.north}}
         },
         --South
         {
@@ -107,7 +107,7 @@ ENTITY {
             pipe_covers = py.pipe_covers(true, true, true, true),
             base_area = 10,
             base_level = -1,
-            pipe_connections = {{type = "input", position = {-2.0, 4.0}}}
+            pipe_connections = {{flow_direction = "input", position = {-2.0, 3.2}, direction = defines.direction.south}}
         },
         --South2
         {
@@ -116,7 +116,7 @@ ENTITY {
             pipe_covers = py.pipe_covers(true, true, true, true),
             base_area = 10,
             base_level = -1,
-            pipe_connections = {{type = "input", position = {0.0, 4.0}}}
+            pipe_connections = {{flow_direction = "input", position = {0.0, 3.2}, direction = defines.direction.south}}
         },
         --South3
         {
@@ -125,7 +125,7 @@ ENTITY {
             pipe_covers = py.pipe_covers(true, true, true, true),
             base_area = 10,
             base_level = -1,
-            pipe_connections = {{type = "input", position = {2.0, 4.0}}}
+            pipe_connections = {{flow_direction = "input", position = {2.0, 3.2}, direction = defines.direction.south}}
         },
         off_when_no_fluid_recipe = true
     },

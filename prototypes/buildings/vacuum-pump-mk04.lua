@@ -93,7 +93,7 @@ ENTITY {
             base_area = 20,
             base_level = 0,
             height = 1,
-            pipe_connections = {{type = "input-output", position = {-2.0, -0}},{type = "input-output", position = {2.0, -0}}}
+            pipe_connections = {{flow_direction = "input-output", position = {-1.2, -0}, direction = defines.direction.west},{flow_direction = "input-output", position = {2.0, -0}}}
         },
         {
             production_type = "output",
@@ -102,7 +102,7 @@ ENTITY {
             base_area = 20,
             base_level = 0,
             height = 1,
-            pipe_connections = {{type = "input-output", position = {0.0, 2.0}},{type = "input-output", position = {0.0, -2.0}}}
+            pipe_connections = {{flow_direction = "input-output", position = {0.0, 1.2}, direction = defines.direction.south},{flow_direction = "input-output", position = {0.0, -2.0}}}
         },
         off_when_no_fluid_recipe = true
     },
