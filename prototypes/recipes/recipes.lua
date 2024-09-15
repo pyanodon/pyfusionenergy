@@ -1813,7 +1813,7 @@ RECIPE {
     hidden = true,
     category = "rocket-building",
     ingredients = {
-        {type = "item", name = "rocket-control-unit", amount = 210},
+        {type = "item", name = "advanced-circuit", amount = 210},
         {type = "item", name = "low-density-structure", amount = 25},
         {type = "item", name = "super-alloy", amount = 28},
         {type = "item", name = "rocket-fuel", amount = 210}
