@@ -54,8 +54,8 @@ ENTITY {
         --pipe_picture = pipe_pictures({0, 3}),
         production_type = "input-output",
         pipe_connections = {
-            {type = "input-output", position = {3.0, 0.0}},
-            {type = "input-output", position = {-3.0, 0.0}}
+            {flow_direction = "input-output", position = {2.4, 0.0}, direction = defines.direction.east},
+            {flow_direction = "input-output", position = {-2.4, 0.0}, direction = defines.direction.west}
         }
     },
     energy_source = {
