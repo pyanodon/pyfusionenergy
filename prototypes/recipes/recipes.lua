@@ -1788,11 +1788,10 @@ RECIPE {
     energy_required = 5,
     enabled = false,
     category = "advanced-crafting",
-    ingredients =
-    {
-      {"low-density-structure", 100},
-      {"fusion-reactor-mk01", 1},
-      {"processing-unit", 100},
+    ingredients = {
+      {type = "item", name = "low-density-structure", amount = 2100},
+      {type = "item", name = "fusion-reactor-mk01", amount = 21},
+      {type = "item", name = "processing-unit", amount = 2100},
       {type = "fluid", name = "deuterium", amount = 200},
       {type = "fluid", name = "helium3", amount = 100},
       {type = "item", name = "blanket", amount = 1},
@@ -1800,7 +1799,7 @@ RECIPE {
       {type = "item", name = "reinforced-wall-shield", amount = 3},
       {type = "item", name = "sc-unit", amount = 4},
     },
-    result= "satellite",
+    results = {type = "item", name = "satellite", amount = 1},
     requester_paste_multiplier = 1
 }
 
@@ -1811,12 +1810,11 @@ RECIPE {
     enabled = false,
     hidden = true,
     category = "rocket-building",
-    ingredients =
-    {
-        {"rocket-control-unit", 10},
-        {"low-density-structure", 5},
-        {"super-alloy", 8},
-        {"rocket-fuel", 10}
+    ingredients = {
+        {type = "item", name = "rocket-control-unit", amount = 210},
+        {type = "item", name = "low-density-structure", amount = 25},
+        {type = "item", name = "super-alloy", amount = 28},
+        {type = "item", name = "rocket-fuel", amount = 210}
     },
-    result= "rocket-part"
+    results = {type = "item", name = "rocket-part", amount = 1},
 }
