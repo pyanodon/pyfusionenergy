@@ -13,13 +13,13 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-                {'nmf-mk03', 1},
-                --{'super-steel', 30},
-                --{'low-density-structure', 15},
-                --{'nbfe-alloy', 20}
+                {type = "item", name = 'nmf-mk03', amount = 1},
+                --{type = "item", name = 'super-steel', amount = 30},
+                --{type = "item", name = 'low-density-structure', amount = 15},
+                --{type = "item", name = 'nbfe-alloy', amount = 20}
             },
     results = {
-        {"nmf-mk04", 1}
+        {type = "item", name = "nmf-mk04", amount = 1}
     }
 }
 

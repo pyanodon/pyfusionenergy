@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"iron-plate", 60}, --bobs titanium plate
-        {"electric-engine-unit", 15},
-        {"nbfe-alloy", 30},
-        {"steel-plate", 100},
-        {"advanced-circuit", 30} --updated-bob basic-electronic-circuit-board
+        {type = "item", name = "iron-plate", amount = 60}, --bobs titanium plate
+        {type = "item", name = "electric-engine-unit", amount = 15},
+        {type = "item", name = "nbfe-alloy", amount = 30},
+        {type = "item", name = "steel-plate", amount = 100},
+        {type = "item", name = "advanced-circuit", amount = 30} --updated-bob basic-electronic-circuit-board
     },
     results = {
-        {"diamond-mine", 1}
+        {type = "item", name = "diamond-mine", amount = 1}
     }
 }
 

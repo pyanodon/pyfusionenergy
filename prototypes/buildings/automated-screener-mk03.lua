@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {'automated-screener-mk02', 1},
-                {"electric-engine-unit", 5},
-                {'processing-unit', 10}
+                {type = "item", name = 'automated-screener-mk02', amount = 1},
+                {type = "item", name = "electric-engine-unit", amount = 5},
+                {type = "item", name = 'processing-unit', amount = 10}
             },
     results = {
-        {"automated-screener-mk03", 1}
+        {type = "item", name = "automated-screener-mk03", amount = 1}
     }
 }
 

@@ -13,16 +13,16 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"vacuum-pump-mk02", 1},
-        {"electric-engine-unit", 1},
-        {"molybdenum-plate", 10},
-        {"steel-plate", 10},
-        {"iron-gear-wheel", 30},
-        {"advanced-circuit", 10},
-        {"boron-carbide", 10}
+        {type = "item", name = "vacuum-pump-mk02", amount = 1},
+        {type = "item", name = "electric-engine-unit", amount = 1},
+        {type = "item", name = "molybdenum-plate", amount = 10},
+        {type = "item", name = "steel-plate", amount = 10},
+        {type = "item", name = "iron-gear-wheel", amount = 30},
+        {type = "item", name = "advanced-circuit", amount = 10},
+        {type = "item", name = "boron-carbide", amount = 10}
     },
     results = {
-        {"vacuum-pump-mk03", 1}
+        {type = "item", name = "vacuum-pump-mk03", amount = 1}
     }
 }
 

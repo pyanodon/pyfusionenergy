@@ -58,12 +58,12 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {"centrifugal-pan-mk02", 1},
-                {"electric-engine-unit", 4},
-                {'processing-unit', 10}
+                {type = "item", name = "centrifugal-pan-mk02", amount = 1},
+                {type = "item", name = "electric-engine-unit", amount = 4},
+                {type = "item", name = 'processing-unit', amount = 10}
             },
     results = {
-        {"centrifugal-pan-mk03", 1}
+        {type = "item", name = "centrifugal-pan-mk03", amount = 1}
     },
 }
 

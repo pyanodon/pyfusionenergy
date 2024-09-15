@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {'hydrocyclone-mk02', 1},
-                {"electric-engine-unit", 4},
-                {'processing-unit', 10}
+                {type = "item", name = 'hydrocyclone-mk02', amount = 1},
+                {type = "item", name = "electric-engine-unit", amount = 4},
+                {type = "item", name = 'processing-unit', amount = 10}
             },
     results = {
-        {"hydrocyclone-mk03", 1}
+        {type = "item", name = "hydrocyclone-mk03", amount = 1}
     }
 }
 

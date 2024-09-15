@@ -13,12 +13,12 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-                {'nmf-mk02', 1},
-                {"electric-engine-unit", 5},
-                {'processing-unit', 10}
+                {type = "item", name = 'nmf-mk02', amount = 1},
+                {type = "item", name = "electric-engine-unit", amount = 5},
+                {type = "item", name = 'processing-unit', amount = 10}
             },
     results = {
-        {"nmf-mk03", 1}
+        {type = "item", name = "nmf-mk03", amount = 1}
     }
 }
 

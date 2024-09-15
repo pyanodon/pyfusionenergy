@@ -4,13 +4,13 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {'automated-screener-mk03', 1},
-                --{'super-steel', 30},
-               --{'low-density-structure', 15},
-                --{'nbfe-alloy', 20}
+                {type = "item", name = 'automated-screener-mk03', amount = 1},
+                --{type = "item", name = 'super-steel', amount = 30},
+               --{type = "item", name = 'low-density-structure', amount = 15},
+                --{type = "item", name = 'nbfe-alloy', amount = 20}
             },
     results = {
-        {"automated-screener-mk04", 1}
+        {type = "item", name = "automated-screener-mk04", amount = 1}
     }
 }
 

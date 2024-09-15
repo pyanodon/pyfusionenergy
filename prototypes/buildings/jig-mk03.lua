@@ -59,12 +59,12 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {'jig-mk02', 1},
-                {"electric-engine-unit", 6},
-                {'processing-unit', 10}
+                {type = "item", name = 'jig-mk02', amount = 1},
+                {type = "item", name = "electric-engine-unit", amount = 6},
+                {type = "item", name = 'processing-unit', amount = 10}
             },
     results = {
-        {"jig-mk03", 1}
+        {type = "item", name = "jig-mk03", amount = 1}
     },
 }
 

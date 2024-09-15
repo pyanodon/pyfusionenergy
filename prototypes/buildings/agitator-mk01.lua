@@ -31,15 +31,15 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"steam-engine", 3},
-        {"iron-plate", 40},
-        {"electronic-circuit", 20},
-        {"steel-plate", 30},
-        {"iron-gear-wheel", 40},
-        {"plastic-bar", 30}
+        {type = "item", name = "steam-engine", amount = 3},
+        {type = "item", name = "iron-plate", amount = 40},
+        {type = "item", name = "electronic-circuit", amount = 20},
+        {type = "item", name = "steel-plate", amount = 30},
+        {type = "item", name = "iron-gear-wheel", amount = 40},
+        {type = "item", name = "plastic-bar", amount = 30}
     },
     results = {
-        {"agitator-mk01", 1}
+        {type = "item", name = "agitator-mk01", amount = 1}
     }
 }:add_unlock("advanced-mining-facilities")
 

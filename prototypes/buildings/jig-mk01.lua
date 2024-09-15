@@ -59,15 +59,15 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"steam-engine", 5},
-        {"secondary-crusher-mk01", 1},
-        {"advanced-circuit", 20},
-        {"steel-plate", 25},
-        {"assembling-machine-2", 2},
-        {"pipe", 40} --updated-bob titanium-pipe
+        {type = "item", name = "steam-engine", amount = 5},
+        {type = "item", name = "secondary-crusher-mk01", amount = 1},
+        {type = "item", name = "advanced-circuit", amount = 20},
+        {type = "item", name = "steel-plate", amount = 25},
+        {type = "item", name = "assembling-machine-2", amount = 2},
+        {type = "item", name = "pipe", amount = 40} --updated-bob titanium-pipe
     },
     results = {
-        {"jig-mk01", 1}
+        {type = "item", name = "jig-mk01", amount = 1}
     },
 }
 

@@ -4,14 +4,14 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"pipe", 30}, --pyindustry niobium-pipe
-        {"steam-engine", 2},
-        {"iron-plate", 30},
-        {"steel-plate", 30},
-        {"iron-gear-wheel", 30} --updated-bob titanium-bearing
+        {type = "item", name = "pipe", amount = 30}, --pyindustry niobium-pipe
+        {type = "item", name = "steam-engine", amount = 2},
+        {type = "item", name = "iron-plate", amount = 30},
+        {type = "item", name = "steel-plate", amount = 30},
+        {type = "item", name = "iron-gear-wheel", amount = 30} --updated-bob titanium-bearing
     },
     results = {
-        {"hydrocyclone-mk01", 1}
+        {type = "item", name = "hydrocyclone-mk01", amount = 1}
     }
 }
 

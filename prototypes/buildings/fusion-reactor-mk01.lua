@@ -4,16 +4,16 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"vacuum-pump-mk01", 5},
-        {"mixer-mk01", 1},
-        {"advanced-circuit", 50},
-        {"steel-plate", 120},
-        {"gasturbinemk03", 1},
-        {"super-alloy", 200}
+        {type = "item", name = "vacuum-pump-mk01", amount = 5},
+        {type = "item", name = "mixer-mk01", amount = 1},
+        {type = "item", name = "advanced-circuit", amount = 50},
+        {type = "item", name = "steel-plate", amount = 120},
+        {type = "item", name = "gasturbinemk03", amount = 1},
+        {type = "item", name = "super-alloy", amount = 200}
         --add glass
     },
     results = {
-        {"fusion-reactor-mk01", 1}
+        {type = "item", name = "fusion-reactor-mk01", amount = 1}
     },
 }
 

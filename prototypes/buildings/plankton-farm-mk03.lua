@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {"plankton-farm-mk02", 1},
-        {"electric-engine-unit", 2},
-        {'processing-unit', 10}
+        {type = "item", name = "plankton-farm-mk02", amount = 1},
+        {type = "item", name = "electric-engine-unit", amount = 2},
+        {type = "item", name = 'processing-unit', amount = 10}
     },
     results = {
-        {"plankton-farm-mk03", 1}
+        {type = "item", name = "plankton-farm-mk03", amount = 1}
     }
 }
 

@@ -13,14 +13,14 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {"steam-engine", 1},
-        {"small-lamp", 4},
-        {"electronic-circuit", 10}, --updated-bob basic-electronic-circuit-board
-        {"steel-plate", 50},
-        {"pipe", 15} --updated-bob brass plate
+        {type = "item", name = "steam-engine", amount = 1},
+        {type = "item", name = "small-lamp", amount = 4},
+        {type = "item", name = "electronic-circuit", amount = 10}, --updated-bob basic-electronic-circuit-board
+        {type = "item", name = "steel-plate", amount = 50},
+        {type = "item", name = "pipe", amount = 15} --updated-bob brass plate
     },
     results = {
-        {"thickener-mk01", 1}
+        {type = "item", name = "thickener-mk01", amount = 1}
     }
 }
 
