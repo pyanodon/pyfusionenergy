@@ -26,6 +26,7 @@ FLUID {
     icon = "__pyfusionenergygraphics__/graphics/icons/kimberlite-pulp.png",
 	icon_size = 32,
     default_temperature = 10,
+    base_flow_rate = 100,
     base_color = {r = 0.478, g = 0.545, b = 0.556},
     flow_color = {r = 1, g = 1, b = 1},
     max_temperature = 100,
