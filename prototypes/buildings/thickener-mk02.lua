@@ -63,47 +63,49 @@ ENTITY {
         },
     },
     energy_usage = "900kW",
-    animation = {
-        layers = {
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/thickener/thickener-bottom.png",
-                width = 237,
-                height = 132,
-                line_length = 8,
-                frame_count = 100,
-                animation_speed = 1,
-                shift = {0.19, 1.42}
-            },
-			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/thickener/thickener-bottom-mask.png",
-                width = 237,
-                height = 132,
-                line_length = 8,
-                frame_count = 100,
-                animation_speed = 1,
-                shift = {0.19, 1.42},
-				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
-            },
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/thickener/thickener-top.png",
-                width = 237,
-                height = 128,
-                line_length = 8,
-                frame_count = 100,
-                animation_speed = 1,
-                shift = {0.19, -2.640}
-            },
-			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/thickener/thickener-top-mask.png",
-                width = 237,
-                height = 128,
-                line_length = 8,
-                frame_count = 100,
-                animation_speed = 1,
-                shift = {0.19, -2.640},
-				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+    graphics_set = {
+        animation = {
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/thickener/thickener-bottom.png",
+                    width = 237,
+                    height = 132,
+                    line_length = 8,
+                    frame_count = 100,
+                    animation_speed = 1,
+                    shift = {0.19, 1.42}
+                },
+    			{
+                    filename = "__pyfusionenergygraphics__/graphics/entity/thickener/thickener-bottom-mask.png",
+                    width = 237,
+                    height = 132,
+                    line_length = 8,
+                    frame_count = 100,
+                    animation_speed = 1,
+                    shift = {0.19, 1.42},
+    				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/thickener/thickener-top.png",
+                    width = 237,
+                    height = 128,
+                    line_length = 8,
+                    frame_count = 100,
+                    animation_speed = 1,
+                    shift = {0.19, -2.640}
+                },
+    			{
+                    filename = "__pyfusionenergygraphics__/graphics/entity/thickener/thickener-top-mask.png",
+                    width = 237,
+                    height = 128,
+                    line_length = 8,
+                    frame_count = 100,
+                    animation_speed = 1,
+                    shift = {0.19, -2.640},
+    				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+                }
             }
-        }
+        },
     },
     fluid_boxes = {
         --1

@@ -65,66 +65,68 @@ ENTITY {
         },
     },
     energy_usage = "1000kW",
-    animation = {
-        layers = {
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/left.png",
-                width = 96,
-                height = 286,
-                line_length = 21,
-                frame_count = 140,
-                animation_speed = 0.3,
-                shift = {-2.032, -1.0}
-            },
-			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/left-mask.png",
-                width = 96,
-                height = 286,
-                line_length = 21,
-                frame_count = 140,
-                animation_speed = 0.3,
-                shift = {-2.032, -1.0},
-				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
-            },
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/mid.png",
-                width = 96,
-                height = 286,
-                line_length = 21,
-                frame_count = 140,
-                animation_speed = 0.3,
-                shift = {0.968, -1.0}
-            },
-			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/mid-mask.png",
-                width = 96,
-                height = 286,
-                line_length = 21,
-                frame_count = 140,
-                animation_speed = 0.3,
-                shift = {0.968, -1.0},
-				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
-            },
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/right.png",
-                width = 55,
-                height = 286,
-                line_length = 21,
-                frame_count = 140,
-                animation_speed = 0.3,
-                shift = {3.329, -1.0}
-            },
-			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/right-mask.png",
-                width = 55,
-                height = 286,
-                line_length = 21,
-                frame_count = 140,
-                animation_speed = 0.3,
-                shift = {3.329, -1.0},
-				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+    graphics_set = {
+        animation = {
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/left.png",
+                    width = 96,
+                    height = 286,
+                    line_length = 21,
+                    frame_count = 140,
+                    animation_speed = 0.3,
+                    shift = {-2.032, -1.0}
+                },
+    			{
+                    filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/left-mask.png",
+                    width = 96,
+                    height = 286,
+                    line_length = 21,
+                    frame_count = 140,
+                    animation_speed = 0.3,
+                    shift = {-2.032, -1.0},
+    				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/mid.png",
+                    width = 96,
+                    height = 286,
+                    line_length = 21,
+                    frame_count = 140,
+                    animation_speed = 0.3,
+                    shift = {0.968, -1.0}
+                },
+    			{
+                    filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/mid-mask.png",
+                    width = 96,
+                    height = 286,
+                    line_length = 21,
+                    frame_count = 140,
+                    animation_speed = 0.3,
+                    shift = {0.968, -1.0},
+    				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/right.png",
+                    width = 55,
+                    height = 286,
+                    line_length = 21,
+                    frame_count = 140,
+                    animation_speed = 0.3,
+                    shift = {3.329, -1.0}
+                },
+    			{
+                    filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/right-mask.png",
+                    width = 55,
+                    height = 286,
+                    line_length = 21,
+                    frame_count = 140,
+                    animation_speed = 0.3,
+                    shift = {3.329, -1.0},
+    				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+                }
             }
-        }
+        },
     },
     fluid_boxes = {
         {

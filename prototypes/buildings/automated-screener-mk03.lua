@@ -53,66 +53,68 @@ ENTITY {
         },
     },
     energy_usage = "1300kW",
-    animation = {
-        layers = {
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/automated-screener/left.png",
-                width = 96,
-                height = 256,
-                line_length = 21,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = {-2.032, -0.5}
-            },
-			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/automated-screener/left-mask.png",
-                width = 96,
-                height = 256,
-                line_length = 21,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = {-2.032, -0.5},
-				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
-            },
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/automated-screener/mid.png",
-                width = 96,
-                height = 256,
-                line_length = 21,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = {0.968, -0.5}
-            },
-			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/automated-screener/mid-mask.png",
-                width = 96,
-                height = 256,
-                line_length = 21,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = {0.968, -0.5},
-				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
-            },
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/automated-screener/right.png",
-                width = 38,
-                height = 256,
-                line_length = 21,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = {3.032, -0.5}
-            },
-			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/automated-screener/right-mask.png",
-                width = 38,
-                height = 256,
-                line_length = 21,
-                frame_count = 150,
-                animation_speed = 0.4,
-                shift = {3.032, -0.5},
-				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+    graphics_set = {
+        animation = {
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/automated-screener/left.png",
+                    width = 96,
+                    height = 256,
+                    line_length = 21,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = {-2.032, -0.5}
+                },
+    			{
+                    filename = "__pyfusionenergygraphics__/graphics/entity/automated-screener/left-mask.png",
+                    width = 96,
+                    height = 256,
+                    line_length = 21,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = {-2.032, -0.5},
+    				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/automated-screener/mid.png",
+                    width = 96,
+                    height = 256,
+                    line_length = 21,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = {0.968, -0.5}
+                },
+    			{
+                    filename = "__pyfusionenergygraphics__/graphics/entity/automated-screener/mid-mask.png",
+                    width = 96,
+                    height = 256,
+                    line_length = 21,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = {0.968, -0.5},
+    				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/automated-screener/right.png",
+                    width = 38,
+                    height = 256,
+                    line_length = 21,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = {3.032, -0.5}
+                },
+    			{
+                    filename = "__pyfusionenergygraphics__/graphics/entity/automated-screener/right-mask.png",
+                    width = 38,
+                    height = 256,
+                    line_length = 21,
+                    frame_count = 150,
+                    animation_speed = 0.4,
+                    shift = {3.032, -0.5},
+    				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                }
             }
-        }
+        },
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
     working_sound = {

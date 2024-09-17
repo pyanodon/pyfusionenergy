@@ -54,53 +54,55 @@ ENTITY {
         },
     },
     energy_usage = "950kW",
-    animation = {
-		layers = {
-			{
-			filename = "__pyfusionenergygraphics__/graphics/entity/gas-separator/off.png",
-			width = 241,
-			height = 265,
-			frame_count = 1,
-			shift = {0.2, -0.635}
-			},
-			{
-			filename = "__pyfusionenergygraphics__/graphics/entity/gas-separator/off-mask.png",
-			width = 241,
-			height = 265,
-			frame_count = 1,
-			shift = {0.2, -0.635},
-			tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
-			}
-		}
-    },
-    working_visualisations = {
-        {
-            north_position = {0.2, -0.635},
-            west_position = {0.2, -0.635},
-            south_position = {0.2, -0.635},
-            east_position = {0.2, -0.635},
-            animation = {
-				layers = {
-					{
-                filename = "__pyfusionenergygraphics__/graphics/entity/gas-separator/on.png",
-                frame_count = 50,
-                width = 241,
-                height = 265,
-                line_length = 8,
-                animation_speed = 0.3
-				},
-				{
-                filename = "__pyfusionenergygraphics__/graphics/entity/gas-separator/on-mask.png",
-                frame_count = 50,
-                width = 241,
-                height = 265,
-                line_length = 8,
-                animation_speed = 0.3,
-				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
-				}
-			}
+    graphics_set = {
+        working_visualisations = {
+            {
+                north_position = {0.2, -0.635},
+                west_position = {0.2, -0.635},
+                south_position = {0.2, -0.635},
+                east_position = {0.2, -0.635},
+                animation = {
+    				layers = {
+    					{
+                    filename = "__pyfusionenergygraphics__/graphics/entity/gas-separator/on.png",
+                    frame_count = 50,
+                    width = 241,
+                    height = 265,
+                    line_length = 8,
+                    animation_speed = 0.3
+    				},
+    				{
+                    filename = "__pyfusionenergygraphics__/graphics/entity/gas-separator/on-mask.png",
+                    frame_count = 50,
+                    width = 241,
+                    height = 265,
+                    line_length = 8,
+                    animation_speed = 0.3,
+    				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+    				}
+    			}
+                }
             }
-        }
+        },
+        animation = {
+    		layers = {
+    			{
+    			filename = "__pyfusionenergygraphics__/graphics/entity/gas-separator/off.png",
+    			width = 241,
+    			height = 265,
+    			frame_count = 1,
+    			shift = {0.2, -0.635}
+    			},
+    			{
+    			filename = "__pyfusionenergygraphics__/graphics/entity/gas-separator/off-mask.png",
+    			width = 241,
+    			height = 265,
+    			frame_count = 1,
+    			shift = {0.2, -0.635},
+    			tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+    			}
+    		}
+        },
     },
     fluid_boxes = {
         --North

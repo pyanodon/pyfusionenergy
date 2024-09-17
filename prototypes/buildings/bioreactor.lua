@@ -56,29 +56,31 @@ ENTITY {
         },
     },
     energy_usage = "400kW",
-    animation = {
-        filename = "__pyfusionenergygraphics__/graphics/entity/bio-reactor/off.png",
-        width = 246,
-        height = 236,
-        frame_count = 1,
-        shift = {0.312, -0.218}
-    },
-    working_visualisations = {
-        {
-            north_position = {0.312, -0.218},
-            west_position = {0.312, -0.218},
-            south_position = {0.312, -0.218},
-            east_position = {0.312, -0.218},
-            animation = {
-                filename = "__pyfusionenergygraphics__/graphics/entity/bio-reactor/on.png",
-                frame_count = 50,
-                width = 246,
-                height = 236,
-                line_length = 8,
-                animation_speed = 0.3,
-                priority = "medium"
+    graphics_set = {
+        working_visualisations = {
+            {
+                north_position = {0.312, -0.218},
+                west_position = {0.312, -0.218},
+                south_position = {0.312, -0.218},
+                east_position = {0.312, -0.218},
+                animation = {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/bio-reactor/on.png",
+                    frame_count = 50,
+                    width = 246,
+                    height = 236,
+                    line_length = 8,
+                    animation_speed = 0.3,
+                    priority = "medium"
+                }
             }
-        }
+        },
+        animation = {
+            filename = "__pyfusionenergygraphics__/graphics/entity/bio-reactor/off.png",
+            width = 246,
+            height = 236,
+            frame_count = 1,
+            shift = {0.312, -0.218}
+        },
     },
     fluid_boxes = {
         --North

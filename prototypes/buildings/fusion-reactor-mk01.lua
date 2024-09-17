@@ -57,28 +57,30 @@ ENTITY {
         },
     },
     energy_usage = "5GW",
-    animation = {
-        filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk01/off.png",
-        width = 345,
-        height = 331,
-        frame_count = 1,
-        shift = {0.4, -0.2}
-    },
-    working_visualisations = {
-        {
-            north_position = {-0.49, -1.282},
-            west_position = {-0.49, -1.282},
-            south_position = {-0.49, -1.282},
-            east_position = {-0.49, -1.282},
-            animation = {
-                filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk01/on.png",
-                frame_count = 50,
-                line_length = 7,
-                width = 288,
-                height = 196,
-                animation_speed = 0.5
+    graphics_set = {
+        working_visualisations = {
+            {
+                north_position = {-0.49, -1.282},
+                west_position = {-0.49, -1.282},
+                south_position = {-0.49, -1.282},
+                east_position = {-0.49, -1.282},
+                animation = {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk01/on.png",
+                    frame_count = 50,
+                    line_length = 7,
+                    width = 288,
+                    height = 196,
+                    animation_speed = 0.5
+                }
             }
-        }
+        },
+        animation = {
+            filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk01/off.png",
+            width = 345,
+            height = 331,
+            frame_count = 1,
+            shift = {0.4, -0.2}
+        },
     },
     fluid_boxes = {
         {

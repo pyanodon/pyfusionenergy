@@ -111,53 +111,55 @@ ENTITY {
         },
     },
     energy_usage = "400kW",
-    animation = {
-	layers = {
-	{
-        filename = "__pyfusionenergygraphics__/graphics/entity/jig/off.png",
-        width = 276,
-        height = 268,
-        frame_count = 1,
-        shift = {0.3, -0.2}
-    },
-	{
-        filename = "__pyfusionenergygraphics__/graphics/entity/jig/off-mask.png",
-        width = 276,
-        height = 268,
-        frame_count = 1,
-        shift = {0.3, -0.2},
-		tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
-    }
-	}
-	},
-    working_visualisations = {
-        {
-            north_position = {0.48, 0.417},
-            west_position = {0.48, 0.417},
-            south_position = {0.48, 0.417},
-            east_position = {0.48, 0.417},
-            animation = {
-			layers = {
-			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/jig/on.png",
-                frame_count = 120,
-                line_length = 12,
-                width = 160,
-                height = 192,
-                animation_speed = 0.4
-			},
-			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/jig/on-mask.png",
-                frame_count = 120,
-                line_length = 12,
-                width = 160,
-                height = 192,
-                animation_speed = 0.4,
-				tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
-			}
-			}
+    graphics_set = {
+        working_visualisations = {
+            {
+                north_position = {0.48, 0.417},
+                west_position = {0.48, 0.417},
+                south_position = {0.48, 0.417},
+                east_position = {0.48, 0.417},
+                animation = {
+    			layers = {
+    			{
+                    filename = "__pyfusionenergygraphics__/graphics/entity/jig/on.png",
+                    frame_count = 120,
+                    line_length = 12,
+                    width = 160,
+                    height = 192,
+                    animation_speed = 0.4
+    			},
+    			{
+                    filename = "__pyfusionenergygraphics__/graphics/entity/jig/on-mask.png",
+                    frame_count = 120,
+                    line_length = 12,
+                    width = 160,
+                    height = 192,
+                    animation_speed = 0.4,
+    				tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+    			}
+    			}
+                }
             }
+        },
+        animation = {
+    	layers = {
+    	{
+            filename = "__pyfusionenergygraphics__/graphics/entity/jig/off.png",
+            width = 276,
+            height = 268,
+            frame_count = 1,
+            shift = {0.3, -0.2}
+        },
+    	{
+            filename = "__pyfusionenergygraphics__/graphics/entity/jig/off-mask.png",
+            width = 276,
+            height = 268,
+            frame_count = 1,
+            shift = {0.3, -0.2},
+    		tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
         }
+    	}
+    	},
     },
     fluid_boxes = {
         {

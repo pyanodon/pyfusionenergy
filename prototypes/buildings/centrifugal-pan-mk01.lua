@@ -110,40 +110,42 @@ ENTITY {
         },
     },
     energy_usage = "1000kW",
-    animation = {
-		layers = {
-			{
-			filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/off.png",
-			width = 320,
-			height = 328,
-			frame_count = 1,
-			shift = {0.02, -0.10}
-			},
-			{
-			filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/off-mask.png",
-			width = 320,
-			height = 328,
-			frame_count = 1,
-			shift = {0.02, -0.10},
-			tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
-			}
-		}
-    },
-    working_visualisations = {
-        {
-            north_position = {0.02, -0.22},
-            west_position = {0.02, -0.22},
-            south_position = {0.02, -0.22},
-            east_position = {0.02, -0.22},
-            animation = {
-                filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/on.png",
-                frame_count = 100,
-                line_length = 10,
-                width = 192,
-                height = 192,
-                animation_speed = 0.4
+    graphics_set = {
+        working_visualisations = {
+            {
+                north_position = {0.02, -0.22},
+                west_position = {0.02, -0.22},
+                south_position = {0.02, -0.22},
+                east_position = {0.02, -0.22},
+                animation = {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/on.png",
+                    frame_count = 100,
+                    line_length = 10,
+                    width = 192,
+                    height = 192,
+                    animation_speed = 0.4
+                }
             }
-        }
+        },
+        animation = {
+    		layers = {
+    			{
+    			filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/off.png",
+    			width = 320,
+    			height = 328,
+    			frame_count = 1,
+    			shift = {0.02, -0.10}
+    			},
+    			{
+    			filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/off-mask.png",
+    			width = 320,
+    			height = 328,
+    			frame_count = 1,
+    			shift = {0.02, -0.10},
+    			tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+    			}
+    		}
+        },
     },
     fluid_boxes = {
         {

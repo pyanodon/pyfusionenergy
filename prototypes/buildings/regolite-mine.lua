@@ -66,36 +66,38 @@ ENTITY {
     circuit_wire_connection_points = circuit_connector_definitions["regolite-mine"].points,
     circuit_connector_sprites = circuit_connector_definitions["regolite-mine"].sprites,
     circuit_wire_max_distance = default_circuit_wire_max_distance,
-    animations = {
-        layers = {
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/regolite-mine/regolite-left.png",
-                width = 96,
-                height = 250,
-                line_length = 21,
-                frame_count = 150,
-                animation_speed = 0.3,
-                shift = {-1.9, -0.2}
-            },
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/regolite-mine/regolite-mid.png",
-                width = 96,
-                height = 250,
-                line_length = 21,
-                frame_count = 150,
-                animation_speed = 0.3,
-                shift = {1.1, -0.2}
-            },
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/regolite-mine/regolite-right.png",
-                width = 48,
-                height = 250,
-                line_length = 21,
-                frame_count = 150,
-                animation_speed = 0.3,
-                shift = {3.324, -0.2}
+    graphics_set = {
+        animations = {
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/regolite-mine/regolite-left.png",
+                    width = 96,
+                    height = 250,
+                    line_length = 21,
+                    frame_count = 150,
+                    animation_speed = 0.3,
+                    shift = {-1.9, -0.2}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/regolite-mine/regolite-mid.png",
+                    width = 96,
+                    height = 250,
+                    line_length = 21,
+                    frame_count = 150,
+                    animation_speed = 0.3,
+                    shift = {1.1, -0.2}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/regolite-mine/regolite-right.png",
+                    width = 48,
+                    height = 250,
+                    line_length = 21,
+                    frame_count = 150,
+                    animation_speed = 0.3,
+                    shift = {3.324, -0.2}
+                }
             }
-        }
+        },
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
     working_sound = {

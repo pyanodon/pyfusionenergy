@@ -84,47 +84,49 @@ ENTITY {
     circuit_wire_connection_points = circuit_connector_definitions["molybdenum-mine"].points,
     circuit_connector_sprites = circuit_connector_definitions["molybdenum-mine"].sprites,
     circuit_wire_max_distance = default_circuit_wire_max_distance,
-    animations = {
-        layers = {
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/mo-mine/left.png",
-                width = 111,
-                height = 275,
-                line_length = 18,
-                frame_count = 120,
-                animation_speed = 0.2,
-                shift = util.by_pixel(-55, -26)
-            },
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/mo-mine/right.png",
-                width = 113,
-                height = 275,
-                line_length = 18,
-                frame_count = 120,
-                animation_speed = 0.2,
-                shift = util.by_pixel(54, -26)
-            },
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/mo-mine/sh-1.png",
-                width = 144,
-                height = 182,
-                line_length = 14,
-                frame_count = 120,
-                draw_as_shadow = true,
-                animation_speed = 0.2,
-                shift = util.by_pixel(-33, 23)
-            },
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/mo-mine/sh-2.png",
-                width = 145,
-                height = 182,
-                line_length = 14,
-                frame_count = 120,
-                draw_as_shadow = true,
-                animation_speed = 0.2,
-                shift = util.by_pixel(72, 23)
-            },
-        }
+    graphics_set = {
+        animations = {
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/mo-mine/left.png",
+                    width = 111,
+                    height = 275,
+                    line_length = 18,
+                    frame_count = 120,
+                    animation_speed = 0.2,
+                    shift = util.by_pixel(-55, -26)
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/mo-mine/right.png",
+                    width = 113,
+                    height = 275,
+                    line_length = 18,
+                    frame_count = 120,
+                    animation_speed = 0.2,
+                    shift = util.by_pixel(54, -26)
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/mo-mine/sh-1.png",
+                    width = 144,
+                    height = 182,
+                    line_length = 14,
+                    frame_count = 120,
+                    draw_as_shadow = true,
+                    animation_speed = 0.2,
+                    shift = util.by_pixel(-33, 23)
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/mo-mine/sh-2.png",
+                    width = 145,
+                    height = 182,
+                    line_length = 14,
+                    frame_count = 120,
+                    draw_as_shadow = true,
+                    animation_speed = 0.2,
+                    shift = util.by_pixel(72, 23)
+                },
+            }
+        },
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
     working_sound = {

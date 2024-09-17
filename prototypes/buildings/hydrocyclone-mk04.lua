@@ -54,49 +54,51 @@ ENTITY {
         },
     },
     energy_usage = "1900kW",
-    animation = {
-		layers = {
-			{
-        filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-off.png",
-        width = 270,
-        height = 304,
-        frame_count = 1,
-        shift = {0.687, -1.281}
-		},
-		{
-        filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-off-mask.png",
-        width = 270,
-        height = 304,
-        frame_count = 1,
-        shift = {0.687, -1.281},
-		tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
-		},
-	}
-    },
-    working_visualisations = {
-        {
-            north_position = {0.687, -1.281},
-            west_position = {0.687, -1.281},
-            south_position = {0.687, -1.281},
-            east_position = {0.687, -1.281},
-            animation = {
-				layers = {
-					{
-                filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-on.png",
-                frame_count = 1,
-                width = 270,
-                height = 304
-				},
-				{
-                filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-on-mask.png",
-                frame_count = 1,
-                width = 270,
-                height = 304,
-				tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
-				}
-				}
+    graphics_set = {
+        working_visualisations = {
+            {
+                north_position = {0.687, -1.281},
+                west_position = {0.687, -1.281},
+                south_position = {0.687, -1.281},
+                east_position = {0.687, -1.281},
+                animation = {
+    				layers = {
+    					{
+                    filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-on.png",
+                    frame_count = 1,
+                    width = 270,
+                    height = 304
+    				},
+    				{
+                    filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-on-mask.png",
+                    frame_count = 1,
+                    width = 270,
+                    height = 304,
+    				tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
+    				}
+    				}
+                }
             }
-        }
+        },
+        animation = {
+    		layers = {
+    			{
+            filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-off.png",
+            width = 270,
+            height = 304,
+            frame_count = 1,
+            shift = {0.687, -1.281}
+    		},
+    		{
+            filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-off-mask.png",
+            width = 270,
+            height = 304,
+            frame_count = 1,
+            shift = {0.687, -1.281},
+    		tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
+    		},
+    	}
+        },
     },
     fluid_boxes = {
         --North

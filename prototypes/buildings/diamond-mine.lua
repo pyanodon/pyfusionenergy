@@ -66,27 +66,29 @@ ENTITY {
     circuit_wire_connection_points = circuit_connector_definitions["diamond-mine"].points,
     circuit_connector_sprites = circuit_connector_definitions["diamond-mine"].sprites,
     circuit_wire_max_distance = default_circuit_wire_max_distance,
-    animations = {
-        layers = {
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/diamond-mine/diamond-left.png",
-                width = 128,
-                height = 224,
-                line_length = 15,
-                frame_count = 100,
-                animation_speed = 0.2,
-                shift = {-1.5, -0.0}
-            },
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/diamond-mine/diamond-right.png",
-                width = 136,
-                height = 224,
-                line_length = 15,
-                frame_count = 100,
-                animation_speed = 0.2,
-                shift = {2.624, -0.0}
+    graphics_set = {
+        animations = {
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/diamond-mine/diamond-left.png",
+                    width = 128,
+                    height = 224,
+                    line_length = 15,
+                    frame_count = 100,
+                    animation_speed = 0.2,
+                    shift = {-1.5, -0.0}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/diamond-mine/diamond-right.png",
+                    width = 136,
+                    height = 224,
+                    line_length = 15,
+                    frame_count = 100,
+                    animation_speed = 0.2,
+                    shift = {2.624, -0.0}
+                }
             }
-        }
+        },
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
     working_sound = {
