@@ -55,54 +55,56 @@ ENTITY {
         },
     },
     energy_usage = "500kW",
-    animation = {
-        layers = {
+    graphics_set = {
+        working_visualisations = {
             {
-                filename = "__pyfusionenergygraphics__/graphics/entity/heat-exchanger/off.png",
-                width = 224,
-                height = 224,
-                frame_count = 1,
-                shift = {0.0, -0.2},
+                north_position = {0.0, -0.2},
+                west_position = {0.0, -0.2},
+                south_position = {0.0, -0.2},
+                east_position = {0.0, -0.2},
+                animation = {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/heat-exchanger/on.png",
+                    frame_count = 80,
+                    width = 224,
+                    height = 224,
+                    line_length = 9,
+                    animation_speed = 0.5
+                }
             },
             {
-                filename = "__pyfusionenergygraphics__/graphics/entity/heat-exchanger/off-mask.png",
-                width = 224,
-                height = 224,
-                frame_count = 1,
-                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0},
-                shift = {0.0, -0.2},
+                north_position = {0.0, -0.2},
+                west_position = {0.0, -0.2},
+                south_position = {0.0, -0.2},
+                east_position = {0.0, -0.2},
+                animation = {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/heat-exchanger/on-mask.png",
+                    frame_count = 80,
+                    width = 224,
+                    height = 224,
+                    tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0},
+                    line_length = 9,
+                    animation_speed = 0.5
+                }
             },
         },
-    },
-    working_visualisations = {
-        {
-            north_position = {0.0, -0.2},
-            west_position = {0.0, -0.2},
-            south_position = {0.0, -0.2},
-            east_position = {0.0, -0.2},
-            animation = {
-                filename = "__pyfusionenergygraphics__/graphics/entity/heat-exchanger/on.png",
-                frame_count = 80,
-                width = 224,
-                height = 224,
-                line_length = 9,
-                animation_speed = 0.5
-            }
-        },
-        {
-            north_position = {0.0, -0.2},
-            west_position = {0.0, -0.2},
-            south_position = {0.0, -0.2},
-            east_position = {0.0, -0.2},
-            animation = {
-                filename = "__pyfusionenergygraphics__/graphics/entity/heat-exchanger/on-mask.png",
-                frame_count = 80,
-                width = 224,
-                height = 224,
-                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0},
-                line_length = 9,
-                animation_speed = 0.5
-            }
+        animation = {
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/heat-exchanger/off.png",
+                    width = 224,
+                    height = 224,
+                    frame_count = 1,
+                    shift = {0.0, -0.2},
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/heat-exchanger/off-mask.png",
+                    width = 224,
+                    height = 224,
+                    frame_count = 1,
+                    tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0},
+                    shift = {0.0, -0.2},
+                },
+            },
         },
     },
     fluid_boxes = {

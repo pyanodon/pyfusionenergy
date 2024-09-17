@@ -56,47 +56,49 @@ ENTITY {
         },
     },
     energy_usage = "350kW",
-    animation = {
-        layers = {
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/plankton-farm/left.png",
-                width = 128,
-                height = 243,
-                line_length = 16,
-                frame_count = 126,
-                animation_speed = 0.4,
-                shift = {-1.54, -0.3}
-            },
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/plankton-farm/left-mask.png",
-                width = 128,
-                height = 243,
-                line_length = 16,
-                frame_count = 126,
-                animation_speed = 0.4,
-                shift = {-1.54, -0.3},
-                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
-            },
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/plankton-farm/right.png",
-                width = 113,
-                height = 243,
-                line_length = 16,
-                frame_count = 126,
-                animation_speed = 0.4,
-                shift = {2.22, -0.3}
-            },
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/plankton-farm/right-mask.png",
-                width = 113,
-                height = 243,
-                line_length = 16,
-                frame_count = 126,
-                animation_speed = 0.4,
-                shift = {2.22, -0.3},
-                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+    graphics_set = {
+        animation = {
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/plankton-farm/left.png",
+                    width = 128,
+                    height = 243,
+                    line_length = 16,
+                    frame_count = 126,
+                    animation_speed = 0.4,
+                    shift = {-1.54, -0.3}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/plankton-farm/left-mask.png",
+                    width = 128,
+                    height = 243,
+                    line_length = 16,
+                    frame_count = 126,
+                    animation_speed = 0.4,
+                    shift = {-1.54, -0.3},
+                    tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/plankton-farm/right.png",
+                    width = 113,
+                    height = 243,
+                    line_length = 16,
+                    frame_count = 126,
+                    animation_speed = 0.4,
+                    shift = {2.22, -0.3}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/plankton-farm/right-mask.png",
+                    width = 113,
+                    height = 243,
+                    line_length = 16,
+                    frame_count = 126,
+                    animation_speed = 0.4,
+                    shift = {2.22, -0.3},
+                    tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+                }
             }
-        }
+        },
     },
     fluid_boxes = {
         {

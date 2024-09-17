@@ -54,55 +54,57 @@ ENTITY {
         },
     },
     energy_usage = "950kW",
-    animation = {
-		layers = {
-			{
-			filename = "__pyfusionenergygraphics__/graphics/entity/compressor/off.png",
-			width = 261,
-			height = 252,
-			frame_count = 1,
-			shift = {0.55, -0.45}
-			},
-			{
-			filename = "__pyfusionenergygraphics__/graphics/entity/compressor/off-mask.png",
-			width = 261,
-			height = 252,
-			frame_count = 1,
-			shift = {0.55, -0.45},
-			tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
-			}
-		}
-    },
-    working_visualisations = {
-        {
-            north_position = {0.55, -0.45},
-            west_position = {0.55, -0.45},
-            south_position = {0.55, -0.45},
-            east_position = {0.55, -0.45},
-            animation = {
-				layers = {
-					{
-					filename = "__pyfusionenergygraphics__/graphics/entity/compressor/on.png",
-					frame_count = 50,
-					width = 261,
-					height = 252,
-					line_length = 7,
-					animation_speed = 0.5,
-					priority = "medium"
-					},
-					{
-					filename = "__pyfusionenergygraphics__/graphics/entity/compressor/on-mask.png",
-					frame_count = 50,
-					width = 261,
-					height = 252,
-					line_length = 7,
-					animation_speed = 0.5,
-					priority = "medium",
-					tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
-					}
-				}
+    graphics_set = {
+        working_visualisations = {
+            {
+                north_position = {0.55, -0.45},
+                west_position = {0.55, -0.45},
+                south_position = {0.55, -0.45},
+                east_position = {0.55, -0.45},
+                animation = {
+    				layers = {
+    					{
+    					filename = "__pyfusionenergygraphics__/graphics/entity/compressor/on.png",
+    					frame_count = 50,
+    					width = 261,
+    					height = 252,
+    					line_length = 7,
+    					animation_speed = 0.5,
+    					priority = "medium"
+    					},
+    					{
+    					filename = "__pyfusionenergygraphics__/graphics/entity/compressor/on-mask.png",
+    					frame_count = 50,
+    					width = 261,
+    					height = 252,
+    					line_length = 7,
+    					animation_speed = 0.5,
+    					priority = "medium",
+    					tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+    					}
+    				}
+                }
             }
-        }
+        },
+        animation = {
+    		layers = {
+    			{
+    			filename = "__pyfusionenergygraphics__/graphics/entity/compressor/off.png",
+    			width = 261,
+    			height = 252,
+    			frame_count = 1,
+    			shift = {0.55, -0.45}
+    			},
+    			{
+    			filename = "__pyfusionenergygraphics__/graphics/entity/compressor/off-mask.png",
+    			width = 261,
+    			height = 252,
+    			frame_count = 1,
+    			shift = {0.55, -0.45},
+    			tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+    			}
+    		}
+        },
     },
     fluid_boxes = {
         --North

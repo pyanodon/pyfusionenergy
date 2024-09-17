@@ -53,29 +53,31 @@ ENTITY {
         },
     },
     energy_usage = "1450kW",
-    animation = {
-	layers = {
-	{
-        filename = "__pyfusionenergygraphics__/graphics/entity/mixer/mixer.png",
-        width = 246,
-        height = 233,
-        frame_count = 64,
-        line_length = 8,
-        animation_speed = 0.4,
-        shift = {0.312, -0.156}
+    graphics_set = {
+        animation = {
+    	layers = {
+    	{
+            filename = "__pyfusionenergygraphics__/graphics/entity/mixer/mixer.png",
+            width = 246,
+            height = 233,
+            frame_count = 64,
+            line_length = 8,
+            animation_speed = 0.4,
+            shift = {0.312, -0.156}
+        },
+    	{
+            filename = "__pyfusionenergygraphics__/graphics/entity/mixer/mixer-mask.png",
+            width = 246,
+            height = 233,
+            frame_count = 64,
+            line_length = 8,
+            animation_speed = 0.4,
+            shift = {0.312, -0.156},
+    		tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+        }
+    	}
+    	},
     },
-	{
-        filename = "__pyfusionenergygraphics__/graphics/entity/mixer/mixer-mask.png",
-        width = 246,
-        height = 233,
-        frame_count = 64,
-        line_length = 8,
-        animation_speed = 0.4,
-        shift = {0.312, -0.156},
-		tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
-    }
-	}
-	},
     fluid_boxes = {
         --North
         {

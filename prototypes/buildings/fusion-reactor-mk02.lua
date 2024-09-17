@@ -55,44 +55,46 @@ ENTITY {
         },
     },
     energy_usage = "40GW",
-    animation = {
-        layers = {
+    graphics_set = {
+        working_visualisations = {
             {
-                filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk02/off.png",
-                priority = "high",
-                width = 321,
-                height = 361,
-                --apply_projection = false,
-                frame_count = 1,
-                shift = {0.0, -0.687}
-            },
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk02/shadow.png",
-                priority = "low",
-                width = 339,
-                height = 361,
-                --apply_projection = false,
-                frame_count = 1,
-                shift = {0.2, -0.687},
-                draw_as_shadow = true
+                north_position = {0.0, -0.58},
+                west_position = {0.0, -0.58},
+                south_position = {0.0, -0.58},
+                east_position = {0.0, -0.58},
+                animation = {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk02/on.png",
+                    frame_count = 42,
+                    line_length = 6,
+                    width = 321,
+                    height = 288,
+                    animation_speed = 0.5
+                }
             }
-        }
-    },
-    working_visualisations = {
-        {
-            north_position = {0.0, -0.58},
-            west_position = {0.0, -0.58},
-            south_position = {0.0, -0.58},
-            east_position = {0.0, -0.58},
-            animation = {
-                filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk02/on.png",
-                frame_count = 42,
-                line_length = 6,
-                width = 321,
-                height = 288,
-                animation_speed = 0.5
+        },
+        animation = {
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk02/off.png",
+                    priority = "high",
+                    width = 321,
+                    height = 361,
+                    --apply_projection = false,
+                    frame_count = 1,
+                    shift = {0.0, -0.687}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk02/shadow.png",
+                    priority = "low",
+                    width = 339,
+                    height = 361,
+                    --apply_projection = false,
+                    frame_count = 1,
+                    shift = {0.2, -0.687},
+                    draw_as_shadow = true
+                }
             }
-        }
+        },
     },
     fluid_boxes = {
         {

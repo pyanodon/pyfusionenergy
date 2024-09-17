@@ -63,46 +63,48 @@ ENTITY {
         },
     },
     energy_usage = "1000kW",
-    animation = {
-        layers = {
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/nmf/left.png",
-                width = 128,
-                height = 245,
-                line_length = 15,
-                frame_count = 80,
-                animation_speed = 0.8,
-                shift = {-1.5, -0.0}
-            },{
-                filename = "__pyfusionenergygraphics__/graphics/entity/nmf/left-mask.png",
-                width = 128,
-                height = 245,
-                line_length = 15,
-                frame_count = 80,
-                animation_speed = 0.8,
-                shift = {-1.5, -0.0},
-				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
-            },
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/nmf/right.png",
-                width = 104,
-                height = 245,
-                line_length = 15,
-                frame_count = 80,
-                animation_speed = 0.8,
-                shift = {2.1, -0.0}
-            },
-			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/nmf/right-mask.png",
-                width = 104,
-                height = 245,
-                line_length = 15,
-                frame_count = 80,
-                animation_speed = 0.8,
-                shift = {2.1, -0.0},
-				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+    graphics_set = {
+        animation = {
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/nmf/left.png",
+                    width = 128,
+                    height = 245,
+                    line_length = 15,
+                    frame_count = 80,
+                    animation_speed = 0.8,
+                    shift = {-1.5, -0.0}
+                },{
+                    filename = "__pyfusionenergygraphics__/graphics/entity/nmf/left-mask.png",
+                    width = 128,
+                    height = 245,
+                    line_length = 15,
+                    frame_count = 80,
+                    animation_speed = 0.8,
+                    shift = {-1.5, -0.0},
+    				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/nmf/right.png",
+                    width = 104,
+                    height = 245,
+                    line_length = 15,
+                    frame_count = 80,
+                    animation_speed = 0.8,
+                    shift = {2.1, -0.0}
+                },
+    			{
+                    filename = "__pyfusionenergygraphics__/graphics/entity/nmf/right-mask.png",
+                    width = 104,
+                    height = 245,
+                    line_length = 15,
+                    frame_count = 80,
+                    animation_speed = 0.8,
+                    shift = {2.1, -0.0},
+    				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+                }
             }
-        }
+        },
     },
     fluid_boxes = {
         --1

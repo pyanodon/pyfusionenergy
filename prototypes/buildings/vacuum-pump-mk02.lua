@@ -65,28 +65,30 @@ ENTITY {
         },
     },
     energy_usage = "3MW",
-    animation = {
-	layers = {
-		{
-        filename = "__pyfusionenergygraphics__/graphics/entity/vacuum-pump/vacuum-pump.png",
-        width = 110,
-        height = 148,
-        frame_count = 20,
-        line_length = 5,
-        animation_speed = 1,
-        shift = {0.187, -0.656}
-		},
-		{
-        filename = "__pyfusionenergygraphics__/graphics/entity/vacuum-pump/vacuum-pump-mask.png",
-        width = 110,
-        height = 148,
-        frame_count = 20,
-        line_length = 5,
-        animation_speed = 1,
-        tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0},
-        shift = {0.187, -0.656}
-		}
-		}
+    graphics_set = {
+        animation = {
+    	layers = {
+    		{
+            filename = "__pyfusionenergygraphics__/graphics/entity/vacuum-pump/vacuum-pump.png",
+            width = 110,
+            height = 148,
+            frame_count = 20,
+            line_length = 5,
+            animation_speed = 1,
+            shift = {0.187, -0.656}
+    		},
+    		{
+            filename = "__pyfusionenergygraphics__/graphics/entity/vacuum-pump/vacuum-pump-mask.png",
+            width = 110,
+            height = 148,
+            frame_count = 20,
+            line_length = 5,
+            animation_speed = 1,
+            tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0},
+            shift = {0.187, -0.656}
+    		}
+    		}
+        },
     },
     fluid_boxes = {
         {

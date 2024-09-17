@@ -83,28 +83,30 @@ ENTITY {
         },
     },
     energy_usage = "200kW",
-    animation = {
-		layers = {
-			{
-			filename = "__pyfusionenergygraphics__/graphics/entity/agitator/agitator.png",
-			width = 169,
-			height = 160,
-			frame_count = 50,
-			line_length = 10,
-			animation_speed = 1,
-			shift = {0.1, -0.0}
-			},
-			{
-			filename = "__pyfusionenergygraphics__/graphics/entity/agitator/agitator-mask.png",
-			width = 169,
-			height = 160,
-			frame_count = 50,
-			line_length = 10,
-			animation_speed = 1,
-			shift = {0.1, -0.0},
-			tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0},
-			}
-		}
+    graphics_set = {
+        animation = {
+    		layers = {
+    			{
+    			filename = "__pyfusionenergygraphics__/graphics/entity/agitator/agitator.png",
+    			width = 169,
+    			height = 160,
+    			frame_count = 50,
+    			line_length = 10,
+    			animation_speed = 1,
+    			shift = {0.1, -0.0}
+    			},
+    			{
+    			filename = "__pyfusionenergygraphics__/graphics/entity/agitator/agitator-mask.png",
+    			width = 169,
+    			height = 160,
+    			frame_count = 50,
+    			line_length = 10,
+    			animation_speed = 1,
+    			shift = {0.1, -0.0},
+    			tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0},
+    			}
+    		}
+        },
     },
     fluid_boxes = {
         {

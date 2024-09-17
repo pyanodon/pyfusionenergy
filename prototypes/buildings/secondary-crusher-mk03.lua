@@ -53,47 +53,49 @@ ENTITY {
         },
     },
     energy_usage = "1450kW",
-    animation = {
-        layers = {
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/secondary-crusher/left.png",
-                width = 128,
-                height = 238,
-                line_length = 16,
-                frame_count = 90,
-                animation_speed = 1,
-                shift = {-1.657, -0.281}
-            },
-			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/secondary-crusher/left-mask.png",
-                width = 128,
-                height = 238,
-                line_length = 16,
-                frame_count = 90,
-                animation_speed = 1,
-                shift = {-1.657, -0.281},
-				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
-            },
-            {
-                filename = "__pyfusionenergygraphics__/graphics/entity/secondary-crusher/right.png",
-                width = 108,
-                height = 238,
-                line_length = 16,
-                frame_count = 90,
-                animation_speed = 1,
-                shift = {2.03, -0.281}
-            },
-			{
-                filename = "__pyfusionenergygraphics__/graphics/entity/secondary-crusher/right-mask.png",
-                width = 108,
-                height = 238,
-                line_length = 16,
-                frame_count = 90,
-                animation_speed = 1,
-                shift = {2.03, -0.281},
-				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+    graphics_set = {
+        animation = {
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/secondary-crusher/left.png",
+                    width = 128,
+                    height = 238,
+                    line_length = 16,
+                    frame_count = 90,
+                    animation_speed = 1,
+                    shift = {-1.657, -0.281}
+                },
+    			{
+                    filename = "__pyfusionenergygraphics__/graphics/entity/secondary-crusher/left-mask.png",
+                    width = 128,
+                    height = 238,
+                    line_length = 16,
+                    frame_count = 90,
+                    animation_speed = 1,
+                    shift = {-1.657, -0.281},
+    				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/secondary-crusher/right.png",
+                    width = 108,
+                    height = 238,
+                    line_length = 16,
+                    frame_count = 90,
+                    animation_speed = 1,
+                    shift = {2.03, -0.281}
+                },
+    			{
+                    filename = "__pyfusionenergygraphics__/graphics/entity/secondary-crusher/right-mask.png",
+                    width = 108,
+                    height = 238,
+                    line_length = 16,
+                    frame_count = 90,
+                    animation_speed = 1,
+                    shift = {2.03, -0.281},
+    				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                }
             }
-        }
+        },
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
     working_sound = {
