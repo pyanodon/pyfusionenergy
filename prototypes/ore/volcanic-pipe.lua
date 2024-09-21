@@ -1,3 +1,5 @@
+data.raw.planet.nauvis.map_gen_settings.autoplace_controls["volcanic-pipe"] = {}
+
 data:extend{{
     type = "autoplace-control",
     name = "volcanic-pipe",
@@ -17,7 +19,7 @@ data:extend{
         name = "py_volcanic_pipe_starting_area",
         -- 0% chance of spawning in starting area (tier == 0)
         -- Using this is equivalent to has_starting_area_placement = false
-        expression = "clamp(var('tier'), 0, 1)"
+        expression = "clamp(var('tier_from_start'), 0, 1)"
     },
     {
         type = "noise-expression",
