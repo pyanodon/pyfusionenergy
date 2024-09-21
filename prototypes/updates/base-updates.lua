@@ -1,10 +1,6 @@
 --((TECHNOLOGY))--
 TECHNOLOGY('nuclear-fuel-reprocessing'):remove_prereq('production-science-pack'):remove_pack('production-science-pack')
 
-TECHNOLOGY('speed-module-3'):add_prereq('speed-module-2')
-
-TECHNOLOGY('efficiency-module-3'):add_prereq('efficiency-module-2')
-
 TECHNOLOGY('kovarex-enrichment-process'):remove_prereq('production-science-pack'):remove_pack('production-science-pack')
 
 --((RECIPES))--
