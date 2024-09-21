@@ -670,3 +670,15 @@ ITEM {
     order = "r[used-up-uranium-fuel-cell]a",
     stack_size = 50
   }
+
+ITEM {
+    type = "item",
+    name = "satellite",
+    icon = "__pyfusionenergygraphics__/graphics/icons/satellite.png",
+    icon_size = 64,
+    icon_mipmaps = 4,
+    subgroup = "space-related",
+    order = "m[satellite]",
+    stack_size = 1,
+    rocket_launch_product = {"space-science-pack", 1000}
+}
