@@ -27,7 +27,7 @@ ENTITY {
         -- mining_particle = "molybdenum-ore-particle",
         mining_time = 3,
         results = {
-            {"molybdenum-ore", 1}
+            {type = "item", name = "molybdenum-ore", amount = 1}
         }
     },
     collision_box = {{-0.1, -0.1}, {0.1, 0.1}},

@@ -57,7 +57,7 @@ ENTITY {
         -- mining_particle = "volcanic-pipe-particle",
         mining_time = 4,
         results = {
-            {"kimberlite-rock", 1}
+            {type = "item", name = "kimberlite-rock", amount = 1}
         }
     },
     collision_box = {{-3.5, -3.5}, {3.5, 3.5}},
