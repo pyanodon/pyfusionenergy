@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "xyhiphoe-blood", amount = 20},
+        {type = "fluid", name = "arthropod-blood", amount = 20},
         {type = "fluid", name = "sulfuric-acid", amount = 200}
     },
     results = {

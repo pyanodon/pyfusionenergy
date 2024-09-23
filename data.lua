@@ -43,7 +43,7 @@ require 'prototypes/fluids/molybdenite-pulp'
 require 'prototypes/fluids/molybdenum-pulp'
 require 'prototypes/fluids/vacuum'
 require 'prototypes/fluids/phytoplankton'
-require 'prototypes/fluids/xyhiphoe-blood'
+require 'prototypes/fluids/arthropod-blood' --TODO: migrate the blood for release
 require 'prototypes/fluids/pressured-water'
 require 'prototypes/fluids/waste-water'
 require 'prototypes/fluids/vanabins'

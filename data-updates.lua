@@ -69,7 +69,7 @@ local recipes_list =
   "steam-heating",
   "vacuum",
   "wall-shield",
-  "xyhiphoe-blood",
+  "arthropod-blood",
   "xyhiphoe-hydrocyclone",
 }
 
