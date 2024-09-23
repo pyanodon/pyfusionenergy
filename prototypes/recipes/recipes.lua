@@ -122,7 +122,7 @@ RECIPE {
 
 RECIPE {
     type = "recipe",
-    name = "xyhiphoe-blood",
+    name = "arthropod-blood",
     category = "xyhiphoe",
     enabled = false,
     energy_required = 12,
@@ -132,10 +132,10 @@ RECIPE {
         {type = "item", name = "tailings-dust", amount = 30}
     },
     results = {
-        {type = "fluid", name = "xyhiphoe-blood", amount = 20},
+        {type = "fluid", name = "arthropod-blood", amount = 20},
         {type = "fluid", name = "waste-water", amount = 500}
     },
-    main_product = "xyhiphoe-blood",
+    main_product = "arthropod-blood",
 }:add_unlock('xyhiphoe')
 
 RECIPE {
@@ -146,7 +146,7 @@ RECIPE {
     energy_required = 30,
     ingredients = {
         {type = "fluid", name = "pressured-water", amount = 500},
-        {type = "fluid", name = "xyhiphoe-blood", amount = 50}
+        {type = "fluid", name = "arthropod-blood", amount = 50}
     },
     results = {
         {type = "fluid", name = "organic-solvent", amount = 100}
