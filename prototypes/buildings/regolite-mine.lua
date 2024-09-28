@@ -65,7 +65,7 @@ ENTITY {
     circuit_connector_sprites = circuit_connector_definitions["regolite-mine"].sprites,
     circuit_wire_max_distance = default_circuit_wire_max_distance,
     graphics_set = {
-        animations = {
+        animation = {
             layers = {
                 {
                     filename = "__pyfusionenergygraphics__/graphics/entity/regolite-mine/regolite-left.png",
