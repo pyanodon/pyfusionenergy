@@ -65,7 +65,7 @@ ENTITY {
     circuit_connector_sprites = circuit_connector_definitions["diamond-mine"].sprites,
     circuit_wire_max_distance = default_circuit_wire_max_distance,
     graphics_set = {
-        animations = {
+        animation = {
             layers = {
                 {
                     filename = "__pyfusionenergygraphics__/graphics/entity/diamond-mine/diamond-left.png",
