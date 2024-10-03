@@ -98,6 +98,7 @@ ENTITY {
             }
         },
     },
+    fluid_boxes_off_when_no_fluid_recipe = false,
     fluid_boxes = {
         {
             production_type = "output",
@@ -128,7 +129,6 @@ ENTITY {
                 {flow_direction = "input", position = {-1.0, -3.2}, direction = defines.direction.north}
             }
         },
-        off_when_no_fluid_recipe = false
     },
     vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
     working_sound = {
