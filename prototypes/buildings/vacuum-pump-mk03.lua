@@ -97,8 +97,8 @@ ENTITY {
             pipe_covers = py.pipe_covers(false, true, false, false),
             volume = 2000,
             pipe_connections = {
-                {flow_direction = "input-output", position = {-1.2, -0}, direction = defines.direction.west},
-                {flow_direction = "input-output", position = {1.2, -0}, direction = defines.direction.east}
+                {flow_direction = "input-output", position = {-1.0, -0}, direction = defines.direction.west},
+                {flow_direction = "input-output", position = {1.0, -0}, direction = defines.direction.east}
             }
         },
         {
@@ -107,8 +107,8 @@ ENTITY {
             pipe_covers = py.pipe_covers(false, true, false, false),
             volume = 2000,
             pipe_connections = {
-                {flow_direction = "input-output", position = {0.0, 1.2}, direction = defines.direction.south},
-                {flow_direction = "input-output", position = {0.0, -1.2}, direction = defines.direction.north}
+                {flow_direction = "input-output", position = {0.0, 1.0}, direction = defines.direction.south},
+                {flow_direction = "input-output", position = {0.0, -1.0}, direction = defines.direction.north}
             }
         },
     },
