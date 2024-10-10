@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {type = "item", name = 'kmauts-enclosure-mk02', amount = 1},
-                --{type = "item", name = 'titanium-plate', amount = 20},
-                --{type = "item", name = 'stainless-steel', amount = 20},
-                --{type = "item", name = 'tin-plate', amount = 20},
-                {type = "item", name = 'processing-unit', amount = 10}
-            },
+        {type = "item", name = "kmauts-enclosure-mk02", amount = 1},
+        --{type = "item", name = 'titanium-plate', amount = 20},
+        --{type = "item", name = 'stainless-steel', amount = 20},
+        --{type = "item", name = 'tin-plate', amount = 20},
+        {type = "item", name = "processing-unit",       amount = 10}
+    },
     results = {
         {type = "item", name = "kmauts-enclosure-mk03", amount = 1}
     }
@@ -19,7 +19,7 @@ ITEM {
     type = "item",
     name = "kmauts-enclosure-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/kmauts-enclosure-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk03",
     order = "d",
@@ -31,7 +31,7 @@ ENTITY {
     type = "assembling-machine",
     name = "kmauts-enclosure-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/kmauts-enclosure-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "kmauts-enclosure-mk03"},
     fast_replaceable_group = "kmauts-enclosure",
@@ -202,14 +202,14 @@ ENTITY {
                     shift = {0.248, -0.591},
                     priority = "low"
                 },
-    			{
+                {
                     filename = "__pyfusionenergygraphics__/graphics/entity/kmauts-enclosure/layer-2-mask.png",
                     width = 338,
                     height = 357,
                     frame_count = 1,
                     shift = {0.248, -0.591},
                     priority = "low",
-    				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
                 },
                 --TREE
                 {

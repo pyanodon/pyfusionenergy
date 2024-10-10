@@ -5,10 +5,10 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "fusion-reactor-mk01", amount = 1},
-        {type = "item", name = "mixer-mk01", amount = 1},
-        {type = "item", name = "advanced-circuit", amount = 50},
-        {type = "item", name = "niobium-plate", amount = 100},
-        {type = "item", name = "super-alloy", amount = 50}
+        {type = "item", name = "mixer-mk01",          amount = 1},
+        {type = "item", name = "advanced-circuit",    amount = 50},
+        {type = "item", name = "niobium-plate",       amount = 100},
+        {type = "item", name = "super-alloy",         amount = 50}
     },
     results = {
         {type = "item", name = "fusion-reactor-mk02", amount = 1}
@@ -19,7 +19,7 @@ ITEM {
     type = "item",
     name = "fusion-reactor-mk02",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-reactor-mk02.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-reactors",
     order = "a",
@@ -31,7 +31,7 @@ ENTITY {
     type = "assembling-machine",
     name = "fusion-reactor-mk02",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-reactor-mk02.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "fusion-reactor-mk02"},
     fast_replaceable_group = "fusion-reactor",

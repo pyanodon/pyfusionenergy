@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "gasturbinemk03", amount = 2},
-        {type = "item", name = "pipe", amount = 20} --pyindustry niobium-pipe
+        {type = "item", name = "pipe",           amount = 20} --pyindustry niobium-pipe
     },
     results = {
         {type = "item", name = "py-turbine", amount = 1}
@@ -16,7 +16,7 @@ ITEM {
     type = "item",
     name = "py-turbine",
     icon = "__pyfusionenergygraphics__/graphics/icons/py-turbine.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-reactors",
     order = "x",
@@ -28,7 +28,7 @@ ENTITY {
     type = "generator",
     name = "py-turbine",
     icon = "__pyfusionenergygraphics__/graphics/icons/py-turbine.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "py-turbine"},
     max_health = 500,
@@ -53,7 +53,7 @@ ENTITY {
         --pipe_picture = pipe_pictures({0, 3}),
         production_type = "input-output",
         pipe_connections = {
-            {flow_direction = "input-output", position = {2.0, 0.0}, direction = defines.direction.east},
+            {flow_direction = "input-output", position = {2.0, 0.0},  direction = defines.direction.east},
             {flow_direction = "input-output", position = {-2.0, 0.0}, direction = defines.direction.west}
         }
     },

@@ -1,4 +1,4 @@
-RECIPE{
+RECIPE {
     type = "recipe",
     name = "industrial-solvent",
     category = "mixer",
@@ -6,8 +6,8 @@ RECIPE{
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "organic-solvent", amount = 200},
-        {type = "fluid", name = "soda-ash", amount = 200},
-        {type = "fluid", name = "syngas", amount = 200}
+        {type = "fluid", name = "soda-ash",        amount = 200},
+        {type = "fluid", name = "syngas",          amount = 200}
     },
     results = {
         {type = "fluid", name = "industrial-solvent", amount = 100}
@@ -18,7 +18,7 @@ FLUID {
     type = "fluid",
     name = "industrial-solvent",
     icon = "__pyfusionenergygraphics__/graphics/icons/industrial-solvent.png",
-	icon_size = 32,
+    icon_size = 32,
     default_temperature = 10,
     base_flow_rate = 100,
     base_color = {r = 0.941, g = 0.305, b = 0.215},

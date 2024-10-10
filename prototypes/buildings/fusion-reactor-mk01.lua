@@ -5,11 +5,11 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "vacuum-pump-mk01", amount = 5},
-        {type = "item", name = "mixer-mk01", amount = 1},
+        {type = "item", name = "mixer-mk01",       amount = 1},
         {type = "item", name = "advanced-circuit", amount = 50},
-        {type = "item", name = "steel-plate", amount = 120},
-        {type = "item", name = "gasturbinemk03", amount = 1},
-        {type = "item", name = "super-alloy", amount = 200}
+        {type = "item", name = "steel-plate",      amount = 120},
+        {type = "item", name = "gasturbinemk03",   amount = 1},
+        {type = "item", name = "super-alloy",      amount = 200}
         --add glass
     },
     results = {
@@ -21,7 +21,7 @@ ITEM {
     type = "item",
     name = "fusion-reactor-mk01",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-reactor-mk01.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-reactors",
     order = "a",
@@ -33,7 +33,7 @@ ENTITY {
     type = "assembling-machine",
     name = "fusion-reactor-mk01",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-reactor-mk01.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "fusion-reactor-mk01"},
     fast_replaceable_group = "fusion-reactor",

@@ -13,10 +13,10 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {type = "item", name = 'thickener-mk02', amount = 1},
-                {type = "item", name = "electric-engine-unit", amount = 3},
-                {type = "item", name = 'processing-unit', amount = 10}
-            },
+        {type = "item", name = "thickener-mk02",       amount = 1},
+        {type = "item", name = "electric-engine-unit", amount = 3},
+        {type = "item", name = "processing-unit",      amount = 10}
+    },
     results = {
         {type = "item", name = "thickener-mk03", amount = 1}
     }
@@ -26,7 +26,7 @@ ITEM {
     type = "item",
     name = "thickener-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/thickener-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk03",
     order = "b",
@@ -38,7 +38,7 @@ ENTITY {
     type = "assembling-machine",
     name = "thickener-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/thickener-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "thickener-mk03"},
     fast_replaceable_group = "thickener",
@@ -72,7 +72,7 @@ ENTITY {
                     animation_speed = 1,
                     shift = {0.19, 1.42}
                 },
-    			{
+                {
                     filename = "__pyfusionenergygraphics__/graphics/entity/thickener/thickener-bottom-mask.png",
                     width = 237,
                     height = 132,
@@ -80,7 +80,7 @@ ENTITY {
                     frame_count = 100,
                     animation_speed = 1,
                     shift = {0.19, 1.42},
-    				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
                 },
                 {
                     filename = "__pyfusionenergygraphics__/graphics/entity/thickener/thickener-top.png",
@@ -91,7 +91,7 @@ ENTITY {
                     animation_speed = 1,
                     shift = {0.19, -2.640}
                 },
-    			{
+                {
                     filename = "__pyfusionenergygraphics__/graphics/entity/thickener/thickener-top-mask.png",
                     width = 237,
                     height = 128,
@@ -99,7 +99,7 @@ ENTITY {
                     frame_count = 100,
                     animation_speed = 1,
                     shift = {0.19, -2.640},
-    				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
                 }
             }
         },

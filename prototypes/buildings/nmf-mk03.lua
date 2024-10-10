@@ -13,10 +13,10 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-                {type = "item", name = 'nmf-mk02', amount = 1},
-                {type = "item", name = "electric-engine-unit", amount = 5},
-                {type = "item", name = 'processing-unit', amount = 10}
-            },
+        {type = "item", name = "nmf-mk02",             amount = 1},
+        {type = "item", name = "electric-engine-unit", amount = 5},
+        {type = "item", name = "processing-unit",      amount = 10}
+    },
     results = {
         {type = "item", name = "nmf-mk03", amount = 1}
     }
@@ -26,7 +26,7 @@ ITEM {
     type = "item",
     name = "nmf-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/nmf-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk03",
     order = "b",
@@ -38,7 +38,7 @@ ENTITY {
     type = "assembling-machine",
     name = "nmf-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/nmf-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "nmf-mk03"},
     fast_replaceable_group = "nmf",
@@ -71,16 +71,16 @@ ENTITY {
                     frame_count = 80,
                     animation_speed = 0.8,
                     shift = {-1.5, -0.0}
-                },{
-                    filename = "__pyfusionenergygraphics__/graphics/entity/nmf/left-mask.png",
-                    width = 128,
-                    height = 245,
-                    line_length = 15,
-                    frame_count = 80,
-                    animation_speed = 0.8,
-                    shift = {-1.5, -0.0},
-    				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
-                },
+                }, {
+                filename = "__pyfusionenergygraphics__/graphics/entity/nmf/left-mask.png",
+                width = 128,
+                height = 245,
+                line_length = 15,
+                frame_count = 80,
+                animation_speed = 0.8,
+                shift = {-1.5, -0.0},
+                tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+            },
                 {
                     filename = "__pyfusionenergygraphics__/graphics/entity/nmf/right.png",
                     width = 104,
@@ -90,7 +90,7 @@ ENTITY {
                     animation_speed = 0.8,
                     shift = {2.1, -0.0}
                 },
-    			{
+                {
                     filename = "__pyfusionenergygraphics__/graphics/entity/nmf/right-mask.png",
                     width = 104,
                     height = 245,
@@ -98,7 +98,7 @@ ENTITY {
                     frame_count = 80,
                     animation_speed = 0.8,
                     shift = {2.1, -0.0},
-    				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
                 }
             }
         },

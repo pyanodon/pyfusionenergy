@@ -6,15 +6,15 @@ RECIPE {
     energy_required = 8,
     ingredients = {
         {type = "fluid", name = "diamond-concentrate", amount = 200},
-        {type = "fluid", name = "water", amount = 500}
+        {type = "fluid", name = "water",               amount = 500}
     },
     results = {
-        {type = "fluid", name = "jig-concentrate", amount = 100},
+        {type = "fluid", name = "jig-concentrate",   amount = 100},
         {type = "fluid", name = "dirty-water-light", amount = 250}
     },
     main_product = "jig-concentrate",
     icon = "__pyfusionenergygraphics__/graphics/icons/jig-diamond-concentrate.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "j"
 }
@@ -40,13 +40,13 @@ RECIPE {
     subgroup = "py-fusion-fluids",
     order = "j"
 }
-]]--
+]] --
 
 FLUID {
     type = "fluid",
     name = "jig-concentrate",
     icon = "__pyfusionenergygraphics__/graphics/icons/jig-concentrate.png",
-	icon_size = 32,
+    icon_size = 32,
     default_temperature = 10,
     base_flow_rate = 100,
     base_color = {r = 0.478, g = 0.8, b = 0.949},

@@ -6,16 +6,16 @@ RECIPE {
     energy_required = 25,
     ingredients = {
         {type = "fluid", name = "kimberlite-pulp", amount = 100},
-        {type = "fluid", name = "water", amount = 600}
+        {type = "fluid", name = "water",           amount = 600}
     },
     results = {
-        {type = "fluid", name = "diamond-tailings", amount = 200},
-        {type = "item", name = "kimberlite-residue", amount = 25},
+        {type = "fluid", name = "diamond-tailings",    amount = 200},
+        {type = "item",  name = "kimberlite-residue",  amount = 25},
         {type = "fluid", name = "diamond-concentrate", amount = 20}
     },
     main_product = "diamond-tailings",
     icon = "__pyfusionenergygraphics__/graphics/icons/pan-diamond-tailings.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "j"
 }
@@ -24,7 +24,7 @@ FLUID {
     type = "fluid",
     name = "diamond-tailings",
     icon = "__pyfusionenergygraphics__/graphics/icons/diamond-tailings.png",
-	icon_size = 32,
+    icon_size = 32,
     default_temperature = 10,
     base_flow_rate = 100,
     base_color = {r = 0.317, g = 0.470, b = 0.482},

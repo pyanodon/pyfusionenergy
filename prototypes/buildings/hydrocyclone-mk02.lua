@@ -4,11 +4,11 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {type = "item", name = "hydrocyclone-mk01", amount = 1},
-                {type = "item", name = "engine-unit", amount = 3},
-                {type = "item", name = 'nexelit-plate', amount = 15},
-                {type = "item", name = 'advanced-circuit', amount = 10}
-            },
+        {type = "item", name = "hydrocyclone-mk01", amount = 1},
+        {type = "item", name = "engine-unit",       amount = 3},
+        {type = "item", name = "nexelit-plate",     amount = 15},
+        {type = "item", name = "advanced-circuit",  amount = 10}
+    },
     results = {
         {type = "item", name = "hydrocyclone-mk02", amount = 1}
     }
@@ -18,7 +18,7 @@ ITEM {
     type = "item",
     name = "hydrocyclone-mk02",
     icon = "__pyfusionenergygraphics__/graphics/icons/hydrocyclone-mk02.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk02",
     order = "c",
@@ -30,7 +30,7 @@ ENTITY {
     type = "assembling-machine",
     name = "hydrocyclone-mk02",
     icon = "__pyfusionenergygraphics__/graphics/icons/hydrocyclone-mk02.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "hydrocyclone-mk02"},
     fast_replaceable_group = "hydrocyclone",
@@ -60,42 +60,42 @@ ENTITY {
                 south_position = {0.687, -1.281},
                 east_position = {0.687, -1.281},
                 animation = {
-    				layers = {
-    					{
-                    filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-on.png",
-                    frame_count = 1,
-                    width = 270,
-                    height = 304
-    				},
-    				{
-                    filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-on-mask.png",
-                    frame_count = 1,
-                    width = 270,
-                    height = 304,
-    				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
-    				}
-    				}
+                    layers = {
+                        {
+                            filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-on.png",
+                            frame_count = 1,
+                            width = 270,
+                            height = 304
+                        },
+                        {
+                            filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-on-mask.png",
+                            frame_count = 1,
+                            width = 270,
+                            height = 304,
+                            tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+                        }
+                    }
                 }
             }
         },
         animation = {
-    		layers = {
-    			{
-            filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-off.png",
-            width = 270,
-            height = 304,
-            frame_count = 1,
-            shift = {0.687, -1.281}
-    		},
-    		{
-            filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-off-mask.png",
-            width = 270,
-            height = 304,
-            frame_count = 1,
-            shift = {0.687, -1.281},
-    		tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
-    		},
-    	}
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-off.png",
+                    width = 270,
+                    height = 304,
+                    frame_count = 1,
+                    shift = {0.687, -1.281}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-off-mask.png",
+                    width = 270,
+                    height = 304,
+                    frame_count = 1,
+                    shift = {0.687, -1.281},
+                    tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+                },
+            }
         },
     },
     fluid_boxes_off_when_no_fluid_recipe = true,

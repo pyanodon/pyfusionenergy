@@ -13,12 +13,12 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {type = "item", name = "vacuum-pump-mk01", amount = 1},
-        {type = "item", name = "steel-plate", amount = 10},
+        {type = "item", name = "vacuum-pump-mk01",   amount = 1},
+        {type = "item", name = "steel-plate",        amount = 10},
         {type = "item", name = "electronic-circuit", amount = 3},
-        {type = "item", name = "engine-unit", amount = 1},
-        {type = "item", name = "iron-gear-wheel", amount = 10},
-        {type = "item", name = "pipe", amount = 10}
+        {type = "item", name = "engine-unit",        amount = 1},
+        {type = "item", name = "iron-gear-wheel",    amount = 10},
+        {type = "item", name = "pipe",               amount = 10}
     },
     results = {
         {type = "item", name = "vacuum-pump-mk02", amount = 1}
@@ -29,7 +29,7 @@ ITEM {
     type = "item",
     name = "vacuum-pump-mk02",
     icon = "__pyfusionenergygraphics__/graphics/icons/vacuum-pump-mk02.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk02",
     order = "c",
@@ -41,7 +41,7 @@ ENTITY {
     type = "assembling-machine",
     name = "vacuum-pump-mk02",
     icon = "__pyfusionenergygraphics__/graphics/icons/vacuum-pump-mk02.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "vacuum-pump-mk02"},
     fast_replaceable_group = "vacuum-pump",
@@ -65,27 +65,27 @@ ENTITY {
     energy_usage = "3MW",
     graphics_set = {
         animation = {
-    	layers = {
-    		{
-            filename = "__pyfusionenergygraphics__/graphics/entity/vacuum-pump/vacuum-pump.png",
-            width = 110,
-            height = 148,
-            frame_count = 20,
-            line_length = 5,
-            animation_speed = 1,
-            shift = {0.187, -0.656}
-    		},
-    		{
-            filename = "__pyfusionenergygraphics__/graphics/entity/vacuum-pump/vacuum-pump-mask.png",
-            width = 110,
-            height = 148,
-            frame_count = 20,
-            line_length = 5,
-            animation_speed = 1,
-            tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0},
-            shift = {0.187, -0.656}
-    		}
-    		}
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/vacuum-pump/vacuum-pump.png",
+                    width = 110,
+                    height = 148,
+                    frame_count = 20,
+                    line_length = 5,
+                    animation_speed = 1,
+                    shift = {0.187, -0.656}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/vacuum-pump/vacuum-pump-mask.png",
+                    width = 110,
+                    height = 148,
+                    frame_count = 20,
+                    line_length = 5,
+                    animation_speed = 1,
+                    tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0},
+                    shift = {0.187, -0.656}
+                }
+            }
         },
     },
     fluid_boxes_off_when_no_fluid_recipe = true,
@@ -97,7 +97,7 @@ ENTITY {
             volume = 2000,
             pipe_connections = {
                 {flow_direction = "input-output", position = {-1.0, -0}, direction = defines.direction.west},
-                {flow_direction = "input-output", position = {1.0, -0}, direction = defines.direction.east}
+                {flow_direction = "input-output", position = {1.0, -0},  direction = defines.direction.east}
             }
         },
         {
@@ -106,7 +106,7 @@ ENTITY {
             pipe_covers = py.pipe_covers(false, true, false, false),
             volume = 2000,
             pipe_connections = {
-                {flow_direction = "input-output", position = {0.0, 1.0}, direction = defines.direction.south},
+                {flow_direction = "input-output", position = {0.0, 1.0},  direction = defines.direction.south},
                 {flow_direction = "input-output", position = {0.0, -1.0}, direction = defines.direction.north}
             }
         },

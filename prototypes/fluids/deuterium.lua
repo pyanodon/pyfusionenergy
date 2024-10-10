@@ -2,7 +2,7 @@ FLUID {
     type = "fluid",
     name = "deuterium",
     icon = "__pyfusionenergygraphics__/graphics/icons/deuterium.png",
-	icon_size = 32,
+    icon_size = 32,
     default_temperature = 10,
     base_flow_rate = 100,
     base_color = {r = 0.423, g = 0.678, b = 0.823},

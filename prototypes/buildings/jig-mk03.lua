@@ -59,10 +59,10 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {type = "item", name = 'jig-mk02', amount = 1},
-                {type = "item", name = "electric-engine-unit", amount = 6},
-                {type = "item", name = 'processing-unit', amount = 10}
-            },
+        {type = "item", name = "jig-mk02",             amount = 1},
+        {type = "item", name = "electric-engine-unit", amount = 6},
+        {type = "item", name = "processing-unit",      amount = 10}
+    },
     results = {
         {type = "item", name = "jig-mk03", amount = 1}
     },
@@ -72,7 +72,7 @@ ITEM {
     type = "item",
     name = "jig-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/jig-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk03",
     order = "d",
@@ -84,7 +84,7 @@ ENTITY {
     type = "assembling-machine",
     name = "jig-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/jig-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "jig-mk03"},
     fast_replaceable_group = "jig",
@@ -114,47 +114,47 @@ ENTITY {
                 south_position = {0.48, 0.417},
                 east_position = {0.48, 0.417},
                 animation = {
-    			layers = {
-    			{
-                    filename = "__pyfusionenergygraphics__/graphics/entity/jig/on.png",
-                    frame_count = 120,
-                    line_length = 12,
-                    width = 160,
-                    height = 192,
-                    animation_speed = 0.4
-    			},
-    			{
-                    filename = "__pyfusionenergygraphics__/graphics/entity/jig/on-mask.png",
-                    frame_count = 120,
-                    line_length = 12,
-                    width = 160,
-                    height = 192,
-                    animation_speed = 0.4,
-    				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
-    			}
-    			}
+                    layers = {
+                        {
+                            filename = "__pyfusionenergygraphics__/graphics/entity/jig/on.png",
+                            frame_count = 120,
+                            line_length = 12,
+                            width = 160,
+                            height = 192,
+                            animation_speed = 0.4
+                        },
+                        {
+                            filename = "__pyfusionenergygraphics__/graphics/entity/jig/on-mask.png",
+                            frame_count = 120,
+                            line_length = 12,
+                            width = 160,
+                            height = 192,
+                            animation_speed = 0.4,
+                            tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                        }
+                    }
                 }
             }
         },
         animation = {
-    	layers = {
-    	{
-            filename = "__pyfusionenergygraphics__/graphics/entity/jig/off.png",
-            width = 276,
-            height = 268,
-            frame_count = 1,
-            shift = {0.3, -0.2}
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/jig/off.png",
+                    width = 276,
+                    height = 268,
+                    frame_count = 1,
+                    shift = {0.3, -0.2}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/jig/off-mask.png",
+                    width = 276,
+                    height = 268,
+                    frame_count = 1,
+                    shift = {0.3, -0.2},
+                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                }
+            }
         },
-    	{
-            filename = "__pyfusionenergygraphics__/graphics/entity/jig/off-mask.png",
-            width = 276,
-            height = 268,
-            frame_count = 1,
-            shift = {0.3, -0.2},
-    		tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
-        }
-    	}
-    	},
     },
     fluid_boxes_off_when_no_fluid_recipe = true,
     fluid_boxes = {

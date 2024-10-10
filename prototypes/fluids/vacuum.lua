@@ -14,7 +14,7 @@ FLUID {
     type = "fluid",
     name = "vacuum",
     icon = "__pyfusionenergygraphics__/graphics/icons/vacuum.png",
-	icon_size = 32,
+    icon_size = 32,
     default_temperature = 15,
     base_flow_rate = 100,
     base_color = {r = 0.01, g = 0.01, b = 0.01},

@@ -5,8 +5,8 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "fluid", name = "water", amount = 300},
-        {type = "item", name = "molybdenite-dust", amount = 20}
+        {type = "fluid", name = "water",            amount = 300},
+        {type = "item",  name = "molybdenite-dust", amount = 20}
     },
     results = {
         {type = "fluid", name = "molybdenite-pulp", amount = 100}
@@ -17,7 +17,7 @@ FLUID {
     type = "fluid",
     name = "molybdenite-pulp",
     icon = "__pyfusionenergygraphics__/graphics/icons/molybdenite-pulp.png",
-	icon_size = 32,
+    icon_size = 32,
     default_temperature = 10,
     base_flow_rate = 100,
     base_color = {r = 0.317, g = 0.615, b = 0.85},

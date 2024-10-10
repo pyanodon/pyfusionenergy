@@ -14,10 +14,10 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "vacuum-pump-mk03", amount = 1},
-        {type = "item", name = "nbti-alloy", amount = 10},
-        {type = "item", name = "super-alloy", amount = 10},
-        {type = "item", name = "iron-gear-wheel", amount = 40},
-        {type = "item", name = "processing-unit", amount = 15},
+        {type = "item", name = "nbti-alloy",       amount = 10},
+        {type = "item", name = "super-alloy",      amount = 10},
+        {type = "item", name = "iron-gear-wheel",  amount = 40},
+        {type = "item", name = "processing-unit",  amount = 15},
     },
     results = {
         {type = "item", name = "vacuum-pump-mk04", amount = 1}
@@ -28,7 +28,7 @@ ITEM {
     type = "item",
     name = "vacuum-pump-mk04",
     icon = "__pyfusionenergygraphics__/graphics/icons/vacuum-pump-mk04.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk04",
     order = "c",
@@ -40,7 +40,7 @@ ENTITY {
     type = "assembling-machine",
     name = "vacuum-pump-mk04",
     icon = "__pyfusionenergygraphics__/graphics/icons/vacuum-pump-mk04.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "vacuum-pump-mk04"},
     fast_replaceable_group = "vacuum-pump",
@@ -64,27 +64,27 @@ ENTITY {
     energy_usage = "10MW",
     graphics_set = {
         animation = {
-    	layers = {
-    		{
-            filename = "__pyfusionenergygraphics__/graphics/entity/vacuum-pump/vacuum-pump.png",
-            width = 110,
-            height = 148,
-            frame_count = 20,
-            line_length = 5,
-            animation_speed = 1,
-            shift = {0.187, -0.656}
-    		},
-    		{
-            filename = "__pyfusionenergygraphics__/graphics/entity/vacuum-pump/vacuum-pump-mask.png",
-            width = 110,
-            height = 148,
-            frame_count = 20,
-            line_length = 5,
-            animation_speed = 1,
-            tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0},
-            shift = {0.187, -0.656}
-    		}
-    		}
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/vacuum-pump/vacuum-pump.png",
+                    width = 110,
+                    height = 148,
+                    frame_count = 20,
+                    line_length = 5,
+                    animation_speed = 1,
+                    shift = {0.187, -0.656}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/vacuum-pump/vacuum-pump-mask.png",
+                    width = 110,
+                    height = 148,
+                    frame_count = 20,
+                    line_length = 5,
+                    animation_speed = 1,
+                    tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0},
+                    shift = {0.187, -0.656}
+                }
+            }
         },
     },
     fluid_boxes_off_when_no_fluid_recipe = true,
@@ -96,7 +96,7 @@ ENTITY {
             volume = 2000,
             pipe_connections = {
                 {flow_direction = "input-output", position = {-1.0, -0}, direction = defines.direction.west},
-                {flow_direction = "input-output", position = {1.0, -0}, direction = defines.direction.east}
+                {flow_direction = "input-output", position = {1.0, -0},  direction = defines.direction.east}
             }
         },
         {
@@ -105,7 +105,7 @@ ENTITY {
             pipe_covers = py.pipe_covers(false, true, false, false),
             volume = 2000,
             pipe_connections = {
-                {flow_direction = "input-output", position = {0.0, 1.0}, direction = defines.direction.south},
+                {flow_direction = "input-output", position = {0.0, 1.0},  direction = defines.direction.south},
                 {flow_direction = "input-output", position = {0.0, -1.0}, direction = defines.direction.north}
             }
         },

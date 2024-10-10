@@ -1,12 +1,12 @@
-require 'prototypes/updates/base-updates'
-require 'prototypes/updates/pycoalprocessing-updates'
+require "prototypes/updates/base-updates"
+require "prototypes/updates/pycoalprocessing-updates"
 
 ITEM("production-science-pack", "tool").icon = "__pyfusionenergygraphics__/graphics/icons/production-science-pack.png"
 ITEM("production-science-pack", "tool"):set("icon_size", 64)
 ITEM("production-science-pack", "tool"):set("icon_mipmaps", nil)
 
 local recipes_list =
-	{
+{
   "acetylene",
   "b2o3-milling",
   "bacteria-1",
@@ -77,5 +77,5 @@ local recipes_list =
 py.allow_productivity(recipes_list)
 
 if register_cache_file ~= nil then
-    register_cache_file({"pycoalprocessing", "pyfusionenergy"}, "__pyfusionenergy__/cached-configs/pycoalprocessing+pyfusionenergy.lua")
+  register_cache_file({"pycoalprocessing", "pyfusionenergy"}, "__pyfusionenergy__/cached-configs/pycoalprocessing+pyfusionenergy.lua")
 end
