@@ -59,11 +59,11 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "vacuum-pump-mk01", amount = 3},
-        {type = "item", name = "mixer-mk01", amount = 1},
+        {type = "item", name = "mixer-mk01",       amount = 1},
         {type = "item", name = "advanced-circuit", amount = 25},
-        {type = "item", name = "steel-plate", amount = 20},
-        {type = "item", name = "tailings-pond", amount = 1},
-        {type = "item", name = "pipe", amount = 40} --updated-bob titanium-pipe
+        {type = "item", name = "steel-plate",      amount = 20},
+        {type = "item", name = "tailings-pond",    amount = 1},
+        {type = "item", name = "pipe",             amount = 40} --updated-bob titanium-pipe
     },
     results = {
         {type = "item", name = "centrifugal-pan-mk01", amount = 1}
@@ -74,7 +74,7 @@ ITEM {
     type = "item",
     name = "centrifugal-pan-mk01",
     icon = "__pyfusionenergygraphics__/graphics/icons/centrifugal-pan-mk01.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk01",
     order = "d",
@@ -86,7 +86,7 @@ ENTITY {
     type = "assembling-machine",
     name = "centrifugal-pan-mk01",
     icon = "__pyfusionenergygraphics__/graphics/icons/centrifugal-pan-mk01.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "centrifugal-pan-mk01"},
     fast_replaceable_group = "centrifugal-pan",
@@ -126,23 +126,23 @@ ENTITY {
             }
         },
         animation = {
-    		layers = {
-    			{
-    			filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/off.png",
-    			width = 320,
-    			height = 328,
-    			frame_count = 1,
-    			shift = {0.02, -0.10}
-    			},
-    			{
-    			filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/off-mask.png",
-    			width = 320,
-    			height = 328,
-    			frame_count = 1,
-    			shift = {0.02, -0.10},
-    			tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
-    			}
-    		}
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/off.png",
+                    width = 320,
+                    height = 328,
+                    frame_count = 1,
+                    shift = {0.02, -0.10}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/off-mask.png",
+                    width = 320,
+                    height = 328,
+                    frame_count = 1,
+                    shift = {0.02, -0.10},
+                    tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+                }
+            }
         },
     },
     fluid_boxes_off_when_no_fluid_recipe = true,

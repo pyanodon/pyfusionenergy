@@ -5,9 +5,9 @@ RECIPE {
     enabled = false,
     energy_required = 6,
     ingredients = {
-        {type = "item", name = "mukmoux-fat", amount = 20},
-        {type = "item", name = "nexelit-plate", amount = 10},
-        {type = "fluid", name = "lubricant", amount = 200}
+        {type = "item",  name = "mukmoux-fat",   amount = 20},
+        {type = "item",  name = "nexelit-plate", amount = 10},
+        {type = "fluid", name = "lubricant",     amount = 200}
         --add bobs lithium
     },
     results = {
@@ -19,7 +19,7 @@ FLUID {
     type = "fluid",
     name = "grease",
     icon = "__pyfusionenergygraphics__/graphics/icons/grease.png",
-	icon_size = 32,
+    icon_size = 32,
     default_temperature = 10,
     base_flow_rate = 100,
     base_color = {r = 0.541, g = 0.686, b = 0.250},

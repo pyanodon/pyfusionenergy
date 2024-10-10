@@ -16,7 +16,7 @@ FLUID {
     type = "fluid",
     name = "pressured-vpulp",
     icon = "__pyfusionenergygraphics__/graphics/icons/pressured-vpulp.png",
-	icon_size = 32,
+    icon_size = 32,
     default_temperature = 10,
     base_flow_rate = 100,
     base_color = {r = 0.870, g = 0, b = 1},

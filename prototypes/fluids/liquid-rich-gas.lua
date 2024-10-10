@@ -6,21 +6,21 @@ RECIPE {
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "rich-gas", amount = 4},
-        {type = "fluid", name = "water", amount = 100},
+        {type = "fluid", name = "water",    amount = 100},
         {type = "fluid", name = "gasoline", amount = 5}
     },
     results = {
-        {type = "fluid", name = "steam", amount = 100, temperature = 150, catalyst_amount = 100},
+        {type = "fluid", name = "steam",           amount = 100, temperature = 150, catalyst_amount = 100},
         {type = "fluid", name = "liquid-rich-gas", amount = 4}
     },
-    main_product= "liquid-rich-gas",
+    main_product = "liquid-rich-gas",
 }
 
 FLUID {
     type = "fluid",
     name = "liquid-rich-gas",
     icon = "__pyfusionenergygraphics__/graphics/icons/liquid-rich-gas.png",
-	icon_size = 32,
+    icon_size = 32,
     default_temperature = 10,
     base_flow_rate = 100,
     base_color = {r = 0.235, g = 0.65, b = 0.435},

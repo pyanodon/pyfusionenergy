@@ -13,11 +13,11 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {type = "item", name = 'genlab-mk03', amount = 1},
-                --{type = "item", name = 'super-steel', amount = 30},
-                --{type = "item", name = 'low-density-structure', amount = 15},
-                --{type = "item", name = 'nbfe-alloy', amount = 20}
-            },
+        {type = "item", name = "genlab-mk03", amount = 1},
+        --{type = "item", name = 'super-steel', amount = 30},
+        --{type = "item", name = 'low-density-structure', amount = 15},
+        --{type = "item", name = 'nbfe-alloy', amount = 20}
+    },
     results = {
         {type = "item", name = "genlab-mk04", amount = 1}
     }
@@ -27,7 +27,7 @@ ITEM {
     type = "item",
     name = "genlab-mk04",
     icon = "__pyfusionenergygraphics__/graphics/icons/genlab-mk04.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk04",
     order = "d",
@@ -39,7 +39,7 @@ ENTITY {
     type = "assembling-machine",
     name = "genlab-mk04",
     icon = "__pyfusionenergygraphics__/graphics/icons/genlab-mk04.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "genlab-mk04"},
     fast_replaceable_group = "genlab",
@@ -111,23 +111,23 @@ ENTITY {
             }
         },
         animation = {
-    		layers = {
-    		{
-            filename = "__pyfusionenergygraphics__/graphics/entity/genlab/off.png",
-            width = 224,
-            height = 257,
-            frame_count = 1,
-            shift = {-0.00, -0.15}
-    		},
-    		{
-            filename = "__pyfusionenergygraphics__/graphics/entity/genlab/off-mask.png",
-            width = 224,
-            height = 257,
-            frame_count = 1,
-            shift = {-0.00, -0.15},
-    		tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
-    		}
-    		}
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/genlab/off.png",
+                    width = 224,
+                    height = 257,
+                    frame_count = 1,
+                    shift = {-0.00, -0.15}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/genlab/off-mask.png",
+                    width = 224,
+                    height = 257,
+                    frame_count = 1,
+                    shift = {-0.00, -0.15},
+                    tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
+                }
+            }
         },
     },
     fluid_boxes_off_when_no_fluid_recipe = true,

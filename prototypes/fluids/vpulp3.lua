@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "fluid", name = "vpulp2", amount = 100},
+        {type = "fluid", name = "vpulp2",        amount = 100},
         {type = "fluid", name = "petroleum-gas", amount = 100}
     },
     results = {
@@ -13,7 +13,7 @@ RECIPE {
     },
     main_product = "vpulp3",
     icon = "__pyfusionenergygraphics__/graphics/icons/agitation-vpulp3.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "l"
 }
@@ -22,7 +22,7 @@ FLUID {
     type = "fluid",
     name = "vpulp3",
     icon = "__pyfusionenergygraphics__/graphics/icons/vpulp3.png",
-	icon_size = 32,
+    icon_size = 32,
     default_temperature = 10,
     base_flow_rate = 100,
     base_color = {r = 0.870, g = 0, b = 1},

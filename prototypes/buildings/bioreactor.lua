@@ -4,11 +4,11 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "mixer-mk01", amount = 1},
-        {type = "item", name = "gasturbinemk02", amount = 1},
+        {type = "item", name = "mixer-mk01",          amount = 1},
+        {type = "item", name = "gasturbinemk02",      amount = 1},
         {type = "item", name = "chemical-plant-mk01", amount = 2},
-        {type = "item", name = "super-alloy", amount = 35},
-        {type = "item", name = "steel-plate", amount = 30}
+        {type = "item", name = "super-alloy",         amount = 35},
+        {type = "item", name = "steel-plate",         amount = 30}
         --add glass
     },
     results = {
@@ -20,7 +20,7 @@ ITEM {
     type = "item",
     name = "bio-reactor-mk01",
     icon = "__pyfusionenergygraphics__/graphics/icons/bio-reactor.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-miners",
     order = "d",
@@ -32,7 +32,7 @@ ENTITY {
     type = "assembling-machine",
     name = "bio-reactor-mk01",
     icon = "__pyfusionenergygraphics__/graphics/icons/bio-reactor.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "bio-reactor-mk01"},
     fast_replaceable_group = "bio-reactor",

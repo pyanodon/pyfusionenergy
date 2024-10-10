@@ -5,11 +5,11 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "soil-extractor-mk01", amount = 2},
-        {type = "item", name = "iron-plate", amount = 60}, --bobs tungsten-plate
-        {type = "item", name = "jaw-crusher", amount = 1},
-        {type = "item", name = "nbfe-alloy", amount = 20},
-        {type = "item", name = "super-alloy", amount = 50},
-        {type = "item", name = "advanced-circuit", amount = 40} --updated-bob basic-electronic-circuit-board
+        {type = "item", name = "iron-plate",          amount = 60}, --bobs tungsten-plate
+        {type = "item", name = "jaw-crusher",         amount = 1},
+        {type = "item", name = "nbfe-alloy",          amount = 20},
+        {type = "item", name = "super-alloy",         amount = 50},
+        {type = "item", name = "advanced-circuit",    amount = 40} --updated-bob basic-electronic-circuit-board
     },
     results = {
         {type = "item", name = "regolite-mine", amount = 1}
@@ -20,7 +20,7 @@ ITEM {
     type = "item",
     name = "regolite-mine",
     icon = "__pyfusionenergygraphics__/graphics/icons/regolite-mine.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-miners",
     order = "a",
@@ -32,7 +32,7 @@ ENTITY {
     type = "mining-drill",
     name = "regolite-mine",
     icon = "__pyfusionenergygraphics__/graphics/icons/regolite-mine.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "regolite-mine"},
     fast_replaceable_group = "regolite-mine",

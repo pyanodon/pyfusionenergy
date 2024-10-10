@@ -4,10 +4,10 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {type = "item", name = 'secondary-crusher-mk02', amount = 1},
-                {type = "item", name = "electric-engine-unit", amount = 4},
-                {type = "item", name = 'processing-unit', amount = 10}
-            },
+        {type = "item", name = "secondary-crusher-mk02", amount = 1},
+        {type = "item", name = "electric-engine-unit",   amount = 4},
+        {type = "item", name = "processing-unit",        amount = 10}
+    },
     results = {
         {type = "item", name = "secondary-crusher-mk03", amount = 1}
     }
@@ -17,7 +17,7 @@ ITEM {
     type = "item",
     name = "secondary-crusher-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/secondary-crusher-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk03",
     order = "b",
@@ -29,7 +29,7 @@ ENTITY {
     type = "assembling-machine",
     name = "secondary-crusher-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/secondary-crusher-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "secondary-crusher-mk03"},
     fast_replaceable_group = "secondary-crusher",
@@ -63,7 +63,7 @@ ENTITY {
                     animation_speed = 1,
                     shift = {-1.657, -0.281}
                 },
-    			{
+                {
                     filename = "__pyfusionenergygraphics__/graphics/entity/secondary-crusher/left-mask.png",
                     width = 128,
                     height = 238,
@@ -71,7 +71,7 @@ ENTITY {
                     frame_count = 90,
                     animation_speed = 1,
                     shift = {-1.657, -0.281},
-    				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
                 },
                 {
                     filename = "__pyfusionenergygraphics__/graphics/entity/secondary-crusher/right.png",
@@ -82,7 +82,7 @@ ENTITY {
                     animation_speed = 1,
                     shift = {2.03, -0.281}
                 },
-    			{
+                {
                     filename = "__pyfusionenergygraphics__/graphics/entity/secondary-crusher/right-mask.png",
                     width = 108,
                     height = 238,
@@ -90,7 +90,7 @@ ENTITY {
                     frame_count = 90,
                     animation_speed = 1,
                     shift = {2.03, -0.281},
-    				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
                 }
             }
         },

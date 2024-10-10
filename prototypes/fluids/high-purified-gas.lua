@@ -6,11 +6,11 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "dry-gas-stream", amount = 10},
-        {type = "fluid", name = "ethanolamine", amount = 25}
+        {type = "fluid", name = "ethanolamine",   amount = 25}
     },
     results = {
         {type = "fluid", name = "high-purified-gas", amount = 100},
-        {type = "fluid", name = "carbon-dioxide", amount = 30}
+        {type = "fluid", name = "carbon-dioxide",    amount = 30}
     },
     main_product = "high-purified-gas"
 }

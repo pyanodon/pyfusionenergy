@@ -6,7 +6,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "fluid", name = "arthropod-blood", amount = 20},
-        {type = "fluid", name = "sulfuric-acid", amount = 200}
+        {type = "fluid", name = "sulfuric-acid",   amount = 200}
     },
     results = {
         {type = "fluid", name = "vanabins", amount = 100}
@@ -17,7 +17,7 @@ FLUID {
     type = "fluid",
     name = "vanabins",
     icon = "__pyfusionenergygraphics__/graphics/icons/vanabins.png",
-	icon_size = 32,
+    icon_size = 32,
     default_temperature = 10,
     base_flow_rate = 100,
     base_color = {r = 0.447, g = 0.109, b = 1},

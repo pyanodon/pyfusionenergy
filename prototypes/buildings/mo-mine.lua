@@ -4,12 +4,12 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "small-lamp", amount = 50},
+        {type = "item", name = "small-lamp",            amount = 50},
         {type = "item", name = "electric-mining-drill", amount = 3},
-        {type = "item", name = "engine-unit", amount = 4},
-        {type = "item", name = "nbfe-alloy", amount = 30},
-        {type = "item", name = "steel-plate", amount = 100},
-        {type = "item", name = "electronic-circuit", amount = 30}
+        {type = "item", name = "engine-unit",           amount = 4},
+        {type = "item", name = "nbfe-alloy",            amount = 30},
+        {type = "item", name = "steel-plate",           amount = 100},
+        {type = "item", name = "electronic-circuit",    amount = 30}
     },
     results = {
         {type = "item", name = "mo-mine", amount = 1}
@@ -20,7 +20,7 @@ ITEM {
     type = "item",
     name = "mo-mine",
     icon = "__pyfusionenergygraphics__/graphics/icons/mo-mine.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-miners",
     order = "a",
@@ -32,7 +32,7 @@ ENTITY {
     type = "mining-drill",
     name = "mo-mine",
     icon = "__pyfusionenergygraphics__/graphics/icons/mo-mine.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "mo-mine"},
     fast_replaceable_group = "mo-mine",
@@ -48,27 +48,27 @@ ENTITY {
     mining_speed = 3.5,
     energy_source =
     {
-      type = "burner",
-      fuel_categories = {"drill"},
-      effectivity = 8,
-      fuel_inventory_size = 1,
-      emissions_per_minute = {
-          pollution = 0.06
-      },
-      smoke =
-      {
+        type = "burner",
+        fuel_categories = {"drill"},
+        effectivity = 8,
+        fuel_inventory_size = 1,
+        emissions_per_minute = {
+            pollution = 0.06
+        },
+        smoke =
         {
-            name = "turbine-smoke",
-            north_position = {0.0, -2.0},
-            south_position = {0.0, -2.0},
-            east_position = {0.0, -2.0},
-            west_position = {0.0, -2.0},
-            frequency = 20,
-            starting_vertical_speed = 0.1,
-            slow_down_factor = 1,
-            starting_frame_deviation = 60
-          }
-      },
+            {
+                name = "turbine-smoke",
+                north_position = {0.0, -2.0},
+                south_position = {0.0, -2.0},
+                east_position = {0.0, -2.0},
+                west_position = {0.0, -2.0},
+                frequency = 20,
+                starting_vertical_speed = 0.1,
+                slow_down_factor = 1,
+                starting_frame_deviation = 60
+            }
+        },
     },
     energy_usage = "550kW",
     mining_power = 1.5,

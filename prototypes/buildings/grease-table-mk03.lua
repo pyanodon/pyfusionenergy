@@ -13,10 +13,10 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {type = "item", name = 'grease-table-mk02', amount = 1},
-                {type = "item", name = "electric-engine-unit", amount = 5},
-                {type = "item", name = 'processing-unit', amount = 10}
-            },
+        {type = "item", name = "grease-table-mk02",    amount = 1},
+        {type = "item", name = "electric-engine-unit", amount = 5},
+        {type = "item", name = "processing-unit",      amount = 10}
+    },
     results = {
         {type = "item", name = "grease-table-mk03", amount = 1}
     }
@@ -26,7 +26,7 @@ ITEM {
     type = "item",
     name = "grease-table-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/grease-table-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk03",
     order = "e",
@@ -38,7 +38,7 @@ ENTITY {
     type = "assembling-machine",
     name = "grease-table-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/grease-table-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "grease-table-mk03"},
     fast_replaceable_group = "grease-table",
@@ -72,7 +72,7 @@ ENTITY {
                     animation_speed = 0.3,
                     shift = {-2.032, -1.0}
                 },
-    			{
+                {
                     filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/left-mask.png",
                     width = 96,
                     height = 286,
@@ -80,7 +80,7 @@ ENTITY {
                     frame_count = 140,
                     animation_speed = 0.3,
                     shift = {-2.032, -1.0},
-    				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
                 },
                 {
                     filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/mid.png",
@@ -91,7 +91,7 @@ ENTITY {
                     animation_speed = 0.3,
                     shift = {0.968, -1.0}
                 },
-    			{
+                {
                     filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/mid-mask.png",
                     width = 96,
                     height = 286,
@@ -99,7 +99,7 @@ ENTITY {
                     frame_count = 140,
                     animation_speed = 0.3,
                     shift = {0.968, -1.0},
-    				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
                 },
                 {
                     filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/right.png",
@@ -110,7 +110,7 @@ ENTITY {
                     animation_speed = 0.3,
                     shift = {3.329, -1.0}
                 },
-    			{
+                {
                     filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/right-mask.png",
                     width = 55,
                     height = 286,
@@ -118,7 +118,7 @@ ENTITY {
                     frame_count = 140,
                     animation_speed = 0.3,
                     shift = {3.329, -1.0},
-    				tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
                 }
             }
         },

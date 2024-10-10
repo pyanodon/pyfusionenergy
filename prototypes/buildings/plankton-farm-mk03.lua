@@ -4,9 +4,9 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "plankton-farm-mk02", amount = 1},
+        {type = "item", name = "plankton-farm-mk02",   amount = 1},
         {type = "item", name = "electric-engine-unit", amount = 2},
-        {type = "item", name = 'processing-unit', amount = 10}
+        {type = "item", name = "processing-unit",      amount = 10}
     },
     results = {
         {type = "item", name = "plankton-farm-mk03", amount = 1}
@@ -17,7 +17,7 @@ ITEM {
     type = "item",
     name = "plankton-farm-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/plankton-farm-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-miners",
     order = "b",
@@ -29,7 +29,7 @@ ENTITY {
     type = "assembling-machine",
     name = "plankton-farm-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/plankton-farm-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "plankton-farm-mk03"},
     fast_replaceable_group = "plankton-farm",
@@ -133,5 +133,5 @@ ENTITY {
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/plankton-farm.ogg", volume = 0.3},
         apparent_volume = 2.5
     },
-    next_upgrade = 'plankton-farm-mk04'
+    next_upgrade = "plankton-farm-mk04"
 }

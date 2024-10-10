@@ -4,10 +4,10 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {type = "item", name = 'compressor-mk02', amount = 1},
-                {type = "item", name = "electric-engine-unit", amount = 6},
-                {type = "item", name = 'processing-unit', amount = 10}
-            },
+        {type = "item", name = "compressor-mk02",      amount = 1},
+        {type = "item", name = "electric-engine-unit", amount = 6},
+        {type = "item", name = "processing-unit",      amount = 10}
+    },
     results = {
         {type = "item", name = "compressor-mk03", amount = 1}
     }
@@ -17,7 +17,7 @@ ITEM {
     type = "item",
     name = "compressor-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/compressor-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk03",
     order = "d",
@@ -29,7 +29,7 @@ ENTITY {
     type = "assembling-machine",
     name = "compressor-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/compressor-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "compressor-mk03"},
     fast_replaceable_group = "compressor",
@@ -59,48 +59,48 @@ ENTITY {
                 south_position = {0.55, -0.45},
                 east_position = {0.55, -0.45},
                 animation = {
-    				layers = {
-    					{
-    					filename = "__pyfusionenergygraphics__/graphics/entity/compressor/on.png",
-    					frame_count = 50,
-    					width = 261,
-    					height = 252,
-    					line_length = 7,
-    					animation_speed = 0.5,
-    					priority = "medium"
-    					},
-    					{
-    					filename = "__pyfusionenergygraphics__/graphics/entity/compressor/on-mask.png",
-    					frame_count = 50,
-    					width = 261,
-    					height = 252,
-    					line_length = 7,
-    					animation_speed = 0.5,
-    					priority = "medium",
-    					tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
-    					}
-    				}
+                    layers = {
+                        {
+                            filename = "__pyfusionenergygraphics__/graphics/entity/compressor/on.png",
+                            frame_count = 50,
+                            width = 261,
+                            height = 252,
+                            line_length = 7,
+                            animation_speed = 0.5,
+                            priority = "medium"
+                        },
+                        {
+                            filename = "__pyfusionenergygraphics__/graphics/entity/compressor/on-mask.png",
+                            frame_count = 50,
+                            width = 261,
+                            height = 252,
+                            line_length = 7,
+                            animation_speed = 0.5,
+                            priority = "medium",
+                            tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                        }
+                    }
                 }
             }
         },
         animation = {
-    		layers = {
-    			{
-    			filename = "__pyfusionenergygraphics__/graphics/entity/compressor/off.png",
-    			width = 261,
-    			height = 252,
-    			frame_count = 1,
-    			shift = {0.55, -0.45}
-    			},
-    			{
-    			filename = "__pyfusionenergygraphics__/graphics/entity/compressor/off-mask.png",
-    			width = 261,
-    			height = 252,
-    			frame_count = 1,
-    			shift = {0.55, -0.45},
-    			tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
-    			}
-    		}
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/compressor/off.png",
+                    width = 261,
+                    height = 252,
+                    frame_count = 1,
+                    shift = {0.55, -0.45}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/compressor/off-mask.png",
+                    width = 261,
+                    height = 252,
+                    frame_count = 1,
+                    shift = {0.55, -0.45},
+                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                }
+            }
         },
     },
     fluid_boxes_off_when_no_fluid_recipe = true,

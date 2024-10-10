@@ -4,11 +4,11 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "storage-tank", amount = 1},
+        {type = "item", name = "storage-tank",           amount = 1},
         {type = "item", name = "automated-factory-mk01", amount = 1},
-        {type = "item", name = "stone-brick", amount = 70},
-        {type = "item", name = "electronic-circuit", amount = 5},
-        {type = "item", name = "pipe", amount = 20}
+        {type = "item", name = "stone-brick",            amount = 70},
+        {type = "item", name = "electronic-circuit",     amount = 5},
+        {type = "item", name = "pipe",                   amount = 20}
     },
     results = {
         {type = "item", name = "py-heat-exchanger", amount = 1}
@@ -19,7 +19,7 @@ ITEM {
     type = "item",
     name = "py-heat-exchanger",
     icon = "__pyfusionenergygraphics__/graphics/icons/py-heat-exchanger.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk01",
     order = "z",
@@ -31,7 +31,7 @@ ENTITY {
     type = "assembling-machine",
     name = "py-heat-exchanger",
     icon = "__pyfusionenergygraphics__/graphics/icons/py-heat-exchanger.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "py-heat-exchanger"},
     fast_replaceable_group = "py-heat-exchanger",
@@ -146,6 +146,6 @@ ENTITY {
     }
 }
 
-if mods['pyalternativeenergy'] then
-    data.raw['assembling-machine']['py-heat-exchanger'].next_upgrade = 'py-heat-exchanger-mk02'
+if mods["pyalternativeenergy"] then
+    data.raw["assembling-machine"]["py-heat-exchanger"].next_upgrade = "py-heat-exchanger-mk02"
 end

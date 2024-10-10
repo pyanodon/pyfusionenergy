@@ -4,11 +4,11 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {type = "item", name = "storage-tank", amount = 1},
+        {type = "item", name = "storage-tank",        amount = 1},
         {type = "item", name = "chemical-plant-mk01", amount = 2},
-        {type = "item", name = "iron-plate", amount = 30},
-        {type = "item", name = "steel-plate", amount = 50},
-        {type = "item", name = "iron-gear-wheel", amount = 30}
+        {type = "item", name = "iron-plate",          amount = 30},
+        {type = "item", name = "steel-plate",         amount = 50},
+        {type = "item", name = "iron-gear-wheel",     amount = 30}
     },
     results = {
         {type = "item", name = "mixer-mk01", amount = 1}
@@ -19,7 +19,7 @@ ITEM {
     type = "item",
     name = "mixer-mk01",
     icon = "__pyfusionenergygraphics__/graphics/icons/mixer-mk01.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk01",
     order = "g",
@@ -31,7 +31,7 @@ ENTITY {
     type = "assembling-machine",
     name = "mixer-mk01",
     icon = "__pyfusionenergygraphics__/graphics/icons/mixer-mk01.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "mixer-mk01"},
     fast_replaceable_group = "mixer",
@@ -55,28 +55,28 @@ ENTITY {
     energy_usage = "450kW",
     graphics_set = {
         animation = {
-    	layers = {
-    	{
-            filename = "__pyfusionenergygraphics__/graphics/entity/mixer/mixer.png",
-            width = 246,
-            height = 233,
-            frame_count = 64,
-            line_length = 8,
-            animation_speed = 0.4,
-            shift = {0.312, -0.156}
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/mixer/mixer.png",
+                    width = 246,
+                    height = 233,
+                    frame_count = 64,
+                    line_length = 8,
+                    animation_speed = 0.4,
+                    shift = {0.312, -0.156}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/mixer/mixer-mask.png",
+                    width = 246,
+                    height = 233,
+                    frame_count = 64,
+                    line_length = 8,
+                    animation_speed = 0.4,
+                    shift = {0.312, -0.156},
+                    tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+                }
+            }
         },
-    	{
-            filename = "__pyfusionenergygraphics__/graphics/entity/mixer/mixer-mask.png",
-            width = 246,
-            height = 233,
-            frame_count = 64,
-            line_length = 8,
-            animation_speed = 0.4,
-            shift = {0.312, -0.156},
-    		tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
-        }
-    	}
-    	},
     },
     fluid_boxes_off_when_no_fluid_recipe = true,
     fluid_boxes = {

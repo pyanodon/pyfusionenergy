@@ -1,6 +1,6 @@
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["volcanic-pipe"] = {}
 
-data:extend{{
+data:extend {{
     type = "autoplace-control",
     name = "volcanic-pipe",
     richness = true,
@@ -13,7 +13,7 @@ data:extend{{
 --     name = "volcanic-pipe"
 -- }}
 
-data:extend{
+data:extend {
     {
         type = "noise-expression",
         name = "py_volcanic_pipe_starting_area",
@@ -49,7 +49,7 @@ ENTITY {
     name = "volcanic-pipe",
     category = "volcanic-pipe",
     icon = "__pyfusionenergygraphics__/graphics/icons/ores/volcanic-pipe.png",
-	icon_size = 32,
+    icon_size = 32,
     flags = {"placeable-neutral"},
     order = "a-b-a",
     map_color = {r = 0.152, g = 0.909, b = 1},

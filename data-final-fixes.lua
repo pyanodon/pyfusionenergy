@@ -1,4 +1,3 @@
-
 local blacklist_effectivity = {
     "deuterium-fusion",
     "dt-he3",

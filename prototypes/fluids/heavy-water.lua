@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     energy_required = 6,
     ingredients = {
-        {type = "item", name = "sulfur", amount = 5},
+        {type = "item",  name = "sulfur",          amount = 5},
         {type = "fluid", name = "pressured-water", amount = 1000}
     },
     results = {
@@ -17,7 +17,7 @@ FLUID {
     type = "fluid",
     name = "heavy-water",
     icon = "__pyfusionenergygraphics__/graphics/icons/heavy-water.png",
-	icon_size = 32,
+    icon_size = 32,
     default_temperature = 10,
     base_flow_rate = 100,
     base_color = {r = 0.423, g = 0.678, b = 0.823},

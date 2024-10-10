@@ -4,11 +4,11 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {type = "item", name = "automated-screener-mk01", amount = 1},
-                {type = "item", name = "engine-unit", amount = 3},
-                {type = "item", name = 'nexelit-plate', amount = 15},
-                {type = "item", name = 'advanced-circuit', amount = 10}
-            },
+        {type = "item", name = "automated-screener-mk01", amount = 1},
+        {type = "item", name = "engine-unit",             amount = 3},
+        {type = "item", name = "nexelit-plate",           amount = 15},
+        {type = "item", name = "advanced-circuit",        amount = 10}
+    },
     results = {
         {type = "item", name = "automated-screener-mk02", amount = 1}
     }
@@ -18,7 +18,7 @@ ITEM {
     type = "item",
     name = "automated-screener-mk02",
     icon = "__pyfusionenergygraphics__/graphics/icons/automated-screener-mk02.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk02",
     order = "d",
@@ -30,7 +30,7 @@ ENTITY {
     type = "assembling-machine",
     name = "automated-screener-mk02",
     icon = "__pyfusionenergygraphics__/graphics/icons/automated-screener-mk02.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "automated-screener-mk02"},
     fast_replaceable_group = "automated-screener",
@@ -64,7 +64,7 @@ ENTITY {
                     animation_speed = 0.4,
                     shift = {-2.032, -0.5}
                 },
-    			{
+                {
                     filename = "__pyfusionenergygraphics__/graphics/entity/automated-screener/left-mask.png",
                     width = 96,
                     height = 256,
@@ -72,7 +72,7 @@ ENTITY {
                     frame_count = 150,
                     animation_speed = 0.4,
                     shift = {-2.032, -0.5},
-    				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+                    tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
                 },
                 {
                     filename = "__pyfusionenergygraphics__/graphics/entity/automated-screener/mid.png",
@@ -83,7 +83,7 @@ ENTITY {
                     animation_speed = 0.4,
                     shift = {0.968, -0.5}
                 },
-    			{
+                {
                     filename = "__pyfusionenergygraphics__/graphics/entity/automated-screener/mid-mask.png",
                     width = 96,
                     height = 256,
@@ -91,7 +91,7 @@ ENTITY {
                     frame_count = 150,
                     animation_speed = 0.4,
                     shift = {0.968, -0.5},
-    				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+                    tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
                 },
                 {
                     filename = "__pyfusionenergygraphics__/graphics/entity/automated-screener/right.png",
@@ -102,7 +102,7 @@ ENTITY {
                     animation_speed = 0.4,
                     shift = {3.032, -0.5}
                 },
-    			{
+                {
                     filename = "__pyfusionenergygraphics__/graphics/entity/automated-screener/right-mask.png",
                     width = 38,
                     height = 256,
@@ -110,7 +110,7 @@ ENTITY {
                     frame_count = 150,
                     animation_speed = 0.4,
                     shift = {3.032, -0.5},
-    				tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
+                    tint = {r = 1.0, g = 0.0, b = 0.0, a = 1.0}
                 }
             }
         },

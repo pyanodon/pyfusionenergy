@@ -5,13 +5,13 @@ RECIPE {
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "fluid", name = "helium", amount = 20},
-        {type = "fluid", name = "water", amount = 600},
+        {type = "fluid", name = "helium",   amount = 20},
+        {type = "fluid", name = "water",    amount = 600},
         {type = "fluid", name = "gasoline", amount = 5}
     },
     results = {
         {type = "fluid", name = "liquid-helium", amount = 2},
-        {type = "fluid", name = "steam", amount = 600, temperature = 150, catalyst_amount = 600}
+        {type = "fluid", name = "steam",         amount = 600, temperature = 150, catalyst_amount = 600}
     },
     main_product = "liquid-helium",
 }
@@ -30,7 +30,7 @@ RECIPE {
     },
     main_product = "helium",
     icon = "__pyfusionenergygraphics__/graphics/icons/helium.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-fluids",
     order = "c"
 }
@@ -39,7 +39,7 @@ FLUID {
     type = "fluid",
     name = "liquid-helium",
     icon = "__pyfusionenergygraphics__/graphics/icons/liquid-helium.png",
-	icon_size = 32,
+    icon_size = 32,
     default_temperature = 10,
     base_flow_rate = 100,
     base_color = {r = 1, g = 0.952, b = 0.835},

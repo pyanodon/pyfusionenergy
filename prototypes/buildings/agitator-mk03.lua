@@ -31,10 +31,10 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {type = "item", name = 'agitator-mk02', amount = 1},
-                {type = "item", name = "electric-engine-unit", amount = 3},
-                {type = "item", name = 'processing-unit', amount = 10}
-            },
+        {type = "item", name = "agitator-mk02",        amount = 1},
+        {type = "item", name = "electric-engine-unit", amount = 3},
+        {type = "item", name = "processing-unit",      amount = 10}
+    },
     results = {
         {type = "item", name = "agitator-mk03", amount = 1}
     }
@@ -44,7 +44,7 @@ ITEM {
     type = "item",
     name = "agitator-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/agitator-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk03",
     order = "a",
@@ -56,7 +56,7 @@ ENTITY {
     type = "assembling-machine",
     name = "agitator-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/agitator-mk03.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "agitator-mk03"},
     fast_replaceable_group = "agitator",
@@ -80,27 +80,27 @@ ENTITY {
     energy_usage = "1200kW",
     graphics_set = {
         animation = {
-    		layers = {
-    			{
-    			filename = "__pyfusionenergygraphics__/graphics/entity/agitator/agitator.png",
-    			width = 169,
-    			height = 160,
-    			frame_count = 50,
-    			line_length = 10,
-    			animation_speed = 1,
-    			shift = {0.1, -0.0}
-    			},
-    			{
-    			filename = "__pyfusionenergygraphics__/graphics/entity/agitator/agitator-mask.png",
-    			width = 169,
-    			height = 160,
-    			frame_count = 50,
-    			line_length = 10,
-    			animation_speed = 1,
-    			shift = {0.1, -0.0},
-    			tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0},
-    			}
-    		}
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/agitator/agitator.png",
+                    width = 169,
+                    height = 160,
+                    frame_count = 50,
+                    line_length = 10,
+                    animation_speed = 1,
+                    shift = {0.1, -0.0}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/agitator/agitator-mask.png",
+                    width = 169,
+                    height = 160,
+                    frame_count = 50,
+                    line_length = 10,
+                    animation_speed = 1,
+                    shift = {0.1, -0.0},
+                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0},
+                }
+            }
         },
     },
     fluid_boxes_off_when_no_fluid_recipe = true,

@@ -6,7 +6,7 @@ RECIPE {
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "pressured-vpulp", amount = 200},
-        {type = "item", name = "active-carbon", amount = 2}
+        {type = "item",  name = "active-carbon",   amount = 2}
     },
     results = {
         {type = "fluid", name = "vanadates", amount = 100}
@@ -17,7 +17,7 @@ FLUID {
     type = "fluid",
     name = "vanadates",
     icon = "__pyfusionenergygraphics__/graphics/icons/vanadates.png",
-	icon_size = 32,
+    icon_size = 32,
     default_temperature = 10,
     base_flow_rate = 100,
     base_color = {r = 0.141, g = 0.082, b = 0.396},

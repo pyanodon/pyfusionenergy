@@ -1,8 +1,8 @@
-local resource_autoplace = require 'resource-autoplace'
+local resource_autoplace = require "resource-autoplace"
 
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["molybdenum-ore"] = {}
 
-data:extend{{
+data:extend {{
     type = "autoplace-control",
     name = "molybdenum-ore",
     richness = true,
@@ -20,7 +20,7 @@ ENTITY {
     name = "molybdenum-ore",
     category = "molybdenum",
     icon = "__pyfusionenergygraphics__/graphics/icons/ores/molybdenum.png",
-	icon_size = 32,
+    icon_size = 32,
     flags = {"placeable-neutral"},
     order = "a-b-a",
     map_color = {r = 0.294, g = 0.45, b = 0.643},

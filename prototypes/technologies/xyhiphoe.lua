@@ -1,4 +1,4 @@
-if not mods['pyalienlife'] then
+if not mods["pyalienlife"] then
     TECHNOLOGY {
         type = "technology",
         name = "xyhiphoe",
@@ -11,11 +11,10 @@ if not mods['pyalienlife'] then
             count = 100,
             ingredients = {
                 {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1}
+                {"logistic-science-pack",   1},
+                {"chemical-science-pack",   1}
             },
             time = 70
         }
     }
 end
-

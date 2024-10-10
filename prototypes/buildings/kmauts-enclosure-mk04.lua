@@ -4,11 +4,11 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {type = "item", name = 'kmauts-enclosure-mk03', amount = 1},
-                --{type = "item", name = 'super-steel', amount = 30},
-                --{type = "item", name = 'low-density-structure', amount = 15},
-                --{type = "item", name = 'nbfe-alloy', amount = 20}
-            },
+        {type = "item", name = "kmauts-enclosure-mk03", amount = 1},
+        --{type = "item", name = 'super-steel', amount = 30},
+        --{type = "item", name = 'low-density-structure', amount = 15},
+        --{type = "item", name = 'nbfe-alloy', amount = 20}
+    },
     results = {
         {type = "item", name = "kmauts-enclosure-mk04", amount = 1}
     }
@@ -18,7 +18,7 @@ ITEM {
     type = "item",
     name = "kmauts-enclosure-mk04",
     icon = "__pyfusionenergygraphics__/graphics/icons/kmauts-enclosure-mk04.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk04",
     order = "d",
@@ -30,7 +30,7 @@ ENTITY {
     type = "assembling-machine",
     name = "kmauts-enclosure-mk04",
     icon = "__pyfusionenergygraphics__/graphics/icons/kmauts-enclosure-mk04.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "kmauts-enclosure-mk04"},
     fast_replaceable_group = "kmauts-enclosure",
@@ -201,14 +201,14 @@ ENTITY {
                     shift = {0.248, -0.591},
                     priority = "low"
                 },
-    			{
+                {
                     filename = "__pyfusionenergygraphics__/graphics/entity/kmauts-enclosure/layer-2-mask.png",
                     width = 338,
                     height = 357,
                     frame_count = 1,
                     shift = {0.248, -0.591},
                     priority = "low",
-    				tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
+                    tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
                 },
                 --TREE
                 {

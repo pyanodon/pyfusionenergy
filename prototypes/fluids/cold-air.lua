@@ -2,7 +2,7 @@ FLUID {
     type = "fluid",
     name = "cold-air",
     icon = "__pyfusionenergygraphics__/graphics/icons/cold-air.png",
-	icon_size = 32,
+    icon_size = 32,
     default_temperature = 15,
     base_flow_rate = 100,
     base_color = {r = 0.270, g = 0.392, b = 1.0},

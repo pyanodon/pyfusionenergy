@@ -59,11 +59,11 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-                {type = "item", name = 'jig-mk03', amount = 1},
-                --{type = "item", name = 'super-steel', amount = 30},
-                --{type = "item", name = 'low-density-structure', amount = 15},
-                --{type = "item", name = 'nbfe-alloy', amount = 20}
-            },
+        {type = "item", name = "jig-mk03", amount = 1},
+        --{type = "item", name = 'super-steel', amount = 30},
+        --{type = "item", name = 'low-density-structure', amount = 15},
+        --{type = "item", name = 'nbfe-alloy', amount = 20}
+    },
     results = {
         {type = "item", name = "jig-mk04", amount = 1}
     },
@@ -73,7 +73,7 @@ ITEM {
     type = "item",
     name = "jig-mk04",
     icon = "__pyfusionenergygraphics__/graphics/icons/jig-mk04.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-mk04",
     order = "d",
@@ -85,7 +85,7 @@ ENTITY {
     type = "assembling-machine",
     name = "jig-mk04",
     icon = "__pyfusionenergygraphics__/graphics/icons/jig-mk04.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "jig-mk04"},
     fast_replaceable_group = "jig",
@@ -115,47 +115,47 @@ ENTITY {
                 south_position = {0.48, 0.417},
                 east_position = {0.48, 0.417},
                 animation = {
-    			layers = {
-    			{
-                    filename = "__pyfusionenergygraphics__/graphics/entity/jig/on.png",
-                    frame_count = 120,
-                    line_length = 12,
-                    width = 160,
-                    height = 192,
-                    animation_speed = 0.4,
-    			},
-    			{
-                    filename = "__pyfusionenergygraphics__/graphics/entity/jig/on-mask.png",
-                    frame_count = 120,
-                    line_length = 12,
-                    width = 160,
-                    height = 192,
-                    animation_speed = 0.4,
-    				tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
-    			}
-    			}
+                    layers = {
+                        {
+                            filename = "__pyfusionenergygraphics__/graphics/entity/jig/on.png",
+                            frame_count = 120,
+                            line_length = 12,
+                            width = 160,
+                            height = 192,
+                            animation_speed = 0.4,
+                        },
+                        {
+                            filename = "__pyfusionenergygraphics__/graphics/entity/jig/on-mask.png",
+                            frame_count = 120,
+                            line_length = 12,
+                            width = 160,
+                            height = 192,
+                            animation_speed = 0.4,
+                            tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
+                        }
+                    }
                 }
             }
         },
         animation = {
-    	layers = {
-    	{
-            filename = "__pyfusionenergygraphics__/graphics/entity/jig/off.png",
-            width = 276,
-            height = 268,
-            frame_count = 1,
-            shift = {0.3, -0.2}
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/jig/off.png",
+                    width = 276,
+                    height = 268,
+                    frame_count = 1,
+                    shift = {0.3, -0.2}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/jig/off-mask.png",
+                    width = 276,
+                    height = 268,
+                    frame_count = 1,
+                    shift = {0.3, -0.2},
+                    tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
+                }
+            }
         },
-    	{
-            filename = "__pyfusionenergygraphics__/graphics/entity/jig/off-mask.png",
-            width = 276,
-            height = 268,
-            frame_count = 1,
-            shift = {0.3, -0.2},
-    		tint = {r = 1.0, g = 0.0, b = 1.0, a = 1.0}
-        }
-    	}
-    	},
     },
     fluid_boxes_off_when_no_fluid_recipe = true,
     fluid_boxes = {

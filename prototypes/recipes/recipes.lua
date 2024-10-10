@@ -9,11 +9,11 @@ RECIPE {
     },
     results = {
         {type = "item", name = "crushed-molybdenite", amount = 5},
-        {type = "item", name = "stone", amount = 2}
+        {type = "item", name = "stone",               amount = 2}
     },
     main_product = "crushed-molybdenite",
     icon = "__pyfusionenergygraphics__/graphics/icons/crush-molybdenite.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-crusher",
     order = "a"
 }:add_unlock("molybdenum-processing")
@@ -29,7 +29,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "molybdenite-dust", amount = 10},
-        {type = "item", name = "gravel", amount = 1}
+        {type = "item", name = "gravel",           amount = 1}
     },
     main_product = "molybdenite-dust",
 }:add_unlock("molybdenum-processing")
@@ -42,15 +42,15 @@ RECIPE {
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "molybdenite-pulp", amount = 150},
-        {type = "fluid", name = "water", amount = 200}
+        {type = "fluid", name = "water",            amount = 200}
     },
     results = {
-        {type = "item", name = "molybdenum-concentrate", amount = 10},
-        {type = "fluid", name = "dirty-water-light", amount = 150}
+        {type = "item",  name = "molybdenum-concentrate", amount = 10},
+        {type = "fluid", name = "dirty-water-light",      amount = 150}
     },
     main_product = "molybdenum-concentrate",
     icon = "__pyfusionenergygraphics__/graphics/icons/molybdenum-concentrate-hydrocyclone.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-items",
     order = "b"
 }
@@ -62,9 +62,9 @@ RECIPE {
     enabled = false,
     energy_required = 2,
     ingredients = {
-        {type = "fluid", name = "molybdenum-pulp", amount = 100},
-        {type = "fluid", name = "vacuum", amount = 50},
-        {type = "item", name = "filtration-media", amount = 1}
+        {type = "fluid", name = "molybdenum-pulp",  amount = 100},
+        {type = "fluid", name = "vacuum",           amount = 50},
+        {type = "item",  name = "filtration-media", amount = 1}
     },
     results = {
         {type = "item", name = "molybdenum-sulfide", amount = 10}
@@ -83,7 +83,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "molybdenum-oxide", amount = 10},
-        {type = "item", name = "sulfur", amount = 1}
+        {type = "item", name = "sulfur",           amount = 1}
     },
     main_product = "molybdenum-oxide",
 }
@@ -98,8 +98,8 @@ RECIPE {
         {type = "item", name = "molybdenum-oxide", amount = 10} --add hydrogen
     },
     results = {
-        {type = "item", name = "molybdenum-plate", amount = 3},
-        {type = "fluid", name = "water", amount = 10}
+        {type = "item",  name = "molybdenum-plate", amount = 3},
+        {type = "fluid", name = "water",            amount = 10}
     },
     main_product = "molybdenum-plate",
 }
@@ -111,14 +111,14 @@ RECIPE {
     enabled = false,
     energy_required = 15,
     ingredients = {
-        {type = "fluid", name = "water", amount = 500},
-        {type = "item", name = "iron-ore", amount = 8}
+        {type = "fluid", name = "water",    amount = 500},
+        {type = "item",  name = "iron-ore", amount = 8}
     },
     results = {
         {type = "fluid", name = "phytoplankton", amount = 10}
     },
     main_product = "phytoplankton",
-}:add_unlock('xyhiphoe')
+}:add_unlock("xyhiphoe")
 
 RECIPE {
     type = "recipe",
@@ -128,15 +128,15 @@ RECIPE {
     energy_required = 12,
     ingredients = {
         {type = "fluid", name = "pressured-water", amount = 500},
-        {type = "fluid", name = "phytoplankton", amount = 30},
-        {type = "item", name = "tailings-dust", amount = 30}
+        {type = "fluid", name = "phytoplankton",   amount = 30},
+        {type = "item",  name = "tailings-dust",   amount = 30}
     },
     results = {
         {type = "fluid", name = "arthropod-blood", amount = 20},
-        {type = "fluid", name = "waste-water", amount = 500}
+        {type = "fluid", name = "waste-water",     amount = 500}
     },
     main_product = "arthropod-blood",
-}:add_unlock('xyhiphoe')
+}:add_unlock("xyhiphoe")
 
 RECIPE {
     type = "recipe",
@@ -152,7 +152,7 @@ RECIPE {
         {type = "fluid", name = "organic-solvent", amount = 100}
     },
     main_product = "organic-solvent",
-}:add_unlock('xyhiphoe')
+}:add_unlock("xyhiphoe")
 
 RECIPE {
     type = "recipe",
@@ -167,7 +167,7 @@ RECIPE {
         {type = "item", name = "ash", amount = 10} --updated-bob cobalt-ore
     },
     icon = "__pyfusionenergygraphics__/graphics/icons/used-solvent.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "c"
 }
@@ -183,11 +183,11 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "organic-solvent", amount = 100},
-        {type = "fluid", name = "blue-liquor", amount = 50}
+        {type = "fluid", name = "blue-liquor",     amount = 50}
     },
     main_product = "organic-solvent",
     icon = "__pyfusionenergygraphics__/graphics/icons/used-solvent.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "d"
 }
@@ -199,7 +199,7 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "fluid", name = "steam", amount = 150},
+        {type = "fluid", name = "steam",        amount = 150},
         {type = "fluid", name = "water-saline", amount = 100} --bob salt
     },
     results = {
@@ -219,7 +219,7 @@ RECIPE {
         {type = "fluid", name = "vpulp-precip", amount = 100}
     },
     results = {
-        {type = "item", name = "vanadium-oxide", amount = 15},
+        {type = "item",  name = "vanadium-oxide",    amount = 15},
         {type = "fluid", name = "dirty-water-light", amount = 300}
     },
     main_product = "vanadium-oxide",
@@ -232,13 +232,13 @@ RECIPE {
     enabled = false,
     energy_required = 15,
     ingredients = {
-        {type = "fluid", name = "waste-water", amount = 100},
-        {type = "item", name = "filtration-media", amount = 1}
+        {type = "fluid", name = "waste-water",      amount = 100},
+        {type = "item",  name = "filtration-media", amount = 1}
     },
     results = {
         {type = "fluid", name = "methanol", amount = 100}
     },
-}:add_unlock('xyhiphoe')
+}:add_unlock("xyhiphoe")
 
 RECIPE {
     type = "recipe",
@@ -247,15 +247,15 @@ RECIPE {
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "fluid", name = "helium", amount = 10},
-        {type = "item", name = "steel-plate", amount = 50},
-        {type = "item", name = "fuelrod-mk01", amount = 2},
-        {type = "item", name = "limestone", amount = 3},
-        {type = "item", name = "sand-casting", amount = 2},
-        {type = "item", name = "chromium", amount = 20},
-        {type = "item", name = "molybdenum-oxide", amount = 5},
-        {type = "item", name = "nexelit-plate", amount = 5},
-        {type = "item", name = "vanadium-oxide", amount = 8}
+        {type = "fluid", name = "helium",           amount = 10},
+        {type = "item",  name = "steel-plate",      amount = 50},
+        {type = "item",  name = "fuelrod-mk01",     amount = 2},
+        {type = "item",  name = "limestone",        amount = 3},
+        {type = "item",  name = "sand-casting",     amount = 2},
+        {type = "item",  name = "chromium",         amount = 20},
+        {type = "item",  name = "molybdenum-oxide", amount = 5},
+        {type = "item",  name = "nexelit-plate",    amount = 5},
+        {type = "item",  name = "vanadium-oxide",   amount = 8}
     },
     results = {
         {type = "item", name = "super-alloy", amount = 5}
@@ -273,11 +273,11 @@ RECIPE {
     },
     results = {
         {type = "item", name = "crushed-kimberlite", amount = 10},
-        {type = "item", name = "stone", amount = 3}
+        {type = "item", name = "stone",              amount = 3}
     },
     --main_product= "crushed-kimberlite",
     icon = "__pyfusionenergygraphics__/graphics/icons/crush-kimberlite.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
 }
@@ -293,11 +293,11 @@ RECIPE {
     },
     results = {
         {type = "item", name = "kimberlite-rejects", amount = 4},
-        {type = "item", name = "kimberlite-grade2", amount = 5}
+        {type = "item", name = "kimberlite-grade2",  amount = 5}
     },
     --main_product= "kimberlite-grade2",
     icon = "__pyfusionenergygraphics__/graphics/icons/screening-kimberlite.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
 }
@@ -313,11 +313,11 @@ RECIPE {
     },
     results = {
         {type = "item", name = "crushed-kimberlite", amount = 1},
-        {type = "item", name = "gravel", amount = 1}
+        {type = "item", name = "gravel",             amount = 1}
     },
     --main_product= "crushed-kimberlite",
     icon = "__pyfusionenergygraphics__/graphics/icons/kimberlite-recrush.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
 }
@@ -329,18 +329,18 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "kimberlite-grade2", amount = 5},
-        {type = "fluid", name = "water", amount = 100}
+        {type = "item",  name = "kimberlite-grade2", amount = 5},
+        {type = "fluid", name = "water",             amount = 100}
     },
     results = {
-        {type = "item", name = "kimberlite-grade3", amount = 5},
-        {type = "item", name = "pure-kimberlite-grade2", amount = 1, probability = 0.6},
-        {type = "fluid", name = "dirty-water-light", amount = 100},
-        {type = "item", name = "sand", amount = 10}
+        {type = "item",  name = "kimberlite-grade3",      amount = 5},
+        {type = "item",  name = "pure-kimberlite-grade2", amount = 1,  probability = 0.6},
+        {type = "fluid", name = "dirty-water-light",      amount = 100},
+        {type = "item",  name = "sand",                   amount = 10}
     },
     --main_product= "kimberlite-grade3",
     icon = "__pyfusionenergygraphics__/graphics/icons/kimberlite-washer.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
 }
@@ -356,11 +356,11 @@ RECIPE {
     },
     results = {
         {type = "item", name = "kimberlite-grade3", amount = 2},
-        {type = "item", name = "gravel", amount = 1}
+        {type = "item", name = "gravel",            amount = 1}
     },
     --main_product= "kimberlite-grade3",
     icon = "__pyfusionenergygraphics__/graphics/icons/kimberlite-grade2-recrush.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
 }
@@ -376,11 +376,11 @@ RECIPE {
     },
     results = {
         {type = "item", name = "diamond-reject", amount = 8},
-        {type = "item", name = "gravel", amount = 2}
+        {type = "item", name = "gravel",         amount = 2}
     },
     --main_product= "diamond-reject",
     icon = "__pyfusionenergygraphics__/graphics/icons/screening-kimberlite-residue.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
 }
@@ -396,11 +396,11 @@ RECIPE {
     },
     results = {
         {type = "item", name = "pure-kimberlite-grade2", amount = 2, probability = 0.7},
-        {type = "item", name = "gravel", amount = 2, probability = 0.5}
+        {type = "item", name = "gravel",                 amount = 2, probability = 0.5}
     },
     --main_product= "pure-kimberlite-grade2",
     icon = "__pyfusionenergygraphics__/graphics/icons/diamond-reject-recrush.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
 }
@@ -416,11 +416,11 @@ RECIPE {
     },
     results = {
         {type = "item", name = "processed-rejects", amount = 16},
-        {type = "item", name = "sand", amount = 10}
+        {type = "item", name = "sand",              amount = 10}
     },
     --main_product= "pure-kimberlite-grade2",
     icon = "__pyfusionenergygraphics__/graphics/icons/screening-diamond-reject.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "h"
 }
@@ -435,13 +435,13 @@ RECIPE {
         {type = "item", name = "processed-rejects", amount = 20}
     },
     results = {
-        {type = "item", name = "limestone", amount = 3},
+        {type = "item", name = "limestone",     amount = 3},
         {type = "item", name = "chromite-sand", amount = 6},
-        {type = "item", name = "diamond", amount = 1, probability = 0.6}
+        {type = "item", name = "diamond",       amount = 1, probability = 0.6}
     },
     --main_product= "pure-kimberlite-grade2",
     icon = "__pyfusionenergygraphics__/graphics/icons/rejects-separation.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-items-class",
     order = "e"
 }
@@ -462,7 +462,7 @@ RECIPE {
     },
     --main_product= "jig-grade1",
     icon = "__pyfusionenergygraphics__/graphics/icons/jig1.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "j"
 }
@@ -474,17 +474,17 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "fluid", name = "jig-grade1", amount = 50},
+        {type = "fluid", name = "jig-grade1",   amount = 50},
         {type = "fluid", name = "slacked-lime", amount = 100},
-        {type = "fluid", name = "grease", amount = 25}
+        {type = "fluid", name = "grease",       amount = 25}
     },
     results = {
-        {type = "item", name = "crude-diamond", amount = 7},
+        {type = "item",  name = "crude-diamond",     amount = 7},
         {type = "fluid", name = "dirty-water-light", amount = 100}
     },
     --main_product= "crude",
     icon = "__pyfusionenergygraphics__/graphics/icons/greasing-1.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "j1"
 }
@@ -497,16 +497,16 @@ RECIPE {
     energy_required = 3,
     ingredients = {
         {type = "fluid", name = "jig-grade2", amount = 50},
-        {type = "fluid", name = "tar", amount = 100},
-        {type = "fluid", name = "grease", amount = 25}
+        {type = "fluid", name = "tar",        amount = 100},
+        {type = "fluid", name = "grease",     amount = 25}
     },
     results = {
-        {type = "item", name = "crude-diamond", amount = 5},
+        {type = "item",  name = "crude-diamond",     amount = 5},
         {type = "fluid", name = "dirty-water-heavy", amount = 150}
     },
     --main_product= "crude",
     icon = "__pyfusionenergygraphics__/graphics/icons/greasing-2.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "j2"
 }
@@ -518,17 +518,17 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "fluid", name = "jig-grade3", amount = 50},
+        {type = "fluid", name = "jig-grade3",      amount = 50},
         {type = "fluid", name = "organic-solvent", amount = 100},
-        {type = "fluid", name = "grease", amount = 25}
+        {type = "fluid", name = "grease",          amount = 25}
     },
     results = {
-        {type = "item", name = "crude-diamond", amount = 2},
+        {type = "item",  name = "crude-diamond",     amount = 2},
         {type = "fluid", name = "dirty-water-heavy", amount = 200}
     },
     --main_product= "crude",
     icon = "__pyfusionenergygraphics__/graphics/icons/greasing-3.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "j3"
 }
@@ -541,15 +541,15 @@ RECIPE {
     energy_required = 7,
     ingredients = {
         {type = "fluid", name = "sulfuric-acid", amount = 100},
-        {type = "item", name = "crude-diamond", amount = 20}
+        {type = "item",  name = "crude-diamond", amount = 20}
     },
     results = {
-        {type = "item", name = "washed-diamond", amount = 10},
+        {type = "item",  name = "washed-diamond",    amount = 10},
         {type = "fluid", name = "dirty-water-light", amount = 120}
     },
     --main_product= "crude",
     icon = "__pyfusionenergygraphics__/graphics/icons/crude-diamond-washer.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "k"
 }
@@ -564,12 +564,12 @@ RECIPE {
         {type = "item", name = "washed-diamond", amount = 40}
     },
     results = {
-        {type = "item", name = "diamond", amount = 20},
+        {type = "item", name = "diamond",            amount = 20},
         {type = "item", name = "kimberlite-residue", amount = 10}
     },
     --main_product= "crude",
     icon = "__pyfusionenergygraphics__/graphics/icons/class-diamond.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "k"
 }
@@ -581,13 +581,13 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "fluid", name = "purified-air", amount = 120},
+        {type = "fluid", name = "purified-air",  amount = 120},
         {type = "fluid", name = "pressured-air", amount = 90}
     },
     results = {
         {type = "fluid", name = "cold-air", amount = 45}
     },
-    main_product= "cold-air",
+    main_product = "cold-air",
 }
 
 RECIPE {
@@ -601,9 +601,9 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "dry-gas-stream", amount = 1, probability = 0.2},
-        {type = "fluid", name = "helium", amount = 1, probability = 0.4}
+        {type = "fluid", name = "helium",         amount = 1, probability = 0.4}
     },
-    main_product= "dry-gas-stream",
+    main_product = "dry-gas-stream",
 }
 
 RECIPE {
@@ -616,15 +616,15 @@ RECIPE {
         {type = "item", name = "calcinates", amount = 20}
     },
     results = {
-        {type = "item", name = "iron-ore", amount = 1, probability = 0.4},
+        {type = "item", name = "iron-ore",   amount = 1, probability = 0.4},
         {type = "item", name = "copper-ore", amount = 1, probability = 0.4},
-        {type = "item", name = "limestone", amount = 1, probability = 0.3},
-        {type = "item", name = "sulfur", amount = 1, probability = 0.3}
+        {type = "item", name = "limestone",  amount = 1, probability = 0.3},
+        {type = "item", name = "sulfur",     amount = 1, probability = 0.3}
         --add bobs minerals
     },
     --main_product= "crude",
     icon = "__pyfusionenergygraphics__/graphics/icons/calcinate-separation.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "l"
 }
@@ -636,11 +636,11 @@ RECIPE {
     enabled = false,
     energy_required = 15,
     ingredients = {
-        {type = "item", name = "nexelit-plate", amount = 10},
-        {type = "item", name = "lens", amount = 5},
-        {type = "item", name = "serine", amount = 15},
-        {type = "item", name = "fawogae-substrate", amount = 20},
-        {type = "fluid", name = "phytoplankton", amount = 25}
+        {type = "item",  name = "nexelit-plate",     amount = 10},
+        {type = "item",  name = "lens",              amount = 5},
+        {type = "item",  name = "serine",            amount = 15},
+        {type = "item",  name = "fawogae-substrate", amount = 20},
+        {type = "fluid", name = "phytoplankton",     amount = 25}
     },
     results = {
         {type = "fluid", name = "bacteria-1", amount = 50}
@@ -668,9 +668,9 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "iron-plate", amount = 2},
+        {type = "item",  name = "iron-plate",    amount = 2},
         {type = "fluid", name = "sulfuric-acid", amount = 100},
-        {type = "fluid", name = "methanol", amount = 100}
+        {type = "fluid", name = "methanol",      amount = 100}
     },
     results = {
         {type = "item", name = "methyl-acrylate", amount = 1}
@@ -684,10 +684,10 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "iron-plate", amount = 2}, --bobs tin plate
+        {type = "item", name = "iron-plate",  amount = 2}, --bobs tin plate
         {type = "item", name = "mukmoux-fat", amount = 5},
-        {type = "item", name = "organics", amount = 50},
-        {type = "item", name = "ralesia", amount = 15}
+        {type = "item", name = "organics",    amount = 50},
+        {type = "item", name = "ralesia",     amount = 15}
     },
     results = {
         {type = "item", name = "kmauts-ration", amount = 3}
@@ -705,11 +705,11 @@ RECIPE {
     },
     results = {
         {type = "item", name = "crushed-regolite", amount = 5},
-        {type = "item", name = "stone", amount = 2}
+        {type = "item", name = "stone",            amount = 2}
     },
     main_product = "crushed-regolite",
     icon = "__pyfusionenergygraphics__/graphics/icons/crush-regolite.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "a"
 }
@@ -725,11 +725,11 @@ RECIPE {
     },
     results = {
         {type = "item", name = "powdered-regolite", amount = 5},
-        {type = "item", name = "gravel", amount = 1}
+        {type = "item", name = "gravel",            amount = 1}
     },
     main_product = "powdered-regolite",
     icon = "__pyfusionenergygraphics__/graphics/icons/regolite-recrush.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-recipes",
     order = "a"
 }
@@ -745,7 +745,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "regolite-dust", amount = 5},
-        {type = "item", name = "sand", amount = 2}
+        {type = "item", name = "sand",          amount = 2}
     },
     main_product = "regolite-dust",
 }
@@ -760,12 +760,12 @@ RECIPE {
         {type = "item", name = "regolite-dust", amount = 20}
     },
     results = {
-        {type = "item", name = "calcinates", amount = 12},
-        {type = "item", name = "ash", amount = 3},
+        {type = "item",  name = "calcinates",     amount = 12},
+        {type = "item",  name = "ash",            amount = 3},
         {type = "fluid", name = "dry-gas-stream", amount = 10}
         --add bobs hydrogen
     },
-    main_product= "calcinates",
+    main_product = "calcinates",
 }
 
 RECIPE {
@@ -776,14 +776,14 @@ RECIPE {
     energy_required = 1,
     ingredients = {
         {type = "fluid", name = "petroleum-gas", amount = 5},
-        {type = "fluid", name = "water", amount = 100},
-        {type = "fluid", name = "gasoline", amount = 5}
+        {type = "fluid", name = "water",         amount = 100},
+        {type = "fluid", name = "gasoline",      amount = 5}
     },
     results = {
         {type = "fluid", name = "liquid-petgas", amount = 5},
-        {type = "fluid", name = "steam", amount = 100, temperature = 150, catalyst_amount = 100}
+        {type = "fluid", name = "steam",         amount = 100, temperature = 150, catalyst_amount = 100}
     },
-    main_product= "liquid-petgas",
+    main_product = "liquid-petgas",
 }
 
 RECIPE {
@@ -794,10 +794,10 @@ RECIPE {
     energy_required = 5,
     ingredients = {
         {type = "fluid", name = "liquid-petgas", amount = 20},
-        {type = "item", name = "active-carbon", amount = 2}
+        {type = "item",  name = "active-carbon", amount = 2}
     },
     results = {
-        {type = "fluid", name = "aromatics", amount = 10},
+        {type = "fluid", name = "aromatics",  amount = 10},
         {type = "fluid", name = "gas-stream", amount = 20}
     },
     main_product = "gas-stream",
@@ -810,11 +810,11 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "fluid", name = "gas-stream", amount = 20},
-        {type = "item", name = "filtration-media", amount = 1}
+        {type = "fluid", name = "gas-stream",       amount = 20},
+        {type = "item",  name = "filtration-media", amount = 1}
     },
     results = {
-        {type = "fluid", name = "water", amount = 10},
+        {type = "fluid", name = "water",          amount = 10},
         {type = "fluid", name = "dry-gas-stream", amount = 3}
     },
     main_product = "dry-gas-stream",
@@ -830,7 +830,7 @@ RECIPE {
         {type = "fluid", name = "liquid-rich-gas", amount = 30}
     },
     results = {
-        {type = "fluid", name = "water", amount = 10}, -- bobs pyliquid-nitrogen
+        {type = "fluid", name = "water",           amount = 10}, -- bobs pyliquid-nitrogen
         {type = "fluid", name = "helium-rich-gas", amount = 10}
     },
     main_product = "helium-rich-gas",
@@ -846,7 +846,7 @@ RECIPE {
         {type = "fluid", name = "purier-helium", amount = 8}
     },
     results = {
-        {type = "fluid", name = "water", amount = 10},
+        {type = "fluid", name = "water",  amount = 10},
         {type = "fluid", name = "helium", amount = 50}
     },
     main_product = "helium",
@@ -859,15 +859,15 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "fluid", name = "boric-acid", amount = 150},
-        {type = "fluid", name = "vacuum", amount = 100},
-        {type = "item", name = "nexelit-plate", amount = 4},
-        {type = "item", name = "treated-wood", amount = 3}
+        {type = "fluid", name = "boric-acid",    amount = 150},
+        {type = "fluid", name = "vacuum",        amount = 100},
+        {type = "item",  name = "nexelit-plate", amount = 4},
+        {type = "item",  name = "treated-wood",  amount = 3}
     },
     results = {
         {type = "item", name = "nexelit-matrix", amount = 4}
     },
-}:add_unlock('nenbit-matrix')
+}:add_unlock("nenbit-matrix")
 
 RECIPE {
     type = "recipe",
@@ -877,12 +877,12 @@ RECIPE {
     energy_required = 3,
     ingredients = {
         {type = "item", name = "niobium-plate", amount = 5},
-        {type = "item", name = "steel-plate", amount = 10}
+        {type = "item", name = "steel-plate",   amount = 10}
     },
     results = {
         {type = "item", name = "nbti-alloy", amount = 2}
     },
-}:add_unlock('nenbit-matrix')
+}:add_unlock("nenbit-matrix")
 
 RECIPE {
     type = "recipe",
@@ -891,13 +891,13 @@ RECIPE {
     enabled = false,
     energy_required = 15,
     ingredients = {
-        {type = "item", name = "nbti-alloy", amount = 2},
+        {type = "item", name = "nbti-alloy",     amount = 2},
         {type = "item", name = "nexelit-matrix", amount = 10}
     },
     results = {
         {type = "item", name = "nenbit-matrix", amount = 2}
     },
-}:add_unlock('nenbit-matrix')
+}:add_unlock("nenbit-matrix")
 
 RECIPE {
     type = "recipe",
@@ -907,7 +907,7 @@ RECIPE {
     energy_required = 4,
     ingredients = {
         {type = "item", name = "iron-oxide", amount = 20},
-        {type = "item", name = "nichrome", amount = 3}
+        {type = "item", name = "nichrome",   amount = 3}
         --add zinc plate
     },
     results = {
@@ -922,7 +922,7 @@ RECIPE {
     enabled = false,
     energy_required = 4,
     ingredients = {
-        {type = "item", name = "ferrite", amount = 4},
+        {type = "item", name = "ferrite",      amount = 4},
         {type = "item", name = "copper-cable", amount = 40} --bobs gilded copper cable
     },
     results = {
@@ -937,7 +937,7 @@ RECIPE {
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "item", name = "iron-plate", amount = 10}, --bobs tin plate
+        {type = "item", name = "iron-plate",    amount = 10}, --bobs tin plate
         {type = "item", name = "nenbit-matrix", amount = 1}
     },
     results = {
@@ -952,9 +952,9 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "sc-wire", amount = 10},
+        {type = "item", name = "sc-wire",     amount = 10},
         {type = "item", name = "plastic-bar", amount = 10},
-        {type = "item", name = "coil-core", amount = 1}
+        {type = "item", name = "coil-core",   amount = 1}
     },
     results = {
         {type = "item", name = "sc-coil", amount = 1}
@@ -968,9 +968,9 @@ RECIPE {
     enabled = false,
     energy_required = 25,
     ingredients = {
-        {type = "item", name = "sc-coil", amount = 2},
+        {type = "item", name = "sc-coil",      amount = 2},
         {type = "item", name = "cladded-core", amount = 3},
-        {type = "item", name = "kevlar", amount = 8}
+        {type = "item", name = "kevlar",       amount = 8}
     },
     results = {
         {type = "item", name = "magnetic-core", amount = 1}
@@ -984,7 +984,7 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "magnetic-core", amount = 1},
+        {type = "item", name = "magnetic-core",  amount = 1},
         {type = "item", name = "vanadium-oxide", amount = 10}
     },
     results = {
@@ -1000,7 +1000,7 @@ RECIPE {
     energy_required = 180,
     ingredients = {
         {type = "item", name = "molybdenum-plate", amount = 60},
-        {type = "item", name = "deposited-core", amount = 12},
+        {type = "item", name = "deposited-core",   amount = 12},
         {type = "item", name = "advanced-circuit", amount = 12}
         --add liquid nitrogen
     },
@@ -1022,7 +1022,7 @@ RECIPE {
         {type = "fluid", name = "deuterium", amount = 4}
         --add oxygen
     },
-    main_product= "deuterium",
+    main_product = "deuterium",
 }
 
 RECIPE {
@@ -1046,8 +1046,8 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "b2o3-dust", amount = 15},
-        {type = "fluid", name = "helium", amount = 15}
+        {type = "item",  name = "b2o3-dust", amount = 15},
+        {type = "fluid", name = "helium",    amount = 15}
         --add bobs aluminum
     },
     results = {
@@ -1062,11 +1062,11 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "boron-mixture", amount = 3},
-        {type = "fluid", name = "refsyngas", amount = 300}
+        {type = "item",  name = "boron-mixture", amount = 3},
+        {type = "fluid", name = "refsyngas",     amount = 300}
     },
     results = {
-        {type = "item", name = "boron", amount = 2},
+        {type = "item",  name = "boron",    amount = 2},
         {type = "fluid", name = "diborane", amount = 50, catalyst_amount = 50}
     },
     main_product = "boron",
@@ -1080,10 +1080,10 @@ RECIPE {
     energy_required = 5,
     ingredients = {
         {type = "item", name = "boron-trioxide", amount = 2},
-        {type = "item", name = "coke", amount = 7} --bobs carbon
+        {type = "item", name = "coke",           amount = 7} --bobs carbon
     },
     results = {
-        {type = "item", name = "boron-carbide", amount = 3},
+        {type = "item",  name = "boron-carbide",  amount = 3},
         {type = "fluid", name = "carbon-dioxide", amount = 30}
     },
     main_product = "boron-carbide",
@@ -1096,12 +1096,12 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "super-alloy", amount = 6},
-        {type = "item", name = "ferrite", amount = 10},
-        {type = "item", name = "molybdenum-oxide", amount = 5},
-        {type = "item", name = "vanadium-oxide", amount = 5},
-        {type = "item", name = "copper-plate", amount = 25},
-        {type = "fluid", name = "helium", amount = 20}
+        {type = "item",  name = "super-alloy",      amount = 6},
+        {type = "item",  name = "ferrite",          amount = 10},
+        {type = "item",  name = "molybdenum-oxide", amount = 5},
+        {type = "item",  name = "vanadium-oxide",   amount = 5},
+        {type = "item",  name = "copper-plate",     amount = 25},
+        {type = "fluid", name = "helium",           amount = 20}
     },
     results = {
         {type = "item", name = "blanket-chassi", amount = 3}
@@ -1116,8 +1116,8 @@ RECIPE {
     energy_required = 40,
     ingredients = {
         {type = "item", name = "blanket-chassi", amount = 2},
-        {type = "item", name = "boron-carbide", amount = 10},
-        {type = "item", name = "diamond", amount = 20}
+        {type = "item", name = "boron-carbide",  amount = 10},
+        {type = "item", name = "diamond",        amount = 20}
         --add bobs lithium and lead
     },
     results = {
@@ -1133,7 +1133,7 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "item", name = "steel-plate", amount = 20},
-        {type = "item", name = "diamond", amount = 10},
+        {type = "item", name = "diamond",     amount = 10},
         {type = "item", name = "super-alloy", amount = 10}
         --add bobs tungstein
     },
@@ -1149,11 +1149,11 @@ RECIPE {
     enabled = false,
     energy_required = 7,
     ingredients = {
-        {type = "item", name = "steel-plate", amount = 20},
-        {type = "item", name = "diamond", amount = 5},
-        {type = "item", name = "super-alloy", amount = 6},
+        {type = "item", name = "steel-plate",   amount = 20},
+        {type = "item", name = "diamond",       amount = 5},
+        {type = "item", name = "super-alloy",   amount = 6},
         {type = "item", name = "boron-carbide", amount = 10},
-        {type = "item", name = "ferrite", amount = 15}
+        {type = "item", name = "ferrite",       amount = 15}
     },
     results = {
         {type = "item", name = "wall-shield", amount = 5}
@@ -1167,9 +1167,9 @@ RECIPE {
     enabled = false,
     energy_required = 7,
     ingredients = {
-        {type = "item", name = "wall-shield", amount = 1},
-        {type = "item", name = "diamond", amount = 1},
-        {type = "fluid", name = "refsyngas", amount = 100}
+        {type = "item",  name = "wall-shield", amount = 1},
+        {type = "item",  name = "diamond",     amount = 1},
+        {type = "fluid", name = "refsyngas",   amount = 100}
     },
     results = {
         {type = "item", name = "reinforced-wall-shield", amount = 1}
@@ -1183,29 +1183,29 @@ RECIPE {
     enabled = false,
     energy_required = 40,
     ingredients = {
-        {type = "fluid", name = "deuterium", amount = 100},
+        {type = "fluid", name = "deuterium",       amount = 100},
         {type = "fluid", name = "pressured-water", amount = 4500},
-        {type = "item", name = "blanket", amount = 1},
-        {type = "item", name = "divertor", amount = 2},
-        {type = "item", name = "wall-shield", amount = 5},
-        {type = "item", name = "sc-unit", amount = 4},
-        {type = "fluid", name = "liquid-helium", amount = 30},
-        {type = "fluid", name = "water", amount = 2000}
+        {type = "item",  name = "blanket",         amount = 1},
+        {type = "item",  name = "divertor",        amount = 2},
+        {type = "item",  name = "wall-shield",     amount = 5},
+        {type = "item",  name = "sc-unit",         amount = 4},
+        {type = "fluid", name = "liquid-helium",   amount = 30},
+        {type = "fluid", name = "water",           amount = 2000}
     },
     results = {
         {type = "fluid", name = "critical-steam", amount = 4000, temperature = 1000},
-        {type = "fluid", name = "helium", amount = 150},
-        {type = "fluid", name = "tritium", amount = 20},
-        {type = "fluid", name = "helium3", amount = 30},
-        {type = "fluid", name = "steam", amount = 2000, temperature = 150, catalyst_amount = 2000},
-        {type = "item", name = "blanket", amount = 1, probability = 0.5},
-        {type = "item", name = "divertor", amount = 1, probability = 0.5},
-        {type = "item", name = "wall-shield", amount = 3, probability = 0.5},
-        {type = "item", name = "sc-unit", amount = 3, probability = 0.5},
+        {type = "fluid", name = "helium",         amount = 150},
+        {type = "fluid", name = "tritium",        amount = 20},
+        {type = "fluid", name = "helium3",        amount = 30},
+        {type = "fluid", name = "steam",          amount = 2000, temperature = 150, catalyst_amount = 2000},
+        {type = "item",  name = "blanket",        amount = 1,    probability = 0.5},
+        {type = "item",  name = "divertor",       amount = 1,    probability = 0.5},
+        {type = "item",  name = "wall-shield",    amount = 3,    probability = 0.5},
+        {type = "item",  name = "sc-unit",        amount = 3,    probability = 0.5},
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-deuterium.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e",
     show_details_in_recipe_tooltip = false
@@ -1218,29 +1218,29 @@ RECIPE {
     enabled = false,
     energy_required = 40,
     ingredients = {
-        {type = "fluid", name = "deuterium", amount = 200},
-        {type = "fluid", name = "helium3", amount = 90},
-        {type = "fluid", name = "pressured-water", amount = 4000},
-        {type = "item", name = "blanket", amount = 1},
-        {type = "item", name = "divertor", amount = 3},
-        {type = "item", name = "reinforced-wall-shield", amount = 5},
-        {type = "item", name = "sc-unit", amount = 4},
-        {type = "fluid", name = "liquid-helium", amount = 35},
-        {type = "fluid", name = "water", amount = 5000}
+        {type = "fluid", name = "deuterium",              amount = 200},
+        {type = "fluid", name = "helium3",                amount = 90},
+        {type = "fluid", name = "pressured-water",        amount = 4000},
+        {type = "item",  name = "blanket",                amount = 1},
+        {type = "item",  name = "divertor",               amount = 3},
+        {type = "item",  name = "reinforced-wall-shield", amount = 5},
+        {type = "item",  name = "sc-unit",                amount = 4},
+        {type = "fluid", name = "liquid-helium",          amount = 35},
+        {type = "fluid", name = "water",                  amount = 5000}
     },
     results = {
-        {type = "fluid", name = "critical-steam", amount = 4000, temperature = 3000},
-        {type = "fluid", name = "helium", amount = 175},
-        {type = "fluid", name = "proton", amount = 15},
-        {type = "fluid", name = "steam", amount = 5000, temperature = 150, catalyst_amount = 5000},
-        {type = "item", name = "blanket", amount = 1, probability = 0.5},
-        {type = "item", name = "divertor", amount = 1, probability = 0.5},
-        {type = "item", name = "reinforced-wall-shield", amount = 3, probability = 0.5},
-        {type = "item", name = "sc-unit", amount = 3, probability = 0.5},
+        {type = "fluid", name = "critical-steam",         amount = 4000, temperature = 3000},
+        {type = "fluid", name = "helium",                 amount = 175},
+        {type = "fluid", name = "proton",                 amount = 15},
+        {type = "fluid", name = "steam",                  amount = 5000, temperature = 150, catalyst_amount = 5000},
+        {type = "item",  name = "blanket",                amount = 1,    probability = 0.5},
+        {type = "item",  name = "divertor",               amount = 1,    probability = 0.5},
+        {type = "item",  name = "reinforced-wall-shield", amount = 3,    probability = 0.5},
+        {type = "item",  name = "sc-unit",                amount = 3,    probability = 0.5},
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-he3.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e",
     show_details_in_recipe_tooltip = false
@@ -1253,29 +1253,29 @@ RECIPE {
     enabled = false,
     energy_required = 40,
     ingredients = {
-        {type = "fluid", name = "deuterium", amount = 80},
-        {type = "fluid", name = "tritium", amount = 20},
-        {type = "fluid", name = "pressured-water", amount = 4500},
-        {type = "item", name = "blanket", amount = 2},
-        {type = "item", name = "divertor", amount = 2},
-        {type = "item", name = "reinforced-wall-shield", amount = 5},
-        {type = "item", name = "sc-unit", amount = 4},
-        {type = "fluid", name = "liquid-helium", amount = 30},
-        {type = "fluid", name = "water", amount = 3500}
+        {type = "fluid", name = "deuterium",              amount = 80},
+        {type = "fluid", name = "tritium",                amount = 20},
+        {type = "fluid", name = "pressured-water",        amount = 4500},
+        {type = "item",  name = "blanket",                amount = 2},
+        {type = "item",  name = "divertor",               amount = 2},
+        {type = "item",  name = "reinforced-wall-shield", amount = 5},
+        {type = "item",  name = "sc-unit",                amount = 4},
+        {type = "fluid", name = "liquid-helium",          amount = 30},
+        {type = "fluid", name = "water",                  amount = 3500}
     },
     results = {
-        {type = "fluid", name = "critical-steam", amount = 4000, temperature = 2000},
-        {type = "fluid", name = "helium", amount = 200},
-        {type = "fluid", name = "tritium", amount = 5},
-        {type = "fluid", name = "steam", amount = 3500, temperature = 150, catalyst_amount = 3500},
-        {type = "item", name = "blanket", amount = 1, probability = 0.5},
-        {type = "item", name = "divertor", amount = 1, probability = 0.5},
-        {type = "item", name = "reinforced-wall-shield", amount = 3, probability = 0.5},
-        {type = "item", name = "sc-unit", amount = 3, probability = 0.5},
+        {type = "fluid", name = "critical-steam",         amount = 4000, temperature = 2000},
+        {type = "fluid", name = "helium",                 amount = 200},
+        {type = "fluid", name = "tritium",                amount = 5},
+        {type = "fluid", name = "steam",                  amount = 3500, temperature = 150, catalyst_amount = 3500},
+        {type = "item",  name = "blanket",                amount = 1,    probability = 0.5},
+        {type = "item",  name = "divertor",               amount = 1,    probability = 0.5},
+        {type = "item",  name = "reinforced-wall-shield", amount = 3,    probability = 0.5},
+        {type = "item",  name = "sc-unit",                amount = 3,    probability = 0.5},
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-dt.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e",
     show_details_in_recipe_tooltip = false
@@ -1288,27 +1288,27 @@ RECIPE {
     enabled = false,
     energy_required = 40,
     ingredients = {
-        {type = "fluid", name = "proton", amount = 15},
-        {type = "fluid", name = "pressured-water", amount = 5000},
-        {type = "item", name = "blanket", amount = 1},
-        {type = "item", name = "divertor", amount = 8},
-        {type = "item", name = "wall-shield", amount = 5},
-        {type = "item", name = "boron", amount = 15},
-        {type = "item", name = "production-science-pack", amount = 5},
-        {type = "fluid", name = "liquid-helium", amount = 100},
-        {type = "fluid", name = "water", amount = 5000}
+        {type = "fluid", name = "proton",                  amount = 15},
+        {type = "fluid", name = "pressured-water",         amount = 5000},
+        {type = "item",  name = "blanket",                 amount = 1},
+        {type = "item",  name = "divertor",                amount = 8},
+        {type = "item",  name = "wall-shield",             amount = 5},
+        {type = "item",  name = "boron",                   amount = 15},
+        {type = "item",  name = "production-science-pack", amount = 5},
+        {type = "fluid", name = "liquid-helium",           amount = 100},
+        {type = "fluid", name = "water",                   amount = 5000}
     },
     results = {
         {type = "fluid", name = "critical-steam", amount = 4000, temperature = 4000},
-        {type = "fluid", name = "helium", amount = 500},
-        {type = "fluid", name = "steam", amount = 5000, temperature = 150, catalyst_amount = 5000},
-        {type = "item", name = "blanket", amount = 1, probability = 0.6},
-        {type = "item", name = "divertor", amount = 2, probability = 0.6},
-        {type = "item", name = "wall-shield", amount = 3, probability = 0.5},
+        {type = "fluid", name = "helium",         amount = 500},
+        {type = "fluid", name = "steam",          amount = 5000, temperature = 150, catalyst_amount = 5000},
+        {type = "item",  name = "blanket",        amount = 1,    probability = 0.6},
+        {type = "item",  name = "divertor",       amount = 2,    probability = 0.6},
+        {type = "item",  name = "wall-shield",    amount = 3,    probability = 0.5},
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-bh.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e",
     show_details_in_recipe_tooltip = false
@@ -1322,15 +1322,15 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "critical-steam", amount = 1000, temperature = 1000},
-        {type = "fluid", name = "water", amount = 250}
+        {type = "fluid", name = "water",          amount = 250}
     },
     results = {
         {type = "fluid", name = "pressured-steam", amount = 2000, temperature = 1000},
-        {type = "fluid", name = "steam", amount = 250, temperature = 150, catalyst_amount = 250}
+        {type = "fluid", name = "steam",           amount = 250,  temperature = 150, catalyst_amount = 250}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
 }
@@ -1343,15 +1343,15 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "critical-steam", amount = 1000, temperature = 2000},
-        {type = "fluid", name = "water", amount = 250}
+        {type = "fluid", name = "water",          amount = 250}
     },
     results = {
         {type = "fluid", name = "pressured-steam", amount = 2000, temperature = 2000},
-        {type = "fluid", name = "steam", amount = 250, temperature = 150, catalyst_amount = 250}
+        {type = "fluid", name = "steam",           amount = 250,  temperature = 150, catalyst_amount = 250}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange2.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
 }
@@ -1364,15 +1364,15 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "critical-steam", amount = 1000, temperature = 3000},
-        {type = "fluid", name = "water", amount = 250}
+        {type = "fluid", name = "water",          amount = 250}
     },
     results = {
         {type = "fluid", name = "pressured-steam", amount = 2000, temperature = 3000},
-        {type = "fluid", name = "steam", amount = 250, temperature = 150, catalyst_amount = 250}
+        {type = "fluid", name = "steam",           amount = 250,  temperature = 150, catalyst_amount = 250}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange3.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
 }
@@ -1385,15 +1385,15 @@ RECIPE {
     energy_required = 10,
     ingredients = {
         {type = "fluid", name = "critical-steam", amount = 1000, temperature = 4000},
-        {type = "fluid", name = "water", amount = 400}
+        {type = "fluid", name = "water",          amount = 400}
     },
     results = {
         {type = "fluid", name = "pressured-steam", amount = 2000, temperature = 4000},
-        {type = "fluid", name = "steam", amount = 400, temperature = 150, catalyst_amount = 400}
+        {type = "fluid", name = "steam",           amount = 400,  temperature = 150, catalyst_amount = 400}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange4.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
 }
@@ -1420,8 +1420,8 @@ RECIPE {
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "item", name = "diamond", amount = 10},
-        {type = "item", name = "pipe", amount = 1}, --pyindustry niobium-pipe
+        {type = "item", name = "diamond",     amount = 10},
+        {type = "item", name = "pipe",        amount = 1}, --pyindustry niobium-pipe
         {type = "item", name = "steel-plate", amount = 10} --bobs titanium plate
     },
     results = {
@@ -1436,7 +1436,7 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "lead-container", amount = 2},
+        {type = "item", name = "lead-container",  amount = 2},
         {type = "item", name = "science-coating", amount = 1}
     },
     results = {
@@ -1451,16 +1451,16 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "plutonium", amount = 5},
-        {type = "item", name = "automation-science-pack", amount = 1},
-        {type = "fluid", name = "boric-acid", amount = 100},
-        {type = "fluid", name = "industrial-solvent", amount = 100},
-        {type = "fluid", name = "aromatics", amount = 50}
+        {type = "item",  name = "plutonium",               amount = 5},
+        {type = "item",  name = "automation-science-pack", amount = 1},
+        {type = "fluid", name = "boric-acid",              amount = 100},
+        {type = "fluid", name = "industrial-solvent",      amount = 100},
+        {type = "fluid", name = "aromatics",               amount = 50}
     },
     results = {
         {type = "item", name = "nuclear-sample", amount = 1}
     },
-}:add_unlock('production-science-pack')
+}:add_unlock("production-science-pack")
 
 RECIPE {
     type = "recipe",
@@ -1469,16 +1469,16 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "advanced-circuit", amount = 10},
+        {type = "item", name = "advanced-circuit",  amount = 10},
         {type = "item", name = "nexelit-cartridge", amount = 1},
-        {type = "item", name = "nenbit-matrix", amount = 4},
-        {type = "item", name = "fuelrod-mk01", amount = 2},
-        {type = "item", name = "iron-plate", amount = 4}
+        {type = "item", name = "nenbit-matrix",     amount = 4},
+        {type = "item", name = "fuelrod-mk01",      amount = 2},
+        {type = "item", name = "iron-plate",        amount = 4}
     },
     results = {
         {type = "item", name = "control-unit", amount = 2}
     },
-}:add_unlock('production-science-pack')
+}:add_unlock("production-science-pack")
 
 RECIPE {
     type = "recipe",
@@ -1487,15 +1487,15 @@ RECIPE {
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "item", name = "control-unit", amount = 2},
+        {type = "item", name = "control-unit",     amount = 2},
         {type = "item", name = "coated-container", amount = 2},
-        {type = "item", name = "nuclear-sample", amount = 4}
+        {type = "item", name = "nuclear-sample",   amount = 4}
     },
     results = {
         {type = "item", name = "production-science-pack", amount = 6}
     },
     icon = "__pyfusionenergygraphics__/graphics/icons/production-science-pack.png",
-	icon_size = 64
+    icon_size = 64
 }
 
 RECIPE {
@@ -1505,9 +1505,9 @@ RECIPE {
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "item", name = "stone", amount = 10}, --bobs zinc plate
-        {type = "item", name = "iron-plate", amount = 20}, --bobs silver plate
-        {type = "fluid", name = "refsyngas", amount = 200}
+        {type = "item",  name = "stone",      amount = 10}, --bobs zinc plate
+        {type = "item",  name = "iron-plate", amount = 20}, --bobs silver plate
+        {type = "fluid", name = "refsyngas",  amount = 200}
     },
     results = {
         {type = "item", name = "agzn-alloy", amount = 2}
@@ -1521,10 +1521,10 @@ RECIPE {
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "item", name = "agzn-alloy", amount = 1},
-        {type = "item", name = "limestone", amount = 30},
-        {type = "fluid", name = "acetylene", amount = 200},
-        {type = "fluid", name = "water", amount = 200},
+        {type = "item",  name = "agzn-alloy",        amount = 1},
+        {type = "item",  name = "limestone",         amount = 30},
+        {type = "fluid", name = "acetylene",         amount = 200},
+        {type = "fluid", name = "water",             amount = 200},
         {type = "fluid", name = "hydrogen-peroxide", amount = 100}
     },
     results = {
@@ -1539,13 +1539,13 @@ RECIPE {
     enabled = false,
     energy_required = 8,
     ingredients = {
-        {type = "item", name = "silver-foam", amount = 1},
-        {type = "fluid", name = "helium", amount = 10},
-        {type = "item", name = "niobium-plate", amount = 4}
+        {type = "item",  name = "silver-foam",   amount = 1},
+        {type = "fluid", name = "helium",        amount = 10},
+        {type = "item",  name = "niobium-plate", amount = 4}
     },
     results = {
         {type = "fluid", name = "helium3", amount = 8},
-        {type = "fluid", name = "helium", amount = 2}
+        {type = "fluid", name = "helium",  amount = 2}
     },
     main_product = "helium3",
 }
@@ -1556,9 +1556,9 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "fluid", name = "lubricant", amount = 100},
-        {type = "fluid", name = "coal-gas", amount = 100},
-        {type = "item", name = "drill-head", amount = 2}
+        {type = "fluid", name = "lubricant",  amount = 100},
+        {type = "fluid", name = "coal-gas",   amount = 100},
+        {type = "item",  name = "drill-head", amount = 2}
     },
     results = {
         {type = "item", name = "molybdenum-ore", amount = 15}
@@ -1577,16 +1577,16 @@ RECIPE {
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "fluid", name = "steam", amount = 1000, maximum_temperature = 500},
-        {type = "fluid", name = "water", amount = 100},
-        {type = "item", name = "fuelrod-mk01", amount = 1},
+        {type = "fluid", name = "steam",        amount = 1000, maximum_temperature = 500},
+        {type = "fluid", name = "water",        amount = 100},
+        {type = "item",  name = "fuelrod-mk01", amount = 1},
     },
     results = {
         {type = "fluid", name = "steam", amount = 1000, temperature = 500},
     },
     main_product = "steam",
     icon = "__pyfusionenergygraphics__/graphics/icons/steam-heating.png",
-	icon_size = 32,
+    icon_size = 32,
     subgroup = "py-fusion-items",
     order = "e"
 }:add_unlock("fusion-mk01")
@@ -1616,7 +1616,7 @@ RECIPE {
     enabled = false,
     energy_required = 20,
     ingredients = {
-        {type = "fluid", name = "waste-water", amount = 200},
+        {type = "fluid", name = "waste-water",    amount = 200},
         {type = "fluid", name = "carbon-dioxide", amount = 250}
     },
     results = {
@@ -1636,12 +1636,12 @@ RECIPE {
     energy_required = 2,
     ingredients = {
         {type = "fluid", name = "flue-gas", amount = 2000},
-        {type = "fluid", name = "water", amount = 600},
+        {type = "fluid", name = "water",    amount = 600},
         {type = "fluid", name = "gasoline", amount = 5}
     },
     results = {
         {type = "fluid", name = "acidgas", amount = 30},
-        {type = "fluid", name = "steam", amount = 600, temperature = 150, catalyst_amount = 600}
+        {type = "fluid", name = "steam",   amount = 600, temperature = 150, catalyst_amount = 600}
     },
     main_product = "acidgas",
 }:add_unlock("advanced-oil-processing")
@@ -1653,10 +1653,10 @@ RECIPE {
     enabled = false,
     energy_required = 2.8,
     ingredients = {
-        {type = "fluid", name = "olefin", amount = 300},
-        {type = "item", name = "nexelit-plate", amount = 2},
+        {type = "fluid", name = "olefin",        amount = 300},
+        {type = "item",  name = "nexelit-plate", amount = 2},
         --{type="fluid", name="hydrogen", amount=20},
-        {type = "fluid", name = "light-oil", amount = 200}
+        {type = "fluid", name = "light-oil",     amount = 200}
     },
     results = {
         {type = "fluid", name = "gasoline", amount = 150}
@@ -1674,10 +1674,10 @@ RECIPE {
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "item", name = "niobium-plate", amount = 3},
+        {type = "item", name = "niobium-plate",    amount = 3},
         {type = "item", name = "molybdenum-plate", amount = 2},
-        {type = "item", name = "uranium-238", amount = 12},
-        {type = "item", name = "plutonium", amount = 2},
+        {type = "item", name = "uranium-238",      amount = 12},
+        {type = "item", name = "plutonium",        amount = 2},
     },
     results = {
         {type = "item", name = "mox-fuel-cell", amount = 1},
@@ -1696,7 +1696,7 @@ RECIPE {
     },
     results = {
         {type = "item", name = "uranium-238", amount = 6},
-        {type = "item", name = "plutonium", amount = 12}
+        {type = "item", name = "plutonium",   amount = 12}
     },
     main_product = "plutonium",
     subgroup = "intermediate-product",
@@ -1711,19 +1711,19 @@ RECIPE {
     energy_required = 3,
     ingredients = {
         {type = "fluid", name = "acetylene", amount = 100},
-        {type = "fluid", name = "water", amount = 100},
-        {type = "item", name = "coke", amount = 3}
+        {type = "fluid", name = "water",     amount = 100},
+        {type = "item",  name = "coke",      amount = 3}
     },
     results = {
         {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 1600},
-        {type = "fluid", name = "steam", amount = 100, temperature = 150, catalyst_amount = 100}
+        {type = "fluid", name = "steam",               amount = 100, temperature = 150, catalyst_amount = 100}
     },
     icon = "__pycoalprocessinggraphics__/graphics/icons/combustion-acetylene.png",
     icon_size = 32,
     --main_product = "combustion-mixture1",
     subgroup = "py-combustion",
     order = "g"
-}:add_unlock('energy-3')
+}:add_unlock("energy-3")
 
 RECIPE {
     type = "recipe",
@@ -1748,14 +1748,14 @@ RECIPE {
     enabled = false,
     energy_required = 3,
     ingredients = {
-        {type = "fluid", name = "gasoline", amount = 100},
-        {type = "fluid", name = "water", amount = 1000},
-        {type = "item", name = "coke", amount = 5},
-        {type = "item", name = "fuelrod-mk01", amount = 1}
+        {type = "fluid", name = "gasoline",     amount = 100},
+        {type = "fluid", name = "water",        amount = 1000},
+        {type = "item",  name = "coke",         amount = 5},
+        {type = "item",  name = "fuelrod-mk01", amount = 1}
     },
     results = {
-        {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 2600},
-        {type = "fluid", name = "steam", amount = 1000, temperature = 150, catalyst_amount = 1000}
+        {type = "fluid", name = "combustion-mixture1", amount = 150,  temperature = 2600},
+        {type = "fluid", name = "steam",               amount = 1000, temperature = 150, catalyst_amount = 1000}
     },
     icon = "__pycoalprocessinggraphics__/graphics/icons/combustion-gasoline.png",
     icon_size = 32,
@@ -1764,7 +1764,7 @@ RECIPE {
     order = "j"
 }:add_unlock("energy-3")
 
-if not mods['pyhightech'] then
+if not mods["pyhightech"] then
     RECIPE {
         type = "recipe",
         name = "iron-oxide",
@@ -1773,7 +1773,7 @@ if not mods['pyhightech'] then
         energy_required = 5,
         ingredients = {
             {type = "fluid", name = "hydrogen-peroxide", amount = 100},
-            {type = "item", name = "iron-plate", amount = 5}
+            {type = "item",  name = "iron-plate",        amount = 5}
         },
         results = {
             {type = "item", name = "iron-oxide", amount = 10}
@@ -1789,15 +1789,15 @@ RECIPE {
     enabled = false,
     category = "advanced-crafting",
     ingredients = {
-      {type = "item", name = "low-density-structure", amount = 2100},
-      {type = "item", name = "fusion-reactor-mk01", amount = 21},
-      {type = "item", name = "processing-unit", amount = 2100},
-      {type = "fluid", name = "deuterium", amount = 200},
-      {type = "fluid", name = "helium3", amount = 100},
-      {type = "item", name = "blanket", amount = 1},
-      {type = "item", name = "divertor", amount = 3},
-      {type = "item", name = "reinforced-wall-shield", amount = 3},
-      {type = "item", name = "sc-unit", amount = 4},
+        {type = "item",  name = "low-density-structure",  amount = 2100},
+        {type = "item",  name = "fusion-reactor-mk01",    amount = 21},
+        {type = "item",  name = "processing-unit",        amount = 2100},
+        {type = "fluid", name = "deuterium",              amount = 200},
+        {type = "fluid", name = "helium3",                amount = 100},
+        {type = "item",  name = "blanket",                amount = 1},
+        {type = "item",  name = "divertor",               amount = 3},
+        {type = "item",  name = "reinforced-wall-shield", amount = 3},
+        {type = "item",  name = "sc-unit",                amount = 4},
     },
     results = {
         {type = "item", name = "satellite", amount = 1}
@@ -1813,10 +1813,10 @@ RECIPE {
     hidden = true,
     category = "rocket-building",
     ingredients = {
-        {type = "item", name = "advanced-circuit", amount = 210},
+        {type = "item", name = "advanced-circuit",      amount = 210},
         {type = "item", name = "low-density-structure", amount = 25},
-        {type = "item", name = "super-alloy", amount = 28},
-        {type = "item", name = "rocket-fuel", amount = 210}
+        {type = "item", name = "super-alloy",           amount = 28},
+        {type = "item", name = "rocket-fuel",           amount = 210}
     },
     results = {
         {type = "item", name = "rocket-part", amount = 1}

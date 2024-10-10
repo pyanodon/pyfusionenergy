@@ -4,23 +4,23 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "storage-tank", amount = 1},
-        {type = "item", name = "stone-brick", amount = 20},
+        {type = "item", name = "storage-tank",       amount = 1},
+        {type = "item", name = "stone-brick",        amount = 20},
         {type = "item", name = "electronic-circuit", amount = 5}, --updated-bob basic-electronic-circuit-board
-        {type = "item", name = "steel-plate", amount = 50},
-        {type = "item", name = "niobium-plate", amount = 15},
-        {type = "item", name = "steam-engine", amount = 3},
+        {type = "item", name = "steel-plate",        amount = 50},
+        {type = "item", name = "niobium-plate",      amount = 15},
+        {type = "item", name = "steam-engine",       amount = 3},
     },
     results = {
         {type = "item", name = "plankton-farm", amount = 1}
     }
-}:add_unlock('xyhiphoe')
+}:add_unlock("xyhiphoe")
 
 ITEM {
     type = "item",
     name = "plankton-farm",
     icon = "__pyfusionenergygraphics__/graphics/icons/plankton-farm.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-miners",
     order = "b",
@@ -32,7 +32,7 @@ ENTITY {
     type = "assembling-machine",
     name = "plankton-farm",
     icon = "__pyfusionenergygraphics__/graphics/icons/plankton-farm.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "plankton-farm"},
     fast_replaceable_group = "plankton-farm",

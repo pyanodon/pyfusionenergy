@@ -8,11 +8,11 @@ RECIPE {
         {type = "fluid", name = "high-purified-gas", amount = 100}
     },
     results = {
-        {type = "fluid", name = "rich-gas", amount = 80},
-        {type = "fluid", name = "methanol", amount = 10},
+        {type = "fluid", name = "rich-gas",        amount = 80},
+        {type = "fluid", name = "methanol",        amount = 10},
         {type = "fluid", name = "helium-rich-gas", amount = 10}
     },
-    main_product= "rich-gas"
+    main_product = "rich-gas"
 }
 
 FLUID {

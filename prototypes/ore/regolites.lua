@@ -1,6 +1,6 @@
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["regolites"] = {}
 
-data:extend{{
+data:extend {{
     type = "autoplace-control",
     name = "regolites",
     richness = true,
@@ -13,7 +13,7 @@ data:extend{{
 --     name = "regolites"
 -- }}
 
-data:extend{
+data:extend {
     {
         type = "noise-expression",
         name = "py_regolites_starting_area",
@@ -49,7 +49,7 @@ ENTITY {
     name = "regolites",
     category = "regolite",
     icon = "__pyfusionenergygraphics__/graphics/icons/ores/regolite-resource.png",
-	icon_size = 32,
+    icon_size = 32,
     flags = {"placeable-neutral"},
     order = "a-b-a",
     map_color = {r = 0.917, g = 0.570, b = 0.378},
@@ -59,7 +59,7 @@ ENTITY {
         -- mining_particle = "regolites-particle",
         mining_time = 4,
         results = {
-			{type = "item", name = "regolite-rock", amount = 1},
+            {type = "item", name = "regolite-rock", amount = 1},
         }
     },
     resource_patch_search_radius = 12,

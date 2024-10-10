@@ -4,11 +4,11 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {type = "item", name = "iron-plate", amount = 60}, --bobs titanium plate
+        {type = "item", name = "iron-plate",           amount = 60}, --bobs titanium plate
         {type = "item", name = "electric-engine-unit", amount = 15},
-        {type = "item", name = "nbfe-alloy", amount = 30},
-        {type = "item", name = "steel-plate", amount = 100},
-        {type = "item", name = "advanced-circuit", amount = 30} --updated-bob basic-electronic-circuit-board
+        {type = "item", name = "nbfe-alloy",           amount = 30},
+        {type = "item", name = "steel-plate",          amount = 100},
+        {type = "item", name = "advanced-circuit",     amount = 30} --updated-bob basic-electronic-circuit-board
     },
     results = {
         {type = "item", name = "diamond-mine", amount = 1}
@@ -19,7 +19,7 @@ ITEM {
     type = "item",
     name = "diamond-mine",
     icon = "__pyfusionenergygraphics__/graphics/icons/diamond-mine.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {},
     subgroup = "py-fusion-buildings-miners",
     order = "a",
@@ -31,7 +31,7 @@ ENTITY {
     type = "mining-drill",
     name = "diamond-mine",
     icon = "__pyfusionenergygraphics__/graphics/icons/diamond-mine.png",
-	icon_size = 64,
+    icon_size = 64,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.5, result = "diamond-mine"},
     fast_replaceable_group = "diamond-mine",
