@@ -667,6 +667,6 @@ ITEM {
     icon = "__pyfusionenergygraphics__/graphics/icons/used-up-mox-fuel-cell.png",
     icon_size = 32,
     subgroup = "py-fusion-items",
-    order = "r[used-up-uranium-fuel-cell]a",
+    order = "r[depleted-uranium-fuel-cell]a",
     stack_size = 50
 }
