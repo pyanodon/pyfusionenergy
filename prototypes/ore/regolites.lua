@@ -1,4 +1,5 @@
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["regolites"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["regolites"] = {}
 
 data:extend {{
     type = "autoplace-control",
@@ -33,14 +34,14 @@ data:extend {
         name = "py_regolites",
         -- Our final chance, likely a very, very small decimal
         expression = [[
-            py_regolites_starting_area * py_regolites_desired_frequency * var("control-setting:regolites:frequency:multiplier")
+            py_regolites_starting_area * py_regolites_desired_frequency * var("control:regolites:frequency")
         ]]
     },
     {
         -- We return the richness here, which is just the quantity the resource tile yields
         type = "noise-expression",
         name = "py_regolites_richness",
-        expression = "2^16 * var('distance') * var('control-setting:regolites:richness:multiplier')"
+        expression = "2^16 * var('distance') * var('control:regolites:richness')"
     }
 }
 

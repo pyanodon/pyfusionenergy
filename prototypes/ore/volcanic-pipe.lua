@@ -1,4 +1,5 @@
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["volcanic-pipe"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["volcanic-pipe"] = {}
 
 data:extend {{
     type = "autoplace-control",
@@ -33,14 +34,14 @@ data:extend {
         name = "py_volcanic_pipe",
         -- Our final chance, likely a very, very small decimal
         expression = [[
-            py_volcanic_pipe_starting_area * py_volcanic_pipe_desired_frequency * var("control-setting:volcanic-pipe:frequency:multiplier")
+            py_volcanic_pipe_starting_area * py_volcanic_pipe_desired_frequency * var("control:volcanic-pipe:frequency")
         ]]
     },
     {
         -- We return the richness here, which is just the quantity the resource tile yields
         type = "noise-expression",
         name = "py_volcanic_pipe_richness",
-        expression = "2^16 * var('distance') * var('control-setting:volcanic-pipe:richness:multiplier')"
+        expression = "2^16 * var('distance') * var('control:volcanic-pipe:richness')"
     }
 }
 
