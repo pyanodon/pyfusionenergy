@@ -6,12 +6,12 @@ ITEM {
 
     pictures =
     {
-        {size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-01.png", scale = 0.25},
-        {size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-02.png", scale = 0.25},
-        {size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-03.png", scale = 0.25},
-        {size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-04.png", scale = 0.25},
-        {size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-05.png", scale = 0.25},
-        {size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-06.png", scale = 0.25},
+        {size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-01.png", scale = 0.66},
+        {size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-02.png", scale = 0.66},
+        {size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-03.png", scale = 0.66},
+        {size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-04.png", scale = 0.66},
+        {size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-05.png", scale = 0.66},
+        {size = 64, filename = "__pyfusionenergygraphics__/graphics/icons/mip/moly-06.png", scale = 0.66},
     },
     flags = {},
     subgroup = "py-fusion-items",
