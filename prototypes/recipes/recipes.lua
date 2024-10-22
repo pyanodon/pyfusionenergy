@@ -1789,9 +1789,9 @@ RECIPE {
     enabled = false,
     category = "advanced-crafting",
     ingredients = {
-        {type = "item",  name = "low-density-structure",  amount = 2100},
-        {type = "item",  name = "fusion-reactor-mk01",    amount = 21},
-        {type = "item",  name = "processing-unit",        amount = 2100},
+        {type = "item",  name = "low-density-structure",  amount = 100},
+        {type = "item",  name = "fusion-reactor-mk01",    amount = 1},
+        {type = "item",  name = "processing-unit",        amount = 100},
         {type = "fluid", name = "deuterium",              amount = 200},
         {type = "fluid", name = "helium3",                amount = 100},
         {type = "item",  name = "blanket",                amount = 1},
