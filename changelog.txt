@@ -1,6 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.2
+Date: today maybe?
+  Changes:
+    - Fixed rocket parts also requiring way more things
+---------------------------------------------------------------------------------------------------
 Version: 3.0.1
-Date: 2024-10-20
+Date: 2024-10-22
   Changes:
     - Fixed the satellite recipe casually requiring 21 fusion reactors and 2100 blue chips.
 ---------------------------------------------------------------------------------------------------

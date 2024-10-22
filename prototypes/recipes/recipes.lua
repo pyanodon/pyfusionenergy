@@ -1813,10 +1813,10 @@ RECIPE {
     hidden = true,
     category = "rocket-building",
     ingredients = {
-        {type = "item", name = "advanced-circuit",      amount = 210},
-        {type = "item", name = "low-density-structure", amount = 25},
-        {type = "item", name = "super-alloy",           amount = 28},
-        {type = "item", name = "rocket-fuel",           amount = 210}
+        {type = "item", name = "advanced-circuit",      amount = 10},
+        {type = "item", name = "low-density-structure", amount = 5},
+        {type = "item", name = "super-alloy",           amount = 8},
+        {type = "item", name = "rocket-fuel",           amount = 10}
     },
     results = {
         {type = "item", name = "rocket-part", amount = 1}
