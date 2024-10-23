@@ -1782,9 +1782,12 @@ if not mods["pyhightech"] then
 end
 
 --space science
+local satellite = table.deepcopy(data.raw.item.satellite)
+satellite.name = "py-satellite"
+data:extend {satellite}
 RECIPE {
     type = "recipe",
-    name = "satellite",
+    name = "py-satellite",
     energy_required = 5,
     enabled = false,
     category = "advanced-crafting",
@@ -1800,7 +1803,7 @@ RECIPE {
         {type = "item",  name = "sc-unit",                amount = 4},
     },
     results = {
-        {type = "item", name = "satellite", amount = 1}
+        {type = "item", name = "py-satellite", amount = 1}
     },
     requester_paste_multiplier = 1
 }
