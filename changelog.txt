@@ -1,8 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.2
-Date: today maybe?
+Date: 2024-10-23
   Changes:
-    - Fixed rocket parts also requiring way more things
+    - Fixed rocket parts requiring way more things compared to 1.1
+    - Changed satellite internal name to match other pymods.
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.1
 Date: 2024-10-22
