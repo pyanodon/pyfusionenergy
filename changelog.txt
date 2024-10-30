@@ -1,8 +1,9 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.4
-Date: ¯\_(ツ)_/¯
+Date: 2024-10-30
   Changes:
-    - Fixed the satellite recipe for real this time.
+    - Fixed the satellite recipe for really real this time.
+    - Removed ash.
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.3
 Date: 2024-10-29
