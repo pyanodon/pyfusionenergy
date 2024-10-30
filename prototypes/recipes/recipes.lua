@@ -1785,6 +1785,10 @@ end
 local satellite = table.deepcopy(data.raw.item.satellite)
 satellite.name = "py-satellite"
 data:extend {satellite}
+RECIPE("satellite"):remove_unlock("rocket-silo")
+data.raw.technology["space-science-pack"].research_trigger.item = "py-satellite"
+data.raw.item.satellite = nil
+data.raw.recipe.satellite = nil
 RECIPE {
     type = "recipe",
     name = "py-satellite",
@@ -1806,7 +1810,7 @@ RECIPE {
         {type = "item", name = "py-satellite", amount = 1}
     },
     requester_paste_multiplier = 1
-}
+}:add_unlock("rocket-silo")
 
 RECIPE {
     type = "recipe",
