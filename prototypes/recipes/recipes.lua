@@ -1782,13 +1782,26 @@ if not mods["pyhightech"] then
 end
 
 --space science
-local satellite = table.deepcopy(data.raw.item.satellite)
-satellite.name = "py-satellite"
-data:extend {satellite}
 RECIPE("satellite"):remove_unlock("rocket-silo")
-data.raw.technology["space-science-pack"].research_trigger.item = "py-satellite"
 data.raw.item.satellite = nil
 data.raw.recipe.satellite = nil
+
+ITEM{
+    type = "item",
+    name = "py-satellite",
+    icon = "__base__/graphics/icons/satellite.png",
+    subgroup = "space-related",
+    order = "d[rocket-parts]-e[satellite]",
+    inventory_move_sound = "__base__.prototypes.item_sounds.mechanical_inventory_move",
+    pick_sound = "__base__.prototypes.item_sounds.mechanical_inventory_pickup",
+    drop_sound = "__base__.prototypes.item_sounds.mechanical_inventory_move",
+    stack_size = 1,
+    weight = 1 * tons,
+    rocket_launch_products = {{type = "item", name = "space-science-pack", amount = 1000}},
+    send_to_orbit_mode = "automated"
+  }
+
+data.raw.technology["space-science-pack"].research_trigger.item = "py-satellite"
 RECIPE {
     type = "recipe",
     name = "py-satellite",
