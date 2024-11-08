@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.5
-Date: ??
+Date: 2024-11-7
   Changes:
     - Made most crafting machines flippable
     - Update to Uk locale
