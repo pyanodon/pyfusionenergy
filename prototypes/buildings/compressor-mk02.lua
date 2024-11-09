@@ -160,7 +160,7 @@ ENTITY {
             priority = "extra-high"
         },
     },
-    vehicle_impact_sound = {filename = "__base__/sound/car-metal-impact-1.ogg", volume = 0.65},
+    impact_category = "metal-large",
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/compressor.ogg", volume = 0.7},
         apparent_volume = 2.5
