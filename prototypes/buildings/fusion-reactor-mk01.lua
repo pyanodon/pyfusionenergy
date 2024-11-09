@@ -46,6 +46,7 @@ ENTITY {
     match_animation_speed_to_activity = false,
     module_slots = 6,
     allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
+    allowed_module_categories = {"productivity", "speed", "quality"},
     crafting_categories = {"fusion-01"},
     crafting_speed = 10,
     energy_source = {
