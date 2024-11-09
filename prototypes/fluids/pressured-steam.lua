@@ -10,7 +10,6 @@ FLUID {
     max_temperature = 5000,
     heat_capacity = "25kJ",
     gas_temperature = 15,
-    flow_to_energy_ratio = 0.59,
     subgroup = "py-fusion-fluids",
     order = "c",
     auto_barrel = false
