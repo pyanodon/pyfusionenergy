@@ -112,7 +112,6 @@ ENTITY {
             pipe_picture = py.pipe_pictures("assembling-machine-2", {0.17, 2.85}, {0.18, -2.9}, {3.1, -0.15}, {-2.9, -0.2}, pipes),
             pipe_covers = py.pipe_covers(false, true, true, false),
             volume = 1000,
-            base_level = -1,
             pipe_connections = {{flow_direction = "input", position = {2.0, 0.0}, direction = defines.direction.east}}
         },
         {
@@ -120,7 +119,6 @@ ENTITY {
             pipe_picture = py.pipe_pictures("assembling-machine-2", {0.17, 2.85}, {0.18, -2.9}, {3.1, -0.15}, {-2.9, -0.2}, pipes),
             pipe_covers = py.pipe_covers(false, true, true, false),
             volume = 1000,
-            base_level = -1,
             pipe_connections = {{flow_direction = "input", position = {0.0, 2.0}, direction = defines.direction.south}}
         },
         {
