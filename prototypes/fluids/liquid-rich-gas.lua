@@ -10,7 +10,7 @@ RECIPE {
         {type = "fluid", name = "gasoline", amount = 5}
     },
     results = {
-        {type = "fluid", name = "steam",           amount = 100, temperature = 150, catalyst_amount = 100},
+        {type = "fluid", name = "steam",           amount = 100, temperature = 150, ignored_by_productivity = 100, ignored_by_stats = 100},
         {type = "fluid", name = "liquid-rich-gas", amount = 4}
     },
     main_product = "liquid-rich-gas",

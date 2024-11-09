@@ -781,7 +781,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "liquid-petgas", amount = 5},
-        {type = "fluid", name = "steam",         amount = 100, temperature = 150, catalyst_amount = 100}
+        {type = "fluid", name = "steam",         amount = 100, temperature = 150, ignored_by_productivity = 100, ignored_by_stats = 100}
     },
     main_product = "liquid-petgas",
 }
@@ -1067,7 +1067,7 @@ RECIPE {
     },
     results = {
         {type = "item",  name = "boron",    amount = 2},
-        {type = "fluid", name = "diborane", amount = 50, catalyst_amount = 50}
+        {type = "fluid", name = "diborane", amount = 50, ignored_by_productivity = 50, ignored_by_stats = 50}
     },
     main_product = "boron",
 }:add_unlock("boron-mk02")
@@ -1197,7 +1197,7 @@ RECIPE {
         {type = "fluid", name = "helium",         amount = 150},
         {type = "fluid", name = "tritium",        amount = 20},
         {type = "fluid", name = "helium3",        amount = 30},
-        {type = "fluid", name = "steam",          amount = 2000, temperature = 150, catalyst_amount = 2000},
+        {type = "fluid", name = "steam",          amount = 2000, temperature = 150, ignored_by_productivity = 2000, ignored_by_stats = 2000},
         {type = "item",  name = "blanket",        amount = 1,    probability = 0.5},
         {type = "item",  name = "divertor",       amount = 1,    probability = 0.5},
         {type = "item",  name = "wall-shield",    amount = 3,    probability = 0.5},
@@ -1232,7 +1232,7 @@ RECIPE {
         {type = "fluid", name = "critical-steam",         amount = 4000, temperature = 3000},
         {type = "fluid", name = "helium",                 amount = 175},
         {type = "fluid", name = "proton",                 amount = 15},
-        {type = "fluid", name = "steam",                  amount = 5000, temperature = 150, catalyst_amount = 5000},
+        {type = "fluid", name = "steam",                  amount = 5000, temperature = 150, ignored_by_productivity = 5000, ignored_by_stats = 5000},
         {type = "item",  name = "blanket",                amount = 1,    probability = 0.5},
         {type = "item",  name = "divertor",               amount = 1,    probability = 0.5},
         {type = "item",  name = "reinforced-wall-shield", amount = 3,    probability = 0.5},
@@ -1267,7 +1267,7 @@ RECIPE {
         {type = "fluid", name = "critical-steam",         amount = 4000, temperature = 2000},
         {type = "fluid", name = "helium",                 amount = 200},
         {type = "fluid", name = "tritium",                amount = 5},
-        {type = "fluid", name = "steam",                  amount = 3500, temperature = 150, catalyst_amount = 3500},
+        {type = "fluid", name = "steam",                  amount = 3500, temperature = 150, ignored_by_productivity = 3500, ignored_by_stats = 3500},
         {type = "item",  name = "blanket",                amount = 1,    probability = 0.5},
         {type = "item",  name = "divertor",               amount = 1,    probability = 0.5},
         {type = "item",  name = "reinforced-wall-shield", amount = 3,    probability = 0.5},
@@ -1301,7 +1301,7 @@ RECIPE {
     results = {
         {type = "fluid", name = "critical-steam", amount = 4000, temperature = 4000},
         {type = "fluid", name = "helium",         amount = 500},
-        {type = "fluid", name = "steam",          amount = 5000, temperature = 150, catalyst_amount = 5000},
+        {type = "fluid", name = "steam",          amount = 5000, temperature = 150, ignored_by_productivity = 5000, ignored_by_stats = 5000},
         {type = "item",  name = "blanket",        amount = 1,    probability = 0.6},
         {type = "item",  name = "divertor",       amount = 2,    probability = 0.6},
         {type = "item",  name = "wall-shield",    amount = 3,    probability = 0.5},
@@ -1326,7 +1326,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "pressured-steam", amount = 2000, temperature = 1000},
-        {type = "fluid", name = "steam",           amount = 250,  temperature = 150, catalyst_amount = 250}
+        {type = "fluid", name = "steam",           amount = 250,  temperature = 150, ignored_by_productivity = 250, ignored_by_stats = 250}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange.png",
@@ -1347,7 +1347,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "pressured-steam", amount = 2000, temperature = 2000},
-        {type = "fluid", name = "steam",           amount = 250,  temperature = 150, catalyst_amount = 250}
+        {type = "fluid", name = "steam",           amount = 250,  temperature = 150, ignored_by_productivity = 250, ignored_by_stats = 250}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange2.png",
@@ -1368,7 +1368,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "pressured-steam", amount = 2000, temperature = 3000},
-        {type = "fluid", name = "steam",           amount = 250,  temperature = 150, catalyst_amount = 250}
+        {type = "fluid", name = "steam",           amount = 250,  temperature = 150, ignored_by_productivity = 250, ignored_by_stats = 250}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange3.png",
@@ -1389,7 +1389,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "pressured-steam", amount = 2000, temperature = 4000},
-        {type = "fluid", name = "steam",           amount = 400,  temperature = 150, catalyst_amount = 400}
+        {type = "fluid", name = "steam",           amount = 400,  temperature = 150, ignored_by_productivity = 400, ignored_by_stats = 400}
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/steam-exchange4.png",
@@ -1641,7 +1641,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "acidgas", amount = 30},
-        {type = "fluid", name = "steam",   amount = 600, temperature = 150, catalyst_amount = 600}
+        {type = "fluid", name = "steam",   amount = 600, temperature = 150, ignored_by_productivity = 600, ignored_by_stats = 600}
     },
     main_product = "acidgas",
 }:add_unlock("advanced-oil-processing")
@@ -1716,7 +1716,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "combustion-mixture1", amount = 150, temperature = 1600},
-        {type = "fluid", name = "steam",               amount = 100, temperature = 150, catalyst_amount = 100}
+        {type = "fluid", name = "steam",               amount = 100, temperature = 150, ignored_by_productivity = 100, ignored_by_stats = 100}
     },
     icon = "__pycoalprocessinggraphics__/graphics/icons/combustion-acetylene.png",
     icon_size = 32,
@@ -1755,7 +1755,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "combustion-mixture1", amount = 150,  temperature = 2600},
-        {type = "fluid", name = "steam",               amount = 1000, temperature = 150, catalyst_amount = 1000}
+        {type = "fluid", name = "steam",               amount = 1000, temperature = 150, ignored_by_productivity = 1000, ignored_by_stats = 1000}
     },
     icon = "__pycoalprocessinggraphics__/graphics/icons/combustion-gasoline.png",
     icon_size = 32,
