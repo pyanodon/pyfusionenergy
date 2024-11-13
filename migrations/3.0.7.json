@@ -1,0 +1,14 @@
+{
+    "item": [
+        [
+            "py-satellite",
+            "satellite"
+        ]
+    ],
+    "recipe": [
+        [
+            "py-satellite",
+            "satellite"
+        ]
+    ]
+}

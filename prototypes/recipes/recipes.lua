@@ -1786,9 +1786,9 @@ RECIPE("satellite"):remove_unlock("rocket-silo")
 data.raw.item.satellite = nil
 data.raw.recipe.satellite = nil
 
-ITEM{
+ITEM {
     type = "item",
-    name = "py-satellite",
+    name = "satellite",
     icon = "__base__/graphics/icons/satellite.png",
     subgroup = "space-related",
     order = "d[rocket-parts]-e[satellite]",
@@ -1799,12 +1799,12 @@ ITEM{
     weight = 1 * tons,
     rocket_launch_products = {{type = "item", name = "space-science-pack", amount = 1000}},
     send_to_orbit_mode = "automated"
-  }
+}
 
-data.raw.technology["space-science-pack"].research_trigger.item = "py-satellite"
+data.raw.technology["space-science-pack"].research_trigger.item = "satellite"
 RECIPE {
     type = "recipe",
-    name = "py-satellite",
+    name = "satellite",
     energy_required = 5,
     enabled = false,
     category = "advanced-crafting",
@@ -1820,7 +1820,7 @@ RECIPE {
         {type = "item",  name = "sc-unit",                amount = 4},
     },
     results = {
-        {type = "item", name = "py-satellite", amount = 1}
+        {type = "item", name = "satellite", amount = 1}
     },
     requester_paste_multiplier = 1
 }:add_unlock("rocket-silo")
