@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.8
+Date: IDK Sometime past now
+  Changes:
+    - Renamed High Pressure Turbine to High-pressure turbine to match PyAE standard.
+---------------------------------------------------------------------------------------------------
 Version: 3.0.7
 Date: 2024-11-14
   Changes:
