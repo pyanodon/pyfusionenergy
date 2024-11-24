@@ -15,50 +15,6 @@ RECIPE {
     }
 }
 
-RECIPE {
-    type = "recipe",
-    name = "compressor-mk02",
-    energy_required = 1,
-    enabled = false,
-    ingredients = {
-        {type = "item", name = "compressor-mk01",  amount = 1},
-        {type = "item", name = "engine-unit",      amount = 3},
-        {type = "item", name = "nexelit-plate",    amount = 15},
-        {type = "item", name = "advanced-circuit", amount = 10}
-    },
-    results = {
-        {type = "item", name = "compressor-mk02", amount = 1}
-    }
-}
-
-RECIPE {
-    type = "recipe",
-    name = "compressor-mk03",
-    energy_required = 1,
-    enabled = false,
-    ingredients = {
-        {type = "item", name = "compressor-mk02",      amount = 1},
-        {type = "item", name = "electric-engine-unit", amount = 6},
-        {type = "item", name = "processing-unit",      amount = 10}
-    },
-    results = {
-        {type = "item", name = "compressor-mk03", amount = 1}
-    }
-}
-
-RECIPE {
-    type = "recipe",
-    name = "compressor-mk04",
-    energy_required = 1,
-    enabled = false,
-    ingredients = {
-        {type = "item", name = "compressor-mk03", amount = 1},
-    },
-    results = {
-        {type = "item", name = "compressor-mk04", amount = 1}
-    }
-}
-
 local function working_visualizations(i)
     local working_visualizations = {
         {
@@ -227,3 +183,47 @@ for i = 1, 4 do
         }
     }
 end
+
+RECIPE {
+    type = "recipe",
+    name = "compressor-mk02",
+    energy_required = 1,
+    enabled = false,
+    ingredients = {
+        {type = "item", name = "compressor-mk01",  amount = 1},
+        {type = "item", name = "engine-unit",      amount = 3},
+        {type = "item", name = "nexelit-plate",    amount = 15},
+        {type = "item", name = "advanced-circuit", amount = 10}
+    },
+    results = {
+        {type = "item", name = "compressor-mk02", amount = 1}
+    }
+}
+
+RECIPE {
+    type = "recipe",
+    name = "compressor-mk03",
+    energy_required = 1,
+    enabled = false,
+    ingredients = {
+        {type = "item", name = "compressor-mk02",      amount = 1},
+        {type = "item", name = "electric-engine-unit", amount = 6},
+        {type = "item", name = "processing-unit",      amount = 10}
+    },
+    results = {
+        {type = "item", name = "compressor-mk03", amount = 1}
+    }
+}
+
+RECIPE {
+    type = "recipe",
+    name = "compressor-mk04",
+    energy_required = 1,
+    enabled = false,
+    ingredients = {
+        {type = "item", name = "compressor-mk03", amount = 1},
+    },
+    results = {
+        {type = "item", name = "compressor-mk04", amount = 1}
+    }
+}
