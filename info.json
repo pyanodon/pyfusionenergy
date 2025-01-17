@@ -1,6 +1,6 @@
 {
   "name": "pyfusionenergy",
-  "version": "3.0.9",
+  "version": "3.0.10",
   "factorio_version": "2.0",
   "title": "Pyanodons Fusion Energy",
   "author": "Pyanodon, Nexela, Kingarthur, notnotmelon, Mootykins, ShadowGlass, Archezekiel, Quintuple",
@@ -9,7 +9,7 @@
   "description": "Adds expensive and complicated fusion energy production chains to Factorio. Create huge amounts of energy at the cost of a massive initial investment.",
   "dependencies": [
     "pycoalprocessing >= 2.0.8",
-    "~ pyfusionenergygraphics >= 3.0.2",
+    "~ pyfusionenergygraphics >= 3.0.3",
     "! wret-beacon-rebalance-mod",
     "! BigBags",
     "! ResearchFog",
