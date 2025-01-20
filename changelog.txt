@@ -5,6 +5,7 @@ Date: ?
     - Removed all legacy low-res graphic files from pyanodon.
     - Removed hyphens from most item, fluid, entity, and recipe names in order to aid in itemsearch.
     - Improved sound effects for the hydrocyclone.
+    - The hydrocyclone now has a FSM animation instead of a static frame.
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.9
 Date: 2025-1-2

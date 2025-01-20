@@ -1,3 +1,79 @@
+--  we are using each fsm state to gradually fade in and out the static frame working png.
+local function graphics_set(tint)
+    local working_visualisations = {}
+    for i = 1, 32 do -- FSM animations in factorio cannot exceed 32 states.
+        local transparency_percent
+        if i <= 16 then
+            transparency_percent = i * 2 / 32
+        else
+            transparency_percent = (32 - i) / 16
+        end
+    
+        local tint = table.deepcopy(tint)
+        for k, v in pairs(tint) do tint[k] = v * transparency_percent end
+        working_visualisations[i] = {
+            draw_in_states = {tostring(i)},
+            draw_when_state_filter_matches = true,
+            always_draw = true,
+            animation = {
+                layers = {
+                    {
+                        filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-on.png",
+                        frame_count = 1,
+                        width = 270,
+                        height = 304,
+                        shift = {0.687, -1.281},
+                        tint = {transparency_percent, transparency_percent, transparency_percent, transparency_percent}
+                    },
+                    {
+                        filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-on-mask.png",
+                        frame_count = 1,
+                        width = 270,
+                        height = 304,
+                        tint = tint,
+                        shift = {0.687, -1.281},
+                    }
+                }
+            }
+        }
+    end
+
+    local states = {}
+    for i = 1, 32 do
+        states[i] = {
+            duration = (i == 1) and 1 or 2, -- idle state must have duration of 1
+            name = tostring(i),
+            next_active = tostring((i == 32) and 1 or (i + 1)),
+            next_inactive = tostring((i == 32) and 1 or (i + 1)),
+        }
+    end
+    states[1].next_inactive = "1"
+
+    return {
+        working_visualisations = working_visualisations,
+        states = states,
+        animation = {
+            layers = {
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-off.png",
+                    width = 270,
+                    height = 304,
+                    frame_count = 1,
+                    shift = {0.687, -1.281}
+                },
+                {
+                    filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-off-mask.png",
+                    width = 270,
+                    height = 304,
+                    frame_count = 1,
+                    shift = {0.687, -1.281},
+                    tint = tint
+                },
+            }
+        }
+    }
+end
+
 for i = 1, 4 do
     if not mods.pyrawores and i == 2 then return end
 
@@ -43,52 +119,7 @@ for i = 1, 4 do
             },
         },
         energy_usage = (400 * i) .. "kW",
-        graphics_set = {
-            working_visualisations = {
-                {
-                    north_position = {0.687, -1.281},
-                    west_position = {0.687, -1.281},
-                    south_position = {0.687, -1.281},
-                    east_position = {0.687, -1.281},
-                    animation = {
-                        layers = {
-                            {
-                                filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-on.png",
-                                frame_count = 1,
-                                width = 270,
-                                height = 304
-                            },
-                            {
-                                filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-on-mask.png",
-                                frame_count = 1,
-                                width = 270,
-                                height = 304,
-                                tint = py.tints[i]
-                            }
-                        }
-                    }
-                }
-            },
-            animation = {
-                layers = {
-                    {
-                        filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-off.png",
-                        width = 270,
-                        height = 304,
-                        frame_count = 1,
-                        shift = {0.687, -1.281}
-                    },
-                    {
-                        filename = "__pyfusionenergygraphics__/graphics/entity/hydrocyclone/hydrocyclone-off-mask.png",
-                        width = 270,
-                        height = 304,
-                        frame_count = 1,
-                        shift = {0.687, -1.281},
-                        tint = py.tints[i]
-                    },
-                }
-            },
-        },
+        graphics_set = graphics_set(py.tints[i]),
         fluid_boxes_off_when_no_fluid_recipe = true,
         fluid_boxes = {
             --North
@@ -139,6 +170,7 @@ for i = 1, 4 do
             apparent_volume = 2.5
         }
     }
+end
 
 RECIPE {
     type = "recipe",
