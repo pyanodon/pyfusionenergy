@@ -75,7 +75,7 @@ local function graphics_set(tint)
 end
 
 for i = 1, 4 do
-    if not mods.pyrawores and i == 2 then return end
+    if not mods.pyrawores and i == 2 then break end
 
     local name = "hydrocyclone-mk0" .. i
     local icon = "__pyfusionenergygraphics__/graphics/icons/hydrocyclone-mk0" .. i .. ".png"
