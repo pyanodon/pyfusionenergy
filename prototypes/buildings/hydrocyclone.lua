@@ -8,7 +8,7 @@ local function graphics_set(tint)
         else
             transparency_percent = (32 - i) / 16
         end
-    
+
         local tint = table.deepcopy(tint)
         for k, v in pairs(tint) do tint[k] = v * transparency_percent end
         working_visualisations[i] = {
@@ -75,7 +75,7 @@ local function graphics_set(tint)
 end
 
 for i = 1, 4 do
-    if not mods.pyrawores and i == 2 then return end
+    if not mods.pyrawores and i == 2 then break end
 
     local name = "hydrocyclone-mk0" .. i
     local icon = "__pyfusionenergygraphics__/graphics/icons/hydrocyclone-mk0" .. i .. ".png"
