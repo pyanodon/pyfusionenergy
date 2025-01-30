@@ -1,11 +1,11 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.11
-Date: tba
+Date: 2025-1-29
   Changes:
     - Fixed crash when using pyFE without pyRO.
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.10
-Date: 2024-1-20
+Date: 2025-1-20
   Changes:
     - Removed all legacy low-res graphic files from pyanodon.
     - Removed hyphens from most item, fluid, entity, and recipe names in order to aid in itemsearch.
