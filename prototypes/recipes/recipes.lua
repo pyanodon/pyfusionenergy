@@ -1254,7 +1254,7 @@ RECIPE {
     energy_required = 40,
     ingredients = {
         {type = "fluid", name = "deuterium",              amount = 80},
-        {type = "fluid", name = "tritium",                amount = 20},
+        {type = "fluid", name = "tritium",                amount = 20,  ignored_by_stats = 5},
         {type = "fluid", name = "pressured-water",        amount = 4500},
         {type = "item",  name = "blanket",                amount = 2},
         {type = "item",  name = "divertor",               amount = 2},
@@ -1266,12 +1266,12 @@ RECIPE {
     results = {
         {type = "fluid", name = "critical-steam",         amount = 4000, temperature = 2000},
         {type = "fluid", name = "helium",                 amount = 200},
-        {type = "fluid", name = "tritium",                amount = 5},
-        {type = "fluid", name = "steam",                  amount = 3500, temperature = 150, ignored_by_productivity = 3500, ignored_by_stats = 3500},
-        {type = "item",  name = "blanket",                amount = 1,    probability = 0.5},
-        {type = "item",  name = "divertor",               amount = 1,    probability = 0.5},
-        {type = "item",  name = "reinforced-wall-shield", amount = 3,    probability = 0.5},
-        {type = "item",  name = "sc-unit",                amount = 3,    probability = 0.5},
+        {type = "fluid", name = "tritium",                amount = 5,    ignored_by_stats = 5, ignored_by_productivity = 5},
+        {type = "fluid", name = "steam",                  amount = 3500, temperature = 150,    ignored_by_productivity = 3500, ignored_by_stats = 3500},
+        {type = "item",  name = "blanket",                amount = 1,    probability = 0.5,    ignored_by_productivity = 1},
+        {type = "item",  name = "divertor",               amount = 1,    probability = 0.5,    ignored_by_productivity = 1},
+        {type = "item",  name = "reinforced-wall-shield", amount = 3,    probability = 0.5,    ignored_by_productivity = 3},
+        {type = "item",  name = "sc-unit",                amount = 3,    probability = 0.5,    ignored_by_productivity = 3},
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-dt.png",
@@ -1540,12 +1540,12 @@ RECIPE {
     energy_required = 8,
     ingredients = {
         {type = "item",  name = "silver-foam",   amount = 1},
-        {type = "fluid", name = "helium",        amount = 10},
+        {type = "fluid", name = "helium",        amount = 10, ignored_by_stats = 2},
         {type = "item",  name = "niobium-plate", amount = 4}
     },
     results = {
         {type = "fluid", name = "helium3", amount = 8},
-        {type = "fluid", name = "helium",  amount = 2}
+        {type = "fluid", name = "helium",  amount = 2, ignored_by_stats = 2, ignored_by_productivity = 2}
     },
     main_product = "helium3",
 }
@@ -1577,12 +1577,12 @@ RECIPE {
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "fluid", name = "steam",        amount = 1000, maximum_temperature = 500},
+        {type = "fluid", name = "steam",        amount = 1000, maximum_temperature = 500, ignored_by_stats = 1000},
         {type = "fluid", name = "water",        amount = 100},
         {type = "item",  name = "fuelrod-mk01", amount = 1},
     },
     results = {
-        {type = "fluid", name = "steam", amount = 1000, temperature = 500},
+        {type = "fluid", name = "steam", amount = 1000, temperature = 500, ignored_by_stats = 1000, ignored_by_productivity = 1000},
     },
     main_product = "steam",
     icon = "__pyfusionenergygraphics__/graphics/icons/steam-heating.png",
