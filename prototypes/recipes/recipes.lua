@@ -1801,7 +1801,10 @@ ITEM {
     send_to_orbit_mode = "automated"
 }
 
-data.raw.technology["space-science-pack"].research_trigger.item = "satellite"
+if data.raw.technology["space-science-pack"].research_trigger then
+    data.raw.technology["space-science-pack"].research_trigger.item = "satellite"
+end
+
 RECIPE {
     type = "recipe",
     name = "satellite",
