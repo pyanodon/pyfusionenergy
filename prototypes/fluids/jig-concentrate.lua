@@ -10,7 +10,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "jig-concentrate",   amount = 100},
-        {type = "fluid", name = "dirty-water-light", amount = 250}
+        {type = "fluid", name = "muddy-sludge", amount = 250}
     },
     main_product = "jig-concentrate",
     icon = "__pyfusionenergygraphics__/graphics/icons/jig-diamond-concentrate.png",
@@ -32,7 +32,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "jig-concentrate", amount = 50},
-        {type = "fluid", name = "dirty-water-light", amount = 350}
+        {type = "fluid", name = "muddy-sludge", amount = 350}
     },
     main_product = "jig-concentrate",
     icon = "__pyfusionenergygraphics__/graphics/icons/jig-diamond-tailings.png",
