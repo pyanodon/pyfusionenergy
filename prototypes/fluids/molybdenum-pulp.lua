@@ -10,7 +10,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "molybdenum-pulp",   amount = 100},
-        {type = "fluid", name = "dirty-water-light", amount = 200}
+        {type = "fluid", name = "muddy-sludge", amount = 200}
     },
     main_product = "molybdenum-pulp"
 }
