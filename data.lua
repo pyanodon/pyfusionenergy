@@ -96,10 +96,8 @@ require "prototypes/fluids/helium3"
 require "prototypes/fluids/proton"
 require "prototypes/fluids/pressured-steam"
 require "prototypes/fluids/critical-steam"
-
---pull in unused gasoline from pycoal
-require "__pycoalprocessing__/prototypes/fluids/gasoline"
-require "__pycoalprocessing__/prototypes/fluids/acetylene"
+require "prototypes/fluids/gasoline"
+require "prototypes/fluids/acetylene"
 
 require "prototypes/buildings/agitator-mk01"
 require "prototypes/buildings/thickener-mk01"
