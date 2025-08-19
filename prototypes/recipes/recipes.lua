@@ -1193,22 +1193,21 @@ RECIPE {
         {type = "fluid", name = "water",           amount = 2000}
     },
     results = {
-        {type = "fluid", name = "critical-steam", amount = 4000, temperature = 1000},
-        {type = "fluid", name = "helium",         amount = 150},
-        {type = "fluid", name = "tritium",        amount = 20},
-        {type = "fluid", name = "helium3",        amount = 30},
-        {type = "fluid", name = "steam",          amount = 2000, temperature = 150, ignored_by_productivity = 2000, ignored_by_stats = 2000},
-        {type = "item",  name = "blanket",        amount = 1,    probability = 0.5},
-        {type = "item",  name = "divertor",       amount = 1,    probability = 0.5},
-        {type = "item",  name = "wall-shield",    amount = 3,    probability = 0.5},
-        {type = "item",  name = "sc-unit",        amount = 3,    probability = 0.5},
+        {type = "fluid", name = "critical-steam", amount = 4000, temperature = 1000, show_details_in_recipe_tooltip = false},
+        {type = "fluid", name = "helium",         amount = 150, show_details_in_recipe_tooltip = false},
+        {type = "fluid", name = "tritium",        amount = 20, show_details_in_recipe_tooltip = false},
+        {type = "fluid", name = "helium3",        amount = 30, show_details_in_recipe_tooltip = false},
+        {type = "fluid", name = "steam",          amount = 2000, temperature = 150, ignored_by_productivity = 2000, ignored_by_stats = 2000, show_details_in_recipe_tooltip = false},
+        {type = "item",  name = "blanket",        amount = 1,    probability = 0.5, show_details_in_recipe_tooltip = false},
+        {type = "item",  name = "divertor",       amount = 1,    probability = 0.5, show_details_in_recipe_tooltip = false},
+        {type = "item",  name = "wall-shield",    amount = 3,    probability = 0.5, show_details_in_recipe_tooltip = false},
+        {type = "item",  name = "sc-unit",        amount = 3,    probability = 0.5, show_details_in_recipe_tooltip = false},
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-deuterium.png",
     icon_size = 32,
     subgroup = "py-fusion-items",
-    order = "e",
-    show_details_in_recipe_tooltip = false
+    order = "e"
 }
 
 RECIPE {
@@ -1229,21 +1228,20 @@ RECIPE {
         {type = "fluid", name = "water",                  amount = 5000}
     },
     results = {
-        {type = "fluid", name = "critical-steam",         amount = 4000, temperature = 3000},
-        {type = "fluid", name = "helium",                 amount = 175},
-        {type = "fluid", name = "proton",                 amount = 15},
-        {type = "fluid", name = "steam",                  amount = 5000, temperature = 150, ignored_by_productivity = 5000, ignored_by_stats = 5000},
-        {type = "item",  name = "blanket",                amount = 1,    probability = 0.5},
-        {type = "item",  name = "divertor",               amount = 1,    probability = 0.5},
-        {type = "item",  name = "reinforced-wall-shield", amount = 3,    probability = 0.5},
-        {type = "item",  name = "sc-unit",                amount = 3,    probability = 0.5},
+        {type = "fluid", name = "critical-steam",         amount = 4000, temperature = 3000, show_details_in_recipe_tooltip = false},
+        {type = "fluid", name = "helium",                 amount = 175, show_details_in_recipe_tooltip = false},
+        {type = "fluid", name = "proton",                 amount = 15, show_details_in_recipe_tooltip = false},
+        {type = "fluid", name = "steam",                  amount = 5000, temperature = 150, ignored_by_productivity = 5000, ignored_by_stats = 5000, show_details_in_recipe_tooltip = false},
+        {type = "item",  name = "blanket",                amount = 1,    probability = 0.5, show_details_in_recipe_tooltip = false},
+        {type = "item",  name = "divertor",               amount = 1,    probability = 0.5, show_details_in_recipe_tooltip = false},
+        {type = "item",  name = "reinforced-wall-shield", amount = 3,    probability = 0.5, show_details_in_recipe_tooltip = false},
+        {type = "item",  name = "sc-unit",                amount = 3,    probability = 0.5, show_details_in_recipe_tooltip = false},
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-he3.png",
     icon_size = 32,
     subgroup = "py-fusion-items",
-    order = "e",
-    show_details_in_recipe_tooltip = false
+    order = "e"
 }
 
 RECIPE {
@@ -1264,21 +1262,20 @@ RECIPE {
         {type = "fluid", name = "water",                  amount = 3500}
     },
     results = {
-        {type = "fluid", name = "critical-steam",         amount = 4000, temperature = 2000},
-        {type = "fluid", name = "helium",                 amount = 200},
-        {type = "fluid", name = "tritium",                amount = 5,    ignored_by_stats = 5, ignored_by_productivity = 5},
-        {type = "fluid", name = "steam",                  amount = 3500, temperature = 150,    ignored_by_productivity = 3500, ignored_by_stats = 3500},
-        {type = "item",  name = "blanket",                amount = 1,    probability = 0.5,    ignored_by_productivity = 1},
-        {type = "item",  name = "divertor",               amount = 1,    probability = 0.5,    ignored_by_productivity = 1},
-        {type = "item",  name = "reinforced-wall-shield", amount = 3,    probability = 0.5,    ignored_by_productivity = 3},
-        {type = "item",  name = "sc-unit",                amount = 3,    probability = 0.5,    ignored_by_productivity = 3},
+        {type = "fluid", name = "critical-steam",         amount = 4000, temperature = 2000, show_details_in_recipe_tooltip = false},
+        {type = "fluid", name = "helium",                 amount = 200, show_details_in_recipe_tooltip = false},
+        {type = "fluid", name = "tritium",                amount = 5,    ignored_by_stats = 5, ignored_by_productivity = 5, show_details_in_recipe_tooltip = false},
+        {type = "fluid", name = "steam",                  amount = 3500, temperature = 150,    ignored_by_productivity = 3500, ignored_by_stats = 3500, show_details_in_recipe_tooltip = false},
+        {type = "item",  name = "blanket",                amount = 1,    probability = 0.5,    ignored_by_productivity = 1, show_details_in_recipe_tooltip = false},
+        {type = "item",  name = "divertor",               amount = 1,    probability = 0.5,    ignored_by_productivity = 1, show_details_in_recipe_tooltip = false},
+        {type = "item",  name = "reinforced-wall-shield", amount = 3,    probability = 0.5,    ignored_by_productivity = 3, show_details_in_recipe_tooltip = false},
+        {type = "item",  name = "sc-unit",                amount = 3,    probability = 0.5,    ignored_by_productivity = 3, show_details_in_recipe_tooltip = false},
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-dt.png",
     icon_size = 32,
     subgroup = "py-fusion-items",
-    order = "e",
-    show_details_in_recipe_tooltip = false
+    order = "e"
 }
 
 RECIPE {
@@ -1299,19 +1296,18 @@ RECIPE {
         {type = "fluid", name = "water",                   amount = 5000}
     },
     results = {
-        {type = "fluid", name = "critical-steam", amount = 4000, temperature = 4000},
-        {type = "fluid", name = "helium",         amount = 500},
-        {type = "fluid", name = "steam",          amount = 5000, temperature = 150, ignored_by_productivity = 5000, ignored_by_stats = 5000},
-        {type = "item",  name = "blanket",        amount = 1,    probability = 0.6},
-        {type = "item",  name = "divertor",       amount = 2,    probability = 0.6},
-        {type = "item",  name = "wall-shield",    amount = 3,    probability = 0.5},
+        {type = "fluid", name = "critical-steam", amount = 4000, temperature = 4000, show_details_in_recipe_tooltip = false},
+        {type = "fluid", name = "helium",         amount = 500, show_details_in_recipe_tooltip = false},
+        {type = "fluid", name = "steam",          amount = 5000, temperature = 150, ignored_by_productivity = 5000, ignored_by_stats = 5000, show_details_in_recipe_tooltip = false},
+        {type = "item",  name = "blanket",        amount = 1,    probability = 0.6, show_details_in_recipe_tooltip = false},
+        {type = "item",  name = "divertor",       amount = 2,    probability = 0.6, show_details_in_recipe_tooltip = false},
+        {type = "item",  name = "wall-shield",    amount = 3,    probability = 0.5, show_details_in_recipe_tooltip = false},
     },
     --main_product= "blanket",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-bh.png",
     icon_size = 32,
     subgroup = "py-fusion-items",
-    order = "e",
-    show_details_in_recipe_tooltip = false
+    order = "e"
 }
 
 RECIPE {
