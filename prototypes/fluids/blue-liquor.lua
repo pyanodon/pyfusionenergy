@@ -1,29 +1,29 @@
-RECIPE {
+RECIPE({
     type = "recipe",
     name = "blue-liquor",
     category = "thickener",
     enabled = false,
     energy_required = 5,
     ingredients = {
-        {type = "fluid", name = "vanabins",      amount = 60},
-        {type = "fluid", name = "water",         amount = 100},
-        {type = "item",  name = "tailings-dust", amount = 30}
+        { type = "fluid", name = "vanabins",      amount = 60 },
+        { type = "fluid", name = "water",         amount = 100 },
+        { type = "item",  name = "tailings-dust", amount = 30 }
     },
     results = {
-        {type = "fluid", name = "blue-liquor", amount = 200}
+        { type = "fluid", name = "blue-liquor", amount = 200 }
     }
-}
+})
 
-FLUID {
+FLUID({
     type = "fluid",
     name = "blue-liquor",
     icon = "__pyfusionenergygraphics__/graphics/icons/blue-liquor.png",
     icon_size = 32,
     default_temperature = 10,
-    base_color = {r = 0.137, g = 0.525, b = 1},
-    flow_color = {r = 1, g = 1, b = 1},
+    base_color = { r = 0.137, g = 0.525, b = 1 },
+    flow_color = { r = 1, g = 1, b = 1 },
     max_temperature = 100,
     gas_temperature = 15,
     subgroup = "py-fusion-fluids",
     order = "i"
-}
+})

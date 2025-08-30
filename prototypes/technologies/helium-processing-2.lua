@@ -1,11 +1,11 @@
-TECHNOLOGY {
+TECHNOLOGY({
     type = "technology",
     name = "helium-processing-mk02",
     icon = "__pyfusionenergygraphics__/graphics/technology/helium-processing-mk02.png",
     icon_size = 128,
     order = "c-a",
     prerequisites = {},
-    dependencies = {"helium-processing", "liquid-petroleum-processing", "regolite-mining"},
+    dependencies = { "helium-processing", "liquid-petroleum-processing", "regolite-mining" },
     effects = {
         {
             type = "unlock-recipe",
@@ -43,11 +43,11 @@ TECHNOLOGY {
     unit = {
         count = 40,
         ingredients = {
-            {"automation-science-pack", 3},
-            {"logistic-science-pack",   2},
-            {"chemical-science-pack",   2},
-            {"production-science-pack", 1}
+            { "automation-science-pack", 3 },
+            { "logistic-science-pack",   2 },
+            { "chemical-science-pack",   2 },
+            { "production-science-pack", 1 }
         },
         time = 75
     }
-}
+})

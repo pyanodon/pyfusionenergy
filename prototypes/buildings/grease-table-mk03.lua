@@ -7,22 +7,22 @@ local pipe_bottom = {
     }
 }
 
-RECIPE {
+RECIPE({
     type = "recipe",
     name = "grease-table-mk03",
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {type = "item", name = "grease-table-mk02",    amount = 1},
-        {type = "item", name = "electric-engine-unit", amount = 5},
-        {type = "item", name = "processing-unit",      amount = 10}
+        { type = "item", name = "grease-table-mk02",    amount = 1 },
+        { type = "item", name = "electric-engine-unit", amount = 5 },
+        { type = "item", name = "processing-unit",      amount = 10 }
     },
     results = {
-        {type = "item", name = "grease-table-mk03", amount = 1}
+        { type = "item", name = "grease-table-mk03", amount = 1 }
     }
-}
+})
 
-ITEM {
+ITEM({
     type = "item",
     name = "grease-table-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/grease-table-mk03.png",
@@ -32,25 +32,25 @@ ITEM {
     order = "e",
     place_result = "grease-table-mk03",
     stack_size = 10
-}
+})
 
-ENTITY {
+ENTITY({
     type = "assembling-machine",
     name = "grease-table-mk03",
     icon = "__pyfusionenergygraphics__/graphics/icons/grease-table-mk03.png",
     icon_size = 64,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "grease-table-mk03"},
+    flags = { "placeable-neutral", "player-creation" },
+    minable = { mining_time = 0.5, result = "grease-table-mk03" },
     fast_replaceable_group = "grease-table",
     max_health = 700,
     corpse = "big-remnants",
     dying_explosion = "big-explosion",
-    collision_box = {{-3.4, -3.4}, {3.4, 3.4}},
-    selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
+    collision_box = { { -3.4, -3.4 }, { 3.4, 3.4 } },
+    selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
     forced_symmetry = "diagonal-pos",
     module_slots = 3,
-    allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
-    crafting_categories = {"grease"},
+    allowed_effects = { "speed", "productivity", "consumption", "pollution", "quality" },
+    crafting_categories = { "grease" },
     crafting_speed = 3,
     energy_source = {
         type = "electric",
@@ -70,7 +70,7 @@ ENTITY {
                     line_length = 21,
                     frame_count = 140,
                     animation_speed = 0.3,
-                    shift = {-2.032, -1.0}
+                    shift = { -2.032, -1.0 }
                 },
                 {
                     filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/left-mask.png",
@@ -79,8 +79,8 @@ ENTITY {
                     line_length = 21,
                     frame_count = 140,
                     animation_speed = 0.3,
-                    shift = {-2.032, -1.0},
-                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                    shift = { -2.032, -1.0 },
+                    tint = { r = 0.223, g = 0.490, b = 0.858, a = 1.0 }
                 },
                 {
                     filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/mid.png",
@@ -89,7 +89,7 @@ ENTITY {
                     line_length = 21,
                     frame_count = 140,
                     animation_speed = 0.3,
-                    shift = {0.968, -1.0}
+                    shift = { 0.968, -1.0 }
                 },
                 {
                     filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/mid-mask.png",
@@ -98,8 +98,8 @@ ENTITY {
                     line_length = 21,
                     frame_count = 140,
                     animation_speed = 0.3,
-                    shift = {0.968, -1.0},
-                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                    shift = { 0.968, -1.0 },
+                    tint = { r = 0.223, g = 0.490, b = 0.858, a = 1.0 }
                 },
                 {
                     filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/right.png",
@@ -108,7 +108,7 @@ ENTITY {
                     line_length = 21,
                     frame_count = 140,
                     animation_speed = 0.3,
-                    shift = {3.329, -1.0}
+                    shift = { 3.329, -1.0 }
                 },
                 {
                     filename = "__pyfusionenergygraphics__/graphics/entity/grease-table/right-mask.png",
@@ -117,8 +117,8 @@ ENTITY {
                     line_length = 21,
                     frame_count = 140,
                     animation_speed = 0.3,
-                    shift = {3.329, -1.0},
-                    tint = {r = 0.223, g = 0.490, b = 0.858, a = 1.0}
+                    shift = { 3.329, -1.0 },
+                    tint = { r = 0.223, g = 0.490, b = 0.858, a = 1.0 }
                 }
             }
         },
@@ -126,39 +126,39 @@ ENTITY {
     fluid_boxes = {
         {
             production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.65, -4.95}, {0.5, 0.0}, {-0.5, 0.0}, pipe_bottom),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, { -0.65, -4.95 }, { 0.5, 0.0 }, { -0.5, 0.0 }, pipe_bottom),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
-            pipe_connections = {{flow_direction = "input", position = {-2.0, -3.0}, direction = defines.direction.north}}
+            pipe_connections = { { flow_direction = "input", position = { -2.0, -3.0 }, direction = defines.direction.north } }
         },
         {
             production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, nil, {0.5, 0.0}, {-0.5, 0.0}, pipe_bottom),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, nil, { 0.5, 0.0 }, { -0.5, 0.0 }, pipe_bottom),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
-            pipe_connections = {{flow_direction = "input", position = {0.0, -3.0}, direction = defines.direction.north}}
+            pipe_connections = { { flow_direction = "input", position = { 0.0, -3.0 }, direction = defines.direction.north } }
         },
         {
             production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, nil, {0.5, 0.0}, {-0.5, 0.0}, pipe_bottom),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, nil, { 0.5, 0.0 }, { -0.5, 0.0 }, pipe_bottom),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
-            pipe_connections = {{flow_direction = "input", position = {2.0, -3.0}, direction = defines.direction.north}}
+            pipe_connections = { { flow_direction = "input", position = { 2.0, -3.0 }, direction = defines.direction.north } }
         },
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 100,
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.65, -4.95}, {0.5, 0.0}, {-0.5, 0.0}, pipe_bottom),
-            pipe_connections = {{flow_direction = "output", position = {0.0, 3.0}, direction = defines.direction.south}}
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, { -0.65, -4.95 }, { 0.5, 0.0 }, { -0.5, 0.0 }, pipe_bottom),
+            pipe_connections = { { flow_direction = "output", position = { 0.0, 3.0 }, direction = defines.direction.south } }
         }
 
         --off_when_no_fluid_recipe = true
     },
     impact_category = "metal-large",
     working_sound = {
-        sound = {filename = "__pyfusionenergygraphics__/sounds/grease-table.ogg", volume = 1.0},
-        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/grease-table.ogg", volume = 0.3},
+        sound = { filename = "__pyfusionenergygraphics__/sounds/grease-table.ogg", volume = 1.0 },
+        idle_sound = { filename = "__pyfusionenergygraphics__/sounds/grease-table.ogg", volume = 0.3 },
         apparent_volume = 2.5
     }
-}
+})

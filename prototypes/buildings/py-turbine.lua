@@ -1,18 +1,18 @@
-RECIPE {
+RECIPE({
     type = "recipe",
     name = "py-turbine",
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "gasturbinemk03", amount = 2},
-        {type = "item", name = "pipe",           amount = 20} --pyindustry niobium-pipe
+        { type = "item", name = "gasturbinemk03", amount = 2 },
+        { type = "item", name = "pipe",           amount = 20 } --pyindustry niobium-pipe
     },
     results = {
-        {type = "item", name = "py-turbine", amount = 1}
+        { type = "item", name = "py-turbine", amount = 1 }
     }
-}
+})
 
-ITEM {
+ITEM({
     type = "item",
     name = "py-turbine",
     icon = "__pyfusionenergygraphics__/graphics/icons/py-turbine.png",
@@ -22,15 +22,15 @@ ITEM {
     order = "x",
     place_result = "py-turbine",
     stack_size = 10
-}
+})
 
-ENTITY {
+ENTITY({
     type = "generator",
     name = "py-turbine",
     icon = "__pyfusionenergygraphics__/graphics/icons/py-turbine.png",
     icon_size = 64,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "py-turbine"},
+    flags = { "placeable-neutral", "player-creation" },
+    minable = { mining_time = 0.5, result = "py-turbine" },
     max_health = 500,
     corpse = "big-remnants",
     effectivity = 1,
@@ -43,8 +43,8 @@ ENTITY {
             percent = 70
         }
     },
-    collision_box = {{-2.4, -2.4}, {2.4, 2.4}},
-    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
+    collision_box = { { -2.4, -2.4 }, { 2.4, 2.4 } },
+    selection_box = { { -2.5, -2.5 }, { 2.5, 2.5 } },
     fluid_box = {
         filter = "pressured-steam",
         minimum_temperature = 500,
@@ -53,8 +53,8 @@ ENTITY {
         --pipe_picture = pipe_pictures({0, 3}),
         production_type = "input-output",
         pipe_connections = {
-            {flow_direction = "input-output", position = {2.0, 0.0},  direction = defines.direction.east},
-            {flow_direction = "input-output", position = {-2.0, 0.0}, direction = defines.direction.west}
+            { flow_direction = "input-output", position = { 2.0, 0.0 }, direction = defines.direction.east },
+            { flow_direction = "input-output", position = { -2.0, 0.0 }, direction = defines.direction.west }
         }
     },
     energy_source = {
@@ -71,7 +71,7 @@ ENTITY {
         height = 178,
         frame_count = 40,
         line_length = 10,
-        shift = {0.05, -0.0}
+        shift = { 0.05, -0.0 }
     },
     vertical_animation = {
         filename = "__pyfusionenergygraphics__/graphics/entity/py-turbine/py-turbine-vertical.png",
@@ -79,13 +79,13 @@ ENTITY {
         height = 178,
         frame_count = 40,
         line_length = 10,
-        shift = {0.05, -0.0}
+        shift = { 0.05, -0.0 }
     },
     smoke = {
         {
             name = "turbine-smoke",
-            north_position = {-0.0, -2},
-            east_position = {-0.0, -2},
+            north_position = { -0.0, -2 },
+            east_position = { -0.0, -2 },
             frequency = 10 / 32,
             starting_vertical_speed = 0.08,
             slow_down_factor = 1,
@@ -97,8 +97,8 @@ ENTITY {
     match_speed_to_activity = true,
     impact_category = "metal-large",
     working_sound = {
-        sound = {filename = "__pyfusionenergygraphics__/sounds/py-turbine.ogg"},
-        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/py-turbine.ogg", volume = 0.3},
+        sound = { filename = "__pyfusionenergygraphics__/sounds/py-turbine.ogg" },
+        idle_sound = { filename = "__pyfusionenergygraphics__/sounds/py-turbine.ogg", volume = 0.3 },
         apparent_volume = 2.5
     }
-}
+})

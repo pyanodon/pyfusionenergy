@@ -1,21 +1,21 @@
-RECIPE {
+RECIPE({
     type = "recipe",
     name = "fusion-reactor-mk02",
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "fusion-reactor-mk01", amount = 1},
-        {type = "item", name = "mixer-mk01",          amount = 1},
-        {type = "item", name = "advanced-circuit",    amount = 50},
-        {type = "item", name = "niobium-plate",       amount = 100},
-        {type = "item", name = "super-alloy",         amount = 50}
+        { type = "item", name = "fusion-reactor-mk01", amount = 1 },
+        { type = "item", name = "mixer-mk01",          amount = 1 },
+        { type = "item", name = "advanced-circuit",    amount = 50 },
+        { type = "item", name = "niobium-plate",       amount = 100 },
+        { type = "item", name = "super-alloy",         amount = 50 }
     },
     results = {
-        {type = "item", name = "fusion-reactor-mk02", amount = 1}
+        { type = "item", name = "fusion-reactor-mk02", amount = 1 }
     },
-}
+})
 
-ITEM {
+ITEM({
     type = "item",
     name = "fusion-reactor-mk02",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-reactor-mk02.png",
@@ -25,26 +25,26 @@ ITEM {
     order = "a",
     place_result = "fusion-reactor-mk02",
     stack_size = 10
-}
+})
 
-ENTITY {
+ENTITY({
     type = "assembling-machine",
     name = "fusion-reactor-mk02",
     icon = "__pyfusionenergygraphics__/graphics/icons/fusion-reactor-mk02.png",
     icon_size = 64,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "fusion-reactor-mk02"},
+    flags = { "placeable-neutral", "player-creation" },
+    minable = { mining_time = 0.5, result = "fusion-reactor-mk02" },
     fast_replaceable_group = "fusion-reactor",
     max_health = 300,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
-    collision_box = {{-4.8, -4.8}, {4.8, 4.8}},
-    selection_box = {{-5.0, -5.0}, {5.0, 5.0}},
+    collision_box = { { -4.8, -4.8 }, { 4.8, 4.8 } },
+    selection_box = { { -5.0, -5.0 }, { 5.0, 5.0 } },
     forced_symmetry = "diagonal-pos",
     module_slots = 6,
-    allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
-    allowed_module_categories = {"productivity", "speed", "quality"},
-    crafting_categories = {"fusion-02"},
+    allowed_effects = { "speed", "productivity", "consumption", "pollution", "quality" },
+    allowed_module_categories = { "productivity", "speed", "quality" },
+    crafting_categories = { "fusion-02" },
     crafting_speed = 20,
     energy_source = {
         type = "electric",
@@ -57,10 +57,10 @@ ENTITY {
     graphics_set = {
         working_visualisations = {
             {
-                north_position = {0.0, -0.58},
-                west_position = {0.0, -0.58},
-                south_position = {0.0, -0.58},
-                east_position = {0.0, -0.58},
+                north_position = { 0.0, -0.58 },
+                west_position = { 0.0, -0.58 },
+                south_position = { 0.0, -0.58 },
+                east_position = { 0.0, -0.58 },
                 animation = {
                     filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk02/on.png",
                     frame_count = 42,
@@ -80,7 +80,7 @@ ENTITY {
                     height = 361,
                     --apply_projection = false,
                     frame_count = 1,
-                    shift = {0.0, -0.687}
+                    shift = { 0.0, -0.687 }
                 },
                 {
                     filename = "__pyfusionenergygraphics__/graphics/entity/fusion-reactor-mk02/shadow.png",
@@ -89,7 +89,7 @@ ENTITY {
                     height = 361,
                     --apply_projection = false,
                     frame_count = 1,
-                    shift = {0.2, -0.687},
+                    shift = { 0.2, -0.687 },
                     draw_as_shadow = true
                 }
             }
@@ -99,79 +99,79 @@ ENTITY {
     fluid_boxes = {
         {
             production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, { -0.0, -0.97 }, { 0.5, -0.0 }, { -0.5, 0.0 }),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
-            pipe_connections = {{flow_direction = "input", position = {-0.5, -4.5}, direction = defines.direction.north}}
+            pipe_connections = { { flow_direction = "input", position = { -0.5, -4.5 }, direction = defines.direction.north } }
         },
         {
             production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, { -0.0, -0.97 }, { 0.5, -0.0 }, { -0.5, 0.0 }),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
-            pipe_connections = {{flow_direction = "input", position = {-2.5, -4.5}, direction = defines.direction.north}}
+            pipe_connections = { { flow_direction = "input", position = { -2.5, -4.5 }, direction = defines.direction.north } }
         },
         {
             production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, { -0.0, -0.97 }, { 0.5, -0.0 }, { -0.5, 0.0 }),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
-            pipe_connections = {{flow_direction = "input", position = {-4.5, -4.5}, direction = defines.direction.north}}
+            pipe_connections = { { flow_direction = "input", position = { -4.5, -4.5 }, direction = defines.direction.north } }
         },
         {
             production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, { -0.0, -0.97 }, { 0.5, -0.0 }, { -0.5, 0.0 }),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
-            pipe_connections = {{flow_direction = "input", position = {1.5, -4.5}, direction = defines.direction.north}}
+            pipe_connections = { { flow_direction = "input", position = { 1.5, -4.5 }, direction = defines.direction.north } }
         },
         {
             production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, { -0.0, -0.97 }, { 0.5, -0.0 }, { -0.5, 0.0 }),
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 1000,
-            pipe_connections = {{flow_direction = "input", position = {3.5, -4.5}, direction = defines.direction.north}}
+            pipe_connections = { { flow_direction = "input", position = { 3.5, -4.5 }, direction = defines.direction.north } }
         },
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 100,
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
-            pipe_connections = {{flow_direction = "output", position = {0.5, 4.5}, direction = defines.direction.south}}
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, { -0.0, -0.97 }, { 0.5, -0.0 }, { -0.5, 0.0 }),
+            pipe_connections = { { flow_direction = "output", position = { 0.5, 4.5 }, direction = defines.direction.south } }
         },
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 100,
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
-            pipe_connections = {{flow_direction = "output", position = {4.5, 4.5}, direction = defines.direction.south}}
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, { -0.0, -0.97 }, { 0.5, -0.0 }, { -0.5, 0.0 }),
+            pipe_connections = { { flow_direction = "output", position = { 4.5, 4.5 }, direction = defines.direction.south } }
         },
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 100,
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
-            pipe_connections = {{flow_direction = "output", position = {2.5, 4.5}, direction = defines.direction.south}}
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, { -0.0, -0.97 }, { 0.5, -0.0 }, { -0.5, 0.0 }),
+            pipe_connections = { { flow_direction = "output", position = { 2.5, 4.5 }, direction = defines.direction.south } }
         },
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 100,
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
-            pipe_connections = {{flow_direction = "output", position = {-1.5, 4.5}, direction = defines.direction.south}}
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, { -0.0, -0.97 }, { 0.5, -0.0 }, { -0.5, 0.0 }),
+            pipe_connections = { { flow_direction = "output", position = { -1.5, 4.5 }, direction = defines.direction.south } }
         },
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 100,
-            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
-            pipe_connections = {{flow_direction = "output", position = {-3.5, 4.5}, direction = defines.direction.south}}
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, { -0.0, -0.97 }, { 0.5, -0.0 }, { -0.5, 0.0 }),
+            pipe_connections = { { flow_direction = "output", position = { -3.5, 4.5 }, direction = defines.direction.south } }
         },
     },
     impact_category = "metal-large",
     working_sound = {
-        sound = {filename = "__pyfusionenergygraphics__/sounds/fusion-reactor-mk02.ogg", volume = 1.5},
-        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/fusion-reactor-mk02.ogg", volume = 0.3},
+        sound = { filename = "__pyfusionenergygraphics__/sounds/fusion-reactor-mk02.ogg", volume = 1.5 },
+        idle_sound = { filename = "__pyfusionenergygraphics__/sounds/fusion-reactor-mk02.ogg", volume = 0.3 },
         apparent_volume = 2.5
     }
-}
+})

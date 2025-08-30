@@ -1,4 +1,4 @@
-TECHNOLOGY {
+TECHNOLOGY({
     type = "technology",
     name = "molybdenum-processing",
     icon = "__pyfusionenergygraphics__/graphics/technology/molybdenum-processing.png",
@@ -38,11 +38,11 @@ TECHNOLOGY {
     unit = {
         count = 30,
         ingredients = {
-            {"automation-science-pack", 2},
-            {"logistic-science-pack",   2},
-            {"chemical-science-pack",   1},
+            { "automation-science-pack", 2 },
+            { "logistic-science-pack",   2 },
+            { "chemical-science-pack",   1 },
             --{"production-science-pack", 1}
         },
         time = 70
     }
-}
+})

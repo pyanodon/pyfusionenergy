@@ -1,4 +1,4 @@
-TECHNOLOGY {
+TECHNOLOGY({
     type = "technology",
     name = "vanadium-processing",
     icon = "__pyfusionenergygraphics__/graphics/technology/vanadium-processing.png",
@@ -86,10 +86,10 @@ TECHNOLOGY {
     unit = {
         count = 300,
         ingredients = {
-            {"automation-science-pack", 2},
-            {"logistic-science-pack",   2},
-            {"chemical-science-pack",   1},
+            { "automation-science-pack", 2 },
+            { "logistic-science-pack",   2 },
+            { "chemical-science-pack",   1 },
         },
         time = 70
     }
-}
+})

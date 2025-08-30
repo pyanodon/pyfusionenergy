@@ -1,4 +1,4 @@
-TECHNOLOGY {
+TECHNOLOGY({
     type = "technology",
     name = "advanced-mining-facilities",
     icon = "__pyfusionenergygraphics__/graphics/technology/advanced-mining-facilities.png",
@@ -34,10 +34,10 @@ TECHNOLOGY {
     unit = {
         count = 50,
         ingredients = {
-            {"automation-science-pack", 2},
-            {"logistic-science-pack",   2},
-            {"chemical-science-pack",   1}
+            { "automation-science-pack", 2 },
+            { "logistic-science-pack",   2 },
+            { "chemical-science-pack",   1 }
         },
         time = 70
     }
-}
+})

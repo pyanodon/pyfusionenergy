@@ -1,4 +1,4 @@
-TECHNOLOGY {
+TECHNOLOGY({
     type = "technology",
     name = "kmauts",
     icon = "__pyfusionenergygraphics__/graphics/technology/kmauts.png",
@@ -22,11 +22,11 @@ TECHNOLOGY {
     unit = {
         count = 40,
         ingredients = {
-            {"automation-science-pack", 3},
-            {"logistic-science-pack",   2},
-            {"chemical-science-pack",   2},
-            {"production-science-pack", 1}
+            { "automation-science-pack", 3 },
+            { "logistic-science-pack",   2 },
+            { "chemical-science-pack",   2 },
+            { "production-science-pack", 1 }
         },
         time = 75
     }
-}
+})

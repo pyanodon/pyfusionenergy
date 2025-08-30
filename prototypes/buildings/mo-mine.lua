@@ -1,22 +1,22 @@
-RECIPE {
+RECIPE({
     type = "recipe",
     name = "mo-mine",
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "small-lamp",            amount = 50},
-        {type = "item", name = "electric-mining-drill", amount = 3},
-        {type = "item", name = "engine-unit",           amount = 4},
-        {type = "item", name = "nbfe-alloy",            amount = 30},
-        {type = "item", name = "steel-plate",           amount = 100},
-        {type = "item", name = "electronic-circuit",    amount = 30}
+        { type = "item", name = "small-lamp",            amount = 50 },
+        { type = "item", name = "electric-mining-drill", amount = 3 },
+        { type = "item", name = "engine-unit",           amount = 4 },
+        { type = "item", name = "nbfe-alloy",            amount = 30 },
+        { type = "item", name = "steel-plate",           amount = 100 },
+        { type = "item", name = "electronic-circuit",    amount = 30 }
     },
     results = {
-        {type = "item", name = "mo-mine", amount = 1}
+        { type = "item", name = "mo-mine", amount = 1 }
     }
-}
+})
 
-ITEM {
+ITEM({
     type = "item",
     name = "mo-mine",
     icon = "__pyfusionenergygraphics__/graphics/icons/mo-mine.png",
@@ -26,30 +26,30 @@ ITEM {
     order = "a",
     place_result = "mo-mine",
     stack_size = 10
-}
+})
 
-ENTITY {
+ENTITY({
     type = "mining-drill",
     name = "mo-mine",
     icon = "__pyfusionenergygraphics__/graphics/icons/mo-mine.png",
     icon_size = 64,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "mo-mine"},
+    flags = { "placeable-neutral", "player-creation" },
+    minable = { mining_time = 0.5, result = "mo-mine" },
     fast_replaceable_group = "mo-mine",
     max_health = 600,
-    resource_categories = {"molybdenum"},
+    resource_categories = { "molybdenum" },
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
-    collision_box = {{-3.3, -3.3}, {3.3, 3.3}},
-    selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
+    collision_box = { { -3.3, -3.3 }, { 3.3, 3.3 } },
+    selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
     module_slots = 3,
-    allowed_effects = {"consumption", "speed", "productivity"},
+    allowed_effects = { "consumption", "speed", "productivity" },
     --crafting_categories = {"rare-earth"},
     mining_speed = 3.5,
     energy_source =
     {
         type = "burner",
-        fuel_categories = {"drill"},
+        fuel_categories = { "drill" },
         effectivity = 8,
         fuel_inventory_size = 1,
         emissions_per_minute = {
@@ -59,10 +59,10 @@ ENTITY {
         {
             {
                 name = "turbine-smoke",
-                north_position = {0.0, -2.0},
-                south_position = {0.0, -2.0},
-                east_position = {0.0, -2.0},
-                west_position = {0.0, -2.0},
+                north_position = { 0.0, -2.0 },
+                south_position = { 0.0, -2.0 },
+                east_position = { 0.0, -2.0 },
+                west_position = { 0.0, -2.0 },
                 frequency = 20,
                 starting_vertical_speed = 0.1,
                 slow_down_factor = 1,
@@ -73,13 +73,13 @@ ENTITY {
     energy_usage = "550kW",
     mining_power = 1.5,
     resource_searching_radius = 4.49,
-    vector_to_place_result = {0, -3.65},
+    vector_to_place_result = { 0, -3.65 },
     radius_visualisation_picture = {
         filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-radius-visualization.png",
         width = 12,
         height = 12
     },
-    circuit_connector = circuit_connector_definitions["molybdenum-mine"],
+    circuit_connector = circuit_connector_definitions[ "molybdenum-mine" ],
     circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
     graphics_set = {
         animation = {
@@ -127,8 +127,8 @@ ENTITY {
     },
     impact_category = "metal-large",
     working_sound = {
-        sound = {filename = "__pyfusionenergygraphics__/sounds/regolite-mine.ogg", volume = 1.0},
-        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/regolite-mine.ogg", volume = 0.3},
+        sound = { filename = "__pyfusionenergygraphics__/sounds/regolite-mine.ogg", volume = 1.0 },
+        idle_sound = { filename = "__pyfusionenergygraphics__/sounds/regolite-mine.ogg", volume = 0.3 },
         apparent_volume = 2.5
     }
-}
+})

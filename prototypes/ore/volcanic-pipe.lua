@@ -1,20 +1,20 @@
-data.raw.planet.nauvis.map_gen_settings.autoplace_controls["volcanic-pipe"] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["volcanic-pipe"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_controls[ "volcanic-pipe" ] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings[ "volcanic-pipe" ] = {}
 
-data:extend {{
+data:extend({ {
     type = "autoplace-control",
     name = "volcanic-pipe",
     richness = true,
     order = "r-vo",
     category = "resource"
-}}
+} })
 
 -- data:extend{{
 --     type = "noise-layer",
 --     name = "volcanic-pipe"
 -- }}
 
-data:extend {
+data:extend({
     {
         type = "noise-expression",
         name = "py_volcanic_pipe_starting_area",
@@ -43,28 +43,28 @@ data:extend {
         name = "py_volcanic_pipe_richness",
         expression = "2^16 * var('distance') * var('control:volcanic-pipe:richness')"
     }
-}
+})
 
-ENTITY {
+ENTITY({
     type = "resource",
     name = "volcanic-pipe",
     category = "volcanic-pipe",
     icon = "__pyfusionenergygraphics__/graphics/icons/ores/volcanic-pipe.png",
     icon_size = 32,
-    flags = {"placeable-neutral"},
+    flags = { "placeable-neutral" },
     order = "a-b-a",
-    map_color = {r = 0.152, g = 0.909, b = 1},
+    map_color = { r = 0.152, g = 0.909, b = 1 },
     highlight = true,
     map_grid = false,
     minable = {
         -- mining_particle = "volcanic-pipe-particle",
         mining_time = 4,
         results = {
-            {type = "item", name = "kimberlite-rock", amount = 1}
+            { type = "item", name = "kimberlite-rock", amount = 1 }
         }
     },
-    collision_box = {{-3.5, -3.5}, {3.5, 3.5}},
-    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    collision_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
+    selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
     tree_removal_probability = 0.7,
     tree_removal_max_distance = 32 * 32,
     autoplace = {
@@ -74,7 +74,7 @@ ENTITY {
         probability_expression = "py_volcanic_pipe",
         richness_expression = "py_volcanic_pipe_richness",
     },
-    stage_counts = {0},
+    stage_counts = { 0 },
     stages = {
         sheet = {
             filename = "__pyfusionenergygraphics__/graphics/entity/ores/volcanic-pipe.png",
@@ -85,4 +85,4 @@ ENTITY {
             variation_count = 1
         }
     }
-}
+})

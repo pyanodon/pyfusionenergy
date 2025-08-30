@@ -7,26 +7,26 @@ local pipes = {
     }
 }
 
-RECIPE {
+RECIPE({
     type = "recipe",
     name = "nmf-mk01",
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "evaporator",          amount = 2},
-        {type = "item", name = "botanical-nursery",   amount = 1},
-        {type = "item", name = "fast-transport-belt", amount = 35},
-        {type = "item", name = "advanced-circuit",    amount = 40},
-        {type = "item", name = "steel-plate",         amount = 50},
-        {type = "item", name = "pipe",                amount = 15} --pyindustry niobium-pipe
+        { type = "item", name = "evaporator",          amount = 2 },
+        { type = "item", name = "botanical-nursery",   amount = 1 },
+        { type = "item", name = "fast-transport-belt", amount = 35 },
+        { type = "item", name = "advanced-circuit",    amount = 40 },
+        { type = "item", name = "steel-plate",         amount = 50 },
+        { type = "item", name = "pipe",                amount = 15 } --pyindustry niobium-pipe
         --add glass
     },
     results = {
-        {type = "item", name = "nmf-mk01", amount = 1}
+        { type = "item", name = "nmf-mk01", amount = 1 }
     }
-}
+})
 
-ITEM {
+ITEM({
     type = "item",
     name = "nmf-mk01",
     icon = "__pyfusionenergygraphics__/graphics/icons/nmf-mk01.png",
@@ -36,25 +36,25 @@ ITEM {
     order = "b",
     place_result = "nmf-mk01",
     stack_size = 10
-}
+})
 
-ENTITY {
+ENTITY({
     type = "assembling-machine",
     name = "nmf-mk01",
     icon = "__pyfusionenergygraphics__/graphics/icons/nmf-mk01.png",
     icon_size = 64,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "nmf-mk01"},
+    flags = { "placeable-neutral", "player-creation" },
+    minable = { mining_time = 0.5, result = "nmf-mk01" },
     fast_replaceable_group = "nmf",
     max_health = 700,
     corpse = "big-remnants",
     dying_explosion = "big-explosion",
-    collision_box = {{-3.2, -3.2}, {3.2, 3.2}},
-    selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
+    collision_box = { { -3.2, -3.2 }, { 3.2, 3.2 } },
+    selection_box = { { -3.5, -3.5 }, { 3.5, 3.5 } },
     forced_symmetry = "diagonal-pos",
     module_slots = 1,
-    allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
-    crafting_categories = {"nmf"},
+    allowed_effects = { "speed", "productivity", "consumption", "pollution", "quality" },
+    crafting_categories = { "nmf" },
     crafting_speed = 1,
     energy_source = {
         type = "electric",
@@ -74,7 +74,7 @@ ENTITY {
                     line_length = 15,
                     frame_count = 80,
                     animation_speed = 0.8,
-                    shift = {-1.5, -0.0}
+                    shift = { -1.5, -0.0 }
                 }, {
                 filename = "__pyfusionenergygraphics__/graphics/entity/nmf/left-mask.png",
                 width = 128,
@@ -82,8 +82,8 @@ ENTITY {
                 line_length = 15,
                 frame_count = 80,
                 animation_speed = 0.8,
-                shift = {-1.5, -0.0},
-                tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+                shift = { -1.5, -0.0 },
+                tint = { r = 1.0, g = 1.0, b = 0.0, a = 1.0 }
             },
                 {
                     filename = "__pyfusionenergygraphics__/graphics/entity/nmf/right.png",
@@ -92,7 +92,7 @@ ENTITY {
                     line_length = 15,
                     frame_count = 80,
                     animation_speed = 0.8,
-                    shift = {2.1, -0.0}
+                    shift = { 2.1, -0.0 }
                 },
                 {
                     filename = "__pyfusionenergygraphics__/graphics/entity/nmf/right-mask.png",
@@ -101,8 +101,8 @@ ENTITY {
                     line_length = 15,
                     frame_count = 80,
                     animation_speed = 0.8,
-                    shift = {2.1, -0.0},
-                    tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+                    shift = { 2.1, -0.0 },
+                    tint = { r = 1.0, g = 1.0, b = 0.0, a = 1.0 }
                 }
             }
         },
@@ -112,37 +112,37 @@ ENTITY {
         --1
         {
             production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {0.103, -4.05}, nil, nil, pipes),
+            pipe_picture = py.pipe_pictures("assembling-machine-3", nil, { 0.103, -4.05 }, nil, nil, pipes),
             pipe_covers = py.pipe_covers(false, true, false, false),
             volume = 1000,
-            pipe_connections = {{flow_direction = "input", position = {0.0, 3.0}, direction = defines.direction.south}}
+            pipe_connections = { { flow_direction = "input", position = { 0.0, 3.0 }, direction = defines.direction.south } }
         },
         {
             production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {0.103, -4.05}, nil, nil, pipes),
+            pipe_picture = py.pipe_pictures("assembling-machine-3", nil, { 0.103, -4.05 }, nil, nil, pipes),
             pipe_covers = py.pipe_covers(false, true, false, false),
             volume = 1000,
-            pipe_connections = {{flow_direction = "input", position = {-3.0, 0.0}, direction = defines.direction.west}}
+            pipe_connections = { { flow_direction = "input", position = { -3.0, 0.0 }, direction = defines.direction.west } }
         },
         {
             production_type = "output",
-            pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {0.103, -4.05}, nil, nil, pipes),
+            pipe_picture = py.pipe_pictures("assembling-machine-3", nil, { 0.103, -4.05 }, nil, nil, pipes),
             pipe_covers = py.pipe_covers(false, true, false, false),
             volume = 100,
-            pipe_connections = {{flow_direction = "output", position = {0.0, -3.0}, direction = defines.direction.north}}
+            pipe_connections = { { flow_direction = "output", position = { 0.0, -3.0 }, direction = defines.direction.north } }
         },
         {
             production_type = "output",
-            pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {0.103, -4.05}, nil, nil, pipes),
+            pipe_picture = py.pipe_pictures("assembling-machine-3", nil, { 0.103, -4.05 }, nil, nil, pipes),
             pipe_covers = py.pipe_covers(false, true, false, false),
             volume = 100,
-            pipe_connections = {{flow_direction = "output", position = {3.0, 0.0}, direction = defines.direction.east}}
+            pipe_connections = { { flow_direction = "output", position = { 3.0, 0.0 }, direction = defines.direction.east } }
         },
     },
     impact_category = "metal-large",
     working_sound = {
-        sound = {filename = "__pyfusionenergygraphics__/sounds/nmf.ogg", volume = 1.3},
-        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/nmf.ogg", volume = 0.3},
+        sound = { filename = "__pyfusionenergygraphics__/sounds/nmf.ogg", volume = 1.3 },
+        idle_sound = { filename = "__pyfusionenergygraphics__/sounds/nmf.ogg", volume = 0.3 },
         apparent_volume = 2.5
     }
-}
+})

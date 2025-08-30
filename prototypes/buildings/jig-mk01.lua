@@ -53,25 +53,25 @@ local pipe_right = {
     }
 }
 
-RECIPE {
+RECIPE({
     type = "recipe",
     name = "jig-mk01",
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {type = "item", name = "steam-engine",           amount = 5},
-        {type = "item", name = "secondary-crusher-mk01", amount = 1},
-        {type = "item", name = "advanced-circuit",       amount = 20},
-        {type = "item", name = "steel-plate",            amount = 25},
-        {type = "item", name = "assembling-machine-2",   amount = 2},
-        {type = "item", name = "pipe",                   amount = 40} --updated-bob titanium-pipe
+        { type = "item", name = "steam-engine",           amount = 5 },
+        { type = "item", name = "secondary-crusher-mk01", amount = 1 },
+        { type = "item", name = "advanced-circuit",       amount = 20 },
+        { type = "item", name = "steel-plate",            amount = 25 },
+        { type = "item", name = "assembling-machine-2",   amount = 2 },
+        { type = "item", name = "pipe",                   amount = 40 } --updated-bob titanium-pipe
     },
     results = {
-        {type = "item", name = "jig-mk01", amount = 1}
+        { type = "item", name = "jig-mk01", amount = 1 }
     },
-}
+})
 
-ITEM {
+ITEM({
     type = "item",
     name = "jig-mk01",
     icon = "__pyfusionenergygraphics__/graphics/icons/jig-mk01.png",
@@ -81,25 +81,25 @@ ITEM {
     order = "d",
     place_result = "jig-mk01",
     stack_size = 10
-}
+})
 
-ENTITY {
+ENTITY({
     type = "assembling-machine",
     name = "jig-mk01",
     icon = "__pyfusionenergygraphics__/graphics/icons/jig-mk01.png",
     icon_size = 64,
-    flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.5, result = "jig-mk01"},
+    flags = { "placeable-neutral", "player-creation" },
+    minable = { mining_time = 0.5, result = "jig-mk01" },
     fast_replaceable_group = "jig",
     max_health = 300,
     corpse = "big-remnants",
     dying_explosion = "medium-explosion",
-    collision_box = {{-3.8, -3.8}, {3.8, 3.8}},
-    selection_box = {{-4.0, -4.0}, {4.0, 4.0}},
+    collision_box = { { -3.8, -3.8 }, { 3.8, 3.8 } },
+    selection_box = { { -4.0, -4.0 }, { 4.0, 4.0 } },
     forced_symmetry = "diagonal-pos",
     module_slots = 1,
-    allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
-    crafting_categories = {"jig"},
+    allowed_effects = { "speed", "productivity", "consumption", "pollution", "quality" },
+    crafting_categories = { "jig" },
     crafting_speed = 1,
     energy_source = {
         type = "electric",
@@ -112,10 +112,10 @@ ENTITY {
     graphics_set = {
         working_visualisations = {
             {
-                north_position = {0.48, 0.417},
-                west_position = {0.48, 0.417},
-                south_position = {0.48, 0.417},
-                east_position = {0.48, 0.417},
+                north_position = { 0.48, 0.417 },
+                west_position = { 0.48, 0.417 },
+                south_position = { 0.48, 0.417 },
+                east_position = { 0.48, 0.417 },
                 animation = {
                     layers = {
                         {
@@ -133,7 +133,7 @@ ENTITY {
                             width = 160,
                             height = 192,
                             animation_speed = 0.4,
-                            tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+                            tint = { r = 1.0, g = 1.0, b = 0.0, a = 1.0 }
                         }
                     }
                 }
@@ -146,15 +146,15 @@ ENTITY {
                     width = 276,
                     height = 268,
                     frame_count = 1,
-                    shift = {0.3, -0.2}
+                    shift = { 0.3, -0.2 }
                 },
                 {
                     filename = "__pyfusionenergygraphics__/graphics/entity/jig/off-mask.png",
                     width = 276,
                     height = 268,
                     frame_count = 1,
-                    shift = {0.3, -0.2},
-                    tint = {r = 1.0, g = 1.0, b = 0.0, a = 1.0}
+                    shift = { 0.3, -0.2 },
+                    tint = { r = 1.0, g = 1.0, b = 0.0, a = 1.0 }
                 }
             }
         },
@@ -163,37 +163,37 @@ ENTITY {
     fluid_boxes = {
         {
             production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", {1.8, 4.3}, {-1.2, -4.65}, {4.8, -1.7}, {-4.27, 1.3}, pipe_left),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", { 1.8, 4.3 }, { -1.2, -4.65 }, { 4.8, -1.7 }, { -4.27, 1.3 }, pipe_left),
             pipe_covers = py.pipe_covers(false, true, false, false),
             volume = 1000,
-            pipe_connections = {{flow_direction = "input", position = {-1.5, -3.5}, direction = defines.direction.north}}
+            pipe_connections = { { flow_direction = "input", position = { -1.5, -3.5 }, direction = defines.direction.north } }
         },
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, false, false),
             volume = 100,
-            pipe_picture = py.pipe_pictures("assembling-machine-2", {1.8, 4.3}, {-1.2, -4.65}, {4.8, -1.7}, {-4.27, 1.3}, pipe_left),
-            pipe_connections = {{flow_direction = "output", position = {1.5, 3.5}, direction = defines.direction.south}}
+            pipe_picture = py.pipe_pictures("assembling-machine-2", { 1.8, 4.3 }, { -1.2, -4.65 }, { 4.8, -1.7 }, { -4.27, 1.3 }, pipe_left),
+            pipe_connections = { { flow_direction = "output", position = { 1.5, 3.5 }, direction = defines.direction.south } }
         },
         {
             production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", {-1.2, 4.3}, {1.8, -4.65}, {4.8, 1.3}, {-4.27, -1.8}, pipe_right),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", { -1.2, 4.3 }, { 1.8, -4.65 }, { 4.8, 1.3 }, { -4.27, -1.8 }, pipe_right),
             pipe_covers = py.pipe_covers(false, true, false, false),
             volume = 1000,
-            pipe_connections = {{flow_direction = "input", position = {1.5, -3.5}, direction = defines.direction.north}}
+            pipe_connections = { { flow_direction = "input", position = { 1.5, -3.5 }, direction = defines.direction.north } }
         },
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, false, false),
             volume = 100,
-            pipe_picture = py.pipe_pictures("assembling-machine-2", {-1.2, 4.3}, {1.8, -4.65}, {4.8, 1.3}, {-4.27, -1.8}, pipe_right),
-            pipe_connections = {{flow_direction = "output", position = {-1.5, 3.5}, direction = defines.direction.south}}
+            pipe_picture = py.pipe_pictures("assembling-machine-2", { -1.2, 4.3 }, { 1.8, -4.65 }, { 4.8, 1.3 }, { -4.27, -1.8 }, pipe_right),
+            pipe_connections = { { flow_direction = "output", position = { -1.5, 3.5 }, direction = defines.direction.south } }
         },
     },
     impact_category = "metal-large",
     working_sound = {
-        sound = {filename = "__pyfusionenergygraphics__/sounds/jig.ogg", volume = 1.2},
-        idle_sound = {filename = "__pyfusionenergygraphics__/sounds/jig.ogg", volume = 0.3},
+        sound = { filename = "__pyfusionenergygraphics__/sounds/jig.ogg", volume = 1.2 },
+        idle_sound = { filename = "__pyfusionenergygraphics__/sounds/jig.ogg", volume = 0.3 },
         apparent_volume = 2.5
     }
-}
+})

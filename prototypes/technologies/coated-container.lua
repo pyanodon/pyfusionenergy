@@ -1,4 +1,4 @@
-TECHNOLOGY {
+TECHNOLOGY({
     type = "technology",
     name = "coated-container",
     icon = "__pyfusionenergygraphics__/graphics/technology/coated-container.png",
@@ -21,10 +21,10 @@ TECHNOLOGY {
     unit = {
         count = 20,
         ingredients = {
-            {"automation-science-pack", 1},
-            {"logistic-science-pack",   1},
-            {"chemical-science-pack",   1},
+            { "automation-science-pack", 1 },
+            { "logistic-science-pack",   1 },
+            { "chemical-science-pack",   1 },
         },
         time = 50
     }
-}
+})

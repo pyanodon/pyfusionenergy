@@ -1,4 +1,4 @@
-data:extend {
+data:extend({
     {
         type = "item-group",
         name = "fusion-energy",
@@ -67,4 +67,4 @@ data:extend {
         group = "fusion-energy",
         order = "u"
     },
-}
+})

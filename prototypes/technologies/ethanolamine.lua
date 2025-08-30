@@ -1,4 +1,4 @@
-TECHNOLOGY {
+TECHNOLOGY({
     type = "technology",
     name = "ethanolamine",
     icon = "__pyfusionenergygraphics__/graphics/technology/ethanolamine.png",
@@ -30,11 +30,11 @@ TECHNOLOGY {
     unit = {
         count = 40,
         ingredients = {
-            {"automation-science-pack", 3},
-            {"logistic-science-pack",   2},
-            {"chemical-science-pack",   2},
-            {"production-science-pack", 1}
+            { "automation-science-pack", 3 },
+            { "logistic-science-pack",   2 },
+            { "chemical-science-pack",   2 },
+            { "production-science-pack", 1 }
         },
         time = 75
     }
-}
+})

@@ -1,4 +1,4 @@
-data:extend {
+data:extend({
     {
         type = "recipe-category",
         name = "agitator"
@@ -83,9 +83,9 @@ data:extend {
         type = "recipe-category",
         name = "heat-exchanger"
     }
-}
+})
 
-data:extend {
+data:extend({
     {
         type = "resource-category",
         name = "volcanic-pipe"
@@ -98,4 +98,4 @@ data:extend {
         type = "resource-category",
         name = "regolite"
     }
-}
+})

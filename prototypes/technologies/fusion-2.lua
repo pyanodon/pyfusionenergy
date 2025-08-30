@@ -1,11 +1,11 @@
-TECHNOLOGY {
+TECHNOLOGY({
     type = "technology",
     name = "fusion-mk02",
     icon = "__pyfusionenergygraphics__/graphics/technology/fusion-2.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {"fusion-mk01"},
-    dependencies = {"fusion-mk01"},
+    prerequisites = { "fusion-mk01" },
+    dependencies = { "fusion-mk01" },
     effects = {
         {
             type = "unlock-recipe",
@@ -23,11 +23,11 @@ TECHNOLOGY {
     unit = {
         count = 120,
         ingredients = {
-            {"automation-science-pack", 3},
-            {"logistic-science-pack",   2},
-            {"chemical-science-pack",   1},
-            {"production-science-pack", 1}
+            { "automation-science-pack", 3 },
+            { "logistic-science-pack",   2 },
+            { "chemical-science-pack",   1 },
+            { "production-science-pack", 1 }
         },
         time = 70
     }
-}
+})
