@@ -127,7 +127,7 @@ require("prototypes/buildings/heat-exchanger")
 require("prototypes/buildings/py-turbine")
 require("prototypes/buildings/mo-mine")
 
-if mods[ "pyrawores" ] then
+if mods["pyrawores"] then
     require("prototypes/buildings/agitator-mk02")
     require("prototypes/buildings/agitator-mk03")
     require("prototypes/buildings/agitator-mk04")
@@ -177,7 +177,7 @@ if mods[ "pyrawores" ] then
     require("prototypes/buildings/nmf-mk04")
 end
 
-if mods[ "pyalienlife" ] then
+if mods["pyalienlife"] then
     require("prototypes/buildings/kmauts-enclosure-mk02")
     require("prototypes/buildings/kmauts-enclosure-mk03")
     require("prototypes/buildings/kmauts-enclosure-mk04")
@@ -191,7 +191,7 @@ if mods[ "pyalienlife" ] then
     require("prototypes/buildings/xyhiphoe-pool-mk04")
 end
 
-data.raw.fluid[ "gasoline" ].fuel_value = "1.2MJ"
-data.raw.fluid[ "acetylene" ].fuel_value = "1MJ"
+data.raw.fluid["gasoline"].fuel_value = "1.2MJ"
+data.raw.fluid["acetylene"].fuel_value = "1MJ"
 
-table.insert(data.raw[ "fluid-turret" ][ "flamethrower-turret" ].attack_parameters.fluids, { type = "gasoline", damage_modifier = 2 })
+table.insert(data.raw["fluid-turret"]["flamethrower-turret"].attack_parameters.fluids, { type = "gasoline", damage_modifier = 2 })

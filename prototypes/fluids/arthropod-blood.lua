@@ -8,6 +8,6 @@ FLUID({
     flow_color = { r = 1, g = 1, b = 1 },
     max_temperature = 100,
     gas_temperature = 15,
-    subgroup = mods[ "pyalienlife" ] and "py-alienlife-fluids" or "py-fusion-fluids",
+    subgroup = mods["pyalienlife"] and "py-alienlife-fluids" or "py-fusion-fluids",
     order = "f"
 })

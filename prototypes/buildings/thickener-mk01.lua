@@ -17,7 +17,7 @@ RECIPE({
         { type = "item", name = "small-lamp",         amount = 4 },
         { type = "item", name = "electronic-circuit", amount = 10 }, --updated-bob basic-electronic-circuit-board
         { type = "item", name = "steel-plate",        amount = 50 },
-        { type = "item", name = "pipe",               amount = 15 } --updated-bob brass plate
+        { type = "item", name = "pipe",               amount = 15 }  --updated-bob brass plate
     },
     results = {
         { type = "item", name = "thickener-mk01", amount = 1 }

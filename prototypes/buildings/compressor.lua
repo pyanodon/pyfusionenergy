@@ -33,7 +33,7 @@ local function working_visualizations(i)
             height = 252,
             line_length = 7,
             priority = "medium",
-            tint = py.tints[ i ],
+            tint = py.tints[i],
             shift = { 0.55, -0.45 }
         }
     }

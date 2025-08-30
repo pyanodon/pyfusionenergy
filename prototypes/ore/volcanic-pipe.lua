@@ -1,5 +1,5 @@
-data.raw.planet.nauvis.map_gen_settings.autoplace_controls[ "volcanic-pipe" ] = {}
-data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings[ "volcanic-pipe" ] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_controls["volcanic-pipe"] = {}
+data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["volcanic-pipe"] = {}
 
 data:extend({ {
     type = "autoplace-control",

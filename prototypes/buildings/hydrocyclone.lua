@@ -10,8 +10,8 @@ local function graphics_set(tint)
         end
 
         local tint = table.deepcopy(tint)
-        for k, v in pairs(tint) do tint[ k ] = v * transparency_percent end
-        working_visualisations[ i ] = {
+        for k, v in pairs(tint) do tint[k] = v * transparency_percent end
+        working_visualisations[i] = {
             draw_in_states = { tostring(i) },
             draw_when_state_filter_matches = true,
             always_draw = true,
@@ -40,14 +40,14 @@ local function graphics_set(tint)
 
     local states = {}
     for i = 1, 32 do
-        states[ i ] = {
+        states[i] = {
             duration = (i == 1) and 1 or 2, -- idle state must have duration of 1
             name = tostring(i),
             next_active = tostring((i == 32) and 1 or (i + 1)),
             next_inactive = tostring((i == 32) and 1 or (i + 1)),
         }
     end
-    states[ 1 ].next_inactive = "1"
+    states[1].next_inactive = "1"
 
     return {
         working_visualisations = working_visualisations,
@@ -119,7 +119,7 @@ for i = 1, 4 do
             },
         },
         energy_usage = (400 * i) .. "kW",
-        graphics_set = graphics_set(py.tints[ i ]),
+        graphics_set = graphics_set(py.tints[i]),
         fluid_boxes_off_when_no_fluid_recipe = true,
         fluid_boxes = {
             --North
@@ -189,7 +189,7 @@ RECIPE({
     }
 })
 
-if not mods[ "pyrawores" ] then return end
+if not mods["pyrawores"] then return end
 
 RECIPE({
     type = "recipe",

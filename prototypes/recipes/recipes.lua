@@ -1764,7 +1764,7 @@ RECIPE({
     order = "j"
 }):add_unlock("energy-3")
 
-if not mods[ "pyhightech" ] then
+if not mods["pyhightech"] then
     RECIPE({
         type = "recipe",
         name = "iron-oxide",
@@ -1801,8 +1801,8 @@ ITEM({
     send_to_orbit_mode = "automated"
 })
 
-if data.raw.technology[ "space-science-pack" ].research_trigger then
-    data.raw.technology[ "space-science-pack" ].research_trigger.item = "satellite"
+if data.raw.technology["space-science-pack"].research_trigger then
+    data.raw.technology["space-science-pack"].research_trigger.item = "satellite"
 end
 
 RECIPE({

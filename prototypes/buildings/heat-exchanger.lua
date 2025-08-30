@@ -144,6 +144,6 @@ ENTITY({
     }
 })
 
-if mods[ "pyalternativeenergy" ] then
-    data.raw[ "assembling-machine" ][ "py-heat-exchanger" ].next_upgrade = "py-heat-exchanger-mk02"
+if mods["pyalternativeenergy"] then
+    data.raw["assembling-machine"]["py-heat-exchanger"].next_upgrade = "py-heat-exchanger-mk02"
 end
