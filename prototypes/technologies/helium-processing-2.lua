@@ -4,8 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/helium-processing-mk02.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {},
-    dependencies = {"helium-processing", "liquid-petroleum-processing", "regolite-mining"},
+    prerequisites = {"helium-processing", "liquid-petroleum-processing", "regolite-mining"},
     effects = {
         {
             type = "unlock-recipe",
