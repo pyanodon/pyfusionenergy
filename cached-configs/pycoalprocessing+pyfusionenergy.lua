@@ -1,270 +1,251 @@
-﻿science_pack_order("automation-science-pack", "001-000028")
-science_pack_order("logistic-science-pack", "002-000063")
-science_pack_order("military-science-pack", "003-000070")
-science_pack_order("chemical-science-pack", "003-000108")
-science_pack_order("utility-science-pack", "005-000155")
-science_pack_order("production-science-pack", "004-000145")
-science_pack_order("space-science-pack", "006-000211")
-fix_tech("physical-projectile-damage-1", {order = "000007", prerequisites = {"military"}, unit = {count = 250, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("physical-projectile-damage-2", {order = "000008", prerequisites = {"physical-projectile-damage-1", "logistic-science-pack"}, unit = {count = 55, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("weapon-shooting-speed-1", {order = "000007", prerequisites = {"military"}, unit = {count = 250, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("weapon-shooting-speed-2", {order = "000008", prerequisites = {"weapon-shooting-speed-1", "logistic-science-pack"}, unit = {count = 55, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("stronger-explosives-1", {order = "000009", prerequisites = {"military-2"}, unit = {count = 90, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("physical-projectile-damage-3", {order = "000010", prerequisites = {"physical-projectile-damage-2", "military-science-pack"}, unit = {count = 22, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}}, time = 90}})
-fix_tech("physical-projectile-damage-4", {order = "000011", prerequisites = {"physical-projectile-damage-3"}, unit = {count = 36, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}}, time = 90}})
-fix_tech("physical-projectile-damage-5", {order = "000014", prerequisites = {"physical-projectile-damage-4", "chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("physical-projectile-damage-6", {order = "000023", prerequisites = {"physical-projectile-damage-5", "utility-science-pack"}, unit = {count = 300, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"military-science-pack", 3}, {"utility-science-pack", 1}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("physical-projectile-damage-7", {order = "000028", prerequisites = {"physical-projectile-damage-6", "space-science-pack"}, unit = {ingredients = {{"automation-science-pack", 20}, {"logistic-science-pack", 10}, {"chemical-science-pack", 6}, {"military-science-pack", 6}, {"utility-science-pack", 2}, {"space-science-pack", 1}, {"production-science-pack", 3}}, time = 1200}})
-fix_tech("stronger-explosives-2", {order = "000010", prerequisites = {"stronger-explosives-1", "military-science-pack"}, unit = {count = 22, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}}, time = 90}})
-fix_tech("stronger-explosives-3", {order = "000014", prerequisites = {"stronger-explosives-2", "chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}, {"chemical-science-pack", 1}}, time = 90}})
-fix_tech("stronger-explosives-4", {order = "000023", prerequisites = {"stronger-explosives-3", "utility-science-pack"}, unit = {count = 300, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"military-science-pack", 3}, {"chemical-science-pack", 3}, {"utility-science-pack", 1}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("stronger-explosives-5", {order = "000024", prerequisites = {"stronger-explosives-4"}, unit = {count = 500, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"military-science-pack", 3}, {"chemical-science-pack", 3}, {"utility-science-pack", 1}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("stronger-explosives-6", {order = "000025", prerequisites = {"stronger-explosives-5"}, unit = {count = 800, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"military-science-pack", 3}, {"utility-science-pack", 1}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("stronger-explosives-7", {order = "000028", prerequisites = {"stronger-explosives-6", "space-science-pack"}, unit = {ingredients = {{"automation-science-pack", 20}, {"logistic-science-pack", 10}, {"chemical-science-pack", 6}, {"military-science-pack", 6}, {"utility-science-pack", 2}, {"space-science-pack", 1}, {"production-science-pack", 3}}, time = 1200}})
-fix_tech("refined-flammables-1", {order = "000011", prerequisites = {"flamethrower"}, unit = {count = 36, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}}, time = 90}})
-fix_tech("refined-flammables-2", {order = "000012", prerequisites = {"refined-flammables-1"}, unit = {count = 60, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}}, time = 90}})
-fix_tech("refined-flammables-3", {order = "000014", prerequisites = {"refined-flammables-2", "chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}, {"chemical-science-pack", 1}}, time = 90}})
-fix_tech("refined-flammables-4", {order = "000023", prerequisites = {"refined-flammables-3", "utility-science-pack"}, unit = {count = 300, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"military-science-pack", 3}, {"chemical-science-pack", 3}, {"utility-science-pack", 1}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("refined-flammables-5", {order = "000024", prerequisites = {"refined-flammables-4"}, unit = {count = 500, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"military-science-pack", 3}, {"chemical-science-pack", 3}, {"utility-science-pack", 1}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("refined-flammables-6", {order = "000025", prerequisites = {"refined-flammables-5"}, unit = {count = 800, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"military-science-pack", 3}, {"utility-science-pack", 1}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("refined-flammables-7", {order = "000028", prerequisites = {"refined-flammables-6", "space-science-pack"}, unit = {ingredients = {{"automation-science-pack", 20}, {"logistic-science-pack", 10}, {"chemical-science-pack", 6}, {"military-science-pack", 6}, {"utility-science-pack", 2}, {"space-science-pack", 1}, {"production-science-pack", 3}}, time = 1200}})
-fix_tech("energy-weapons-damage-1", {order = "000014", prerequisites = {"military-science-pack", "chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}, {"chemical-science-pack", 1}}, time = 90}})
-fix_tech("energy-weapons-damage-2", {order = "000015", prerequisites = {"energy-weapons-damage-1"}, unit = {count = 275, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}, {"chemical-science-pack", 1}}, time = 90}})
-fix_tech("energy-weapons-damage-3", {order = "000016", prerequisites = {"energy-weapons-damage-2"}, unit = {count = 450, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}, {"chemical-science-pack", 1}}, time = 90}})
-fix_tech("energy-weapons-damage-4", {order = "000017", prerequisites = {"energy-weapons-damage-3"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}, {"chemical-science-pack", 1}}, time = 90}})
-fix_tech("energy-weapons-damage-5", {order = "000023", prerequisites = {"energy-weapons-damage-4", "utility-science-pack"}, unit = {count = 300, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"military-science-pack", 3}, {"utility-science-pack", 1}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("energy-weapons-damage-6", {order = "000024", prerequisites = {"energy-weapons-damage-5"}, unit = {count = 500, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"military-science-pack", 3}, {"utility-science-pack", 1}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("energy-weapons-damage-7", {order = "000028", prerequisites = {"energy-weapons-damage-6", "space-science-pack"}, unit = {ingredients = {{"automation-science-pack", 20}, {"logistic-science-pack", 10}, {"chemical-science-pack", 6}, {"military-science-pack", 6}, {"utility-science-pack", 2}, {"space-science-pack", 1}, {"production-science-pack", 3}}, time = 1200}})
-fix_tech("weapon-shooting-speed-3", {order = "000010", prerequisites = {"weapon-shooting-speed-2", "military-science-pack"}, unit = {count = 22, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}}, time = 90}})
-fix_tech("weapon-shooting-speed-4", {order = "000011", prerequisites = {"weapon-shooting-speed-3"}, unit = {count = 36, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}}, time = 90}})
-fix_tech("weapon-shooting-speed-5", {order = "000014", prerequisites = {"weapon-shooting-speed-4", "chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("weapon-shooting-speed-6", {order = "000023", prerequisites = {"weapon-shooting-speed-5", "utility-science-pack"}, unit = {count = 300, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"military-science-pack", 3}, {"utility-science-pack", 1}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("laser-shooting-speed-1", {order = "000014", prerequisites = {"military-science-pack", "chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}, {"chemical-science-pack", 1}}, time = 90}})
-fix_tech("laser-shooting-speed-2", {order = "000015", prerequisites = {"laser-shooting-speed-1"}, unit = {count = 275, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}, {"chemical-science-pack", 1}}, time = 90}})
-fix_tech("laser-shooting-speed-3", {order = "000016", prerequisites = {"laser-shooting-speed-2"}, unit = {count = 450, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("laser-shooting-speed-4", {order = "000017", prerequisites = {"laser-shooting-speed-3"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("laser-shooting-speed-5", {order = "000023", prerequisites = {"laser-shooting-speed-4", "utility-science-pack"}, unit = {count = 300, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"military-science-pack", 3}, {"utility-science-pack", 1}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("laser-shooting-speed-6", {order = "000024", prerequisites = {"laser-shooting-speed-5"}, unit = {count = 500, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"military-science-pack", 3}, {"utility-science-pack", 1}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("laser-shooting-speed-7", {order = "000025", prerequisites = {"laser-shooting-speed-6"}, unit = {count = 800, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"military-science-pack", 3}, {"utility-science-pack", 1}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("artillery-shell-range-1", {order = "000019", prerequisites = {"artillery"}, unit = {count = 2000, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("artillery-shell-speed-1", {order = "000019", prerequisites = {"artillery"}, unit = {ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("follower-robot-count-1", {order = "000011", prerequisites = {"defender"}, unit = {count = 36, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}}, time = 90}})
-fix_tech("follower-robot-count-2", {order = "000012", prerequisites = {"follower-robot-count-1"}, unit = {count = 60, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}}, time = 90}})
-fix_tech("follower-robot-count-3", {order = "000014", prerequisites = {"follower-robot-count-2", "chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("follower-robot-count-4", {order = "000015", prerequisites = {"follower-robot-count-3"}, unit = {count = 275, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("follower-robot-count-5", {order = "000023", prerequisites = {"follower-robot-count-4", "utility-science-pack"}, unit = {count = 300, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"military-science-pack", 3}, {"utility-science-pack", 1}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("follower-robot-count-6", {order = "000024", prerequisites = {"follower-robot-count-5"}, unit = {count = 500, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"military-science-pack", 3}, {"utility-science-pack", 1}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("follower-robot-count-7", {order = "000028", prerequisites = {"follower-robot-count-6", "space-science-pack"}, unit = {ingredients = {{"automation-science-pack", 20}, {"logistic-science-pack", 10}, {"chemical-science-pack", 6}, {"military-science-pack", 6}, {"production-science-pack", 3}, {"utility-science-pack", 2}, {"space-science-pack", 1}}, time = 1200}})
-fix_tech("bulk-inserter", {order = "000013", prerequisites = {"logistics-2"}, unit = {count = 700, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("inserter-capacity-bonus-1", {order = "000014", prerequisites = {"bulk-inserter"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("inserter-capacity-bonus-2", {order = "000015", prerequisites = {"inserter-capacity-bonus-1"}, unit = {count = 2000, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("inserter-capacity-bonus-3", {order = "000016", prerequisites = {"inserter-capacity-bonus-2", "chemical-science-pack"}, unit = {count = 450, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("inserter-capacity-bonus-4", {order = "000020", prerequisites = {"inserter-capacity-bonus-3", "production-science-pack"}, unit = {count = 450, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("inserter-capacity-bonus-5", {order = "000021", prerequisites = {"inserter-capacity-bonus-4"}, unit = {count = 750, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("inserter-capacity-bonus-6", {order = "000022", prerequisites = {"inserter-capacity-bonus-5"}, unit = {count = 1300, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("inserter-capacity-bonus-7", {order = "000023", prerequisites = {"inserter-capacity-bonus-6", "utility-science-pack"}, unit = {count = 300, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"production-science-pack", 2}, {"utility-science-pack", 1}, {"military-science-pack", 3}}, time = 600}})
-fix_tech("automation", {order = "000002", prerequisites = {}, unit = {count = 20, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("automation-2", {order = "000008", prerequisites = {"logistic-science-pack"}, unit = {count = 55, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("logistic-science-pack", {order = "000007", prerequisites = {"lab-instrument", "ulric"}, unit = {count = 250, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("steel-processing", {order = "000002", prerequisites = {}, unit = {count = 20, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("steel-axe", {order = "000003", prerequisites = {"steel-processing"}, unit = {count = 33, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("military", {order = "000006", prerequisites = {"fluid-processing-machines-1"}, unit = {count = 150, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("military-2", {order = "000008", prerequisites = {"military", "logistic-science-pack"}, unit = {count = 55, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("fast-inserter", {order = "000003", prerequisites = {"automation"}, unit = {count = 33, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("logistics", {order = "000002", prerequisites = {}, unit = {count = 20, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("railway", {order = "000013", prerequisites = {"logistics-2"}, unit = {count = 700, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("automated-rail-transportation", {order = "000014", prerequisites = {"railway"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("rail-signals", {order = "000015", prerequisites = {"automated-rail-transportation"}, unit = {count = 2000, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("automobilism", {order = "000004", prerequisites = {"engine"}, unit = {count = 55, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("optics", {order = "000002", prerequisites = {}, unit = {count = 20, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("solar-energy", {order = "000008", prerequisites = {"logistic-science-pack"}, unit = {count = 55, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("heavy-armor", {order = "000007", prerequisites = {"military"}, unit = {count = 250, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("gun-turret", {order = "000002", prerequisites = {}, unit = {count = 20, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("research-speed-1", {order = "000009", prerequisites = {"automation-2"}, unit = {count = 90, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("research-speed-2", {order = "000010", prerequisites = {"research-speed-1"}, unit = {count = 160, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("electric-energy-distribution-1", {order = "000012", prerequisites = {"niobium"}, unit = {count = 400, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("advanced-material-processing", {order = "000010", prerequisites = {"concrete", "crusher", "filtration"}, unit = {count = 160, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("concrete", {order = "000008", prerequisites = {"logistic-science-pack", "separation"}, unit = {count = 55, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("engine", {order = "000003", prerequisites = {"automation", "steel-processing"}, unit = {count = 33, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("landfill", {order = "000005", prerequisites = {"separation"}, unit = {count = 90, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("logistics-2", {order = "000012", prerequisites = {"logistics", "niobium", "lubricant"}, unit = {count = 400, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("toolbelt", {order = "000008", prerequisites = {"logistic-science-pack"}, unit = {count = 55, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("stone-wall", {order = "000002", prerequisites = {}, unit = {count = 20, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("gate", {order = "000003", prerequisites = {"stone-wall", "steel-processing"}, unit = {count = 33, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("chemical-science-pack", {order = "000013", prerequisites = {"advanced-circuit", "fine-electronics", "nexelit"}, unit = {count = 700, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("military-science-pack", {order = "000009", prerequisites = {"military-2", "stone-wall"}, unit = {count = 90, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("production-science-pack", {order = "000019", prerequisites = {"coated-container", "nuclear-fuel-reprocessing", "filtration-mk02", "nenbit-matrix", "advanced-material-processing-2"}, unit = {count = 2000, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("utility-science-pack", {order = "000022", prerequisites = {"kovarex-enrichment-process", "automation-3", "destroyer", "fusion-reactor-equipment"}, unit = {count = 1300, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}, {"military-science-pack", 2}}, time = 300}})
-fix_tech("space-science-pack", {order = "000027", prerequisites = {"rocket-silo", "fusion-mk02"}, unit = {count = 2250, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"production-science-pack", 2}, {"utility-science-pack", 1}, {"military-science-pack", 3}}, time = 600}})
-fix_tech("military-3", {order = "000014", prerequisites = {"military-science-pack", "chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("military-4", {order = "000020", prerequisites = {"military-3", "explosives", "production-science-pack"}, unit = {count = 450, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"military-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("uranium-ammo", {order = "000018", prerequisites = {"uranium-processing", "tank"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}, {"chemical-science-pack", 1}}, time = 90}})
-fix_tech("atomic-bomb", {order = "000024", prerequisites = {"rocket-control-unit", "rocketry"}, unit = {count = 500, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"military-science-pack", 3}, {"production-science-pack", 2}, {"utility-science-pack", 1}}, time = 600}})
-fix_tech("automation-3", {order = "000020", prerequisites = {"speed-module", "production-science-pack", "bulk-inserter"}, unit = {count = 450, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("explosives", {order = "000016", prerequisites = {"sulfur-processing", "mukmoux"}, unit = {count = 450, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("cliff-explosives", {order = "000017", prerequisites = {"explosives", "military-2"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("land-mine", {order = "000017", prerequisites = {"explosives", "military-science-pack"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}, {"chemical-science-pack", 1}}, time = 90}})
-fix_tech("flamethrower", {order = "000010", prerequisites = {"military-science-pack", "coal-processing-2", "filtration"}, unit = {count = 22, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}}, time = 90}})
-fix_tech("advanced-circuit", {order = "000009", prerequisites = {"plastics", "fast-inserter"}, unit = {count = 90, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("processing-unit", {order = "000016", prerequisites = {"sulfur-processing"}, unit = {count = 450, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("fluid-wagon", {order = "000014", prerequisites = {"railway"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("braking-force-1", {order = "000014", prerequisites = {"railway", "chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("braking-force-2", {order = "000015", prerequisites = {"braking-force-1"}, unit = {count = 275, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("braking-force-3", {order = "000020", prerequisites = {"braking-force-2", "production-science-pack"}, unit = {count = 450, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("braking-force-4", {order = "000021", prerequisites = {"braking-force-3"}, unit = {count = 750, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("braking-force-5", {order = "000022", prerequisites = {"braking-force-4"}, unit = {count = 1300, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("braking-force-6", {order = "000023", prerequisites = {"braking-force-5", "utility-science-pack"}, unit = {count = 300, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"production-science-pack", 2}, {"utility-science-pack", 1}, {"military-science-pack", 3}}, time = 600}})
-fix_tech("braking-force-7", {order = "000024", prerequisites = {"braking-force-6"}, unit = {count = 500, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"production-science-pack", 2}, {"utility-science-pack", 1}, {"military-science-pack", 3}}, time = 600}})
-fix_tech("tank", {order = "000017", prerequisites = {"military-science-pack", "explosives"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("logistics-3", {order = "000020", prerequisites = {"production-science-pack"}, unit = {count = 450, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("rocketry", {order = "000017", prerequisites = {"explosives", "military-science-pack"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}, {"chemical-science-pack", 1}}, time = 90}})
-fix_tech("explosive-rocketry", {order = "000018", prerequisites = {"rocketry", "military-3"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("modular-armor", {order = "000010", prerequisites = {"heavy-armor", "advanced-circuit"}, unit = {count = 160, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("power-armor", {order = "000017", prerequisites = {"modular-armor", "electric-engine", "processing-unit"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("power-armor-mk2", {order = "000023", prerequisites = {"speed-module-2", "efficiency-module-2", "utility-science-pack"}, unit = {count = 300, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"military-science-pack", 3}, {"utility-science-pack", 1}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("laser-turret", {order = "000017", prerequisites = {"military-science-pack", "battery"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}, {"chemical-science-pack", 1}}, time = 90}})
-fix_tech("robotics", {order = "000017", prerequisites = {"electric-engine", "battery"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("rocket-fuel", {order = "000016", prerequisites = {"military-science-pack", "sulfur-processing"}, unit = {count = 450, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("low-density-structure", {order = "000014", prerequisites = {"advanced-material-processing", "chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("rocket-control-unit", {order = "000023", prerequisites = {"utility-science-pack"}, unit = {count = 300, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"utility-science-pack", 1}, {"military-science-pack", 3}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("rocket-silo", {order = "000024", prerequisites = {"speed-module-3", "productivity-module-3", "rocket-control-unit", "super-alloy"}, unit = {count = 500, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"production-science-pack", 2}, {"utility-science-pack", 1}, {"military-science-pack", 3}}, time = 600}})
-fix_tech("research-speed-3", {order = "000014", prerequisites = {"research-speed-2", "chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("research-speed-4", {order = "000015", prerequisites = {"research-speed-3"}, unit = {count = 275, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("research-speed-5", {order = "000020", prerequisites = {"research-speed-4", "production-science-pack"}, unit = {count = 450, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("research-speed-6", {order = "000023", prerequisites = {"research-speed-5", "utility-science-pack"}, unit = {count = 300, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"production-science-pack", 2}, {"utility-science-pack", 1}, {"military-science-pack", 3}}, time = 600}})
-fix_tech("electric-energy-distribution-2", {order = "000014", prerequisites = {"electric-energy-distribution-1", "chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("electric-energy-accumulators", {order = "000017", prerequisites = {"electric-energy-distribution-1", "battery"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("advanced-material-processing-2", {order = "000014", prerequisites = {"advanced-material-processing", "chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("effect-transmission", {order = "000022", prerequisites = {"processing-unit", "super-alloy"}, unit = {count = 1300, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("lubricant", {order = "000011", prerequisites = {"mukmoux", "filtration"}, unit = {count = 250, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("electric-engine", {order = "000014", prerequisites = {"lubricant", "chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("battery", {order = "000016", prerequisites = {"sulfur-processing"}, unit = {count = 450, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("construction-robotics", {order = "000018", prerequisites = {"robotics"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("logistic-robotics", {order = "000018", prerequisites = {"robotics"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("logistic-system", {order = "000023", prerequisites = {"logistic-robotics", "utility-science-pack"}, unit = {count = 300, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"utility-science-pack", 1}, {"military-science-pack", 3}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("worker-robots-speed-1", {order = "000018", prerequisites = {"robotics"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("worker-robots-speed-2", {order = "000019", prerequisites = {"worker-robots-speed-1"}, unit = {count = 2000, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("worker-robots-speed-3", {order = "000020", prerequisites = {"worker-robots-speed-2", "production-science-pack"}, unit = {count = 450, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("worker-robots-speed-4", {order = "000021", prerequisites = {"worker-robots-speed-3"}, unit = {count = 750, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("worker-robots-speed-5", {order = "000023", prerequisites = {"worker-robots-speed-4", "utility-science-pack"}, unit = {count = 300, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"production-science-pack", 2}, {"utility-science-pack", 1}, {"military-science-pack", 3}}, time = 600}})
-fix_tech("worker-robots-speed-6", {order = "000028", prerequisites = {"worker-robots-speed-5", "space-science-pack"}, unit = {ingredients = {{"automation-science-pack", 20}, {"logistic-science-pack", 10}, {"chemical-science-pack", 6}, {"production-science-pack", 3}, {"utility-science-pack", 2}, {"space-science-pack", 1}, {"military-science-pack", 6}}, time = 1200}})
-fix_tech("worker-robots-storage-1", {order = "000018", prerequisites = {"robotics"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("worker-robots-storage-2", {order = "000020", prerequisites = {"worker-robots-storage-1", "production-science-pack"}, unit = {count = 450, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("worker-robots-storage-3", {order = "000023", prerequisites = {"worker-robots-storage-2", "utility-science-pack"}, unit = {count = 300, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"production-science-pack", 2}, {"utility-science-pack", 1}, {"military-science-pack", 3}}, time = 600}})
-fix_tech("energy-shield-equipment", {order = "000012", prerequisites = {"solar-panel-equipment", "military-science-pack"}, unit = {count = 60, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}}, time = 90}})
-fix_tech("night-vision-equipment", {order = "000012", prerequisites = {"solar-panel-equipment"}, unit = {count = 400, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("belt-immunity-equipment", {order = "000012", prerequisites = {"solar-panel-equipment"}, unit = {count = 400, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("energy-shield-mk2-equipment", {order = "000018", prerequisites = {"energy-shield-equipment", "military-3", "low-density-structure", "power-armor"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("battery-equipment", {order = "000017", prerequisites = {"battery", "solar-panel-equipment"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("battery-mk2-equipment", {order = "000018", prerequisites = {"battery-equipment", "low-density-structure", "power-armor"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("solar-panel-equipment", {order = "000011", prerequisites = {"modular-armor", "solar-energy"}, unit = {count = 250, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("personal-laser-defense-equipment", {order = "000018", prerequisites = {"laser-turret", "military-3", "low-density-structure", "power-armor", "solar-panel-equipment"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("discharge-defense-equipment", {order = "000018", prerequisites = {"laser-turret", "military-3", "power-armor", "solar-panel-equipment"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("fusion-reactor-equipment", {order = "000020", prerequisites = {"power-armor", "military-science-pack", "production-science-pack", "low-density-structure"}, unit = {count = 450, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"military-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("exoskeleton-equipment", {order = "000017", prerequisites = {"processing-unit", "electric-engine", "solar-panel-equipment"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("personal-roboport-equipment", {order = "000019", prerequisites = {"construction-robotics", "solar-panel-equipment"}, unit = {count = 2000, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("personal-roboport-mk2-equipment", {order = "000023", prerequisites = {"personal-roboport-equipment", "utility-science-pack"}, unit = {count = 300, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"utility-science-pack", 1}, {"military-science-pack", 3}, {"production-science-pack", 2}}, time = 600}})
-fix_tech("fluid-handling", {order = "000003", prerequisites = {"steel-processing"}, unit = {count = 33, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("oil-processing", {order = "000014", prerequisites = {"chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("advanced-oil-processing", {order = "000020", prerequisites = {"production-science-pack", "fuel-production"}, unit = {count = 450, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("sulfur-processing", {order = "000015", prerequisites = {"oil-processing"}, unit = {count = 275, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("plastics", {order = "000008", prerequisites = {"logistic-science-pack"}, unit = {count = 55, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("speed-module", {order = "000010", prerequisites = {"advanced-circuit"}, unit = {count = 160, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("speed-module-2", {order = "000017", prerequisites = {"speed-module", "processing-unit"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("speed-module-3", {order = "000020", prerequisites = {"speed-module-2", "production-science-pack"}, unit = {count = 450, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("productivity-module", {order = "000010", prerequisites = {"advanced-circuit"}, unit = {count = 160, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("productivity-module-2", {order = "000017", prerequisites = {"productivity-module", "processing-unit"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("productivity-module-3", {order = "000020", prerequisites = {"productivity-module-2", "production-science-pack"}, unit = {count = 450, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("efficiency-module", {order = "000010", prerequisites = {"advanced-circuit"}, unit = {count = 160, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("efficiency-module-2", {order = "000017", prerequisites = {"efficiency-module", "processing-unit"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("efficiency-module-3", {order = "000020", prerequisites = {"efficiency-module-2", "production-science-pack"}, unit = {count = 450, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("defender", {order = "000010", prerequisites = {"military-science-pack"}, unit = {count = 22, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}}, time = 90}})
-fix_tech("distractor", {order = "000014", prerequisites = {"chemical-science-pack", "defender"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("destroyer", {order = "000021", prerequisites = {"military-4", "distractor", "speed-module"}, unit = {count = 750, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"military-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("uranium-processing", {order = "000016", prerequisites = {"concrete", "sulfur-processing"}, unit = {count = 450, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("nuclear-power", {order = "000017", prerequisites = {"uranium-processing"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("kovarex-enrichment-process", {order = "000017", prerequisites = {"uranium-processing", "rocket-fuel"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("nuclear-fuel-reprocessing", {order = "000018", prerequisites = {"nuclear-power"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("mining-productivity-1", {order = "000010", prerequisites = {"advanced-circuit"}, unit = {count = 160, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("mining-productivity-2", {order = "000014", prerequisites = {"mining-productivity-1", "chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("mining-productivity-3", {order = "000023", prerequisites = {"mining-productivity-2", "utility-science-pack"}, unit = {count = 300, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"production-science-pack", 2}, {"utility-science-pack", 1}, {"military-science-pack", 3}}, time = 600}})
-fix_tech("mining-productivity-4", {order = "000028", prerequisites = {"mining-productivity-3", "space-science-pack"}, unit = {ingredients = {{"automation-science-pack", 20}, {"logistic-science-pack", 10}, {"chemical-science-pack", 6}, {"production-science-pack", 3}, {"utility-science-pack", 2}, {"space-science-pack", 1}, {"military-science-pack", 6}}, time = 1200}})
-fix_tech("artillery", {order = "000018", prerequisites = {"tank"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("spidertron", {order = "000024", prerequisites = {"exoskeleton-equipment", "rocketry", "rocket-control-unit", "efficiency-module-3"}, unit = {count = 500, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"military-science-pack", 3}, {"chemical-science-pack", 3}, {"production-science-pack", 2}, {"utility-science-pack", 1}}, time = 600}})
-fix_tech("circuit-network", {order = "000008", prerequisites = {"logistic-science-pack"}, unit = {count = 55, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("coal-processing-1", {order = "000002", prerequisites = {}, unit = {count = 20, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("coal-processing-2", {order = "000009", prerequisites = {"chromium", "methanol-processing-1"}, unit = {count = 90, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("coal-processing-3", {order = "000014", prerequisites = {"chemical-science-pack", "wood-processing", "mukmoux"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("syngas", {order = "000004", prerequisites = {"tar-processing"}, unit = {count = 55, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("tar-processing", {order = "000003", prerequisites = {"steel-processing"}, unit = {count = 33, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("energy-1", {order = "000006", prerequisites = {"boron"}, unit = {count = 150, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("energy-2", {order = "000010", prerequisites = {"coal-processing-2", "advanced-circuit"}, unit = {count = 160, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("energy-3", {order = "000018", prerequisites = {"energy-2", "desulfurization", "processing-unit", "acetylene", "fuel-production", "advanced-material-processing-2"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("methanol-processing-1", {order = "000008", prerequisites = {"logistic-science-pack", "engine", "energy-1"}, unit = {count = 55, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("methanol-processing-2", {order = "000014", prerequisites = {"chemical-science-pack", "mukmoux"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("cooling-tower-1", {order = "000007", prerequisites = {"energy-1"}, unit = {count = 250, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("cooling-tower-2", {order = "000011", prerequisites = {"cooling-tower-1", "energy-2"}, unit = {count = 250, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("excavation-1", {order = "000012", prerequisites = {"lubricant", "niobium"}, unit = {count = 400, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("excavation-2", {order = "000014", prerequisites = {"excavation-1", "chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("biofilm", {order = "000014", prerequisites = {"chemical-science-pack", "wood-processing"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("filtration", {order = "000009", prerequisites = {"separation", "automation-2"}, unit = {count = 90, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("filtration-mk02", {order = "000016", prerequisites = {"sulfur-processing"}, unit = {count = 450, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("desulfurization", {order = "000015", prerequisites = {"oil-processing"}, unit = {count = 275, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("crusher", {order = "000008", prerequisites = {"logistic-science-pack"}, unit = {count = 55, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("separation", {order = "000004", prerequisites = {"coal-processing-1", "engine"}, unit = {count = 55, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("fluid-separation", {order = "000016", prerequisites = {"sulfur-processing", "mukmoux"}, unit = {count = 450, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("fuel-production", {order = "000017", prerequisites = {"cooling-tower-1", "lubricant", "fluid-separation"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("fine-electronics", {order = "000012", prerequisites = {"fluid-processing-machines-1", "niobium", "kevlar", "plastics"}, unit = {count = 400, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("fluid-processing-machines-1", {order = "000005", prerequisites = {"separation"}, unit = {count = 90, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("ralesia", {order = "000005", prerequisites = {"creosote", "optics"}, unit = {count = 90, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("ulric", {order = "000006", prerequisites = {"ralesia", "automation", "fluid-handling"}, unit = {count = 150, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("wood-processing", {order = "000002", prerequisites = {}, unit = {count = 20, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("wood-processing-2", {order = "000008", prerequisites = {"wood-processing", "logistic-science-pack"}, unit = {count = 55, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("lab-instrument", {order = "000006", prerequisites = {"boron"}, unit = {count = 150, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("niobium", {order = "000011", prerequisites = {"crusher", "organic-solvent"}, unit = {count = 250, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("nexelit", {order = "000010", prerequisites = {"fluid-processing-machines-1", "coal-processing-2"}, unit = {count = 160, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("chromium", {order = "000008", prerequisites = {"logistic-science-pack", "separation"}, unit = {count = 55, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("organic-solvent", {order = "000010", prerequisites = {"coal-processing-2", "filtration"}, unit = {count = 160, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("mukmoux", {order = "000010", prerequisites = {"coal-processing-2", "advanced-circuit"}, unit = {count = 160, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("kevlar", {order = "000011", prerequisites = {"organic-solvent"}, unit = {count = 250, ingredients = {{"automation-science-pack", 2}, {"logistic-science-pack", 1}}, time = 60}})
-fix_tech("creosote", {order = "000004", prerequisites = {"tar-processing"}, unit = {count = 55, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("pyrrhic", {order = "000028", prerequisites = {"space-science-pack"}, unit = {count = 3000, ingredients = {{"automation-science-pack", 20}, {"logistic-science-pack", 10}, {"military-science-pack", 6}, {"chemical-science-pack", 6}, {"production-science-pack", 3}, {"utility-science-pack", 2}, {"space-science-pack", 1}}, time = 1200}})
-fix_tech("artillery-2", {order = "000019", prerequisites = {"artillery", "railway", "processing-unit"}, unit = {count = 2000, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("artillery-shell-range-2", {order = "000020", prerequisites = {"artillery-shell-range-1"}, unit = {count = 3300, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}, {"military-science-pack", 1}}, time = 120}})
-fix_tech("artillery-shell-range-3", {order = "000021", prerequisites = {"artillery-shell-range-2"}, unit = {count = 5500, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}, {"chemical-science-pack", 1}}, time = 90}})
-fix_tech("artillery-shell-range-4", {order = "000022", prerequisites = {"artillery-shell-range-3"}, unit = {count = 9000, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}, {"chemical-science-pack", 1}}, time = 90}})
-fix_tech("artillery-shell-range-5", {order = "000023", prerequisites = {"artillery-shell-range-4"}, unit = {count = 15000, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"military-science-pack", 1}, {"chemical-science-pack", 1}}, time = 90}})
-fix_tech("artillery-shell-range-6", {order = "000024", prerequisites = {"artillery-shell-range-5", "production-science-pack"}, unit = {count = 3300, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"military-science-pack", 2}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("artillery-shell-range-7", {order = "000025", prerequisites = {"artillery-shell-range-6"}, unit = {count = 5500, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"military-science-pack", 2}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("artillery-shell-range-8", {order = "000026", prerequisites = {"artillery-shell-range-7"}, unit = {count = 9000, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"military-science-pack", 2}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("artillery-shell-range-9", {order = "000027", prerequisites = {"artillery-shell-range-8", "utility-science-pack"}, unit = {count = 2250, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"military-science-pack", 3}, {"chemical-science-pack", 3}, {"production-science-pack", 2}, {"utility-science-pack", 1}}, time = 600}})
-fix_tech("artillery-shell-range-10", {order = "000028", prerequisites = {"artillery-shell-range-9"}, unit = {count = 3600, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"military-science-pack", 3}, {"chemical-science-pack", 3}, {"production-science-pack", 2}, {"utility-science-pack", 1}}, time = 600}})
-fix_tech("artillery-shell-range-11", {order = "000029", prerequisites = {"artillery-shell-range-10"}, unit = {count = 6000, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"military-science-pack", 3}, {"chemical-science-pack", 3}, {"production-science-pack", 2}, {"utility-science-pack", 1}}, time = 600}})
-fix_tech("artillery-shell-range-12", {order = "000030", prerequisites = {"artillery-shell-range-11"}, unit = {count = 10000, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"military-science-pack", 3}, {"chemical-science-pack", 3}, {"production-science-pack", 2}, {"utility-science-pack", 1}}, time = 600}})
-
-fix_tech("diet-beacon", {order = "000015", prerequisites = {"speed-module", "productivity-module", "efficiency-module", "electric-engine"}, unit = {count = 275, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("advanced-mining-facilities", {order = "000014", prerequisites = {"chemical-science-pack", "excavation-1", "logistics-2", "wood-processing"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("sc-unit", {order = "000024", prerequisites = {"helium-processing-mk02"}, unit = {count = 3300, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("fusion-mk01", {order = "000025", prerequisites = {"energy-3", "sc-unit", "boron-mk02"}, unit = {count = 5500, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("fusion-mk02", {order = "000026", prerequisites = {"fusion-mk01"}, unit = {count = 9000, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("fusion-mk03", {order = "000027", prerequisites = {"fusion-mk02", "utility-science-pack"}, unit = {count = 2250, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"military-science-pack", 3}, {"production-science-pack", 2}, {"utility-science-pack", 1}}, time = 600}})
-fix_tech("fusion-mk04", {order = "000028", prerequisites = {"fusion-mk03"}, unit = {count = 3600, ingredients = {{"automation-science-pack", 10}, {"logistic-science-pack", 6}, {"chemical-science-pack", 3}, {"military-science-pack", 3}, {"production-science-pack", 2}, {"utility-science-pack", 1}}, time = 600}})
-fix_tech("diamond-mining", {order = "000017", prerequisites = {"electric-engine", "advanced-mining-facilities", "fluid-pressurization", "fluid-separation", "acetylene"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("regolite-mining", {order = "000022", prerequisites = {"super-alloy"}, unit = {count = 1300, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("molybdenum-processing", {order = "000017", prerequisites = {"advanced-mining-facilities", "fluid-pressurization", "filtration-mk02", "excavation-2"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("nenbit-matrix", {order = "000015", prerequisites = {"fluid-pressurization", "advanced-mining-facilities"}, unit = {count = 275, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("vanadium-processing", {order = "000018", prerequisites = {"xyhiphoe", "fluid-separation"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("helium-processing", {order = "000020", prerequisites = {"production-science-pack", "fuel-production"}, unit = {count = 450, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("helium-processing-mk02", {order = "000023", prerequisites = {"liquid-petroleum-processing", "regolite-mining", "ethanolamine", "advanced-oil-processing"}, unit = {count = 2000, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("super-alloy", {order = "000021", prerequisites = {"helium-processing", "vanadium-processing", "molybdenum-processing"}, unit = {count = 750, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("kmauts", {order = "000020", prerequisites = {"production-science-pack"}, unit = {count = 450, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("ethanolamine", {order = "000022", prerequisites = {"super-alloy", "energy-2", "kmauts"}, unit = {count = 1300, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("liquid-petroleum-processing", {order = "000020", prerequisites = {"production-science-pack", "fuel-production"}, unit = {count = 450, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("xyhiphoe", {order = "000017", prerequisites = {"fluid-pressurization", "advanced-mining-facilities", "filtration-mk02"}, unit = {count = 750, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("wood-processing-3", {order = "000018", prerequisites = {"wood-processing-2", "xyhiphoe"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("boron", {order = "000005", prerequisites = {"coal-processing-1", "syngas"}, unit = {count = 90, ingredients = {{"automation-science-pack", 1}}, time = 30}})
-fix_tech("boron-mk02", {order = "000021", prerequisites = {"helium-processing"}, unit = {count = 750, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("kovarex-enrichment-process-2", {order = "000020", prerequisites = {"kovarex-enrichment-process", "production-science-pack", "molybdenum-processing"}, unit = {count = 450, ingredients = {{"automation-science-pack", 6}, {"logistic-science-pack", 3}, {"chemical-science-pack", 2}, {"military-science-pack", 2}, {"production-science-pack", 1}}, time = 300}})
-fix_tech("fluid-pressurization", {order = "000014", prerequisites = {"chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("coated-container", {order = "000018", prerequisites = {"diamond-mining"}, unit = {count = 1200, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
-fix_tech("acetylene", {order = "000014", prerequisites = {"chemical-science-pack"}, unit = {count = 160, ingredients = {{"automation-science-pack", 3}, {"logistic-science-pack", 2}, {"chemical-science-pack", 1}}, time = 120}})
+return [[
+AHsAYQBjAGUAdAB5AGwAZQBuAGUAPQB7AGMAbwB1AG4AdAA9ADcAMAAwACwAZQBzAHMBBwB0AGkAYQBsAD0AdAByAHUAZQAsAGkA
+bgBnAHIAZQBkAGkBGQBzAQoAewAiAGMAaABlAG0AaQBjARwALQBzAGMBKgBuAQIALQBwAQEAawAiACwAMQB9ACwBLgBsAG8AZwBp
+AHMBGgBjATcBOQEHATwBPgBjAUABQgFEAS4AYQB1AHQAbwBtAGEBGgBvAG4BTgE6AVEBPwFBAUMBRABvAHIAZABlAHIAPQAiAVgB
+WgB0AGUBMAAtAFsBEwAwADEAMgAxAF0BdAEBAQMBBQEHAGUAXQFBAHABJwEnAHEAdQFKAGkBcQEsAS4BMAEyATQBNgE4AWIAZQE9
+AWQBRAEaAG0BCQAzADABRABbAW4AZAB2AGEBOwEoAC0BOQByAGMBiAB0ACIAXQEKAQwBDgEQAZsBFAEWARgBDwEbAR0BHwEhASMB
+JQEnASkBKwEtACIBRwFJAUsBNAFhAVABlAFSAVQBQwFFAW4BWQFbAV0AaQFfAcUBowGVAVMBZQB9AWcBaQFrAW0BbwBvAXEBcwF1
+AXYANwAzAXsAWwBhAaABogECAGQBpQBpAacBqQGCACwBhAFrAGUBhwGJAYsBCgAiAHAAbABhAcMAYwBzAUEAIgBmAfsAdAAtASQB
+GAByAXEAcgAiAZcAaQGZAD0BmwGdAZ8BoQGjAeoBDABtAGIBJAFdAWgB/gGsAQsBDQEPAD0AMQA3ADUBFQEXARkBtgA9AgEAbAEY
+AboBJgEoAToAdAGMAUYBSAFKAUwB0gFjAdUBVQHLAdwBXAFeAWABkgHGAdQByQHXACwBaAFqAWwBzAFwAXIAaAF0AXYAMAA1ADcB
+5AHmAhIB6QGlAVsCFwBuAhkAcgBzAe8B8QGGAYgAcwGKARYB9wGmAagBigAtAQgAdAB3AWgBQAILAg0CDwAsAZ4CUgHoAaQCPAFr
+AbYBPQByAG8BAgEXASQAZwGrAa0CHgEQADIAMgIjAbMCJgEcAR4BIAEiAn0BvAIvAjEBwAIzAfwCNgHHAWQCOQFXAc0CPAHQAj4B
+TwHTAcgB1gHYAkYB2wHNAd4CSwHgARMANQA5AlEB5wITAC0CdQByAncBhAJ6AbMCfQJcAYUB8wJfAmEBjAIAAGkAbAEfAc8BXwH/
+AGMBIABzATECCQAsAS8BXwLCAQMAZQIKACwBmAGaAZwCcAIRAnMB6gKuArACeQJ7AmABJQAtADICfwIdAa8BEQETAiQBtAEaAogB
+uAKLAbsCLgG+AHsBjQExATMBNQBsApMCQQHWAcsBwQI0AcQCPwKdApUBygKXAVoCmQHRAvkCNwJCAqAB2gJIAd0CSgJMARMAMQAx
+ADACqgJTAnQBXQJ2ATYCsQLZAn0C3AK1AfIB9AJgAfYC7QGPAvAC8gKeAscCcgKsAtYDEwLYArMBJQLNAs8CDgLRAnECqwJUATMA
+bgMWAgEBOQBsAYoBKgIbAoAC4AESAbICJQG1AuYCigIsAo0C6wMdAu8BkQKcAwIC9AIyAcICNQMBApQCOAL8AwYC/wKbAZMC8wFV
+AwQCRwHcAqQDCQF3ADIANAMOAtQCrQEkAzMBAQK8AzcBFgMYAl4B9QJiAS4AZQB4ATUBoQI9AC0AMQH/AvYB/ABzAtwCwQLuAZAC
+8QNOA1YAIgJqAG8B6gMUAygCfgJtAtACEAMjAlQAbwK8AngCsgJ8AykCHAGuAh8AMQA2AuIChgM/AbcDQQKMAuoBDwKPArEAZAB1
+AGMDcgN+AyEDUQGOA0YDfQNIA08CQgL1ApEDTQOrA1YDUQI7Ar8DVAJAA6YCQwJFAwUDWgMIAqYAMQA5AqkBfAMvAaQDjALxA4QD
+kABnA2kCtwNrAroDoAOiA6QDsQMhAgABIQPGAnkDoQOjApoDKgIMAQkDlgFEAGECBwK8AQYAcgB5AzoDlAAyA5cDPgLlAR0CKQIr
+A5wBvQOeAb8DqAN8AyAC+wFWApADTAL4A9ED9QI6ApgDtQP0A1AD9gEzAzYAdAPfAHkD/wMDAkQB2QNZAqMDvQF2A5UDwQHlA+AA
+bAPiAHkDygMaArkB9wQEAG4BVAAiAHIB5gPfA9oCbgMtAW4EEgQUA3kDkgKBAiAANAPoAuQCJwPsAugCLQPvAjAD8QN7Ax8DpQP7
+A0sC9wFNBDcEAAP8Av4D/gQ8A60BLgQCAYoEBQQHAp8ECQKhAwYDWwO+ADgANgJRBCUBawQGADIEFgK4AxwEJAEaBBMEUgQhA4gC
+0gPfBFkEJgLEAGUEEwAtBB4BJQGUA3QEKALgADEEKwM9BC0CiAQvA0IDnQQzAuwBLwQ1A0cDVQO4A64D+AQ7A/oEPQL9Ac4D0AR5
+BDgAIgREBAQD4wRHA1cESQO7BAwB3wQOADgDXwF8BFEEiARiBGQEZgBnBGgEVQPMAfcEXwPhBFsDhwMsA4kEkwQGBJUC8QSXAZQC
+3QRqA5QDlgRuAocD6wEcA+0C6QQyAo8D8gQ2BH4EQgP3BDoEiQOzA/0EggO3BIQEhgRGBEEESAO6BAsCSQSOAwoAOQMNBJIEYARS
+ATcBMQSWAaIEmAMXAYMCtgQXBFcEnQRaBJQE0ASmBNIEaARcBKEEXgSjBM8EYwTdBGcALQAzAt4DkwKCAXYC4wSuAigEsAQwA0MD
+8AR1BLUEeAS/BH8EuQKSBMMClgNSBEAEtwNKBIUDZgSHBKQFAASKBMUCogTHAqUBdgPnAlAEzASeBNsE5QRlBN4E6ASaAxsDbARY
+BRAEpATcBRME5wLdBKACbwJxBOMEpQUdBNMANATqBCkCgwA1BK0DmQTwAioE8gRzBLQEdwOqBIME+QN2A7AFNQS4A7QEvgL6BPkE
+wQSUBQYBZgSLBMYDBwTIADABeQSRBBEEzQURBNEE5wNfBNUDGQRWBRgE2QRhBRwEpwToBOAFIQUZBNoFGwUSBVcANQUoAuAChAQs
+BO8EcQPuAo4ENAMeBPcFPQS4BTcD+QU5BQEFOwKaBLsEAQUDBMIFQQO5BAoFCQVFBQsBEwKDAXoFDwVcBOQFTQTTADUFFgQYAVcF
+IwVWBRQFJwUgBCMFVATOBSQFVwA2BWECHwAyAiIFLAPqBS4EsQQxBWgEdQPOA9gDAAV4AcsE9gU0BPgFbQOvBW8FpwVxBL0FcwT8
+A1EFPwUFBXAFBwV6BEsEDQV+BCsEUAVLBV0FhAGUBE8FUANqBRcCugWQBUwE5gWFAf8FoAU8A0kEoAPdBOIFuwWDBcYBlAA3BZUB
+sAGxBO4FLQVmBLIFngEuBckFrgWjA0UD8wWvA/YFbgR9BbMEvAQ/BcoDrAUBBbEFdANYBXsETAUMADQAOAW6BRoF0AUlBdIFhwTY
+BYoFXgUUBZQFzAWPBfsFvQAtADgF1AIOBKwF1wWaBdkFnQNEAfgD1gPPBd4F5gP2BaUFdAR7BLoF4gQ+BIEGEAWrBP0F7AXiBe4F
+tgVGAoQFSQXEBbwF0QYDBfkFUwYBBiYF0wX/BKIFzwWSBRQAOQYFBG0FmQQuBPEEcgSzAb8BWQUDBbIGGwNRBd0FogYRBaQFMwYU
+BDkE+wXfBP4F6QOyBXUEAwV3BhEGHwO8BiEANQRPBYEFVQX8BOcCqQXAA8sFwgScBioF9wYDAf8GOwQDBj0FbATgBc0FIgYvBYsE
+5wMMBjMFKwY1BHAGNwVnBgwGYgGKBmQDSQT9BkADtgZlBP0GEwYXBkYFOAY+A/YFcgZBBoEBywYdBXgGUASNBX0FRwA1BfMGVQWR
+BmoE0wMMBigFwwZeBVcGMgYtBc4F9QYwBmsEaQPlARAGbgZvBK8FLwY4BdsAIgZ0AQQGRQYNA4IGDwaEBnsDpwZEBn4E+gaABq8G
+ggWtBq4GdwWwBXYFQAZPBUMF7wW3BUcANgWABUoGmwaRBGgBegZaBNcGKQZpBlcGkgAwBmYGAAbMBgIBeAYFADUGbgYIBjYGpAZy
+BPQBLgaoBnYF6gZ4Bg4FoQZ6BrkGEgaxBkgF5AaqBoMG5AbgBroGTQa8BoEGiQUKA1wAMgA2BlQGxAWCBpwGkgRUBskFUgaVBtIG
+JgMLBtAGLgbFBs0EaATpBKoAdABfAGYBaABtAHUB+gFtACgErAAwACkAIAArACAAMgBeAEwAKgMMARMBQQOYBgkGcQXaBgwAcwFS
+AZQGsgbeBqoGeQaqBn0G6AWpBeUGhQSAA1MGqgaHBr0FCAYgBosFlwWGBo8FxQZfADEB4wb9BJsFiQcABz4C3QLHAtgAawEDATcC
+vABvBwMGmgb5BRwHJQBlAaQGngLfAQ8HCwcNBw8AYQcRBGwBEwcVBxcHHQAwACsAMwBeACgATANzACkHHAF2Bx8D6QbZBZwE8wR0
+BeAEtgZCBn8Fqga1BhgHMwayBzUG8Qa+BzgDXAAxADgHOwb4BlYEZAdSB1QGlAZdBbsFWQWPAv4BxABiAlYGBQVjBqIFmwUwBjkE
+dQcpBrIHKwayBy0HdAazB3YG5Qd4BP8HnQd7BrUG8gV8BvQBmwJRB40BTQePAhYHiAbdBFkGdQSJBB0CegdJAR8AeQdOAnEEvQGk
+BB4DjQK+AG4HJQFoBAQCPQYFBMoHkwYKB3ACjwbrBqoG6QYeB30GUQaLBz8FDgHlB7sB6ge9AvEHvwfBAgcDtQevBB0AYQK8AHcA
+YQe4BKAD5wPeBrcAbgafAD0ChAbYA0ABuQbbB3EGSQYaB6UHzwaKA1wBdweCBusH3QRjAXIBHwFfATQB/gfkBY8H5wQnB+kBeAeT
+AucGpQYMB80GSAfLB84HNwfQB/YANAbDB8sG/AHwBNYG/gH3CAsFcAWOA4kIAwcICAUGBwcgAicICAfvA58G4gZKBHoHcgVrB6AH
+dQcwB3cHMgeiB3wIDwf1A74AOQHjAXwIHgfdB5oFBgAiAGIHDwBrAgQHwAFrAggB/weGAtUGrAEGB7kH8Qa4BeoCHAgiB+0BIggz
+BvMCpgV+AlEIAwRBB90BSwBlAGEAbQE9AG8AdwFrAgoH5gL+AG8CFwM2AHMAbQfpADMAMwfsBqMHbwUxAb8IDQaIB/QIUwJNAoMI
+VghkCGYBSgBtB/oBJQEkAswIAQFEAGIBXQIIA+QHVgEQB8YIbQKJB+4HIwbcBHYFagWmCC8HngguCCwISwbsBksHpgXwAwoIawHk
+CIMAdAiFCFkHDwBmAHUAcgOOAxUDKQgcAtIIngiFAC0DywBwAZkBDwYFB2EIigfICHAE9QbnB50IGgcxCJYF7Qh0B6cDvgJPCJ0I
+hATOCK4IsAB0B90IqwRbAscAcwBvAfoIpQE+AQgC8QjFARkHiwIQCMkEiABtAGsAMgitAfQIrwjUBwkCIAPnB8cHIgYLCI4HnAi7
+CLoIkghyBzYFtQgQA74ANwaOAFsI1wQGCNkI2wjTAQ8IyAjDBIgI9wGqAscAcAhfAWsALQPfAG0BaAN1CF8ALQFqB8AHsgFLASAD
+owikCIACzgPbBOEBngBiBGMCAwIMBw4DMgapCPwGBQghB20GcAbaCI0H8AjpCJUI6wgyCO0INAJNADkHggkVAr0CBABtCRkHsgj8
+CFkIzQPfAZUI0QjcAYgI3gixCKkCFwBvAGYCvAhpCIcC4QjjCSEI5QfwCOcIkgkkBu0GtgXoB/IG5QiZBsADCwjxCT4JQABsCHwH
+QQZcCCoIkQZ3A4AAbwOCCKYDhQjVACwHjwJ5B+gJQwA0AoUJHwOaCIwJRwfKCFcIcwhSCL8IdglUAWgBXwhZAHkBJQH7AsEAbwMm
+A48C2gBnA3ME4AflCKoJdgFgCNkFRweRBO0ITwlsB5UGpgg7B50JSQiVCUsGSwehCCgD9QlRBiEHPwidCYYCrQBrBUcH3QTQAGkA
+dQhdA8cJgAH/A4oDxAONCaYCfQhKAGIEHgBrAzMBaAE8B1UE6wA9CIkJjAeUCAkI5gi4COgHLwbqCXAI7ARKCO4EDgAzBBAJrwBh
+CbEC2wcMAacEmQlZBYgH3gfgB+IDegiQBEcIqQkUCbAJsgnNCAQJQwizCbkItQeWCVsHzAm/BrIJJgfzCXIImgF3ADYFSQnICcoJ
+gQnMATwIFQJdBlsJ0AntCdoJtAljCdgJyQn3AZQIHwndCR4EbwhuCY4GDAmQCLsJkglMBhUGRwedCeYJUAi+CekDvwnsCdkJywmz
+Cf0IOggnCU8G4Ag9ChIJ7woUA3kGmQn6Ce4ALQnwAZQFJwjgCOIJRQhvCeEGqwPXCZcE+QoHCZUILQnACU4ITAiYCg4GwAF5BMsI
+8gobCiIKHQVPCBYFUQdCChoJ+woTCdsE6QofCkIKIQojAC0FYAomBWMItAjkB8kBvwoFCJIKLwgpCJMKMgYZCjQDuAmZBzkCIQid
+CjsKSgWGCc8EVwn2CkQBPAWNCRECDQZnCkgJ/AAtBZQKJgbXCd8KUAi2B7AGPAcqChcKWgSEClUEhAmUClYKDAoIBEMGuwbfCjUJ
+6Ao3ADMJVApgCh0Fvwo/BcEJ9QqJCdsFYALHB5gFAApHCmUKHAnbBdMKJgWYCk8JRgpRB5cHsQapB5kKeAiXClYKewU2CeQIDAnB
+CLsHpAoNCoUGIQA0BvcKlgo8CpgIyAqPATwF/gppA9wEIwg+AGwIQAIFCEMIYQjgAzwIiggkCSICjwp9BIQKfwowCI8DqQi9Cq4H
+0QJOCJ0IPwhBAgYCCAfdCqYCbAq5CRMBLwPfAGcAbwAtAfoAbgEpAtsBPgIUAGEBUgZ1BdQHWAByBw4HEAAiACgGoQdfBxgHZQdn
+ADEHaQonB2wKAQm6CCUGOgqgCoMKVgpTCJUK2AUBCsgE+QrKClYKrAlMClwG9AA2B4IBNQByCt4K4AGiCuMJgQrlAaUK5wNlAQQH
+3QdIB0oCYAFHCEoLAwjgCgAE7wrFCW4BvwsFBToKqgnnCSgIdQF2ADkEVAF0CtgH3QlAAQgIrQEGA6MJZgf/CagDwwIUAewCZQj9
+ACIBCAB4BGMBigljATACeQEzCaQIBQPnCsQDmwrGCycKqAoLCyoKrQssCXMBdgA1BsMLRwFbCaMJWAqMCfQEVwsoCEUAZQE+BB4H
+xAnXAS8LPgGpAmcBAwJqAHIBQAjgCAYKnAopBqYLYQT9CwcJmAo2BUYAMAA0B9MCZAtqAmgLbQBrB90LYQtnAGMDNgBmAGYIrQB4
+AfkAbwJgAHYBFgiyCYsJawr7C08ItwnVBrILdQXnClkKpAt4Cs8HfwA0BUkLhgBpC4gLiguMC44DaApjBRgDbgumAGkLjwH+AscF
+7AUfCtoFWgEMATYDNgGHAGUDNAfECiYLkgr6CeAJjwqjBywJvQlKC1EIuwt3BAALCwKmAXkLWQl9AvELtwEhC7oCmgfdCakB6gPF
+CWEDyAsgC80L1wmACYIKTQtNCW0KnggwCi0ECAueCFQBeAHkC7UD1Ql/AxYGyAteBsoFwwtTBeoIgQLSC+kL2wMWBKkH6QUqC98K
+AwiOC5kJTQubCs4LVQnpADADlgvoC9oJrALbCfIIFwpBCVYCvgfEAscLWgtJAG0J+QLICX4IpwmBCf4JtgrDCnIKnQp0CswF4Qcu
+BHwKWAd5CXEMAglSA5UMBgwWA4UFFQupAroLAwuwAHUAawkEAHUAeAH/A4EDgwMnC9gLhQl9AXECFAFfBAQIfwIJC3AI4gv7CbsJ
+SAvDCZMLxQjqC/EKhAwmBUYHgAswAFsLtQw9AlUBDwffAQgAcgfdASkIXAFfAtUDYwioC7MC0QEMATsBJwFxC0sIBwtOCyYEdQv+
+CZYKGAxNCcMJKQF2C6AMBgxkAssLgwxKCV0BGAtkA7UMFAxjCQwGrQFgAnkHjwFMAzkJ3QxEDBwLcwYMDC8DUQxsC+IMbgpbC3kH
+0QA3C6EBXwx/BuMEZQhlAd0H/wsbDJkMhAx9CV8DNgLbAVoIYAilCbUEKQTKC3IL/AfwC8cL5AxOBosAMAAzC30MoAMWDKMJAQvt
+CfML7wH3AYALEAQGA3QL8wGeAQwIzQy0CQAIpQv4CWgFKwypDEYKxwx4CoAIvAgODK4H9gTKDAYMwgyiDMQE1AvuCBgDbQxYAGcE
+Uwl8DNQJgQy1DKULRgEnC40DBwhqCGwJuQslC+EMzgwlDHALLQV+Cw4M5AjMAXEH3QSHC/YMYAMrCYQCwgB1BGIBbAyGDGgL4Awe
+DI0M7AnCBIwM7wt7BBAM+wz9DHcMIgTDCKkBagBmAQcCoQlDC/oM6QxpDOsNAwysBesKggwBDO4LVgETCesB5A0QDRIBawfdCwkC
+8w0PARYH/QB5AdoNFAu9CyQNFwweCwEMzQyLBeMMzArLDRoGHA0cDM8NHgnpA+cEEAFqCQwAbw0sDFkMLQH3BewFJwLHASkJDAEB
+AVoCxgAiCEYCrQhICRADKwXNDUEIogikAGkAegO1B+kMGwuTDOoMHg01CgkGtAklDEwMkAvlBA4Dvw0iARYNWAKvDVsCPQrXDEgL
+8gxhAhAMWwkECuIDYgMyA5EIBQ0vBS0NYAoqDWIKMQnlDWYLnQzQA74Gwg0iARsNdwxeDXoDyQ1GAS4AZgBsAYgB6gx6A98MfALH
+DA0LZQVzCYgHRgLTAyQMXwnvA2UEAwM4Af8NkQ2TAngBsw1ZDW8D2QLHB/sLOAHEAQcBSQEIDBQBvQIDCRUBAQLACOAJuAuTC78M
+ig1yCssNGQ2EC8gMkQd/ADINQAEqDbYIWwxjB/oLNwEfDbAIfg2zDa0LiAE0AWII9A1TCEUAcAdTCEcDoQhJC2cNSwEwCt0BlA0j
+CEIJOQBpCTsBqgxDBWQF2ApzDYANvwpWDcEKMwucBT4NOwztDQYNHwIhCDcAWw3fAGgN4QkIC7kBBwEYDeUN5wuDAfsJAQB0CKQM
+ZQXIDNYJAwkFC7ANHATpCMsJNQjPAaIEYw4CCMYJYw1LAr4DowFoDV0N6gWaDX8Gpg2BClcNgw3xBzQN9A0FBUQKDwmbAXQOGQQe
+DhsNRQzYCkEMLwAiDeMCRgwUC7kNEQOjAC0H2QEzAnwNuQv5Ck4MiAyqCCYGrAyXB5sN7gp8DTcKfg3CDK0NPQo3B4AB5A44B/wO
+OwRmCGgBSgJgCXcNjw1QAHUN2QilARwBRwe4CP4MOQvcAQ4LRQpHDjgN1AFQDdYN3ALMCOAJaQooDkMLUA0NCqkOJQ08DfYMAwA4
+BBAOaANIDmsHDwGBDloF3QB2B7IJBA5sDjcN0w58DVIObAncCbYJ3g28DewOIQ5ICqcOcwtSDnUN9Q4pCVIANQxRDnsN1Q6JDn4M
+1wy4DNkGqwwXAC0OZQtADpsOag6dDd0NdALSDqcBOw59AQYFWAtwCyMN6wwdCioNMwrLDiIN8AwADnYOlwYhCaABdA6tAGMOrwoV
+DoALwQT8ACIOwQ7DCh4K2gprDa4NzgFNDLsM3AkCAGMBqArtAlkMhQ6MDX0OHw0xDe0LlwwhBhYOdA67DpYGvwxPBlMOUQ3NAq8O
+0AzbBAYBAQ7VB1oNTgJbDloI8wH/Ds4O6QitDusJCAI0Aq8IPgNyDL4OqwGeDvUNzwFrDtIOLQBpDvwFcwymAuAObwxFCvwMaw5K
+CskOTATEDYYCTQRODucH/A72DtEEBg8FDwcB0Qy3DAsJWgtBAdACFwmkDjcO6A8CDLwO+QkMDwYGOwHRDMYMGg4eB24OcQuWCs0L
+mA8PCwYPEQW0Dk4MTwAwDnoPJg7qDwMPGg76DysDcgwKCkAPIA4zDwEPPw8oDxsPLAFgDv4DKwVaD0kO9w2yDm0OHQ0ADzIJ4g81
+DpMLxg84BUINaAMKAwsPFg2vDuoPVA1xDt4FswHAAHUJrwGQCTwO/w7IDz4NeQMWAGQCrwQTB5EAMgzJDw0Mjgp5DcMPXwxyD2IO
+zw9xAtsPcwPhC9MPEQvzDvUH/gH9DkAPDAuVD3oN8g5NDncGwAETDfkPiAMyAf0PhQ6VCBsK2gmEDwAO+A8JAh8LDQ+MDGoPjg0d
+D5ELegAzBsMPGQNzCMgJhgmDBCMPqg8uBCkAMwOWD6INGA82CykPmQknDzoMrwA4D5QO+A9FCo0E2As8AesB7QtFDBAMBw5jC/cB
+/wGZAHQN/ABuCM0M9wmBD08JEg9RDvgMGQQpCAYPVwzKBWkPNA7fCgoPXA+5CysPuwd/ADgPqQ/WCzMD1AOOCiwNrA6iDCsOpQmo
+AQIBBAEGDdEONA1sAGwIow1uDZcNngMwAxECrwwqA8gDeQ2tD78ONw74AsQBKgBsAeoJHAsiDzAJIAyJC/0PtwWsD+EIlQ0nDWcP
+EwsuD74PQATPEAcQCQjdCMYJNAjOCTcOFQkcDg4G7wr/AZYPbg+qEAYEYwLVCNoOFgjfDGcOcA/bDzMMIAi5EBALdg9dBkwERQbw
+D+IPpgySD+YQGRAqEAgJngj2EB0BGQg6DgsK7A4NApAAdw3+CQoKoQG4CQ4BJw/LDg8O9BAFAGgQGxAuD20PUALRDbEIfwv5CWoK
++g4gBgwNOQ9eEBYDCgjxEF0BCAhZAXEOFQwIA4YPmxBcD80Bogk1AzEBCQ0UDkENXw7cC8AORQvjBQEOuRA2C5oMJA4oDuQHOQPn
+DlEQcg/PAfoQdQihDl0JAgQTDUMB/wwyAW8Lrw7IEAMOZwNvAGEDcQ8ICR0QDAmNEDINgg7hEIIPuhA9DNEH0wNuA3AD/g8eD0YJ
+0A2SD2sBNQixAscDMghlC1wONxCYEJoPLQYFDV4QYRB6Db4PZwm+D1sMSxASCwoNxAO+ADIPlBC2A/4PwAtfC6oQyA79CdQP3Q+a
+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
+]]
