@@ -2,11 +2,9 @@ TECHNOLOGY {
     type = "technology",
     name = "kovarex-enrichment-process-2",
     icon_size = 256,
-
     icon = "__pyfusionenergygraphics__/graphics/technology/kovarex-enrichment-process-2.png",
     effects = {},
-    prerequisites = {},
-    dependencies = {"kovarex-enrichment-process"},
+    prerequisites = {"kovarex-enrichment-process"},
     unit = {
         ingredients = {
             {"automation-science-pack", 6},

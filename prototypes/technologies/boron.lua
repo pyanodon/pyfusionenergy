@@ -23,8 +23,7 @@ TECHNOLOGY {
     icon_size = 128,
     order = "c-a",
     --upgrade = true,
-    prerequisites = {},
-    dependencies = {"boron"},
+    prerequisites = {"boron"},
     effects = {},
     unit = {
         count = 30,

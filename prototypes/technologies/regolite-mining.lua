@@ -4,7 +4,7 @@ TECHNOLOGY {
     icon = "__pyfusionenergygraphics__/graphics/technology/regolite-mining.png",
     icon_size = 128,
     order = "c-a",
-    prerequisites = {},
+    prerequisites = {"super-alloy"},
     effects = {
         {
             type = "unlock-recipe",
