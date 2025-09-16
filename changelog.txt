@@ -1,7 +1,8 @@
 ---------------------------------------------------------------------------------------------------
-Version: 3.0.16
+Version: 4.0.0
 Date: ???
   Changes:
+    - Linearilized Dependencies.
     - Remade tech tree with autotech 2.0. Science pack cost comparasion:
     - automation: n/a -> trigger
     - py1: 100 -> 100
