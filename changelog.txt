@@ -3,7 +3,6 @@ Version: 3.0.17
 Date: ????
   Changes:
     - Fixed some techs having a too-fast cycle time
-    - Updated Simplified Chinese locale courtesy of @alone on Discord
     - Fixed all techs added by "enable all feature flags" not being seen by autotech.
     - Renamed "Build a phytoplankton farm (Recipe)" recipe name to "Phytoplankton Farm MK 01 (Recipe)". Resolves https://github.com/pyanodon/pybugreports/issues/1215
 ---------------------------------------------------------------------------------------------------
