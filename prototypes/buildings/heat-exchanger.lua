@@ -4,7 +4,7 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "py-tank-7000",           amount = 1},
+        {type = "item", name = "py-tank-6",              amount = 1},
         {type = "item", name = "automated-factory-mk01", amount = 1},
         {type = "item", name = "stone-brick",            amount = 70},
         {type = "item", name = "electronic-circuit",     amount = 5},
