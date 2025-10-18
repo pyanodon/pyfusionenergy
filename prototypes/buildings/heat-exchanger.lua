@@ -15,6 +15,10 @@ RECIPE {
     }
 }:add_unlock("fusion-mk01")
 
+if mods.pyrawores then
+    RECIPE("py-heat-exchanger"):replace_ingredient_unsafe("stone-brick", "py-asphalt")
+end
+
 ITEM {
     type = "item",
     name = "py-heat-exchanger",
