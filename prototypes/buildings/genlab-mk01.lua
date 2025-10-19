@@ -13,7 +13,7 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {type = "item", name = "pipe",            amount = 10}, --pyindustry niobium-pipe
+        {type = "item", name = "niobium-pipe",    amount = 10}, --pyindustry niobium-pipe
         {type = "item", name = "steam-engine",    amount = 2},
         {type = "item", name = "gasifier",        amount = 2},
         {type = "item", name = "nexelit-plate",   amount = 30},

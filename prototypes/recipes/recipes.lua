@@ -46,7 +46,7 @@ RECIPE {
     },
     results = {
         {type = "item",  name = "molybdenum-concentrate", amount = 10},
-        {type = "fluid", name = "muddy-sludge",      amount = 150}
+        {type = "fluid", name = "muddy-sludge",           amount = 150}
     },
     main_product = "molybdenum-concentrate",
     icon = "__pyfusionenergygraphics__/graphics/icons/molybdenum-concentrate-hydrocyclone.png",
@@ -219,8 +219,8 @@ RECIPE {
         {type = "fluid", name = "vpulp-precip", amount = 100}
     },
     results = {
-        {type = "item",  name = "vanadium-oxide",    amount = 15},
-        {type = "fluid", name = "muddy-sludge", amount = 300}
+        {type = "item",  name = "vanadium-oxide", amount = 15},
+        {type = "fluid", name = "muddy-sludge",   amount = 300}
     },
     main_product = "vanadium-oxide",
 }
@@ -335,7 +335,7 @@ RECIPE {
     results = {
         {type = "item",  name = "kimberlite-grade3",      amount = 5},
         {type = "item",  name = "pure-kimberlite-grade2", amount = 1,  probability = 0.6},
-        {type = "fluid", name = "muddy-sludge",      amount = 100},
+        {type = "fluid", name = "muddy-sludge",           amount = 100},
         {type = "item",  name = "sand",                   amount = 10}
     },
     --main_product= "kimberlite-grade3",
@@ -479,8 +479,8 @@ RECIPE {
         {type = "fluid", name = "grease",       amount = 25}
     },
     results = {
-        {type = "item",  name = "crude-diamond",     amount = 7},
-        {type = "fluid", name = "muddy-sludge", amount = 100}
+        {type = "item",  name = "crude-diamond", amount = 7},
+        {type = "fluid", name = "muddy-sludge",  amount = 100}
     },
     --main_product= "crude",
     icon = "__pyfusionenergygraphics__/graphics/icons/greasing-1.png",
@@ -501,8 +501,8 @@ RECIPE {
         {type = "fluid", name = "grease",     amount = 25}
     },
     results = {
-        {type = "item",  name = "crude-diamond",     amount = 5},
-        {type = "fluid", name = "tailings", amount = 150}
+        {type = "item",  name = "crude-diamond", amount = 5},
+        {type = "fluid", name = "tailings",      amount = 150}
     },
     --main_product= "crude",
     icon = "__pyfusionenergygraphics__/graphics/icons/greasing-2.png",
@@ -523,8 +523,8 @@ RECIPE {
         {type = "fluid", name = "grease",          amount = 25}
     },
     results = {
-        {type = "item",  name = "crude-diamond",     amount = 2},
-        {type = "fluid", name = "tailings", amount = 200}
+        {type = "item",  name = "crude-diamond", amount = 2},
+        {type = "fluid", name = "tailings",      amount = 200}
     },
     --main_product= "crude",
     icon = "__pyfusionenergygraphics__/graphics/icons/greasing-3.png",
@@ -544,8 +544,8 @@ RECIPE {
         {type = "item",  name = "crude-diamond", amount = 20}
     },
     results = {
-        {type = "item",  name = "washed-diamond",    amount = 10},
-        {type = "fluid", name = "muddy-sludge", amount = 120}
+        {type = "item",  name = "washed-diamond", amount = 10},
+        {type = "fluid", name = "muddy-sludge",   amount = 120}
     },
     --main_product= "crude",
     icon = "__pyfusionenergygraphics__/graphics/icons/crude-diamond-washer.png",
@@ -1420,9 +1420,9 @@ RECIPE {
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "item", name = "diamond",     amount = 10},
-        {type = "item", name = "pipe",        amount = 1}, --pyindustry niobium-pipe
-        {type = "item", name = "steel-plate", amount = 10} --bobs titanium plate
+        {type = "item", name = "diamond",      amount = 10},
+        {type = "item", name = "niobium-pipe", amount = 1}, --pyindustry niobium-pipe
+        {type = "item", name = "steel-plate",  amount = 10} --bobs titanium plate
     },
     results = {
         {type = "item", name = "science-coating", amount = 1}

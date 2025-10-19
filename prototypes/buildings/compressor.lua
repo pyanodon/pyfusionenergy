@@ -4,7 +4,7 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {type = "item", name = "pipe",            amount = 20}, --pyindustry niobium-pipe
+        {type = "item", name = "niobium-pipe",    amount = 20}, --pyindustry niobium-pipe
         {type = "item", name = "evaporator",      amount = 1},
         {type = "item", name = "steam-engine",    amount = 3},
         {type = "item", name = "steel-plate",     amount = 30},

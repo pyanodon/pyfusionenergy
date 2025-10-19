@@ -4,16 +4,20 @@ RECIPE {
     energy_required = 0.5,
     enabled = false,
     ingredients = {
-        {type = "item", name = "storage-tank",           amount = 1},
+        {type = "item", name = "py-tank-6",              amount = 1},
         {type = "item", name = "automated-factory-mk01", amount = 1},
         {type = "item", name = "stone-brick",            amount = 70},
         {type = "item", name = "electronic-circuit",     amount = 5},
-        {type = "item", name = "pipe",                   amount = 20}
+        {type = "item", name = "niobium-pipe",           amount = 20}
     },
     results = {
         {type = "item", name = "py-heat-exchanger", amount = 1}
     }
 }:add_unlock("fusion-mk01")
+
+if mods.pyrawores then
+    RECIPE("py-heat-exchanger"):replace_ingredient_unsafe("stone-brick", "py-asphalt")
+end
 
 ITEM {
     type = "item",
