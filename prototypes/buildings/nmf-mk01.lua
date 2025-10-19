@@ -18,7 +18,7 @@ RECIPE {
         {type = "item", name = "fast-transport-belt", amount = 35},
         {type = "item", name = "advanced-circuit",    amount = 40},
         {type = "item", name = "steel-plate",         amount = 50},
-        {type = "item", name = "pipe",                amount = 15} --pyindustry niobium-pipe
+        {type = "item", name = "niobium-pipe",        amount = 15}         --pyindustry niobium-pipe
         --add glass
     },
     results = {

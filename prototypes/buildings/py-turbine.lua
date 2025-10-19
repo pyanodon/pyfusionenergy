@@ -5,7 +5,7 @@ RECIPE {
     enabled = false,
     ingredients = {
         {type = "item", name = "gasturbinemk03", amount = 2},
-        {type = "item", name = "pipe",           amount = 20} --pyindustry niobium-pipe
+        {type = "item", name = "niobium-pipe",   amount = 20}         --pyindustry niobium-pipe
     },
     results = {
         {type = "item", name = "py-turbine", amount = 1}

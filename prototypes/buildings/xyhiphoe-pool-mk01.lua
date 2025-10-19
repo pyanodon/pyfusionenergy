@@ -8,7 +8,7 @@ RECIPE {
         {type = "item", name = "pump",                    amount = 4},
         {type = "item", name = "advanced-circuit",        amount = 20}, --updated-bob electronic-circuit-board
         {type = "item", name = "steel-plate",             amount = 40},
-        {type = "item", name = "pipe",                    amount = 10}
+        {type = "item", name = "niobium-pipe",            amount = 10}
     },
     results = {
         {type = "item", name = "xyhiphoe-pool-mk01", amount = 1}

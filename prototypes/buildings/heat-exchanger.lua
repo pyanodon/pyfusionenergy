@@ -8,7 +8,7 @@ RECIPE {
         {type = "item", name = "automated-factory-mk01", amount = 1},
         {type = "item", name = "stone-brick",            amount = 70},
         {type = "item", name = "electronic-circuit",     amount = 5},
-        {type = "item", name = "pipe",                   amount = 20}
+        {type = "item", name = "niobium-pipe",           amount = 20}
     },
     results = {
         {type = "item", name = "py-heat-exchanger", amount = 1}
