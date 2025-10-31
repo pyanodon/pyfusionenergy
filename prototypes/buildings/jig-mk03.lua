@@ -168,7 +168,7 @@ ENTITY {
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, false, false),
-            volume = 100,
+            volume = 1000,
             pipe_picture = py.pipe_pictures("assembling-machine-2", {1.8, 4.3}, {-1.2, -4.65}, {4.8, -1.7}, {-4.27, 1.3}, pipe_left),
             pipe_connections = {{flow_direction = "output", position = {1.5, 3.5}, direction = defines.direction.south}}
         },
@@ -182,7 +182,7 @@ ENTITY {
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, false, false),
-            volume = 100,
+            volume = 1000,
             pipe_picture = py.pipe_pictures("assembling-machine-2", {-1.2, 4.3}, {1.8, -4.65}, {4.8, 1.3}, {-4.27, -1.8}, pipe_right),
             pipe_connections = {{flow_direction = "output", position = {-1.5, 3.5}, direction = defines.direction.south}}
         },
