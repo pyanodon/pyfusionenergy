@@ -13,6 +13,10 @@ RECIPE {
     }
 }
 
+if mods.pyhightech then
+    RECIPE("mixer-mk03"):add_ingredient_unsafe {type = "item", name = "phosphate-glass", amount = 40}:add_ingredient_unsafe {type = "item", name = "harmonic-absorber", amount = 20}:add_ingredient_unsafe {type = "item", name = "carbon-aerogel", amount = 20}
+end
+
 ITEM {
     type = "item",
     name = "mixer-mk03",

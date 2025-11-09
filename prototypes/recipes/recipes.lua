@@ -869,6 +869,11 @@ RECIPE {
     },
 }:add_unlock("nenbit-matrix")
 
+if mods.pyhightech then
+    RECIPE("nexelit-matrix"):replace_ingredient_unsafe("wood", "epoxy")
+end
+
+
 RECIPE {
     type = "recipe",
     name = "nbti-alloy",

@@ -22,6 +22,10 @@ RECIPE {
     }
 }
 
+if mods.pyhightech then
+    RECIPE("nmf-mk03"):add_ingredient_unsafe {type = "item", name = "re-magnet", amount = 30}:add_ingredient_unsafe {type = "item", name = "superconductor", amount = 20}:add_ingredient_unsafe {type = "item", name = "paramagnetic-material", amount = 15}
+end
+
 ITEM {
     type = "item",
     name = "nmf-mk03",

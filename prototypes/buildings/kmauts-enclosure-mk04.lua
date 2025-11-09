@@ -14,6 +14,10 @@ RECIPE {
     }
 }
 
+if mods.pyhightech then
+    RECIPE("kmauts-enclosure-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "superconductor-servomechanims", amount = 5}:add_ingredient_unsafe {type = "item", name = "quantum-dots", amount = 5}
+end
+
 ITEM {
     type = "item",
     name = "kmauts-enclosure-mk04",

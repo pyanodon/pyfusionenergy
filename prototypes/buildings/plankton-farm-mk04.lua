@@ -11,6 +11,10 @@ RECIPE {
     }
 }
 
+if mods.pyhightech then
+    RECIPE("plankton-farm-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "superconductor-servomechanims", amount = 5}:add_ingredient_unsafe {type = "item", name = "harmonic-absorber", amount = 10}
+end
+
 ITEM {
     type = "item",
     name = "plankton-farm-mk04",

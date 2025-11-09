@@ -14,6 +14,10 @@ RECIPE {
     }
 }
 
+if mods.pyhightech then
+    RECIPE("mixer-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "superconductor-servomechanims", amount = 5}:add_ingredient_unsafe {type = "item", name = "parametric-oscilator", amount = 1}
+end
+
 ITEM {
     type = "item",
     name = "mixer-mk04",

@@ -14,6 +14,10 @@ RECIPE {
     }
 }
 
+if mods.pyhightech then
+    RECIPE("secondary-crusher-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "superconductor-servomechanims", amount = 6}:add_ingredient_unsafe {type = "item", name = "pi-josephson-junction", amount = 4}
+end
+
 ITEM {
     type = "item",
     name = "secondary-crusher-mk04",

@@ -13,6 +13,10 @@ RECIPE {
     }
 }
 
+if mods.pyhightech then
+    RECIPE("secondary-crusher-mk03"):add_ingredient_unsafe {type = "item", name = "diamagnetic-material", amount = 20}:add_ingredient_unsafe {type = "item", name = "harmonic-absorber", amount = 15}
+end
+
 ITEM {
     type = "item",
     name = "secondary-crusher-mk03",

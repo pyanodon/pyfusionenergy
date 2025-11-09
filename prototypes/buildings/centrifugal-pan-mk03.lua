@@ -67,6 +67,10 @@ RECIPE {
     },
 }
 
+if mods.pyhightech then
+    RECIPE("centrifugal-pan-mk03"):add_ingredient_unsafe {type = "item", name = "paramagnetic-material", amount = 10}:add_ingredient_unsafe {type = "item", name = "superconductor", amount = 5}:add_ingredient_unsafe {type = "item", name = "crco-alloy", amount = 20}
+end
+
 ITEM {
     type = "item",
     name = "centrifugal-pan-mk03",

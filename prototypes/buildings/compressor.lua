@@ -215,6 +215,10 @@ RECIPE {
     }
 }
 
+if mods.pyhightech then
+    RECIPE("compressor-mk03"):add_ingredient_unsafe {type = "item", name = "biopolymer", amount = 40}:add_ingredient_unsafe {type = "item", name = "carbon-nanotube", amount = 30}:add_ingredient_unsafe {type = "item", name = "graphene-roll", amount = 10}
+end
+
 RECIPE {
     type = "recipe",
     name = "compressor-mk04",
@@ -227,3 +231,7 @@ RECIPE {
         {type = "item", name = "compressor-mk04", amount = 1}
     }
 }
+
+if mods.pyhightech then
+    RECIPE("compressor-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "superconductor-servomechanims", amount = 5}:add_ingredient_unsafe {type = "item", name = "nv-center", amount = 2}
+end

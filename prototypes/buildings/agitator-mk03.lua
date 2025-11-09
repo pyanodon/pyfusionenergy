@@ -40,6 +40,10 @@ RECIPE {
     }
 }
 
+if mods.pyhightech then
+    RECIPE("agitator-mk03"):add_ingredient_unsafe {type = "item", name = "heavy-fermion", amount = 20}:add_ingredient_unsafe {type = "item", name = "carbon-aerogel", amount = 20}:add_ingredient_unsafe {type = "item", name = "graphene-roll", amount = 15}
+end
+
 ITEM {
     type = "item",
     name = "agitator-mk03",

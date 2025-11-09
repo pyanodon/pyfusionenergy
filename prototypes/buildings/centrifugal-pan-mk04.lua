@@ -68,6 +68,10 @@ RECIPE {
     },
 }
 
+if mods.pyhightech then
+    RECIPE("centrifugal-pan-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "superconductor-servomechanims", amount = 5}:add_ingredient_unsafe {type = "item", name = "quantum-dots", amount = 5}
+end
+
 ITEM {
     type = "item",
     name = "centrifugal-pan-mk04",

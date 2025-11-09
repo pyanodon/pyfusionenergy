@@ -22,6 +22,10 @@ RECIPE {
     }
 }
 
+if mods.pyhightech then
+    RECIPE("thickener-mk03"):add_ingredient_unsafe {type = "item", name = "biopolymer", amount = 30}:add_ingredient_unsafe {type = "item", name = "carbon-nanotube", amount = 30}:add_ingredient_unsafe {type = "item", name = "aerogel", amount = 15}
+end
+
 ITEM {
     type = "item",
     name = "thickener-mk03",

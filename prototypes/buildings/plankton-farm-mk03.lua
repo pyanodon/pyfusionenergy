@@ -13,6 +13,10 @@ RECIPE {
     }
 }
 
+if mods.pyhightech then
+    RECIPE("plankton-farm-mk03"):add_ingredient_unsafe {type = "item", name = "heavy-fermion", amount = 20}:add_ingredient_unsafe {type = "item", name = "superconductor", amount = 10}
+end
+
 ITEM {
     type = "item",
     name = "plankton-farm-mk03",
