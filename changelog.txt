@@ -6,6 +6,7 @@ Date: ????
     - Fixed all techs added by "enable all feature flags" not being seen by autotech.
     - Increased the output fluidbox size of all buildings from 100->1000. Allows fluid transfer at even higher rates before hitting engine limitations. Resolves https://github.com/pyanodon/pybugreports/issues/1203
     - Renamed "Build a phytoplankton farm (Recipe)" recipe name to "Phytoplankton Farm MK 01 (Recipe)". Resolves https://github.com/pyanodon/pybugreports/issues/1215
+    - Renamed "Make methyl acrylate" to "Methyl acrylate". Resolves https://github.com/pyanodon/pybugreports/issues/1258
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.16
 Date: 2025-09-15
