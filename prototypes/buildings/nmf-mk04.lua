@@ -23,6 +23,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("nmf-mk04"):add_ingredient_unsafe {type = "item", name = "boron-carbide", amount = 30}:add_ingredient_unsafe {type = "item", name = "science-coating", amount = 1}:add_ingredient_unsafe {type = "item", name = "control-unit", amount = 5}
+end
+
 if mods.pyhightech then
     RECIPE("nmf-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "superconductor-servomechanims", amount = 5}:add_ingredient_unsafe {type = "item", name = "quantum-vortex-storage-system", amount = 2}
 end

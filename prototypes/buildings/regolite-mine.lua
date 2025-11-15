@@ -16,6 +16,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("regolite-mine"):replace_ingredient_unsafe("iron-plate", "titanium-plate"):add_ingredient_unsafe {type = "item", name = "automated-factory-mk02", amount = 1}
+end
+
 ITEM {
     type = "item",
     name = "regolite-mine",

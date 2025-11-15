@@ -43,6 +43,10 @@ RECIPE {
     }
 }:add_unlock("advanced-mining-facilities")
 
+if mods.pyrawores then
+    RECIPE("agitator-mk01"):replace_ingredient_unsafe("iron-plate", "glass")
+end
+
 ITEM {
     type = "item",
     name = "agitator-mk01",

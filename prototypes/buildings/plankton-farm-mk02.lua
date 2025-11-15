@@ -14,6 +14,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("plankton-farm-mk02"):add_ingredient_unsafe {type = "item", name = "stainless-steel", amount = 25}
+end
+
 ITEM {
     type = "item",
     name = "plankton-farm-mk02",

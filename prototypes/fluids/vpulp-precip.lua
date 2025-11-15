@@ -19,6 +19,10 @@ RECIPE {
     order = "m"
 }
 
+if mods.pyrawores then
+    RECIPE("vpulp-precip"):replace_ingredient_unsafe("water", {type = "fluid", name = "ammonia", amount = 200}):add_ingredient_unsafe {type = "item", name = "sodium-bisulfate", amount = 1}
+end
+
 FLUID {
     type = "fluid",
     name = "vpulp-precip",

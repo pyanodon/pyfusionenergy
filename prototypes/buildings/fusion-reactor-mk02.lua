@@ -15,6 +15,10 @@ RECIPE {
     },
 }
 
+if mods.pyrawores then
+    RECIPE("fusion-reactor-mk02"):add_ingredient_unsafe {type = "item", name = "super-steel", amount = 100}:replace_ingredient_unsafe("mixer-mk01", "mixer-mk02")
+end
+
 ITEM {
     type = "item",
     name = "fusion-reactor-mk02",

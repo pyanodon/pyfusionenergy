@@ -71,6 +71,14 @@ RECIPE {
     },
 }
 
+if mods.pyrawores then
+    RECIPE("jig-mk01"):replace_ingredient_unsafe("pipe", "niobium-pipe")
+end
+
+if mods.pyrawores then
+    RECIPE("jig-mk01"):add_ingredient_unsafe {type = "item", name = "stainless-steel", amount = 20}:replace_ingredient_unsafe("advanced-circuit", "electronic-circuit"):replace_ingredient_unsafe("electric-engine-unit", "engine-unit")
+end
+
 ITEM {
     type = "item",
     name = "jig-mk01",

@@ -22,6 +22,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("thickener-mk03"):add_ingredient_unsafe {type = "item", name = "super-alloy", amount = 20}:add_ingredient_unsafe {type = "item", name = "py-heat-exchanger", amount = 1}
+end
+
 if mods.pyhightech then
     RECIPE("thickener-mk03"):add_ingredient_unsafe {type = "item", name = "biopolymer", amount = 30}:add_ingredient_unsafe {type = "item", name = "carbon-nanotube", amount = 30}:add_ingredient_unsafe {type = "item", name = "aerogel", amount = 15}
 end

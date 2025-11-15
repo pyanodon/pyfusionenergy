@@ -15,6 +15,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("secondary-crusher-mk01"):replace_ingredient_unsafe("electric-engine-unit", "engine-unit"):remove_ingredient("nbfe-alloy"):add_ingredient_unsafe {type = "item", name = "duralumin", amount = 20}
+end
+
 ITEM {
     type = "item",
     name = "secondary-crusher-mk01",

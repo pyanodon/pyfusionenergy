@@ -24,6 +24,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("vacuum-pump-mk04"):add_ingredient_unsafe {type = "item", name = "wall-shield", amount = 5}:add_ingredient_unsafe {type = "item", name = "science-coating", amount = 2}:add_ingredient_unsafe {type = "item", name = "control-unit", amount = 5}
+end
+
 ITEM {
     type = "item",
     name = "vacuum-pump-mk04",

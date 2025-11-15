@@ -55,6 +55,10 @@ RECIPE {
     order = "b"
 }
 
+if mods.pyrawores then
+    RECIPE("molybdenum-concentrate"):replace_ingredient_unsafe("water", {type = "fluid", name = "nitrogen", amount = 200})
+end
+
 RECIPE {
     type = "recipe",
     name = "molybdenum-filtration",
@@ -72,6 +76,10 @@ RECIPE {
     main_product = "molybdenum-sulfide",
 }
 
+if mods.pyrawores then
+    RECIPE("molybdenum-filtration"):remove_ingredient("vacuum")
+end
+
 RECIPE {
     type = "recipe",
     name = "molybdenum-oxide",
@@ -87,6 +95,10 @@ RECIPE {
     },
     main_product = "molybdenum-oxide",
 }
+
+if mods.pyrawores then
+    RECIPE("molybdenum-oxide"):add_ingredient_unsafe {type = "fluid", name = "oxygen", amount = 100}
+end
 
 RECIPE {
     type = "recipe",
@@ -104,6 +116,10 @@ RECIPE {
     main_product = "molybdenum-plate",
 }
 
+if mods.pyrawores then
+    RECIPE("molybdenum-plate"):add_ingredient_unsafe {type = "fluid", name = "hydrogen", amount = 100}.category = "electrolyzer"
+end
+
 RECIPE {
     type = "recipe",
     name = "phytoplankton",
@@ -119,6 +135,10 @@ RECIPE {
     },
     main_product = "phytoplankton",
 }:add_unlock("xyhiphoe")
+
+if mods.pyrawores then
+    RECIPE("phytoplankton"):replace_ingredient_unsafe("iron-ore", {type = "item", name = "grade-1-tin", amount = 1})
+end
 
 RECIPE {
     type = "recipe",
@@ -209,6 +229,10 @@ RECIPE {
     main_product = "sodium-chlorate",
 }
 
+if mods.pyrawores then
+    RECIPE("sodium-chlorate"):remove_ingredient_unsafe("water-saline"):add_ingredient_unsafe {type = "item", name = "salt", amount = 10}.category = "electrolyzer"
+end
+
 RECIPE {
     type = "recipe",
     name = "vanadium-oxide",
@@ -261,6 +285,10 @@ RECIPE {
         {type = "item", name = "super-alloy", amount = 5}
     },
 }
+
+if mods.pyrawores then
+    RECIPE("super-alloy"):replace_ingredient_unsafe("steel-plate", "nickel-plate"):add_ingredient_unsafe {type = "item", name = "aramid", amount = 1}.category = "py-rawores-smelter"
+end
 
 RECIPE {
     type = "recipe",
@@ -590,6 +618,10 @@ RECIPE {
     main_product = "cold-air",
 }
 
+if mods.pyrawores then
+    RECIPE("cool-air"):replace_ingredient_unsafe("pressured-air", {type = "fluid", name = "liquid-nitrogen", amount = 45}):add_result_unsafe {type = "fluid", name = "nitrogen", amount = 450}
+end
+
 RECIPE {
     type = "recipe",
     name = "liquid-air-distilation",
@@ -628,6 +660,10 @@ RECIPE {
     subgroup = "py-fusion-recipes",
     order = "l"
 }
+
+if mods.pyrawores then
+    RECIPE("calcinate-separation"):add_result_unsafe {type = "item", name = "ore-quartz", amount = 1, probability = 0.6}
+end
 
 RECIPE {
     type = "recipe",
@@ -677,6 +713,10 @@ RECIPE {
     },
 }
 
+if mods.pyrawores then
+    RECIPE("methyl-acrylate"):replace_ingredient("iron-plate", "nickel-plate")
+end
+
 RECIPE {
     type = "recipe",
     name = "kmauts-ration",
@@ -693,6 +733,10 @@ RECIPE {
         {type = "item", name = "kmauts-ration", amount = 3}
     },
 }
+
+if mods.pyrawores then
+    RECIPE("kmauts-ration"):replace_ingredient_unsafe("iron-plate", "tin-plate")
+end
 
 RECIPE {
     type = "recipe",
@@ -852,6 +896,10 @@ RECIPE {
     main_product = "helium",
 }
 
+if mods.pyrawores then
+    RECIPE("helium"):add_ingredient_unsafe {type = "fluid", name = "hydrogen", amount = 10}
+end
+
 RECIPE {
     type = "recipe",
     name = "nexelit-matrix",
@@ -889,6 +937,10 @@ RECIPE {
     },
 }:add_unlock("nenbit-matrix")
 
+if mods.pyrawores then
+    RECIPE("nbti-alloy"):replace_ingredient_unsafe("steel-plate", "titanium-plate"):add_ingredient_unsafe {type = "fluid", name = "nitrogen", amount = 150}.category = "py-rawores-smelter"
+end
+
 RECIPE {
     type = "recipe",
     name = "nenbit-matrix",
@@ -920,6 +972,10 @@ RECIPE {
     },
 }
 
+if mods.pyrawores then
+    RECIPE("ferrite"):add_ingredient_unsafe {type = "item", name = "zinc-plate", amount = 10}
+end
+
 RECIPE {
     type = "recipe",
     name = "coil-core",
@@ -949,6 +1005,10 @@ RECIPE {
         {type = "item", name = "sc-wire", amount = 5}
     },
 }
+
+if mods.pyrawores then
+    RECIPE("sc-wire"):replace_ingredient_unsafe("iron-plate", "tin-plate"):add_ingredient_unsafe {type = "item", name = "optical-fiber", amount = 5}
+end
 
 RECIPE {
     type = "recipe",
@@ -1014,6 +1074,10 @@ RECIPE {
     },
 }
 
+if mods.pyrawores then
+    RECIPE("sc-unit"):add_ingredient_unsafe {type = "fluid", name = "liquid-nitrogen", amount = 600}
+end
+
 RECIPE {
     type = "recipe",
     name = "d2o-distilation",
@@ -1060,6 +1124,10 @@ RECIPE {
     },
 }:add_unlock("boron-mk02")
 
+if mods.pyrawores then
+    RECIPE("boron-mixture"):add_ingredient_unsafe {type = "item", name = "aluminium-plate", amount = 5}
+end
+
 RECIPE {
     type = "recipe",
     name = "boron",
@@ -1076,6 +1144,10 @@ RECIPE {
     },
     main_product = "boron",
 }:add_unlock("boron-mk02")
+
+if mods.pyrawores then
+    RECIPE("boron"):add_ingredient_unsafe {type = "fluid", name = "hydrogen-chloride", amount = 300}
+end
 
 RECIPE {
     type = "recipe",
@@ -1129,6 +1201,10 @@ RECIPE {
         {type = "item", name = "blanket", amount = 3}
     },
 }
+
+if mods.pyrawores then
+    RECIPE("blanket"):add_ingredient_unsafe {type = "item", name = "nexelit-plate", amount = 10}:add_ingredient_unsafe {type = "item", name = "lead-plate", amount = 40}:add_ingredient_unsafe {type = "item", name = "super-steel", amount = 40}
+end
 
 RECIPE {
     type = "recipe",
@@ -1418,6 +1494,10 @@ RECIPE {
     },
 }
 
+if mods.pyrawores then
+    RECIPE("lead-container"):replace_ingredient_unsafe("iron-plate", "lead-plate"):add_ingredient_unsafe {type = "item", name = "aramid", amount = 3}
+end
+
 RECIPE {
     type = "recipe",
     name = "science-coating",
@@ -1433,6 +1513,10 @@ RECIPE {
         {type = "item", name = "science-coating", amount = 1}
     },
 }
+
+if mods.pyrawores then
+    RECIPE("science-coating"):replace_ingredient_unsafe("steel-plate", "titanium-plate")
+end
 
 RECIPE {
     type = "recipe",
@@ -1485,6 +1569,10 @@ RECIPE {
     },
 }:add_unlock("production-science-pack")
 
+if mods.pyrawores then
+    RECIPE("control-unit"):replace_ingredient_unsafe("iron-plate", "stainless-steel")
+end
+
 RECIPE {
     type = "recipe",
     name = "production-science-pack",
@@ -1519,6 +1607,10 @@ RECIPE {
     },
 }
 
+if mods.pyrawores then
+    RECIPE("agzn-alloy"):replace_ingredient_unsafe("iron-plate", "silver-plate"):replace_ingredient_unsafe("stone", "zinc-plate").category = "py-rawores-smelter"
+end
+
 RECIPE {
     type = "recipe",
     name = "silver-foam",
@@ -1536,6 +1628,10 @@ RECIPE {
         {type = "item", name = "silver-foam", amount = 1}
     },
 }
+
+if mods.pyrawores then
+    RECIPE("silver-foam"):replace_ingredient_unsafe("water", {type = "fluid", name = "hydrogen-chloride", amount = 200})
+end
 
 RECIPE {
     type = "recipe",
@@ -1672,6 +1768,10 @@ RECIPE {
     subgroup = "py-fluids",
     order = "d6"
 }:add_unlock("fuel-production")
+
+if mods.pyrawores then
+    RECIPE("gasoline"):add_ingredient {type = "fluid", name = "hydrogen", amount = 50}
+end
 
 RECIPE {
     type = "recipe",
