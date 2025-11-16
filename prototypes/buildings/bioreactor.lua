@@ -16,6 +16,10 @@ RECIPE {
     }
 }
 
+if mods.pyhightech then
+    RECIPE("bio-reactor-mk01"):add_ingredient_unsafe {type = "item", name = "advanced-circuit", amount = 5}
+end
+
 ITEM {
     type = "item",
     name = "bio-reactor-mk01",

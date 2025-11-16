@@ -47,6 +47,10 @@ if mods.pyrawores then
     RECIPE("agitator-mk01"):replace_ingredient_unsafe("iron-plate", "glass")
 end
 
+if mods.pyhightech then
+    RECIPE("agitator-mk01"):replace_ingredient_unsafe("plastic-bar", "melamine")
+end
+
 ITEM {
     type = "item",
     name = "agitator-mk01",

@@ -230,7 +230,7 @@ RECIPE {
 }
 
 if mods.pyrawores then
-    RECIPE("sodium-chlorate"):remove_ingredient_unsafe("water-saline"):add_ingredient_unsafe {type = "item", name = "salt", amount = 10}.category = "electrolyzer"
+    RECIPE("sodium-chlorate"):remove_ingredient("water-saline"):add_ingredient_unsafe {type = "item", name = "salt", amount = 10}.category = "electrolyzer"
 end
 
 RECIPE {
@@ -619,7 +619,7 @@ RECIPE {
 }
 
 if mods.pyrawores then
-    RECIPE("cool-air"):replace_ingredient_unsafe("pressured-air", {type = "fluid", name = "liquid-nitrogen", amount = 45}):add_result_unsafe {type = "fluid", name = "nitrogen", amount = 450}
+    RECIPE("cool-air"):replace_ingredient_unsafe("pressured-air", {type = "fluid", name = "liquid-nitrogen", amount = 45}):add_result {type = "fluid", name = "nitrogen", amount = 450}
 end
 
 RECIPE {
@@ -662,7 +662,7 @@ RECIPE {
 }
 
 if mods.pyrawores then
-    RECIPE("calcinate-separation"):add_result_unsafe {type = "item", name = "ore-quartz", amount = 1, probability = 0.6}
+    RECIPE("calcinate-separation"):add_result {type = "item", name = "ore-quartz", amount = 1, probability = 0.6}
 end
 
 RECIPE {
@@ -736,6 +736,11 @@ RECIPE {
 
 if mods.pyrawores then
     RECIPE("kmauts-ration"):replace_ingredient_unsafe("iron-plate", "tin-plate")
+end
+
+if mods.pyhightech then
+    RECIPE("kmauts-ration"):remove_ingredient("organics"):add_ingredient_unsafe {type = "item", name = "skin", amount = 25}
+    RECIPE("kmauts-ration"):remove_ingredient("ralesia"):add_ingredient_unsafe {type = "item", name = "blood-meal", amount = 5}
 end
 
 RECIPE {
@@ -918,7 +923,7 @@ RECIPE {
 }:add_unlock("nenbit-matrix")
 
 if mods.pyhightech then
-    RECIPE("nexelit-matrix"):replace_ingredient_unsafe("wood", "epoxy")
+    RECIPE("nexelit-matrix"):replace_ingredient("treated-wood", "epoxy")
 end
 
 
@@ -991,6 +996,10 @@ RECIPE {
     },
 }
 
+if mods.pyhightech then
+    RECIPE("coil-core"):add_ingredient_unsafe {type = "item", name = "nexelit-plate", amount = 2}
+end
+
 RECIPE {
     type = "recipe",
     name = "sc-wire",
@@ -1026,6 +1035,10 @@ RECIPE {
     },
 }
 
+if mods.pyhightech then
+    RECIPE("sc-coil"):add_ingredient_unsafe {type = "item", name = "re-tin", amount = 1}
+end
+
 RECIPE {
     type = "recipe",
     name = "magnetic-core",
@@ -1042,6 +1055,10 @@ RECIPE {
     },
 }
 
+if mods.pyhightech then
+    RECIPE("magnetic-core"):add_ingredient_unsafe {type = "item", name = "ndfeb-alloy", amount = 1}:add_ingredient_unsafe {type = "item", name = "epoxy", amount = 1}
+end
+
 RECIPE {
     type = "recipe",
     name = "deposited-core",
@@ -1056,6 +1073,10 @@ RECIPE {
         {type = "item", name = "deposited-core", amount = 1}
     },
 }
+
+if mods.pyhightech then
+    RECIPE("deposited-core").category = "nano"
+end
 
 RECIPE {
     type = "recipe",
@@ -1126,6 +1147,10 @@ RECIPE {
 
 if mods.pyrawores then
     RECIPE("boron-mixture"):add_ingredient_unsafe {type = "item", name = "aluminium-plate", amount = 5}
+end
+
+if mods.pyhightech then
+    RECIPE("boron-mixture"):replace_ingredient_unsafe("helium", "acetylene")
 end
 
 RECIPE {
@@ -1516,6 +1541,10 @@ RECIPE {
 
 if mods.pyrawores then
     RECIPE("science-coating"):replace_ingredient_unsafe("steel-plate", "titanium-plate")
+end
+
+if mods.pyhightech then
+    RECIPE("science-coating"):add_ingredient_unsafe {type = "item", name = "nylon", amount = 5}:add_ingredient_unsafe {type = "item", name = "zinc-acetate", amount = 15}
 end
 
 RECIPE {
