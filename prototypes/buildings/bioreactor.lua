@@ -16,8 +16,8 @@ RECIPE {
     }
 }
 
-if mods.pyhightech then
-    RECIPE("bio-reactor-mk01"):add_ingredient_unsafe {type = "item", name = "advanced-circuit", amount = 5}
+if mods.pyrawores then
+    RECIPE("bio-reactor-mk01"):add_ingredient_unsafe {type = "item", name = "advanced-circuit", amount = 5}:add_ingredient_unsafe {type = "item", name = "glass", amount = 50}
 end
 
 ITEM {

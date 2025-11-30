@@ -714,7 +714,7 @@ RECIPE {
 }
 
 if mods.pyrawores then
-    RECIPE("methyl-acrylate"):replace_ingredient("iron-plate", "nickel-plate")
+    RECIPE("methyl-acrylate"):replace_ingredient_unsafe("iron-plate", "nickel-plate")
 end
 
 RECIPE {
@@ -923,7 +923,7 @@ RECIPE {
 }:add_unlock("nenbit-matrix")
 
 if mods.pyhightech then
-    RECIPE("nexelit-matrix"):replace_ingredient("treated-wood", "epoxy")
+    RECIPE("nexelit-matrix"):replace_ingredient_unsafe("treated-wood", "epoxy")
 end
 
 
@@ -1150,7 +1150,7 @@ if mods.pyrawores then
 end
 
 if mods.pyhightech then
-    RECIPE("boron-mixture"):replace_ingredient_unsafe("helium", "acetylene")
+    RECIPE("boron-mixture"):replace_ingredient_unsafe("helium", {type = "fluid", name = "acetylene", amount = 15})
 end
 
 RECIPE {
@@ -1799,7 +1799,7 @@ RECIPE {
 }:add_unlock("fuel-production")
 
 if mods.pyrawores then
-    RECIPE("gasoline"):add_ingredient {type = "fluid", name = "hydrogen", amount = 50}
+    RECIPE("gasoline"):add_ingredient_unsafe {type = "fluid", name = "hydrogen", amount = 50}
 end
 
 RECIPE {
