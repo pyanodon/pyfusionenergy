@@ -189,6 +189,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("hydrocyclone-mk01"):replace_ingredient_unsafe("centrifuge", "classifier")
+end
+
 if not mods["pyrawores"] then return end
 
 RECIPE {
@@ -207,6 +211,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("hydrocyclone-mk02"):add_ingredient_unsafe {type = "item", name = "titanium-plate", amount = 10}:add_ingredient_unsafe {type = "item", name = "stainless-steel", amount = 20}
+end
+
 RECIPE {
     type = "recipe",
     name = "hydrocyclone-mk03",
@@ -222,6 +230,14 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("hydrocyclone-mk03"):add_ingredient_unsafe {type = "item", name = "super-alloy", amount = 10}:add_ingredient_unsafe {type = "item", name = "boron-carbide", amount = 15}
+end
+
+if mods.pyhightech then
+    RECIPE("hydrocyclone-mk03"):add_ingredient_unsafe {type = "item", name = "phosphate-glass", amount = 50}:add_ingredient_unsafe {type = "item", name = "biopolymer", amount = 35}:add_ingredient_unsafe {type = "item", name = "aerogel", amount = 15}
+end
+
 RECIPE {
     type = "recipe",
     name = "hydrocyclone-mk04",
@@ -234,3 +250,11 @@ RECIPE {
         {type = "item", name = "hydrocyclone-mk04", amount = 1}
     }
 }
+
+if mods.pyrawores then
+    RECIPE("hydrocyclone-mk04"):add_ingredient_unsafe {type = "item", name = "wall-shield", amount = 5}:add_ingredient_unsafe {type = "item", name = "science-coating", amount = 2}:add_ingredient_unsafe {type = "item", name = "control-unit", amount = 5}
+end
+
+if mods.pyhightech then
+    RECIPE("hydrocyclone-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "superconductor-servomechanims", amount = 5}:add_ingredient_unsafe {type = "item", name = "hyperelastic-material", amount = 4}
+end

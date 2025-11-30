@@ -41,6 +41,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("agitator-mk02"):add_ingredient_unsafe {type = "item", name = "glass", amount = 50}
+end
+
 ITEM {
     type = "item",
     name = "agitator-mk02",

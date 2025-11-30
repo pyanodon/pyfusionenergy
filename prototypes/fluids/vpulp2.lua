@@ -18,6 +18,10 @@ RECIPE {
     order = "k"
 }
 
+if mods.pyrawores then
+    RECIPE("vpulp2"):replace_ingredient_unsafe("crushed-iron", "iron-ore-dust")
+end
+
 FLUID {
     type = "fluid",
     name = "vpulp2",

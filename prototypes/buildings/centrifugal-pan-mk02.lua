@@ -68,6 +68,10 @@ RECIPE {
     },
 }
 
+if mods.pyrawores then
+    RECIPE("centrifugal-pan-mk02"):add_ingredient_unsafe {type = "item", name = "stainless-steel", amount = 25}
+end
+
 ITEM {
     type = "item",
     name = "centrifugal-pan-mk02",

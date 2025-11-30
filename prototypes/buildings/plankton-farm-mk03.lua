@@ -13,6 +13,10 @@ RECIPE {
     }
 }
 
+if mods.pyhightech then
+    RECIPE("plankton-farm-mk03"):add_ingredient_unsafe {type = "item", name = "heavy-fermion", amount = 20}:add_ingredient_unsafe {type = "item", name = "superconductor", amount = 10}
+end
+
 ITEM {
     type = "item",
     name = "plankton-farm-mk03",
@@ -24,6 +28,10 @@ ITEM {
     place_result = "plankton-farm-mk03",
     stack_size = 10
 }
+
+if mods.pyrawores then
+    RECIPE("plankton-farm-mk03"):add_ingredient_unsafe {type = "item", name = "super-alloy", amount = 5}:add_ingredient_unsafe {type = "item", name = "nbti-alloy", amount = 20}
+end
 
 ENTITY {
     type = "assembling-machine",
