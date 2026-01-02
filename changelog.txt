@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.0.18
+Date: ????
+  Changes:
+    - Buffed fuel rod steam production to 2000C. Resolves https://github.com/pyanodon/pybugreports/issues/1341
+---------------------------------------------------------------------------------------------------
 Version: 3.0.17
 Date: 2025-12-28
   Changes:
