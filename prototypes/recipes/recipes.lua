@@ -1582,7 +1582,7 @@ RECIPE {
         {type = "item",  name = "fuelrod-mk01", amount = 1},
     },
     results = {
-        {type = "fluid", name = "steam", amount = 1000, temperature = 500, ignored_by_stats = 1000, ignored_by_productivity = 1000},
+        {type = "fluid", name = "steam", amount = 1000, temperature = 2000, ignored_by_stats = 1000, ignored_by_productivity = 1000},
     },
     main_product = "steam",
     icon = "__pyfusionenergygraphics__/graphics/icons/steam-heating.png",
