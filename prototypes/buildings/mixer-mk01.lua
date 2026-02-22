@@ -15,6 +15,14 @@ RECIPE {
     }
 }:add_unlock("advanced-mining-facilities")
 
+if mods.pyrawores then
+    RECIPE("mixer-mk01"):replace_ingredient_unsafe("iron-plate", "aluminium-plate"):replace_ingredient_unsafe("chemical-plant-mk01", "washer"):replace_ingredient_unsafe("steel-plate", "titanium-plate")
+end
+
+if mods.pyhightech then
+    RECIPE("mixer-mk01"):add_ingredient {type = "item", name = "electronic-circuit", amount = 10}
+end
+
 ITEM {
     type = "item",
     name = "mixer-mk01",

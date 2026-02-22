@@ -18,6 +18,10 @@ RECIPE {
     order = "l"
 }
 
+if mods.pyhightech then
+    RECIPE("vpulp3"):replace_ingredient_unsafe("petroleum-gas", {type = "fluid", name = "ammonia", amount = 100})
+end
+
 FLUID {
     type = "fluid",
     name = "vpulp3",

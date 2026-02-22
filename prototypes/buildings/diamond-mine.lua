@@ -15,6 +15,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("diamond-mine"):replace_ingredient_unsafe("iron-plate", "titanium-plate")
+end
+
 ITEM {
     type = "item",
     name = "diamond-mine",

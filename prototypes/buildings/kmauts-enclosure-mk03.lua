@@ -15,6 +15,10 @@ RECIPE {
     }
 }
 
+if mods.pyhightech then
+    RECIPE("kmauts-enclosure-mk03"):add_ingredient_unsafe {type = "item", name = "biopolymer", amount = 15}:add_ingredient_unsafe {type = "item", name = "carbon-aerogel", amount = 20}
+end
+
 ITEM {
     type = "item",
     name = "kmauts-enclosure-mk03",

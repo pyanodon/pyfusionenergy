@@ -22,6 +22,14 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("grease-table-mk03"):add_ingredient_unsafe {type = "item", name = "super-alloy", amount = 25}
+end
+
+if mods.pyhightech then
+    RECIPE("grease-table-mk03"):add_ingredient_unsafe {type = "item", name = "heavy-fermion", amount = 40}:add_ingredient_unsafe {type = "item", name = "re-magnet", amount = 30}:add_ingredient_unsafe {type = "item", name = "harmonic-absorber", amount = 10}
+end
+
 ITEM {
     type = "item",
     name = "grease-table-mk03",

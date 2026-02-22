@@ -15,6 +15,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("automated-screener-mk01"):replace_ingredient_unsafe("electric-engine-unit", "engine-unit"):replace_ingredient_unsafe("ground-borer", "electric-mining-drill"):replace_ingredient_unsafe("advanced-circuit", "electronic-circuit"):remove_ingredient("niobium-plate")
+end
+
 ITEM {
     type = "item",
     name = "automated-screener-mk01",

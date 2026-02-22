@@ -13,6 +13,14 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("gas-separator-mk03"):add_ingredient_unsafe {type = "item", name = "super-alloy", amount = 10}:add_ingredient_unsafe {type = "item", name = "sc-unit", amount = 2}
+end
+
+if mods.pyhightech then
+    RECIPE("gas-separator-mk03"):add_ingredient_unsafe {type = "item", name = "biopolymer", amount = 15}:add_ingredient_unsafe {type = "item", name = "carbon-aerogel", amount = 20}
+end
+
 ITEM {
     type = "item",
     name = "gas-separator-mk03",

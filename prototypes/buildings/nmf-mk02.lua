@@ -23,6 +23,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("nmf-mk02"):add_ingredient_unsafe {type = "item", name = "glass", amount = 50}:add_ingredient_unsafe {type = "item", name = "stainless-steel", amount = 25}
+end
+
 ITEM {
     type = "item",
     name = "nmf-mk02",

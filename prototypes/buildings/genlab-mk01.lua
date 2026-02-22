@@ -26,6 +26,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores and not mods["pyalienlife"] then
+    RECIPE("genlab-mk01"):add_ingredient_unsafe {type = "item", name = "glass", amount = 50}
+end
+
 ITEM {
     type = "item",
     name = "genlab-mk01",

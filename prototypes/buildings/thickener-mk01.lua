@@ -24,6 +24,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("thickener-mk01"):replace_ingredient_unsafe("electric-engine-unit", "engine-unit")
+end
+
 ITEM {
     type = "item",
     name = "thickener-mk01",

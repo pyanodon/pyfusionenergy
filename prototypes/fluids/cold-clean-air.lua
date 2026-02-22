@@ -15,6 +15,10 @@ RECIPE {
     main_product = "cold-clean-air",
 }
 
+if mods.pyrawores then
+    RECIPE("cold-clean-air"):replace_ingredient_unsafe("filtration-media", "biofilm")
+end
+
 FLUID {
     type = "fluid",
     name = "cold-clean-air",

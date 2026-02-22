@@ -24,6 +24,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("grease-table-mk01"):add_ingredient_unsafe {type = "item", name = "stainless-steel", amount = 20}
+end
+
 ITEM {
     type = "item",
     name = "grease-table-mk01",

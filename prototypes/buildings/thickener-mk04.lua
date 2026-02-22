@@ -23,6 +23,14 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("thickener-mk04"):add_ingredient_unsafe {type = "item", name = "nbti-alloy", amount = 10}:add_ingredient_unsafe {type = "item", name = "wall-shield", amount = 4}:add_ingredient_unsafe {type = "item", name = "control-unit", amount = 3}
+end
+
+if mods.pyhightech then
+    RECIPE("thickener-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "nems", amount = 5}:add_ingredient_unsafe {type = "item", name = "graphene-roll", amount = 15}
+end
+
 ITEM {
     type = "item",
     name = "thickener-mk04",

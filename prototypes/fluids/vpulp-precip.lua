@@ -5,8 +5,9 @@ RECIPE {
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "fluid", name = "vpulp5", amount = 100},
-        {type = "fluid", name = "water",  amount = 200}
+        {type = "fluid", name = "vpulp5",           amount = 100},
+        {type = "fluid", name = "water",            amount = 200},
+        {type = "item",  name = "sodium-bisulfate", amount = 1}
     },
     results = {
         {type = "fluid", name = "vpulp-precip",   amount = 100},
@@ -18,6 +19,10 @@ RECIPE {
     subgroup = "py-fusion-fluids",
     order = "m"
 }
+
+if mods.pyhightech then
+    RECIPE("vpulp-precip"):replace_ingredient_unsafe("water", {type = "fluid", name = "ammonia", amount = 200})
+end
 
 FLUID {
     type = "fluid",

@@ -68,6 +68,14 @@ RECIPE {
     },
 }
 
+if mods.pyrawores then
+    RECIPE("jig-mk03"):add_ingredient_unsafe {type = "item", name = "super-alloy", amount = 20}:add_ingredient_unsafe {type = "item", name = "molybdenum-plate", amount = 15}
+end
+
+if mods.pyhightech then
+    RECIPE("jig-mk03"):add_ingredient_unsafe {type = "item", name = "heavy-fermion", amount = 20}:add_ingredient_unsafe {type = "item", name = "superconductor", amount = 10}
+end
+
 ITEM {
     type = "item",
     name = "jig-mk03",

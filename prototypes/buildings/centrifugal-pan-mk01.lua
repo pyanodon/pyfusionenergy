@@ -70,6 +70,14 @@ RECIPE {
     },
 }
 
+if mods.pyrawores then
+    RECIPE("centrifugal-pan-mk01"):replace_ingredient_unsafe("advanced-circuit", "electronic-circuit"):replace_ingredient_unsafe("pipe", "niobium-pipe"):add_ingredient_unsafe {type = "item", name = "titanium-plate", amount = 20}
+end
+
+if mods.pyhightech then
+    RECIPE("centrifugal-pan-mk01"):replace_ingredient_unsafe("advanced-circuit", "electronic-circuit")
+end
+
 ITEM {
     type = "item",
     name = "centrifugal-pan-mk01",

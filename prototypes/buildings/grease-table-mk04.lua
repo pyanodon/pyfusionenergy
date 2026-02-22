@@ -23,6 +23,10 @@ RECIPE {
     }
 }
 
+if mods.pyhightech then
+    RECIPE("grease-table-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "superconductor-servomechanims", amount = 5}:add_ingredient_unsafe {type = "item", name = "nv-center", amount = 2}
+end
+
 ITEM {
     type = "item",
     name = "grease-table-mk04",

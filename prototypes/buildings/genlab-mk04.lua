@@ -23,6 +23,10 @@ RECIPE {
     }
 }
 
+if mods.pyhightech then
+    RECIPE("genlab-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "nems", amount = 5}:add_ingredient_unsafe {type = "item", name = "graphene-roll", amount = 15}
+end
+
 ITEM {
     type = "item",
     name = "genlab-mk04",

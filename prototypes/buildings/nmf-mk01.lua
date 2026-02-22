@@ -18,13 +18,17 @@ RECIPE {
         {type = "item", name = "fast-transport-belt", amount = 35},
         {type = "item", name = "advanced-circuit",    amount = 40},
         {type = "item", name = "steel-plate",         amount = 50},
-        {type = "item", name = "niobium-pipe",        amount = 15}         --pyindustry niobium-pipe
+        {type = "item", name = "niobium-pipe",        amount = 15} --pyindustry niobium-pipe
         --add glass
     },
     results = {
         {type = "item", name = "nmf-mk01", amount = 1}
     }
 }
+
+if mods.pyrawores then
+    RECIPE("nmf-mk01"):add_ingredient_unsafe {type = "item", name = "glass", amount = 50}:replace_ingredient_unsafe("fast-transport-belt", "transport-belt"):replace_ingredient("advanced-circuit", "electronic-circuit")
+end
 
 ITEM {
     type = "item",
