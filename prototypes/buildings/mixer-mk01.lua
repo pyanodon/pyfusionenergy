@@ -21,6 +21,11 @@ end
 
 if mods.pyhightech then
     RECIPE("mixer-mk01"):add_ingredient {type = "item", name = "electronic-circuit", amount = 10}
+    RECIPE("mixer-mk01"):remove_unlock("advanced-mining-facilities"):add_unlock("mibc")
+end
+
+if mods["pypetroleumhandling"] then
+    RECIPE("mixer-mk01"):remove_unlock("mibc"):add_unlock("advanced-mining-facilities")
 end
 
 ITEM {
