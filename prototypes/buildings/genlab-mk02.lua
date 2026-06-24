@@ -48,7 +48,6 @@ ENTITY {
     dying_explosion = "medium-explosion",
     collision_box = {{-3.2, -3.2}, {3.2, 3.2}},
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
-    forced_symmetry = "diagonal-pos",
     module_slots = 2,
     allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
     crafting_categories = {"genlab"},
@@ -136,7 +135,7 @@ ENTITY {
             production_type = "output",
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {-2.0, -4.25}, nil, nil, pipe),
             pipe_covers = py.pipe_covers(true, true, true, true),
-            volume = 1000,
+            volume = 100,
             pipe_connections = {{flow_direction = "output", position = {-2.0, -3.0}, direction = defines.direction.north}},
             priority = "extra-high"
         },
@@ -144,7 +143,7 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {-2.00, -4.25}, nil, nil, pipe),
             pipe_covers = py.pipe_covers(true, true, true, true),
-            volume = 1000,
+            volume = 100,
             pipe_connections = {{flow_direction = "input", position = {2.0, 3.0}, direction = defines.direction.south}},
             priority = "extra-high"
         },
@@ -153,6 +152,5 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/genlab.ogg", volume = 1.2},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/genlab.ogg", volume = 0.3},
-        apparent_volume = 2.5
     }
 }

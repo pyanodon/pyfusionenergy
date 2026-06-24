@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "organic-vanadate",
-    category = "mixer",
+    categories = {"mixer"},
     enabled = false,
     energy_required = 15,
     ingredients = {

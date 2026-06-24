@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 3.1.0
+Date: ???
+  Changes:
+    - Updated to Factorio 2.1
+    - Removed unnecessary prototype values to clear up the log
+    - Updated vector_to_place_result so items shouldn't drop on the floor. Resolves https://github.com/pyanodon/pybugreports/issues/1486
+    - Fixed that many buildings did not have certain pipe covers rendered
+    - Reduced most fluidbox sizes from 1000 to 100
+---------------------------------------------------------------------------------------------------
 Version: 3.0.18
 Date: ????
   Changes:

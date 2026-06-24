@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "vpulp5",
-    category = "agitator",
+    categories = {"agitator"},
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -10,7 +10,7 @@ RECIPE {
     },
     results = {
         {type = "fluid", name = "vpulp5",         amount = 100},
-        {type = "item",  name = "vanadium-oxide", amount = 1,  probability = 0.2}
+        {type = "item",  name = "vanadium-oxide", amount = 1,  independent_probability = 0.2}
     },
     main_product = "vpulp5",
     icon = "__pyfusionenergygraphics__/graphics/icons/agitation-vpulp5.png",
