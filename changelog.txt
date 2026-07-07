@@ -8,6 +8,7 @@ Date: ???
     - Fixed that many buildings did not have certain pipe covers rendered
     - Reduced most fluidbox sizes from 1000 to 100
     - Added the following entities to be hidden when visibility of tall entities is toggled: gas processing unit
+    - German locale updates (thanks, Spunk42!)
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.18
 Date: ????
