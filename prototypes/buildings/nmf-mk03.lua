@@ -47,7 +47,6 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-3.2, -3.2}, {3.2, 3.2}},
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
-    forced_symmetry = "diagonal-pos",
     module_slots = 3,
     allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
     crafting_categories = {"nmf"},
@@ -110,28 +109,28 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {0.103, -4.05}, nil, nil, pipes),
             pipe_covers = py.pipe_covers(false, true, false, false),
-            volume = 1000,
+            volume = 100,
             pipe_connections = {{flow_direction = "input", position = {0.0, 3.0}, direction = defines.direction.south}}
         },
         {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {0.103, -4.05}, nil, nil, pipes),
             pipe_covers = py.pipe_covers(false, true, false, false),
-            volume = 1000,
+            volume = 100,
             pipe_connections = {{flow_direction = "input", position = {-3.0, 0.0}, direction = defines.direction.west}}
         },
         {
             production_type = "output",
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {0.103, -4.05}, nil, nil, pipes),
             pipe_covers = py.pipe_covers(false, true, false, false),
-            volume = 1000,
+            volume = 100,
             pipe_connections = {{flow_direction = "output", position = {0.0, -3.0}, direction = defines.direction.north}}
         },
         {
             production_type = "output",
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {0.103, -4.05}, nil, nil, pipes),
             pipe_covers = py.pipe_covers(false, true, false, false),
-            volume = 1000,
+            volume = 100,
             pipe_connections = {{flow_direction = "output", position = {3.0, 0.0}, direction = defines.direction.east}}
         },
     },
@@ -139,6 +138,5 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/nmf.ogg", volume = 1.3},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/nmf.ogg", volume = 0.3},
-        apparent_volume = 2.5
     }
 }

@@ -96,7 +96,6 @@ ENTITY {
     dying_explosion = "medium-explosion",
     collision_box = {{-3.8, -3.8}, {3.8, 3.8}},
     selection_box = {{-4.0, -4.0}, {4.0, 4.0}},
-    forced_symmetry = "diagonal-pos",
     module_slots = 1,
     allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
     crafting_categories = {"jig"},
@@ -165,13 +164,13 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", {1.8, 4.3}, {-1.2, -4.65}, {4.8, -1.7}, {-4.27, 1.3}, pipe_left),
             pipe_covers = py.pipe_covers(false, true, false, false),
-            volume = 1000,
+            volume = 100,
             pipe_connections = {{flow_direction = "input", position = {-1.5, -3.5}, direction = defines.direction.north}}
         },
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, false, false),
-            volume = 1000,
+            volume = 100,
             pipe_picture = py.pipe_pictures("assembling-machine-2", {1.8, 4.3}, {-1.2, -4.65}, {4.8, -1.7}, {-4.27, 1.3}, pipe_left),
             pipe_connections = {{flow_direction = "output", position = {1.5, 3.5}, direction = defines.direction.south}}
         },
@@ -179,13 +178,13 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", {-1.2, 4.3}, {1.8, -4.65}, {4.8, 1.3}, {-4.27, -1.8}, pipe_right),
             pipe_covers = py.pipe_covers(false, true, false, false),
-            volume = 1000,
+            volume = 100,
             pipe_connections = {{flow_direction = "input", position = {1.5, -3.5}, direction = defines.direction.north}}
         },
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, false, false),
-            volume = 1000,
+            volume = 100,
             pipe_picture = py.pipe_pictures("assembling-machine-2", {-1.2, 4.3}, {1.8, -4.65}, {4.8, 1.3}, {-4.27, -1.8}, pipe_right),
             pipe_connections = {{flow_direction = "output", position = {-1.5, 3.5}, direction = defines.direction.south}}
         },
@@ -194,6 +193,5 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/jig.ogg", volume = 1.2},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/jig.ogg", volume = 0.3},
-        apparent_volume = 2.5
     }
 }

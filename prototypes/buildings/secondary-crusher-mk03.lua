@@ -97,6 +97,5 @@ ENTITY {
     impact_category = "metal-large",
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/secondary-crusher.ogg", volume = 1.1},
-        apparent_volume = 2.5
     }
 }

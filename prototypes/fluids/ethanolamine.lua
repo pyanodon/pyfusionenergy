@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "ethanolamine",
-    category = "bio-reactor",
+    categories = {"bio-reactor"},
     enabled = false,
     energy_required = 15,
     ingredients = {

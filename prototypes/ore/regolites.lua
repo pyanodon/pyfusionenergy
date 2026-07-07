@@ -69,7 +69,6 @@ ENTITY {
     tree_removal_probability = 0.7,
     tree_removal_max_distance = 32 * 32,
     autoplace = {
-        name = "regolites",
         order = "b-regolites",
         control = "regolites",
         -- We return the chance of spawning on any given tile here

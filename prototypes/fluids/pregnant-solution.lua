@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "pregnant-solution",
-    category = "hydrocyclone",
+    categories = {"hydrocyclone"},
     enabled = false,
     energy_required = 10,
     ingredients = {

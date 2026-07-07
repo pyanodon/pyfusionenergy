@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "grease",
-    category = "fts-reactor",
+    categories = {"fts-reactor"},
     enabled = false,
     energy_required = 6,
     ingredients = {

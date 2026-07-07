@@ -50,7 +50,6 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-3.4, -3.4}, {3.4, 3.4}},
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
-    forced_symmetry = "diagonal-pos",
     module_slots = 2,
     allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
     crafting_categories = {"grease"},
@@ -131,27 +130,27 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.65, -4.95}, {0.5, 0.0}, {-0.5, 0.0}, pipe_bottom),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 1000,
+            volume = 100,
             pipe_connections = {{flow_direction = "input", position = {-2.0, -3.0}, direction = defines.direction.north}}
         },
         {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, nil, {0.5, 0.0}, {-0.5, 0.0}, pipe_bottom),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 1000,
+            volume = 100,
             pipe_connections = {{flow_direction = "input", position = {0.0, -3.0}, direction = defines.direction.north}}
         },
         {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, nil, {0.5, 0.0}, {-0.5, 0.0}, pipe_bottom),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 1000,
+            volume = 100,
             pipe_connections = {{flow_direction = "input", position = {2.0, -3.0}, direction = defines.direction.north}}
         },
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 1000,
+            volume = 100,
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.65, -4.95}, {0.5, 0.0}, {-0.5, 0.0}, pipe_bottom),
             pipe_connections = {{flow_direction = "output", position = {0.0, 3.0}, direction = defines.direction.south}}
         }
@@ -162,6 +161,5 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/grease-table.ogg", volume = 1.0},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/grease-table.ogg", volume = 0.3},
-        apparent_volume = 2.5
     }
 }
