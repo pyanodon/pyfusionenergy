@@ -9,7 +9,7 @@
     "description": "Adds expensive and complicated fusion energy production chains to Factorio. Create huge amounts of energy at the cost of a massive initial investment.",
     "dependencies": [
         "pycoalprocessing >= 3.1.1",
-        "~ pyfusionenergygraphics >= 3.1.1",
+        "~ pyfusionenergygraphics >= 3.1.0",
         "! wret-beacon-rebalance-mod",
         "! BigBags",
         "! ResearchFog",
