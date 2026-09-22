@@ -8,6 +8,8 @@
     "homepage": "https://forums.factorio.com/viewtopic.php?f=94&t=51490&sid=f5d85f769fccb0ac398bf4036f829064",
     "description": "Adds expensive and complicated fusion energy production chains to Factorio. Create huge amounts of energy at the cost of a massive initial investment.",
     "dependencies": [
+        "base >= 2.1.20",
+        "~ pypostprocessing >= 3.1.5",
         "pycoalprocessing >= 3.1.1",
         "~ pyfusionenergygraphics >= 3.1.0",
         "! wret-beacon-rebalance-mod",
