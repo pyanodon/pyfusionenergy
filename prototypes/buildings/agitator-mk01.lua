@@ -141,5 +141,7 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/agitator.ogg", volume = 1.1},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/agitator.ogg", volume = 0.3},
-    }
+    },
+    circuit_connector = circuit_connector_definitions["agitator"],
+    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
 }
