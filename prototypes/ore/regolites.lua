@@ -1,3 +1,4 @@
+---@diagnostic disable-next-line: need-check-nil
 data.raw.planet.nauvis.map_gen_settings.autoplace_controls["regolites"] = {}
 data.raw.planet.nauvis.map_gen_settings.autoplace_settings.entity.settings["regolites"] = {}
 

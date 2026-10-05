@@ -1,8 +1,8 @@
 require "prototypes/updates/base-updates"
 require "prototypes/updates/pycoalprocessing-updates"
 
-ITEM("production-science-pack", "tool").icon = "__pyfusionenergygraphics__/graphics/icons/production-science-pack.png"
-ITEM("production-science-pack", "tool"):set("icon_size", 64)
+ITEM("production-science-pack").icon = "__pyfusionenergygraphics__/graphics/icons/production-science-pack.png"
+ITEM("production-science-pack"):set("icon_size", 64)
 
 local recipes_list =
 {
