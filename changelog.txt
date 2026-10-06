@@ -37,7 +37,7 @@ Date: 2026-07-07
     - German locale updates (thanks, Spunk42!)
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.18
-Date: ????
+Date: Unreleased
   Changes:
     - Buffed fuel rod steam production to 2000C. Resolves https://github.com/pyanodon/pybugreports/issues/1341
     - Updated Russian locale courtesy of @Astorin
