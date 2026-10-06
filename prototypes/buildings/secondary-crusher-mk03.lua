@@ -97,5 +97,7 @@ ENTITY {
     impact_category = "metal-large",
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/secondary-crusher.ogg", volume = 1.1},
-    }
+    },
+    circuit_connector = circuit_connector_definitions["secondary-crusher"],
+    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
 }

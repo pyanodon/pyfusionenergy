@@ -192,5 +192,7 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/jig.ogg", volume = 1.2},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/jig.ogg", volume = 0.3},
-    }
+    },
+    circuit_connector = circuit_connector_definitions["jig"],
+    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
 }

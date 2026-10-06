@@ -116,5 +116,7 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/vacuum-pump.ogg", volume = 0.8},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/vacuum-pump.ogg", volume = 0.3},
-    }
+    },
+    circuit_connector = circuit_connector_definitions["vacuum-pump"],
+    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
 }
