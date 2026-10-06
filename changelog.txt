@@ -3,6 +3,7 @@ Version: 3.1.5
 Date: ???
   Changes:
     - Updated production pack tech icon to match the in game item
+    - Updated circuit connector definitions for relevant buildings (thanks, Spunk42!)
 ---------------------------------------------------------------------------------------------------
 Version: 3.1.4
 Date: 2026-09-22
