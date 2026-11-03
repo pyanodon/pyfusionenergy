@@ -3,7 +3,6 @@ data:extend {
         type = "item-group",
         name = "fusion-energy",
         order = "u",
-        inventory_order = "u",
         icon = "__pyfusionenergygraphics__/graphics/technology/item-group.png",
         icon_size = 64
     },

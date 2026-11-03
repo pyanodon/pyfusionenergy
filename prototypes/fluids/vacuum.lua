@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "vacuum",
-    category = "vacuum",
+    categories = {"vacuum"},
     enabled = false,
     energy_required = 2,
     ingredients = {},

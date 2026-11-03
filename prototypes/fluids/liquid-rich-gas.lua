@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "liquid-rich-gas",
-    category = "compressor",
+    categories = {"compressor"},
     enabled = false,
     energy_required = 2,
     ingredients = {

@@ -53,7 +53,7 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-    forced_symmetry = "diagonal-pos",
+    use_mirroring = true,
     module_slots = 4,
     allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
     crafting_categories = {"vacuum"},
@@ -118,6 +118,7 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/vacuum-pump.ogg", volume = 0.8},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/vacuum-pump.ogg", volume = 0.3},
-        apparent_volume = 2.5
-    }
+    },
+    circuit_connector = circuit_connector_definitions["vacuum-pump"],
+    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
 }

@@ -43,7 +43,7 @@ ENTITY {
     dying_explosion = "medium-explosion",
     collision_box = {{-3.2, -3.2}, {3.2, 3.2}},
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
-    forced_symmetry = "diagonal-pos",
+    use_mirroring = true,
     module_slots = 2,
     allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
     crafting_categories = {"gas-separator"},
@@ -56,6 +56,7 @@ ENTITY {
         },
     },
     energy_usage = "950kW",
+    tall = true,
     graphics_set = {
         working_visualisations = {
             {
@@ -137,7 +138,7 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
             pipe_covers = py.pipe_covers(true, true, true, true),
-            volume = 1000,
+            volume = 100,
             pipe_connections = {{flow_direction = "input", position = {-1.0, 3.0}, direction = defines.direction.south}}
         },
         --South2
@@ -145,7 +146,7 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
             pipe_covers = py.pipe_covers(true, true, true, true),
-            volume = 1000,
+            volume = 100,
             pipe_connections = {{flow_direction = "input", position = {1.0, 3.0}, direction = defines.direction.south}}
         },
     },
@@ -153,6 +154,7 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/gas-separator.ogg"},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/gas-separator.ogg", volume = 0.3},
-        apparent_volume = 2.5
-    }
+    },
+    circuit_connector = circuit_connector_definitions["gas-seperator"],
+    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
 }
