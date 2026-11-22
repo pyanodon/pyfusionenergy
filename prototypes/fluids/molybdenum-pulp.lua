@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "molybdenum-pulp",
-    categories = {"thickener"},
+    category = "thickener",
     enabled = false,
     energy_required = 10,
     ingredients = {

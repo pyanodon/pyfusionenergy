@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "vpulp2",
-    categories = {"agitator"},
+    category = "agitator",
     enabled = false,
     energy_required = 5,
     ingredients = {

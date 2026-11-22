@@ -57,8 +57,9 @@ ENTITY {
         },
     },
     energy_usage = "770kW",
+    mining_power = 4,
     resource_searching_radius = 0.49,
-    vector_to_place_result = {0, -3.8},
+    vector_to_place_result = {0, -3.65},
     radius_visualisation_picture = {
         filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-radius-visualization.png",
         width = 12,
@@ -103,5 +104,6 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/regolite-mine.ogg", volume = 1.0},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/regolite-mine.ogg", volume = 0.3},
+        apparent_volume = 2.5
     }
 }

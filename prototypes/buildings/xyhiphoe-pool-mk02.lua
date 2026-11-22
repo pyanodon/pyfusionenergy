@@ -39,7 +39,7 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-3.8, -3.8}, {3.8, 3.8}},
     selection_box = {{-4.0, -4.0}, {4.0, 4.0}},
-    use_mirroring = true,
+    forced_symmetry = "diagonal-pos",
     module_slots = 2,
     allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
     crafting_categories = {"xyhiphoe"},
@@ -139,7 +139,7 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {0.0, -0.90}, {0.5, 0.0}, {-0.5, 0.0}),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {
                 {flow_direction = "input", position = {-1.5, -3.5}, direction = defines.direction.north}
             }
@@ -148,7 +148,7 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {0.0, -0.90}, {0.5, 0.0}, {-0.5, 0.0}),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {
                 {flow_direction = "input", position = {1.5, -3.5}, direction = defines.direction.north}
             }
@@ -158,7 +158,6 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/xyhiphoe-pool.ogg", volume = 1.3},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/xyhiphoe-pool.ogg", volume = 0.3},
-    },
-    circuit_connector = circuit_connector_definitions["xyhiphoe-pool"],
-    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
+        apparent_volume = 2.5
+    }
 }

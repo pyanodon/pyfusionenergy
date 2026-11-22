@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "vanabins",
-    categories = {"quenching-tower"},
+    category = "quenching-tower",
     enabled = false,
     energy_required = 4,
     ingredients = {

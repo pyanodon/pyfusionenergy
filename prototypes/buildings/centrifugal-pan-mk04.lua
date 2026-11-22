@@ -26,12 +26,12 @@ local pipe_left = {
 }
 
 local pipe_right = {
-    -- north = {
-    --     filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/top-right.png",
-    --     priority = "low",
-    --     width = 320,
-    --     height = 336
-    -- },
+    north = {
+        filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/top-right.png",
+        priority = "low",
+        width = 320,
+        height = 336
+    },
     south = {
         filename = "__pyfusionenergygraphics__/graphics/entity/centrifugal-pan/bottom-left.png",
         priority = "high",
@@ -101,7 +101,7 @@ ENTITY {
     dying_explosion = "medium-explosion",
     collision_box = {{-4.8, -4.8}, {4.8, 4.8}},
     selection_box = {{-5.0, -5.0}, {5.0, 5.0}},
-    use_mirroring = true,
+    forced_symmetry = "diagonal-pos",
     module_slots = 4,
     allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
     crafting_categories = {"pan"},
@@ -155,30 +155,30 @@ ENTITY {
     fluid_boxes = {
         {
             production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", {2.5, 5.25}, {-1.5, -5.7}, {5.5, -2.5}, {-5.5, 2.4}, pipe_left),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", {2.5, 5.3}, {-1.5, -5.7}, {5.5, -2.5}, {-5.5, 2.4}, pipe_left),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {-2.5, -4.5}, direction = defines.direction.north}}
         },
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 100,
-            pipe_picture = py.pipe_pictures("assembling-machine-2", {2.5, 5.25}, {-1.5, -5.7}, {5.5, -2.5}, {-5.5, 2.4}, pipe_left),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", {2.5, 5.3}, {-1.5, -5.7}, {5.5, -2.5}, {-5.5, 2.4}, pipe_left),
             pipe_connections = {{flow_direction = "output", position = {2.5, 4.5}, direction = defines.direction.south}}
         },
         {
             production_type = "input",
-            pipe_picture = py.pipe_pictures("assembling-machine-2", {-1.5, 5.25}, {2.5, -5.7}, {5.5, 2.5}, {-5.5, -2.5}, pipe_right),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {2.5, -5.7}, {5.5, 2.5}, {-5.5, -2.5}, pipe_right),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {2.5, -4.5}, direction = defines.direction.north}}
         },
         {
             production_type = "output",
             pipe_covers = py.pipe_covers(false, true, true, true),
             volume = 100,
-            pipe_picture = py.pipe_pictures("assembling-machine-2", {-1.5, 5.25}, {2.5, -5.7}, {5.5, 2.5}, {-5.5, -2.5}, pipe_right),
+            pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {2.5, -5.7}, {5.5, 2.5}, {-5.5, -2.5}, pipe_right),
             pipe_connections = {{flow_direction = "output", position = {-2.5, 4.5}, direction = defines.direction.south}}
         },
     },
@@ -186,7 +186,6 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/centrifugal-pan.ogg"},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/centrifugal-pan.ogg", volume = 0.3},
-    },
-    circuit_connector = circuit_connector_definitions["centrifugal-pan"],
-    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
+        apparent_volume = 2.5
+    }
 }

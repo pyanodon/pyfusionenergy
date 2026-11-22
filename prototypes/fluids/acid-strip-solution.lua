@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "acid-strip-solution",
-    categories = {"methanol"},
+    category = "methanol",
     enabled = false,
     energy_required = 12,
     ingredients = {

@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "diamond-concentrate",
-    categories = {"pan"},
+    category = "pan",
     enabled = false,
     energy_required = 15,
     ingredients = {

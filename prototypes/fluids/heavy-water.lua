@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "heavy-water",
-    categories = {"quenching-tower"},
+    category = "quenching-tower",
     enabled = false,
     energy_required = 6,
     ingredients = {

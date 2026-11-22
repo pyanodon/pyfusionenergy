@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "pressured-water",
-    categories = {"vacuum"},
+    category = "vacuum",
     enabled = false,
     energy_required = 2,
     ingredients = {

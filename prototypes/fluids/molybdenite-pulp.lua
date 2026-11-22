@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "molybdenite-pulp",
-    categories = {"agitator"},
+    category = "agitator",
     enabled = false,
     energy_required = 5,
     ingredients = {

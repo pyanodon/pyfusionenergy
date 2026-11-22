@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "diamond-tailings",
-    categories = {"pan"},
+    category = "pan",
     enabled = false,
     energy_required = 25,
     ingredients = {

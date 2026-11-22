@@ -651,7 +651,7 @@ ITEM {
     name = "mox-fuel-cell",
     icon = "__pyfusionenergygraphics__/graphics/icons/mox-fuel-cell.png",
     icon_size = 32,
-    fuel_categories = {"nuclear"},
+    fuel_category = "nuclear",
     burnt_result = "used-up-mox-fuel-cell",
     fuel_value = "20GJ",
     fuel_glow_color = {0, 0, 1, 1},
