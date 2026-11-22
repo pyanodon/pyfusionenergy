@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "vanadium-concentrate",
-    categories = {"mixer"},
+    category = "mixer",
     enabled = false,
     energy_required = 15,
     ingredients = {

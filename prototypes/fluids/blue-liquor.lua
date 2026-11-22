@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "blue-liquor",
-    categories = {"thickener"},
+    category = "thickener",
     enabled = false,
     energy_required = 5,
     ingredients = {

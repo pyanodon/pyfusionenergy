@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "vpulp2",
-    categories = {"agitator"},
+    category = "agitator",
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -17,6 +17,10 @@ RECIPE {
     subgroup = "py-fusion-fluids",
     order = "k"
 }
+
+if mods.pyrawores then
+    RECIPE("vpulp2"):replace_ingredient_unsafe("crushed-iron", "iron-ore-dust")
+end
 
 FLUID {
     type = "fluid",

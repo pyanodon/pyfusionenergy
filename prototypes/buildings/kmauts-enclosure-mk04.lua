@@ -14,6 +14,10 @@ RECIPE {
     }
 }
 
+if mods.pyhightech then
+    RECIPE("kmauts-enclosure-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "superconductor-servomechanims", amount = 5}:add_ingredient_unsafe {type = "item", name = "quantum-dots", amount = 5}
+end
+
 ITEM {
     type = "item",
     name = "kmauts-enclosure-mk04",
@@ -225,7 +229,6 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/kmauts-enclosure.ogg", volume = 1.5},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/kmauts-enclosure.ogg", volume = 0.3},
-    },
-    circuit_connector = circuit_connector_definitions["kmauts-enclosure"],
-    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
+        apparent_volume = 2.5
+    }
 }

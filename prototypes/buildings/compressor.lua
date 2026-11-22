@@ -4,7 +4,7 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {type = "item", name = "pipe",            amount = 20}, --pyindustry niobium-pipe
+        {type = "item", name = "niobium-pipe",    amount = 20}, --pyindustry niobium-pipe
         {type = "item", name = "evaporator",      amount = 1},
         {type = "item", name = "steam-engine",    amount = 3},
         {type = "item", name = "steel-plate",     amount = 30},
@@ -14,6 +14,10 @@ RECIPE {
         {type = "item", name = "compressor-mk01", amount = 1}
     }
 }
+
+if mods.pyrawores then
+    RECIPE("compressor-mk01"):add_ingredient_unsafe {type = "item", name = "titanium-plate", amount = 20}
+end
 
 local function working_visualizations(i)
     local working_visualizations = {
@@ -72,7 +76,7 @@ for i = 1, 4 do
         dying_explosion = "medium-explosion",
         collision_box = {{-3.2, -3.2}, {3.2, 3.2}},
         selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
-        use_mirroring = true,
+        forced_symmetry = "diagonal-pos",
         module_slots = i,
         allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
         crafting_categories = {"compressor"},
@@ -130,6 +134,7 @@ for i = 1, 4 do
                 pipe_covers = py.pipe_covers(true, true, true, true),
                 volume = 100,
                 pipe_connections = {{flow_direction = "output", position = {2.0, -3.0}, direction = defines.direction.north}},
+                priority = "extra-high"
             },
             --North2
             {
@@ -152,32 +157,34 @@ for i = 1, 4 do
                 production_type = "input",
                 pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
                 pipe_covers = py.pipe_covers(true, true, true, true),
-                volume = 100,
+                volume = 1000,
                 pipe_connections = {{flow_direction = "input", position = {-2.0, 3.0}, direction = defines.direction.south}},
+                priority = "extra-high"
             },
             --South2
             {
                 production_type = "input",
                 pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
                 pipe_covers = py.pipe_covers(true, true, true, true),
-                volume = 100,
+                volume = 1000,
                 pipe_connections = {{flow_direction = "input", position = {2.0, 3.0}, direction = defines.direction.south}},
+                priority = "extra-high"
             },
             --South3
             {
                 production_type = "input",
                 pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
                 pipe_covers = py.pipe_covers(true, true, true, true),
-                volume = 100,
+                volume = 1000,
                 pipe_connections = {{flow_direction = "input", position = {0.0, 3.0}, direction = defines.direction.south}},
+                priority = "extra-high"
             },
         },
         impact_category = "metal-large",
         working_sound = {
             sound = {filename = "__pyfusionenergygraphics__/sounds/compressor.ogg", volume = 0.7},
-        },
-        circuit_connector = circuit_connector_definitions["compressor"],
-        circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
+            apparent_volume = 2.5
+        }
     }
 end
 
@@ -197,6 +204,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("compressor-mk02"):add_ingredient_unsafe {type = "item", name = "titanium-plate", amount = 10}:add_ingredient_unsafe {type = "item", name = "stainless-steel", amount = 20}
+end
+
 RECIPE {
     type = "recipe",
     name = "compressor-mk03",
@@ -212,6 +223,14 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("compressor-mk03"):add_ingredient_unsafe {type = "item", name = "super-alloy", amount = 20}:add_ingredient_unsafe {type = "item", name = "molybdenum-plate", amount = 15}
+end
+
+if mods.pyhightech then
+    RECIPE("compressor-mk03"):add_ingredient_unsafe {type = "item", name = "biopolymer", amount = 40}:add_ingredient_unsafe {type = "item", name = "carbon-nanotube", amount = 30}:add_ingredient_unsafe {type = "item", name = "graphene-roll", amount = 10}
+end
+
 RECIPE {
     type = "recipe",
     name = "compressor-mk04",
@@ -224,3 +243,11 @@ RECIPE {
         {type = "item", name = "compressor-mk04", amount = 1}
     }
 }
+
+if mods.pyrawores then
+    RECIPE("compressor-mk04"):add_ingredient_unsafe {type = "item", name = "nbti-alloy", amount = 10}:add_ingredient_unsafe {type = "item", name = "wall-shield", amount = 4}:add_ingredient_unsafe {type = "item", name = "control-unit", amount = 3}
+end
+
+if mods.pyhightech then
+    RECIPE("compressor-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "superconductor-servomechanims", amount = 5}:add_ingredient_unsafe {type = "item", name = "nv-center", amount = 2}
+end

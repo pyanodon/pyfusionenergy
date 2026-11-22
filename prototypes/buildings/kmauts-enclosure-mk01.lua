@@ -4,7 +4,7 @@ RECIPE {
     energy_required = 1,
     enabled = false,
     ingredients = {
-        {type = "item", name = "pipe",            amount = 10}, --pyindustry niobium-pipe
+        {type = "item", name = "niobium-pipe",    amount = 10},         --pyindustry niobium-pipe
         {type = "item", name = "gasifier",        amount = 2},
         {type = "item", name = "nexelit-plate",   amount = 30},
         {type = "item", name = "steel-plate",     amount = 40},
@@ -227,7 +227,6 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/kmauts-enclosure.ogg", volume = 1.5},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/kmauts-enclosure.ogg", volume = 0.3},
-    },
-    circuit_connector = circuit_connector_definitions["kmauts-enclosure"],
-    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
+        apparent_volume = 2.5
+    }
 }

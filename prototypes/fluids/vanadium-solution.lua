@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "vanadium-solution",
-    categories = {"evaporator"},
+    category = "evaporator",
     enabled = false,
     energy_required = 10,
     ingredients = {

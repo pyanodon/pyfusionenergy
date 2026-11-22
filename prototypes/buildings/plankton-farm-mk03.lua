@@ -13,6 +13,10 @@ RECIPE {
     }
 }
 
+if mods.pyhightech then
+    RECIPE("plankton-farm-mk03"):add_ingredient_unsafe {type = "item", name = "heavy-fermion", amount = 20}:add_ingredient_unsafe {type = "item", name = "superconductor", amount = 10}
+end
+
 ITEM {
     type = "item",
     name = "plankton-farm-mk03",
@@ -24,6 +28,10 @@ ITEM {
     place_result = "plankton-farm-mk03",
     stack_size = 10
 }
+
+if mods.pyrawores then
+    RECIPE("plankton-farm-mk03"):add_ingredient_unsafe {type = "item", name = "super-alloy", amount = 5}:add_ingredient_unsafe {type = "item", name = "nbti-alloy", amount = 20}
+end
 
 ENTITY {
     type = "assembling-machine",
@@ -38,7 +46,7 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-3.2, -3.2}, {3.2, 3.2}},
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
-    use_mirroring = true,
+    forced_symmetry = "diagonal-pos",
     module_slots = 3,
     allowed_effects = {"consumption", "speed", "pollution", "productivity"},
     crafting_categories = {"plankton"},
@@ -110,7 +118,7 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {0.0, -0.93}, {0.5, 0.0}, {-0.5, 0.0}),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {
                 {flow_direction = "input", position = {1.0, -3.0}, direction = defines.direction.north}
             }
@@ -119,7 +127,7 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {0.0, -0.93}, {0.5, 0.0}, {-0.5, 0.0}),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {
                 {flow_direction = "input", position = {-1.0, -3.0}, direction = defines.direction.north}
             }
@@ -129,8 +137,7 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/plankton-farm.ogg", volume = 1.3},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/plankton-farm.ogg", volume = 0.3},
+        apparent_volume = 2.5
     },
-    next_upgrade = "plankton-farm-mk04",
-    circuit_connector = circuit_connector_definitions["plankton-farm"],
-    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
+    next_upgrade = "plankton-farm-mk04"
 }

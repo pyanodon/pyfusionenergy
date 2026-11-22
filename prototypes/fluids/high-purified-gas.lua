@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "high-purified-gas",
-    categories = {"fluid-separator"},
+    category = "fluid-separator",
     enabled = false,
     energy_required = 10,
     ingredients = {

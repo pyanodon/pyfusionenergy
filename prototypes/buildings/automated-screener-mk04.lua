@@ -14,6 +14,14 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("automated-screener-mk04"):add_ingredient_unsafe {type = "item", name = "wall-shield", amount = 5}:add_ingredient_unsafe {type = "item", name = "science-coating", amount = 2}:add_ingredient_unsafe {type = "item", name = "control-unit", amount = 5}
+end
+
+if mods.pyhightech then
+    RECIPE("automated-screener-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "superconductor-servomechanims", amount = 5}:add_ingredient_unsafe {type = "item", name = "parametric-oscilator", amount = 2}
+end
+
 ITEM {
     type = "item",
     name = "automated-screener-mk04",
@@ -118,7 +126,6 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/automated-screener.ogg", volume = 1.3},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/automated-screener.ogg", volume = 0.3},
-    },
-    circuit_connector = circuit_connector_definitions["automated-screener"],
-    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
+        apparent_volume = 2.5
+    }
 }

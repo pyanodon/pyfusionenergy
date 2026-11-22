@@ -23,6 +23,14 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("thickener-mk04"):add_ingredient_unsafe {type = "item", name = "nbti-alloy", amount = 10}:add_ingredient_unsafe {type = "item", name = "wall-shield", amount = 4}:add_ingredient_unsafe {type = "item", name = "control-unit", amount = 3}
+end
+
+if mods.pyhightech then
+    RECIPE("thickener-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "nems", amount = 5}:add_ingredient_unsafe {type = "item", name = "graphene-roll", amount = 15}
+end
+
 ITEM {
     type = "item",
     name = "thickener-mk04",
@@ -48,7 +56,7 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-3.2, -3.2}, {3.2, 3.2}},
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
-    use_mirroring = true,
+    forced_symmetry = "diagonal-pos",
     module_slots = 4,
     allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
     crafting_categories = {"thickener"},
@@ -112,14 +120,14 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {1.19, -4.4}, nil, nil, pipes),
             pipe_covers = py.pipe_covers(false, true, false, false),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {-1.0, 3.0}, direction = defines.direction.south}}
         },
         {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {1.19, -4.4}, nil, nil, pipes),
             pipe_covers = py.pipe_covers(false, true, false, false),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {-3.0, -1.0}, direction = defines.direction.west}}
         },
         {
@@ -141,7 +149,6 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/thickener.ogg", volume = 1.3},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/thickener.ogg", volume = 0.3},
-    },
-    circuit_connector = circuit_connector_definitions["thickener"],
-    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
+        apparent_volume = 2.5
+    }
 }

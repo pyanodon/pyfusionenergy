@@ -106,7 +106,7 @@ for i = 1, 4 do
         dying_explosion = "medium-explosion",
         collision_box = {{-3.2, -3.2}, {3.2, 3.2}},
         selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
-        use_mirroring = true,
+        forced_symmetry = "diagonal-pos",
         module_slots = i,
         allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
         crafting_categories = {"hydrocyclone"},
@@ -149,7 +149,7 @@ for i = 1, 4 do
                 pipe_picture_frozen = py.sexy_pipe_pictures_frozen(),
                 pipe_covers = pipecoverspictures(),
                 secondary_draw_orders = {north = -1, east = -1, west = -1},
-                volume = 100,
+                volume = 1000,
                 pipe_connections = {{flow_direction = "input", position = {-1.0, 3.0}, direction = defines.direction.south}}
             },
             --South2
@@ -159,7 +159,7 @@ for i = 1, 4 do
                 pipe_picture_frozen = py.sexy_pipe_pictures_frozen(),
                 pipe_covers = pipecoverspictures(),
                 secondary_draw_orders = {north = -1, east = -1, west = -1},
-                volume = 100,
+                volume = 1000,
                 pipe_connections = {{flow_direction = "input", position = {1.0, 3.0}, direction = defines.direction.south}}
             },
         },
@@ -167,9 +167,8 @@ for i = 1, 4 do
         working_sound = {
             sound = {filename = "__pyfusionenergygraphics__/sounds/hydrocyclone.ogg"},
             idle_sound = {filename = "__pyfusionenergygraphics__/sounds/hydrocyclone-idle.ogg", volume = 0.3},
-        },
-        circuit_connector = circuit_connector_definitions["hydrocyclone"],
-        circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
+            apparent_volume = 2.5
+        }
     }
 end
 
@@ -190,6 +189,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("hydrocyclone-mk01"):replace_ingredient_unsafe("centrifuge", "classifier")
+end
+
 if not mods["pyrawores"] then return end
 
 RECIPE {
@@ -208,6 +211,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("hydrocyclone-mk02"):add_ingredient_unsafe {type = "item", name = "titanium-plate", amount = 10}:add_ingredient_unsafe {type = "item", name = "stainless-steel", amount = 20}
+end
+
 RECIPE {
     type = "recipe",
     name = "hydrocyclone-mk03",
@@ -223,6 +230,14 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("hydrocyclone-mk03"):add_ingredient_unsafe {type = "item", name = "super-alloy", amount = 10}:add_ingredient_unsafe {type = "item", name = "boron-carbide", amount = 15}
+end
+
+if mods.pyhightech then
+    RECIPE("hydrocyclone-mk03"):add_ingredient_unsafe {type = "item", name = "phosphate-glass", amount = 50}:add_ingredient_unsafe {type = "item", name = "biopolymer", amount = 35}:add_ingredient_unsafe {type = "item", name = "aerogel", amount = 15}
+end
+
 RECIPE {
     type = "recipe",
     name = "hydrocyclone-mk04",
@@ -235,3 +250,11 @@ RECIPE {
         {type = "item", name = "hydrocyclone-mk04", amount = 1}
     }
 }
+
+if mods.pyrawores then
+    RECIPE("hydrocyclone-mk04"):add_ingredient_unsafe {type = "item", name = "wall-shield", amount = 5}:add_ingredient_unsafe {type = "item", name = "science-coating", amount = 2}:add_ingredient_unsafe {type = "item", name = "control-unit", amount = 5}
+end
+
+if mods.pyhightech then
+    RECIPE("hydrocyclone-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "superconductor-servomechanims", amount = 5}:add_ingredient_unsafe {type = "item", name = "hyperelastic-material", amount = 4}
+end

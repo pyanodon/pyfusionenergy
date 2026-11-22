@@ -1,16 +1,17 @@
 RECIPE {
     type = "recipe",
     name = "vpulp-precip",
-    categories = {"agitator"},
+    category = "agitator",
     enabled = false,
     energy_required = 10,
     ingredients = {
-        {type = "fluid", name = "vpulp5", amount = 100},
-        {type = "fluid", name = "water",  amount = 200}
+        {type = "fluid", name = "vpulp5",           amount = 100},
+        {type = "fluid", name = "water",            amount = 200},
+        {type = "item",  name = "sodium-bisulfate", amount = 1}
     },
     results = {
         {type = "fluid", name = "vpulp-precip",   amount = 100},
-        {type = "item",  name = "vanadium-oxide", amount = 1,  independent_probability = 0.2}
+        {type = "item",  name = "vanadium-oxide", amount = 1,  probability = 0.2}
     },
     main_product = "vpulp-precip",
     icon = "__pyfusionenergygraphics__/graphics/icons/agitation-vpulp-precip.png",
@@ -18,6 +19,10 @@ RECIPE {
     subgroup = "py-fusion-fluids",
     order = "m"
 }
+
+if mods.pyhightech then
+    RECIPE("vpulp-precip"):replace_ingredient_unsafe("water", {type = "fluid", name = "ammonia", amount = 200})
+end
 
 FLUID {
     type = "fluid",

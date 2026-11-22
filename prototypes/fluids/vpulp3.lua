@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "vpulp3",
-    categories = {"agitator"},
+    category = "agitator",
     enabled = false,
     energy_required = 5,
     ingredients = {
@@ -17,6 +17,10 @@ RECIPE {
     subgroup = "py-fusion-fluids",
     order = "l"
 }
+
+if mods.pyhightech then
+    RECIPE("vpulp3"):replace_ingredient_unsafe("petroleum-gas", {type = "fluid", name = "ammonia", amount = 100})
+end
 
 FLUID {
     type = "fluid",

@@ -14,6 +14,14 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("secondary-crusher-mk04"):add_ingredient_unsafe {type = "item", name = "nbti-alloy", amount = 10}:add_ingredient_unsafe {type = "item", name = "wall-shield", amount = 4}:add_ingredient_unsafe {type = "item", name = "control-unit", amount = 3}
+end
+
+if mods.pyhightech then
+    RECIPE("secondary-crusher-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "superconductor-servomechanims", amount = 6}:add_ingredient_unsafe {type = "item", name = "pi-josephson-junction", amount = 4}
+end
+
 ITEM {
     type = "item",
     name = "secondary-crusher-mk04",
@@ -98,7 +106,6 @@ ENTITY {
     impact_category = "metal-large",
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/secondary-crusher.ogg", volume = 1.1},
-    },
-    circuit_connector = circuit_connector_definitions["secondary-crusher"],
-    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
+        apparent_volume = 2.5
+    }
 }

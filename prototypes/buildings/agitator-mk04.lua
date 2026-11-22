@@ -41,6 +41,14 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("agitator-mk04"):add_ingredient_unsafe {type = "item", name = "nbti-alloy", amount = 10}:add_ingredient_unsafe {type = "item", name = "wall-shield", amount = 4}:add_ingredient_unsafe {type = "item", name = "control-unit", amount = 3}
+end
+
+if mods.pyhightech then
+    RECIPE("agitator-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "superconductor-servomechanims", amount = 5}:add_ingredient_unsafe {type = "item", name = "harmonic-absorber", amount = 10}
+end
+
 ITEM {
     type = "item",
     name = "agitator-mk04",
@@ -66,7 +74,7 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
-    use_mirroring = true,
+    forced_symmetry = "diagonal-pos",
     module_slots = 4,
     allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
     crafting_categories = {"agitator"},
@@ -110,14 +118,14 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", {0.17, 2.85}, {0.18, -2.9}, {3.1, -0.15}, {-2.9, -0.2}, pipes),
             pipe_covers = py.pipe_covers(false, true, true, false),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {2.0, 0.0}, direction = defines.direction.east}}
         },
         {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", {0.17, 2.85}, {0.18, -2.9}, {3.1, -0.15}, {-2.9, -0.2}, pipes),
             pipe_covers = py.pipe_covers(false, true, true, false),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {0.0, 2.0}, direction = defines.direction.south}}
         },
         {
@@ -139,7 +147,6 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/agitator.ogg", volume = 1.1},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/agitator.ogg", volume = 0.3},
-    },
-    circuit_connector = circuit_connector_definitions["agitator"],
-    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
+        apparent_volume = 2.5
+    }
 }

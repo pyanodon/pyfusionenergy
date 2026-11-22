@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "rich-gas",
-    categories = {"distilator"},
+    category = "distilator",
     enabled = false,
     energy_required = 6,
     ingredients = {

@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "cold-clean-air",
-    categories = {"carbonfilter"},
+    category = "carbonfilter",
     enabled = false,
     energy_required = 8,
     ingredients = {
@@ -14,6 +14,10 @@ RECIPE {
     },
     main_product = "cold-clean-air",
 }
+
+if mods.pyrawores then
+    RECIPE("cold-clean-air"):replace_ingredient_unsafe("filtration-media", "biofilm")
+end
 
 FLUID {
     type = "fluid",

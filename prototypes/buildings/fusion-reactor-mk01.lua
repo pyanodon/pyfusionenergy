@@ -17,6 +17,14 @@ RECIPE {
     },
 }
 
+if mods.pyrawores then
+    RECIPE("fusion-reactor-mk01"):add_ingredient_unsafe {type = "item", name = "glass", amount = 300}:add_ingredient_unsafe {type = "item", name = "super-steel", amount = 100}
+end
+
+if mods.pyhightech then
+    RECIPE("fusion-reactor-mk01"):replace_ingredient("advanced-circuit", "processing-unit")
+end
+
 ITEM {
     type = "item",
     name = "fusion-reactor-mk01",
@@ -42,7 +50,7 @@ ENTITY {
     dying_explosion = "medium-explosion",
     collision_box = {{-4.8, -4.8}, {4.8, 4.8}},
     selection_box = {{-5.0, -5.0}, {5.0, 5.0}},
-    use_mirroring = true,
+    forced_symmetry = "diagonal-pos",
     module_slots = 6,
     allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
     allowed_module_categories = {"productivity", "speed", "quality"},
@@ -87,35 +95,35 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {-0.5, -4.5}, direction = defines.direction.north}}
         },
         {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {-2.5, -4.5}, direction = defines.direction.north}}
         },
         {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {-4.5, -4.5}, direction = defines.direction.north}}
         },
         {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {1.5, -4.5}, direction = defines.direction.north}}
         },
         {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", nil, {-0.0, -0.97}, {0.5, -0.0}, {-0.5, 0.0}),
             pipe_covers = py.pipe_covers(false, true, true, true),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {3.5, -4.5}, direction = defines.direction.north}}
         },
         {
@@ -158,7 +166,6 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/fusion-reactor-mk01.ogg", volume = 1.5},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/fusion-reactor-mk01.ogg", volume = 0.3},
-    },
-    circuit_connector = circuit_connector_definitions["fusion-reactor-mk1"],
-    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
+        apparent_volume = 2.5
+    }
 }

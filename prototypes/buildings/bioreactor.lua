@@ -16,6 +16,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("bio-reactor-mk01"):add_ingredient_unsafe {type = "item", name = "advanced-circuit", amount = 5}:add_ingredient_unsafe {type = "item", name = "glass", amount = 50}
+end
+
 ITEM {
     type = "item",
     name = "bio-reactor-mk01",
@@ -104,7 +108,7 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
             pipe_covers = py.pipe_covers(true, true, true, true),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {1.0, 3.0}, direction = defines.direction.south}},
             priority = "extra-high"
         },
@@ -113,7 +117,7 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {-0.00, -0.95}, nil, nil),
             pipe_covers = py.pipe_covers(true, true, true, true),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {-1.0, 3.0}, direction = defines.direction.south}},
             priority = "extra-high"
         },
@@ -122,7 +126,6 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/bio-reactor.ogg", volume = 1.2},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/bio-reactor.ogg", volume = 0.3},
-    },
-    circuit_connector = circuit_connector_definitions["bioreactor"],
-    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
+        apparent_volume = 2.5
+    }
 }

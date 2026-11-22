@@ -68,6 +68,14 @@ RECIPE {
     },
 }
 
+if mods.pyrawores then
+    RECIPE("jig-mk03"):add_ingredient_unsafe {type = "item", name = "super-alloy", amount = 20}:add_ingredient_unsafe {type = "item", name = "molybdenum-plate", amount = 15}
+end
+
+if mods.pyhightech then
+    RECIPE("jig-mk03"):add_ingredient_unsafe {type = "item", name = "heavy-fermion", amount = 20}:add_ingredient_unsafe {type = "item", name = "superconductor", amount = 10}
+end
+
 ITEM {
     type = "item",
     name = "jig-mk03",
@@ -93,7 +101,7 @@ ENTITY {
     dying_explosion = "medium-explosion",
     collision_box = {{-3.8, -3.8}, {3.8, 3.8}},
     selection_box = {{-4.0, -4.0}, {4.0, 4.0}},
-    use_mirroring = true,
+    forced_symmetry = "diagonal-pos",
     module_slots = 3,
     allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
     crafting_categories = {"jig"},
@@ -162,7 +170,7 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", {1.8, 4.3}, {-1.2, -4.65}, {4.8, -1.7}, {-4.27, 1.3}, pipe_left),
             pipe_covers = py.pipe_covers(false, true, false, false),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {-1.5, -3.5}, direction = defines.direction.north}}
         },
         {
@@ -176,7 +184,7 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-2", {-1.2, 4.3}, {1.8, -4.65}, {4.8, 1.3}, {-4.27, -1.8}, pipe_right),
             pipe_covers = py.pipe_covers(false, true, false, false),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {1.5, -3.5}, direction = defines.direction.north}}
         },
         {
@@ -191,7 +199,6 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/jig.ogg", volume = 1.2},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/jig.ogg", volume = 0.3},
-    },
-    circuit_connector = circuit_connector_definitions["jig"],
-    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
+        apparent_volume = 2.5
+    }
 }

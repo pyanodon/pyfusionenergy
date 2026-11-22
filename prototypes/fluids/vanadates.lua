@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "vanadates",
-    categories = {"carbonfilter"},
+    category = "carbonfilter",
     enabled = false,
     energy_required = 5,
     ingredients = {

@@ -13,6 +13,14 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("automated-screener-mk03"):add_ingredient_unsafe {type = "item", name = "super-alloy", amount = 10}:add_ingredient_unsafe {type = "item", name = "boron-carbide", amount = 20}
+end
+
+if mods.pyhightech then
+    RECIPE("automated-screener-mk03"):add_ingredient_unsafe {type = "item", name = "heavy-fermion", amount = 20}:add_ingredient_unsafe {type = "item", name = "carbon-aerogel", amount = 20}:add_ingredient_unsafe {type = "item", name = "nems", amount = 5}
+end
+
 ITEM {
     type = "item",
     name = "automated-screener-mk03",
@@ -117,7 +125,6 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/automated-screener.ogg", volume = 1.3},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/automated-screener.ogg", volume = 0.3},
-    },
-    circuit_connector = circuit_connector_definitions["automated-screener"],
-    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
+        apparent_volume = 2.5
+    }
 }

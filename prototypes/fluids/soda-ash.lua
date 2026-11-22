@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "soda-ash",
-    categories = {"agitator"},
+    category = "agitator",
     enabled = false,
     energy_required = 5,
     ingredients = {

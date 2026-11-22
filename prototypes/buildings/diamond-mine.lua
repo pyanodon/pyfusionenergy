@@ -15,6 +15,10 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("diamond-mine"):replace_ingredient_unsafe("iron-plate", "titanium-plate")
+end
+
 ITEM {
     type = "item",
     name = "diamond-mine",
@@ -53,8 +57,9 @@ ENTITY {
         },
     },
     energy_usage = "2000kW",
+    mining_power = 6,
     resource_searching_radius = 0.49,
-    vector_to_place_result = {0, -3.8},
+    vector_to_place_result = {0, -3.65},
     radius_visualisation_picture = {
         filename = "__base__/graphics/entity/electric-mining-drill/electric-mining-drill-radius-visualization.png",
         width = 12,
@@ -90,5 +95,6 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/diamond-mine.ogg", volume = 1.0},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/diamond-mine.ogg", volume = 0.3},
+        apparent_volume = 2.5
     }
 }

@@ -1,7 +1,7 @@
 RECIPE {
     type = "recipe",
     name = "purier-helium",
-    categories = {"compressor"},
+    category = "compressor",
     enabled = false,
     energy_required = 1,
     ingredients = {

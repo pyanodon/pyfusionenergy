@@ -23,6 +23,14 @@ RECIPE {
     }
 }
 
+if mods.pyrawores then
+    RECIPE("nmf-mk04"):add_ingredient_unsafe {type = "item", name = "boron-carbide", amount = 30}:add_ingredient_unsafe {type = "item", name = "science-coating", amount = 1}:add_ingredient_unsafe {type = "item", name = "control-unit", amount = 5}
+end
+
+if mods.pyhightech then
+    RECIPE("nmf-mk04"):replace_ingredient_unsafe("control-unit", "intelligent-unit"):add_ingredient_unsafe {type = "item", name = "superconductor-servomechanims", amount = 5}:add_ingredient_unsafe {type = "item", name = "quantum-vortex-storage-system", amount = 2}
+end
+
 ITEM {
     type = "item",
     name = "nmf-mk04",
@@ -48,7 +56,7 @@ ENTITY {
     dying_explosion = "big-explosion",
     collision_box = {{-3.2, -3.2}, {3.2, 3.2}},
     selection_box = {{-3.5, -3.5}, {3.5, 3.5}},
-    use_mirroring = true,
+    forced_symmetry = "diagonal-pos",
     module_slots = 4,
     allowed_effects = {"speed", "productivity", "consumption", "pollution", "quality"},
     crafting_categories = {"nmf"},
@@ -111,14 +119,14 @@ ENTITY {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {0.103, -4.05}, nil, nil, pipes),
             pipe_covers = py.pipe_covers(false, true, false, false),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {0.0, 3.0}, direction = defines.direction.south}}
         },
         {
             production_type = "input",
             pipe_picture = py.pipe_pictures("assembling-machine-3", nil, {0.103, -4.05}, nil, nil, pipes),
             pipe_covers = py.pipe_covers(false, true, false, false),
-            volume = 100,
+            volume = 1000,
             pipe_connections = {{flow_direction = "input", position = {-3.0, 0.0}, direction = defines.direction.west}}
         },
         {
@@ -140,7 +148,6 @@ ENTITY {
     working_sound = {
         sound = {filename = "__pyfusionenergygraphics__/sounds/nmf.ogg", volume = 1.3},
         idle_sound = {filename = "__pyfusionenergygraphics__/sounds/nmf.ogg", volume = 0.3},
-    },
-    circuit_connector = circuit_connector_definitions["nmf"],
-    circuit_wire_max_distance = _G.default_circuit_wire_max_distance,
+        apparent_volume = 2.5
+    }
 }
